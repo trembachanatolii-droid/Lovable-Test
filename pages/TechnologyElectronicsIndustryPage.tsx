@@ -10,7 +10,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
     canonical: 'technology-electronics-trade-attorney',
     schema: [
       generateWebPageSchema({
-        name: 'Technology & Electronics Industry Trade Law Services',
+        title: 'Technology & Electronics Industry Trade Law Services',
         description: 'Specialized international trade law services for California technology and electronics companies. Expert guidance on import compliance, export controls, tariff strategies, and supply chain optimization.',
         url: 'technology-electronics-trade-attorney',
       }),
@@ -22,8 +22,6 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
       generateServiceSchema({
         name: 'Technology & Electronics Trade Law Services',
         description: 'Comprehensive trade law services for technology and electronics companies including customs compliance, export controls, tariff optimization, and supply chain strategies.',
-        provider: 'Trembach Law Firm',
-        areaServed: ['Los Angeles, CA', 'San Francisco, CA', 'San Diego, CA', 'Calabasas, CA', 'Silicon Valley, CA'],
         serviceType: 'Legal Services',
       }),
     ],

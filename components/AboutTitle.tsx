@@ -76,7 +76,7 @@ function AboutTitle({ name }: AboutTitleProps) {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: config.offset as [string, string],
+    offset: config.offset as any,
   });
 
   const scale = useTransform(scrollYProgress, [0, 1], config.scale);

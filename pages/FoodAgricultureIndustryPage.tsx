@@ -10,7 +10,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
     canonical: 'food-agriculture-trade-attorney',
     schema: [
       generateWebPageSchema({
-        name: 'Food & Agriculture Industry Trade Law Services',
+        title: 'Food & Agriculture Industry Trade Law Services',
         description: 'Specialized international trade law services for California food and agricultural companies. Expert guidance on FDA compliance, USDA regulations, food safety, and agricultural trade regulations.',
         url: 'food-agriculture-trade-attorney',
       }),
@@ -22,8 +22,6 @@ const FoodAgricultureIndustryPage: React.FC = () => {
       generateServiceSchema({
         name: 'Food & Agriculture Trade Law Services',
         description: 'Comprehensive trade law services for food and agricultural companies including FDA compliance, USDA coordination, food safety, classification expertise, and regulatory strategies.',
-        provider: 'Trembach Law Firm',
-        areaServed: ['Los Angeles, CA', 'San Francisco, CA', 'San Diego, CA', 'Calabasas, CA', 'Central Valley, CA'],
         serviceType: 'Legal Services',
       }),
     ],

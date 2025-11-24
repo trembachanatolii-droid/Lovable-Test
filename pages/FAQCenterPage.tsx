@@ -269,7 +269,7 @@ const FAQCenterPage: React.FC = () => {
     canonical: 'trade-law-faq',
     schema: [
       generateWebPageSchema({
-        name: 'International Trade Law FAQ Center',
+        title: 'International Trade Law FAQ Center',
         description: 'Frequently asked questions about customs compliance, import/export regulations, UFLPA, export controls, and trade law answered by California international trade attorneys.',
         url: 'trade-law-faq',
       }),

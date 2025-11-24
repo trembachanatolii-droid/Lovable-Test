@@ -19,7 +19,7 @@ const GeneralApplicationPage: React.FC = () => {
         ogImage: `${siteConfig.siteUrl}/og-image-careers.jpg`,
         schema: [
             generateWebPageSchema({
-                name: 'Career Application - Trembach Law Firm',
+                title: 'Career Application - Trembach Law Firm',
                 description: 'Apply for positions at Trembach Law Firm - California international trade and customs law attorneys.',
                 url: 'careers/apply',
             }),
