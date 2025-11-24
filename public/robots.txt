@@ -1,14 +1,35 @@
+# Robots.txt for Trembach Law Firm
+# https://trembach.law
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://trembach.law/sitemap.xml
+
+# Crawl-delay for polite bots (optional)
+Crawl-delay: 1
+
+# Block admin/test pages if they exist
+Disallow: /admin/
+Disallow: /_test/
+Disallow: /private/
+
+# Allow all major search engine bots
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Twitterbot
+User-agent: Slurp
 Allow: /
 
-User-agent: facebookexternalhit
+User-agent: DuckDuckBot
 Allow: /
 
-User-agent: *
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
 Allow: /

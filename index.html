@@ -1,24 +1,595 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trembach Law Firm - Trusted Legal Counsel</title>
-    <meta name="description" content="Trembach Law Firm delivers strategic legal solutions backed by decades of experience across complex business transactions, litigation, and regulatory matters." />
-    <meta name="author" content="Trembach Law Firm" />
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<title>Trembach Law | International Trade & Customs</title>
+<meta name="description" content="Expert California international trade attorney & customs lawyer. Specialized in CBP defense, customs audits, trade compliance, and import/export law.">
+<link rel="canonical" href="https://trembach.law/" />
 
-    <meta property="og:title" content="Trembach Law Firm - Trusted Legal Counsel" />
-    <meta property="og:description" content="Strategic legal solutions for your most important matters. Corporate law, litigation, real estate, and more." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<!-- NO third-party DNS prefetch - keep it clean for 100/100/100/100 -->
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+<!-- Async load non-critical CSS -->
+<link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/styles.css"></noscript>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<style>
+/* Critical CSS - System Fonts & Base Styles */
+:root {
+  --navy-primary: #012169;
+  --navy-dark: #103483;
+  --teal-primary: #3FBB94;
+  --teal-forest: #2D8469;
+  --gray-dark: #333333;
+  --gray-medium: #CBCBCB;
+  --gray-light: #F2F2F2;
+  --gray-lighter: #F8FAFC;
+  --gold-primary: #FBBF24;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--gray-dark);
+  background-color: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Improve text rendering performance */
+  text-rendering: optimizeSpeed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Cambria, 'Times New Roman', serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--navy-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* Prevent images from blocking page load */
+  content-visibility: auto;
+}
+
+/* Focus Styles - WCAG 2.1 AA Compliant */
+*:focus-visible {
+  outline: 3px solid var(--teal-primary);
+  outline-offset: 2px;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ==============================================================
+   CRITICAL ABOVE-THE-FOLD CSS (Header & Navigation)
+   Component CSS loaded asynchronously from styles.css
+   ============================================================== */
+
+/* Header & Navigation - Above the fold */
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+}
+
+.header-wrapper.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: Georgia, Cambria, 'Times New Roman', serif;
+  color: var(--navy-primary);
+  line-height: 1;
+}
+
+.logo-subtitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-dark);
+  margin-top: 0.25rem;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-search {
+  display: none;
+}
+
+.mobile-menu-btn {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .desktop-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .desktop-search {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  color: var(--gray-dark);
+  padding: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--navy-primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--teal-primary);
+  transition: width 0.2s;
+}
+
+.nav-link:hover::after,
+.nav-link[aria-current="page"]::after {
+  width: 100%;
+}
+
+/* Hero Section - H1 Text as LCP with Background Image */
+.hero {
+  position: relative;
+  min-height: 600px;
+  height: calc(90vh - 72px);
+  max-height: none;
+  display: flex;
+  align-items: center;
+  /* Fallback gradient if image doesn't load */
+  background: linear-gradient(135deg, #012169 0%, #1E40AF 50%, #103483 100%);
+  margin-top: 5rem;
+  overflow: hidden;
+  contain: layout style paint;
+}
+
+/* Background image container - positioned behind text */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* Prevent image from blocking text rendering */
+  will-change: auto;
+  content-visibility: auto;
+}
+
+/* Dark overlay for text contrast - WCAG AA compliance */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  /* Dark gradient overlay for ≥4.5:1 contrast ratio */
+  background: linear-gradient(
+    135deg,
+    rgba(1, 33, 105, 0.85) 0%,
+    rgba(1, 33, 105, 0.75) 40%,
+    rgba(1, 33, 105, 0.65) 70%,
+    rgba(16, 52, 131, 0.70) 100%
+  );
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 700px;
+    height: calc(90vh - 72px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 700px;
+    height: calc(90vh - 72px);
+  }
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+}
+
+.hero h1 {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+  /* Enhanced text shadow for readability on image background */
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8),
+               0 6px 20px rgba(0, 0, 0, 0.6),
+               0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+@media (min-width: 640px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
+.hero-subtitle {
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  /* Enhanced text shadow for readability on image background */
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7),
+               0 4px 16px rgba(0, 0, 0, 0.5),
+               0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+.hero-cta {
+  display: inline-block;
+  background-color: var(--teal-primary);
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero-cta:hover {
+  background-color: var(--teal-forest);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero-cta:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 3px;
+}
+
+/* Services Section - Above the fold */
+.services {
+  padding: 5rem 0;
+  background-color: var(--white);
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--navy-primary);
+}
+
+@media (min-width: 768px) {
+  .services h2 {
+    font-size: 3rem;
+  }
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  background-color: var(--gray-lighter);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: var(--teal-primary);
+  background-color: var(--white);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--navy-primary);
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray-dark);
+}
+
+/* Footer - Reserve exact space to prevent CLS */
+footer.bg-primary-navy {
+  min-height: 350px;
+  height: auto;
+  will-change: auto;
+}
+
+footer .max-w-\[1376px\] {
+  min-height: 300px;
+}
+
+footer .grid {
+  min-height: 180px;
+}
+
+/* Form elements fixed dimensions */
+footer input[type="email"],
+footer button[type="submit"] {
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+}
+
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--teal-primary), var(--navy-primary));
+  margin: 0 auto 2rem;
+  border-radius: 2px;
+}
+
+/* Practice Areas Green Triangle + Arrow Animation */
+.group:hover .triangle-slide {
+  right: 0 !important;
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LegalService", "Organization", "Attorney", "LocalBusiness"],
+  "@id": "https://trembach.law/#organization",
+  "name": "Trembach Law Firm",
+  "alternateName": "Trembach Law Firm, APC",
+  "legalName": "Trembach Law Firm, APC",
+  "description": "California international trade attorney and customs lawyer providing expert legal representation in CBP defense, customs audits, trade compliance, export controls (ITAR/EAR), OFAC sanctions, and import/export law. Serving California businesses nationwide.",
+  "url": "https://trembach.law/",
+  "telephone": "+1-631-746-8290",
+  "email": "infotrade@trembachlaw.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "27001 Agoura Road, Suite 350",
+    "addressLocality": "Calabasas",
+    "addressRegion": "CA",
+    "postalCode": "91301",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "34.1478",
+    "longitude": "-118.6615"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "priceRange": "$$$$",
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    {
+      "@type": "State",
+      "name": "California"
+    },
+    {
+      "@type": "City",
+      "name": "Los Angeles"
+    },
+    {
+      "@type": "City",
+      "name": "San Francisco"
+    },
+    {
+      "@type": "City",
+      "name": "San Diego"
+    },
+    {
+      "@type": "City",
+      "name": "Calabasas"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/trembach-law-firm",
+    "https://twitter.com/trembachlaw"
+  ],
+  "founder": {
+    "@type": "Person",
+    "@id": "https://trembach.law/#anatolii-trembach",
+    "name": "Anatolii Trembach",
+    "jobTitle": "International Trade & Customs Lawyer. Tariffs. Import. Export.",
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "National Law University of Ukraine"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern California Gould School of Law"
+      }
+    ]
+  },
+  "knowsLanguage": ["en", "uk", "ru"],
+  "slogan": "California's Premier International Trade & Customs Law Firm",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "International Trade & Customs Law Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Customs Defense & CBP Investigation",
+          "description": "Expert defense in customs audits, CBP investigations, penalty mitigation, seizures, and litigation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Trade Compliance Programs",
+          "description": "Import/export compliance programs, prior disclosures, and regulatory advisory"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Export Controls & Sanctions",
+          "description": "ITAR, EAR, OFAC compliance, export licensing, and deemed exports"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "47",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
 </html>
