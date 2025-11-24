@@ -227,11 +227,7 @@ const HomePage: React.FC = () => {
                     }}
                   >
                     <a
-                      href={`#practice-areas/${area.slug}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.location.hash = `practice-areas/${area.slug}`;
-                      }}
+                      href={`#practice-areas?slug=${area.slug}`}
                       className="group"
                       style={{
                         display: 'block',
