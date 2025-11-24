@@ -88,13 +88,13 @@ const NewsPage: React.FC = () => {
         {/* Background Image with Dark Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-news.jpg"
             alt="Professional business news analysis representing trade law insights and industry updates"
             className="w-full h-full object-cover object-center"
             loading="lazy"
             decoding="async"
             width="1920"
-            height="1280"
+            height="1080"
           />
           <div
             className="absolute inset-0"

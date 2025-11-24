@@ -12,7 +12,7 @@ tags: ['CF-28 Response', 'CF-29 Defense', 'Focused Assessments', 'Quick Response
 imageSlug: 'customs-audits',
 imageAlt: 'Two workers in safety gear walking beside stacked shipping containers at a sunlit shipping yard',
 slug: 'customs-audits',
-imageUrl: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&h=600&fit=crop&q=80',
+imageUrl: '/images/customs-audits.jpg',
 },
 {
 title: 'Section 301 Tariffs & Exclusion Strategies',
@@ -22,7 +22,7 @@ tags: ['Section 301', 'China Tariffs', 'Exclusion Requests', 'Tariff Engineering
 imageSlug: 'section-301-tariffs',
 imageAlt: 'Section 301 tariff attorney analyzing China import duties and exclusion strategies',
 slug: 'section-301-tariffs',
-imageUrl: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&h=600&fit=crop&q=80',
+imageUrl: '/images/section-301-tariffs.jpg',
 },
 {
 title: 'Export Controls & Sanctions Compliance',
@@ -32,7 +32,7 @@ tags: ['EAR Compliance', 'ITAR', 'OFAC', 'Export Licensing', 'Voluntary Disclosu
 imageSlug: 'export-controls',
 imageAlt: 'Export controls attorney advising on EAR ITAR OFAC sanctions compliance',
 slug: 'export-controls-sanctions',
-imageUrl: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=600&fit=crop&q=80',
+imageUrl: '/images/export-controls.jpg',
 },
 {
 title: 'Duty Drawback Programs & Recovery',
@@ -42,7 +42,7 @@ tags: ['Manufacturing Drawback', 'Unused Merchandise', 'Rejected Goods', 'Duty R
 imageSlug: 'duty-drawback',
 imageAlt: 'Duty drawback attorney helping recover import duty refunds for manufacturers',
 slug: 'duty-drawback-recovery',
-imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop&q=80',
+imageUrl: '/images/duty-drawback.jpg',
 },
 {
 title: 'USMCA & Free Trade Agreement Optimization',
@@ -52,7 +52,7 @@ tags: ['USMCA', 'Rules of Origin', 'Certificates of Origin', 'FTA Qualification'
 imageSlug: 'usmca-fta',
 imageAlt: 'USMCA attorney advising on free trade agreement qualification and certificates of origin',
 slug: 'usmca-free-trade-agreements',
-imageUrl: 'https://images.unsplash.com/photo-1573167243872-43c6433b9d40?w=800&h=600&fit=crop&q=80',
+imageUrl: '/images/usmca-fta.jpg',
 },
 {
 title: 'Forced Labor Compliance & WRO Defense',
@@ -62,7 +62,7 @@ tags: ['UFLPA', 'Withhold Release Orders', 'Supply Chain Due Diligence', 'Forced
 imageSlug: 'forced-labor-compliance',
 imageAlt: 'Forced labor compliance attorney defending importers against UFLPA Withhold Release Orders',
 slug: 'forced-labor-compliance-uflpa',
-imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop&q=80',
+imageUrl: '/images/forced-labor-compliance.jpg',
 },
 ];
 

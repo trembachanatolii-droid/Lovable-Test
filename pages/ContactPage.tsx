@@ -43,13 +43,13 @@ const ContactPage: React.FC = () => {
          {/* Background Image */}
          <div className="absolute inset-0 z-0" aria-hidden="true">
            <img
-             src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
+             src="/images/hero-contact.jpg"
              alt=""
              className="w-full h-full object-cover object-center"
              loading="lazy"
              decoding="async"
-             width="2070"
-             height="1380"
+             width="1920"
+             height="1080"
            />
            {/* Overlay with 55% opacity for better text visibility */}
            <div className="absolute inset-0" style={{backgroundColor: 'rgba(1, 33, 105, 0.55)'}}></div>
