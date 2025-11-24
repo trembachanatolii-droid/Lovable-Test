@@ -367,12 +367,22 @@ const PracticeAreasPage: React.FC = () => {
 
     // Check if there's a specific practice area to open from the URL
     const hash = window.location.hash;
-    // Extract slug after practice-areas (e.g., #practice-areas/customs-valuation or ?slug=customs-valuation)
-    const slugMatch = hash.match(/practice-areas[\/\?](\w+-?\w*)/);
+    let targetSlug: string | null = null;
 
-    if (slugMatch && slugMatch[1]) {
-      const targetSlug = slugMatch[1];
+    // Extract slug from query parameter format: #practice-areas?slug=customs-valuation
+    if (hash.includes('?slug=')) {
+      const urlParams = new URLSearchParams(hash.split('?')[1]);
+      targetSlug = urlParams.get('slug');
+    }
+    // Also support old format: #practice-areas/customs-valuation
+    else if (hash.includes('practice-areas/')) {
+      const slugMatch = hash.match(/practice-areas\/(\w+-?\w*)/);
+      if (slugMatch && slugMatch[1]) {
+        targetSlug = slugMatch[1];
+      }
+    }
 
+    if (targetSlug) {
       // Find the item with this slug
       practiceData.forEach((category, catIndex) => {
         category.items.forEach((item, itemIndex) => {
@@ -382,7 +392,7 @@ const PracticeAreasPage: React.FC = () => {
 
             // Scroll to the element after a short delay to ensure rendering
             setTimeout(() => {
-              const element = document.getElementById(targetSlug);
+              const element = document.getElementById(targetSlug!);
               if (element) {
                 element.scrollIntoView({ behavior: 'smooth', block: 'start' });
               }
