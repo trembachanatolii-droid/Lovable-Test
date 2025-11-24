@@ -34,7 +34,7 @@ const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
     robots: 'noindex, nofollow',
     schema: [
       generateWebPageSchema({
-        name: title,
+        title: title,
         description: meta.description,
         url: meta.canonical,
       }),

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useMeta } from '../hooks/useMeta';
-import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/schemaGenerators';
+import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 
 const Section301TariffsGuidePage: React.FC = () => {
   useMeta({
@@ -11,7 +11,7 @@ const Section301TariffsGuidePage: React.FC = () => {
     ogType: 'article',
     schema: [
       generateWebPageSchema({
-        name: 'Section 301 Tariffs Guide - Trembach Law Firm',
+        title: 'Section 301 Tariffs Guide - Trembach Law Firm',
         description: 'Comprehensive guide to Section 301 China tariffs, mitigation strategies, and compliance for California importers.',
         url: 'resources/section-301-tariffs-guide',
       }),

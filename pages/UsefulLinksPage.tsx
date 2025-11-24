@@ -322,7 +322,7 @@ const UsefulLinksPage: React.FC = () => {
         };
     }
     return null;
-  }).filter((category): category is LinkCategory => category !== null);
+  }).filter((category): category is { title: string; description: string; links: LinkItem[]; subsections: SubSection[] } => category !== null);
 
   return (
     <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">

@@ -10,7 +10,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
     canonical: 'apparel-textiles-trade-attorney',
     schema: [
       generateWebPageSchema({
-        name: 'Apparel & Textiles Industry Trade Law Services',
+        title: 'Apparel & Textiles Industry Trade Law Services',
         description: 'Specialized international trade law services for California apparel and textile companies. Expert guidance on import compliance, UFLPA forced labor due diligence, classification, and supply chain strategies.',
         url: 'apparel-textiles-trade-attorney',
       }),
@@ -22,8 +22,6 @@ const ApparelTextilesIndustryPage: React.FC = () => {
       generateServiceSchema({
         name: 'Apparel & Textiles Trade Law Services',
         description: 'Comprehensive trade law services for apparel and textile companies including customs compliance, UFLPA forced labor due diligence, classification expertise, and supply chain strategies.',
-        provider: 'Trembach Law Firm',
-        areaServed: ['Los Angeles, CA', 'San Francisco, CA', 'San Diego, CA', 'Calabasas, CA'],
         serviceType: 'Legal Services',
       }),
     ],

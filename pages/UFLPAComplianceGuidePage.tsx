@@ -13,7 +13,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
     ogImage: `${siteConfig.siteUrl}/og-image-uflpa.jpg`,
     schema: [
       generateWebPageSchema({
-        name: 'UFLPA Compliance Guide - Trembach Law Firm',
+        title: 'UFLPA Compliance Guide - Trembach Law Firm',
         description: 'Complete guide to UFLPA compliance, detention defense, and forced labor due diligence for California importers.',
         url: 'resources/uflpa-compliance-guide',
       }),

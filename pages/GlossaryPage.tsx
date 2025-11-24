@@ -546,7 +546,7 @@ const GlossaryPage: React.FC = () => {
     canonical: 'trade-law-glossary',
     schema: [
       generateWebPageSchema({
-        name: 'International Trade Law Glossary',
+        title: 'International Trade Law Glossary',
         description: 'Comprehensive glossary of international trade law terms, customs definitions, and regulatory concepts for California importers and exporters.',
         url: 'trade-law-glossary',
       }),
