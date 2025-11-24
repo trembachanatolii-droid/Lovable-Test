@@ -224,7 +224,7 @@ const PracticeAccordionItem: React.FC<{
     <div className="w-full" id={slug}>
       <button
         onClick={onToggle}
-        className="group relative w-full text-left bg-white p-6 md:p-8 rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-secondary-teal"
+        className="group relative w-full text-left bg-white p-4 md:p-6 rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-secondary-teal"
         aria-expanded={isOpen}
       >
          {/* Green Triangle with White Arrow - Slides in on Hover/Open */}
@@ -275,7 +275,7 @@ const PracticeAccordionItem: React.FC<{
         }`}
       >
         <div className="overflow-hidden">
-            <div className="bg-white p-6 md:p-8 rounded-2xl border-l-4 border-secondary-teal shadow-sm">
+            <div className="bg-white p-4 md:p-6 rounded-2xl border-l-4 border-secondary-teal shadow-sm">
                  <p className="text-base md:text-lg leading-relaxed text-text-secondary">
                     {content}
                  </p>
@@ -442,7 +442,7 @@ const PracticeAreasPage: React.FC = () => {
       </section>
 
       {/* Intro Text Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg md:text-xl leading-relaxed text-text-secondary">
             Trembach Law Firm offers creative strategies that allow our clients to stay competitive in the global marketplace. With customs and international trade issues now receiving C-Suite level attention, the scope of our practice matches current needs for innovative customs and trade solutions. We take pride in our ability to obtain and share timely information with our clients, to communicate with government officials, to craft customs and international trade solutions, and to aggressively seek resolution of international trade issues.
@@ -451,11 +451,11 @@ const PracticeAreasPage: React.FC = () => {
       </section>
 
       {/* Main Content - List Layout */}
-      <div className="bg-neutral-lightGray py-24 px-6">
-        <div className="max-w-5xl mx-auto space-y-12">
+      <div className="bg-neutral-lightGray py-12 px-6">
+        <div className="max-w-5xl mx-auto space-y-6">
           {practiceData.map((category, catIndex) => (
             <section key={catIndex} aria-labelledby={`cat-${catIndex}`}>
-              <div className="mb-8 border-b border-secondary-teal/30 pb-3">
+              <div className="mb-4 border-b border-secondary-teal/30 pb-3">
                 <h2
                   id={`cat-${catIndex}`}
                   className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy inline-block"
@@ -464,7 +464,7 @@ const PracticeAreasPage: React.FC = () => {
                 </h2>
               </div>
 
-              <div className="flex flex-col space-y-3">
+              <div className="flex flex-col space-y-2">
                 {category.items.map((item, itemIndex) => {
                   const uniqueKey = `${catIndex}-${itemIndex}`;
                   return (
