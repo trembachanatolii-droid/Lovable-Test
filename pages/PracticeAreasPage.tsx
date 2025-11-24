@@ -452,19 +452,19 @@ const PracticeAreasPage: React.FC = () => {
 
       {/* Main Content - List Layout */}
       <div className="bg-neutral-lightGray py-24 px-6">
-        <div className="max-w-5xl mx-auto space-y-24">
+        <div className="max-w-5xl mx-auto space-y-12">
           {practiceData.map((category, catIndex) => (
             <section key={catIndex} aria-labelledby={`cat-${catIndex}`}>
-              <div className="mb-12 border-b border-secondary-teal/30 pb-4">
-                <h2 
+              <div className="mb-8 border-b border-secondary-teal/30 pb-3">
+                <h2
                   id={`cat-${catIndex}`}
                   className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy inline-block"
                 >
                   {category.category}
                 </h2>
               </div>
-              
-              <div className="flex flex-col space-y-2">
+
+              <div className="flex flex-col space-y-3">
                 {category.items.map((item, itemIndex) => {
                   const uniqueKey = `${catIndex}-${itemIndex}`;
                   return (
