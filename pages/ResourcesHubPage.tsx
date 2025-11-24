@@ -83,7 +83,7 @@ const ResourcesHubPage: React.FC = () => {
       <section className="relative w-full h-[450px] overflow-hidden bg-primary-navy flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-resources.jpg"
             alt="Library of legal resources representing California international trade law knowledge hub"
             className="w-full h-full object-cover opacity-30"
             loading="eager"

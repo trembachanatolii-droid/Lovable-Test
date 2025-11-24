@@ -166,13 +166,13 @@ const CareersPage: React.FC = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0" aria-hidden="true">
                     <img
-                        src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop"
+                        src="/images/hero-careers.jpg"
                         alt=""
                         className="w-full h-full object-cover object-center"
                         loading="lazy"
                         decoding="async"
-                        width="2069"
-                        height="1380"
+                        width="1920"
+                        height="1080"
                     />
                     {/* Dark overlay with 55% opacity for text visibility */}
                     <div className="absolute inset-0" style={{backgroundColor: 'rgba(1, 33, 105, 0.55)'}}></div>

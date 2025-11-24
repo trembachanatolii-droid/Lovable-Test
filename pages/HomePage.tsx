@@ -123,7 +123,7 @@ const HomePage: React.FC = () => {
         {/* Port Harbor Background Image */}
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop"
+            src="/images/hero-main.jpg"
             alt=""
             role="presentation"
             width="1920"
