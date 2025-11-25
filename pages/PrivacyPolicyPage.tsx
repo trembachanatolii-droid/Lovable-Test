@@ -8,6 +8,10 @@ const PrivacyPolicyPage: React.FC = () => {
     title: 'Privacy Policy - Trembach Law Firm',
     description: 'Trembach Law Firm\'s Privacy Policy explains how we collect, use, and protect personal information collected through our website.',
     robots: 'noindex, nofollow',
+    ogImage: 'https://trembach.law/og-image-default.jpg',
+    ogImageAlt: 'Privacy Policy - Trembach Law Firm Legal Information',
+    ogImageWidth: '1200',
+    ogImageHeight: '630',
     schema: [
       generateBreadcrumbSchema([
         { name: 'Home', url: '' },

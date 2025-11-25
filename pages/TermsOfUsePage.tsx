@@ -8,6 +8,10 @@ const TermsOfUsePage: React.FC = () => {
     title: 'Terms of Use - Trembach Law Firm',
     description: 'Website Terms of Use for Trembach Law. No attorney-client relationship, legal disclaimers, intellectual property rights for California trade law site visitors.',
     robots: 'noindex, nofollow',
+    ogImage: 'https://trembach.law/og-image-default.jpg',
+    ogImageAlt: 'Terms of Use - Trembach Law Firm Legal Information',
+    ogImageWidth: '1200',
+    ogImageHeight: '630',
     schema: [
       generateBreadcrumbSchema([
         { name: 'Home', url: '' },

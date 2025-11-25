@@ -32,6 +32,10 @@ const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
     description: meta.description,
     canonical: meta.canonical,
     robots: 'noindex, nofollow',
+    ogImage: 'https://trembach.law/og-image-default.jpg',
+    ogImageAlt: `${title} - Trembach Law Firm Legal Information`,
+    ogImageWidth: '1200',
+    ogImageHeight: '630',
     schema: [
       generateWebPageSchema({
         title: title,
