@@ -16,35 +16,47 @@ interface JobCategoryProps {
 
 const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, qualifications, applyLink, isOpen, onToggle }) => {
     return (
-        <div>
+        <div className="border-b border-border-subtle">
             <button
                 onClick={onToggle}
-                className="w-full flex justify-between items-center text-left group focus:outline-none border-b border-border-subtle"
-                style={{ paddingTop: '12px', paddingBottom: '12px' }}
+                className="w-full flex justify-between items-center text-left group focus:outline-none"
+                style={{
+                    paddingTop: '16px',
+                    paddingBottom: '16px',
+                    paddingLeft: '0',
+                    paddingRight: '0'
+                }}
                 aria-expanded={isOpen}
             >
-                <h3 className={`text-2xl font-garamond font-bold leading-tight transition-colors duration-300 ${isOpen ? 'text-secondary-teal' : 'text-primary-navy group-hover:text-primary-midBlue'}`}>
+                <h3 className={`text-2xl font-garamond font-bold transition-colors duration-300 ${isOpen ? 'text-secondary-teal' : 'text-primary-navy group-hover:text-primary-midBlue'}`} style={{ lineHeight: '1.2', margin: 0 }}>
                     {title}
                 </h3>
-                <div className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${isOpen ? 'border-secondary-teal rotate-45' : 'border-neutral-gray group-hover:border-primary-navy'}`}>
+                <div className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${isOpen ? 'border-secondary-teal rotate-45' : 'border-neutral-gray group-hover:border-primary-navy'}`} style={{ flexShrink: 0 }}>
                     <span className={`text-2xl leading-none ${isOpen ? 'text-secondary-teal' : 'text-neutral-darkGray'}`}>+</span>
                 </div>
             </button>
             <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}
+                style={{
+                    maxHeight: isOpen ? '2000px' : '0',
+                    opacity: isOpen ? 1 : 0,
+                    overflow: 'hidden',
+                    transition: 'max-height 300ms ease-in-out, opacity 300ms ease-in-out'
+                }}
             >
-                <p className="text-lg text-text-secondary mb-6 leading-relaxed">
-                    {description}
-                </p>
-                <h4 className="text-sm font-bold uppercase tracking-widest text-primary-navy mb-4">Key Qualifications</h4>
-                <ul className="list-disc list-inside space-y-2 mb-8 text-text-secondary">
-                    {qualifications.map((qual, idx) => (
-                        <li key={idx}>{qual}</li>
-                    ))}
-                </ul>
-                <Button href={applyLink} variant="solid">
-                    Submit Application
-                </Button>
+                <div style={{ paddingTop: '16px' }}>
+                    <p className="text-lg text-text-secondary mb-6 leading-relaxed">
+                        {description}
+                    </p>
+                    <h4 className="text-sm font-bold uppercase tracking-widest text-primary-navy mb-4">Key Qualifications</h4>
+                    <ul className="list-disc list-inside space-y-2 mb-8 text-text-secondary">
+                        {qualifications.map((qual, idx) => (
+                            <li key={idx}>{qual}</li>
+                        ))}
+                    </ul>
+                    <Button href={applyLink} variant="solid">
+                        Submit Application
+                    </Button>
+                </div>
             </div>
         </div>
     );
