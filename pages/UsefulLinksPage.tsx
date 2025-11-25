@@ -420,8 +420,16 @@ const UsefulLinksPage: React.FC = () => {
                 style={{ paddingLeft: '14px', paddingRight: '50px' }}
                 aria-label="Search resources"
               />
-              <div className="absolute top-1/2 -translate-y-1/2 pointer-events-none" style={{ right: '16px' }}>
-                <SearchIcon className="text-gray-500" style={{ width: '22px', height: '22px' }} />
+              <div
+                className="absolute pointer-events-none flex items-center justify-center"
+                style={{
+                  right: '16px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  zIndex: 10
+                }}
+              >
+                <SearchIcon className="text-gray-500" style={{ width: '22px', height: '22px', display: 'block' }} />
               </div>
             </div>
           </div>
