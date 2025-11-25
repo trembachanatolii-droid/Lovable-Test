@@ -65,7 +65,7 @@ const Header: React.FC = () => {
     { href: '#about', label: 'About the Firm' },
     { href: '#attorney-profile', label: 'Attorney Profile' },
     { href: '#practice-areas', label: 'Practice Areas' },
-    { href: '#useful-links', label: 'Useful Links' },
+    { href: '#resources', label: 'Resources' },
     { href: '#news', label: 'News' },
     { href: '#careers', label: 'Careers' },
     { href: '#contact', label: 'Contact Us' },

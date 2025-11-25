@@ -8,6 +8,10 @@ const AttorneyAdvertisingPage: React.FC = () => {
     title: 'Attorney Advertising - Trembach Law Firm',
     description: 'Attorney advertising disclosures and compliance information for Trembach Law Firm\'s website.',
     robots: 'noindex, nofollow',
+    ogImage: 'https://trembach.law/og-image-default.jpg',
+    ogImageAlt: 'Attorney Advertising - Trembach Law Firm Legal Information',
+    ogImageWidth: '1200',
+    ogImageHeight: '630',
     schema: [
       generateBreadcrumbSchema([
         { name: 'Home', url: '' },

@@ -66,8 +66,8 @@ const practiceAreasPreviewData = [
 const HomePage: React.FC = () => {
   // SEO Meta Tags and Open Graph - Optimized for Main Hub Keywords
   useMeta({
-    title: 'CA International Trade Attorney | Customs & Import Law',
-    description: 'California international trade attorney & customs lawyer. CBP defense, trade compliance, import/export law for CA businesses. Free consultation: 631-746-8290.',
+    title: 'California International Trade Attorney | USA Customs Lawyer',
+    description: 'Premier California & USA international trade attorney. Expert customs lawyer for import/export law, CBP defense, trade compliance & global trade strategy. Serving CA businesses nationwide. Call 631-746-8290.',
     canonical: '',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-home.jpg`,
@@ -137,9 +137,9 @@ const HomePage: React.FC = () => {
         <div className="hero-overlay" aria-hidden="true"></div>
 
         <div className="container">
-          <h1>International Trade & Customs Lawyer. Tariffs. Import. Export.</h1>
+          <h1>California International Trade Attorney | USA Customs Lawyer | Import Export Law</h1>
           <p className="hero-subtitle">
-            Premier California-based import/export law firm serving businesses nationwide. Expert representation in CBP defense, trade compliance, customs audits, export controls, and global trade strategy. Protecting your business in the complex world of international trade law.
+            Premier California & USA international trade attorney. Multinational trade law expertise for import/export businesses nationwide. CBP defense, federal trade compliance, global trade strategy, customs audits & export controls. Protecting your business in complex international trade law.
           </p>
           <a href="#contact" className="hero-cta" aria-label="Get free consultation with California trade attorney">Get Free Consultation</a>
         </div>

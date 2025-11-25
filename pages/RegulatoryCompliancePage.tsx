@@ -8,9 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const RegulatoryCompliancePage: React.FC = () => {
   useMeta({
-    title: 'Trade Compliance California | Import Export Compliance Program | Federal Trade Attorney',
-    description: 'Expert trade compliance California attorney for import compliance programs, export compliance programs, federal trade compliance, compliance audits, prior disclosure customs, voluntary self disclosure export, customs record keeping, ruling requests, and compliance for manufacturers. Proactive strategies to avoid CBP enforcement. Call 631-746-8290.',
-    keywords: 'trade compliance California, import compliance program California, export compliance program California, federal trade compliance California, trade compliance audits California, prior disclosure customs California, voluntary self disclosure export California, customs record keeping California, customs ruling requests California, trade compliance for manufacturers California',
+    title: 'Trade Compliance CA & USA | Import Export Compliance Program',
+    description: 'Trade compliance attorney for California & USA. Import compliance programs, export compliance programs, federal trade compliance, trade compliance audits, prior disclosure customs, voluntary self disclosure, customs record keeping, ruling requests & compliance for manufacturers. Call 631-746-8290.',
     canonical: 'regulatory-compliance-advisory',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-compliance.jpg`,
@@ -59,10 +58,10 @@ const RegulatoryCompliancePage: React.FC = () => {
         <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-none drop-shadow-lg">
-              Trade Compliance California: Proactive Protection
+              Trade Compliance California & USA | Import Export Compliance Programs
             </h1>
             <p className="text-xl md:text-2xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
-              Expert import and export compliance programs, federal trade compliance advisory, and regulatory strategies to keep your California business ahead of CBP enforcement.
+              Federal trade compliance attorney. Import compliance programs, export compliance programs, trade compliance audits, prior disclosure customs, voluntary self disclosure export, customs record keeping, customs ruling requests & trade compliance for manufacturers. Proactive protection for California & USA businesses.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
               <Button href="#contact" variant="solid">

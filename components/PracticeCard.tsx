@@ -98,7 +98,7 @@ return (
         ))}
       </ul>
       <span className="inline-flex items-center gap-1.5 text-navy-medium text-[17px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal">
-        Learn more →
+        Learn more about {title} →
       </span>
     </div>
   </a>
