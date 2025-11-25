@@ -14,23 +14,60 @@ interface NewsItem {
   source: string;
   category: string;
   date: string;
+  readTime: string;
   link: string;
 }
 
+// --- Helper function to generate metadata ---
+const generateMetadata = (index: number) => {
+  const categories = [
+    'CUSTOMS LITIGATION',
+    'COMPLIANCE AUDITS',
+    'TRADE POLICY',
+    'LITIGATION',
+    'REGULATORY COMPLIANCE',
+    'CUSTOMS ENFORCEMENT',
+    'TRADE AGREEMENTS',
+    'EXPORT CONTROLS',
+    'SANCTIONS COMPLIANCE',
+    'TRADE REMEDIES'
+  ];
+
+  const dates = [
+    'NOVEMBER 17, 2025',
+    'NOVEMBER 15, 2025',
+    'NOVEMBER 10, 2025',
+    'NOVEMBER 5, 2025',
+    'OCTOBER 30, 2025',
+    'OCTOBER 25, 2025',
+    'OCTOBER 20, 2025',
+    'SEPTEMBER 30, 2025',
+    'SEPTEMBER 23, 2025',
+    'SEPTEMBER 15, 2025'
+  ];
+
+  const readTimes = ['25 MIN READ', '20 MIN READ', '24 MIN READ', '28 MIN READ', '22 MIN READ'];
+
+  return {
+    category: categories[index % categories.length],
+    date: dates[index % dates.length],
+    readTime: readTimes[index % readTimes.length]
+  };
+};
+
 // --- Data ---
 const newsItems: NewsItem[] = [
-  ...articles.map((article) => ({
+  ...articles.map((article, index) => ({
     id: article.id,
     title: article.title,
     source: 'Trembach Law Firm',
-    category: 'Legal Insight',
-    date: 'Updated 2025',
+    ...generateMetadata(index),
     link: `#article/${article.id}`
   }))
 ];
 
-// --- News Article Row Component ---
-const NewsArticleRow: React.FC<{ item: NewsItem }> = ({ item }) => {
+// --- News Article Card Component ---
+const NewsArticleCard: React.FC<{ item: NewsItem }> = ({ item }) => {
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
@@ -44,33 +81,27 @@ const NewsArticleRow: React.FC<{ item: NewsItem }> = ({ item }) => {
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative block border-b border-neutral-lightGray overflow-hidden transition-colors hover:bg-neutral-50 flex items-center"
+      className="group relative block overflow-hidden transition-all duration-300 bg-white"
       style={{
-        height: '120px',
-        minHeight: '120px',
-        maxHeight: '120px',
+        boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08)',
+        borderRadius: '8px',
+        padding: '40px',
         boxSizing: 'border-box'
       }}
     >
-       {/* Green Triangle Slide Animation - Matches entire website exactly */}
+       {/* Teal Triangle Slide Animation */}
        <div
            style={{
                position: 'absolute',
                top: '0',
-               right: isHovered ? '0' : '-96px',
-               width: '96px',
-               height: '96px',
-               minWidth: '96px',
-               minHeight: '96px',
-               maxWidth: '96px',
-               maxHeight: '96px',
+               right: isHovered ? '0' : '-100px',
+               width: '100px',
+               height: '100px',
                background: '#3FBB94',
                clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
                transition: 'right 300ms cubic-bezier(0.4, 0, 0.2, 1)',
                zIndex: 10,
-               pointerEvents: 'none',
-               boxSizing: 'border-box',
-               flexShrink: 0
+               pointerEvents: 'none'
            }}
        >
            {/* Arrow Icon inside triangle */}
@@ -78,17 +109,14 @@ const NewsArticleRow: React.FC<{ item: NewsItem }> = ({ item }) => {
                xmlns="http://www.w3.org/2000/svg"
                fill="none"
                viewBox="0 0 24 24"
-               strokeWidth={3}
+               strokeWidth={2.5}
                stroke="white"
                style={{
-                   width: '22.4px',
-                   height: '22.4px',
-                   minWidth: '22.4px',
-                   minHeight: '22.4px',
+                   width: '24px',
+                   height: '24px',
                    position: 'absolute',
-                   top: '20.8px',
-                   right: '20.8px',
-                   flexShrink: 0
+                   top: '22px',
+                   right: '22px'
                }}
            >
                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -96,16 +124,38 @@ const NewsArticleRow: React.FC<{ item: NewsItem }> = ({ item }) => {
        </div>
 
        {/* Content */}
-       <div className="relative z-0 px-4 md:px-6 flex items-start flex-col justify-center w-full" style={{ paddingRight: '96px' }}>
-         <h3 className="text-xl md:text-2xl font-bold text-black mb-2 group-hover:text-primary-navy transition-colors font-garamond leading-tight">
+       <div className="relative z-0">
+         {/* Category and Metadata */}
+         <div className="flex items-center mb-4" style={{
+           fontSize: '11px',
+           fontWeight: 700,
+           textTransform: 'uppercase',
+           letterSpacing: '0.08em',
+           color: '#3FBB94'
+         }}>
+            <span>{item.category}</span>
+            <span style={{ margin: '0 10px', color: '#AAAAAA' }}>•</span>
+            <span style={{ color: '#888888', fontWeight: 400 }}>{item.date}</span>
+            <span style={{ margin: '0 10px', color: '#AAAAAA' }}>•</span>
+            <span style={{ color: '#888888', fontWeight: 400 }}>{item.readTime}</span>
+         </div>
+
+         {/* Title */}
+         <h3 className="font-garamond font-bold mb-4 group-hover:text-primary-navy transition-colors" style={{
+           fontSize: '28px',
+           lineHeight: '1.25',
+           color: '#012169'
+         }}>
            {item.title}
          </h3>
-         <div className="flex items-center text-neutral-400" style={{ fontSize: '10px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-            <span>{item.source}</span>
-            <span style={{ margin: '0 8px' }}>/</span>
-            <span>{item.category}</span>
-            <span style={{ margin: '0 8px' }}>/</span>
-            <span>{item.date}</span>
+
+         {/* Source */}
+         <div style={{
+           fontSize: '14px',
+           color: '#666666',
+           fontWeight: 400
+         }}>
+            Source: {item.source}
          </div>
        </div>
     </a>
@@ -229,65 +279,102 @@ const NewsPage: React.FC = () => {
       </section>
 
       {/* Search Section */}
-      <section className="py-12 px-6 bg-gray-50 sticky top-20 z-30">
-        <div className="max-w-[1376px] mx-auto">
-          <div className="bg-white rounded-lg shadow-md p-8 max-w-5xl mx-auto">
-            <div className="relative w-full">
-              <input
-                type="text"
-                placeholder="Search News by Keyword"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full py-4 text-base bg-white border border-gray-300 rounded focus:outline-none focus:border-gray-400 transition-all placeholder:text-gray-400 text-gray-700"
-                style={{ paddingLeft: '14px', paddingRight: '50px' }}
-                aria-label="Search news articles"
-              />
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="flex items-center gap-4">
+            <div className="relative flex-1">
               <div
                 className="absolute pointer-events-none flex items-center justify-center"
                 style={{
-                  right: '16px',
+                  left: '16px',
                   top: '50%',
                   transform: 'translateY(-50%)',
                   zIndex: 10
                 }}
               >
-                <SearchIcon className="text-gray-500" style={{ width: '22px', height: '22px', display: 'block' }} />
+                <SearchIcon className="text-gray-400" style={{ width: '20px', height: '20px', display: 'block' }} />
               </div>
+              <input
+                type="text"
+                placeholder="Search News by Keyword..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full py-3 text-base bg-white border border-gray-300 focus:outline-none focus:border-gray-400 transition-all placeholder:text-gray-400 text-gray-700"
+                style={{ paddingLeft: '48px', paddingRight: '16px' }}
+                aria-label="Search news articles"
+              />
             </div>
+            <button
+              onClick={() => {/* Search functionality */}}
+              className="px-8 py-3 font-bold text-white transition-colors"
+              style={{
+                backgroundColor: '#012169',
+                fontSize: '14px',
+                letterSpacing: '0.05em',
+                whiteSpace: 'nowrap'
+              }}
+            >
+              SEARCH
+            </button>
           </div>
         </div>
       </section>
 
       {/* News List Section */}
       <section className="py-16 px-6 bg-white">
-        <div className="max-w-[1376px] mx-auto">
-          <h2 className="text-3xl font-bold font-garamond text-black mb-10 pb-4 border-b-2 border-black/90">
-            Latest News and Headlines
-          </h2>
+        <div className="max-w-[1200px] mx-auto">
+          {/* Heading with underline */}
+          <div className="mb-10">
+            <h2 className="font-garamond font-bold" style={{
+              fontSize: '38px',
+              color: '#012169',
+              lineHeight: '1.2',
+              marginBottom: '12px'
+            }}>
+              Latest News and Headlines
+            </h2>
+            <div style={{
+              width: '100%',
+              height: '3px',
+              backgroundColor: '#012169'
+            }}></div>
+          </div>
 
-          <div className="flex flex-col">
+          {/* Cards Grid */}
+          <div>
             {visibleNews.length > 0 ? (
               <>
-                {visibleNews.map((item) => (
-                    <NewsArticleRow key={item.id} item={item} />
-                ))}
+                <div className="grid grid-cols-1 mb-8" style={{ gap: '24px' }}>
+                  {visibleNews.map((item) => (
+                      <NewsArticleCard key={item.id} item={item} />
+                  ))}
+                </div>
 
                 {/* Pagination Controls */}
                 {visibleNews.length < totalArticles && (
-                  <div className="mt-8 pt-8 border-t border-neutral-lightGray flex items-center justify-between">
+                  <div className="mt-16 flex flex-col items-center" style={{ gap: '20px' }}>
+                      <p style={{
+                        fontSize: '14px',
+                        color: '#888888',
+                        fontWeight: 400
+                      }}>
+                          Showing {visibleNews.length} from {totalArticles}
+                      </p>
                       <button
                           onClick={handleLoadMore}
-                          className="inline-flex items-center gap-2 text-base font-bold text-primary-navy hover:text-secondary-teal transition-colors"
+                          className="font-bold transition-all hover:bg-primary-navy hover:text-white hover:border-primary-navy"
+                          style={{
+                            padding: '14px 40px',
+                            border: '2px solid #012169',
+                            backgroundColor: 'transparent',
+                            color: '#012169',
+                            fontSize: '13px',
+                            fontWeight: 700,
+                            letterSpacing: '0.1em'
+                          }}
                       >
-                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" strokeWidth="2"/>
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v8m-4-4h8"/>
-                          </svg>
-                          Load More
+                          LOAD MORE+
                       </button>
-                      <p className="text-sm text-neutral-500">
-                          Showing {visibleNews.length}-{Math.min(visibleNews.length, totalArticles)} of {totalArticles}
-                      </p>
                   </div>
                 )}
               </>
