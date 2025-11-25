@@ -29,6 +29,89 @@ const newsItems: NewsItem[] = [
   }))
 ];
 
+// --- News Article Row Component ---
+const NewsArticleRow: React.FC<{ item: NewsItem }> = ({ item }) => {
+  const [isHovered, setIsHovered] = React.useState(false);
+
+  return (
+    <a
+      href={item.link}
+      onClick={(e) => {
+        if (item.link.startsWith('#')) {
+            e.preventDefault();
+            window.location.hash = item.link;
+        }
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="group relative block border-b border-neutral-lightGray overflow-hidden transition-colors hover:bg-neutral-50 flex items-center"
+      style={{
+        height: '120px',
+        minHeight: '120px',
+        maxHeight: '120px',
+        boxSizing: 'border-box'
+      }}
+    >
+       {/* Green Triangle Slide Animation - Matches entire website exactly */}
+       <div
+           style={{
+               position: 'absolute',
+               top: '0',
+               right: isHovered ? '0' : '-96px',
+               width: '96px',
+               height: '96px',
+               minWidth: '96px',
+               minHeight: '96px',
+               maxWidth: '96px',
+               maxHeight: '96px',
+               background: '#3FBB94',
+               clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
+               transition: 'right 300ms cubic-bezier(0.4, 0, 0.2, 1)',
+               zIndex: 10,
+               pointerEvents: 'none',
+               boxSizing: 'border-box',
+               flexShrink: 0
+           }}
+       >
+           {/* Arrow Icon inside triangle */}
+           <svg
+               xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewBox="0 0 24 24"
+               strokeWidth={3}
+               stroke="white"
+               style={{
+                   width: '22.4px',
+                   height: '22.4px',
+                   minWidth: '22.4px',
+                   minHeight: '22.4px',
+                   position: 'absolute',
+                   top: '20.8px',
+                   right: '20.8px',
+                   flexShrink: 0
+               }}
+           >
+               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+           </svg>
+       </div>
+
+       {/* Content */}
+       <div className="relative z-0 px-4 md:px-6 flex items-start flex-col justify-center w-full" style={{ paddingRight: '96px' }}>
+         <h3 className="text-xl md:text-2xl font-bold text-black mb-2 group-hover:text-primary-navy transition-colors font-garamond leading-tight">
+           {item.title}
+         </h3>
+         <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-neutral-400">
+            <span className="text-neutral-500 italic">{item.source}</span>
+            <span>/</span>
+            <span className="text-primary-navy">{item.category}</span>
+            <span>/</span>
+            <span>{item.date}</span>
+         </div>
+       </div>
+    </a>
+  );
+};
+
 const NewsPage: React.FC = () => {
   useMeta({
     title: 'Trade Law News & Insights | CBP Audits, Export Controls, ITAR | California',
@@ -125,15 +208,7 @@ const NewsPage: React.FC = () => {
             </p>
 
             {/* Teal Accent Bar */}
-            <div className="w-24 h-1 bg-secondary-teal mt-6 mb-8"></div>
-
-            <div
-              className="border-l-4 border-secondary-teal pl-6"
-            >
-              <p className="text-sm font-bold uppercase tracking-widest mb-2" style={{ color: 'rgba(255, 255, 255, 0.8)', textShadow: '0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6), 0 0 40px rgba(1, 33, 105, 0.5)' }}>Media Contact</p>
-              <p className="text-base font-semibold" style={{ color: '#ffffff', textShadow: '0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6), 0 0 40px rgba(1, 33, 105, 0.5)' }}>Anatolii Trembach, Esq.</p>
-              <p className="text-base" style={{ color: 'rgba(255, 255, 255, 0.9)', textShadow: '0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6), 0 0 40px rgba(1, 33, 105, 0.5)' }}>631-746-8290 | media@trembachlaw.com</p>
-            </div>
+            <div className="w-24 h-1 bg-secondary-teal mt-6"></div>
           </div>
         </div>
       </section>
@@ -194,58 +269,27 @@ const NewsPage: React.FC = () => {
             {visibleNews.length > 0 ? (
               <>
                 {visibleNews.map((item) => (
-                  <a
-                    key={item.id}
-                    href={item.link}
-                    onClick={(e) => {
-                      if (item.link.startsWith('#')) {
-                          e.preventDefault();
-                          window.location.hash = item.link;
-                      }
-                    }}
-                    className="group relative block py-6 border-b border-neutral-lightGray overflow-hidden transition-colors hover:bg-neutral-50"
-                  >
-                     {/* Green Triangle Slide Animation - Clean approach */}
-                     <div
-                         className="absolute top-0 right-0 w-20 h-20 bg-secondary-teal transition-all duration-300 ease-in-out transform translate-x-20 group-hover:translate-x-0 z-10"
-                         style={{ clipPath: 'polygon(100% 0, 0 0, 100% 100%)' }}
-                     >
-                         {/* Arrow Icon inside triangle */}
-                         <div className="absolute top-3 right-3 text-white">
-                             <ArrowRightIcon className="h-5 w-5" />
-                         </div>
-                     </div>
-
-                     {/* Content */}
-                     <div className="relative z-0 px-4 md:px-6">
-                       <h3 className="text-xl md:text-2xl font-bold text-black mb-2 group-hover:text-primary-navy transition-colors font-garamond leading-tight max-w-4xl">
-                         {item.title}
-                       </h3>
-                       <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-neutral-400">
-                          <span className="text-primary-navy">{item.source}</span>
-                          <span className="w-1 h-1 rounded-full bg-neutral-300"></span>
-                          <span>{item.category}</span>
-                          <span className="w-1 h-1 rounded-full bg-neutral-300"></span>
-                          <span>{item.date}</span>
-                       </div>
-                     </div>
-                  </a>
+                    <NewsArticleRow key={item.id} item={item} />
                 ))}
 
                 {/* Pagination Controls */}
-                <div className="mt-16 text-center border-t border-neutral-lightGray pt-12">
-                    <p className="text-neutral-500 font-medium mb-6">
-                        Showing {visibleNews.length} from {totalArticles} articles
-                    </p>
-                    {visibleNews.length < totalArticles && (
-                        <button 
-                            onClick={handleLoadMore}
-                            className="inline-flex items-center gap-2 px-8 py-3 font-roboto font-bold uppercase tracking-wider text-sm border-2 border-primary-navy text-primary-navy hover:bg-primary-navy hover:text-white transition-colors duration-300 rounded-sm"
-                        >
-                            Load More +
-                        </button>
-                    )}
-                </div>
+                {visibleNews.length < totalArticles && (
+                  <div className="mt-8 pt-8 border-t border-neutral-lightGray flex items-center justify-between">
+                      <button
+                          onClick={handleLoadMore}
+                          className="inline-flex items-center gap-2 text-base font-bold text-primary-navy hover:text-secondary-teal transition-colors"
+                      >
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v8m-4-4h8"/>
+                          </svg>
+                          Load More
+                      </button>
+                      <p className="text-sm text-neutral-500">
+                          Showing {visibleNews.length}-{Math.min(visibleNews.length, totalArticles)} of {totalArticles}
+                      </p>
+                  </div>
+                )}
               </>
             ) : (
               <p className="text-xl text-neutral-500 italic py-10">No articles found matching your search.</p>
