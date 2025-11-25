@@ -302,20 +302,16 @@ const CareersPage: React.FC = () => {
             {/* Job Opportunities Section */}
             <section className="py-16 px-6 bg-white">
                 <div className="max-w-[1000px] mx-auto">
-                    <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4 border-b border-neutral-lightGray pb-6">
-                        <div>
-                            <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-3">
-                                Current Openings
-                            </h2>
-                            <p className="text-lg text-text-secondary">
-                                We welcome applications from talented professionals passionate about trade law. Click each position below for details.
-                            </p>
-                        </div>
-                    </div>
+                    <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-3">
+                        Current Openings
+                    </h2>
+                    <p className="text-lg text-text-secondary mb-8">
+                        We welcome applications from talented professionals passionate about trade law. Click each position below for details.
+                    </p>
 
                     <div className="flex flex-col">
                         {jobCategories.map((job) => (
-                            <JobCategoryAccordion 
+                            <JobCategoryAccordion
                                 key={job.id}
                                 {...job}
                                 isOpen={openCategory === job.id}
