@@ -415,7 +415,7 @@ const UsefulLinksPage: React.FC = () => {
               placeholder="Search News by Keyword"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full py-5 pl-6 pr-16 text-lg bg-white border-0 border-b-2 border-neutral-300 focus:outline-none focus:border-primary-navy transition-all placeholder:text-neutral-400 text-primary-navy"
+              className="w-full py-5 pl-6 pr-16 text-lg bg-white border border-neutral-300 focus:outline-none focus:border-primary-navy transition-all placeholder:text-neutral-400 text-primary-navy"
               aria-label="Search resources"
             />
             <SearchIcon className="absolute right-5 top-1/2 transform -translate-y-1/2 h-6 w-6 text-neutral-400 pointer-events-none z-10" />
