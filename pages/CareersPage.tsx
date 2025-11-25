@@ -19,7 +19,7 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
         <div className="border-b border-neutral-lightGray">
             <button
                 onClick={onToggle}
-                className="w-full py-5 flex justify-between items-center text-left group focus:outline-none"
+                className="w-full py-4 flex justify-between items-center text-left group focus:outline-none"
                 aria-expanded={isOpen}
             >
                 <h3 className={`text-xl font-garamond font-bold transition-colors duration-300 ${isOpen ? 'text-secondary-teal' : 'text-primary-navy group-hover:text-primary-midBlue'}`}>
@@ -30,7 +30,7 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
                 </div>
             </button>
             <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100 pb-5' : 'max-h-0 opacity-0'}`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}
             >
                 <p className="text-base text-text-secondary mb-4 leading-relaxed">
                     {description}
@@ -234,26 +234,26 @@ const CareersPage: React.FC = () => {
                     <div className="grid md:grid-cols-3 gap-6">
                         <div>
                             <h3 className="text-lg font-bold text-primary-navy mb-3">Health &amp; Wellness</h3>
-                            <ul className="space-y-2 text-text-secondary text-sm">
-                                <li>• Medical, dental, vision insurance</li>
-                                <li>• Life and disability coverage</li>
-                                <li>• Mental health support</li>
+                            <ul className="list-disc list-inside space-y-2 text-text-secondary text-sm">
+                                <li>Medical, dental, vision insurance</li>
+                                <li>Life and disability coverage</li>
+                                <li>Mental health support</li>
                             </ul>
                         </div>
                         <div>
                             <h3 className="text-lg font-bold text-primary-navy mb-3">Financial</h3>
-                            <ul className="space-y-2 text-text-secondary text-sm">
-                                <li>• Competitive salary</li>
-                                <li>• 401(k) with firm matching</li>
-                                <li>• Performance bonuses</li>
+                            <ul className="list-disc list-inside space-y-2 text-text-secondary text-sm">
+                                <li>Competitive salary</li>
+                                <li>401(k) with firm matching</li>
+                                <li>Performance bonuses</li>
                             </ul>
                         </div>
                         <div>
                             <h3 className="text-lg font-bold text-primary-navy mb-3">Professional Development</h3>
-                            <ul className="space-y-2 text-text-secondary text-sm">
-                                <li>• CLE budget and bar dues</li>
-                                <li>• Conference attendance</li>
-                                <li>• Publication opportunities</li>
+                            <ul className="list-disc list-inside space-y-2 text-text-secondary text-sm">
+                                <li>CLE budget and bar dues</li>
+                                <li>Conference attendance</li>
+                                <li>Publication opportunities</li>
                             </ul>
                         </div>
                     </div>
@@ -267,14 +267,14 @@ const CareersPage: React.FC = () => {
 
             {/* Application Process Section */}
             <section className="py-16 px-6 bg-neutral-50">
-                <div className="max-w-[800px] mx-auto">
+                <div className="max-w-[1000px] mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-8">
                         How to Apply
                     </h2>
                     <div className="space-y-6 text-text-secondary">
                         <div>
-                            <h3 className="text-lg font-bold text-primary-navy mb-2">Required Materials</h3>
-                            <ul className="list-disc list-inside space-y-1">
+                            <h3 className="text-lg font-bold text-primary-navy mb-3">Required Materials</h3>
+                            <ul className="list-disc list-inside space-y-2">
                                 <li>Cover letter explaining your interest in trade law</li>
                                 <li>Resume or CV</li>
                                 <li>Writing sample (5-10 pages, legal analysis preferred)</li>
@@ -282,8 +282,8 @@ const CareersPage: React.FC = () => {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="text-lg font-bold text-primary-navy mb-2">Application Timeline</h3>
-                            <ul className="list-disc list-inside space-y-1">
+                            <h3 className="text-lg font-bold text-primary-navy mb-3">Application Timeline</h3>
+                            <ul className="list-disc list-inside space-y-2">
                                 <li>Application review: 1-2 weeks</li>
                                 <li>Initial interview: 30-60 minutes</li>
                                 <li>Final interview: Meet team, office tour</li>
