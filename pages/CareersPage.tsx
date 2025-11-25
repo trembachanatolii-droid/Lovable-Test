@@ -21,8 +21,8 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
                 onClick={onToggle}
                 className="w-full flex justify-between items-center text-left group focus:outline-none"
                 style={{
-                    paddingTop: '16px',
-                    paddingBottom: '16px',
+                    paddingTop: '20px',
+                    paddingBottom: '20px',
                     paddingLeft: '0',
                     paddingRight: '0'
                 }}
