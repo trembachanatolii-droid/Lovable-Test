@@ -47,6 +47,7 @@ const Footer: React.FC = () => {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
+                                aria-label="Email address for newsletter subscription"
                                 className="bg-primary-darkBlue text-white placeholder-neutral-gray px-4 py-3 flex-grow focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm"
                                 style={{ minHeight: '48px' }}
                             />
