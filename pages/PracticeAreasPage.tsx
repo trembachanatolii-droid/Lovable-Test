@@ -271,7 +271,7 @@ const PracticeAccordionItem: React.FC<{
       {/* Content Dropdown Animation */}
       <div
         className={`grid transition-all duration-300 ease-in-out ${
-          isOpen ? 'grid-rows-[1fr] opacity-100 mt-2 mb-2' : 'grid-rows-[0fr] opacity-0'
+          isOpen ? 'grid-rows-[1fr] opacity-100 mt-1 mb-1' : 'grid-rows-[0fr] opacity-0'
         }`}
       >
         <div className="overflow-hidden">
@@ -464,7 +464,7 @@ const PracticeAreasPage: React.FC = () => {
                 </h2>
               </div>
 
-              <div className="flex flex-col space-y-2">
+              <div className="flex flex-col space-y-1">
                 {category.items.map((item, itemIndex) => {
                   const uniqueKey = `${catIndex}-${itemIndex}`;
                   return (
