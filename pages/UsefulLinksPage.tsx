@@ -413,16 +413,19 @@ const UsefulLinksPage: React.FC = () => {
             <div className="relative">
               <input
                 type="text"
-                placeholder="Search News by Keyword"
+                placeholder="Search Resources by Keyword"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full py-4 px-6 text-base bg-white border border-gray-300 rounded focus:outline-none focus:border-gray-400 transition-all placeholder:text-gray-400 text-gray-700"
-                style={{ paddingRight: '3.5rem' }}
+                className="w-full py-4 pl-6 pr-14 text-base bg-white border border-gray-300 rounded focus:outline-none focus:border-gray-400 transition-all placeholder:text-gray-400 text-gray-700"
                 aria-label="Search resources"
               />
-              <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
+              <button
+                type="button"
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-1 hover:opacity-70 transition-opacity"
+                aria-label="Search"
+              >
                 <SearchIcon className="h-6 w-6 text-gray-400" />
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -431,13 +434,6 @@ const UsefulLinksPage: React.FC = () => {
       {/* Main Content - Links List */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1376px] mx-auto">
-          {/* Disclaimer */}
-          <div className="mb-16 p-6 bg-blue-50 rounded-xl border-l-4 border-primary-midBlue max-w-4xl">
-              <p className="text-sm text-primary-navy/80 leading-relaxed">
-                  <strong>Note:</strong> These links are provided as a courtesy for informational purposes only. Trembach Law Firm does not control external websites and is not responsible for their content. Always verify regulations with official government sources.
-              </p>
-          </div>
-
           {filteredCategories && filteredCategories.length > 0 ? (
             <div className="space-y-16">
               {filteredCategories.map((category, idx) => (
@@ -495,6 +491,17 @@ const UsefulLinksPage: React.FC = () => {
                 </button>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-[1376px] mx-auto">
+          <div className="p-6 bg-blue-50 rounded-xl border-l-4 border-primary-midBlue max-w-4xl mx-auto">
+            <p className="text-sm text-primary-navy/80 leading-relaxed">
+              <strong>Note:</strong> These links are provided as a courtesy for informational purposes only. Trembach Law Firm does not control external websites and is not responsible for their content. Always verify regulations with official government sources.
+            </p>
+          </div>
         </div>
       </section>
 
