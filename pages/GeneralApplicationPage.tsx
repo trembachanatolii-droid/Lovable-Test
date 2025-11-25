@@ -11,9 +11,8 @@ const GeneralApplicationPage: React.FC = () => {
     const [activeCategory, setActiveCategory] = useState<Category>('attorney');
 
     useMeta({
-        title: 'Apply Now - International Trade Law Careers | Trembach Law Firm',
+        title: 'Apply Now - CA Trade Law Careers | Trembach Law Firm',
         description: 'Apply for attorney, paralegal, or compliance specialist positions at Trembach Law Firm. Submit your application to join our California international trade law team working on CBP investigations, UFLPA cases, and Court of International Trade litigation.',
-        keywords: 'apply international trade attorney job, customs law career application, trade compliance job application, paralegal job application California, law clerk application, international trade law firm careers, submit resume customs attorney',
         canonical: 'careers/apply',
         ogType: 'website',
         ogImage: `${siteConfig.siteUrl}/og-image-careers.jpg`,

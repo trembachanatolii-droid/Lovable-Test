@@ -540,9 +540,8 @@ const GlossaryPage: React.FC = () => {
   const allTerms = glossaryTerms.flatMap(cat => cat.terms);
 
   useMeta({
-    title: 'International Trade Law Glossary | California Customs Law Terms & Definitions',
+    title: 'CA Trade Law Glossary | Customs Terms & Definitions',
     description: 'Comprehensive international trade law glossary: 110+ customs terms, import/export regulations, tariff classifications, and trade compliance definitions. Essential reference for California importers, exporters, and trade professionals.',
-    keywords: 'international trade law glossary, customs law terms California, import export definitions, trade law dictionary, HTS classification terms, customs terminology California, CBP definitions, international trade definitions California, trade compliance glossary',
     canonical: 'trade-law-glossary',
     schema: [
       generateWebPageSchema({

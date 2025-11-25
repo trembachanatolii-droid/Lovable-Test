@@ -7,9 +7,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 
 const SuccessStoriesPage: React.FC = () => {
   useMeta({
-    title: 'Success Stories: California International Trade Law Results | Client Victories',
+    title: 'CA Trade Law Success Stories | Client Results & Victories',
     description: '$100M+ duties saved. Real case studies: 92% penalty reduction, 28-day UFLPA release, $3.7M CIT refund. Proven results in CBP defense for California importers.',
-    keywords: 'California customs attorney results, trade law case studies California, CBP defense victories, customs penalty mitigation results, UFLPA detention release success, import compliance program results California, trade attorney case studies, customs litigation victories California',
     canonical: 'success-stories',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-success.jpg`,

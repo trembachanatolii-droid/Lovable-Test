@@ -4,9 +4,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 
 const Section301TariffsGuidePage: React.FC = () => {
   useMeta({
-    title: 'Section 301 Tariffs Guide 2025 | China Trade War Duties & Mitigation Strategies',
+    title: 'Section 301 Tariffs CA | China Trade Duties & Mitigation',
     description: 'Complete Section 301 tariffs guide for California importers: Lists 1-4 coverage, exclusion strategies, HTS classification optimization, first sale valuation, supply chain restructuring, tariff engineering. Expert China trade compliance from international trade attorneys. $370B+ goods affected.',
-    keywords: 'Section 301 tariffs, China tariffs 2025, Section 301 exclusions, China trade war duties, tariff mitigation strategies, first sale valuation, tariff engineering, supply chain diversification, HTS classification optimization, Section 301 Lists',
     canonical: 'resources/section-301-tariffs-guide',
     ogType: 'article',
     schema: [

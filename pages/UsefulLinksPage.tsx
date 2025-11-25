@@ -321,9 +321,8 @@ const LinkRow: React.FC<{ link: LinkItem }> = ({ link }) => {
 // --- Main Page Component ---
 const UsefulLinksPage: React.FC = () => {
   useMeta({
-    title: 'Trade Law Resources & Tools | CBP, ITAR, OFAC, HTS - California Attorney Directory',
+    title: 'CA Trade Law Resources | CBP, ITAR, OFAC, HTS Tools Directory',
     description: 'Trade law resources directory: CBP rulings, ITAR/OFAC tools, HTS classification, USMCA forms, export controls. Curated by California customs attorneys.',
-    keywords: 'international trade law resources California, CBP rulings database, customs regulations California, ITAR regulations resources, OFAC sanctions list, export controls tools California, HTS tariff classification database, USMCA resources California, EAR compliance tools, trade compliance resources, customs broker resources, import export regulations California, Court of International Trade resources, antidumping resources, countervailing duty tools, Section 301 tariffs resources, foreign trade zones resources California, C-TPAT resources, trade remedies research tools, customs valuation resources',
     canonical: 'useful-links',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-links.jpg`,
