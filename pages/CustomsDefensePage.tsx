@@ -8,9 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const CustomsDefensePage: React.FC = () => {
   useMeta({
-    title: 'Customs Defense Attorney California | CBP Investigation Defense | Penalty Mitigation',
-    description: 'Expert customs defense attorney California for CBP investigation defense, customs audits, penalty mitigation, seizures, import detention release, customs litigation, fraud defense, False Claims Act, whistleblower cases, and export violations. Aggressive representation against government enforcement. Call 631-746-8290.',
-    keywords: 'customs audits California, CBP investigation defense California, CBP penalty mitigation California, customs seizures California, import detention release California, California customs litigation, customs fraud defense California, False Claims Act customs California, whistleblower trade cases California, export violations defense California',
+    title: 'Customs Defense Attorney CA & USA | CBP Investigation Defense',
+    description: 'Expert customs defense attorney for California & USA. CBP investigation defense, customs audits, penalty mitigation, seizures, import detention release, customs litigation, fraud defense, False Claims Act, whistleblower cases & export violations defense. Call 631-746-8290.',
     canonical: 'customs-defense-litigation',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-customs-defense.jpg`,
@@ -59,10 +58,10 @@ const CustomsDefensePage: React.FC = () => {
         <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-none drop-shadow-lg">
-              Customs Defense & CBP Investigation Attorney California
+              Customs Defense Attorney California & USA | CBP Investigation Defense
             </h1>
             <p className="text-xl md:text-2xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
-              Aggressive defense against CBP investigations, customs audits, penalties, seizures, and government enforcement actions. Protecting California businesses when stakes are highest.
+              Expert customs audits defense, CBP penalty mitigation, customs seizures, import detention release & customs litigation. Aggressive defense against False Claims Act, whistleblower trade cases & export violations. Protecting California & USA businesses when stakes are highest.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
               <Button href="#contact" variant="solid">

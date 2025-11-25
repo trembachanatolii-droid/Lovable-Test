@@ -8,9 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const ExportControlsPage: React.FC = () => {
   useMeta({
-    title: 'Export Controls California Lawyer | ITAR EAR OFAC Compliance | Trade Sanctions Attorney',
-    description: 'Expert export controls California lawyer for ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export regulations, dual use items, deemed exports, and restricted party screening. Defend your business against BIS and DDTC enforcement. Call 631-746-8290.',
-    keywords: 'export controls California lawyer, trade sanctions lawyer California, ITAR compliance California, EAR compliance California, OFAC sanctions compliance California, export licensing California, technology export controls California, encryption export regulations California, dual use items compliance California, deemed exports California, restricted party screening California',
+    title: 'Export Controls Lawyer CA & USA | ITAR EAR OFAC | Trade Sanctions',
+    description: 'Export controls lawyer for California & USA. Trade sanctions attorney for ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export, dual use items, deemed exports & restricted party screening. Call 631-746-8290.',
     canonical: 'export-controls-sanctions',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-export-controls.jpg`,
@@ -59,10 +58,10 @@ const ExportControlsPage: React.FC = () => {
         <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-none drop-shadow-lg">
-              Export Controls & Sanctions Compliance California
+              Export Controls Lawyer California & USA | Trade Sanctions Attorney
             </h1>
             <p className="text-xl md:text-2xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
-              Expert ITAR, EAR, and OFAC compliance for California tech companies, defense contractors, and manufacturers. Navigate export licensing, encryption controls, and sanctions restrictions with confidence.
+              ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export regulations, dual use items compliance, deemed exports & restricted party screening. Expert guidance for California & USA tech companies, defense contractors & manufacturers.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
               <Button href="#contact" variant="solid">
