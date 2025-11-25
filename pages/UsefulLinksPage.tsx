@@ -224,9 +224,19 @@ const resourcesData: LinkCategory[] = [
 
 // --- Link Row Component ---
 const LinkRow: React.FC<{ link: LinkItem }> = ({ link }) => {
+    const [isHovered, setIsHovered] = React.useState(false);
+
     if (link.note) {
         return (
-            <div className="py-4 border-b border-neutral-lightGray px-4 md:px-6 bg-neutral-50/50 h-full">
+            <div
+                className="border-b border-neutral-lightGray px-4 md:px-6 bg-neutral-50/50 flex items-center"
+                style={{
+                    height: '120px',
+                    minHeight: '120px',
+                    maxHeight: '120px',
+                    boxSizing: 'border-box'
+                }}
+            >
                 <div className="flex items-start gap-2 text-sm text-text-secondary italic">
                     <span className="text-secondary-teal mt-0.5 font-bold">•</span>
                     <span>{link.label}</span>
@@ -240,22 +250,62 @@ const LinkRow: React.FC<{ link: LinkItem }> = ({ link }) => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative block py-4 border-b border-neutral-lightGray overflow-hidden transition-colors hover:bg-neutral-50 h-full"
+            className="group relative block border-b border-neutral-lightGray overflow-hidden transition-colors hover:bg-neutral-50 flex items-center"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            style={{
+                height: '120px',
+                minHeight: '120px',
+                maxHeight: '120px',
+                boxSizing: 'border-box'
+            }}
         >
-            {/* Green Triangle Slide Animation - Clean approach */}
+            {/* Green Triangle Slide Animation - Matches Practice Areas exactly */}
             <div
-                className="absolute top-0 right-0 w-20 h-20 bg-secondary-teal transition-all duration-300 ease-in-out transform translate-x-20 group-hover:translate-x-0 z-10"
-                style={{ clipPath: 'polygon(100% 0, 0 0, 100% 100%)' }}
+                style={{
+                    position: 'absolute',
+                    top: '0',
+                    right: isHovered ? '0' : '-96px',
+                    width: '96px',
+                    height: '96px',
+                    minWidth: '96px',
+                    minHeight: '96px',
+                    maxWidth: '96px',
+                    maxHeight: '96px',
+                    background: '#3FBB94',
+                    clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
+                    transition: 'right 300ms cubic-bezier(0.4, 0, 0.2, 1)',
+                    zIndex: 10,
+                    pointerEvents: 'none',
+                    boxSizing: 'border-box',
+                    flexShrink: 0
+                }}
             >
                 {/* Arrow Icon inside triangle */}
-                <div className="absolute top-3 right-3 text-white">
-                    <ArrowRightIcon className="h-5 w-5" />
-                </div>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={3}
+                    stroke="white"
+                    style={{
+                        width: '22.4px',
+                        height: '22.4px',
+                        minWidth: '22.4px',
+                        minHeight: '22.4px',
+                        position: 'absolute',
+                        top: '20.8px',
+                        right: '20.8px',
+                        flexShrink: 0
+                    }}
+                >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
             </div>
 
             {/* Content */}
-            <div className="relative z-0 px-4 md:px-6 flex items-center justify-between h-full">
-                <div>
+            <div className="relative z-0 px-4 md:px-6 flex items-center justify-between w-full">
+                <div style={{ paddingRight: '96px' }}>
                     <h3 className="text-lg md:text-xl font-bold text-primary-navy mb-0.5 group-hover:text-primary-darkBlue transition-colors font-garamond">
                         {link.label}
                     </h3>
@@ -360,13 +410,22 @@ const UsefulLinksPage: React.FC = () => {
       <section className="py-12 px-6 bg-white border-b border-neutral-lightGray sticky top-20 z-30 shadow-sm">
         <div className="max-w-[1376px] mx-auto">
           <div className="relative max-w-2xl mx-auto">
-            <SearchIcon className="absolute left-5 top-1/2 transform -translate-y-1/2 h-5 w-5 text-neutral-400 pointer-events-none z-10" />
+            <div className="absolute left-6 top-1/2 transform -translate-y-1/2 pointer-events-none z-10">
+              <SearchIcon className="h-5 w-5 text-neutral-400" />
+            </div>
             <input
               type="text"
               placeholder="Filter resources by keyword..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full py-4 pl-14 pr-6 text-base bg-white border-2 border-neutral-300 rounded-full focus:outline-none focus:border-primary-navy focus:ring-2 focus:ring-primary-navy/20 transition-all placeholder:text-neutral-400 text-primary-navy shadow-sm"
+              className="w-full text-base bg-white border-2 border-neutral-300 rounded-full focus:outline-none focus:border-primary-navy focus:ring-2 focus:ring-primary-navy/20 transition-all placeholder:text-neutral-400 text-primary-navy shadow-sm"
+              style={{
+                paddingTop: '16px',
+                paddingBottom: '16px',
+                paddingLeft: '56px',
+                paddingRight: '24px',
+                boxSizing: 'border-box'
+              }}
               aria-label="Search resources"
             />
           </div>
@@ -399,9 +458,9 @@ const UsefulLinksPage: React.FC = () => {
 
                    {/* Links Container */}
                    <div className="border-t border-neutral-lightGray">
-                       {/* Direct Links - Grid Layout */}
+                       {/* Direct Links - Grid Layout with 3 columns */}
                        {category.links && category.links.length > 0 && (
-                           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
+                           <div className="grid grid-cols-1 md:grid-cols-3">
                                {category.links.map((link, linkIdx) => (
                                    <LinkRow key={`link-${linkIdx}`} link={link} />
                                ))}
@@ -417,8 +476,8 @@ const UsefulLinksPage: React.FC = () => {
                                        {sub.title}
                                    </h3>
                                </div>
-                               {/* Subsection Links - Grid Layout */}
-                               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
+                               {/* Subsection Links - Grid Layout with 3 columns */}
+                               <div className="grid grid-cols-1 md:grid-cols-3">
                                    {sub.links.map((subLink, subLinkIdx) => (
                                        <LinkRow key={`sublink-${subLinkIdx}`} link={subLink} />
                                    ))}
