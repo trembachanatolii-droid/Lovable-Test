@@ -68,9 +68,9 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
 
   return (
     <>
-      <article className="bg-white min-h-screen pt-32 pb-20">
+      <article className="bg-white min-h-screen pt-40 pb-20">
         {/* Back Navigation */}
-        <div className="max-w-[800px] mx-auto px-6 mb-16">
+        <div className="max-w-[800px] mx-auto px-6 mb-12">
           <a
             href="#news"
             className="group inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider transition-colors duration-300"
@@ -232,7 +232,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
         </div>
 
         {/* Footer / Disclaimer */}
-        <div className="max-w-[800px] mx-auto px-6 mt-20 mb-32">
+        <div className="max-w-[800px] mx-auto px-6 mt-20 mb-16">
           <div className="p-6 rounded-sm" style={{
             backgroundColor: '#F9FAFB',
             borderLeft: '4px solid #E5E7EB'
@@ -243,6 +243,9 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
           </div>
         </div>
       </article>
+
+      {/* White space separator between article and form */}
+      <div className="bg-white py-16"></div>
 
       {/* Evaluation CTA */}
       <EvaluationForm theme="light" />
