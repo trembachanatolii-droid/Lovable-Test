@@ -483,31 +483,43 @@ const PracticeAreasPage: React.FC = () => {
       </section>
 
       {/* Search Section */}
-      <section className="py-12 px-6 bg-gray-50 sticky top-20 z-30">
-        <div className="max-w-[1376px] mx-auto">
-          <div className="bg-white rounded-lg shadow-md p-8 max-w-5xl mx-auto">
-            <div className="relative w-full">
-              <input
-                type="text"
-                placeholder="Search Practice Areas by Keyword"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full py-4 text-base bg-white border border-gray-300 rounded focus:outline-none focus:border-gray-400 transition-all placeholder:text-gray-400 text-gray-700"
-                style={{ paddingLeft: '14px', paddingRight: '50px' }}
-                aria-label="Search practice areas"
-              />
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="flex items-center gap-4">
+            <div className="relative flex-1">
               <div
                 className="absolute pointer-events-none flex items-center justify-center"
                 style={{
-                  right: '16px',
+                  left: '16px',
                   top: '50%',
                   transform: 'translateY(-50%)',
                   zIndex: 10
                 }}
               >
-                <SearchIcon className="text-gray-500" style={{ width: '22px', height: '22px', display: 'block' }} />
+                <SearchIcon className="text-gray-400" style={{ width: '20px', height: '20px', display: 'block' }} />
               </div>
+              <input
+                type="text"
+                placeholder="Search Practice Areas by Keyword..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full py-3 text-base bg-white border border-gray-300 focus:outline-none focus:border-gray-400 transition-all placeholder:text-gray-400 text-gray-700"
+                style={{ paddingLeft: '48px', paddingRight: '16px' }}
+                aria-label="Search practice areas"
+              />
             </div>
+            <button
+              onClick={() => {/* Search functionality */}}
+              className="px-8 py-3 font-bold text-white transition-colors"
+              style={{
+                backgroundColor: '#012169',
+                fontSize: '14px',
+                letterSpacing: '0.05em',
+                whiteSpace: 'nowrap'
+              }}
+            >
+              SEARCH
+            </button>
           </div>
         </div>
       </section>
