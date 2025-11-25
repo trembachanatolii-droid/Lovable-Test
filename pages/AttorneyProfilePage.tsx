@@ -13,8 +13,8 @@ const AttorneyProfilePage: React.FC = () => {
 
   // SEO Meta Tags and Person Schema
   useMeta({
-    title: 'Anatolii Trembach | CA Trade & Customs Attorney',
-    description: 'Anatolii Trembach - California trade attorney. Former SBU intelligence officer, USC Law LL.M. Specializes in CBP defense, customs audits, export controls for CA businesses.',
+    title: 'Anatolii Trembach | CA International Trade & Customs Attorney',
+    description: 'Anatolii Trembach - California international trade attorney & customs lawyer. USC Law LL.M. Former law enforcement. Expert in CBP investigation defense, customs audits, trade compliance, export controls (ITAR/EAR) & import law for CA/USA businesses.',
     canonical: '#attorney-profile',
     ogType: 'profile',
     ogImage: `${siteConfig.siteUrl}/og-image-attorney.jpg`,
