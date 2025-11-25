@@ -5,7 +5,7 @@ import { SearchIcon } from '../components/icons/SearchIcon';
 import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
-import { generateBreadcrumbSchema, generateServiceSchema } from '../utils/seo';
+import { generateBreadcrumbSchema, generateServiceSchema, generateFAQSchema } from '../utils/seo';
 
 // --- Data Structure for Content ---
 const practiceData = [
@@ -319,8 +319,8 @@ const PracticeAccordionItem: React.FC<{
 
 const PracticeAreasPage: React.FC = () => {
   useMeta({
-    title: 'CA Trade Law | Customs Defense & Export Compliance',
-    description: 'Complete CA trade law services: customs audit defense, CBP investigations, ITAR/EAR compliance, trade litigation, maritime law. Expert statewide representation.',
+    title: 'CA Trade Law Services | Customs Defense & Export Compliance',
+    description: 'California trade law: customs defense, CBP investigations, ITAR/EAR compliance, trade finance, drawback claims, foreign trade zones, maritime law, tariff engineering. Expert CA/USA representation.',
     canonical: 'practice-areas',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-practice-areas.jpg`,
@@ -391,6 +391,25 @@ const PracticeAreasPage: React.FC = () => {
         description: 'Specialized maritime trade law California services covering ocean shipping regulation California, air cargo regulation California, cargo insurance disputes California, and international shipping regulations California for logistics companies and freight forwarders.',
         serviceType: 'Transportation & Maritime Law',
       }),
+      // FAQ Schema for Niche Services - Enhanced Keyword Coverage
+      generateFAQSchema([
+        {
+          question: 'What is trade finance law and how does it apply to California importers?',
+          answer: 'Trade finance law governs payment methods and commercial agreements in international trade. California importers use trade finance mechanisms including letters of credit, documentary collections, and bank guarantees to secure payment and delivery in cross-border transactions. Our trade finance law services include drafting international distribution agreements, negotiating cross border contracts, resolving letters of credit disputes, reviewing international logistics contracts, providing customs brokerage legal advice, and offering Incoterms advice to clarify buyer-seller responsibilities for shipping costs, insurance, and delivery terms in international sales.',
+        },
+        {
+          question: 'What are duty drawback claims and how can California businesses recover customs duties?',
+          answer: 'Duty drawback claims allow California importers and exporters to recover 99% of customs duties paid on imported goods that are subsequently exported or destroyed under 19 U.S.C. § 1313. Our drawback claims California services help businesses establish drawback programs, file manufacturing drawback for goods used in exported products, claim unused merchandise drawback for imported goods exported without use, and implement inventory tracking systems ensuring compliance with drawback substitution requirements. Drawback recovery provides significant cost savings that improve competitiveness in global markets.',
+        },
+        {
+          question: 'What are Foreign Trade Zones and how can they benefit California manufacturers?',
+          answer: 'Foreign Trade Zones (FTZs) are secure areas within the United States where imported goods can be stored, manufactured, or assembled without paying customs duties until entering U.S. commerce. Our foreign trade zones California services help businesses establish FTZ operations, navigate bonded warehouse regulations, implement tariff engineering strategies to minimize duty costs through optimal product assembly and manufacturing sequences, and maximize benefits from free trade agreements including USMCA compliance California programs that provide preferential duty treatment for qualifying North American products.',
+        },
+        {
+          question: 'What is maritime trade law and how does it affect California shipping operations?',
+          answer: 'Maritime trade law governs the transportation of goods by sea and air, including ocean shipping regulation, air cargo regulation, and cargo insurance. Our maritime trade law California practice assists logistics companies, freight forwarders, and importers with ocean shipping regulation compliance under the Shipping Act, resolution of air cargo regulation disputes with carriers, cargo insurance disputes recovery when goods are lost or damaged in transit, and guidance on international shipping regulations including bills of lading, charter parties, and carrier liability limitations under COGSA and Montreal Convention.',
+        },
+      ]),
     ],
   });
 
