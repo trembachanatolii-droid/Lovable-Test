@@ -154,18 +154,31 @@ const NewsPage: React.FC = () => {
       </section>
 
       {/* Search Section */}
-      <section className="py-12 px-6 bg-white border-b border-neutral-lightGray sticky top-20 z-30 shadow-sm">
+      <section className="py-12 px-6 bg-gray-50 sticky top-20 z-30">
         <div className="max-w-[1376px] mx-auto">
-          <div className="relative max-w-2xl">
-            <SearchIcon className="absolute left-5 top-1/2 transform -translate-y-1/2 h-5 w-5 text-neutral-400 pointer-events-none z-10" />
-            <input
-              type="text"
-              placeholder="Search News by Keyword..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full py-4 pl-14 pr-6 text-base bg-white border-2 border-neutral-300 rounded-full focus:outline-none focus:border-primary-navy focus:ring-2 focus:ring-primary-navy/20 transition-all placeholder:text-neutral-400 text-primary-navy shadow-sm"
-              aria-label="Search news articles"
-            />
+          <div className="bg-white rounded-lg shadow-md p-8 max-w-5xl mx-auto">
+            <div className="relative w-full">
+              <input
+                type="text"
+                placeholder="Search News by Keyword"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full py-4 text-base bg-white border border-gray-300 rounded focus:outline-none focus:border-gray-400 transition-all placeholder:text-gray-400 text-gray-700"
+                style={{ paddingLeft: '14px', paddingRight: '50px' }}
+                aria-label="Search news articles"
+              />
+              <div
+                className="absolute pointer-events-none flex items-center justify-center"
+                style={{
+                  right: '16px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  zIndex: 10
+                }}
+              >
+                <SearchIcon className="text-gray-500" style={{ width: '22px', height: '22px', display: 'block' }} />
+              </div>
+            </div>
           </div>
         </div>
       </section>
