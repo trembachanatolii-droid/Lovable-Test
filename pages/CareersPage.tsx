@@ -16,10 +16,10 @@ interface JobCategoryProps {
 
 const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, qualifications, applyLink, isOpen, onToggle }) => {
     return (
-        <div className="border-b border-neutral-lightGray">
+        <div className="border-b border-border-subtle">
             <button
                 onClick={onToggle}
-                className="w-full py-8 flex justify-between items-center text-left group focus:outline-none"
+                className="w-full py-6 flex justify-between items-center text-left group focus:outline-none"
                 aria-expanded={isOpen}
             >
                 <h3 className={`text-2xl font-garamond font-bold transition-colors duration-300 ${isOpen ? 'text-secondary-teal' : 'text-primary-navy group-hover:text-primary-midBlue'}`}>
@@ -30,7 +30,7 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
                 </div>
             </button>
             <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100 pb-8' : 'max-h-0 opacity-0'}`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}
             >
                 <p className="text-lg text-text-secondary mb-6 leading-relaxed">
                     {description}
@@ -300,20 +300,18 @@ const CareersPage: React.FC = () => {
             </section>
 
             {/* Job Opportunities Section */}
-            <section className="py-24 px-6 bg-white">
+            <section className="py-20 px-6 bg-white">
                 <div className="max-w-[1000px] mx-auto">
-                    <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4 border-b border-neutral-lightGray pb-6">
-                        <div>
-                            <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-3">
-                                Job Opportunities
-                            </h2>
-                            <p className="text-lg text-text-secondary">
-                                We welcome applications from talented professionals passionate about trade law.
-                            </p>
-                        </div>
+                    <div className="mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-4">
+                            Job Opportunities
+                        </h2>
+                        <p className="text-lg text-text-secondary">
+                            We welcome applications from talented professionals passionate about trade law.
+                        </p>
                     </div>
 
-                    <div className="flex flex-col">
+                    <div className="flex flex-col border-t border-border-subtle">
                         {jobCategories.map((job) => (
                             <JobCategoryAccordion
                                 key={job.id}
