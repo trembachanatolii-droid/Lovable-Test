@@ -421,7 +421,7 @@ const UsefulLinksPage: React.FC = () => {
                 aria-label="Search resources"
               />
               <div className="absolute top-1/2 -translate-y-1/2 pointer-events-none" style={{ right: '16px' }}>
-                <SearchIcon className="w-5.5 h-5.5 text-gray-500" />
+                <SearchIcon className="text-gray-500" style={{ width: '22px', height: '22px' }} />
               </div>
             </div>
           </div>
