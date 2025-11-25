@@ -19,7 +19,7 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
         <div className="border-b border-neutral-lightGray">
             <button
                 onClick={onToggle}
-                className="w-full py-4 flex justify-between items-center text-left group focus:outline-none"
+                className="w-full py-5 flex justify-between items-center text-left group focus:outline-none"
                 aria-expanded={isOpen}
             >
                 <h3 className={`text-xl font-garamond font-bold transition-colors duration-300 ${isOpen ? 'text-secondary-teal' : 'text-primary-navy group-hover:text-primary-midBlue'}`}>
@@ -305,7 +305,7 @@ const CareersPage: React.FC = () => {
                     <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-3 text-center">
                         Job Opportunities
                     </h2>
-                    <p className="text-lg text-text-secondary mb-6 text-center">
+                    <p className="text-lg text-text-secondary mb-8 text-center">
                         We welcome applications from talented professionals passionate about trade law.
                     </p>
 
