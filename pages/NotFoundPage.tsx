@@ -53,22 +53,22 @@ const NotFoundPage: React.FC = () => {
           </h3>
           <ul className="space-y-2 mb-6">
             <li>
-              <a href="#customs-defense" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#customs-defense-litigation" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Customs Defense &amp; Litigation - CBP penalty defense and enforcement actions
               </a>
             </li>
             <li>
-              <a href="#regulatory-compliance" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#regulatory-compliance-advisory" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Regulatory Compliance &amp; Advisory - Import/export compliance programs
               </a>
             </li>
             <li>
-              <a href="#export-controls" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#export-controls-sanctions" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Export Controls &amp; Sanctions - ITAR, EAR, and OFAC compliance
               </a>
             </li>
             <li>
-              <a href="#tariff-classification" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#tariffs-duties-classification-guide" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Tariff Classification - HTS classification and duty optimization
               </a>
             </li>
@@ -79,17 +79,17 @@ const NotFoundPage: React.FC = () => {
           </h3>
           <ul className="space-y-2 mb-6">
             <li>
-              <a href="#technology-electronics" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Technology &amp; Electronics - Export controls and semiconductor compliance
               </a>
             </li>
             <li>
-              <a href="#apparel-textiles" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Apparel &amp; Textiles - UFLPA and Section 301 strategies
               </a>
             </li>
             <li>
-              <a href="#food-agriculture" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Food &amp; Agriculture - FDA and USDA import compliance
               </a>
             </li>
@@ -100,22 +100,22 @@ const NotFoundPage: React.FC = () => {
           </h3>
           <ul className="space-y-2 mb-6">
             <li>
-              <a href="#los-angeles-port" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Los Angeles Port - Port of LA/LB customs expertise
               </a>
             </li>
             <li>
-              <a href="#bay-area-trade-law" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Bay Area Trade Law - San Francisco and Silicon Valley
               </a>
             </li>
             <li>
-              <a href="#resources-hub" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#resources" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Resource Hub - Comprehensive trade law guides
               </a>
             </li>
             <li>
-              <a href="#faq-center" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <a href="#trade-law-faq" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 FAQ Center - Common questions answered
               </a>
             </li>

@@ -64,12 +64,15 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
 
 const CareersPage: React.FC = () => {
     useMeta({
-      title: 'Careers - International Trade Attorney Jobs California | Customs Law Positions',
+      title: 'Trade Attorney Jobs California | Customs Law Careers',
       description: 'International trade attorney jobs in California. Work on CBP investigations, CIT litigation, UFLPA cases. Competitive pay, mentorship, complex federal work.',
-      keywords: 'international trade attorney jobs California, customs lawyer careers California, trade compliance jobs California, customs attorney positions California, international trade law firm jobs, boutique law firm California careers, customs paralegal jobs, trade law clerk positions California, CBP litigation attorney jobs, import export lawyer careers California, ITAR compliance jobs California, customs broker attorney positions, trade remedies lawyer jobs, Calabasas law firm careers, Los Angeles trade attorney jobs',
       canonical: 'careers',
       ogType: 'website',
       ogImage: `${siteConfig.siteUrl}/og-image-careers.jpg`,
+      ogImageAlt: 'Careers at Trembach Law - International Trade Attorney Jobs California',
+      ogImageWidth: '1200',
+      ogImageHeight: '630',
+      twitterImageAlt: 'Careers at Trembach Law - International Trade Attorney Jobs California',
       schema: [
         generateWebPageSchema({
           title: 'Careers at Trembach Law Firm - International Trade Attorney Jobs California',

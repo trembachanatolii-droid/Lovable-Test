@@ -9,10 +9,13 @@ const AboutPage: React.FC = () => {
   useMeta({
     title: 'About Trembach Law Firm | California International Trade & Customs Attorney',
     description: 'Former SBU intelligence officer turned California trade attorney. USC Law LL.M. Dual perspective in CBP investigations, customs audits. Boutique firm, competitive fees.',
-    keywords: 'about trembach law firm, California international trade attorney, California customs attorney, import export lawyer California, customs law firm California, boutique trade law firm, CBP defense attorney, trade compliance lawyer, USC law LL.M, competitive legal fees',
     canonical: 'about',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-about.jpg`,
+    ogImageAlt: 'About Trembach Law Firm - California International Trade & Customs Law Practice',
+    ogImageWidth: '1200',
+    ogImageHeight: '630',
+    twitterImageAlt: 'About Trembach Law Firm - California International Trade & Customs Law Practice',
     schema: [
       generateWebPageSchema({
         title: 'About Trembach Law Firm',
