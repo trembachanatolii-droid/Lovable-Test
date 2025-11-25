@@ -4,9 +4,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const TechnologyElectronicsIndustryPage: React.FC = () => {
   useMeta({
-    title: 'Electronics Import Attorney California | Tech Industry Customs Compliance | Semiconductor Trade Lawyer',
-    description: 'California electronics import attorney for tech companies. Expert representation in HTS classification, Section 301 tariffs, encryption export controls, semiconductor supply chain compliance, and technology trade law.',
-    keywords: 'electronics import attorney California, tech industry customs attorney, semiconductor import lawyer California, technology trade compliance attorney, encryption export controls California, Section 301 technology tariffs attorney, electronics classification lawyer California, technology supply chain attorney, computer hardware import compliance California',
+    title: 'Tech Industry Trade Attorney CA | Electronics Import Lawyer',
+    description: 'California electronics import attorney & tech industry customs lawyer. HTS classification, Section 301 tariffs, encryption export controls, semiconductor trade compliance & technology supply chain law. Call 631-746-8290.',
     canonical: 'technology-electronics-trade-attorney',
     schema: [
       generateWebPageSchema({
