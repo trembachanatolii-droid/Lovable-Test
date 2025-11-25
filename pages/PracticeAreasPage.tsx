@@ -228,7 +228,7 @@ const PracticeAccordionItem: React.FC<{
         onClick={onToggle}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="group relative w-full text-left bg-white p-4 md:p-6 rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-secondary-teal min-h-[96px]"
+        className="group relative w-full text-left bg-white rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-secondary-teal h-[120px] flex items-center px-4 md:px-6 py-4"
         aria-expanded={isOpen}
       >
          {/* Green Triangle with White Arrow - Slides in on Hover/Open */}
@@ -237,12 +237,12 @@ const PracticeAccordionItem: React.FC<{
            style={{
              position: 'absolute',
              top: 0,
-             right: (isOpen || isHovered) ? '0' : '-96px',
+             right: (isOpen || isHovered) ? '0' : '-100px',
              width: '96px',
              height: '96px',
              background: '#3FBB94',
              clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
-             transition: 'right 300ms ease-in-out',
+             transition: 'right 300ms cubic-bezier(0.4, 0, 0.2, 1)',
              zIndex: 10,
              pointerEvents: 'none'
            }}
@@ -260,14 +260,14 @@ const PracticeAccordionItem: React.FC<{
                top: '20.8px',
                right: '20.8px',
                transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)',
-               transition: 'transform 300ms ease-in-out'
+               transition: 'transform 300ms cubic-bezier(0.4, 0, 0.2, 1)'
              }}
            >
              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
            </svg>
          </div>
 
-         <h3 className="font-garamond text-xl md:text-2xl font-bold text-primary-navy pr-16 transition-colors group-hover:text-primary-darkBlue">
+         <h3 className="font-garamond text-xl md:text-2xl font-bold text-primary-navy pr-24 transition-colors group-hover:text-primary-darkBlue leading-tight">
             {title}
          </h3>
       </button>
