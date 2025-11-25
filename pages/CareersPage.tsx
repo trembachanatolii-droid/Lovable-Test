@@ -203,6 +203,31 @@ const CareersPage: React.FC = () => {
                 </div>
             </section>
 
+            {/* Job Opportunities Section */}
+            <section className="py-12 px-6 bg-white">
+                <div className="max-w-[1000px] mx-auto">
+                    <div className="mb-6">
+                        <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-2">
+                            Job Opportunities
+                        </h2>
+                        <p className="text-lg text-text-secondary">
+                            We welcome applications from talented professionals passionate about trade law.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col border-t border-border-subtle">
+                        {jobCategories.map((job) => (
+                            <JobCategoryAccordion
+                                key={job.id}
+                                {...job}
+                                isOpen={openCategory === job.id}
+                                onToggle={() => toggleCategory(job.id)}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Why Join Section */}
             <section className="py-16 px-6 bg-neutral-50">
                 <div className="max-w-[1000px] mx-auto">
@@ -308,31 +333,6 @@ const CareersPage: React.FC = () => {
                             <p className="text-text-secondary text-sm mb-2">Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a></p>
                             <p className="text-text-secondary text-sm">Phone: <a href="tel:631-746-8290" className="text-secondary-teal hover:underline">631-746-8290</a></p>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Job Opportunities Section */}
-            <section className="py-12 px-6 bg-white">
-                <div className="max-w-[1000px] mx-auto">
-                    <div className="mb-6">
-                        <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-2">
-                            Job Opportunities
-                        </h2>
-                        <p className="text-lg text-text-secondary">
-                            We welcome applications from talented professionals passionate about trade law.
-                        </p>
-                    </div>
-
-                    <div className="flex flex-col border-t border-border-subtle">
-                        {jobCategories.map((job) => (
-                            <JobCategoryAccordion
-                                key={job.id}
-                                {...job}
-                                isOpen={openCategory === job.id}
-                                onToggle={() => toggleCategory(job.id)}
-                            />
-                        ))}
                     </div>
                 </div>
             </section>
