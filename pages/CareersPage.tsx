@@ -303,10 +303,10 @@ const CareersPage: React.FC = () => {
             <section className="py-16 px-6 bg-white">
                 <div className="max-w-[1000px] mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-3">
-                        Current Openings
+                        Job Opportunities
                     </h2>
                     <p className="text-lg text-text-secondary mb-8">
-                        We welcome applications from talented professionals passionate about trade law. Click each position below for details.
+                        We welcome applications from talented professionals passionate about trade law.
                     </p>
 
                     <div className="flex flex-col">
