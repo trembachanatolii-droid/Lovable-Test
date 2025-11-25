@@ -220,11 +220,15 @@ const PracticeAccordionItem: React.FC<{
   onToggle: () => void;
   slug?: string;
 }> = ({ title, content, isOpen, onToggle, slug }) => {
+  const [isHovered, setIsHovered] = React.useState(false);
+
   return (
     <div className="w-full mb-2" id={slug}>
       <button
         onClick={onToggle}
-        className="group relative w-full text-left bg-white p-4 md:p-6 rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-secondary-teal"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className="group relative w-full text-left bg-white p-4 md:p-6 rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-secondary-teal min-h-[96px]"
         aria-expanded={isOpen}
       >
          {/* Green Triangle with White Arrow - Slides in on Hover/Open */}
@@ -233,7 +237,7 @@ const PracticeAccordionItem: React.FC<{
            style={{
              position: 'absolute',
              top: 0,
-             right: isOpen ? '0' : '-96px',
+             right: (isOpen || isHovered) ? '0' : '-96px',
              width: '96px',
              height: '96px',
              background: '#3FBB94',
@@ -267,7 +271,7 @@ const PracticeAccordionItem: React.FC<{
             {title}
          </h3>
       </button>
-      
+
       {/* Content Dropdown Animation */}
       <div
         style={{
