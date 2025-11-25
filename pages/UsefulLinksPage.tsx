@@ -407,18 +407,18 @@ const UsefulLinksPage: React.FC = () => {
       </section>
 
       {/* Search Section */}
-      <section className="py-12 px-6 bg-white border-b border-neutral-lightGray sticky top-20 z-30 shadow-sm">
+      <section className="py-12 px-6 bg-white sticky top-20 z-30">
         <div className="max-w-[1376px] mx-auto">
-          <div className="relative max-w-2xl">
-            <SearchIcon className="absolute left-5 top-1/2 transform -translate-y-1/2 h-5 w-5 text-neutral-400 pointer-events-none z-10" />
+          <div className="relative max-w-4xl mx-auto">
             <input
               type="text"
-              placeholder="Filter resources by keyword..."
+              placeholder="Search News by Keyword"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full py-4 pl-14 pr-6 text-base bg-white border-2 border-neutral-300 rounded-full focus:outline-none focus:border-primary-navy focus:ring-2 focus:ring-primary-navy/20 transition-all placeholder:text-neutral-400 text-primary-navy shadow-sm"
+              className="w-full py-5 pl-6 pr-16 text-lg bg-white border-0 border-b-2 border-neutral-300 focus:outline-none focus:border-primary-navy transition-all placeholder:text-neutral-400 text-primary-navy"
               aria-label="Search resources"
             />
+            <SearchIcon className="absolute right-5 top-1/2 transform -translate-y-1/2 h-6 w-6 text-neutral-400 pointer-events-none z-10" />
           </div>
         </div>
       </section>
