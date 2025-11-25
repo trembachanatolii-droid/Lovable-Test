@@ -7,8 +7,8 @@ import { generateBreadcrumbSchema } from '../utils/seo';
 
 const ContactPage: React.FC = () => {
   useMeta({
-    title: 'Contact California International Trade Attorney | Free Consultation',
-    description: '24/7 customs emergency response. Multilingual CA trade firm serving LA, SF, SD ports. Urgent CBP defense, UFLPA detention release. Call 631-746-8290 now.',
+    title: 'Contact CA Trade Attorney | Free Consultation | 24/7 Response',
+    description: 'Contact California customs attorney for free consultation. 24/7 emergency CBP defense. Serving LA/Long Beach, Oakland, San Diego ports. Urgent detention release, customs audits. Call 631-746-8290 now.',
     canonical: 'contact',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-contact.jpg`,

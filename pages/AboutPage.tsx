@@ -7,8 +7,8 @@ import { siteConfig } from '../config/siteConfig';
 
 const AboutPage: React.FC = () => {
   useMeta({
-    title: 'About Trembach Law Firm | California International Trade & Customs Attorney',
-    description: 'Former SBU intelligence officer turned California trade attorney. USC Law LL.M. Dual perspective in CBP investigations, customs audits. Boutique firm, competitive fees.',
+    title: 'About California Trade Attorney | Expert Customs Lawyer CA',
+    description: 'California international trade attorney & customs lawyer. USC Law LL.M. Expert in CBP defense, customs audits, trade compliance. Boutique firm expertise, competitive fees. Serving CA & USA businesses.',
     canonical: 'about',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-about.jpg`,
