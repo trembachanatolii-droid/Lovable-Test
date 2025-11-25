@@ -221,7 +221,7 @@ const PracticeAccordionItem: React.FC<{
   slug?: string;
 }> = ({ title, content, isOpen, onToggle, slug }) => {
   return (
-    <div className="w-full" id={slug}>
+    <div className="w-full mb-2" id={slug}>
       <button
         onClick={onToggle}
         className="group relative w-full text-left bg-white p-4 md:p-6 rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-secondary-teal"
@@ -271,7 +271,7 @@ const PracticeAccordionItem: React.FC<{
       {/* Content Dropdown Animation */}
       <div
         className={`grid transition-all duration-300 ease-in-out ${
-          isOpen ? 'grid-rows-[1fr] opacity-100 mt-1 mb-1' : 'grid-rows-[0fr] opacity-0'
+          isOpen ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0 mt-0'
         }`}
       >
         <div className="overflow-hidden">
@@ -464,7 +464,7 @@ const PracticeAreasPage: React.FC = () => {
                 </h2>
               </div>
 
-              <div className="flex flex-col space-y-1">
+              <div className="flex flex-col">
                 {category.items.map((item, itemIndex) => {
                   const uniqueKey = `${catIndex}-${itemIndex}`;
                   return (
