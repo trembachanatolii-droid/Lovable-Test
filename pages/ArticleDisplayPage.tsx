@@ -100,21 +100,77 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
       {/* Article Content */}
       <article className="max-w-[800px] mx-auto px-6 py-20">
 
-          {/* Render Full HTML Content with Prose Styling */}
+          {/* Render Full HTML Content with Exact Template Styling */}
           <div
-            className="prose prose-lg max-w-none
-              prose-headings:font-garamond prose-headings:font-bold prose-headings:text-primary-navy
-              prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8
-              prose-h3:text-3xl prose-h3:mt-12 prose-h3:mb-6
-              prose-p:text-neutral-darkGray prose-p:leading-relaxed prose-p:mb-6 prose-p:text-lg
-              prose-ul:my-8 prose-ul:space-y-3
-              prose-ol:my-8 prose-ol:space-y-3
-              prose-li:text-neutral-darkGray prose-li:leading-relaxed prose-li:text-lg
-              prose-strong:text-primary-navy prose-strong:font-bold
-              prose-a:text-secondary-teal hover:prose-a:text-primary-darkBlue prose-a:no-underline hover:prose-a:underline
-            "
+            className="article-content"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
+
+          <style>{`
+            .article-content h2 {
+              font-family: 'EB Garamond', serif;
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 1.3;
+              color: #012169;
+              margin-top: 48px;
+              margin-bottom: 24px;
+            }
+
+            .article-content h2:first-child {
+              margin-top: 0;
+            }
+
+            .article-content h3 {
+              font-family: 'EB Garamond', serif;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 1.3;
+              color: #012169;
+              margin-top: 32px;
+              margin-bottom: 16px;
+            }
+
+            .article-content p {
+              font-size: 16px;
+              line-height: 1.75;
+              color: #333333;
+              margin-bottom: 24px;
+            }
+
+            .article-content ul,
+            .article-content ol {
+              margin-top: 24px;
+              margin-bottom: 24px;
+              padding-left: 24px;
+            }
+
+            .article-content li {
+              font-size: 16px;
+              line-height: 1.75;
+              color: #333333;
+              margin-bottom: 12px;
+            }
+
+            .article-content strong {
+              color: #012169;
+              font-weight: 700;
+            }
+
+            .article-content em {
+              font-style: italic;
+            }
+
+            .article-content a {
+              color: #3FBB94;
+              text-decoration: none;
+            }
+
+            .article-content a:hover {
+              color: #012169;
+              text-decoration: underline;
+            }
+          `}</style>
 
       </article>
 
