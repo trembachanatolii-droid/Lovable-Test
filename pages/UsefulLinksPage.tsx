@@ -416,12 +416,12 @@ const UsefulLinksPage: React.FC = () => {
                 placeholder="Search Resources by Keyword"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full py-4 px-10 text-base bg-white border border-gray-300 rounded focus:outline-none focus:border-gray-400 transition-all placeholder:text-gray-400 text-gray-700"
-                style={{ paddingRight: '40px' }}
+                className="w-full py-4 text-base bg-white border border-gray-300 rounded focus:outline-none focus:border-gray-400 transition-all placeholder:text-gray-400 text-gray-700"
+                style={{ paddingLeft: '14px', paddingRight: '50px' }}
                 aria-label="Search resources"
               />
-              <div className="absolute top-1/2 transform -translate-y-1/2 pointer-events-none" style={{ right: '10px' }}>
-                <SearchIcon className="h-5 w-5 text-gray-500" />
+              <div className="absolute top-1/2 -translate-y-1/2 pointer-events-none" style={{ right: '16px' }}>
+                <SearchIcon className="w-5.5 h-5.5 text-gray-500" />
               </div>
             </div>
           </div>
