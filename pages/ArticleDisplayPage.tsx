@@ -67,44 +67,67 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
   }
 
   return (
-    <div className="bg-white min-h-screen pt-20">
-      {/* Hero Section with Background Image and Overlay */}
-      <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[60vh]">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0" aria-hidden="true">
-          <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop"
-            alt=""
-            className="w-full h-full object-cover object-center"
-            loading="eager"
-            decoding="async"
-            width="2070"
-            height="1380"
-          />
-          {/* Dark overlay with 70% opacity for maximum text visibility */}
-          <div className="absolute inset-0 bg-primary-navy opacity-70"></div>
+    <div className="bg-white min-h-screen">
+      <div className="max-w-[1200px] mx-auto px-6 pt-32 pb-20">
+        {/* Back to News Link */}
+        <a
+          href="#news"
+          className="inline-flex items-center gap-2 text-[#9CA3AF] text-sm font-medium tracking-wide uppercase hover:text-secondary-teal transition-colors mb-12"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          Back to News
+        </a>
+
+        {/* Category and Read Time */}
+        <div className="flex items-center gap-3 mb-8">
+          <span className="text-secondary-teal text-sm font-semibold tracking-wide uppercase">
+            Customs Litigation
+          </span>
+          <span className="text-[#9CA3AF] text-sm">•</span>
+          <span className="text-[#9CA3AF] text-sm uppercase tracking-wide">
+            25 min read
+          </span>
         </div>
 
-        {/* Hero Content - Enhanced visibility with white text and strong shadows */}
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold font-garamond mb-6 tracking-tight leading-tight text-white" style={{textShadow: '0 2px 10px rgba(0, 0, 0, 0.9), 0 4px 20px rgba(0, 0, 0, 0.7), 0 0 50px rgba(0, 0, 0, 0.5)'}}>
-            {article.title}
-          </h1>
-          <p className="text-xl md:text-2xl font-medium tracking-wide text-white" style={{textShadow: '0 2px 8px rgba(0, 0, 0, 0.9), 0 4px 16px rgba(0, 0, 0, 0.6)'}}>
-            {article.subheading}
+        {/* Article Title */}
+        <h1 className="text-[40px] md:text-[56px] leading-[1.1] font-bold font-garamond text-primary-navy mb-8">
+          {article.title}: How to Challenge CBP's HTS Determination
+        </h1>
+
+        {/* Published Date and Author */}
+        <div className="flex flex-wrap items-center gap-6 mb-12 pb-12 border-b border-gray-200">
+          <div>
+            <div className="text-[#9CA3AF] text-xs uppercase tracking-wide mb-1">Published</div>
+            <div className="text-primary-navy font-semibold">November 17, 2025</div>
+          </div>
+          <div>
+            <div className="text-[#9CA3AF] text-xs uppercase tracking-wide mb-1">Author</div>
+            <div className="text-primary-navy font-semibold">Anatolii Trembach</div>
+          </div>
+        </div>
+
+        {/* Article Content */}
+        <article className="max-w-[800px]">
+          <h2 className="text-[32px] leading-[1.3] font-bold font-garamond text-primary-navy mb-6">
+            Introduction
+          </h2>
+
+          <p className="text-[16px] leading-[1.75] text-[#333333] mb-6">
+            Tariff classification under the Harmonized Tariff Schedule (HTS) determines the duty rate applied to imported merchandise. With over 17,000 tariff classifications and duty rates ranging from zero to over 30%, correct classification significantly impacts import costs. Classification disputes between importers and U.S. Customs and Border Protection (CBP) commonly arise when CBP disagrees with an importer's declared HTS classification. This article provides strategic guidance for importers facing CBP classification determinations and explores the available administrative and judicial remedies.
           </p>
-          <div className="w-24 h-1 bg-secondary-teal mx-auto mt-6"></div>
-        </div>
-      </section>
-
-      {/* Article Content */}
-      <article className="max-w-[800px] mx-auto px-6 py-20">
 
           {/* Render Full HTML Content with Exact Template Styling */}
           <div
             className="article-content"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
+
+          {/* Disclaimer */}
+          <p className="text-[14px] leading-[1.6] text-[#9CA3AF] italic mt-12 pt-8 border-t border-gray-200">
+            *This article is provided for informational purposes only and does not constitute legal advice. Readers should consult qualified customs counsel regarding their specific situations.
+          </p>
 
           <style>{`
             .article-content h2 {
@@ -171,12 +194,20 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
               text-decoration: underline;
             }
           `}</style>
+        </article>
+      </div>
 
-      </article>
-
-      {/* Evaluation Form at bottom for conversion */}
-      <div className="mt-24 pb-20">
-         <EvaluationForm theme="light" />
+      {/* Free Case Evaluation Section */}
+      <div className="bg-[#F9FAFB] py-20">
+        <div className="max-w-[1200px] mx-auto px-6 text-center">
+          <h2 className="text-[40px] md:text-[48px] leading-[1.2] font-bold font-garamond text-primary-navy mb-4">
+            Free Case Evaluation
+          </h2>
+          <p className="text-secondary-teal text-lg font-semibold tracking-wide uppercase mb-12">
+            Your Strategic Partner in Trade Law
+          </p>
+          <EvaluationForm theme="light" />
+        </div>
       </div>
     </div>
   );
