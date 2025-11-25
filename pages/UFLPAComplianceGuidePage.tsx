@@ -5,9 +5,8 @@ import { siteConfig } from '../config/siteConfig';
 
 const UFLPAComplianceGuidePage: React.FC = () => {
   useMeta({
-    title: 'UFLPA Compliance Guide 2025 | Uyghur Forced Labor Prevention Act Strategy',
+    title: 'UFLPA Compliance CA | Uyghur Forced Labor Prevention Guide',
     description: 'Comprehensive UFLPA compliance guide for California importers: detention defense strategies, supply chain mapping, Entity List screening, high-risk products (textiles, solar panels, tomatoes, electronics), evidence standards, CBP response procedures. Expert guidance from international trade attorneys with 98% release rate.',
-    keywords: 'UFLPA compliance guide, Uyghur forced labor prevention, UFLPA detention defense, Xinjiang forced labor, UFLPA Entity List, supply chain due diligence, UFLPA evidence standards, forced labor compliance California, CBP UFLPA enforcement',
     canonical: 'resources/uflpa-compliance-guide',
     ogType: 'article',
     ogImage: `${siteConfig.siteUrl}/og-image-uflpa.jpg`,

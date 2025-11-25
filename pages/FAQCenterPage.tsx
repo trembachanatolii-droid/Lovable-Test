@@ -263,9 +263,8 @@ const FAQCenterPage: React.FC = () => {
   const allFAQs = faqCategories.flatMap(cat => cat.faqs);
 
   useMeta({
-    title: 'International Trade Law FAQ | California Customs & Import Questions Answered',
+    title: 'CA Trade Law FAQ | Customs & Import Questions Answered',
     description: '41+ expert answers to trade law questions: customs compliance, HTS classification, UFLPA detention defense, USMCA/FTA qualification, AD/CVD orders, Section 321 e-commerce, export controls, FDA/USDA requirements, country of origin marking, CBP audits. Guidance from California international trade attorneys.',
-    keywords: 'customs compliance FAQ, import questions California, export controls FAQ, UFLPA questions, Section 321 FAQ, FDA import requirements, international trade law questions California, customs attorney FAQ, CBP audit questions, USMCA FAQ, antidumping duties, country of origin marking',
     canonical: 'trade-law-faq',
     schema: [
       generateWebPageSchema({
