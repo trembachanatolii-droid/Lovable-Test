@@ -228,23 +228,38 @@ const PracticeAccordionItem: React.FC<{
         onClick={onToggle}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="group relative w-full text-left bg-white rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-secondary-teal h-[120px] flex items-center px-4 md:px-6 py-4"
+        className="group relative w-full text-left bg-white rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-secondary-teal flex items-center"
+        style={{
+          height: '120px',
+          minHeight: '120px',
+          maxHeight: '120px',
+          paddingLeft: '24px',
+          paddingRight: '24px',
+          paddingTop: '16px',
+          paddingBottom: '16px',
+          boxSizing: 'border-box'
+        }}
         aria-expanded={isOpen}
       >
          {/* Green Triangle with White Arrow - Slides in on Hover/Open */}
          <div
-           className="triangle-slide"
            style={{
              position: 'absolute',
-             top: 0,
-             right: (isOpen || isHovered) ? '0' : '-100px',
+             top: '0',
+             right: (isOpen || isHovered) ? '0' : '-96px',
              width: '96px',
              height: '96px',
+             minWidth: '96px',
+             minHeight: '96px',
+             maxWidth: '96px',
+             maxHeight: '96px',
              background: '#3FBB94',
              clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
              transition: 'right 300ms cubic-bezier(0.4, 0, 0.2, 1)',
              zIndex: 10,
-             pointerEvents: 'none'
+             pointerEvents: 'none',
+             boxSizing: 'border-box',
+             flexShrink: 0
            }}
          >
            <svg
@@ -256,18 +271,27 @@ const PracticeAccordionItem: React.FC<{
              style={{
                width: '22.4px',
                height: '22.4px',
+               minWidth: '22.4px',
+               minHeight: '22.4px',
                position: 'absolute',
                top: '20.8px',
                right: '20.8px',
                transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)',
-               transition: 'transform 300ms cubic-bezier(0.4, 0, 0.2, 1)'
+               transition: 'transform 300ms cubic-bezier(0.4, 0, 0.2, 1)',
+               flexShrink: 0
              }}
            >
              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
            </svg>
          </div>
 
-         <h3 className="font-garamond text-xl md:text-2xl font-bold text-primary-navy pr-24 transition-colors group-hover:text-primary-darkBlue leading-tight">
+         <h3
+           className="font-garamond font-bold text-primary-navy transition-colors group-hover:text-primary-darkBlue leading-tight"
+           style={{
+             fontSize: '1.5rem',
+             paddingRight: '96px'
+           }}
+         >
             {title}
          </h3>
       </button>
