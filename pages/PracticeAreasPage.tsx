@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import EvaluationForm from '../components/EvaluationForm';
+import { SearchIcon } from '../components/icons/SearchIcon';
 import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
@@ -391,6 +392,7 @@ const PracticeAreasPage: React.FC = () => {
   });
 
   const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -480,37 +482,104 @@ const PracticeAreasPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Search Section */}
+      <section className="py-12 px-6 bg-gray-50 sticky top-20 z-30">
+        <div className="max-w-[1376px] mx-auto">
+          <div className="bg-white rounded-lg shadow-md p-8 max-w-5xl mx-auto">
+            <div className="relative w-full">
+              <input
+                type="text"
+                placeholder="Search Practice Areas by Keyword"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full py-4 text-base bg-white border border-gray-300 rounded focus:outline-none focus:border-gray-400 transition-all placeholder:text-gray-400 text-gray-700"
+                style={{ paddingLeft: '14px', paddingRight: '50px' }}
+                aria-label="Search practice areas"
+              />
+              <div
+                className="absolute pointer-events-none flex items-center justify-center"
+                style={{
+                  right: '16px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  zIndex: 10
+                }}
+              >
+                <SearchIcon className="text-gray-500" style={{ width: '22px', height: '22px', display: 'block' }} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content - List Layout */}
       <div className="bg-neutral-lightGray py-12 px-6">
         <div className="max-w-5xl mx-auto space-y-6">
-          {practiceData.map((category, catIndex) => (
-            <section key={catIndex} aria-labelledby={`cat-${catIndex}`}>
-              <div className="mb-4 border-b border-secondary-teal/30 pb-3">
-                <h2
-                  id={`cat-${catIndex}`}
-                  className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy inline-block"
-                >
-                  {category.category}
-                </h2>
-              </div>
+          {(() => {
+            const filteredCategories = practiceData
+              .map(category => {
+                // Filter items within each category
+                const filteredItems = category.items.filter(item =>
+                  item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                  item.content.toLowerCase().includes(searchTerm.toLowerCase())
+                );
 
-              <div className="flex flex-col">
-                {category.items.map((item, itemIndex) => {
-                  const uniqueKey = `${catIndex}-${itemIndex}`;
-                  return (
-                    <PracticeAccordionItem
-                      key={uniqueKey}
-                      title={item.title}
-                      content={item.content}
-                      isOpen={!!openItems[uniqueKey]}
-                      onToggle={() => toggleItem(uniqueKey)}
-                      slug={(item as any).slug}
-                    />
-                  );
-                })}
-              </div>
-            </section>
-          ))}
+                // Return category with filtered items, or null if no matches
+                if (searchTerm === '' || category.category.toLowerCase().includes(searchTerm.toLowerCase()) || filteredItems.length > 0) {
+                  return {
+                    ...category,
+                    items: searchTerm === '' || category.category.toLowerCase().includes(searchTerm.toLowerCase())
+                      ? category.items
+                      : filteredItems
+                  };
+                }
+                return null;
+              })
+              .filter((category): category is NonNullable<typeof category> => category !== null);
+
+            if (filteredCategories.length === 0 && searchTerm !== '') {
+              return (
+                <div className="text-center py-20">
+                  <p className="text-2xl text-neutral-400 font-garamond italic">No practice areas found matching "{searchTerm}"</p>
+                  <button
+                    onClick={() => setSearchTerm('')}
+                    className="mt-4 text-secondary-teal font-bold hover:underline"
+                  >
+                    Clear Search
+                  </button>
+                </div>
+              );
+            }
+
+            return filteredCategories.map((category, catIndex) => (
+              <section key={catIndex} aria-labelledby={`cat-${catIndex}`}>
+                <div className="mb-4 border-b border-secondary-teal/30 pb-3">
+                  <h2
+                    id={`cat-${catIndex}`}
+                    className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy inline-block"
+                  >
+                    {category.category}
+                  </h2>
+                </div>
+
+                <div className="flex flex-col">
+                  {category.items.map((item, itemIndex) => {
+                    const uniqueKey = `${catIndex}-${itemIndex}`;
+                    return (
+                      <PracticeAccordionItem
+                        key={uniqueKey}
+                        title={item.title}
+                        content={item.content}
+                        isOpen={!!openItems[uniqueKey]}
+                        onToggle={() => toggleItem(uniqueKey)}
+                        slug={(item as any).slug}
+                      />
+                    );
+                  })}
+                </div>
+              </section>
+            ));
+          })()}
         </div>
       </div>
 
