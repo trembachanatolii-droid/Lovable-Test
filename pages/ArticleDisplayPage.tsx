@@ -70,16 +70,16 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
     <>
       <article className="bg-white min-h-screen pt-32 pb-20">
         {/* Back Navigation */}
-        <div className="max-w-[800px] mx-auto px-6 mb-16">
+        <div className="max-w-[800px] mx-auto px-6 mb-12">
           <a
             href="#news"
-            className="group flex items-center gap-2 text-sm font-bold uppercase tracking-widest transition-colors duration-300"
-            style={{ color: '#9CA3AF' }}
+            className="group flex items-center gap-2 text-xs font-bold uppercase tracking-wider transition-colors duration-300"
+            style={{ color: '#D1D5DB' }}
             onMouseEnter={(e) => e.currentTarget.style.color = '#3FBB94'}
-            onMouseLeave={(e) => e.currentTarget.style.color = '#9CA3AF'}
+            onMouseLeave={(e) => e.currentTarget.style.color = '#D1D5DB'}
           >
             <span className="group-hover:-translate-x-1 transition-transform duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3 h-3">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
               </svg>
             </span>
@@ -90,8 +90,8 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
         {/* Article Header */}
         <header className="max-w-[800px] mx-auto px-6 mb-16 text-center md:text-left">
           {/* Categories */}
-          <div className="flex flex-wrap items-center gap-4 text-sm font-bold uppercase tracking-widest mb-8 justify-center md:justify-start">
-            <span className="bg-soft-teal/20 px-3 py-1 rounded-full" style={{ color: '#3FBB94' }}>
+          <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-wider mb-8 justify-center md:justify-start">
+            <span className="px-2.5 py-1 rounded-sm" style={{ backgroundColor: '#E6F7F2', color: '#3FBB94' }}>
               Customs Litigation
             </span>
             <span className="w-1 h-1 rounded-full" style={{ backgroundColor: '#9CA3AF' }}></span>
@@ -99,8 +99,8 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
           </div>
 
           {/* Title */}
-          <h1 className="font-bold font-garamond leading-[1.1] mb-10" style={{
-            fontSize: 'clamp(32px, 5vw, 48px)',
+          <h1 className="font-bold font-garamond leading-[1.15] mb-10" style={{
+            fontSize: 'clamp(36px, 5vw, 52px)',
             color: '#012169'
           }}>
             {article.title}: How to Challenge CBP's HTS Determination
@@ -141,18 +141,18 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
         {/* Article Body */}
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none selection:bg-soft-teal" style={{ color: '#374151' }}>
-            <h2 className="font-garamond font-bold mb-6" style={{
-              fontSize: '32px',
+            <h2 className="font-garamond font-bold mb-5" style={{
+              fontSize: '28px',
               lineHeight: '1.3',
               color: '#012169'
             }}>
               Introduction
             </h2>
 
-            <p className="mb-6" style={{
-              fontSize: '16px',
+            <p className="mb-5" style={{
+              fontSize: '17px',
               lineHeight: '1.75',
-              color: '#333333'
+              color: '#374151'
             }}>
               Tariff classification under the Harmonized Tariff Schedule (HTS) determines the duty rate applied to imported merchandise. With over 17,000 tariff classifications and duty rates ranging from zero to over 30%, correct classification significantly impacts import costs. Classification disputes between importers and U.S. Customs and Border Protection (CBP) commonly arise when CBP disagrees with an importer's declared HTS classification. This article provides strategic guidance for importers facing CBP classification determinations and explores the available administrative and judicial remedies.
             </p>
@@ -232,13 +232,13 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
         </div>
 
         {/* Footer / Disclaimer */}
-        <div className="max-w-[800px] mx-auto px-6 mt-20 pt-10" style={{ borderTop: '1px solid #E5E7EB' }}>
-          <div className="p-6 rounded-lg" style={{
+        <div className="max-w-[800px] mx-auto px-6 mt-16">
+          <div className="p-6 rounded-sm" style={{
             backgroundColor: '#F9FAFB',
-            borderLeft: '4px solid #9CA3AF'
+            borderLeft: '4px solid #E5E7EB'
           }}>
-            <p className="text-sm italic leading-relaxed" style={{ color: '#6B7280' }}>
-              <strong>Disclaimer:</strong> This article is provided for informational purposes only and does not constitute legal advice. International trade laws are complex and subject to change. Readers should consult qualified customs counsel regarding their specific situations before taking action.
+            <p className="text-sm leading-relaxed" style={{ color: '#6B7280' }}>
+              <strong style={{ color: '#374151' }}>Disclaimer:</strong> This article is provided for informational purposes only and does not constitute legal advice. International trade laws are complex and subject to change. Readers should consult qualified customs counsel regarding their specific situations before taking action.
             </p>
           </div>
         </div>
