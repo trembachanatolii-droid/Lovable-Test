@@ -19,7 +19,7 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
         <div className="border-b border-neutral-lightGray">
             <button
                 onClick={onToggle}
-                className="w-full py-4 flex justify-between items-center text-left group focus:outline-none"
+                className="w-full py-3 flex justify-between items-center text-left group focus:outline-none"
                 aria-expanded={isOpen}
             >
                 <h3 className={`text-xl font-garamond font-bold transition-colors duration-300 ${isOpen ? 'text-secondary-teal' : 'text-primary-navy group-hover:text-primary-midBlue'}`}>
@@ -30,7 +30,7 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
                 </div>
             </button>
             <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100 pb-4' : 'max-h-0 opacity-0'}`}
             >
                 <p className="text-base text-text-secondary mb-4 leading-relaxed">
                     {description}
