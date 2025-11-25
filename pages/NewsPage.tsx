@@ -100,11 +100,11 @@ const NewsArticleRow: React.FC<{ item: NewsItem }> = ({ item }) => {
          <h3 className="text-xl md:text-2xl font-bold text-black mb-2 group-hover:text-primary-navy transition-colors font-garamond leading-tight">
            {item.title}
          </h3>
-         <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-neutral-400">
-            <span className="text-neutral-500 italic">{item.source}</span>
-            <span>/</span>
-            <span className="text-primary-navy">{item.category}</span>
-            <span>/</span>
+         <div className="flex items-center text-neutral-400" style={{ fontSize: '10px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            <span>{item.source}</span>
+            <span style={{ margin: '0 8px' }}>/</span>
+            <span>{item.category}</span>
+            <span style={{ margin: '0 8px' }}>/</span>
             <span>{item.date}</span>
          </div>
        </div>
