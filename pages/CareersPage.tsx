@@ -19,7 +19,7 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
         <div className="border-b border-neutral-lightGray">
             <button
                 onClick={onToggle}
-                className="w-full py-3 flex justify-between items-center text-left group focus:outline-none"
+                className="w-full py-2 flex justify-between items-center text-left group focus:outline-none"
                 aria-expanded={isOpen}
             >
                 <h3 className={`text-xl font-garamond font-bold transition-colors duration-300 ${isOpen ? 'text-secondary-teal' : 'text-primary-navy group-hover:text-primary-midBlue'}`}>
@@ -30,13 +30,13 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
                 </div>
             </button>
             <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100 pb-4' : 'max-h-0 opacity-0'}`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100 pb-3' : 'max-h-0 opacity-0'}`}
             >
-                <p className="text-base text-text-secondary mb-4 leading-relaxed">
+                <p className="text-base text-text-secondary mb-3 leading-relaxed">
                     {description}
                 </p>
-                <h4 className="text-sm font-bold uppercase tracking-wider text-primary-navy mb-3">Key Qualifications</h4>
-                <ul className="list-disc list-inside space-y-1.5 mb-5 text-text-secondary text-sm">
+                <h4 className="text-sm font-bold uppercase tracking-wider text-primary-navy mb-2">Key Qualifications</h4>
+                <ul className="list-disc list-inside space-y-1 mb-4 text-text-secondary text-sm">
                     {qualifications.map((qual, idx) => (
                         <li key={idx}>{qual}</li>
                     ))}
@@ -302,10 +302,10 @@ const CareersPage: React.FC = () => {
             {/* Job Opportunities Section */}
             <section className="py-16 px-6 bg-white">
                 <div className="max-w-[1000px] mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-3 text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-2 text-center">
                         Job Opportunities
                     </h2>
-                    <p className="text-lg text-text-secondary mb-8 text-center">
+                    <p className="text-lg text-text-secondary mb-6 text-center">
                         We welcome applications from talented professionals passionate about trade law.
                     </p>
 
