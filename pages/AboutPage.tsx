@@ -41,7 +41,7 @@ const AboutPage: React.FC = () => {
          <div className="absolute inset-0 z-0" aria-hidden="true">
            <img
              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
-             alt=""
+             alt="California law office building representing Trembach Law Firm international trade and customs legal practice"
              className="w-full h-full object-cover object-center"
              loading="lazy"
              decoding="async"

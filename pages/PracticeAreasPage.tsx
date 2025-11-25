@@ -453,7 +453,7 @@ const PracticeAreasPage: React.FC = () => {
          <div className="absolute inset-0 z-0" aria-hidden="true">
            <img
              src="/images/hero-practice-areas.jpg"
-             alt=""
+             alt="California international trade and customs law practice areas - comprehensive legal services from import compliance to export controls"
              className="w-full h-full object-cover object-center"
              loading="lazy"
              decoding="async"

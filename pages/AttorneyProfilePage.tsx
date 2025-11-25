@@ -39,7 +39,7 @@ const AttorneyProfilePage: React.FC = () => {
         <div className="absolute inset-0 z-0" aria-hidden="true">
            <img
              src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?q=80&w=2070&auto=format&fit=crop"
-             alt=""
+             alt="Anatolii Trembach - California international trade and customs attorney with expertise in CBP defense and import law"
              className="w-full h-full object-cover"
              loading="eager"
              decoding="async"

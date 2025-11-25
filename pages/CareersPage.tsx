@@ -183,7 +183,7 @@ const CareersPage: React.FC = () => {
                 <div className="absolute inset-0 z-0" aria-hidden="true">
                     <img
                         src="/images/hero-careers.jpg"
-                        alt=""
+                        alt="International trade attorney careers at California law firm - professional legal workplace for customs and trade law specialists"
                         className="w-full h-full object-cover object-center"
                         loading="lazy"
                         decoding="async"
