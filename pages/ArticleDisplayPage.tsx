@@ -70,16 +70,16 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
     <>
       <article className="bg-white min-h-screen pt-32 pb-20">
         {/* Back Navigation */}
-        <div className="max-w-[800px] mx-auto px-6 mb-12">
+        <div className="max-w-[800px] mx-auto px-6 mb-16">
           <a
             href="#news"
-            className="group flex items-center gap-2 text-xs font-bold uppercase tracking-wider transition-colors duration-300"
-            style={{ color: '#D1D5DB' }}
+            className="group inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider transition-colors duration-300"
+            style={{ color: '#9CA3AF' }}
             onMouseEnter={(e) => e.currentTarget.style.color = '#3FBB94'}
-            onMouseLeave={(e) => e.currentTarget.style.color = '#D1D5DB'}
+            onMouseLeave={(e) => e.currentTarget.style.color = '#9CA3AF'}
           >
             <span className="group-hover:-translate-x-1 transition-transform duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3 h-3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
               </svg>
             </span>
@@ -232,7 +232,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
         </div>
 
         {/* Footer / Disclaimer */}
-        <div className="max-w-[800px] mx-auto px-6 mt-16">
+        <div className="max-w-[800px] mx-auto px-6 mt-20 mb-32">
           <div className="p-6 rounded-sm" style={{
             backgroundColor: '#F9FAFB',
             borderLeft: '4px solid #E5E7EB'
