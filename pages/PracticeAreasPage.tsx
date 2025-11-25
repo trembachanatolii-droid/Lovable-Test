@@ -270,16 +270,18 @@ const PracticeAccordionItem: React.FC<{
       
       {/* Content Dropdown Animation */}
       <div
-        className={`grid transition-all duration-300 ease-in-out ${
-          isOpen ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0 mt-0'
-        }`}
+        style={{
+          maxHeight: isOpen ? '2000px' : '0',
+          opacity: isOpen ? 1 : 0,
+          marginTop: isOpen ? '8px' : '0',
+          overflow: 'hidden',
+          transition: 'max-height 300ms ease-in-out, opacity 300ms ease-in-out, margin-top 300ms ease-in-out'
+        }}
       >
-        <div className="overflow-hidden">
-            <div className="bg-white p-4 md:p-6 rounded-2xl border-l-4 border-secondary-teal shadow-sm">
-                 <p className="text-base md:text-lg leading-relaxed text-text-secondary">
-                    {content}
-                 </p>
-            </div>
+        <div className="bg-white p-4 md:p-6 rounded-2xl border-l-4 border-secondary-teal shadow-sm">
+          <p className="text-base md:text-lg leading-relaxed text-text-secondary">
+            {content}
+          </p>
         </div>
       </div>
     </div>
