@@ -8,9 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } fr
 
 const EcommerceDigitalTradeGuidePage: React.FC = () => {
   useMeta({
-    title: 'Ecommerce Import Rules California | Online Sellers Customs Compliance | Digital Trade Law',
-    description: 'Complete guide to ecommerce import rules California, online sellers customs compliance, digital trade law, and data transfer export controls for California businesses. Expert legal guidance for Amazon FBA, Shopify, and online retailers navigating customs regulations. Call 631-746-8290.',
-    keywords: 'ecommerce import rules California, online sellers customs compliance California, digital trade law California, data transfer export controls California',
+    title: 'CA Ecommerce Import | Online Sellers Customs & Digital Trade',
+    description: 'California ecommerce import & online sellers customs compliance. Digital trade law, Section 321, data export controls for CA/USA retailers. Call 631-746-8290.',
     canonical: 'ecommerce-digital-trade-guide',
     ogType: 'article',
     ogImage: `${siteConfig.siteUrl}/og-image-ecommerce-guide.jpg`,

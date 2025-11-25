@@ -8,9 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } fr
 
 const TariffsClassificationGuidePage: React.FC = () => {
   useMeta({
-    title: 'HTS Classification California Guide | Antidumping Countervailing Duties | Section 301 Tariffs',
-    description: 'Comprehensive guide to HTS classification California, antidumping duties, countervailing duties, Section 301 tariffs, Section 232 tariffs, trade remedies, customs valuation, and transfer pricing for California importers. Expert legal analysis and compliance strategies. Call 631-746-8290.',
-    keywords: 'HTS classification California, antidumping duties California, countervailing duties California, Section 301 tariffs California, Section 232 tariffs California, trade remedies California, valuation of imported goods California, customs valuation transfer pricing California',
+    title: 'HTS Classification CA | AD/CVD Duties | Section 301 Tariffs Guide',
+    description: 'Complete guide: HTS classification California, antidumping duties, countervailing duties, Section 301/232 tariffs, trade remedies, customs valuation & transfer pricing for CA/USA importers. Expert compliance strategies. Call 631-746-8290.',
     canonical: 'tariffs-duties-classification-guide',
     ogType: 'article',
     ogImage: `${siteConfig.siteUrl}/og-image-tariffs-guide.jpg`,
