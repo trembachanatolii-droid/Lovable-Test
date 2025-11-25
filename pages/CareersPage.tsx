@@ -16,19 +16,19 @@ interface JobCategoryProps {
 
 const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, qualifications, applyLink, isOpen, onToggle }) => {
     return (
-        <div className="border-b border-border-subtle">
+        <div style={{ borderBottom: '1px solid #E5E7EB' }}>
             <button
                 onClick={onToggle}
                 className="w-full flex justify-between items-center text-left group focus:outline-none"
                 style={{
-                    paddingTop: '20px',
-                    paddingBottom: '20px',
+                    paddingTop: '24px',
+                    paddingBottom: '24px',
                     paddingLeft: '0',
                     paddingRight: '0'
                 }}
                 aria-expanded={isOpen}
             >
-                <h3 className={`text-2xl font-garamond font-bold transition-colors duration-300 ${isOpen ? 'text-secondary-teal' : 'text-primary-navy group-hover:text-primary-midBlue'}`} style={{ lineHeight: '1.2', margin: 0 }}>
+                <h3 className={`text-2xl font-garamond font-bold transition-colors duration-300 ${isOpen ? 'text-secondary-teal' : 'text-primary-navy group-hover:text-primary-midBlue'}`} style={{ lineHeight: '1.3', margin: 0 }}>
                     {title}
                 </h3>
                 <div className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${isOpen ? 'border-secondary-teal rotate-45' : 'border-neutral-gray group-hover:border-primary-navy'}`} style={{ flexShrink: 0 }}>
@@ -43,7 +43,7 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
                     transition: 'max-height 300ms ease-in-out, opacity 300ms ease-in-out'
                 }}
             >
-                <div style={{ paddingTop: '16px' }}>
+                <div style={{ paddingTop: '0', paddingBottom: '24px' }}>
                     <p className="text-lg text-text-secondary mb-6 leading-relaxed">
                         {description}
                     </p>
@@ -204,10 +204,10 @@ const CareersPage: React.FC = () => {
             </section>
 
             {/* Job Opportunities Section */}
-            <section className="py-12 px-6 bg-white">
-                <div className="max-w-[1000px] mx-auto">
-                    <div className="mb-6">
-                        <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-2">
+            <section className="py-20 px-6 bg-white">
+                <div className="max-w-[900px] mx-auto">
+                    <div className="mb-12 text-center">
+                        <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-4">
                             Job Opportunities
                         </h2>
                         <p className="text-lg text-text-secondary">
@@ -215,7 +215,7 @@ const CareersPage: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="flex flex-col border-t border-border-subtle">
+                    <div className="flex flex-col" style={{ borderTop: '1px solid #E5E7EB' }}>
                         {jobCategories.map((job) => (
                             <JobCategoryAccordion
                                 key={job.id}
