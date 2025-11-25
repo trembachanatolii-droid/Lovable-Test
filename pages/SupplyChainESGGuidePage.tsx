@@ -8,9 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } fr
 
 const SupplyChainESGGuidePage: React.FC = () => {
   useMeta({
-    title: 'Supply Chain ESG Compliance California | Forced Labor Import Bans | UFLPA Compliance',
-    description: 'Comprehensive guide to supply chain ESG compliance California, forced labor import bans, Uyghur Forced Labor Prevention Act (UFLPA), green trade regulations, carbon border adjustment, bribery risks, and FCPA trade issues for California importers. Expert compliance strategies. Call 631-746-8290.',
-    keywords: 'supply chain ESG compliance California, forced labor import bans California, Uyghur Forced Labor Prevention Act California, green trade regulations California, carbon border adjustment issues California, bribery and corruption trade risks California, FCPA related trade issues California',
+    title: 'Supply Chain ESG CA | UFLPA | Forced Labor Import Bans Guide',
+    description: 'Complete guide: Supply chain ESG compliance California, UFLPA (Uyghur Forced Labor Prevention Act), forced labor import bans, green trade regulations, carbon border adjustment, bribery/corruption risks & FCPA for CA/USA importers. Call 631-746-8290.',
     canonical: 'supply-chain-esg-compliance-guide',
     ogType: 'article',
     ogImage: `${siteConfig.siteUrl}/og-image-esg-guide.jpg`,
