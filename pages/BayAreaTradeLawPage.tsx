@@ -8,9 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const BayAreaTradeLawPage: React.FC = () => {
   useMeta({
-    title: 'San Francisco Trade Compliance Attorney | Oakland Port Customs Lawyer | Bay Area',
-    description: 'Leading San Francisco trade compliance attorney and Oakland port customs lawyer serving Bay Area tech companies, startups, and manufacturers. Trade law advice for startups California, export controls for tech companies, ITAR/EAR compliance for innovation economy. Serving San Francisco, Oakland, San Jose, and Silicon Valley. Call 631-746-8290.',
-    keywords: 'San Francisco trade compliance attorney, Oakland port customs attorney, trade law advice for startups California, trade compliance for tech companies California, Bay Area customs lawyer, Silicon Valley export controls attorney, San Francisco export lawyer, Oakland customs attorney, San Jose trade lawyer, Bay Area ITAR attorney, San Francisco EAR compliance lawyer, tech startup trade attorney California, software export controls California, hardware export compliance Bay Area, Northern California trade lawyer',
+    title: 'San Francisco Trade Attorney | Bay Area Customs Lawyer CA',
+    description: 'San Francisco trade compliance attorney & Oakland port customs lawyer. Trade law advice for startups California, export controls for tech companies, ITAR/EAR compliance. Serving Bay Area, Silicon Valley, San Jose. Call 631-746-8290.',
     canonical: 'bay-area-trade-law-attorney',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-bay-area.jpg`,

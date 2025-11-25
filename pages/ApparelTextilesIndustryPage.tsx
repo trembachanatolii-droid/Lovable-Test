@@ -4,9 +4,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const ApparelTextilesIndustryPage: React.FC = () => {
   useMeta({
-    title: 'Apparel Import Attorney California | Textile Customs Compliance | Fashion Industry Trade Lawyer',
-    description: 'California apparel import attorney for fashion brands and textile importers. Expert representation in HTS classification, UFLPA forced labor compliance, country of origin, AD/CVD defense, and textile trade regulations.',
-    keywords: 'apparel import attorney California, textile customs attorney California, fashion industry trade lawyer, clothing import compliance California, UFLPA apparel attorney California, textile classification lawyer, garment import attorney California, fashion brand customs compliance, textile supply chain attorney California',
+    title: 'Apparel Import Attorney CA | Textile Trade Lawyer | UFLPA',
+    description: 'California apparel import attorney & textile customs lawyer. Fashion industry trade law for UFLPA forced labor compliance, HTS classification, country of origin & textile supply chain. Expert for fashion brands. Call 631-746-8290.',
     canonical: 'apparel-textiles-trade-attorney',
     schema: [
       generateWebPageSchema({

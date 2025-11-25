@@ -4,9 +4,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const FoodAgricultureIndustryPage: React.FC = () => {
   useMeta({
-    title: 'Food Import Attorney California | Agricultural Trade Lawyer | FDA Customs Compliance',
-    description: 'California food import attorney for agricultural producers and food importers. Expert representation in FDA compliance, USDA regulations, food safety, HTS classification, and agricultural trade law.',
-    keywords: 'food import attorney California, agricultural trade lawyer California, FDA customs compliance attorney, food safety import lawyer California, USDA import regulations attorney, produce import compliance California, food labeling attorney California, agricultural import lawyer California',
+    title: 'Food Import Attorney CA | Agriculture Trade Lawyer | FDA',
+    description: 'California food import attorney & agricultural trade lawyer. FDA compliance, USDA regulations, food safety, HTS classification & produce import compliance. Expert for food importers & agricultural producers. Call 631-746-8290.',
     canonical: 'food-agriculture-trade-attorney',
     schema: [
       generateWebPageSchema({

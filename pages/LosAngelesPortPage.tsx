@@ -8,9 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const LosAngelesPortPage: React.FC = () => {
   useMeta({
-    title: 'Los Angeles Customs Attorney | Long Beach Port Trade Lawyer | California Port Lawyer',
-    description: 'Premier Los Angeles customs attorney and Long Beach port trade lawyer serving LA/Long Beach port complex. Expert California port customs lawyer for import/export businesses, manufacturers, and logistics companies. CBP defense, customs audits, trade compliance for the nation\'s busiest port. Call 631-746-8290.',
-    keywords: 'Los Angeles customs attorney, Long Beach port trade lawyer, California port customs lawyer, LA port customs attorney, Long Beach customs lawyer, Port of Los Angeles attorney, Port of Long Beach lawyer, LA customs litigation attorney, Southern California port lawyer, San Pedro customs attorney, LA harbor trade attorney, Long Beach import attorney, Los Angeles export controls lawyer, LA CBP defense attorney, Long Beach trade compliance lawyer',
+    title: 'Los Angeles Customs Attorney | Long Beach Port Lawyer CA',
+    description: 'Los Angeles customs attorney & Long Beach port trade lawyer. California port customs lawyer for LA/Long Beach port complex. CBP defense, customs audits, trade compliance for import/export businesses. Call 631-746-8290.',
     canonical: 'los-angeles-port-customs-attorney',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-la-port.jpg`,
