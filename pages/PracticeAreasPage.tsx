@@ -319,12 +319,15 @@ const PracticeAccordionItem: React.FC<{
 
 const PracticeAreasPage: React.FC = () => {
   useMeta({
-    title: 'Trade Law Services | Customs Defense, Compliance & Export Controls | California',
+    title: 'CA Trade Law | Customs Defense & Export Compliance',
     description: 'Complete CA trade law services: customs audit defense, CBP investigations, ITAR/EAR compliance, trade litigation, maritime law. Expert statewide representation.',
-    keywords: 'customs audits California, CBP investigation defense California, CBP penalty mitigation California, customs seizures California, California customs litigation, trade compliance California, import compliance program California, export compliance program California, export controls California lawyer, ITAR compliance California, EAR compliance California, OFAC sanctions compliance California, trade finance law California, drawback claims California, foreign trade zones California, tariff engineering California, maritime trade law California, international distribution agreements California, cross border contracts California, letters of credit disputes California, customs brokerage legal advice California, ocean shipping regulation California',
     canonical: 'practice-areas',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-practice-areas.jpg`,
+    ogImageAlt: 'Trade Law Practice Areas - Customs Defense, Compliance & Export Controls',
+    ogImageWidth: '1200',
+    ogImageHeight: '630',
+    twitterImageAlt: 'Trade Law Practice Areas - Customs Defense, Compliance & Export Controls',
     schema: [
       {
         '@context': 'https://schema.org',

@@ -66,10 +66,9 @@ const practiceAreasPreviewData = [
 const HomePage: React.FC = () => {
   // SEO Meta Tags and Open Graph - Optimized for Main Hub Keywords
   useMeta({
-    title: 'California International Trade Attorney | Import Export Lawyer | Customs Attorney',
+    title: 'CA International Trade Attorney | Customs & Import Law',
     description: 'California international trade attorney & customs lawyer. CBP defense, trade compliance, import/export law for CA businesses. Free consultation: 631-746-8290.',
     canonical: '',
-    keywords: 'California international trade attorney, California customs attorney, import export lawyer California, international trade law California, multinational trade law California, global trade strategy California, CBP defense attorney, customs lawyer California, trade compliance California, federal trade compliance',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-home.jpg`,
     ogImageAlt: 'Trembach Law Firm - California International Trade & Customs Attorney',

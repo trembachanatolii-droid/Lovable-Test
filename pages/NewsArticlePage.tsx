@@ -1,10 +1,28 @@
 
 import React, { useEffect } from 'react';
+import { useMeta } from '../hooks/useMeta';
+import { siteConfig } from '../config/siteConfig';
 
 const NewsArticlePage: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags
+  useMeta({
+    title: 'Tariff Classification Disputes | How to Challenge CBP HTS Determination',
+    description: 'Expert guide on challenging CBP tariff classification decisions. Learn HTS classification methodology, binding rulings, protests, and Court of International Trade litigation strategies.',
+    canonical: 'article/tariff-classification-disputes',
+    ogType: 'article',
+    ogImage: `${siteConfig.siteUrl}/og-image-default.jpg`,
+    ogImageAlt: 'Tariff Classification Disputes - Challenging CBP HTS Determinations',
+    ogImageWidth: '1200',
+    ogImageHeight: '630',
+    twitterImageAlt: 'Tariff Classification Disputes - Challenging CBP HTS Determinations',
+    articlePublishedTime: '2025-11-17',
+    articleModifiedTime: '2025-11-17',
+    articleAuthor: 'Anatolii Trembach',
+  });
 
   return (
     <div className="bg-white min-h-screen font-montserrat">

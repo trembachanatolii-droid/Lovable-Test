@@ -166,10 +166,13 @@ const NewsPage: React.FC = () => {
   useMeta({
     title: 'Trade Law News & Insights | CBP Audits, Export Controls, ITAR | California',
     description: 'Trade law news from California customs attorneys: CBP audits, ITAR compliance, Section 301 tariffs, OFAC sanctions, UFLPA updates. Expert insights for CA importers.',
-    keywords: 'international trade law news California, CBP focused assessments, customs audits news, ITAR compliance updates, EAR compliance news, export controls California, Section 301 tariffs, OFAC sanctions updates, trade compliance news, customs regulations California, tariff classification updates',
     canonical: 'news',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-news.jpg`,
+    ogImageAlt: 'Trade Law News & Insights - CBP Audits, Export Controls, ITAR Compliance',
+    ogImageWidth: '1200',
+    ogImageHeight: '630',
+    twitterImageAlt: 'Trade Law News & Insights - CBP Audits, Export Controls, ITAR Compliance',
     schema: [
       {
         '@context': 'https://schema.org',

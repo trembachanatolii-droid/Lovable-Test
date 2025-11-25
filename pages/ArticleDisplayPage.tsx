@@ -16,7 +16,6 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
   useMeta({
     title: article ? `${article.title} | Trembach Law Firm` : 'Article Not Found',
     description: article ? `${article.subheading}. Expert analysis from California international trade and customs law attorneys. ${article.intro}` : 'Article not found',
-    keywords: article ? (article.keywords || 'international trade law, customs regulations, legal analysis, trade compliance') : '',
     canonical: article ? `article/${article.id}` : '',
     ogType: 'article',
     ogImage: article ? `${siteConfig.siteUrl}/og-image-article-${article.id}.jpg` : '',

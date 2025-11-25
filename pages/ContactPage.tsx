@@ -9,10 +9,13 @@ const ContactPage: React.FC = () => {
   useMeta({
     title: 'Contact California International Trade Attorney | Free Consultation',
     description: '24/7 customs emergency response. Multilingual CA trade firm serving LA, SF, SD ports. Urgent CBP defense, UFLPA detention release. Call 631-746-8290 now.',
-    keywords: 'contact California international trade attorney, California customs attorney contact, import export lawyer California, CBP defense attorney, trade compliance lawyer, customs litigation attorney, Calabasas law firm, 24/7 legal services, free consultation trade law',
     canonical: 'contact',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-contact.jpg`,
+    ogImageAlt: 'Contact Trembach Law Firm - California International Trade Attorney',
+    ogImageWidth: '1200',
+    ogImageHeight: '630',
+    twitterImageAlt: 'Contact Trembach Law Firm - California International Trade Attorney',
     schema: [
       {
         '@context': 'https://schema.org',
