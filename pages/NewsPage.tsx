@@ -164,8 +164,8 @@ const NewsArticleCard: React.FC<{ item: NewsItem }> = ({ item }) => {
 
 const NewsPage: React.FC = () => {
   useMeta({
-    title: 'Trade Law News & Insights | CBP Audits, Export Controls, ITAR | California',
-    description: 'Trade law news from California customs attorneys: CBP audits, ITAR compliance, Section 301 tariffs, OFAC sanctions, UFLPA updates. Expert insights for CA importers.',
+    title: 'CA Trade Law News | CBP Audits, ITAR, Export Controls Updates',
+    description: 'California international trade law news & customs insights: CBP investigation updates, ITAR/EAR compliance changes, Section 301 tariffs, OFAC sanctions, UFLPA enforcement, trade compliance updates. Expert analysis for CA/USA importers & exporters.',
     canonical: 'news',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-news.jpg`,
