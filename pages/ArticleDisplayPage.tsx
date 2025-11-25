@@ -88,9 +88,9 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
         </div>
 
         {/* Article Header */}
-        <header className="max-w-[800px] mx-auto px-6 mb-16 text-center md:text-left">
+        <header className="max-w-[800px] mx-auto px-6 mb-16 text-left">
           {/* Categories */}
-          <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-wider mb-8 justify-center md:justify-start">
+          <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-wider mb-8 justify-start">
             <span className="px-2.5 py-1 rounded-sm" style={{ backgroundColor: '#E6F7F2', color: '#3FBB94' }}>
               Customs Litigation
             </span>
@@ -107,7 +107,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
           </h1>
 
           {/* Author Metadata */}
-          <div className="flex flex-col md:flex-row items-center gap-6 py-8 justify-center md:justify-start" style={{
+          <div className="flex flex-col md:flex-row items-center gap-6 py-8 justify-start" style={{
             borderTop: '1px solid #E5E7EB',
             borderBottom: '1px solid #E5E7EB'
           }}>
@@ -127,7 +127,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
 
             <div className="hidden md:block w-px h-10" style={{ backgroundColor: '#E5E7EB' }}></div>
 
-            <div className="flex flex-col text-center md:text-left">
+            <div className="flex flex-col text-left">
               <span className="text-[10px] uppercase tracking-widest mb-0.5" style={{ color: '#9CA3AF' }}>
                 Published
               </span>
@@ -245,7 +245,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
       </article>
 
       {/* White space separator between article and form */}
-      <div className="bg-white py-16"></div>
+      <div className="bg-white py-11"></div>
 
       {/* Evaluation CTA */}
       <EvaluationForm theme="light" />
