@@ -68,6 +68,15 @@ const Section301TariffsGuidePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Last Updated Timestamp */}
+      <div className="py-4 px-4 bg-white border-b border-gray-100">
+        <div className="container-custom max-w-4xl">
+          <p className="text-sm text-gray-500 text-center">
+            <span className="font-semibold text-primary-navy">Last Updated:</span> <time dateTime="2025-11-25">November 25, 2025</time>
+          </p>
+        </div>
+      </div>
+
       {/* Main Content */}
       <article className="py-12 px-4">
         <div className="container-custom max-w-4xl prose prose-lg">

@@ -47,7 +47,7 @@ const ContactPage: React.FC = () => {
          <div className="absolute inset-0 z-0" aria-hidden="true">
            <img
              src="/images/hero-contact.jpg"
-             alt=""
+             alt="California international trade attorney office - Contact Trembach Law Firm for customs and import law consultations"
              className="w-full h-full object-cover object-center"
              loading="lazy"
              decoding="async"

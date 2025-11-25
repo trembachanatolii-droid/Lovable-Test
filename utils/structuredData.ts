@@ -17,6 +17,7 @@ export function generatePersonSchema() {
     givenName: 'Anatolii',
     familyName: 'Trembach',
     url: 'https://trembach.law/#attorney-profile',
+    image: 'https://trembach.law/images/attorney-anatolii-trembach.jpg',
     jobTitle: 'International Trade & Customs Attorney',
     description: 'International trade and customs attorney specializing in CBP enforcement defense, tariff classification disputes, and trade compliance. Former criminal detective and special agent with Ukraine\'s Security Service (SBU).',
     knowsLanguage: [
@@ -134,6 +135,14 @@ export function generateWebSiteSchema() {
     description: 'Expert international trade and customs law counsel',
     publisher: {
       '@id': 'https://trembach.law/#organization',
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://trembach.law/#news?q={search_term_string}',
+      },
+      'query-input': 'required name=search_term_string',
     },
     inLanguage: 'en-US',
   };

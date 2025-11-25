@@ -128,7 +128,8 @@ export function generateArticleSchema(config: {
       url: config.authorUrl || `${siteConfig.siteUrl}/#attorney-profile`,
     },
     publisher: {
-      '@type': 'LegalService',
+      '@type': 'Organization',
+      '@id': 'https://trembach.law/#organization',
       name: siteConfig.siteName,
       url: siteConfig.siteUrl,
     },
@@ -150,7 +151,8 @@ export function generateWebPageSchema(config: {
     description: config.description,
     url: config.url,
     publisher: {
-      '@type': 'LegalService',
+      '@type': 'Organization',
+      '@id': 'https://trembach.law/#organization',
       name: siteConfig.siteName,
       url: siteConfig.siteUrl,
     },
@@ -234,7 +236,7 @@ export function generateServiceSchema(config: {
     name: config.name,
     description: config.description,
     provider: {
-      '@type': 'LegalService',
+      '@type': 'Organization',
       '@id': 'https://trembach.law/#organization',
       name: siteConfig.siteName,
     },

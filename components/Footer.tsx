@@ -40,9 +40,9 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Firm Info & Newsletter */}
                     <div className="lg:col-span-2">
-                        <h2 className="text-2xl font-bold font-garamond text-white mb-3">Trembach Law Firm</h2>
+                        <div className="text-2xl font-bold font-garamond text-white mb-3">Trembach Law Firm</div>
                         <p className="mb-5 max-w-md text-sm leading-normal">Your partners in navigating the complexities of modern law. We are committed to delivering exceptional results with integrity and dedication.</p>
-                        <h3 className="text-lg font-semibold text-white mb-3">Stay Informed</h3>
+                        <div className="text-lg font-semibold text-white mb-3">Stay Informed</div>
                         <form className="flex flex-row gap-3 mb-4" style={{ minHeight: '48px' }}>
                             <input
                                 type="email"
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
                     <div className="grid grid-cols-3 gap-8 col-span-1 md:col-span-2 lg:col-span-2">
                         {Object.entries(footerLinks).map(([title, links]) => (
                             <div key={title}>
-                                <h4 className="font-bold text-white mb-3 uppercase tracking-wider text-xs">{title}</h4>
+                                <div className="font-bold text-white mb-3 uppercase tracking-wider text-xs">{title}</div>
                                 <ul className="space-y-2.5 list-none">
                                     {links.map((link: any, index: number) => (
                                         <li
