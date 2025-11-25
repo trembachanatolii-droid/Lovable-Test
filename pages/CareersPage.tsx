@@ -271,10 +271,10 @@ const CareersPage: React.FC = () => {
                     <h2 className="text-3xl md:text-4xl font-bold font-garamond text-primary-navy mb-8">
                         How to Apply
                     </h2>
-                    <div className="space-y-6 text-text-secondary">
+                    <div className="grid md:grid-cols-3 gap-6">
                         <div>
                             <h3 className="text-lg font-bold text-primary-navy mb-3">Required Materials</h3>
-                            <ul className="list-disc list-inside space-y-2">
+                            <ul className="list-disc list-inside space-y-2 text-text-secondary text-sm">
                                 <li>Cover letter explaining your interest in trade law</li>
                                 <li>Resume or CV</li>
                                 <li>Writing sample (5-10 pages, legal analysis preferred)</li>
@@ -283,24 +283,24 @@ const CareersPage: React.FC = () => {
                         </div>
                         <div>
                             <h3 className="text-lg font-bold text-primary-navy mb-3">Application Timeline</h3>
-                            <ul className="list-disc list-inside space-y-2">
+                            <ul className="list-disc list-inside space-y-2 text-text-secondary text-sm">
                                 <li>Application review: 1-2 weeks</li>
                                 <li>Initial interview: 30-60 minutes</li>
                                 <li>Final interview: Meet team, office tour</li>
                                 <li>Decision notification within 1 week</li>
                             </ul>
                         </div>
-                        <div className="bg-white p-6 rounded-lg border-l-4 border-secondary-teal mt-6">
-                            <p className="font-bold text-primary-navy mb-2">Contact for Questions:</p>
-                            <p>Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a></p>
-                            <p>Phone: <a href="tel:631-746-8290" className="text-secondary-teal hover:underline">631-746-8290</a></p>
+                        <div>
+                            <h3 className="text-lg font-bold text-primary-navy mb-3">Contact for Questions</h3>
+                            <p className="text-text-secondary text-sm mb-2">Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a></p>
+                            <p className="text-text-secondary text-sm">Phone: <a href="tel:631-746-8290" className="text-secondary-teal hover:underline">631-746-8290</a></p>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Job Opportunities Section */}
-            <section className="py-24 px-6 bg-white">
+            <section className="py-16 px-6 bg-white">
                 <div className="max-w-[1000px] mx-auto">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4 border-b border-neutral-lightGray pb-6">
                         <div>
