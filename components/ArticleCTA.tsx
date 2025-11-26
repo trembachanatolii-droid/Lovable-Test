@@ -80,7 +80,7 @@ const ArticleCTA: React.FC<ArticleCTAProps> = ({ topic = 'this matter', variant 
             </div>
             <div>
               <div className="font-bold text-primary-navy text-sm">Confidential</div>
-              <div className="text-xs text-text-secondary">Attorney-client privilege</div>
+              <div className="text-xs text-text-secondary">Your submission is confidential</div>
             </div>
           </div>
 
