@@ -80,7 +80,7 @@ const ArticleCTA: React.FC<ArticleCTAProps> = ({ topic = 'this matter', variant 
             </div>
             <div>
               <div className="font-bold text-primary-navy text-sm">Confidential</div>
-              <div className="text-xs text-text-secondary">Attorney-client privilege</div>
+              <div className="text-xs text-text-secondary">Your submission is confidential</div>
             </div>
           </div>
 
@@ -99,7 +99,7 @@ const ArticleCTA: React.FC<ArticleCTAProps> = ({ topic = 'this matter', variant 
 
         {/* CTA Buttons */}
         <div className="flex flex-col md:flex-row gap-4 items-center">
-          <Button href="#contact" variant="solid" className="w-full md:w-auto">
+          <Button href="#schedule-consultation" variant="solid" className="w-full md:w-auto">
             Schedule Free Consultation
           </Button>
 
