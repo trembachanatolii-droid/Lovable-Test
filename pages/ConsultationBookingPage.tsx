@@ -189,7 +189,7 @@ const ConsultationBookingPage: React.FC = () => {
                         <p className="text-lg md:text-xl font-light mb-4 leading-relaxed text-white">
                             Book a consultation with our international trade and customs law experts. Select your preferred date, time, and meeting format below.
                         </p>
-                        <p className="text-base font-light mb-4 leading-relaxed text-white/90">
+                        <p className="text-base font-light mb-4 leading-relaxed text-white">
                             Your free 30-60 minute consultation includes a direct conversation with our trade law attorneys—not junior staff. We'll review your situation, assess your options, and provide an honest evaluation of your case.
                         </p>
                         <div className="w-24 h-1 bg-secondary-teal mx-auto"></div>
