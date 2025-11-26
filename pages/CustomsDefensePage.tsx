@@ -173,13 +173,13 @@ const CustomsDefensePage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Customs Audits California - Focused Assessment Defense</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                CBP's Regulatory Audit Division conducts <strong>Focused Assessments (FA), Quick Response Audits (QRA), and Compliance Surveys</strong> to stress-test your internal controls. If they find high error rates or systemic failures, you face expanded audits, mandatory Compliance Improvement Plans (CIPs), and potential penalties. As your customs audits California defense attorney, we manage the audit process from PAS through final report.
+                CBP's Regulatory Audit Division conducts <strong><a href="#article/cbp-focused-assessments" className="text-secondary-teal hover:text-primary-navy font-semibold">Focused Assessments (FA)</a>, Quick Response Audits (QRA), and Compliance Surveys</strong> to stress-test your internal controls. If they find high error rates or systemic failures, you face expanded audits, mandatory Compliance Improvement Plans (CIPs), and potential penalties. As your customs audits California defense attorney, we manage the audit process from <a href="#article/cbp-focused-assessment-survival-guide-california" className="text-secondary-teal hover:text-primary-navy font-semibold">PAS through final report</a>.
               </p>
               <ul className="list-disc list-inside space-y-2 text-text-secondary pl-4">
                 <li><strong>Pre-Assessment Survey (PAS) Management:</strong> Control data production to limit scope</li>
-                <li><strong>Reasonable Care Defense:</strong> Prove your internal controls meet the legal standard</li>
+                <li><strong><a href="#article/reasonable-care-standard-california-importers" className="text-secondary-teal hover:text-primary-navy">Reasonable Care Defense</a>:</strong> Prove your internal controls meet the legal standard</li>
                 <li><strong>Shadow Audits:</strong> We audit your entries before CBP does to identify and fix errors</li>
-                <li><strong>Prior Disclosure Filings:</strong> Cap liability at interest-only if violations are found</li>
+                <li><strong><a href="#article/prior-disclosure-timing-strategies-california" className="text-secondary-teal hover:text-primary-navy">Prior Disclosure Filings</a>:</strong> Cap liability at interest-only if violations are found</li>
                 <li><strong>Acceptable Risk Advocacy:</strong> Negotiate final audit reports to avoid "Unacceptable Risk" findings</li>
               </ul>
             </div>
@@ -203,7 +203,7 @@ const CustomsDefensePage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">CBP Penalty Mitigation California - 19 USC § 1592 Defense</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                CBP assesses civil penalties under <strong>19 USC § 1592</strong> for material false statements or omissions. Penalties range from 20% of the value (negligence) to 100% of domestic value (fraud). We provide <strong>CBP penalty mitigation California</strong> services to challenge CBP's legal theories, reduce culpability findings, and negotiate settlements.
+                CBP assesses <a href="#article/customs-penalties-1592" className="text-secondary-teal hover:text-primary-navy font-semibold">civil penalties under 19 USC § 1592</a> for material false statements or omissions. Penalties range from 20% of the value (negligence) to 100% of domestic value (fraud). We provide <strong><a href="#article/section-1592-penalties-california-defense" className="text-secondary-teal hover:text-primary-navy">CBP penalty mitigation California</a></strong> services to challenge CBP's legal theories, reduce culpability findings, and negotiate settlements.
               </p>
               <ul className="list-disc list-inside space-y-2 text-text-secondary pl-4">
                 <li><strong>Culpability Challenges:</strong> Downgrade Fraud to Gross Negligence or Negligence</li>
@@ -218,12 +218,12 @@ const CustomsDefensePage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Customs Seizures California & Import Detention Release</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                CBP seizes goods for intellectual property violations, forced labor concerns (UFLPA), agricultural non-compliance, or suspected smuggling. Seized cargo is <strong>presumed forfeited</strong> unless you file a claim and prove admissibility within strict deadlines. We handle <strong>customs seizures California</strong> and <strong>import detention release California</strong> cases daily.
+                CBP seizes goods for intellectual property violations, <a href="#article/forced-labor-compliance" className="text-secondary-teal hover:text-primary-navy font-semibold">forced labor concerns (UFLPA)</a>, agricultural non-compliance, or suspected smuggling. Seized cargo is <strong>presumed forfeited</strong> unless you file a claim and prove admissibility within strict deadlines. We handle <strong><a href="#article/cbp-seizure-forfeiture-defense-california" className="text-secondary-teal hover:text-primary-navy">customs seizures California</a></strong> and <strong>import detention release California</strong> cases daily.
               </p>
               <ul className="list-disc list-inside space-y-2 text-text-secondary pl-4">
-                <li><strong>UFLPA Detention Defense:</strong> Overcome "rebuttable presumption" for Xinjiang goods</li>
+                <li><strong><a href="#article/uflpa-detention-response-california-apparel" className="text-secondary-teal hover:text-primary-navy">UFLPA Detention Defense</a>:</strong> Overcome "rebuttable presumption" for Xinjiang goods</li>
                 <li><strong>Trademark/Copyright Defense:</strong> Prove goods are genuine or licensed</li>
-                <li><strong>Redelivery Bond Posting:</strong> Secure conditional release while case is pending</li>
+                <li><strong><a href="#article/customs-bond-requirements-california-importers" className="text-secondary-teal hover:text-primary-navy">Redelivery Bond Posting</a>:</strong> Secure conditional release while case is pending</li>
                 <li><strong>Administrative Forfeiture Challenges:</strong> File claims to contest forfeiture</li>
                 <li><strong>Judicial Forfeiture Litigation:</strong> Sue in federal court to recover high-value cargo</li>
               </ul>
@@ -233,11 +233,11 @@ const CustomsDefensePage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">California Customs Litigation - Court of International Trade</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                When CBP denies your protest, refuses to release seized goods, or issues an unlawful ruling, <strong>litigation is the only remedy</strong>. We litigate <strong>California customs litigation</strong> cases in the U.S. Court of International Trade (CIT) in New York, the specialized federal court with exclusive jurisdiction over customs disputes.
+                When CBP denies your protest, refuses to release seized goods, or issues an unlawful ruling, <strong>litigation is the only remedy</strong>. We litigate <strong>California customs litigation</strong> cases in the <a href="#article/us-cit-litigation" className="text-secondary-teal hover:text-primary-navy font-semibold">U.S. Court of International Trade (CIT)</a> in New York, the specialized federal court with exclusive jurisdiction over customs disputes.
               </p>
               <ul className="list-disc list-inside space-y-2 text-text-secondary pl-4">
-                <li><strong>19 USC § 1514 Protests:</strong> Challenge CBP liquidations and classifications</li>
-                <li><strong>AD/CVD Litigation:</strong> Appeal dumping margin determinations</li>
+                <li><strong>19 USC § 1514 Protests:</strong> Challenge <a href="#article/tariff-classification" className="text-secondary-teal hover:text-primary-navy">CBP liquidations and classifications</a></li>
+                <li><strong><a href="#article/antidumping-cvd" className="text-secondary-teal hover:text-primary-navy">AD/CVD Litigation</a>:</strong> Appeal dumping margin determinations</li>
                 <li><strong>Refund Suits:</strong> Recover overpaid duties going back 5 years</li>
                 <li><strong>Injunctive Relief:</strong> Stop unlawful CBP actions before they cause irreparable harm</li>
                 <li><strong>Appellate Practice:</strong> Appeal CIT decisions to the Federal Circuit</li>
@@ -263,7 +263,7 @@ const CustomsDefensePage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">False Claims Act Customs California & Whistleblower Trade Cases</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                The <strong>False Claims Act (FCA)</strong> allows whistleblowers (relators) to sue importers on behalf of the U.S. government for <strong>underpayment of duties</strong>. FCA cases are filed under seal, and you may not know you're under investigation until the DOJ intervenes. Damages include treble damages plus penalties of $11,000+ per false claim. We defend <strong>False Claims Act customs California</strong> and <strong>whistleblower trade cases California</strong>.
+                The <strong><a href="#article/false-claims-act-whistleblower-defense-california" className="text-secondary-teal hover:text-primary-navy font-semibold">False Claims Act (FCA)</a></strong> allows whistleblowers (relators) to sue importers on behalf of the U.S. government for <strong>underpayment of duties</strong>. FCA cases are filed under seal, and you may not know you're under investigation until the DOJ intervenes. Damages include treble damages plus penalties of $11,000+ per false claim. We defend <strong>False Claims Act customs California</strong> and <strong>whistleblower trade cases California</strong>.
               </p>
               <ul className="list-disc list-inside space-y-2 text-text-secondary pl-4">
                 <li><strong>Seal Period Strategy:</strong> Conduct internal investigation before government decides to intervene</li>
@@ -278,10 +278,10 @@ const CustomsDefensePage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Export Violations Defense California - BIS & DDTC Enforcement</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                Exporting controlled goods or technology without proper authorization violates the <strong>Export Administration Regulations (EAR)</strong> and <strong>International Traffic in Arms Regulations (ITAR)</strong>. BIS and DDTC can impose <strong>$300,000+ fines per violation, denial of export privileges, and criminal prosecution</strong>. We provide <strong>export violations defense California</strong> services.
+                Exporting controlled goods or technology without proper authorization violates the <strong><a href="#article/ear-compliance" className="text-secondary-teal hover:text-primary-navy font-semibold">Export Administration Regulations (EAR)</a></strong> and <strong><a href="#article/itar-compliance" className="text-secondary-teal hover:text-primary-navy font-semibold">International Traffic in Arms Regulations (ITAR)</a></strong>. BIS and DDTC can impose <strong>$300,000+ fines per violation, denial of export privileges, and criminal prosecution</strong>. We provide <strong>export violations defense California</strong> services. Learn more about our <a href="#export-controls-sanctions" className="text-secondary-teal hover:text-primary-navy font-semibold">Export Controls & Sanctions practice</a>.
               </p>
               <ul className="list-disc list-inside space-y-2 text-text-secondary pl-4">
-                <li><strong>Voluntary Self-Disclosure (VSD):</strong> Come forward before BIS discovers the violation</li>
+                <li><strong><a href="#article/voluntary-self-disclosure-export-violations-california" className="text-secondary-teal hover:text-primary-navy">Voluntary Self-Disclosure (VSD)</a>:</strong> Come forward before BIS discovers the violation</li>
                 <li><strong>Charging Letter Response:</strong> Challenge BIS's legal theories and penalty calculations</li>
                 <li><strong>Settlement Negotiations:</strong> Reduce penalties and avoid Denied Persons List</li>
                 <li><strong>DDTC Consent Agreements:</strong> Resolve ITAR violations with State Department</li>

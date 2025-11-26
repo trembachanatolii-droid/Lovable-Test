@@ -67,6 +67,10 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: inherit;
+  overflow-x: hidden;
+  max-width: 100vw;
+  /* Prevent FOUT (Flash of Unstyled Text) - system fonts load instantly */
+  font-display: optional;
 }
 
 /* ==============================================================
@@ -812,6 +816,8 @@ body {
 .backdrop-blur-sm { backdrop-filter: blur(4px); }
 .backdrop-filter { backdrop-filter: var(--tw-backdrop-filter); }
 
+/* Use will-change sparingly - only for elements that will definitely animate */
+/* Overuse can hurt performance by consuming memory */
 .will-change-transform { will-change: transform; }
 
 .mix-blend-multiply { mix-blend-mode: multiply; }
@@ -819,14 +825,61 @@ body {
 .aspect-\[4\/3\] { aspect-ratio: 4/3; }
 
 /* ==============================================================
-   46. RESPONSIVE - Small Screens (sm: 640px+)
+   46. RESPONSIVE - Extra Small Screens (xs: 320px+)
    ============================================================== */
-@media (min-width: 640px) {
-  .sm\:gap-8 { gap: 2rem; }
+@media (min-width: 320px) {
+  /* Typography */
+  .xs\:text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+  .xs\:text-base { font-size: 1rem; line-height: 1.5rem; }
+  .xs\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+
+  /* Spacing */
+  .xs\:px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .xs\:px-4 { padding-left: 1rem; padding-right: 1rem; }
+  .xs\:py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+  .xs\:py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+
+  /* Tap targets - minimum 44px */
+  .xs\:min-h-\[44px\] { min-height: 44px; }
+  .xs\:min-w-\[44px\] { min-width: 44px; }
 }
 
 /* ==============================================================
-   47. RESPONSIVE - Medium Screens (md: 768px+)
+   47. RESPONSIVE - Small Mobile (375px+)
+   ============================================================== */
+@media (min-width: 375px) {
+  /* Typography */
+  .mobile-sm\:text-base { font-size: 1rem; line-height: 1.5rem; }
+  .mobile-sm\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+
+  /* Spacing for better touch targets */
+  .mobile-sm\:px-4 { padding-left: 1rem; padding-right: 1rem; }
+  .mobile-sm\:py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+}
+
+/* ==============================================================
+   48. RESPONSIVE - Large Mobile (414px+)
+   ============================================================== */
+@media (min-width: 414px) {
+  /* Typography */
+  .mobile-lg\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+  .mobile-lg\:text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+
+  /* Spacing */
+  .mobile-lg\:px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .mobile-lg\:py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+}
+
+/* ==============================================================
+   49. RESPONSIVE - Small Screens (sm: 640px+)
+   ============================================================== */
+@media (min-width: 640px) {
+  .sm\:gap-8 { gap: 2rem; }
+  .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+
+/* ==============================================================
+   50. RESPONSIVE - Medium Screens (md: 768px+)
    ============================================================== */
 @media (min-width: 768px) {
   /* Display */
@@ -860,7 +913,7 @@ body {
 }
 
 /* ==============================================================
-   48. RESPONSIVE - Large Screens (lg: 1024px+)
+   51. RESPONSIVE - Large Screens (lg: 1024px+)
    ============================================================== */
 @media (min-width: 1024px) {
   /* Display */
@@ -916,7 +969,7 @@ body {
 }
 
 /* ==============================================================
-   49. RESPONSIVE - Extra Large Screens (xl: 1280px+)
+   52. RESPONSIVE - Extra Large Screens (xl: 1280px+)
    ============================================================== */
 @media (min-width: 1280px) {
   .xl\:max-w-7xl { max-width: 80rem; }
@@ -924,7 +977,7 @@ body {
 }
 
 /* ==============================================================
-   50. UTILITY CLASSES - Container
+   53. UTILITY CLASSES - Container
    ============================================================== */
 .container {
   width: 100%;
@@ -962,18 +1015,26 @@ body {
    ============================================================== */
 
 /* ==============================================================
-   51. HERO SECTION
+   54. HERO SECTION
    ============================================================== */
 .hero {
   position: relative;
-  min-height: 600px;
-  height: 70vh;
+  min-height: 450px;
+  height: 60vh;
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #012169 0%, #1E40AF 50%, #103483 100%);
   margin-top: 5rem;
   overflow: hidden;
   contain: layout style paint;
+}
+
+/* Mobile optimization: reduce hero height on small screens */
+@media (max-width: 414px) {
+  .hero {
+    min-height: 400px;
+    height: 55vh;
+  }
 }
 
 .hero-bg {
@@ -1021,12 +1082,19 @@ body {
 
 .hero h1 {
   color: #FFFFFF;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   max-width: 900px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile optimization: Better readability on small screens */
+@media (min-width: 375px) {
+  .hero h1 {
+    font-size: 2.25rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1087,7 +1155,7 @@ body {
 }
 
 /* ==============================================================
-   52. SERVICES/PRACTICE AREAS SECTION
+   55. SERVICES/PRACTICE AREAS SECTION
    ============================================================== */
 .services {
   padding: 5rem 0;
@@ -1163,8 +1231,54 @@ body {
   border-radius: 2px;
 }
 
+/* Practice Areas Preview - Mobile Responsive */
+.practice-areas-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  alignItems: flex-start;
+}
+
+.practice-areas-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.practice-areas-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+  .practice-areas-heading {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .practice-areas-layout {
+    flex-direction: row;
+    gap: 0;
+    position: relative;
+  }
+
+  .practice-areas-heading {
+    flex: 0 0 33%;
+    max-width: 33%;
+    padding-right: 3rem;
+    margin-left: 90px;
+  }
+
+  .practice-areas-list {
+    position: absolute;
+    left: 50%;
+    width: calc(32% + 150px);
+  }
+}
+
 /* ==============================================================
-   53. HEADER & NAVIGATION COMPONENTS
+   56. HEADER & NAVIGATION COMPONENTS
    ============================================================== */
 .header-wrapper {
   position: fixed;
@@ -1309,7 +1423,7 @@ body {
 }
 
 /* ==============================================================
-   54. JUSTICE PILLARS - FRAMER MOTION ANIMATIONS
+   57. JUSTICE PILLARS - FRAMER MOTION ANIMATIONS
    ============================================================== */
 .about-section {
   background-color: #ffffff;

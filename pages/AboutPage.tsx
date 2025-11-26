@@ -37,14 +37,15 @@ const AboutPage: React.FC = () => {
     <div className="pt-20 font-montserrat text-neutral-darkGray bg-white">
       {/* Hero Section - H1 Text as LCP */}
       <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[60vh]">
-         {/* Background Image - Below the fold, lazy loaded */}
+         {/* Background Image - LCP element, eager loaded */}
          <div className="absolute inset-0 z-0" aria-hidden="true">
            <img
              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
              alt="California law office building representing Trembach Law Firm international trade and customs legal practice"
              className="w-full h-full object-cover object-center"
-             loading="lazy"
+             loading="eager"
              decoding="async"
+             fetchpriority="high"
              width="2070"
              height="1380"
            />
