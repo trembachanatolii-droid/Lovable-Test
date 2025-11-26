@@ -5,6 +5,14 @@ import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 
+// Practice area slugs mapping for navigation
+const practiceAreaSlugs: Record<string, string> = {
+  'customs-audits': 'customs-audits',
+  'section-301-tariffs': 'retaliatory-tariffs',
+  'export-controls': 'export-controls-sanctions',
+  'usmca-fta': 'usmca-free-trade-agreements',
+};
+
 const ResourcesHubPage: React.FC = () => {
   useMeta({
     title: 'CA Trade Law Resources | Import Export Guides & Knowledge Hub',
@@ -75,36 +83,75 @@ const ResourcesHubPage: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Practice Areas Service Cards Data
+  const practiceAreasData = [
+    {
+      title: 'Customs Audits & CBP Verification Defense',
+      subheading: 'Expert CF-28/CF-29 Response & Focused Assessment Representation',
+      description: 'Navigate CBP audits with confidence. We defend importers facing CF-28 questionnaires, CF-29 notices, and Focused Assessments with strategic responses that minimize duty exposure and prevent penalties.',
+      tags: ['CF-28 Response', 'CF-29 Defense', 'Focused Assessments'],
+      imageUrl: '/images/customs-audits.jpg',
+      imageAlt: 'Customs officers inspecting cargo containers at shipping port',
+      slug: 'customs-audits',
+    },
+    {
+      title: 'Section 301 Tariffs & Exclusion Strategies',
+      subheading: 'Minimize Costs from China Trade War Tariffs',
+      description: 'Strategic counsel on Section 301 tariff mitigation, exclusion requests, and classification strategies to reduce duty burden from China imports.',
+      tags: ['Section 301', 'China Tariffs', 'Exclusion Requests'],
+      imageUrl: '/images/section-301-tariffs.jpg',
+      imageAlt: 'US-China trade documents with American and Chinese flags',
+      slug: 'retaliatory-tariffs',
+    },
+    {
+      title: 'Export Controls & Sanctions Compliance',
+      subheading: 'Navigate EAR, ITAR & OFAC Regulations',
+      description: 'Comprehensive export controls and sanctions compliance counsel. We guide companies through BIS export licensing, ITAR registration, OFAC sanctions screening.',
+      tags: ['EAR Compliance', 'ITAR', 'OFAC', 'Export Licensing'],
+      imageUrl: '/images/export-controls.jpg',
+      imageAlt: 'High-tech semiconductor chips and compliance documentation',
+      slug: 'export-controls-sanctions',
+    },
+    {
+      title: 'USMCA & Free Trade Agreement Optimization',
+      subheading: 'Eliminate Duties Through Trade Agreement Qualification',
+      description: 'Leverage USMCA and other FTAs to reduce or eliminate import duties. Expert analysis of rules of origin and certificate requirements.',
+      tags: ['USMCA', 'Rules of Origin', 'FTA Qualification'],
+      imageUrl: '/images/usmca-fta.jpg',
+      imageAlt: 'North American map with cargo trucks representing USMCA trade',
+      slug: 'usmca-free-trade-agreements',
+    },
+  ];
+
   return (
     <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
 
-      {/* Hero Section */}
-      <section className="relative w-full h-[450px] overflow-hidden bg-primary-navy flex items-center">
-        <div className="absolute inset-0 z-0">
+      {/* Hero Section - Extreme Style Matching Website */}
+      <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[60vh]">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
             src="/images/hero-resources.jpg"
-            alt="Library of legal resources representing California international trade law knowledge hub"
-            className="w-full h-full object-cover opacity-30"
+            alt="Legal reference library with international trade law resources and knowledge hub"
+            className="w-full h-full object-cover object-center"
             loading="eager"
             decoding="async"
             width="1920"
             height="1080"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/90 via-primary-navy/80 to-primary-navy/95"></div>
+          {/* Overlay with 55% opacity for better text visibility */}
+          <div className="absolute inset-0" style={{backgroundColor: 'rgba(1, 33, 105, 0.55)'}}></div>
         </div>
 
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center">
-          <div className="max-w-4xl mx-auto">
-            <div className="inline-block bg-secondary-teal/20 border border-secondary-teal px-6 py-3 rounded-full mb-6">
-              <span className="text-secondary-teal font-semibold text-sm uppercase tracking-wide">Knowledge Hub</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-tight drop-shadow-lg">
-              California International Trade Law Resources
-            </h1>
-            <p className="text-xl md:text-2xl text-neutral-200 font-light mb-8 leading-relaxed drop-shadow-md">
-              Expert legal guidance on customs compliance, tariffs, supply chain ethics, and digital trade for California importers and exporters.
-            </p>
-          </div>
+        {/* Hero Content */}
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold font-garamond mb-6 tracking-tight leading-tight" style={{color: '#ffffff', textShadow: '0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6), 0 0 40px rgba(1, 33, 105, 0.5)'}}>
+            California International Trade Law Resources
+          </h1>
+          <p className="text-xl md:text-2xl font-medium tracking-wide mb-4" style={{color: '#ffffff', textShadow: '0 2px 6px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(0, 0, 0, 0.5)'}}>
+            Expert legal guidance on customs compliance, tariffs, supply chain ethics, and digital trade for California importers and exporters.
+          </p>
+          <div className="w-24 h-1 bg-secondary-teal mx-auto mt-6"></div>
         </div>
       </section>
 
@@ -124,17 +171,120 @@ const ResourcesHubPage: React.FC = () => {
             Welcome to our <strong>California International Trade Law Resources</strong> hub. We've created comprehensive, practical guides to help California businesses navigate the complex world of international trade compliance.
           </p>
           <p className="text-lg text-text-secondary leading-relaxed">
-            Each resource provides in-depth analysis, compliance strategies, and actionable guidance from experienced trade law attorneys. Whether you're facing CBP enforcement, implementing ESG compliance programs, or navigating e-commerce regulations, these guides offer the expertise you need.
+            Each resource provides in-depth analysis, compliance strategies, and actionable guidance from experienced trade law attorneys.
           </p>
         </div>
       </section>
 
-      {/* Resource Cards */}
-      <section className="py-20 px-6 bg-neutral-50">
+      {/* International Trade & Customs Law Services - Card Grid with Working Links */}
+      <section className="py-20 px-6 bg-neutral-50" aria-labelledby="services-heading">
+        <div className="max-w-[1376px] mx-auto">
+          <header className="text-center max-w-[720px] mx-auto mb-16">
+            <div className="w-20 h-1 bg-primary-navy mx-auto mb-6"></div>
+            <span className="inline-block text-xl font-semibold text-navy-medium mb-3 tracking-wide">
+              Our Expertise
+            </span>
+            <h2 id="services-heading" className="font-display text-[42px] font-bold leading-tight text-text-primary mb-5 tracking-tighter font-garamond">
+              International Trade & Customs Law Services
+            </h2>
+            <p className="text-[21px] leading-relaxed text-text-secondary m-0">
+              Expert counsel across the most critical areas of international trade compliance.
+            </p>
+          </header>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            {practiceAreasData.map((area) => (
+              <article 
+                key={area.slug}
+                className="bg-white rounded-2xl overflow-hidden border border-border-subtle transition-all duration-300 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:border-transparent will-change-transform"
+              >
+                <a
+                  href={`#practice-areas?slug=${area.slug}`}
+                  aria-label={`Learn more about ${area.title} legal services`}
+                  className="group relative block text-inherit no-underline focus:outline focus:outline-3 focus:outline-navy-medium focus:outline-offset-4 rounded-2xl"
+                >
+                  {/* Green Triangle with Arrow */}
+                  <div
+                    className="triangle-slide"
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      right: '-96px',
+                      width: '96px',
+                      height: '96px',
+                      background: '#3FBB94',
+                      clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
+                      transition: 'right 300ms ease-in-out',
+                      zIndex: 10,
+                      pointerEvents: 'none'
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={3}
+                      stroke="white"
+                      style={{
+                        width: '22.4px',
+                        height: '22.4px',
+                        position: 'absolute',
+                        top: '20.8px',
+                        right: '20.8px'
+                      }}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </div>
+
+                  <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-light">
+                    <img
+                      src={area.imageUrl}
+                      alt={area.imageAlt}
+                      width="800"
+                      height="600"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="font-garamond text-xl font-bold leading-tight text-text-primary mb-2 tracking-tight">
+                      {area.title}
+                    </h3>
+                    <p className="text-[14px] font-semibold text-teal-primary mb-3 block">
+                      {area.subheading}
+                    </p>
+                    <p className="text-[15px] leading-relaxed text-text-secondary mb-4">
+                      {area.description}
+                    </p>
+                    <ul className="flex gap-2 flex-wrap mb-4 list-none p-0" aria-label="Service areas">
+                      {area.tags.map((tag) => (
+                        <li key={tag} className="py-1 px-2 bg-gray-light text-text-primary text-[12px] font-medium rounded-md">
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                    <span className="inline-flex items-center gap-1.5 text-navy-medium text-[15px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal">
+                      Learn more →
+                    </span>
+                  </div>
+                </a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Resource Cards - Comprehensive Guides */}
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
-            Comprehensive Legal Guides
-          </h2>
+          <div className="text-center mb-12">
+            <div className="w-20 h-1 bg-primary-navy mx-auto mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-4">
+              Comprehensive Legal Guides
+            </h2>
+          </div>
 
           <div className="space-y-8">
             {/* Tariffs & Classification Guide */}
@@ -216,7 +366,7 @@ const ResourcesHubPage: React.FC = () => {
                     Supply Chain Ethics & ESG Compliance Guide
                   </h3>
                   <p className="text-lg text-text-secondary leading-relaxed mb-4">
-                    Navigate the complex landscape of ethical sourcing and environmental compliance with our authoritative guide to <strong>forced labor import bans, UFLPA compliance, green trade regulations, carbon border adjustment, and FCPA anti-corruption</strong> for California importers.
+                    Navigate the complex landscape of ethical sourcing and environmental compliance with our authoritative guide to <strong>forced labor import bans, UFLPA compliance, green trade regulations, carbon border adjustment, and FCPA anti-corruption</strong>.
                   </p>
                 </div>
               </div>
@@ -284,7 +434,7 @@ const ResourcesHubPage: React.FC = () => {
                     E-Commerce & Digital Trade Compliance Guide
                   </h3>
                   <p className="text-lg text-text-secondary leading-relaxed mb-4">
-                    Essential compliance roadmap for California online sellers and tech companies covering <strong>ecommerce import rules, Section 321 de minimis, Amazon FBA compliance, digital trade law, cross-border data flows, and data transfer export controls</strong>.
+                    Essential compliance roadmap for California online sellers and tech companies covering <strong>ecommerce import rules, Section 321 de minimis, Amazon FBA compliance, digital trade law, and data transfer export controls</strong>.
                   </p>
                 </div>
               </div>
@@ -345,11 +495,14 @@ const ResourcesHubPage: React.FC = () => {
       </section>
 
       {/* Why These Resources Matter */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1000px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
-            Why California Businesses Need These Resources
-          </h2>
+          <div className="text-center mb-12">
+            <div className="w-20 h-1 bg-primary-navy mx-auto mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-4">
+              Why California Businesses Need These Resources
+            </h2>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -391,121 +544,6 @@ const ResourcesHubPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Who Should Use These Resources */}
-      <section className="py-20 px-6 bg-neutral-50">
-        <div className="max-w-[1000px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
-            Who These Resources Serve
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">California Importers & Exporters</h3>
-              <ul className="space-y-3 text-text-secondary">
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Manufacturers importing components from Asia</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Apparel and textile importers navigating Section 301 and UFLPA</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Food importers facing FDA and USDA compliance</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Electronics importers managing AD/CVD and Section 301 duties</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Defense contractors exporting ITAR-controlled products</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Online Sellers & Tech Companies</h3>
-              <ul className="space-y-3 text-text-secondary">
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Amazon FBA and Shopify sellers importing from China</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>E-commerce businesses using Section 321 de minimis</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>SaaS companies exporting encryption software</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Tech startups managing cross-border data transfers</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Cloud service providers navigating EAR and deemed exports</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Compliance Professionals</h3>
-              <ul className="space-y-3 text-text-secondary">
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Trade compliance managers building import/export programs</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Customs brokers advising California clients</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Freight forwarders managing CBP compliance</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Supply chain ESG officers implementing UFLPA controls</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>In-house counsel researching trade law issues</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Business Leaders</h3>
-              <ul className="space-y-3 text-text-secondary">
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>CEOs evaluating international expansion strategies</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>CFOs analyzing tariff impact on profitability</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Procurement teams evaluating supply chain diversification</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Investors conducting due diligence on trade compliance risks</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <span>Entrepreneurs launching import/export businesses</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
@@ -513,7 +551,7 @@ const ResourcesHubPage: React.FC = () => {
             Need Personalized Legal Guidance?
           </h2>
           <p className="text-xl mb-8 leading-relaxed opacity-90">
-            While our resources provide comprehensive information, every business faces unique compliance challenges. Contact our California international trade law team for tailored advice on your specific situation.
+            While our resources provide comprehensive information, every business faces unique compliance challenges. Contact our California international trade law team for tailored advice.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Button href="#contact" variant="solid">
@@ -529,12 +567,15 @@ const ResourcesHubPage: React.FC = () => {
       {/* Additional Resources */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1000px] mx-auto">
-          <h2 className="text-4xl font-bold font-garamond text-primary-navy mb-12 text-center">
-            Additional Resources
-          </h2>
+          <div className="text-center mb-12">
+            <div className="w-20 h-1 bg-primary-navy mx-auto mb-6"></div>
+            <h2 className="text-4xl font-bold font-garamond text-primary-navy mb-4">
+              Additional Resources
+            </h2>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <a href="#news" className="bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow">
+            <a href="#news" className="bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
               <h3 className="text-xl font-bold text-primary-navy mb-2 font-garamond">Latest News & Updates</h3>
               <p className="text-text-secondary text-sm mb-4">
                 Stay informed on breaking developments in international trade law and CBP enforcement.
@@ -542,7 +583,7 @@ const ResourcesHubPage: React.FC = () => {
               <span className="text-secondary-teal font-semibold text-sm">Read Articles →</span>
             </a>
 
-            <a href="#useful-links" className="bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow">
+            <a href="#useful-links" className="bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
               <h3 className="text-xl font-bold text-primary-navy mb-2 font-garamond">Government Links</h3>
               <p className="text-text-secondary text-sm mb-4">
                 Direct access to CBP, Commerce, BIS, DDTC, and other federal agency resources.
@@ -550,7 +591,7 @@ const ResourcesHubPage: React.FC = () => {
               <span className="text-secondary-teal font-semibold text-sm">View Links →</span>
             </a>
 
-            <a href="#practice-areas" className="bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow">
+            <a href="#practice-areas" className="bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
               <h3 className="text-xl font-bold text-primary-navy mb-2 font-garamond">Practice Areas</h3>
               <p className="text-text-secondary text-sm mb-4">
                 Explore our full range of legal services in international trade and customs law.

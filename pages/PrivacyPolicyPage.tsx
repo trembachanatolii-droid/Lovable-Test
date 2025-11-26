@@ -10,8 +10,8 @@ const PrivacyPolicyPage: React.FC = () => {
     robots: 'noindex, nofollow',
     ogImage: 'https://trembach.law/og-image-default.jpg',
     ogImageAlt: 'Privacy Policy - Trembach Law Firm Legal Information',
-    ogImageWidth: '1200',
-    ogImageHeight: '630',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
     schema: [
       generateBreadcrumbSchema([
         { name: 'Home', url: '' },

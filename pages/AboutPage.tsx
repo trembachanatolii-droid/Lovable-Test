@@ -13,8 +13,8 @@ const AboutPage: React.FC = () => {
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-about.jpg`,
     ogImageAlt: 'About Trembach Law Firm - California International Trade & Customs Law Practice',
-    ogImageWidth: '1200',
-    ogImageHeight: '630',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
     twitterImageAlt: 'About Trembach Law Firm - California International Trade & Customs Law Practice',
     schema: [
       generateWebPageSchema({
