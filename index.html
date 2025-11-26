@@ -3,11 +3,39 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta name="color-scheme" content="light" />
+<meta name="color-scheme" content="light dark" />
+<!-- Security Headers -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+<!-- Mobile App Meta Tags -->
+<meta name="theme-color" content="#012169" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Trembach Law" />
+<meta name="application-name" content="Trembach Law" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="msapplication-TileColor" content="#012169" />
+<meta name="format-detection" content="telephone=yes" />
 <!-- Core Web Vitals Optimized: LCP <2.5s, FID <100ms, CLS <0.1 -->
-<title>Trembach Law | International Trade & Customs</title>
-<meta name="description" content="Expert California international trade attorney & customs lawyer. Specialized in CBP defense, customs audits, trade compliance, and import/export law.">
+<title>Trembach Law | International Trade & Customs Attorney California</title>
+<meta name="description" content="Expert California international trade attorney & customs lawyer. Specialized in CBP defense, customs audits, trade compliance, and import/export law. Serving Los Angeles, San Francisco, San Diego.">
+<meta name="keywords" content="international trade attorney, customs lawyer, California trade law, CBP defense, customs audit, import export lawyer, tariff classification, trade compliance, Los Angeles customs attorney, San Francisco trade lawyer">
+<meta name="author" content="Trembach Law Firm, APC">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="geo.region" content="US-CA" />
+<meta name="geo.placename" content="California" />
 <link rel="canonical" href="https://trembach.law/" />
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="/manifest.json" />
+
+<!-- Favicons and App Icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180x180.png" />
+<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#012169" />
 
 <!-- Resource Hints for Performance -->
 <!-- DNS prefetch for potential future external resources -->
@@ -123,6 +151,50 @@ img {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+/* Skip Link - Accessibility */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1rem 1.5rem;
+  background-color: var(--teal-primary);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* Mobile CSS Improvements */
+button, a, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Safe area insets for notched devices */
+@supports (padding: max(0px)) {
+  .header-wrapper {
+    padding-left: max(1.25rem, env(safe-area-inset-left));
+    padding-right: max(1.25rem, env(safe-area-inset-right));
+  }
+}
+
+/* Prevent body scroll issues */
+html, body {
+  overscroll-behavior: none;
+}
+
+/* Minimum touch target size */
+button, [role="button"], a[href] {
+  min-height: 44px;
+  min-width: 44px;
 }
 
 /* ==============================================================

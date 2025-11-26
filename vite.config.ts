@@ -30,10 +30,9 @@ export default defineConfig(({ mode }) => {
           deleteOriginFile: false,
         }),
       ],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
+      // Security: API keys should never be exposed in frontend code
+      // Use server-side API routes or backend proxy instead
+      define: {},
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),

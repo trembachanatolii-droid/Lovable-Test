@@ -138,7 +138,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
                 AT
               </div>
               <div className="flex flex-col text-left">
-                <span className="text-[10px] uppercase tracking-widest mb-0.5" style={{ color: '#9CA3AF' }}>
+                <span className="text-[11px] uppercase tracking-widest mb-0.5" style={{ color: '#9CA3AF' }}>
                   Author
                 </span>
                 <span className="font-bold text-sm" style={{ color: '#012169' }}>
@@ -150,7 +150,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
             <div className="hidden md:block w-px h-10" style={{ backgroundColor: '#E5E7EB' }}></div>
 
             <div className="flex flex-col text-left">
-              <span className="text-[10px] uppercase tracking-widest mb-0.5" style={{ color: '#9CA3AF' }}>
+              <span className="text-[11px] uppercase tracking-widest mb-0.5" style={{ color: '#9CA3AF' }}>
                 Published
               </span>
               <span className="font-bold text-sm" style={{ color: '#012169' }}>
@@ -163,7 +163,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
                 <div className="hidden md:block w-px h-10" style={{ backgroundColor: '#E5E7EB' }}></div>
 
                 <div className="flex flex-col text-left">
-                  <span className="text-[10px] uppercase tracking-widest mb-0.5" style={{ color: '#9CA3AF' }}>
+                  <span className="text-[11px] uppercase tracking-widest mb-0.5" style={{ color: '#9CA3AF' }}>
                     Last Updated
                   </span>
                   <span className="font-bold text-sm" style={{ color: '#012169' }}>

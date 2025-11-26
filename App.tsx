@@ -3,6 +3,7 @@ import React, { useState, useEffect, lazy, Suspense } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import StickyPhoneButton from './components/StickyPhoneButton';
+import ErrorBoundary from './components/ErrorBoundary';
 
 // Lazy load all page components for code splitting
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -185,53 +186,28 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Skip Navigation Link for Accessibility */}
-      <a
-        href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-6 focus:py-3 focus:bg-secondary-teal focus:text-white focus:rounded-md focus:font-semibold focus:shadow-lg"
-        style={{
-          position: 'absolute',
-          width: '1px',
-          height: '1px',
-          padding: 0,
-          margin: '-1px',
-          overflow: 'hidden',
-          clip: 'rect(0, 0, 0, 0)',
-          whiteSpace: 'nowrap',
-          borderWidth: 0,
-        }}
-        onFocus={(e) => {
-          e.currentTarget.style.position = 'fixed';
-          e.currentTarget.style.width = 'auto';
-          e.currentTarget.style.height = 'auto';
-          e.currentTarget.style.padding = '0.75rem 1.5rem';
-          e.currentTarget.style.margin = '1rem';
-          e.currentTarget.style.overflow = 'visible';
-          e.currentTarget.style.clip = 'auto';
-        }}
-        onBlur={(e) => {
-          e.currentTarget.style.position = 'absolute';
-          e.currentTarget.style.width = '1px';
-          e.currentTarget.style.height = '1px';
-          e.currentTarget.style.padding = '0';
-          e.currentTarget.style.margin = '-1px';
-          e.currentTarget.style.overflow = 'hidden';
-          e.currentTarget.style.clip = 'rect(0, 0, 0, 0)';
-        }}
-      >
-        Skip to main content
-      </a>
-      <Header />
-      <main id="main-content" className="flex-grow">
-        <Suspense fallback={<PageLoader />}>
-          {content}
-        </Suspense>
-      </main>
-      <Footer />
-      {/* Sticky Phone Button - Mobile Only */}
-      <StickyPhoneButton showOnMobileOnly={true} />
-    </div>
+    <ErrorBoundary>
+      <div className="flex flex-col min-h-screen">
+        {/* Skip Navigation Link for Accessibility */}
+        <a
+          href="#main-content"
+          className="skip-link sr-only focus:not-sr-only"
+        >
+          Skip to main content
+        </a>
+        <Header />
+        <main id="main-content" className="flex-grow" tabIndex={-1}>
+          <ErrorBoundary>
+            <Suspense fallback={<PageLoader />}>
+              {content}
+            </Suspense>
+          </ErrorBoundary>
+        </main>
+        <Footer />
+        {/* Sticky Phone Button - Mobile Only */}
+        <StickyPhoneButton showOnMobileOnly={true} />
+      </div>
+    </ErrorBoundary>
   );
 };
 
