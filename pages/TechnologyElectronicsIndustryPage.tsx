@@ -255,7 +255,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-blue-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">ğŸ“± Smartphones & Tablets</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ğŸ“Smartphones & Tablets</h3>
               <p className="text-gray-700 mb-3">
                 <strong>Classification Challenges:</strong> May be classified as telephones (8517), computing machines (8471), or other devices depending on principal function. Classification affects duty rates (often free vs. 2.5%) and Section 301 applicability.
               </p>
@@ -281,7 +281,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-green-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">ğŸ”Œ Semiconductors & Components</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ğŸ”Semiconductors & Components</h3>
               <p className="text-gray-700 mb-3">
                 <strong>Classification Challenges:</strong> Semiconductor devices (diodes, transistors, ICs) fall under Chapter 85 with varying duty rates. Origin determinations are complex for multi-country manufacturing.
               </p>
@@ -294,7 +294,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-yellow-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">â˜ï¸ Software & Cloud Services</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">â˜ï¸Software & Cloud Services</h3>
               <p className="text-gray-700 mb-3">
                 <strong>Classification Challenges:</strong> Software on physical media is dutiable. Downloaded/cloud software generally not subject to customs duties but may face other trade barriers.
               </p>
@@ -381,28 +381,28 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">ğŸ“ Technology Industry Expertise</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ğŸTechnology Industry Expertise</h3>
               <p className="text-gray-700">
                 Deep understanding of technology products, manufacturing processes, and business models. We speak your language and understand the fast-paced nature of the tech sector.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">ğŸŒ‰ Silicon Valley & California Focus</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ğŸŒSilicon Valley & California Focus</h3>
               <p className="text-gray-700">
                 Based in California with extensive experience representing Silicon Valley companies, Southern California tech firms, and San Diego innovators at Los Angeles and San Francisco ports.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">âš¡ Rapid Response for Product Launches</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">âšRapid Response for Product Launches</h3>
               <p className="text-gray-700">
                 Fast turnaround on classification analysis, export control reviews, and compliance documentation to support your product launch timelines.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">ğŸ”— Integration with Your Systems</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ğŸ”Integration with Your Systems</h3>
               <p className="text-gray-700">
                 Experience integrating compliance processes with ERP systems (SAP, Oracle), PLM systems, and e-commerce platforms for scalable automation.
               </p>
