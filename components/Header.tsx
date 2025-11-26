@@ -251,8 +251,10 @@ const Header: React.FC = () => {
                   backgroundColor: 'var(--teal-primary)',
                   color: 'white',
                   borderRadius: '50%',
-                  width: '2.5rem',
-                  height: '2.5rem',
+                  width: '2.75rem',
+                  height: '2.75rem',
+                  minWidth: '44px',
+                  minHeight: '44px',
                   boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
                 }}
               >
