@@ -5,14 +5,6 @@ import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 
-// Practice area slugs mapping for navigation
-const practiceAreaSlugs: Record<string, string> = {
-  'customs-audits': 'customs-audits',
-  'section-301-tariffs': 'retaliatory-tariffs',
-  'export-controls': 'export-controls-sanctions',
-  'usmca-fta': 'usmca-free-trade-agreements',
-};
-
 const ResourcesHubPage: React.FC = () => {
   useMeta({
     title: 'CA Trade Law Resources | Import Export Guides & Knowledge Hub',
@@ -83,46 +75,6 @@ const ResourcesHubPage: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Practice Areas Service Cards Data
-  const practiceAreasData = [
-    {
-      title: 'Customs Audits & CBP Verification Defense',
-      subheading: 'Expert CF-28/CF-29 Response & Focused Assessment Representation',
-      description: 'Navigate CBP audits with confidence. We defend importers facing CF-28 questionnaires, CF-29 notices, and Focused Assessments with strategic responses that minimize duty exposure and prevent penalties.',
-      tags: ['CF-28 Response', 'CF-29 Defense', 'Focused Assessments'],
-      imageUrl: '/images/customs-audits.jpg',
-      imageAlt: 'Customs officers inspecting cargo containers at shipping port',
-      slug: 'customs-audits',
-    },
-    {
-      title: 'Section 301 Tariffs & Exclusion Strategies',
-      subheading: 'Minimize Costs from China Trade War Tariffs',
-      description: 'Strategic counsel on Section 301 tariff mitigation, exclusion requests, and classification strategies to reduce duty burden from China imports.',
-      tags: ['Section 301', 'China Tariffs', 'Exclusion Requests'],
-      imageUrl: '/images/section-301-tariffs.jpg',
-      imageAlt: 'US-China trade documents with American and Chinese flags',
-      slug: 'retaliatory-tariffs',
-    },
-    {
-      title: 'Export Controls & Sanctions Compliance',
-      subheading: 'Navigate EAR, ITAR & OFAC Regulations',
-      description: 'Comprehensive export controls and sanctions compliance counsel. We guide companies through BIS export licensing, ITAR registration, OFAC sanctions screening.',
-      tags: ['EAR Compliance', 'ITAR', 'OFAC', 'Export Licensing'],
-      imageUrl: '/images/export-controls.jpg',
-      imageAlt: 'High-tech semiconductor chips and compliance documentation',
-      slug: 'export-controls-sanctions',
-    },
-    {
-      title: 'USMCA & Free Trade Agreement Optimization',
-      subheading: 'Eliminate Duties Through Trade Agreement Qualification',
-      description: 'Leverage USMCA and other FTAs to reduce or eliminate import duties. Expert analysis of rules of origin and certificate requirements.',
-      tags: ['USMCA', 'Rules of Origin', 'FTA Qualification'],
-      imageUrl: '/images/usmca-fta.jpg',
-      imageAlt: 'North American map with cargo trucks representing USMCA trade',
-      slug: 'usmca-free-trade-agreements',
-    },
-  ];
-
   return (
     <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
 
@@ -176,108 +128,8 @@ const ResourcesHubPage: React.FC = () => {
         </div>
       </section>
 
-      {/* International Trade & Customs Law Services - Card Grid with Working Links */}
-      <section className="py-20 px-6 bg-neutral-50" aria-labelledby="services-heading">
-        <div className="max-w-[1376px] mx-auto">
-          <header className="text-center max-w-[720px] mx-auto mb-16">
-            <div className="w-20 h-1 bg-primary-navy mx-auto mb-6"></div>
-            <span className="inline-block text-xl font-semibold text-navy-medium mb-3 tracking-wide">
-              Our Expertise
-            </span>
-            <h2 id="services-heading" className="font-display text-[42px] font-bold leading-tight text-text-primary mb-5 tracking-tighter font-garamond">
-              International Trade & Customs Law Services
-            </h2>
-            <p className="text-[21px] leading-relaxed text-text-secondary m-0">
-              Expert counsel across the most critical areas of international trade compliance.
-            </p>
-          </header>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {practiceAreasData.map((area) => (
-              <article 
-                key={area.slug}
-                className="bg-white rounded-2xl overflow-hidden border border-border-subtle transition-all duration-300 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:border-transparent will-change-transform"
-              >
-                <a
-                  href={`#practice-areas?slug=${area.slug}`}
-                  aria-label={`Learn more about ${area.title} legal services`}
-                  className="group relative block text-inherit no-underline focus:outline focus:outline-3 focus:outline-navy-medium focus:outline-offset-4 rounded-2xl"
-                >
-                  {/* Green Triangle with Arrow */}
-                  <div
-                    className="triangle-slide"
-                    style={{
-                      position: 'absolute',
-                      top: 0,
-                      right: '-96px',
-                      width: '96px',
-                      height: '96px',
-                      background: '#3FBB94',
-                      clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
-                      transition: 'right 300ms ease-in-out',
-                      zIndex: 10,
-                      pointerEvents: 'none'
-                    }}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={3}
-                      stroke="white"
-                      style={{
-                        width: '22.4px',
-                        height: '22.4px',
-                        position: 'absolute',
-                        top: '20.8px',
-                        right: '20.8px'
-                      }}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg>
-                  </div>
-
-                  <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-light">
-                    <img
-                      src={area.imageUrl}
-                      alt={area.imageAlt}
-                      width="800"
-                      height="600"
-                      loading="lazy"
-                      decoding="async"
-                      className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="font-garamond text-xl font-bold leading-tight text-text-primary mb-2 tracking-tight">
-                      {area.title}
-                    </h3>
-                    <p className="text-[14px] font-semibold text-teal-primary mb-3 block">
-                      {area.subheading}
-                    </p>
-                    <p className="text-[15px] leading-relaxed text-text-secondary mb-4">
-                      {area.description}
-                    </p>
-                    <ul className="flex gap-2 flex-wrap mb-4 list-none p-0" aria-label="Service areas">
-                      {area.tags.map((tag) => (
-                        <li key={tag} className="py-1 px-2 bg-gray-light text-text-primary text-[12px] font-medium rounded-md">
-                          {tag}
-                        </li>
-                      ))}
-                    </ul>
-                    <span className="inline-flex items-center gap-1.5 text-navy-medium text-[15px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal">
-                      Learn more →
-                    </span>
-                  </div>
-                </a>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Resource Cards - Comprehensive Guides */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
             <div className="w-20 h-1 bg-primary-navy mx-auto mb-6"></div>
@@ -288,7 +140,7 @@ const ResourcesHubPage: React.FC = () => {
 
           <div className="space-y-8">
             {/* Tariffs & Classification Guide */}
-            <article className="bg-white p-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-t-4 border-secondary-teal">
+            <article className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold mb-3">
@@ -356,7 +208,7 @@ const ResourcesHubPage: React.FC = () => {
             </article>
 
             {/* Supply Chain ESG Guide */}
-            <article className="bg-white p-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-t-4 border-green-600">
+            <article className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <div className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold mb-3">
@@ -424,7 +276,7 @@ const ResourcesHubPage: React.FC = () => {
             </article>
 
             {/* E-Commerce & Digital Trade Guide */}
-            <article className="bg-white p-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-t-4 border-purple-600">
+            <article className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <div className="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-3">
