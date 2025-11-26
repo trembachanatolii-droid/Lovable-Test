@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useMemo } from 'react';
 import StatsSection from '../components/StatsSection';
 import AboutSection from '../components/AboutSection';
 import NewsArticleCard from '../components/NewsArticleCard';
@@ -12,33 +12,38 @@ import type { NewsArticle } from '../types';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateFAQSchema } from '../utils/seo';
 import { siteConfig } from '../config/siteConfig';
+import { articles } from '../data/articles';
+import { articleMetadata } from '../data/articleMetadata';
 
-const newsArticlesData: NewsArticle[] = [
-  {
-    id: 1,
-    date: 'November 20, 2025',
-    title: 'UFLPA Compliance for California Importers: Navigating the Rebuttable Presumption',
-    description: 'Comprehensive guide to the Uyghur Forced Labor Prevention Act covering CBP evidence requirements, detention defense strategies, and supply chain due diligence for California businesses importing from China.',
-    linkHref: '#article/uflpa-compliance-california',
-    readTime: '12 min read',
-  },
-  {
-    id: 2,
-    date: 'November 20, 2025',
-    title: 'Section 321 De Minimis Reform: What California E-Commerce Sellers Need to Know',
-    description: 'Analysis of pending Section 321 reforms, CBP enforcement priorities, and strategic guidance for California online sellers preparing for potential exclusion of Chinese goods from duty-free treatment.',
-    linkHref: '#article/section-321-reform-california',
-    readTime: '10 min read',
-  },
-  {
-    id: 3,
-    date: 'November 17, 2025',
-    title: 'Complete Guide to CBP Focused Assessments: What Importers Need to Know in 2025',
-    description: 'Comprehensive guide to CBP Focused Assessments covering triggers, preparation, process, and defense strategies for importers facing customs audits in 2025.',
-    linkHref: '#article/cbp-focused-assessments',
-    readTime: '8 min read',
-  },
-];
+// Get the latest 3 articles by date
+const getLatestArticles = (): NewsArticle[] => {
+  // Get articles that have metadata
+  const articlesWithMetadata = articles
+    .filter(article => articleMetadata[article.id])
+    .map(article => ({
+      article,
+      metadata: articleMetadata[article.id]
+    }));
+
+  // Sort by isoDate descending (latest first)
+  articlesWithMetadata.sort((a, b) =>
+    b.metadata.isoDate.localeCompare(a.metadata.isoDate)
+  );
+
+  // Take top 3 and map to NewsArticle format
+  return articlesWithMetadata.slice(0, 3).map((item, index) => ({
+    id: index + 1,
+    date: item.metadata.date.split(' ').map((word, i) =>
+      i === 0 ? word.charAt(0) + word.slice(1).toLowerCase() : word
+    ).join(' '), // Convert "NOVEMBER 26, 2025" to "November 26, 2025"
+    title: item.article.title,
+    description: item.article.intro,
+    linkHref: `#article/${item.article.id}`,
+    readTime: item.metadata.readTime.toLowerCase().replace(' min', ' min'),
+  }));
+};
+
+const newsArticlesData: NewsArticle[] = getLatestArticles();
 
 const practiceAreasPreviewData = [
   {
