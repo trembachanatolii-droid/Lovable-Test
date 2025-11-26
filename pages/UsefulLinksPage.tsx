@@ -378,14 +378,15 @@ const UsefulLinksPage: React.FC = () => {
       
       {/* Hero Section */}
       <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[60vh]">
-        {/* Background Image */}
+        {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
             src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2070&auto=format&fit=crop"
-            alt=""
+            alt="Digital library and government resources representing useful trade law links and regulatory references"
             className="w-full h-full object-cover object-center"
-            loading="lazy"
+            loading="eager"
             decoding="async"
+            fetchpriority="high"
             width="2070"
             height="1380"
           />

@@ -17,7 +17,7 @@ href,
 className = '',
 ...props
 }) => {
-const baseClasses = 'inline-block px-8 py-3 font-roboto font-bold uppercase tracking-wider text-center transition-all duration-200 ease-in-out focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-3';
+const baseClasses = 'inline-flex items-center justify-center px-8 py-3 font-roboto font-bold uppercase tracking-wider text-center transition-all duration-200 ease-in-out focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-3';
 
 const variantClasses = {
     solid: 'bg-secondary-forestGreen text-white hover:bg-secondary-teal focus-visible:outline-white',
@@ -25,12 +25,14 @@ const variantClasses = {
 };
 
 const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${className}`;
+const buttonStyle = { minHeight: '44px' };
 
 if (href) {
     return (
-        <a 
-            href={href} 
+        <a
+            href={href}
             className={combinedClasses}
+            style={buttonStyle}
             onClick={(e) => {
                 if (href.startsWith('#')) {
                     e.preventDefault();
@@ -45,7 +47,7 @@ if (href) {
 }
 
 return (
-    <button className={combinedClasses} {...props}>
+    <button className={combinedClasses} style={buttonStyle} {...props}>
         {children}
     </button>
 );

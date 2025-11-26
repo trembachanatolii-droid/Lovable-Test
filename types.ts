@@ -44,4 +44,6 @@ export interface ArticleData {
   services: string; // Paragraph 2
   content: string; // Full HTML content
   keywords?: string; // SEO keywords specific to this article
+  publishedDate: string; // Publication date in ISO 8601 format (YYYY-MM-DD)
+  lastModified: string; // Last modified date in ISO 8601 format (YYYY-MM-DD)
 }
