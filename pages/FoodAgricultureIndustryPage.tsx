@@ -197,7 +197,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-green-600">
-              <div className="text-4xl mb-4">🛡️</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">FDA Compliance & FSVP</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• Foreign Supplier Verification Program (FSVP) development</li>
@@ -215,7 +215,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             {/* Service 2 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-blue-600">
-              <div className="text-4xl mb-4">🏷️</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">Food Labeling Compliance</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• Nutrition Facts Panel review and approval</li>
@@ -233,7 +233,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             {/* Service 3 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-yellow-600">
-              <div className="text-4xl mb-4">🌾</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">USDA & Phytosanitary</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• USDA import permit applications</li>
@@ -250,7 +250,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             {/* Service 4 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-red-600">
-              <div className="text-4xl mb-4">🚫</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">FDA Refusal & Detention Defense</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• FDA refusal response and appeals</li>
@@ -268,7 +268,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             {/* Service 5 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-purple-600">
-              <div className="text-4xl mb-4">🔍</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">Food Classification & Duties</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• HTS classification for food products</li>
@@ -285,7 +285,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             {/* Service 6 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-orange-600">
-              <div className="text-4xl mb-4">🍷</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">Alcohol & Beverage (TTB)</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• TTB import permit applications (FAA Act)</li>
