@@ -149,150 +149,50 @@ const HomePage: React.FC = () => {
       <section
         id="practice-areas-preview"
         aria-labelledby="practice-areas-heading"
-        style={{
-          padding: '3rem 1.5rem',
-          background: '#F8FAFC',
-          overflow: 'hidden'
-        }}
+        className="practice-areas-preview"
       >
-        <style>{`
-          @media (min-width: 640px) {
-            #practice-areas-preview {
-              padding: 4rem 2rem;
-            }
-          }
-          @media (min-width: 1024px) {
-            #practice-areas-preview {
-              padding: 5rem 3rem;
-            }
-          }
-        `}</style>
-        <div style={{ maxWidth: '1376px', margin: '0 auto' }}>
+        <div className="practice-areas-preview__container">
           {/* Decorative Line - Centered on entire section */}
-          <div style={{
-            width: '80px',
-            height: '4px',
-            backgroundColor: '#012169',
-            marginBottom: '2rem',
-            marginLeft: 'auto',
-            marginRight: 'auto'
-          }}></div>
+          <div className="practice-areas-preview__line"></div>
 
-          <div style={{
-            display: 'flex',
-            flexDirection: 'row',
-            gap: '0',
-            alignItems: 'flex-start',
-            position: 'relative',
-            minHeight: '500px'
-          }}>
+          <div className="practice-areas-preview__content">
             {/* Left Column - Heading & Description */}
-            <div className="practice-areas-heading">
+            <div className="practice-areas-preview__left">
               <h2
                 id="practice-areas-heading"
-                style={{
-                  fontFamily: 'Georgia, serif',
-                  fontSize: 'clamp(1.75rem, 5vw, 3rem)',
-                  fontWeight: 700,
-                  lineHeight: 1.15,
-                  marginBottom: '1.5rem',
-                  color: '#012169',
-                  marginTop: 0
-                }}
+                className="practice-areas-preview__heading"
               >
                 High-Risk Customs Problems That Can't Wait
               </h2>
-              <p style={{
-                fontSize: 'clamp(0.9375rem, 2vw, 1.0625rem)',
-                lineHeight: 1.5,
-                color: '#4a5568',
-                margin: 0,
-                fontWeight: 400
-              }}>
+              <p className="practice-areas-preview__description">
                 If you're dealing with any of these issues, deadlines are short and penalties can be severe. We step in quickly to protect your shipments and your business.
               </p>
             </div>
 
             {/* Right Column - Practice Areas List */}
-            <div style={{
-              position: 'absolute',
-              left: '50%',
-              top: 0,
-              width: 'calc(32% + 150px)',
-              overflow: 'visible'
-            }}>
-              <div style={{
-                borderTop: '1px solid #e2e8f0',
-                overflow: 'hidden'
-              }}>
+            <div className="practice-areas-preview__right">
+              <div className="practice-areas-preview__list">
                 {practiceAreasPreviewData.map((area) => (
-                  <div
-                    key={area.slug}
-                    style={{
-                      borderBottom: '1px solid #e2e8f0',
-                      overflow: 'hidden',
-                      position: 'relative'
-                    }}
-                  >
+                  <div key={area.slug} className="practice-areas-preview__item">
                     <a
                       href={`#practice-areas?slug=${area.slug}`}
-                      className="group"
-                      style={{
-                        display: 'block',
-                        padding: '1.5rem 0',
-                        color: '#012169',
-                        textDecoration: 'none',
-                        position: 'relative',
-                        overflow: 'hidden'
-                      }}
+                      className="practice-areas-preview__link group"
                       aria-label={`Learn more about ${area.title}`}
                     >
                       {/* Green Triangle with White Arrow */}
-                      <div
-                        className="triangle-slide"
-                        style={{
-                          position: 'absolute',
-                          top: 0,
-                          right: '-85px',
-                          width: '85px',
-                          height: '85px',
-                          background: '#3FBB94',
-                          clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
-                          transition: 'right 300ms ease-in-out',
-                          zIndex: 10,
-                          pointerEvents: 'none',
-                          willChange: 'right'
-                        }}
-                      >
+                      <div className="triangle-slide">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           strokeWidth={3}
                           stroke="white"
-                          style={{
-                            width: '20px',
-                            height: '20px',
-                            position: 'absolute',
-                            top: '20px',
-                            right: '20px'
-                          }}
+                          className="triangle-slide__icon"
                         >
                           <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                       </div>
-
-                      <h3 style={{
-                        fontSize: '1.5rem',
-                        fontWeight: 400,
-                        lineHeight: 1.4,
-                        color: '#012169',
-                        margin: 0,
-                        position: 'relative',
-                        zIndex: 0,
-                        paddingRight: '1.5rem',
-                        maxWidth: '90%'
-                      }}>
+                      <h3 className="practice-areas-preview__item-title">
                         {area.title}
                       </h3>
                     </a>
