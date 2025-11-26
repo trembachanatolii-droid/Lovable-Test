@@ -41,6 +41,7 @@ const SuccessStoriesPage: React.FC = () => {
             className="w-full h-full object-cover opacity-30"
             loading="eager"
             decoding="async"
+            fetchpriority="high"
             width="1920"
             height="1080"
           />

@@ -233,16 +233,15 @@ const PracticeAccordionItem: React.FC<{
         onMouseLeave={() => setIsHovered(false)}
         className="group relative w-full text-left bg-white rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-secondary-teal flex items-center"
         style={{
-          height: '120px',
-          minHeight: '120px',
-          maxHeight: '120px',
-          paddingLeft: '24px',
-          paddingRight: '24px',
-          paddingTop: '16px',
-          paddingBottom: '16px',
+          minHeight: '88px',
+          paddingLeft: '1rem',
+          paddingRight: '1rem',
+          paddingTop: '1rem',
+          paddingBottom: '1rem',
           boxSizing: 'border-box'
         }}
         aria-expanded={isOpen}
+        aria-label={`${isOpen ? 'Collapse' : 'Expand'} ${title}`}
       >
          {/* Green Triangle with White Arrow - Slides in on Hover/Open */}
          <div
@@ -291,8 +290,8 @@ const PracticeAccordionItem: React.FC<{
          <h3
            className="font-garamond font-bold text-primary-navy transition-colors group-hover:text-primary-darkBlue leading-tight"
            style={{
-             fontSize: '1.5rem',
-             paddingRight: '96px'
+             fontSize: 'clamp(1.125rem, 3vw, 1.5rem)',
+             paddingRight: '80px'
            }}
          >
             {title}
@@ -476,8 +475,9 @@ const PracticeAreasPage: React.FC = () => {
              src="/images/hero-practice-areas.jpg"
              alt="California international trade and customs law practice areas - comprehensive legal services from import compliance to export controls"
              className="w-full h-full object-cover object-center"
-             loading="lazy"
+             loading="eager"
              decoding="async"
+             fetchpriority="high"
              width="1920"
              height="1080"
            />
@@ -519,6 +519,7 @@ const PracticeAreasPage: React.FC = () => {
                   transform: 'translateY(-50%)',
                   zIndex: 10
                 }}
+                aria-hidden="true"
               >
                 <SearchIcon className="text-gray-400" style={{ width: '20px', height: '20px', display: 'block' }} />
               </div>
@@ -539,8 +540,13 @@ const PracticeAreasPage: React.FC = () => {
                 backgroundColor: '#012169',
                 fontSize: '14px',
                 letterSpacing: '0.05em',
-                whiteSpace: 'nowrap'
+                whiteSpace: 'nowrap',
+                minHeight: '44px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
               }}
+              aria-label="Search practice areas"
             >
               SEARCH
             </button>

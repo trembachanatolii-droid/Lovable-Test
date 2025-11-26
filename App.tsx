@@ -2,6 +2,7 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import StickyPhoneButton from './components/StickyPhoneButton';
 
 // Lazy load all page components for code splitting
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -35,17 +36,22 @@ const FoodAgricultureIndustryPage = lazy(() => import('./pages/FoodAgricultureIn
 const FAQCenterPage = lazy(() => import('./pages/FAQCenterPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
-// Loading fallback component
+// Loading fallback component with explicit height to prevent CLS
 const PageLoader: React.FC = () => (
-  <div style={{
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    minHeight: '60vh',
-    fontSize: '1.125rem',
-    color: '#012169'
-  }}>
-    Loading...
+  <div
+    style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      minHeight: '60vh',
+      fontSize: '1.125rem',
+      color: '#012169'
+    }}
+    role="status"
+    aria-live="polite"
+    aria-label="Loading page content"
+  >
+    <span>Loading...</span>
   </div>
 );
 
@@ -219,6 +225,8 @@ const App: React.FC = () => {
         </Suspense>
       </main>
       <Footer />
+      {/* Sticky Phone Button - Mobile Only */}
+      <StickyPhoneButton showOnMobileOnly={true} />
     </div>
   );
 };

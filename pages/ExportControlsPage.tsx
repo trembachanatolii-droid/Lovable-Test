@@ -161,7 +161,7 @@ const ExportControlsPage: React.FC = () => {
                 <li><strong>Encryption Controls (EAR 740.17):</strong> Self-classification for encryption items under License Exception ENC</li>
                 <li><strong>Entity List Screening:</strong> Check customers and suppliers against BIS's Entity List and Denied Persons List</li>
                 <li><strong>Red Flag Analysis:</strong> Train employees to identify and escalate suspicious transactions</li>
-                <li><strong>Deemed Export Compliance:</strong> Control foreign national access to EAR-controlled source code and technology</li>
+                <li><strong><a href="#article/deemed-export-compliance-california" className="text-secondary-teal hover:text-primary-navy">Deemed Export Compliance</a>:</strong> Control foreign national access to EAR-controlled source code and technology</li>
                 <li><strong>BIS Enforcement Defense:</strong> Respond to administrative subpoenas and defend against civil penalties</li>
               </ul>
             </div>
@@ -170,10 +170,10 @@ const ExportControlsPage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">OFAC Sanctions Compliance California</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                The <strong>Office of Foreign Assets Control (OFAC)</strong> administers economic and trade sanctions against designated foreign countries, entities, and individuals. California businesses with international customers must implement <strong>OFAC sanctions compliance California</strong> programs to screen transactions against the <strong>SDN List, Sectoral Sanctions Identifications List, and country-based sanctions programs</strong> (Russia, Iran, North Korea, Cuba, Venezuela, Syria).
+                The <strong>Office of Foreign Assets Control (OFAC)</strong> administers economic and trade sanctions against designated foreign countries, entities, and individuals. California businesses with international customers must implement <strong><a href="#article/ofac-sanctions" className="text-secondary-teal hover:text-primary-navy font-semibold">OFAC sanctions compliance California</a></strong> programs to screen transactions against the <strong>SDN List, Sectoral Sanctions Identifications List, and country-based sanctions programs</strong> (Russia, Iran, North Korea, Cuba, Venezuela, Syria).
               </p>
               <ul className="list-disc list-inside space-y-2 text-text-secondary">
-                <li><strong>SDN Screening:</strong> Automated screening of customers, vendors, and beneficiaries against OFAC lists</li>
+                <li><strong><a href="#article/ofac-sanctions-screening-procedures-california" className="text-secondary-teal hover:text-primary-navy">SDN Screening</a>:</strong> Automated screening of customers, vendors, and beneficiaries against OFAC lists</li>
                 <li><strong>50% Rule Compliance:</strong> Identify blocked entities through ownership analysis</li>
                 <li><strong>Country-Based Sanctions:</strong> Navigate comprehensive embargoes and sector-specific restrictions</li>
                 <li><strong>General Licenses:</strong> Utilize authorizations for humanitarian, journalistic, and telecommunications transactions</li>
@@ -206,7 +206,7 @@ const ExportControlsPage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Technology Export Controls California</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                California's technology sector—<strong>software, semiconductors, AI/ML, cybersecurity, quantum computing</strong>—faces complex technology export controls California requirements. Both <strong>ITAR technical data</strong> and <strong>EAR technology</strong> can be exported electronically, triggering licensing obligations for cloud services, API access, and international development teams.
+                California's technology sector—<strong>software, <a href="#article/export-controls-semiconductors-california" className="text-secondary-teal hover:text-primary-navy font-semibold">semiconductors</a>, AI/ML, cybersecurity, quantum computing</strong>—faces complex technology export controls California requirements. Both <strong>ITAR technical data</strong> and <strong>EAR technology</strong> can be exported electronically, triggering licensing obligations for cloud services, API access, and international development teams.
               </p>
               <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li><strong>Source Code Classification:</strong> Determine whether software qualifies as mass market, publicly available, or controlled</li>
@@ -215,7 +215,7 @@ const ExportControlsPage: React.FC = () => {
                 <li><strong>Open Source Release:</strong> Unrestricted public release strategies for eligible software</li>
                 <li><strong>API Access Controls:</strong> Implement geographic and user-based restrictions for controlled APIs</li>
                 <li><strong>Global Development Teams:</strong> Manage foreign national access through deemed export licenses</li>
-                <li><strong>Encryption Technology:</strong> Navigate EAR controls on cryptographic functionality</li>
+                <li><strong><a href="#article/encryption-export-controls-california" className="text-secondary-teal hover:text-primary-navy">Encryption Technology</a>:</strong> Navigate EAR controls on cryptographic functionality</li>
                 <li><strong>Emerging Technology Controls:</strong> Monitor new controls on AI, quantum, hypersonics, and biotechnology</li>
               </ul>
             </div>
@@ -242,7 +242,7 @@ const ExportControlsPage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Dual Use Items Compliance California</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                <strong>Dual-use items</strong> have both commercial and military applications: semiconductors, machine tools, navigation equipment, telecommunications, materials, sensors. These items are controlled under <strong>EAR Categories 0-9</strong> based on national security, nonproliferation, chemical/biological weapons, nuclear nonproliferation, missile technology, regional stability, crime control, and anti-terrorism reasons. We help California businesses identify dual use items compliance California obligations and structure compliant export programs.
+                <strong><a href="#article/dual-use-export-classification-california" className="text-secondary-teal hover:text-primary-navy font-semibold">Dual-use items</a></strong> have both commercial and military applications: semiconductors, machine tools, navigation equipment, telecommunications, materials, sensors. These items are controlled under <strong>EAR Categories 0-9</strong> based on national security, nonproliferation, chemical/biological weapons, nuclear nonproliferation, missile technology, regional stability, crime control, and anti-terrorism reasons. We help California businesses identify dual use items compliance California obligations and structure compliant export programs.
               </p>
               <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li><strong>Commerce Control List (CCL) Review:</strong> Classify products against 10 categories and 5 product groups</li>
@@ -251,7 +251,7 @@ const ExportControlsPage: React.FC = () => {
                 <li><strong>De Minimis Rules:</strong> Calculate U.S.-origin content in foreign-made items for reexport controls</li>
                 <li><strong>600-Series Items:</strong> Navigate former USML items transitioned to "600-series" ECCNs under EAR</li>
                 <li><strong>Wassenaar Arrangement:</strong> Comply with multilateral dual-use export control regime</li>
-                <li><strong>License Exception Strategy:</strong> Utilize GBS, CIV, TSR exceptions to avoid license delays</li>
+                <li><strong><a href="#article/ear-export-licensing-california-tech" className="text-secondary-teal hover:text-primary-navy">License Exception Strategy</a>:</strong> Utilize GBS, CIV, TSR exceptions to avoid license delays</li>
                 <li><strong>End-User/End-Use Restrictions:</strong> Screen for military, WMD, and missile technology end-uses</li>
               </ul>
             </div>

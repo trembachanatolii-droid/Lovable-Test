@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import { articles } from '../data/articles';
 import { articleMetadata, getArticleCategory, formatDateForDisplay } from '../data/articleMetadata';
 import EvaluationForm from '../components/EvaluationForm';
+import RelatedArticles from '../components/RelatedArticles';
+import ArticleCTA from '../components/ArticleCTA';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateBreadcrumbSchema } from '../utils/seo';
@@ -48,6 +50,13 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
         publisher: {
           '@type': 'Organization',
           '@id': 'https://trembach.law/#organization',
+          name: 'Trembach Law Firm',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://trembach.law/logo.png',
+            width: 600,
+            height: 60,
+          },
         },
         datePublished: publishedDate,
         dateModified: publishedDate,
@@ -116,7 +125,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
             fontSize: 'clamp(36px, 5vw, 52px)',
             color: '#012169'
           }}>
-            {article.title}: How to Challenge CBP's HTS Determination
+            {article.title}
           </h1>
 
           {/* Author Metadata */}
@@ -148,6 +157,25 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
                 {displayDate}
               </span>
             </div>
+
+            {article.lastModified && article.publishedDate !== article.lastModified && (
+              <>
+                <div className="hidden md:block w-px h-10" style={{ backgroundColor: '#E5E7EB' }}></div>
+
+                <div className="flex flex-col text-left">
+                  <span className="text-[10px] uppercase tracking-widest mb-0.5" style={{ color: '#9CA3AF' }}>
+                    Last Updated
+                  </span>
+                  <span className="font-bold text-sm" style={{ color: '#012169' }}>
+                    {new Date(article.lastModified).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </span>
+                </div>
+              </>
+            )}
           </div>
         </header>
 
@@ -244,6 +272,11 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
           </div>
         </div>
 
+        {/* Article CTA */}
+        <div className="max-w-[800px] mx-auto px-6">
+          <ArticleCTA topic={article.title} variant="default" />
+        </div>
+
         {/* Footer / Disclaimer */}
         <div className="max-w-[800px] mx-auto px-6 mt-20 mb-16">
           <div className="p-6 rounded-sm" style={{
@@ -257,7 +290,10 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
         </div>
       </article>
 
-      {/* White space separator between article and form */}
+      {/* Related Articles Section */}
+      <RelatedArticles currentArticleId={articleId} maxArticles={4} />
+
+      {/* White space separator between related articles and form */}
       <div className="bg-white py-11"></div>
 
       {/* Evaluation CTA */}
