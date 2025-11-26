@@ -137,7 +137,7 @@ const HomePage: React.FC = () => {
         <div className="hero-overlay" aria-hidden="true"></div>
 
         <div className="container">
-          <h1>California International Trade Attorney | USA Customs Lawyer | Import Export Law</h1>
+          <h1>California International Trade Attorney<br />USA Customs Lawyer<br />Import Export Law</h1>
           <p className="hero-subtitle">
             Premier California & USA international trade attorney. Multinational trade law expertise for import/export businesses nationwide. CBP defense, federal trade compliance, global trade strategy, customs audits & export controls. Protecting your business in complex international trade law.
           </p>
