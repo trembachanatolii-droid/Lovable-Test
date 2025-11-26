@@ -35,6 +35,7 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = ({ article }) => {
           viewBox="0 0 24 24"
           strokeWidth={3}
           stroke="white"
+          aria-hidden="true"
           style={{
             width: '24px',
             height: '24px',

@@ -15,6 +15,8 @@ const mobileHeightClasses = 'h-4';
 return (
 <button
 onClick={onClick}
+aria-label={`Select ${title} service`}
+aria-pressed={isActive}
 className={`
 relative flex flex-1 flex-col justify-center text-left transition-all duration-300 ease-in-out
 
@@ -23,7 +25,7 @@ relative flex flex-1 flex-col justify-center text-left transition-all duration-3
       border-r border-white/20
 
       /* --- Desktop Styles --- */
-      lg:flex-none lg:w-48 lg:p-5 lg:border-r-0 lg:rounded-xl lg:shadow-lg lg:border-2 
+      lg:flex-none lg:w-48 lg:p-5 lg:border-r-0 lg:rounded-xl lg:shadow-lg lg:border-2
       lg:transform lg:hover:scale-105 lg:hover:shadow-2xl
       ${desktopHeightClasses}
       ${isActive ? 'lg:border-secondary-teal bg-black/20 lg:bg-white' : 'lg:border-neutral-lightGray bg-transparent lg:bg-white'}

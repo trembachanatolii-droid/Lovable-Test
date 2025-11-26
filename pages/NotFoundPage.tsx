@@ -26,10 +26,13 @@ const NotFoundPage: React.FC = () => {
           Page Not Found
         </h2>
         <p className="text-lg text-text-secondary mb-4 leading-relaxed">
-          We couldn't find the page you're looking for. It may have been moved, deleted, or the URL may be incorrect.
+          We couldn't find the page you're looking for. It may have been moved, deleted, or the URL may be incorrect. As California's dedicated international trade law firm, we're committed to helping you navigate not just complex customs matters, but also our website.
+        </p>
+        <p className="text-base text-text-secondary mb-4">
+          Whether you're facing a CBP audit, dealing with a seized shipment, or need guidance on Section 301 tariffs, our legal team has successfully defended over 200 CBP enforcement actions with a 95% seizure release rate. With over $100 million in penalties mitigated for California importers, we understand the urgency of trade compliance issues.
         </p>
         <p className="text-base text-text-secondary mb-8">
-          Don't worry - we can help you find what you need. Explore our most popular pages below or contact us directly for assistance with your international trade law matter.
+          Explore our practice areas below to find the resources you need, or contact us directly for a free consultation. Our 24-hour emergency response team handles time-sensitive matters at the Ports of Los Angeles, Long Beach, and Oakland.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -48,6 +51,9 @@ const NotFoundPage: React.FC = () => {
         </div>
 
         <div className="bg-gray-light rounded-2xl p-8 text-left mb-8">
+          <p className="text-sm text-text-secondary mb-6 italic">
+            Browse our comprehensive trade law services below. From customs audits and penalty defense to export controls and tariff classification, we provide strategic legal counsel tailored to your business needs.
+          </p>
           <h3 className="text-xl font-bold font-garamond text-primary-navy mb-4">
             Practice Areas
           </h3>

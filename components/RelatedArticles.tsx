@@ -126,7 +126,7 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = ({ currentArticleId, max
             href={`#${clusterData.pillar}`}
             className="inline-flex items-center gap-2 text-secondary-teal hover:text-primary-navy font-semibold transition-colors duration-200"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             View all {clusterData.pillarTitle} services
@@ -144,7 +144,7 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = ({ currentArticleId, max
               <div className="p-6">
                 <div className="flex items-start justify-between mb-3">
                   <div className="w-10 h-10 rounded-full bg-secondary-teal/10 flex items-center justify-center group-hover:bg-secondary-teal/20 transition-colors">
-                    <svg className="w-5 h-5 text-secondary-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-secondary-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
@@ -160,7 +160,7 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = ({ currentArticleId, max
 
                 <div className="mt-4 flex items-center text-secondary-teal text-sm font-semibold group-hover:gap-2 transition-all">
                   Read Article
-                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
@@ -177,7 +177,7 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = ({ currentArticleId, max
               className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-primary-navy text-primary-navy font-semibold rounded-md hover:bg-primary-navy hover:text-white transition-all duration-300"
             >
               View All Articles
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>

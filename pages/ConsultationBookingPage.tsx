@@ -189,6 +189,9 @@ const ConsultationBookingPage: React.FC = () => {
                         <p className="text-lg md:text-xl font-light mb-4 leading-relaxed text-white">
                             Book a consultation with our international trade and customs law experts. Select your preferred date, time, and meeting format below.
                         </p>
+                        <p className="text-base font-light mb-4 leading-relaxed text-white/90">
+                            Your free 30-60 minute consultation includes a direct conversation with our trade law attorneys—not junior staff. We'll review your situation, assess your options, and provide an honest evaluation of your case.
+                        </p>
                         <div className="w-24 h-1 bg-secondary-teal mx-auto"></div>
                     </div>
                 </div>
@@ -197,6 +200,20 @@ const ConsultationBookingPage: React.FC = () => {
             {/* Main Booking Form Section */}
             <section className="py-16 px-6 bg-neutral-lightGray">
                 <div className="max-w-4xl mx-auto">
+                    {/* Why Schedule Section */}
+                    <div className="bg-white rounded-lg shadow-sm p-6 mb-8 border-l-4 border-secondary-teal">
+                        <h2 className="text-xl font-bold text-primary-navy mb-3 font-garamond">Why Schedule a Consultation?</h2>
+                        <div className="grid md:grid-cols-2 gap-4 text-sm text-text-secondary">
+                            <div>
+                                <p className="mb-2"><strong className="text-primary-navy">Time-Sensitive Matters:</strong> CBP deadlines are often 30-60 days. Early legal guidance prevents costly mistakes and preserves your options.</p>
+                                <p><strong className="text-primary-navy">No-Obligation Assessment:</strong> Our initial consultation is completely free. You'll leave with a clear understanding of your legal position and recommended next steps.</p>
+                            </div>
+                            <div>
+                                <p className="mb-2"><strong className="text-primary-navy">Expert Analysis:</strong> With 200+ CBP matters defended and $100M+ in penalties mitigated, we provide actionable insights backed by experience.</p>
+                                <p><strong className="text-primary-navy">Same-Day Scheduling:</strong> For urgent matters involving seizures, detentions, or imminent deadlines, we offer expedited scheduling and 24-hour emergency response.</p>
+                            </div>
+                        </div>
+                    </div>
                     <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-8 md:p-12" aria-label="Consultation booking form" noValidate>
 
                         {/* Section 1: Contact Information */}
@@ -463,10 +480,13 @@ const ConsultationBookingPage: React.FC = () => {
 
                         {/* Privacy Notice */}
                         <div className="bg-neutral-lightGray p-4 rounded-lg mb-8">
-                            <p className="text-sm text-text-secondary">
+                            <p className="text-sm text-text-secondary mb-2">
                                 By submitting this form, you agree that we may contact you at the email address and phone number provided.
                                 All information submitted is confidential and protected by attorney-client privilege upon engagement.
                                 This consultation request does not establish an attorney-client relationship.
+                            </p>
+                            <p className="text-sm text-text-secondary">
+                                <strong>What happens next:</strong> You'll receive a confirmation email within 24 hours with your appointment details. If your preferred time is unavailable, we'll propose alternative options. For urgent matters, call us directly at (631) 746-8290.
                             </p>
                         </div>
 
