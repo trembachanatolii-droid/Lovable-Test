@@ -80,7 +80,7 @@ const ResourcesHubPage: React.FC = () => {
 
       {/* Hero Section - Extreme Style Matching Website */}
       <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[60vh]">
-        {/* Background Image */}
+        {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
             src="/images/hero-resources.jpg"
@@ -88,6 +88,7 @@ const ResourcesHubPage: React.FC = () => {
             className="w-full h-full object-cover object-center"
             loading="eager"
             decoding="async"
+            fetchpriority="high"
             width="1920"
             height="1080"
           />

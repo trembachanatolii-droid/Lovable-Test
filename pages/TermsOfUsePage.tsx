@@ -28,14 +28,15 @@ const TermsOfUsePage: React.FC = () => {
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[50vh]">
-        {/* Background Image */}
+        {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
             src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop"
-            alt=""
+            alt="Legal documents representing website terms of use and legal agreements"
             className="w-full h-full object-cover object-center"
-            loading="lazy"
+            loading="eager"
             decoding="async"
+            fetchpriority="high"
             width="2070"
             height="1380"
           />

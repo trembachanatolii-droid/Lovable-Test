@@ -221,14 +221,15 @@ const NewsPage: React.FC = () => {
       
       {/* Hero Section */}
       <section className="relative w-full min-h-[60vh] py-32 overflow-hidden bg-gray-200 flex items-center">
-        {/* Background Image with Dark Overlay */}
+        {/* Background Image with Dark Overlay - LCP element */}
         <div className="absolute inset-0 z-0">
           <img
             src="/images/hero-news.jpg"
             alt="Professional business news analysis representing trade law insights and industry updates"
             className="w-full h-full object-cover object-center"
-            loading="lazy"
+            loading="eager"
             decoding="async"
+            fetchpriority="high"
             width="1920"
             height="1080"
           />
