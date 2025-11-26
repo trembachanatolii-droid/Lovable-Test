@@ -186,7 +186,7 @@ const ConsultationBookingPage: React.FC = () => {
                         <h1 className="text-4xl md:text-5xl font-bold font-garamond mb-6 tracking-tight leading-tight text-white">
                             Schedule Your Free Consultation
                         </h1>
-                        <p className="text-lg md:text-xl font-light mb-4 leading-relaxed text-white/90">
+                        <p className="text-lg md:text-xl font-light mb-4 leading-relaxed text-white">
                             Book a consultation with our international trade and customs law experts. Select your preferred date, time, and meeting format below.
                         </p>
                         <div className="w-24 h-1 bg-secondary-teal mx-auto"></div>
