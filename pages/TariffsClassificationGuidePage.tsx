@@ -57,31 +57,25 @@ const TariffsClassificationGuidePage: React.FC = () => {
     <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
 
       {/* Hero Section */}
-      <section className="relative w-full h-[400px] overflow-hidden bg-primary-navy flex items-center">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1554224311-beee460c201f?q=80&w=1920&auto=format&fit=crop"
-            alt="Tariff schedules and customs documentation representing HTS classification and duty assessment"
-            className="w-full h-full object-cover opacity-40"
-            loading="eager"
-            decoding="async"
-            width="1920"
-            height="1080"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/85 via-primary-navy/70 to-primary-navy/95"></div>
-        </div>
-
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
+      <section className="relative w-full min-h-[50vh] py-24 overflow-hidden flex items-center" style={{ backgroundColor: '#012169' }}>
+        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full">
           <div className="max-w-3xl">
             <div className="inline-block bg-secondary-teal/20 border border-secondary-teal px-4 py-2 rounded-full mb-4">
               <span className="text-secondary-teal font-semibold text-sm uppercase tracking-wide">Knowledge Hub</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold font-garamond text-white mb-6 tracking-tight leading-tight drop-shadow-lg">
+            <h1
+              className="text-4xl md:text-6xl font-bold font-garamond mb-6 tracking-tight leading-tight"
+              style={{ color: '#ffffff' }}
+            >
               Complete Guide to Tariffs, Duties & HTS Classification California
             </h1>
-            <p className="text-lg md:text-xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
+            <p
+              className="text-lg md:text-xl font-light mb-8 max-w-2xl leading-relaxed"
+              style={{ color: '#ffffff' }}
+            >
               Expert insights on HTS classification, antidumping/countervailing duties, Section 301/232 tariffs, trade remedies, and customs valuation for California importers.
             </p>
+            <div className="w-24 h-1 bg-secondary-teal"></div>
           </div>
         </div>
       </section>
@@ -146,12 +140,12 @@ const TariffsClassificationGuidePage: React.FC = () => {
 
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond mt-8">Common HTS Classification Challenges for California Importers</h3>
               <div className="bg-neutral-50 p-6 rounded-lg mb-6">
-                <ul className="space-y-3 text-text-secondary">
-                  <li><strong>• Electronics:</strong> Distinguishing smartphones (8517.13) from tablets (8471.30) affects Section 301 tariff exposure</li>
-                  <li><strong>• Apparel:</strong> Fiber content and construction method determine duty rates ranging from 0% to 32%</li>
-                  <li><strong>• Chemicals:</strong> Technical specifications (purity, grade) drive classification and AD/CVD applicability</li>
-                  <li><strong>• Machinery:</strong> Principal function determines heading; accessories and parts follow GRI 2(a)</li>
-                  <li><strong>• Food Products:</strong> Processing level and ingredients affect duty rates and FDA requirements</li>
+                <ul className="list-disc list-inside space-y-3 text-text-secondary ml-4">
+                  <li><strong>Electronics:</strong> Distinguishing smartphones (8517.13) from tablets (8471.30) affects Section 301 tariff exposure</li>
+                  <li><strong>Apparel:</strong> Fiber content and construction method determine duty rates ranging from 0% to 32%</li>
+                  <li><strong>Chemicals:</strong> Technical specifications (purity, grade) drive classification and AD/CVD applicability</li>
+                  <li><strong>Machinery:</strong> Principal function determines heading; accessories and parts follow GRI 2(a)</li>
+                  <li><strong>Food Products:</strong> Processing level and ingredients affect duty rates and FDA requirements</li>
                 </ul>
               </div>
 
@@ -254,12 +248,12 @@ const TariffsClassificationGuidePage: React.FC = () => {
                 California's heavy reliance on Chinese imports creates significant CVD exposure. Commerce treats China as a <strong>non-market economy</strong> for CVD purposes, leading to higher duty rates. Common countervailable programs in China include:
               </p>
               <div className="bg-neutral-50 p-6 rounded-lg mb-6">
-                <ul className="space-y-2 text-text-secondary">
-                  <li>• State-owned enterprise loans at preferential rates</li>
-                  <li>• Land use rights granted at below-market prices</li>
-                  <li>• VAT and income tax rebates for exporters</li>
-                  <li>• Government provision of inputs (aluminum, steel, chemicals) below fair market value</li>
-                  <li>• Export buyer's credit programs</li>
+                <ul className="list-disc list-inside space-y-2 text-text-secondary ml-4">
+                  <li>State-owned enterprise loans at preferential rates</li>
+                  <li>Land use rights granted at below-market prices</li>
+                  <li>VAT and income tax rebates for exporters</li>
+                  <li>Government provision of inputs (aluminum, steel, chemicals) below fair market value</li>
+                  <li>Export buyer's credit programs</li>
                 </ul>
               </div>
 
@@ -535,7 +529,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
             California importers face complex tariff classifications, trade remedies, and valuation challenges. Our trade law practice helps you minimize duty costs, defend against government enforcement, and maintain compliance. Contact us for a free consultation on your tariff and classification issues.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#contact" variant="solid">
+            <Button href="#evaluation-form" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">

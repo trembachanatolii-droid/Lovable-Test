@@ -57,31 +57,25 @@ const SupplyChainESGGuidePage: React.FC = () => {
     <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
 
       {/* Hero Section */}
-      <section className="relative w-full h-[400px] overflow-hidden bg-primary-navy flex items-center">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=1920&auto=format&fit=crop"
-            alt="Global supply chain representing ESG compliance and ethical sourcing"
-            className="w-full h-full object-cover opacity-40"
-            loading="eager"
-            decoding="async"
-            width="1920"
-            height="1080"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/85 via-primary-navy/70 to-primary-navy/95"></div>
-        </div>
-
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
+      <section className="relative w-full min-h-[50vh] py-24 overflow-hidden flex items-center" style={{ backgroundColor: '#012169' }}>
+        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full">
           <div className="max-w-3xl">
             <div className="inline-block bg-secondary-teal/20 border border-secondary-teal px-4 py-2 rounded-full mb-4">
               <span className="text-secondary-teal font-semibold text-sm uppercase tracking-wide">Knowledge Hub</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold font-garamond text-white mb-6 tracking-tight leading-tight drop-shadow-lg">
+            <h1
+              className="text-4xl md:text-6xl font-bold font-garamond mb-6 tracking-tight leading-tight"
+              style={{ color: '#ffffff' }}
+            >
               Supply Chain Ethics & ESG Compliance California
             </h1>
-            <p className="text-lg md:text-xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
+            <p
+              className="text-lg md:text-xl font-light mb-8 max-w-2xl leading-relaxed"
+              style={{ color: '#ffffff' }}
+            >
               Complete guide to forced labor import bans, UFLPA compliance, green trade regulations, carbon border adjustment, and anti-corruption requirements for California importers.
             </p>
+            <div className="w-24 h-1 bg-secondary-teal"></div>
           </div>
         </div>
       </section>
@@ -123,31 +117,31 @@ const SupplyChainESGGuidePage: React.FC = () => {
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
                   <h3 className="font-bold text-green-900 mb-2">Environmental (E)</h3>
-                  <ul className="text-text-secondary text-sm space-y-1">
-                    <li>• Carbon emissions tracking</li>
-                    <li>• Hazardous substance restrictions (REACH, RoHS)</li>
-                    <li>• Sustainable sourcing requirements</li>
-                    <li>• Environmental product declarations</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li>Carbon emissions tracking</li>
+                    <li>Hazardous substance restrictions (REACH, RoHS)</li>
+                    <li>Sustainable sourcing requirements</li>
+                    <li>Environmental product declarations</li>
                   </ul>
                 </div>
 
                 <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
                   <h3 className="font-bold text-blue-900 mb-2">Social (S)</h3>
-                  <ul className="text-text-secondary text-sm space-y-1">
-                    <li>• Forced labor prohibitions (UFLPA, WROs)</li>
-                    <li>• Child labor screening</li>
-                    <li>• Fair wage compliance</li>
-                    <li>• Workplace safety standards</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li>Forced labor prohibitions (UFLPA, WROs)</li>
+                    <li>Child labor screening</li>
+                    <li>Fair wage compliance</li>
+                    <li>Workplace safety standards</li>
                   </ul>
                 </div>
 
                 <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
                   <h3 className="font-bold text-purple-900 mb-2">Governance (G)</h3>
-                  <ul className="text-text-secondary text-sm space-y-1">
-                    <li>• FCPA anti-corruption compliance</li>
-                    <li>• Supply chain transparency (SB 657)</li>
-                    <li>• Third-party due diligence</li>
-                    <li>• Whistleblower protection</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li>FCPA anti-corruption compliance</li>
+                    <li>Supply chain transparency (SB 657)</li>
+                    <li>Third-party due diligence</li>
+                    <li>Whistleblower protection</li>
                   </ul>
                 </div>
               </div>
@@ -198,29 +192,29 @@ const SupplyChainESGGuidePage: React.FC = () => {
               <div className="space-y-4 mb-6">
                 <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
                   <h4 className="font-bold text-red-900 mb-2">China - Multiple Industries</h4>
-                  <ul className="text-text-secondary text-sm space-y-1">
-                    <li>• Cotton and cotton products from Xinjiang</li>
-                    <li>• Tomatoes and tomato products from Xinjiang</li>
-                    <li>• Polysilicon (solar panel materials) from Xinjiang</li>
-                    <li>• Seafood processed by forced labor fleets</li>
-                    <li>• Electronics components (rare earth minerals)</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li>Cotton and cotton products from Xinjiang</li>
+                    <li>Tomatoes and tomato products from Xinjiang</li>
+                    <li>Polysilicon (solar panel materials) from Xinjiang</li>
+                    <li>Seafood processed by forced labor fleets</li>
+                    <li>Electronics components (rare earth minerals)</li>
                   </ul>
                 </div>
 
                 <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
                   <h4 className="font-bold text-red-900 mb-2">Malaysia - Palm Oil & Gloves</h4>
-                  <ul className="text-text-secondary text-sm space-y-1">
-                    <li>• Palm oil from specific plantations (FGV Holdings, Sime Darby)</li>
-                    <li>• Disposable gloves from specific manufacturers</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li>Palm oil from specific plantations (FGV Holdings, Sime Darby)</li>
+                    <li>Disposable gloves from specific manufacturers</li>
                   </ul>
                 </div>
 
                 <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
                   <h4 className="font-bold text-red-900 mb-2">Other Countries</h4>
-                  <ul className="text-text-secondary text-sm space-y-1">
-                    <li>• Seafood from Taiwan (forced labor on fishing vessels)</li>
-                    <li>• Gold from Democratic Republic of Congo (child labor in artisanal mining)</li>
-                    <li>• Tobacco from Malawi (child labor)</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li>Seafood from Taiwan (forced labor on fishing vessels)</li>
+                    <li>Gold from Democratic Republic of Congo (child labor in artisanal mining)</li>
+                    <li>Tobacco from Malawi (child labor)</li>
                   </ul>
                 </div>
               </div>
@@ -402,11 +396,11 @@ const SupplyChainESGGuidePage: React.FC = () => {
                 Congressional proposals (bipartisan PROVE IT Act, FAIR Transition and Competition Act) would impose carbon border tariffs on imports to the U.S. If enacted, California importers would face:
               </p>
               <div className="bg-neutral-50 p-6 rounded-lg mb-6">
-                <ul className="space-y-2 text-text-secondary">
-                  <li>• Carbon intensity measurement for all imported industrial goods (steel, aluminum, chemicals, cement)</li>
-                  <li>• Tariffs based on difference between U.S. carbon price and foreign carbon price</li>
-                  <li>• Supply chain carbon tracking from raw material extraction to port of export</li>
-                  <li>• Potential rebates for goods from countries with equivalent carbon pricing mechanisms</li>
+                <ul className="list-disc list-inside space-y-2 text-text-secondary ml-2">
+                  <li>Carbon intensity measurement for all imported industrial goods (steel, aluminum, chemicals, cement)</li>
+                  <li>Tariffs based on difference between U.S. carbon price and foreign carbon price</li>
+                  <li>Supply chain carbon tracking from raw material extraction to port of export</li>
+                  <li>Potential rebates for goods from countries with equivalent carbon pricing mechanisms</li>
                 </ul>
               </div>
 
@@ -433,32 +427,32 @@ const SupplyChainESGGuidePage: React.FC = () => {
               <div className="space-y-4 mb-6">
                 <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
                   <h4 className="font-bold text-red-900 mb-2">Customs Bribery</h4>
-                  <p className="text-text-secondary text-sm mb-2">Paying foreign customs officials for:</p>
-                  <ul className="text-text-secondary text-xs space-y-1 ml-4">
-                    <li>• Favorable HTS classification (lower duty rates)</li>
-                    <li>• Undervalued customs declarations</li>
-                    <li>• Expedited clearance without proper inspection</li>
-                    <li>• False certificates of origin for trade preferences</li>
+                  <p className="text-text-secondary mb-2">Paying foreign customs officials for:</p>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li>Favorable HTS classification (lower duty rates)</li>
+                    <li>Undervalued customs declarations</li>
+                    <li>Expedited clearance without proper inspection</li>
+                    <li>False certificates of origin for trade preferences</li>
                   </ul>
                 </div>
 
                 <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
                   <h4 className="font-bold text-red-900 mb-2">Freight Forwarder & Customs Broker Kickbacks</h4>
-                  <p className="text-text-secondary text-sm mb-2">Payments by third-party logistics providers to:</p>
-                  <ul className="text-text-secondary text-xs space-y-1 ml-4">
-                    <li>• Port officials for preferential berthing or container release</li>
-                    <li>• Quarantine/inspection officers to skip agricultural inspections</li>
-                    <li>• Licensing officials for export permit approvals</li>
+                  <p className="text-text-secondary mb-2">Payments by third-party logistics providers to:</p>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li>Port officials for preferential berthing or container release</li>
+                    <li>Quarantine/inspection officers to skip agricultural inspections</li>
+                    <li>Licensing officials for export permit approvals</li>
                   </ul>
                 </div>
 
                 <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
                   <h4 className="font-bold text-red-900 mb-2">Government Procurement Corruption</h4>
-                  <p className="text-text-secondary text-sm mb-2">Bribes to foreign government buyers for contracts involving:</p>
-                  <ul className="text-text-secondary text-xs space-y-1 ml-4">
-                    <li>• Infrastructure projects (construction materials, equipment)</li>
-                    <li>• State-owned enterprise purchases (SOE procurement)</li>
-                    <li>• Government tenders requiring local agent "commissions"</li>
+                  <p className="text-text-secondary mb-2">Bribes to foreign government buyers for contracts involving:</p>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li>Infrastructure projects (construction materials, equipment)</li>
+                    <li>State-owned enterprise purchases (SOE procurement)</li>
+                    <li>Government tenders requiring local agent "commissions"</li>
                   </ul>
                 </div>
               </div>
@@ -510,7 +504,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
             California importers face increasing ESG scrutiny from CBP, DOJ, and other enforcement agencies. Our trade law practice helps you implement forced labor compliance programs, navigate UFLPA requirements, and build anti-corruption controls. Contact us for expert guidance on supply chain ethics and ESG compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#contact" variant="solid">
+            <Button href="#evaluation-form" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">

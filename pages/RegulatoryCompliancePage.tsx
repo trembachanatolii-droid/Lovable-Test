@@ -368,7 +368,7 @@ const RegulatoryCompliancePage: React.FC = () => {
             Don't wait for a CBP audit to implement compliance controls. Contact our trade compliance California team for a free risk assessment and program design consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#contact" variant="solid">
+            <Button href="#evaluation-form" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">
