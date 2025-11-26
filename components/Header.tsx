@@ -129,11 +129,7 @@ const Header: React.FC = () => {
             </nav>
 
             {/* Right: Search Icon & Phone Number */}
-            <div className="desktop-search" style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1rem'
-            }}>
+            <div className="desktop-search">
               <button aria-label="Search" style={{
                 padding: '0.5rem',
                 color: 'var(--gray-dark)',
