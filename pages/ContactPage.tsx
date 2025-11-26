@@ -13,8 +13,8 @@ const ContactPage: React.FC = () => {
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-contact.jpg`,
     ogImageAlt: 'Contact Trembach Law Firm - California International Trade Attorney',
-    ogImageWidth: '1200',
-    ogImageHeight: '630',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
     twitterImageAlt: 'Contact Trembach Law Firm - California International Trade Attorney',
     schema: [
       {

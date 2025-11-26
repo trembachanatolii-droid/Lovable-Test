@@ -70,8 +70,8 @@ const CareersPage: React.FC = () => {
       ogType: 'website',
       ogImage: `${siteConfig.siteUrl}/og-image-careers.jpg`,
       ogImageAlt: 'Careers at Trembach Law - International Trade Attorney Jobs California',
-      ogImageWidth: '1200',
-      ogImageHeight: '630',
+      ogImageWidth: 1200,
+      ogImageHeight: 630,
       twitterImageAlt: 'Careers at Trembach Law - International Trade Attorney Jobs California',
       schema: [
         generateWebPageSchema({
