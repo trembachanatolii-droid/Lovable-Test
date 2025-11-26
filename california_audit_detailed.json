@@ -1,0 +1,1195 @@
+{
+  "total_articles": 74,
+  "articles_needing_enhancement": 0,
+  "target_articles": [],
+  "all_articles_sorted": [
+    {
+      "slug": "tariff-classification",
+      "title": "Tariff Classification Disputes",
+      "california_count": 3,
+      "references": [
+        "California",
+        "California"
+      ],
+      "intro_word_count": 29,
+      "content_word_count": 1048
+    },
+    {
+      "slug": "itar-compliance",
+      "title": "ITAR Compliance for Defense Contractors",
+      "california_count": 4,
+      "references": [
+        "California",
+        "California",
+        "CA"
+      ],
+      "intro_word_count": 31,
+      "content_word_count": 1344
+    },
+    {
+      "slug": "ofac-sanctions",
+      "title": "OFAC Sanctions Compliance",
+      "california_count": 4,
+      "references": [
+        "California",
+        "California"
+      ],
+      "intro_word_count": 31,
+      "content_word_count": 1297
+    },
+    {
+      "slug": "ear-compliance",
+      "title": "Export Administration Regulations",
+      "california_count": 4,
+      "references": [
+        "California",
+        "California"
+      ],
+      "intro_word_count": 4,
+      "content_word_count": 474
+    },
+    {
+      "slug": "customs-penalties-1592",
+      "title": "Customs Penalties (19 USC 1592)",
+      "california_count": 5,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Long Beach",
+        "Oakland"
+      ],
+      "intro_word_count": 44,
+      "content_word_count": 1256
+    },
+    {
+      "slug": "section-301-tariffs",
+      "title": "Section 301 Tariffs",
+      "california_count": 6,
+      "references": [
+        "California",
+        "California"
+      ],
+      "intro_word_count": 130,
+      "content_word_count": 1305
+    },
+    {
+      "slug": "isf-compliance",
+      "title": "Importer Security Filing (ISF)",
+      "california_count": 6,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Long Beach",
+        "Oakland"
+      ],
+      "intro_word_count": 2,
+      "content_word_count": 1337
+    },
+    {
+      "slug": "forced-labor-compliance",
+      "title": "Forced Labor Compliance (UFLPA)",
+      "california_count": 6,
+      "references": [
+        "California",
+        "California",
+        "ca",
+        "Los Angeles",
+        "Long Beach"
+      ],
+      "intro_word_count": 19,
+      "content_word_count": 465
+    },
+    {
+      "slug": "c-tpat-certification",
+      "title": "C-TPAT Certification",
+      "california_count": 7,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Long Beach",
+        "Oakland",
+        "San Diego"
+      ],
+      "intro_word_count": 53,
+      "content_word_count": 451
+    },
+    {
+      "slug": "free-trade-agreements",
+      "title": "Free Trade Agreements",
+      "california_count": 7,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "ca"
+      ],
+      "intro_word_count": 29,
+      "content_word_count": 479
+    },
+    {
+      "slug": "foreign-trade-zones",
+      "title": "Foreign Trade Zones",
+      "california_count": 8,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Long Beach",
+        "Oakland",
+        "San Diego",
+        "San Francisco"
+      ],
+      "intro_word_count": 44,
+      "content_word_count": 1477
+    },
+    {
+      "slug": "customs-valuation",
+      "title": "Customs Valuation",
+      "california_count": 14,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Oakland",
+        "San Francisco",
+        "San Francisco",
+        "Silicon Valley",
+        "Bay Area",
+        "Southern California"
+      ],
+      "intro_word_count": 22,
+      "content_word_count": 519
+    },
+    {
+      "slug": "section-201-safeguard-tariffs-california",
+      "title": "Section 201 Safeguard Tariffs",
+      "california_count": 14,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Central Valley"
+      ],
+      "intro_word_count": 51,
+      "content_word_count": 1257
+    },
+    {
+      "slug": "customs-broker-liability",
+      "title": "Customs Broker Liability",
+      "california_count": 15,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "San Diego",
+        "Silicon Valley",
+        "Bay Area"
+      ],
+      "intro_word_count": 13,
+      "content_word_count": 409
+    },
+    {
+      "slug": "liquidated-damages",
+      "title": "Liquidated Damages",
+      "california_count": 16,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "San Francisco",
+        "Silicon Valley",
+        "Bay Area"
+      ],
+      "intro_word_count": 7,
+      "content_word_count": 578
+    },
+    {
+      "slug": "section-321-reform-california",
+      "title": "Section 321 De Minimis Reform and Impact on California E-Commerce",
+      "california_count": 16,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Long Beach",
+        "San Francisco"
+      ],
+      "intro_word_count": 89,
+      "content_word_count": 1270
+    },
+    {
+      "slug": "export-controls-semiconductors-california",
+      "title": "Export Controls for Semiconductors",
+      "california_count": 16,
+      "references": [
+        "California",
+        "California"
+      ],
+      "intro_word_count": 17,
+      "content_word_count": 1400
+    },
+    {
+      "slug": "uflpa-solar-panel-imports-california",
+      "title": "UFLPA Solar Panel Imports California",
+      "california_count": 16,
+      "references": [
+        "California",
+        "California"
+      ],
+      "intro_word_count": 103,
+      "content_word_count": 1073
+    },
+    {
+      "slug": "us-cit-litigation",
+      "title": "U.S. Court of International Trade",
+      "california_count": 17,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Oakland",
+        "San Diego",
+        "Silicon Valley",
+        "Bay Area",
+        "Southern California"
+      ],
+      "intro_word_count": 39,
+      "content_word_count": 619
+    },
+    {
+      "slug": "royalty-license-fee-treatment-customs-valuation",
+      "title": "Royalty and License Fee Treatment",
+      "california_count": 17,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "San Francisco",
+        "Silicon Valley",
+        "Bay Area"
+      ],
+      "intro_word_count": 57,
+      "content_word_count": 1366
+    },
+    {
+      "slug": "cbp-isf-violations-penalties-california",
+      "title": "CBP ISF Violations and Penalties",
+      "california_count": 17,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "LA/LB"
+      ],
+      "intro_word_count": 8,
+      "content_word_count": 1283
+    },
+    {
+      "slug": "uflpa-compliance-california",
+      "title": "UFLPA Compliance for California Importers",
+      "california_count": 18,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach"
+      ],
+      "intro_word_count": 72,
+      "content_word_count": 1124
+    },
+    {
+      "slug": "usmca-rules-of-origin",
+      "title": "USMCA Rules of Origin",
+      "california_count": 19,
+      "references": [
+        "California",
+        "CA",
+        "CA"
+      ],
+      "intro_word_count": 33,
+      "content_word_count": 1112
+    },
+    {
+      "slug": "first-sale-valuation-california-importers",
+      "title": "First Sale Valuation for California Importers",
+      "california_count": 19,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach"
+      ],
+      "intro_word_count": 127,
+      "content_word_count": 1291
+    },
+    {
+      "slug": "voluntary-self-disclosure-export-violations-california",
+      "title": "Voluntary Self-Disclosure Export Violations",
+      "california_count": 19,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "San Diego",
+        "San Francisco",
+        "San Jose",
+        "Silicon Valley",
+        "Bay Area"
+      ],
+      "intro_word_count": 136,
+      "content_word_count": 1397
+    },
+    {
+      "slug": "california-wine-export-compliance",
+      "title": "California Wine Export Compliance",
+      "california_count": 20,
+      "references": [
+        "California",
+        "California"
+      ],
+      "intro_word_count": 77,
+      "content_word_count": 1109
+    },
+    {
+      "slug": "antidumping-cvd",
+      "title": "Antidumping & Countervailing Duties",
+      "california_count": 21,
+      "references": [
+        "California",
+        "California",
+        "ca",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "San Diego",
+        "Silicon Valley",
+        "Bay Area"
+      ],
+      "intro_word_count": 24,
+      "content_word_count": 1490
+    },
+    {
+      "slug": "uflpa-electronics-imports-california",
+      "title": "UFLPA Electronics Imports California",
+      "california_count": 21,
+      "references": [
+        "California",
+        "California",
+        "Silicon Valley",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 134,
+      "content_word_count": 1068
+    },
+    {
+      "slug": "cbp-focused-assessments",
+      "title": "CBP Focused Assessments",
+      "california_count": 22,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "San Francisco",
+        "Silicon Valley",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 57,
+      "content_word_count": 1161
+    },
+    {
+      "slug": "customs-valuation-transfer-pricing-defense",
+      "title": "Customs Valuation Transfer Pricing Defense",
+      "california_count": 22,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Long Beach",
+        "San Jose",
+        "Bay Area",
+        "Port of Los Angeles"
+      ],
+      "intro_word_count": 102,
+      "content_word_count": 1208
+    },
+    {
+      "slug": "forced-labor-due-diligence-programs-california",
+      "title": "Forced Labor Due Diligence Programs",
+      "california_count": 25,
+      "references": [
+        "California",
+        "California",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 59,
+      "content_word_count": 1298
+    },
+    {
+      "slug": "eapa-investigations-defense-california",
+      "title": "EAPA Investigations Defense",
+      "california_count": 26,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "San Francisco"
+      ],
+      "intro_word_count": 132,
+      "content_word_count": 1250
+    },
+    {
+      "slug": "cbp-seizure-forfeiture-defense",
+      "title": "CBP Seizure and Forfeiture Defense",
+      "california_count": 27,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "LA/LB"
+      ],
+      "intro_word_count": 132,
+      "content_word_count": 2567
+    },
+    {
+      "slug": "prior-disclosure-timing-strategies-california",
+      "title": "Prior Disclosure Timing Strategies",
+      "california_count": 28,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "San Diego",
+        "San Francisco"
+      ],
+      "intro_word_count": 82,
+      "content_word_count": 1397
+    },
+    {
+      "slug": "ofac-sanctions-screening-procedures-california",
+      "title": "OFAC Sanctions Screening Procedures",
+      "california_count": 29,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "San Diego",
+        "San Francisco",
+        "Port of Los Angeles"
+      ],
+      "intro_word_count": 133,
+      "content_word_count": 1285
+    },
+    {
+      "slug": "encryption-export-controls-california",
+      "title": "Encryption Export Controls California",
+      "california_count": 29,
+      "references": [
+        "California",
+        "California",
+        "Silicon Valley",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 127,
+      "content_word_count": 1546
+    },
+    {
+      "slug": "uflpa-entity-list-monitoring-california",
+      "title": "UFLPA Entity List Monitoring California",
+      "california_count": 30,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Long Beach"
+      ],
+      "intro_word_count": 43,
+      "content_word_count": 1322
+    },
+    {
+      "slug": "uflpa-detention-response-california-apparel",
+      "title": "UFLPA Detention Response California Apparel",
+      "california_count": 31,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles"
+      ],
+      "intro_word_count": 37,
+      "content_word_count": 1375
+    },
+    {
+      "slug": "ad-cvd-order-compliance-california",
+      "title": "AD/CVD Order Compliance California",
+      "california_count": 31,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland"
+      ],
+      "intro_word_count": 141,
+      "content_word_count": 1594
+    },
+    {
+      "slug": "cbp-focused-assessment-survival-guide-california",
+      "title": "CBP Focused Assessment Survival Guide",
+      "california_count": 32,
+      "references": [
+        "California",
+        "California",
+        "ca",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 122,
+      "content_word_count": 1144
+    },
+    {
+      "slug": "dual-use-export-classification-california",
+      "title": "Dual-Use Export Classification",
+      "california_count": 33,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "San Diego",
+        "San Diego",
+        "San Francisco",
+        "Silicon Valley",
+        "Silicon Valley",
+        "Southern California"
+      ],
+      "intro_word_count": 139,
+      "content_word_count": 1328
+    },
+    {
+      "slug": "false-claims-act-whistleblower-defense-california",
+      "title": "False Claims Act Whistleblower Defense",
+      "california_count": 34,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "Long Beach"
+      ],
+      "intro_word_count": 138,
+      "content_word_count": 1197
+    },
+    {
+      "slug": "circumvention-allegations-defense-california",
+      "title": "Circumvention Allegations Defense",
+      "california_count": 34,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Port of Los Angeles"
+      ],
+      "intro_word_count": 130,
+      "content_word_count": 1303
+    },
+    {
+      "slug": "korus-fta-qualification-california-importers",
+      "title": "KORUS FTA Qualification California",
+      "california_count": 36,
+      "references": [
+        "California",
+        "California",
+        "ca",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Oakland",
+        "Silicon Valley",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 133,
+      "content_word_count": 1296
+    },
+    {
+      "slug": "deemed-export-compliance-california",
+      "title": "Deemed Export Compliance California",
+      "california_count": 36,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "San Diego",
+        "Silicon Valley",
+        "Silicon Valley",
+        "Southern California",
+        "Southern California"
+      ],
+      "intro_word_count": 32,
+      "content_word_count": 1374
+    },
+    {
+      "slug": "california-food-import-fda-usda-compliance",
+      "title": "California Food Import FDA/USDA Compliance",
+      "california_count": 36,
+      "references": [
+        "California",
+        "California",
+        "ca",
+        "ca",
+        "Los Angeles",
+        "Long Beach"
+      ],
+      "intro_word_count": 1,
+      "content_word_count": 1365
+    },
+    {
+      "slug": "ear-export-licensing-california-tech",
+      "title": "EAR Export Licensing California Tech",
+      "california_count": 37,
+      "references": [
+        "California",
+        "California",
+        "San Diego",
+        "San Diego",
+        "San Francisco",
+        "San Jose",
+        "Silicon Valley",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 136,
+      "content_word_count": 1202
+    },
+    {
+      "slug": "deemed-export-compliance-california",
+      "title": "Deemed Export Compliance California",
+      "california_count": 38,
+      "references": [
+        "California",
+        "California",
+        "Long Beach",
+        "San Diego",
+        "Silicon Valley",
+        "Silicon Valley",
+        "Bay Area",
+        "Southern California",
+        "Southern California"
+      ],
+      "intro_word_count": 32,
+      "content_word_count": 3069
+    },
+    {
+      "slug": "assists-tooling-charges-california-customs-valuation",
+      "title": "Assists and Tooling Charges California",
+      "california_count": 38,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "San Diego",
+        "San Jose",
+        "San Jose",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 23,
+      "content_word_count": 2392
+    },
+    {
+      "slug": "reasonable-care-standard-california-importers",
+      "title": "Reasonable Care Standard California",
+      "california_count": 38,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "Los Angeles",
+        "Long Beach",
+        "Central Valley"
+      ],
+      "intro_word_count": 64,
+      "content_word_count": 1466
+    },
+    {
+      "slug": "itar-registration-requirements-california",
+      "title": "ITAR Registration Requirements California",
+      "california_count": 39,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "San Diego",
+        "San Diego",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 1,
+      "content_word_count": 1311
+    },
+    {
+      "slug": "cbp-informed-compliance-letters-california",
+      "title": "CBP Informed Compliance Letters California",
+      "california_count": 40,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland"
+      ],
+      "intro_word_count": 139,
+      "content_word_count": 2158
+    },
+    {
+      "slug": "e-commerce-section-321-california",
+      "title": "E-Commerce Section 321 California",
+      "california_count": 41,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "San Diego",
+        "San Francisco",
+        "Bay Area"
+      ],
+      "intro_word_count": 139,
+      "content_word_count": 1953
+    },
+    {
+      "slug": "post-entry-compliance",
+      "title": "Post-Entry Compliance",
+      "california_count": 42,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland"
+      ],
+      "intro_word_count": 50,
+      "content_word_count": 1651
+    },
+    {
+      "slug": "chile-fta-california-wine-exports",
+      "title": "Chile FTA California Wine Exports",
+      "california_count": 42,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Central Valley"
+      ],
+      "intro_word_count": 133,
+      "content_word_count": 1608
+    },
+    {
+      "slug": "fta-verification-defense-california",
+      "title": "FTA Verification Defense California",
+      "california_count": 42,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "San Diego",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 128,
+      "content_word_count": 1439
+    },
+    {
+      "slug": "cbp-reconciliation-procedures-california",
+      "title": "CBP Reconciliation Procedures",
+      "california_count": 43,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Silicon Valley"
+      ],
+      "intro_word_count": 146,
+      "content_word_count": 1843
+    },
+    {
+      "slug": "textiles-cafta-dr-compliance-california",
+      "title": "Textiles CAFTA-DR Compliance",
+      "california_count": 43,
+      "references": [
+        "California",
+        "California",
+        "ca",
+        "ca",
+        "Los Angeles",
+        "Los Angeles",
+        "San Francisco",
+        "San Francisco"
+      ],
+      "intro_word_count": 49,
+      "content_word_count": 1397
+    },
+    {
+      "slug": "section-1592-penalties-california-defense",
+      "title": "19 USC 1592 Penalties California Defense",
+      "california_count": 46,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland",
+        "San Francisco",
+        "San Francisco"
+      ],
+      "intro_word_count": 80,
+      "content_word_count": 1441
+    },
+    {
+      "slug": "liquidated-damages-defense-california",
+      "title": "Liquidated Damages Defense California",
+      "california_count": 49,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "San Diego",
+        "San Diego",
+        "San Francisco"
+      ],
+      "intro_word_count": 141,
+      "content_word_count": 3511
+    },
+    {
+      "slug": "cbp-seizure-forfeiture-defense-california",
+      "title": "CBP Seizure and Forfeiture Defense",
+      "california_count": 49,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland",
+        "San Diego"
+      ],
+      "intro_word_count": 134,
+      "content_word_count": 1328
+    },
+    {
+      "slug": "customs-bond-requirements-california-importers",
+      "title": "Customs Bond Requirements California",
+      "california_count": 49,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland",
+        "San Diego",
+        "San Francisco"
+      ],
+      "intro_word_count": 134,
+      "content_word_count": 1269
+    },
+    {
+      "slug": "cbp-targeting-exams-california-ports",
+      "title": "CBP Targeting and Exams California Ports",
+      "california_count": 50,
+      "references": [
+        "California",
+        "California",
+        "ca",
+        "ca",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland"
+      ],
+      "intro_word_count": 73,
+      "content_word_count": 1701
+    },
+    {
+      "slug": "country-of-origin-marking-requirements-california",
+      "title": "Country of Origin Marking Requirements California",
+      "california_count": 51,
+      "references": [
+        "California",
+        "California",
+        "ca",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland"
+      ],
+      "intro_word_count": 102,
+      "content_word_count": 1180
+    },
+    {
+      "slug": "pharmaceutical-import-compliance-california",
+      "title": "Pharmaceutical Import Compliance California",
+      "california_count": 52,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Oakland",
+        "Port of Los Angeles"
+      ],
+      "intro_word_count": 142,
+      "content_word_count": 1119
+    },
+    {
+      "slug": "customs-broker-liability-vs-importer-liability-california",
+      "title": "Customs Broker Liability vs Importer Liability",
+      "california_count": 54,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "San Diego"
+      ],
+      "intro_word_count": 138,
+      "content_word_count": 2243
+    },
+    {
+      "slug": "usmca-automotive-rules-california-manufacturers",
+      "title": "USMCA Automotive Rules California",
+      "california_count": 54,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "San Diego",
+        "Southern California"
+      ],
+      "intro_word_count": 53,
+      "content_word_count": 1224
+    },
+    {
+      "slug": "usmca-rules-origin-california-manufacturers",
+      "title": "USMCA Rules of Origin for California Manufacturers",
+      "california_count": 55,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA"
+      ],
+      "intro_word_count": 85,
+      "content_word_count": 1171
+    },
+    {
+      "slug": "usmca-certification-self-certification-california",
+      "title": "USMCA Certification Self-Certification",
+      "california_count": 57,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Silicon Valley",
+        "Silicon Valley",
+        "Central Valley"
+      ],
+      "intro_word_count": 124,
+      "content_word_count": 1913
+    },
+    {
+      "slug": "hts-classification-california-technology-imports",
+      "title": "HTS Classification for California Technology Imports",
+      "california_count": 58,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland"
+      ],
+      "intro_word_count": 140,
+      "content_word_count": 2167
+    },
+    {
+      "slug": "entry-type-selection-strategy-california",
+      "title": "Entry Type Selection Strategy",
+      "california_count": 60,
+      "references": [
+        "California",
+        "California",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland",
+        "San Diego",
+        "San Diego"
+      ],
+      "intro_word_count": 129,
+      "content_word_count": 2212
+    },
+    {
+      "slug": "drawback-claims",
+      "title": "Duty Drawback Claims",
+      "california_count": 62,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "Oakland"
+      ],
+      "intro_word_count": 36,
+      "content_word_count": 1639
+    },
+    {
+      "slug": "wro-defense-strategies-california",
+      "title": "WRO Defense Strategies California",
+      "california_count": 65,
+      "references": [
+        "California",
+        "California",
+        "ca",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "San Diego"
+      ],
+      "intro_word_count": 58,
+      "content_word_count": 4126
+    },
+    {
+      "slug": "gsp-revocation-impact-california",
+      "title": "GSP Revocation Impact California",
+      "california_count": 74,
+      "references": [
+        "California",
+        "California",
+        "CA",
+        "CA",
+        "Los Angeles",
+        "Los Angeles",
+        "Long Beach",
+        "Long Beach",
+        "Oakland",
+        "San Diego"
+      ],
+      "intro_word_count": 142,
+      "content_word_count": 3345
+    }
+  ]
+}
