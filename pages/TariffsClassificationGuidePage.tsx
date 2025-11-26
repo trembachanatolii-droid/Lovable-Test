@@ -529,7 +529,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
             California importers face complex tariff classifications, trade remedies, and valuation challenges. Our trade law practice helps you minimize duty costs, defend against government enforcement, and maintain compliance. Contact us for a free consultation on your tariff and classification issues.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#contact" variant="solid">
+            <Button href="#evaluation-form" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">

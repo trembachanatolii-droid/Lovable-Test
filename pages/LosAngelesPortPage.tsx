@@ -251,7 +251,7 @@ const LosAngelesPortPage: React.FC = () => {
             Don't let CBP audits, detentions, or penalties disrupt your business. Contact our Los Angeles customs attorney and Long Beach port trade lawyer team for a free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#contact" variant="solid">
+            <Button href="#evaluation-form" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">
