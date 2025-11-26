@@ -402,6 +402,9 @@ const UsefulLinksPage: React.FC = () => {
           <p className="text-xl md:text-2xl font-medium tracking-wide mb-4" style={{color: '#ffffff', textShadow: '0 2px 6px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(0, 0, 0, 0.5)'}}>
             A comprehensive directory of government agencies, legal forms, and international trade tools for compliance professionals.
           </p>
+          <p className="text-base md:text-lg font-light tracking-wide mb-4 max-w-3xl mx-auto" style={{color: '#ffffff', textShadow: '0 2px 6px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(0, 0, 0, 0.5)'}}>
+            Curated by California customs attorneys with 15+ years of experience, these resources are essential for importers, exporters, customs brokers, and compliance professionals managing international trade operations.
+          </p>
           <div className="w-24 h-1 bg-secondary-teal mx-auto mt-6"></div>
         </div>
       </section>
@@ -409,6 +412,9 @@ const UsefulLinksPage: React.FC = () => {
       {/* Search Section */}
       <section className="py-12 px-6 bg-white">
         <div className="max-w-[1200px] mx-auto">
+          <p className="text-center text-text-secondary mb-6 max-w-3xl mx-auto">
+            Use the search below to quickly find specific agencies, forms, or regulations. Whether you need HTS classification tools, CBP ruling databases, export licensing portals, or OFAC sanctions lists, this directory provides direct access to authoritative government resources.
+          </p>
           <div className="flex items-center gap-4">
             <div className="relative flex-1">
               <div
@@ -515,8 +521,11 @@ const UsefulLinksPage: React.FC = () => {
       <section className="py-12 px-6 bg-white">
         <div className="max-w-[1376px] mx-auto">
           <div className="p-6 bg-blue-50 rounded-xl border-l-4 border-primary-midBlue max-w-4xl mx-auto">
-            <p className="text-sm text-primary-navy/80 leading-relaxed">
+            <p className="text-sm text-primary-navy/80 leading-relaxed mb-2">
               <strong>Note:</strong> These links are provided as a courtesy for informational purposes only. Trembach Law Firm does not control external websites and is not responsible for their content. Always verify regulations with official government sources.
+            </p>
+            <p className="text-sm text-primary-navy/80 leading-relaxed">
+              <strong>Need help navigating these resources?</strong> Our trade law attorneys regularly work with these agencies and can help you understand how specific regulations apply to your business. Contact us for a free consultation to discuss your compliance needs.
             </p>
           </div>
         </div>
