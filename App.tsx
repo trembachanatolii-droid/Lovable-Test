@@ -33,6 +33,7 @@ const TechnologyElectronicsIndustryPage = lazy(() => import('./pages/TechnologyE
 const ApparelTextilesIndustryPage = lazy(() => import('./pages/ApparelTextilesIndustryPage'));
 const FoodAgricultureIndustryPage = lazy(() => import('./pages/FoodAgricultureIndustryPage'));
 const FAQCenterPage = lazy(() => import('./pages/FAQCenterPage'));
+const ConsultationBookingPage = lazy(() => import('./pages/ConsultationBookingPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 // Loading fallback component
@@ -166,6 +167,9 @@ const App: React.FC = () => {
         break;
       case 'trade-law-faq':
         content = <FAQCenterPage />;
+        break;
+      case 'schedule-consultation':
+        content = <ConsultationBookingPage />;
         break;
       default:
         // Show 404 page for unknown routes

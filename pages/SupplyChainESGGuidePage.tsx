@@ -293,7 +293,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
 
               <div className="bg-neutral-50 p-6 rounded-lg mb-6">
                 <h4 className="font-bold text-primary-navy mb-3">Required Documentation (5 Categories)</h4>
-                <ol className="space-y-3 text-text-secondary">
+                <ol className="list-none space-y-3 text-text-secondary">
                   <li><strong>1. Supply Chain Mapping:</strong> Complete supply chain from raw material to finished product, with supplier names, addresses, and UFLPA Entity List screening results</li>
                   <li><strong>2. Due Diligence:</strong> Third-party audits, worker interviews, payroll records, and continuous monitoring programs</li>
                   <li><strong>3. Supply Chain Tracing:</strong> Specific and detailed description of supply chain, including Tier 2 and Tier 3 suppliers for high-risk inputs (cotton, polysilicon, tomatoes)</li>
@@ -504,7 +504,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
             California importers face increasing ESG scrutiny from CBP, DOJ, and other enforcement agencies. Our trade law practice helps you implement forced labor compliance programs, navigate UFLPA requirements, and build anti-corruption controls. Contact us for expert guidance on supply chain ethics and ESG compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#evaluation-form" variant="solid">
+            <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">

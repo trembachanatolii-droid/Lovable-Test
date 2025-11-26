@@ -88,11 +88,11 @@ return (
         </div>
 
         {/* Main Content */}
-        <div className="relative z-10 h-full max-w-[1376px] mx-auto px-5 flex flex-col justify-center">
+        <div className="relative z-10 h-full max-w-[1376px] mx-auto px-5 flex flex-col justify-center pb-24 lg:pb-32">
              <div className="max-w-2xl">
-                <h1 className="text-4xl lg:text-6xl font-bold font-garamond text-primary-navy leading-tight mb-4 drop-shadow-md">{currentSlide.title}</h1>
-                <p className="text-lg lg:text-xl mb-8 text-primary-navy drop-shadow-md">{currentSlide.subtitle}</p>
-                <Button href={currentSlide.ctaLink} variant="solid">
+                <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold font-garamond text-primary-navy leading-tight mb-4 drop-shadow-md">{currentSlide.title}</h1>
+                <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 text-primary-navy drop-shadow-md">{currentSlide.subtitle}</p>
+                <Button href={currentSlide.ctaLink} variant="solid" className="shadow-lg">
                     {currentSlide.ctaText}
                 </Button>
             </div>
