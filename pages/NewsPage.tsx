@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { SearchIcon } from '../components/icons/SearchIcon';
 import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
 import { articles } from '../data/articles';
+import { articleMetadata, getArticleCategory } from '../data/articleMetadata';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateBreadcrumbSchema } from '../utils/seo';
@@ -16,55 +17,25 @@ interface NewsItem {
   date: string;
   readTime: string;
   link: string;
+  isoDate: string;
 }
 
-// --- Helper function to generate metadata ---
-const generateMetadata = (index: number) => {
-  const categories = [
-    'CUSTOMS LITIGATION',
-    'COMPLIANCE AUDITS',
-    'TRADE POLICY',
-    'LITIGATION',
-    'REGULATORY COMPLIANCE',
-    'CUSTOMS ENFORCEMENT',
-    'TRADE AGREEMENTS',
-    'EXPORT CONTROLS',
-    'SANCTIONS COMPLIANCE',
-    'TRADE REMEDIES'
-  ];
-
-  const dates = [
-    'NOVEMBER 17, 2025',
-    'NOVEMBER 15, 2025',
-    'NOVEMBER 10, 2025',
-    'NOVEMBER 5, 2025',
-    'OCTOBER 30, 2025',
-    'OCTOBER 25, 2025',
-    'OCTOBER 20, 2025',
-    'SEPTEMBER 30, 2025',
-    'SEPTEMBER 23, 2025',
-    'SEPTEMBER 15, 2025'
-  ];
-
-  const readTimes = ['25 MIN READ', '20 MIN READ', '24 MIN READ', '28 MIN READ', '22 MIN READ'];
-
-  return {
-    category: categories[index % categories.length],
-    date: dates[index % dates.length],
-    readTime: readTimes[index % readTimes.length]
-  };
-};
-
-// --- Data ---
-const newsItems: NewsItem[] = [
-  ...articles.map((article, index) => ({
-    id: article.id,
-    title: article.title,
-    source: 'Trembach Law Firm',
-    ...generateMetadata(index),
-    link: `#article/${article.id}`
-  }))
-];
+// --- Data: Map articles with their metadata and sort by date (newest first) ---
+const newsItems: NewsItem[] = articles
+  .map((article) => {
+    const metadata = articleMetadata[article.id];
+    return {
+      id: article.id,
+      title: article.title,
+      source: 'Trembach Law Firm',
+      category: getArticleCategory(article.id),
+      date: metadata?.date || 'NOVEMBER 26, 2025',
+      readTime: metadata?.readTime || '5 MIN READ',
+      isoDate: metadata?.isoDate || '2025-11-26',
+      link: `#article/${article.id}`
+    };
+  })
+  .sort((a, b) => new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime());
 
 // --- News Article Card Component ---
 const NewsArticleCard: React.FC<{ item: NewsItem }> = ({ item }) => {
