@@ -148,7 +148,6 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">🔍</div>
               <h3 className="text-xl font-bold text-primary-navy mb-4">HTS Classification Strategy</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Electronics classification analysis (smartphones, tablets, computers)</li>
@@ -164,7 +163,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
             {/* Service 2 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">🛡️</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">Export Control Compliance</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• ECCN classification for technology products</li>
@@ -181,7 +180,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
             {/* Service 3 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">🏭</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">Semiconductor Supply Chain</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Entity List impact analysis</li>
@@ -198,7 +197,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
             {/* Service 4 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">📋</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">Import Compliance Programs</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Automated classification systems</li>
@@ -214,7 +213,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
             {/* Service 5 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">⚖️</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">CBP Defense & Litigation</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Focused assessment defense</li>
@@ -230,7 +229,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
             {/* Service 6 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">💰</div>
+              
               <h3 className="text-xl font-bold text-primary-navy mb-4">Duty Savings Strategies</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Foreign Trade Zone utilization</li>

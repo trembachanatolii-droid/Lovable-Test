@@ -395,21 +395,21 @@ const NewsPage: React.FC = () => {
             <h2 className="text-3xl font-bold font-garamond text-primary-navy mb-8 text-center">Why Our Insights Matter</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-4xl mb-4">⚖️</div>
+                
                 <h3 className="text-xl font-bold text-primary-navy mb-3">Attorney-Level Analysis</h3>
                 <p className="text-gray-700">
                   Written by practicing attorneys who defend CBP investigations, handle focused assessments, and litigate trade cases in Court of International Trade. Not generic news aggregation—strategic legal analysis from the enforcement frontlines.
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-4xl mb-4">🎯</div>
+                
                 <h3 className="text-xl font-bold text-primary-navy mb-3">California-Focused Perspective</h3>
                 <p className="text-gray-700">
                   Emphasis on how national developments affect California ports (LA/Long Beach, Oakland, San Diego), technology companies, fashion brands, food importers, and the state's diverse international business sectors.
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-4xl mb-4">💡</div>
+                
                 <h3 className="text-xl font-bold text-primary-navy mb-3">Actionable Guidance</h3>
                 <p className="text-gray-700">
                   Each article includes practical steps businesses can take now: compliance program updates, supply chain adjustments, documentation improvements, and proactive disclosure strategies to minimize risk.
