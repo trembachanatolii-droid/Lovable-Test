@@ -28,14 +28,15 @@ const PrivacyPolicyPage: React.FC = () => {
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[50vh]">
-        {/* Background Image */}
+        {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
             src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop"
-            alt=""
+            alt="Security and privacy documentation representing website privacy policy and data protection"
             className="w-full h-full object-cover object-center"
-            loading="lazy"
+            loading="eager"
             decoding="async"
+            fetchpriority="high"
             width="2070"
             height="1380"
           />

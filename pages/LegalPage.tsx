@@ -157,14 +157,15 @@ const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[50vh]">
-        {/* Background Image */}
+        {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
             src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop"
-            alt=""
+            alt="Professional businessperson representing legal terms and website policies"
             className="w-full h-full object-cover object-center"
-            loading="lazy"
+            loading="eager"
             decoding="async"
+            fetchpriority="high"
             width="2071"
             height="1380"
           />

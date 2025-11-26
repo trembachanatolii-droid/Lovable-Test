@@ -63,14 +63,13 @@ return (
     <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-light">
       <img
         src={imageSrc}
-        srcSet={srcSet}
+        srcSet={`${imageSrc} 800w, ${imageSrc} 600w, ${imageSrc} 400w`}
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         alt={imageAlt}
         width="800"
         height="600"
         loading="lazy"
         decoding="async"
-        fetchpriority="low"
         onError={(e) => {
           // Fallback to placeholder if local image doesn't exist
           const target = e.target as HTMLImageElement;

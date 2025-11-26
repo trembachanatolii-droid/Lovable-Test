@@ -138,6 +138,15 @@ export default defineConfig(({ mode }) => {
         logOverride: { 'this-is-undefined-in-esm': 'silent' },
         // Drop console and debugger in production
         drop: mode === 'production' ? ['console', 'debugger'] : [],
+        // Legal comments for licensing compliance
+        legalComments: 'none',
+      },
+      // Performance optimization hints
+      experimental: {
+        // Enable render built URL - allows better asset optimization
+        renderBuiltUrl: (filename: string) => {
+          return '/' + filename;
+        },
       },
     };
 });
