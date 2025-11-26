@@ -60,8 +60,8 @@ const StickyPhoneButton: React.FC<StickyPhoneButtonProps> = ({ showOnMobileOnly 
 
         {/* Text (hidden on smaller mobile, shown on larger mobile) */}
         <div className="hidden xs:block text-left whitespace-nowrap">
-          <div className="text-xs uppercase tracking-wider opacity-90">Call Now</div>
-          <div className="font-bold text-sm">631-746-8290</div>
+          <div className="text-sm uppercase tracking-wider opacity-90">Call Now</div>
+          <div className="font-bold text-base">631-746-8290</div>
         </div>
       </div>
     </a>

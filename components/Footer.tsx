@@ -78,12 +78,12 @@ const Footer: React.FC = () => {
                                 type="email"
                                 placeholder="Enter your email"
                                 aria-label="Email address for newsletter subscription"
-                                className="bg-primary-darkBlue text-white placeholder-neutral-gray px-4 py-3 flex-grow focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm"
+                                className="bg-primary-darkBlue text-white placeholder-neutral-gray px-4 py-3 flex-grow focus:outline-none focus:ring-2 focus:ring-secondary-teal text-base"
                                 style={{ minHeight: '48px' }}
                             />
                             <button
                                 type="submit"
-                                className="bg-transparent text-white px-7 py-3 font-roboto font-bold uppercase tracking-wider hover:bg-secondary-teal transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-teal text-xs"
+                                className="bg-transparent text-white px-7 py-3 font-roboto font-bold uppercase tracking-wider hover:bg-secondary-teal transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm"
                                 style={{
                                     minHeight: '48px',
                                     minWidth: '135px',
@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
                     <div className="grid grid-cols-3 gap-8 col-span-1 md:col-span-2 lg:col-span-2">
                         {Object.entries(footerLinks).map(([title, links]) => (
                             <div key={title}>
-                                <div className="font-bold text-white mb-3 uppercase tracking-wider text-xs">{title}</div>
+                                <div className="font-bold text-white mb-3 uppercase tracking-wider text-sm">{title}</div>
                                 <ul className="space-y-2.5 list-none">
                                     {links.map((link: any, index: number) => (
                                         <li
