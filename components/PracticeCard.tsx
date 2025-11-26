@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { memo } from 'react';
 import { PracticeArea } from '../types';
 import { ArrowRightIcon } from './icons/ArrowRightIcon';
 
@@ -7,7 +7,7 @@ interface PracticeCardProps {
 practiceArea: PracticeArea;
 }
 
-const PracticeCard: React.FC<PracticeCardProps> = ({ practiceArea }) => {
+const PracticeCard: React.FC<PracticeCardProps> = memo(({ practiceArea }) => {
 const { title, subheading, description, tags, imageSlug, imageAlt, slug, imageUrl } = practiceArea;
 // Use imageUrl if provided, otherwise use local images, then fall back to placeholder service
 const localImagePath = `/images/${imageSlug}.jpg`;
@@ -48,6 +48,7 @@ return (
         viewBox="0 0 24 24"
         strokeWidth={3}
         stroke="white"
+        aria-hidden="true"
         style={{
           width: '22.4px',
           height: '22.4px',
@@ -103,6 +104,8 @@ return (
   </a>
 </article>
 );
-};
+});
+
+PracticeCard.displayName = 'PracticeCard';
 
 export default PracticeCard;

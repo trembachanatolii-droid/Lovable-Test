@@ -159,7 +159,16 @@ const ConsultationBookingPage: React.FC = () => {
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        alert('Thank you for scheduling a consultation. We will confirm your appointment shortly via email.');
+        // Show accessible notification
+        const notification = document.createElement('div');
+        notification.setAttribute('role', 'alert');
+        notification.setAttribute('aria-live', 'polite');
+        notification.className = 'fixed top-4 right-4 bg-secondary-teal text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-fadeIn max-w-md';
+        notification.innerHTML = '<p class="font-semibold">Thank you for scheduling a consultation!</p><p class="text-sm mt-1">We will confirm your appointment shortly via email.</p>';
+        document.body.appendChild(notification);
+        setTimeout(() => {
+            notification.remove();
+        }, 5000);
         event.currentTarget.reset();
     };
 

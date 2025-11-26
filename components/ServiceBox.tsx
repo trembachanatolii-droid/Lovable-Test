@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 interface ServiceBoxProps {
 title: string;
@@ -8,7 +8,7 @@ isTaller?: boolean;
 onClick: () => void;
 }
 
-const ServiceBox: React.FC<ServiceBoxProps> = ({ title, isActive, isPlaying, isTaller = false, onClick }) => {
+const ServiceBox: React.FC<ServiceBoxProps> = memo(({ title, isActive, isPlaying, isTaller = false, onClick }) => {
 const desktopHeightClasses = isTaller ? 'lg:h-[109px]' : 'lg:h-[98px]';
 // Mobile touch target minimum 44px for WCAG 2.5.5 compliance
 const mobileHeightClasses = 'h-11 min-h-[44px]';
@@ -45,6 +45,8 @@ relative flex flex-1 flex-col justify-center text-left transition-all duration-3
     </div>
   </button>
 );
-};
+});
+
+ServiceBox.displayName = 'ServiceBox';
 
 export default ServiceBox;

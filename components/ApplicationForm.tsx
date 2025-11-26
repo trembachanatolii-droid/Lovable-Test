@@ -1,6 +1,24 @@
 
-import React, { useState, useEffect, ChangeEvent, FormEvent } from 'react';
+import React, { useState, useEffect, ChangeEvent, FormEvent, useCallback } from 'react';
 import Button from './Button';
+
+// Accessible notification helper
+const showNotification = (message: string, type: 'success' | 'error' | 'warning' = 'error') => {
+    const colors = {
+        success: 'bg-secondary-teal',
+        error: 'bg-red-600',
+        warning: 'bg-yellow-600'
+    };
+    const notification = document.createElement('div');
+    notification.setAttribute('role', 'alert');
+    notification.setAttribute('aria-live', 'assertive');
+    notification.className = `fixed top-4 right-4 ${colors[type]} text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-fadeIn max-w-md`;
+    notification.innerHTML = `<p class="font-semibold">${message}</p>`;
+    document.body.appendChild(notification);
+    setTimeout(() => {
+        notification.remove();
+    }, 5000);
+};
 
 type Category = 'attorney' | 'compliance' | 'paralegal' | 'students';
 
@@ -131,7 +149,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
             setCurrentStep(prev => Math.min(prev + 1, steps.length - 1));
             window.scrollTo(0, 0);
         } else {
-            alert('Please fill in all required fields for this step.');
+            showNotification('Please fill in all required fields for this step.', 'warning');
         }
     };
 
@@ -143,7 +161,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
         if (!formData.verifyAuth) {
-            alert('You must authorize verification of credentials to submit.');
+            showNotification('You must authorize verification of credentials to submit.', 'warning');
             return;
         }
         setIsSubmitting(true);
