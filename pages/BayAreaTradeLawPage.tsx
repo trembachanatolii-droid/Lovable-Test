@@ -304,7 +304,7 @@ const BayAreaTradeLawPage: React.FC = () => {
             Don't let export compliance slow down your go-to-market strategy. Contact our San Francisco trade compliance attorney and Oakland port customs lawyer team for expert trade law advice for startups California.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#evaluation-form" variant="solid">
+            <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">

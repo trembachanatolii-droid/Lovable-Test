@@ -414,7 +414,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
                 CBP applies valuation methods <strong>hierarchically</strong>—each method is used only if the prior method cannot be applied:
               </p>
 
-              <ol className="space-y-4 mb-6">
+              <ol className="list-none space-y-4 mb-6">
                 <li className="bg-neutral-50 p-4 rounded-lg">
                   <strong className="text-primary-navy">1. Transaction Value (Primary Method - 19 CFR § 152.103)</strong>
                   <p className="text-text-secondary mt-2">Price actually paid or payable for the merchandise when sold for exportation to the United States, plus statutory additions (assists, packing costs, selling commissions, royalties, proceeds of resale). This method applies to over 90% of U.S. imports.</p>
@@ -529,7 +529,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
             California importers face complex tariff classifications, trade remedies, and valuation challenges. Our trade law practice helps you minimize duty costs, defend against government enforcement, and maintain compliance. Contact us for a free consultation on your tariff and classification issues.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#evaluation-form" variant="solid">
+            <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">

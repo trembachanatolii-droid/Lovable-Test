@@ -450,7 +450,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
             California online sellers and tech companies face evolving customs and export control requirements. Our trade law practice helps you comply with ecommerce import rules, Section 321 regulations, digital trade laws, and data transfer export controls. Contact us for expert guidance on e-commerce and digital trade compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#evaluation-form" variant="solid">
+            <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">

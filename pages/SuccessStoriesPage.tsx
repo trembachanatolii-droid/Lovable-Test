@@ -442,7 +442,7 @@ const SuccessStoriesPage: React.FC = () => {
             Whether you're facing CBP enforcement, navigating UFLPA requirements, or need proactive compliance programs, we deliver proven results. Schedule a free consultation to discuss your specific situation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#evaluation-form" variant="solid">
+            <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">
