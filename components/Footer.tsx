@@ -35,7 +35,14 @@ const Footer: React.FC = () => {
     };
 
     return (
-        <footer className="bg-primary-navy text-neutral-gray border-t" style={{ borderTopColor: 'rgba(255, 255, 255, 0.2)' }}>
+        <footer
+            className="bg-primary-navy text-neutral-gray border-t"
+            style={{
+                borderTopColor: 'rgba(255, 255, 255, 0.2)',
+                contain: 'layout style',
+                contentVisibility: 'visible'
+            }}
+        >
             <div className="max-w-[1376px] mx-auto px-5 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Firm Info & Newsletter */}

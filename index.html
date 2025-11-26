@@ -521,25 +521,49 @@ button, [role="button"], a[href] {
 
 /* Footer - Reserve exact space to prevent CLS */
 footer.bg-primary-navy {
-  min-height: 350px;
-  height: auto;
-  will-change: auto;
+  min-height: 520px;
+  contain: layout style;
+  content-visibility: visible;
+}
+
+@media (min-width: 768px) {
+  footer.bg-primary-navy {
+    min-height: 420px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer.bg-primary-navy {
+    min-height: 380px;
+  }
 }
 
 footer .max-w-\[1376px\] {
-  min-height: 300px;
+  min-height: inherit;
 }
 
 footer .grid {
-  min-height: 180px;
+  min-height: 280px;
+}
+
+@media (min-width: 768px) {
+  footer .grid {
+    min-height: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .grid {
+    min-height: 180px;
+  }
 }
 
 /* Form elements fixed dimensions */
 footer input[type="email"],
 footer button[type="submit"] {
-  height: 40px;
-  min-height: 40px;
-  max-height: 40px;
+  height: 48px;
+  min-height: 48px;
+  max-height: 48px;
 }
 
 .section-divider {
