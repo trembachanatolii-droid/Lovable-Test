@@ -20,6 +20,9 @@ return (
 <article className="bg-white rounded-2xl overflow-hidden border border-border-subtle transition-all duration-300 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:border-transparent will-change-transform">
 <a
     href={`#practice-areas?slug=${slug}`}
+    onClick={(e) => {
+        // Allow default hash behavior to propagate to App router
+    }}
     aria-label={`Learn more about ${title} legal services`}
     className="group relative block text-inherit no-underline focus:outline focus:outline-3 focus:outline-navy-medium focus:outline-offset-4 rounded-2xl"
 >

@@ -21,7 +21,7 @@ description: 'Strategic counsel on Section 301 tariff mitigation, exclusion requ
 tags: ['Section 301', 'China Tariffs', 'Exclusion Requests', 'Tariff Engineering'],
 imageSlug: 'section-301-tariffs',
 imageAlt: 'Section 301 tariff attorney analyzing China import duties and exclusion strategies',
-slug: 'section-301-tariffs',
+slug: 'retaliatory-tariffs',
 imageUrl: '/images/section-301-tariffs.jpg',
 },
 {
@@ -41,7 +41,7 @@ description: 'Maximize refunds through strategic duty drawback programs. We help
 tags: ['Manufacturing Drawback', 'Unused Merchandise', 'Rejected Goods', 'Duty Refunds'],
 imageSlug: 'duty-drawback',
 imageAlt: 'Duty drawback attorney helping recover import duty refunds for manufacturers',
-slug: 'duty-drawback-recovery',
+slug: 'duty-drawback',
 imageUrl: '/images/duty-drawback.jpg',
 },
 {
@@ -61,7 +61,7 @@ description: 'Defend against Withhold Release Orders and ensure UFLPA compliance
 tags: ['UFLPA', 'Withhold Release Orders', 'Supply Chain Due Diligence', 'Forced Labor Defense'],
 imageSlug: 'forced-labor-compliance',
 imageAlt: 'Forced labor compliance attorney defending importers against UFLPA Withhold Release Orders',
-slug: 'forced-labor-compliance-uflpa',
+slug: 'entry-wro',
 imageUrl: '/images/forced-labor-compliance.jpg',
 },
 ];
