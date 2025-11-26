@@ -179,14 +179,15 @@ const CareersPage: React.FC = () => {
         <div className="pt-20 font-montserrat text-neutral-darkGray bg-white">
             {/* Hero Section */}
             <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[60vh]">
-                {/* Background Image */}
+                {/* Background Image - LCP element */}
                 <div className="absolute inset-0 z-0" aria-hidden="true">
                     <img
                         src="/images/hero-careers.jpg"
                         alt="International trade attorney careers at California law firm - professional legal workplace for customs and trade law specialists"
                         className="w-full h-full object-cover object-center"
-                        loading="lazy"
+                        loading="eager"
                         decoding="async"
+                        fetchpriority="high"
                         width="1920"
                         height="1080"
                     />

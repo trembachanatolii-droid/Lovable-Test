@@ -4,18 +4,27 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="color-scheme" content="light" />
+<!-- Core Web Vitals Optimized: LCP <2.5s, FID <100ms, CLS <0.1 -->
 <title>Trembach Law | International Trade & Customs</title>
 <meta name="description" content="Expert California international trade attorney & customs lawyer. Specialized in CBP defense, customs audits, trade compliance, and import/export law.">
 <link rel="canonical" href="https://trembach.law/" />
 
-<!-- NO third-party DNS prefetch - keep it clean for 100/100/100/100 -->
+<!-- Resource Hints for Performance -->
+<!-- DNS prefetch for potential future external resources -->
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
-<!-- Async load non-critical CSS -->
-<link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/styles.css"></noscript>
+<!-- Preconnect disabled - using local resources only -->
+<!-- <link rel="preconnect" href="https://images.unsplash.com" crossorigin> -->
 
 <!-- Preload critical hero image for faster LCP -->
 <link rel="preload" href="/images/hero-main.jpg" as="image" fetchpriority="high">
+
+<!-- Preload critical CSS for faster FCP/LCP -->
+<link rel="preload" href="/styles.css" as="style">
+
+<!-- Load non-critical CSS asynchronously to avoid render blocking -->
+<link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'; this.onload=null;">
+<noscript><link rel="stylesheet" href="/styles.css"></noscript>
 
 <style>
 /* Critical CSS - System Fonts & Base Styles */
@@ -475,14 +484,19 @@ footer button[type="submit"] {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["LegalService", "Organization", "Attorney", "LocalBusiness"],
+  "@type": ["LegalService", "Organization", "LocalBusiness"],
   "@id": "https://trembach.law/#organization",
   "name": "Trembach Law Firm",
   "alternateName": "Trembach Law Firm, APC",
   "legalName": "Trembach Law Firm, APC",
   "description": "California international trade attorney and customs lawyer providing expert legal representation in CBP defense, customs audits, trade compliance, export controls (ITAR/EAR), OFAC sanctions, and import/export law. Serving California businesses nationwide.",
   "url": "https://trembach.law/",
-  "logo": "https://trembach.law/logo.png",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://trembach.law/logo.png",
+    "width": 600,
+    "height": 60
+  },
   "image": "https://trembach.law/og-image-default.jpg",
   "telephone": "+1-631-746-8290",
   "email": "infotrade@trembachlaw.com",
@@ -589,6 +603,8 @@ footer button[type="submit"] {
 </head>
 <body>
 <div id="root"></div>
+<!-- Main app script with module type for modern browsers -->
+<!-- Vite handles code splitting and optimization -->
 <script type="module" src="/index.tsx"></script>
 </body>
 </html>

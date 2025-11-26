@@ -84,7 +84,9 @@ const Header: React.FC = () => {
     // Set initial route
     handleHashChange();
 
-    window.addEventListener('scroll', handleScroll);
+    // Use passive listener for scroll events to improve scrolling performance (FID optimization)
+    // Passive listeners tell the browser we won't call preventDefault(), allowing better optimization
+    window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('hashchange', handleHashChange);
 
     return () => {
@@ -108,7 +110,7 @@ const Header: React.FC = () => {
         <div className="container">
           <div className="header-content">
             {/* Left: Logo */}
-            <a href="#" onClick={handleLogoClick} className="logo">
+            <a href="#" onClick={handleLogoClick} className="logo" aria-label="Trembach Law Firm - Home">
               <span className="logo-title">
                 Trembach Law Firm
               </span>
@@ -133,13 +135,14 @@ const Header: React.FC = () => {
               <button aria-label="Search" style={{
                 padding: '0.5rem',
                 color: 'var(--gray-dark)',
-                transition: 'color 0.3s'
+                transition: 'color 0.3s',
+                cursor: 'pointer'
               }}>
-                <SearchIcon style={{ height: '1.5rem', width: '1.5rem' }} />
+                <SearchIcon style={{ height: '1.5rem', width: '1.5rem' }} aria-hidden="true" />
               </button>
               <a
                 href="tel:+16317468290"
-                aria-label="Call us at 631-746-8290"
+                aria-label="Call us at 631-746-8290 for free consultation"
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -167,7 +170,10 @@ const Header: React.FC = () => {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
-                <span>631-746-8290</span>
+                <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2 }}>
+                  <span style={{ fontSize: '0.625rem', opacity: 0.9, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Free Consultation</span>
+                  <span style={{ fontWeight: 600 }}>631-746-8290</span>
+                </div>
               </a>
             </div>
 
@@ -237,11 +243,16 @@ const Header: React.FC = () => {
           justifyContent: 'flex-end',
           padding: '1.25rem'
         }}>
-          <button onClick={toggleMenu} aria-label="Close menu" style={{
-            padding: '0.5rem',
-            color: 'var(--white)'
+          <button onClick={toggleMenu} aria-label="Close menu" type="button" style={{
+            padding: '0.75rem',
+            color: 'var(--white)',
+            minHeight: '44px',
+            minWidth: '44px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
           }}>
-            <CloseIcon style={{ height: '2rem', width: '2rem' }} />
+            <CloseIcon style={{ height: '1.75rem', width: '1.75rem' }} aria-hidden="true" />
           </button>
         </div>
         <nav aria-label="Mobile navigation" style={{
@@ -264,6 +275,7 @@ const Header: React.FC = () => {
           ))}
           <a
             href="tel:+16317468290"
+            aria-label="Call us at 631-746-8290 for free consultation"
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -291,7 +303,10 @@ const Header: React.FC = () => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
             </svg>
-            <span>631-746-8290</span>
+            <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.3 }}>
+              <span style={{ fontSize: '0.75rem', opacity: 0.95, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Free Consultation</span>
+              <span style={{ fontWeight: 600 }}>631-746-8290</span>
+            </div>
           </a>
         </nav>
       </div>

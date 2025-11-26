@@ -132,6 +132,12 @@ export function generateArticleSchema(config: {
       '@id': 'https://trembach.law/#organization',
       name: siteConfig.siteName,
       url: siteConfig.siteUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteConfig.siteUrl}/logo.png`,
+        width: 600,
+        height: 60,
+      },
     },
   };
 }
@@ -297,7 +303,12 @@ export function generateJobPostingSchema(config: {
       '@id': 'https://trembach.law/#organization',
       name: siteConfig.siteName,
       url: siteConfig.siteUrl,
-      logo: `${siteConfig.siteUrl}/logo.png`,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteConfig.siteUrl}/logo.png`,
+        width: 600,
+        height: 60,
+      },
     },
     jobLocation: {
       '@type': 'Place',

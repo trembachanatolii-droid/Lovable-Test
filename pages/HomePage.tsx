@@ -129,7 +129,7 @@ const HomePage: React.FC = () => {
             height="1080"
             loading="eager"
             decoding="async"
-            fetchPriority="high"
+            fetchpriority="high"
             className="hero-bg-image"
           />
         </picture>
@@ -145,7 +145,7 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Our Practice Areas Section - Holland & Knight Style */}
+      {/* Our Practice Areas Section - Responsive Design */}
       <section
         id="practice-areas-preview"
         aria-labelledby="practice-areas-heading"
@@ -205,15 +205,16 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Other Sections */}
-      <Suspense fallback={<div style={{ minHeight: '400px' }} />}>
+      {/* Suspense fallbacks with explicit heights to prevent CLS (Cumulative Layout Shift) */}
+      <Suspense fallback={<div style={{ minHeight: '400px', background: 'transparent' }} aria-label="Loading justice pillars section" />}>
         <JusticePillars />
       </Suspense>
       <StatsSection />
       <AboutSection />
-      <Suspense fallback={<div style={{ minHeight: '600px' }} />}>
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading practice areas section" />}>
         <PracticeAreasSection />
       </Suspense>
-      <Suspense fallback={<div style={{ minHeight: '500px' }} />}>
+      <Suspense fallback={<div style={{ minHeight: '500px', background: 'transparent' }} aria-label="Loading evaluation form section" />}>
         <EvaluationForm />
       </Suspense>
 

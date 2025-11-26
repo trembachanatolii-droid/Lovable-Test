@@ -33,12 +33,14 @@ right-[-80px] group-hover:right-0 z-10"
             <div className="md:w-[40%] flex-shrink-0">
                 <img
                   src={card.image}
+                  srcSet={`${card.image} 800w, ${card.image} 600w, ${card.image} 400w`}
+                  sizes="(max-width: 768px) 100vw, 40vw"
                   alt={card.title}
                   className="w-full h-48 md:h-full object-cover"
                   loading="lazy"
                   decoding="async"
-                  width="400"
-                  height="300"
+                  width="800"
+                  height="600"
                 />
             </div>
              {/* Text content container */}

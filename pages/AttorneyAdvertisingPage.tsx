@@ -28,14 +28,15 @@ const AttorneyAdvertisingPage: React.FC = () => {
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[50vh]">
-        {/* Background Image */}
+        {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
             src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop"
-            alt=""
+            alt="Professional legal workplace representing attorney advertising disclosures and legal notices"
             className="w-full h-full object-cover object-center"
-            loading="lazy"
+            loading="eager"
             decoding="async"
+            fetchpriority="high"
             width="2069"
             height="1380"
           />
