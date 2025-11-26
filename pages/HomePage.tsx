@@ -129,7 +129,7 @@ const HomePage: React.FC = () => {
             height="1080"
             loading="eager"
             decoding="async"
-            fetchPriority="high"
+            fetchpriority="high"
             className="hero-bg-image"
           />
         </picture>
@@ -145,49 +145,50 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Our Practice Areas Section - Holland & Knight Style */}
+      {/* Our Practice Areas Section - Responsive Design */}
       <section
         id="practice-areas-preview"
         aria-labelledby="practice-areas-heading"
         style={{
-          padding: '5rem 3rem',
+          padding: '3rem 1.5rem',
           background: '#F8FAFC',
           overflow: 'hidden'
         }}
       >
+        <style>{`
+          @media (min-width: 640px) {
+            #practice-areas-preview {
+              padding: 4rem 2rem;
+            }
+          }
+          @media (min-width: 1024px) {
+            #practice-areas-preview {
+              padding: 5rem 3rem;
+            }
+          }
+        `}</style>
         <div style={{ maxWidth: '1376px', margin: '0 auto' }}>
           {/* Decorative Line - Centered on entire section */}
           <div style={{
             width: '80px',
             height: '4px',
             backgroundColor: '#012169',
-            marginBottom: '3rem',
+            marginBottom: '2rem',
             marginLeft: 'auto',
             marginRight: 'auto'
           }}></div>
 
-          <div style={{
-            display: 'flex',
-            flexDirection: 'row',
-            gap: '0',
-            alignItems: 'flex-start',
-            position: 'relative'
-          }}>
+          <div className="practice-areas-layout">
             {/* Left Column - Heading & Description */}
-            <div style={{
-              flex: '0 0 33%',
-              maxWidth: '33%',
-              paddingRight: '3rem',
-              marginLeft: '90px'
-            }}>
+            <div className="practice-areas-heading">
               <h2
                 id="practice-areas-heading"
                 style={{
                   fontFamily: 'Georgia, serif',
-                  fontSize: 'clamp(2.25rem, 4vw, 3rem)',
+                  fontSize: 'clamp(1.75rem, 5vw, 3rem)',
                   fontWeight: 700,
                   lineHeight: 1.15,
-                  marginBottom: '2rem',
+                  marginBottom: '1.5rem',
                   color: '#012169',
                   marginTop: 0
                 }}
@@ -195,7 +196,7 @@ const HomePage: React.FC = () => {
                 High-Risk Customs Problems That Can't Wait
               </h2>
               <p style={{
-                fontSize: '1.0625rem',
+                fontSize: 'clamp(0.9375rem, 2vw, 1.0625rem)',
                 lineHeight: 1.5,
                 color: '#4a5568',
                 margin: 0,
@@ -206,12 +207,7 @@ const HomePage: React.FC = () => {
             </div>
 
             {/* Right Column - Practice Areas List */}
-            <div style={{
-              position: 'absolute',
-              left: '50%',
-              width: 'calc(32% + 150px)',
-              overflow: 'hidden'
-            }}>
+            <div className="practice-areas-list">
               <div style={{
                 borderTop: '1px solid #e2e8f0',
                 overflow: 'hidden'
@@ -296,15 +292,16 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Other Sections */}
-      <Suspense fallback={<div style={{ minHeight: '400px' }} />}>
+      {/* Suspense fallbacks with explicit heights to prevent CLS (Cumulative Layout Shift) */}
+      <Suspense fallback={<div style={{ minHeight: '400px', background: 'transparent' }} aria-label="Loading justice pillars section" />}>
         <JusticePillars />
       </Suspense>
       <StatsSection />
       <AboutSection />
-      <Suspense fallback={<div style={{ minHeight: '600px' }} />}>
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading practice areas section" />}>
         <PracticeAreasSection />
       </Suspense>
-      <Suspense fallback={<div style={{ minHeight: '500px' }} />}>
+      <Suspense fallback={<div style={{ minHeight: '500px', background: 'transparent' }} aria-label="Loading evaluation form section" />}>
         <EvaluationForm />
       </Suspense>
 

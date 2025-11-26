@@ -64,6 +64,8 @@ return (
                     loading={index === 0 ? 'eager' : 'lazy'}
                     decoding="async"
                     fetchPriority={index === 0 ? 'high' : 'low'}
+                    width="1920"
+                    height="1080"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent"></div>
             </div>

@@ -1,0 +1,1250 @@
+{
+  "total_links_to_add": 430,
+  "link_mapping": {
+    "focused assessment": [
+      "cbp-focused-assessments",
+      "CBP Focused Assessments"
+    ],
+    "tariff classification": [
+      "tariff-classification",
+      "tariff classification disputes"
+    ],
+    "hts classification": [
+      "tariff-classification",
+      "HTS classification"
+    ],
+    "1592": [
+      "customs-penalties-1592",
+      "19 USC \u00a7 1592 penalties"
+    ],
+    "section 1592": [
+      "customs-penalties-1592",
+      "Section 1592 penalties"
+    ],
+    "customs penalties": [
+      "customs-penalties-1592",
+      "customs penalties"
+    ],
+    "customs valuation": [
+      "customs-valuation",
+      "customs valuation"
+    ],
+    "transaction value": [
+      "customs-valuation",
+      "transaction value methodology"
+    ],
+    "antidumping": [
+      "antidumping-cvd",
+      "antidumping and countervailing duty"
+    ],
+    "countervailing duty": [
+      "antidumping-cvd",
+      "countervailing duty"
+    ],
+    "ad/cvd": [
+      "antidumping-cvd",
+      "AD/CVD"
+    ],
+    "court of international trade": [
+      "us-cit-litigation",
+      "Court of International Trade"
+    ],
+    "liquidated damages": [
+      "liquidated-damages",
+      "liquidated damages"
+    ],
+    "post-entry": [
+      "post-entry-compliance",
+      "post-entry compliance"
+    ],
+    "prior disclosure": [
+      "prior-disclosure-timing-strategies-california",
+      "prior disclosure"
+    ],
+    "reasonable care": [
+      "reasonable-care-standard-california-importers",
+      "reasonable care standard"
+    ],
+    "customs bond": [
+      "customs-bond-requirements-california-importers",
+      "customs bond requirements"
+    ],
+    "customs broker": [
+      "customs-broker-liability-vs-importer-liability-california",
+      "customs broker liability"
+    ],
+    "seizure": [
+      "cbp-seizure-forfeiture-defense-california",
+      "customs seizure"
+    ],
+    "forfeiture": [
+      "cbp-seizure-forfeiture-defense-california",
+      "forfeiture defense"
+    ],
+    "false claims act": [
+      "false-claims-act-whistleblower-defense-california",
+      "False Claims Act"
+    ],
+    "first sale": [
+      "first-sale-valuation-california-importers",
+      "first sale valuation"
+    ],
+    "transfer pricing": [
+      "customs-valuation-transfer-pricing-defense",
+      "transfer pricing"
+    ],
+    "assists": [
+      "assists-tooling-charges-california-customs-valuation",
+      "assists and tooling charges"
+    ],
+    "royalty": [
+      "royalty-license-fee-treatment-customs-valuation",
+      "royalty and license fees"
+    ],
+    "itar": [
+      "itar-compliance",
+      "ITAR compliance"
+    ],
+    "ear compliance": [
+      "ear-compliance",
+      "EAR compliance"
+    ],
+    "export administration regulations": [
+      "ear-compliance",
+      "Export Administration Regulations"
+    ],
+    "ofac": [
+      "ofac-sanctions",
+      "OFAC sanctions"
+    ],
+    "deemed export": [
+      "deemed-export-compliance-california",
+      "deemed exports"
+    ],
+    "encryption export": [
+      "encryption-export-controls-california",
+      "encryption export controls"
+    ],
+    "dual-use": [
+      "dual-use-export-classification-california",
+      "dual-use items"
+    ],
+    "voluntary self disclosure": [
+      "voluntary-self-disclosure-export-violations-california",
+      "voluntary self-disclosure"
+    ],
+    "semiconductor": [
+      "export-controls-semiconductors-california",
+      "semiconductor export controls"
+    ],
+    "export licensing": [
+      "ear-export-licensing-california-tech",
+      "export licensing"
+    ],
+    "usmca": [
+      "usmca-rules-of-origin",
+      "USMCA rules of origin"
+    ],
+    "rules of origin": [
+      "usmca-rules-of-origin",
+      "rules of origin"
+    ],
+    "section 301": [
+      "section-301-tariffs",
+      "Section 301 tariffs"
+    ],
+    "c-tpat": [
+      "c-tpat-certification",
+      "C-TPAT certification"
+    ],
+    "foreign trade zone": [
+      "foreign-trade-zones",
+      "Foreign Trade Zones"
+    ],
+    "ftz": [
+      "foreign-trade-zones",
+      "FTZ"
+    ],
+    "drawback": [
+      "drawback-claims",
+      "duty drawback"
+    ],
+    "free trade agreement": [
+      "free-trade-agreements",
+      "free trade agreements"
+    ],
+    "nafta": [
+      "usmca-rules-of-origin",
+      "USMCA (formerly NAFTA)"
+    ],
+    "korus": [
+      "korus-fta-qualification-california-importers",
+      "KORUS FTA"
+    ],
+    "chile fta": [
+      "chile-fta-california-wine-exports",
+      "Chile FTA"
+    ],
+    "uflpa": [
+      "uflpa-compliance-california",
+      "UFLPA compliance"
+    ],
+    "forced labor": [
+      "forced-labor-compliance",
+      "forced labor import bans"
+    ],
+    "xinjiang": [
+      "uflpa-compliance-california",
+      "Xinjiang UFLPA compliance"
+    ],
+    "withhold release order": [
+      "wro-defense-strategies-california",
+      "Withhold Release Orders"
+    ],
+    "wro": [
+      "wro-defense-strategies-california",
+      "WRO"
+    ],
+    "supply chain due diligence": [
+      "forced-labor-due-diligence-programs-california",
+      "supply chain due diligence"
+    ],
+    "section 321": [
+      "section-321-reform-california",
+      "Section 321"
+    ],
+    "uflpa entity list": [
+      "uflpa-entity-list-monitoring-california",
+      "UFLPA Entity List"
+    ]
+  },
+  "article_relations": {
+    "tariff-classification": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages",
+        "post-entry-compliance"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "cbp-focused-assessments": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages",
+        "post-entry-compliance"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "customs-penalties-1592": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages",
+        "post-entry-compliance"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "customs-valuation": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages",
+        "post-entry-compliance"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "antidumping-cvd": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages",
+        "post-entry-compliance"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "isf-compliance": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california",
+        "ear-export-licensing-california-tech"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "us-cit-litigation": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "liquidated-damages",
+        "post-entry-compliance"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "liquidated-damages": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "post-entry-compliance"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "post-entry-compliance": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "section-321-reform-california": {
+      "cluster": "uflpa_esg",
+      "related_articles": [
+        "forced-labor-compliance",
+        "uflpa-compliance-california",
+        "uflpa-detention-response-california-apparel",
+        "uflpa-entity-list-monitoring-california",
+        "uflpa-solar-panel-imports-california",
+        "uflpa-electronics-imports-california",
+        "wro-defense-strategies-california",
+        "forced-labor-due-diligence-programs-california"
+      ],
+      "pillar": "supply-chain-esg-compliance-guide"
+    },
+    "cbp-seizure-forfeiture-defense": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "hts-classification-california-technology-imports": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "isf-compliance",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california",
+        "ear-export-licensing-california-tech"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "customs-valuation-transfer-pricing-defense": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "country-of-origin-marking-requirements-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "first-sale-valuation-california-importers": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "cbp-informed-compliance-letters-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "royalty-license-fee-treatment-customs-valuation": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "assists-tooling-charges-california-customs-valuation": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "customs-broker-liability-vs-importer-liability-california": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "cbp-reconciliation-procedures-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "cbp-reconciliation-procedures-california": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "entry-type-selection-strategy-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "section-1592-penalties-california-defense": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "cbp-focused-assessment-survival-guide-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "prior-disclosure-timing-strategies-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "reasonable-care-standard-california-importers": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "liquidated-damages-defense-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "cbp-seizure-forfeiture-defense-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "false-claims-act-whistleblower-defense-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "cbp-targeting-exams-california-ports": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "customs-bond-requirements-california-importers": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "cbp-isf-violations-penalties-california": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "fta-verification-defense-california": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "gsp-revocation-impact-california": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "uflpa-detention-response-california-apparel": {
+      "cluster": "uflpa_esg",
+      "related_articles": [
+        "forced-labor-compliance",
+        "uflpa-compliance-california",
+        "section-321-reform-california",
+        "uflpa-entity-list-monitoring-california",
+        "uflpa-solar-panel-imports-california",
+        "uflpa-electronics-imports-california",
+        "wro-defense-strategies-california",
+        "forced-labor-due-diligence-programs-california"
+      ],
+      "pillar": "supply-chain-esg-compliance-guide"
+    },
+    "wro-defense-strategies-california": {
+      "cluster": "uflpa_esg",
+      "related_articles": [
+        "forced-labor-compliance",
+        "uflpa-compliance-california",
+        "section-321-reform-california",
+        "uflpa-detention-response-california-apparel",
+        "uflpa-entity-list-monitoring-california",
+        "uflpa-solar-panel-imports-california",
+        "uflpa-electronics-imports-california",
+        "forced-labor-due-diligence-programs-california"
+      ],
+      "pillar": "supply-chain-esg-compliance-guide"
+    },
+    "ad-cvd-order-compliance-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "eapa-investigations-defense-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "circumvention-allegations-defense-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "california-food-import-fda-usda-compliance": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "e-commerce-section-321-california": {
+      "cluster": "uflpa_esg",
+      "related_articles": [
+        "forced-labor-compliance",
+        "uflpa-compliance-california",
+        "section-321-reform-california",
+        "uflpa-detention-response-california-apparel",
+        "uflpa-entity-list-monitoring-california",
+        "uflpa-solar-panel-imports-california",
+        "uflpa-electronics-imports-california",
+        "wro-defense-strategies-california"
+      ],
+      "pillar": "supply-chain-esg-compliance-guide"
+    },
+    "pharmaceutical-import-compliance-california": {
+      "cluster": "customs_defense",
+      "related_articles": [
+        "tariff-classification",
+        "cbp-focused-assessments",
+        "customs-penalties-1592",
+        "customs-valuation",
+        "antidumping-cvd",
+        "isf-compliance",
+        "us-cit-litigation",
+        "liquidated-damages"
+      ],
+      "pillar": "customs-defense-litigation"
+    },
+    "itar-compliance": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "ofac-sanctions",
+        "isf-compliance",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california",
+        "ear-export-licensing-california-tech"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "ofac-sanctions": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "isf-compliance",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california",
+        "ear-export-licensing-california-tech"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "ear-compliance": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "isf-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california",
+        "ear-export-licensing-california-tech"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "deemed-export-compliance-california": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "isf-compliance",
+        "ear-compliance",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california",
+        "ear-export-licensing-california-tech"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "itar-registration-requirements-california": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "isf-compliance",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "ear-export-licensing-california-tech"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "ear-export-licensing-california-tech": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "isf-compliance",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "ofac-sanctions-screening-procedures-california": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "isf-compliance",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "encryption-export-controls-california": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "isf-compliance",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "dual-use-export-classification-california": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "isf-compliance",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "voluntary-self-disclosure-export-violations-california": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "isf-compliance",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "export-controls-semiconductors-california": {
+      "cluster": "export_controls",
+      "related_articles": [
+        "itar-compliance",
+        "ofac-sanctions",
+        "isf-compliance",
+        "ear-compliance",
+        "deemed-export-compliance-california",
+        "hts-classification-california-technology-imports",
+        "customs-broker-liability-vs-importer-liability-california",
+        "itar-registration-requirements-california"
+      ],
+      "pillar": "export-controls-sanctions"
+    },
+    "california-wine-export-compliance": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "usmca-rules-of-origin": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california",
+        "cbp-reconciliation-procedures-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "section-301-tariffs": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california",
+        "cbp-reconciliation-procedures-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "c-tpat-certification": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california",
+        "cbp-reconciliation-procedures-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "foreign-trade-zones": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california",
+        "cbp-reconciliation-procedures-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "customs-broker-liability": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california",
+        "cbp-reconciliation-procedures-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "free-trade-agreements": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california",
+        "cbp-reconciliation-procedures-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "drawback-claims": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "customs-broker-liability-vs-importer-liability-california",
+        "cbp-reconciliation-procedures-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "usmca-rules-origin-california-manufacturers": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "usmca-certification-self-certification-california": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "usmca-automotive-rules-california-manufacturers": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "korus-fta-qualification-california-importers": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "textiles-cafta-dr-compliance-california": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "chile-fta-california-wine-exports": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "section-201-safeguard-tariffs-california": {
+      "cluster": "trade_compliance",
+      "related_articles": [
+        "usmca-rules-of-origin",
+        "section-301-tariffs",
+        "c-tpat-certification",
+        "foreign-trade-zones",
+        "customs-broker-liability",
+        "free-trade-agreements",
+        "drawback-claims",
+        "customs-broker-liability-vs-importer-liability-california"
+      ],
+      "pillar": "regulatory-compliance-advisory"
+    },
+    "forced-labor-compliance": {
+      "cluster": "uflpa_esg",
+      "related_articles": [
+        "uflpa-compliance-california",
+        "section-321-reform-california",
+        "uflpa-detention-response-california-apparel",
+        "uflpa-entity-list-monitoring-california",
+        "uflpa-solar-panel-imports-california",
+        "uflpa-electronics-imports-california",
+        "wro-defense-strategies-california",
+        "forced-labor-due-diligence-programs-california"
+      ],
+      "pillar": "supply-chain-esg-compliance-guide"
+    },
+    "uflpa-compliance-california": {
+      "cluster": "uflpa_esg",
+      "related_articles": [
+        "forced-labor-compliance",
+        "section-321-reform-california",
+        "uflpa-detention-response-california-apparel",
+        "uflpa-entity-list-monitoring-california",
+        "uflpa-solar-panel-imports-california",
+        "uflpa-electronics-imports-california",
+        "wro-defense-strategies-california",
+        "forced-labor-due-diligence-programs-california"
+      ],
+      "pillar": "supply-chain-esg-compliance-guide"
+    },
+    "uflpa-entity-list-monitoring-california": {
+      "cluster": "uflpa_esg",
+      "related_articles": [
+        "forced-labor-compliance",
+        "uflpa-compliance-california",
+        "section-321-reform-california",
+        "uflpa-detention-response-california-apparel",
+        "uflpa-solar-panel-imports-california",
+        "uflpa-electronics-imports-california",
+        "wro-defense-strategies-california",
+        "forced-labor-due-diligence-programs-california"
+      ],
+      "pillar": "supply-chain-esg-compliance-guide"
+    },
+    "uflpa-solar-panel-imports-california": {
+      "cluster": "uflpa_esg",
+      "related_articles": [
+        "forced-labor-compliance",
+        "uflpa-compliance-california",
+        "section-321-reform-california",
+        "uflpa-detention-response-california-apparel",
+        "uflpa-entity-list-monitoring-california",
+        "uflpa-electronics-imports-california",
+        "wro-defense-strategies-california",
+        "forced-labor-due-diligence-programs-california"
+      ],
+      "pillar": "supply-chain-esg-compliance-guide"
+    },
+    "uflpa-electronics-imports-california": {
+      "cluster": "uflpa_esg",
+      "related_articles": [
+        "forced-labor-compliance",
+        "uflpa-compliance-california",
+        "section-321-reform-california",
+        "uflpa-detention-response-california-apparel",
+        "uflpa-entity-list-monitoring-california",
+        "uflpa-solar-panel-imports-california",
+        "wro-defense-strategies-california",
+        "forced-labor-due-diligence-programs-california"
+      ],
+      "pillar": "supply-chain-esg-compliance-guide"
+    },
+    "forced-labor-due-diligence-programs-california": {
+      "cluster": "uflpa_esg",
+      "related_articles": [
+        "forced-labor-compliance",
+        "uflpa-compliance-california",
+        "section-321-reform-california",
+        "uflpa-detention-response-california-apparel",
+        "uflpa-entity-list-monitoring-california",
+        "uflpa-solar-panel-imports-california",
+        "uflpa-electronics-imports-california",
+        "wro-defense-strategies-california"
+      ],
+      "pillar": "supply-chain-esg-compliance-guide"
+    }
+  },
+  "strategy": {
+    "per_article": 5,
+    "pillar_links": 1,
+    "related_article_links": 4
+  }
+}
