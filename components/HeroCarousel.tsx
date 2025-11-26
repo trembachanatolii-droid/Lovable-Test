@@ -73,19 +73,19 @@ return (
 
         {/* Left/Right Arrows */}
         <div className="absolute inset-0 z-30 flex items-center justify-between px-5 pointer-events-none">
-            <button 
-                onClick={handlePrevious} 
+            <button
+                onClick={handlePrevious}
                 aria-label="Previous slide"
-                className="pointer-events-auto p-3 bg-black/30 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/50"
+                className="pointer-events-auto p-3 bg-black/30 rounded-full text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/50 focus-visible:opacity-100 min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
-                <ArrowLeftIcon className="h-6 w-6" />
+                <ArrowLeftIcon className="h-6 w-6" aria-hidden="true" />
             </button>
-            <button 
-                onClick={handleNext} 
+            <button
+                onClick={handleNext}
                 aria-label="Next slide"
-                className="pointer-events-auto p-3 bg-black/30 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/50"
+                className="pointer-events-auto p-3 bg-black/30 rounded-full text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/50 focus-visible:opacity-100 min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
-                <ArrowRightIcon className="h-6 w-6" />
+                <ArrowRightIcon className="h-6 w-6" aria-hidden="true" />
             </button>
         </div>
 

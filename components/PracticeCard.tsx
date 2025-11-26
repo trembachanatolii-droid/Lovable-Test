@@ -91,7 +91,7 @@ return (
       </p>
       <ul className="flex gap-2 flex-wrap mb-6 list-none p-0" aria-label="Service areas">
         {tags.map((tag) => (
-          <li key={tag} className="py-1.5 px-3 bg-gray-light text-text-primary text-[13px] font-medium rounded-md">
+          <li key={tag} className="py-1.5 px-3 bg-gray-light text-text-primary text-sm font-medium rounded-md">
             {tag}
           </li>
         ))}

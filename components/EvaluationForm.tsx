@@ -110,8 +110,18 @@ interface EvaluationFormProps {
 const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        alert('Thank you for your submission. We will get back to you shortly.');
-        event.currentTarget.reset();
+        // Show success message in an accessible way
+        const form = event.currentTarget;
+        const successMessage = document.createElement('div');
+        successMessage.setAttribute('role', 'alert');
+        successMessage.setAttribute('aria-live', 'polite');
+        successMessage.className = 'fixed top-4 right-4 bg-secondary-teal text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-fadeIn';
+        successMessage.innerHTML = '<p class="font-semibold">Thank you for your submission!</p><p class="text-sm">We will get back to you shortly.</p>';
+        document.body.appendChild(successMessage);
+        setTimeout(() => {
+            successMessage.remove();
+        }, 5000);
+        form.reset();
     };
 
     const getThemeStyles = () => {
@@ -169,10 +179,10 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     <div className="lg:pr-8">
                         <h3 className={`font-garamond text-[30px] font-bold ${styles.headingColor} mb-6 leading-tight`}>Your Strategic Partner in Trade Law</h3>
-                        <p className={`${styles.subTextColor} mb-6 text-[15px]`} style={{ lineHeight: '1.7' }}>
+                        <p className={`${styles.subTextColor} mb-6 text-base`} style={{ lineHeight: '1.7' }}>
                             Submitting your case details allows our experienced attorneys to conduct a thorough preliminary review. We analyze the specifics of your situation against current trade laws and regulations to provide you with a clear, initial assessment of your options.
                         </p>
-                        <ul className={`space-y-4 ${styles.subTextColor} text-[15px]`}>
+                        <ul className={`space-y-4 ${styles.subTextColor} text-base`}>
                             <li className="flex items-start">
                                 <span className="text-gold-primary text-lg mr-3 flex-shrink-0">✓</span>
                                 <p style={{ lineHeight: '1.6' }}>
@@ -204,7 +214,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                             <FormField id="email" label="Email Address" type="email" required placeholder="" autoComplete="email" inputClassName={styles.inputBg} labelColor={styles.labelColor} />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <FormField id="phone" label="Phone Number" required placeholder="" autoComplete="tel" inputClassName={styles.inputBg} labelColor={styles.labelColor} />
+                            <FormField id="phone" label="Phone Number" type="tel" required placeholder="" autoComplete="tel" inputClassName={styles.inputBg} labelColor={styles.labelColor} />
                             <div>
                                 <label htmlFor="subject" className={`block text-base font-semibold mb-3 ${styles.labelColor}`}>
                                     Subject <span className="text-secondary-teal" aria-label="required">*</span>

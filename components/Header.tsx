@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { MenuIcon } from './icons/MenuIcon';
 import { CloseIcon } from './icons/CloseIcon';
 import { SearchIcon } from './icons/SearchIcon';
@@ -60,6 +60,9 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentRoute, setCurrentRoute] = useState<string>('');
+  const menuRef = useRef<HTMLDivElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   const primaryNavLinks = [
     { href: '#about', label: 'About the Firm' },
@@ -95,7 +98,64 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = useCallback(() => {
+    setIsMenuOpen(prev => !prev);
+  }, []);
+
+  // Close menu on Escape key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isMenuOpen) {
+        setIsMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('keydown', handleKeyDown);
+      // Focus trap: focus close button when menu opens
+      closeButtonRef.current?.focus();
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
+
+  // Focus trap for mobile menu
+  useEffect(() => {
+    if (!isMenuOpen || !menuRef.current) return;
+
+    const focusableElements = menuRef.current.querySelectorAll<HTMLElement>(
+      'button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    const handleTabKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Tab') return;
+
+      if (e.shiftKey) {
+        if (document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement?.focus();
+        }
+      } else {
+        if (document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement?.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleTabKey);
+    return () => document.removeEventListener('keydown', handleTabKey);
+  }, [isMenuOpen]);
 
   const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -208,19 +268,27 @@ const Header: React.FC = () => {
                 </svg>
               </a>
               {/* Mobile Menu Button */}
-              <button onClick={toggleMenu} aria-label="Open menu" style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '0.625rem',
-                backgroundColor: 'var(--navy-primary)',
-                color: 'white',
-                borderRadius: '0.375rem',
-                width: '2.5rem',
-                height: '2.5rem',
-                boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-              }}>
-                <MenuIcon style={{ height: '1.5rem', width: '1.5rem' }} />
+              <button
+                ref={menuButtonRef}
+                onClick={toggleMenu}
+                aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMenuOpen}
+                aria-controls="mobile-menu"
+                type="button"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '0.625rem',
+                  backgroundColor: 'var(--navy-primary)',
+                  color: 'white',
+                  borderRadius: '0.375rem',
+                  minWidth: '44px',
+                  minHeight: '44px',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                }}
+              >
+                <MenuIcon style={{ height: '1.5rem', width: '1.5rem' }} aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -228,30 +296,45 @@ const Header: React.FC = () => {
       </header>
 
       {/* Mobile Menu Overlay */}
-      <div style={{
-        position: 'fixed',
-        inset: 0,
-        backgroundColor: 'rgba(1, 33, 105, 0.95)',
-        backdropFilter: 'blur(8px)',
-        zIndex: 150,
-        transform: isMenuOpen ? 'translateX(0)' : 'translateX(100%)',
-        transition: 'transform 0.3s ease-in-out',
-        visibility: isMenuOpen ? 'visible' : 'hidden'
-      }}>
+      <div
+        ref={menuRef}
+        id="mobile-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile navigation menu"
+        style={{
+          position: 'fixed',
+          inset: 0,
+          backgroundColor: 'rgba(1, 33, 105, 0.95)',
+          backdropFilter: 'blur(8px)',
+          zIndex: 150,
+          transform: isMenuOpen ? 'translateX(0)' : 'translateX(100%)',
+          transition: 'transform 0.3s ease-in-out',
+          visibility: isMenuOpen ? 'visible' : 'hidden'
+        }}
+      >
         <div style={{
           display: 'flex',
           justifyContent: 'flex-end',
-          padding: '1.25rem'
+          padding: '1.25rem',
+          paddingTop: 'max(1.25rem, env(safe-area-inset-top))',
+          paddingRight: 'max(1.25rem, env(safe-area-inset-right))'
         }}>
-          <button onClick={toggleMenu} aria-label="Close menu" type="button" style={{
-            padding: '0.75rem',
-            color: 'var(--white)',
-            minHeight: '44px',
-            minWidth: '44px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
+          <button
+            ref={closeButtonRef}
+            onClick={toggleMenu}
+            aria-label="Close menu"
+            type="button"
+            style={{
+              padding: '0.75rem',
+              color: 'var(--white)',
+              minHeight: '44px',
+              minWidth: '44px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+          >
             <CloseIcon style={{ height: '1.75rem', width: '1.75rem' }} aria-hidden="true" />
           </button>
         </div>

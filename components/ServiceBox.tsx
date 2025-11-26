@@ -10,7 +10,8 @@ onClick: () => void;
 
 const ServiceBox: React.FC<ServiceBoxProps> = ({ title, isActive, isPlaying, isTaller = false, onClick }) => {
 const desktopHeightClasses = isTaller ? 'lg:h-[109px]' : 'lg:h-[98px]';
-const mobileHeightClasses = 'h-4';
+// Mobile touch target minimum 44px for WCAG 2.5.5 compliance
+const mobileHeightClasses = 'h-11 min-h-[44px]';
 
 return (
 <button
