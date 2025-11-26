@@ -170,8 +170,8 @@ const NewsPage: React.FC = () => {
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-news.jpg`,
     ogImageAlt: 'Trade Law News & Insights - CBP Audits, Export Controls, ITAR Compliance',
-    ogImageWidth: '1200',
-    ogImageHeight: '630',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
     twitterImageAlt: 'Trade Law News & Insights - CBP Audits, Export Controls, ITAR Compliance',
     schema: [
       {

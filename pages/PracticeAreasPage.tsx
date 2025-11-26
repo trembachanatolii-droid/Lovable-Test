@@ -327,8 +327,8 @@ const PracticeAreasPage: React.FC = () => {
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-practice-areas.jpg`,
     ogImageAlt: 'Trade Law Practice Areas - Customs Defense, Compliance & Export Controls',
-    ogImageWidth: '1200',
-    ogImageHeight: '630',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
     twitterImageAlt: 'Trade Law Practice Areas - Customs Defense, Compliance & Export Controls',
     schema: [
       {
