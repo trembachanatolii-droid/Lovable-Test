@@ -19,3 +19,6 @@ verification_output.txt
 
 # Node
 node_modules/
+
+# Build output
+dist/
