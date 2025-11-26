@@ -1,12 +1,12 @@
 
-import React from 'react';
+import React, { memo } from 'react';
 import type { NewsArticle } from '../types';
 
 interface NewsArticleCardProps {
   article: NewsArticle;
 }
 
-const NewsArticleCard: React.FC<NewsArticleCardProps> = ({ article }) => {
+const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
   return (
     <a
       href={article.linkHref}
@@ -66,6 +66,8 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = ({ article }) => {
       </div>
     </a>
   );
-};
+});
+
+NewsArticleCard.displayName = 'NewsArticleCard';
 
 export default NewsArticleCard;

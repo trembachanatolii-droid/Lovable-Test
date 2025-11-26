@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { articles } from '../data/articles';
 
 interface RelatedArticlesProps {
@@ -74,7 +74,7 @@ const topicClusters: Record<string, { pillar: string; pillarTitle: string; artic
   }
 };
 
-const RelatedArticles: React.FC<RelatedArticlesProps> = ({ currentArticleId, maxArticles = 4 }) => {
+const RelatedArticles: React.FC<RelatedArticlesProps> = memo(({ currentArticleId, maxArticles = 4 }) => {
   // Find which cluster(s) this article belongs to
   const articleClusters: string[] = [];
   for (const [clusterKey, clusterData] of Object.entries(topicClusters)) {
@@ -186,6 +186,8 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = ({ currentArticleId, max
       </div>
     </section>
   );
-};
+});
+
+RelatedArticles.displayName = 'RelatedArticles';
 
 export default RelatedArticles;
