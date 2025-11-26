@@ -1,6 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { articles } from '../data/articles';
+import { articleMetadata, getArticleCategory, formatDateForDisplay } from '../data/articleMetadata';
 import EvaluationForm from '../components/EvaluationForm';
 import RelatedArticles from '../components/RelatedArticles';
 import ArticleCTA from '../components/ArticleCTA';
@@ -14,6 +15,13 @@ interface ArticleDisplayPageProps {
 
 const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) => {
   const article = articles.find(a => a.id === articleId);
+  const metadata = article ? articleMetadata[article.id] : undefined;
+
+  // Get dates from metadata or use fallbacks
+  const publishedDate = metadata?.isoDate || '2025-11-26';
+  const displayDate = metadata ? formatDateForDisplay(metadata.date) : 'November 26, 2025';
+  const readTime = metadata?.readTime?.toLowerCase().replace(' min read', ' min read') || '5 min read';
+  const category = article ? getArticleCategory(article.id) : 'Trade Law';
 
   useMeta({
     title: article ? `${article.title} | Trembach Law Firm` : 'Article Not Found',
@@ -25,8 +33,8 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
     ogImageWidth: 1200,
     ogImageHeight: 630,
     twitterImageAlt: article ? `${article.title} - California International Trade Law Guide` : undefined,
-    articlePublishedTime: article?.publishedDate,
-    articleModifiedTime: article?.lastModified,
+    articlePublishedTime: article ? publishedDate : undefined,
+    articleModifiedTime: article ? publishedDate : undefined,
     schema: article ? [
       {
         '@context': 'https://schema.org',
@@ -50,8 +58,8 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
             height: 60,
           },
         },
-        datePublished: article.publishedDate,
-        dateModified: article.lastModified,
+        datePublished: publishedDate,
+        dateModified: publishedDate,
         mainEntityOfPage: {
           '@type': 'WebPage',
           '@id': `${siteConfig.siteUrl}/#article/${article.id}`,
@@ -106,10 +114,10 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
           {/* Categories */}
           <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-wider mb-8 justify-start">
             <span className="px-2.5 py-1 rounded-sm" style={{ backgroundColor: '#E6F7F2', color: '#3FBB94' }}>
-              Customs Litigation
+              {category}
             </span>
             <span className="w-1 h-1 rounded-full" style={{ backgroundColor: '#9CA3AF' }}></span>
-            <span style={{ color: '#9CA3AF' }}>25 min read</span>
+            <span style={{ color: '#9CA3AF' }}>{readTime}</span>
           </div>
 
           {/* Title */}
@@ -146,11 +154,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
                 Published
               </span>
               <span className="font-bold text-sm" style={{ color: '#012169' }}>
-                {article.publishedDate && new Date(article.publishedDate).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
+                {displayDate}
               </span>
             </div>
 
