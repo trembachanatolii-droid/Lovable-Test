@@ -19,7 +19,7 @@ const srcSet = imageUrl || `${localImagePath}`;
 return (
 <article className="bg-white rounded-2xl overflow-hidden border border-border-subtle transition-all duration-300 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:border-transparent will-change-transform">
 <a
-    href="#practice-areas"
+    href={`#practice-areas?slug=${slug}`}
     onClick={(e) => {
         // Allow default hash behavior to propagate to App router
     }}
