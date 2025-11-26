@@ -1,0 +1,115 @@
+{
+  "executiveSummary": {
+    "auditScope": "74 articles in /home/user/Lovable-Test/data/articles.ts",
+    "criticalFindings": "58% of articles (43/74) are CRITICALLY under-optimized with fewer than 1000 words",
+    "urgentAction": "47 articles need immediate content expansion to meet minimum SEO requirements"
+  },
+
+  "criticalMetrics": {
+    "totalArticles": 74,
+    "articlesUnder1000Words": 43,
+    "articlesUnder1200Words": 47,
+    "averageWordDeficit": 850,
+    "lowestWordCount": 106,
+    "highestWordCount": 1564
+  },
+
+  "duplicateIssues": {
+    "duplicateIDs": [
+      {
+        "id": "deemed-export-compliance-california",
+        "locations": ["line 884", "line 2826"],
+        "severity": "CRITICAL - breaks TypeScript compilation"
+      }
+    ],
+    "duplicateTitles": [
+      {
+        "title": "CBP Seizure and Forfeiture Defense",
+        "ids": ["cbp-seizure-forfeiture-defense", "cbp-seizure-forfeiture-defense-california"],
+        "locations": ["line 740", "line 1990"]
+      },
+      {
+        "title": "Deemed Export Compliance California",
+        "ids": ["deemed-export-compliance-california", "deemed-export-compliance-california"],
+        "locations": ["line 884", "line 2826"]
+      }
+    ]
+  },
+
+  "top25CriticalFixes": [
+    {"id": "deemed-export-compliance-california", "words": 106, "deficit": 1094, "line": 2826},
+    {"id": "ear-export-licensing-california-tech", "words": 111, "deficit": 1089, "line": 2781},
+    {"id": "voluntary-self-disclosure-export-violations-california", "words": 112, "deficit": 1088, "line": 3045},
+    {"id": "california-wine-export-compliance", "words": 118, "deficit": 1082, "line": 3825},
+    {"id": "korus-fta-qualification-california-importers", "words": 119, "deficit": 1081, "line": 2386},
+    {"id": "section-201-safeguard-tariffs-california", "words": 119, "deficit": 1081, "line": 3629},
+    {"id": "dual-use-export-classification-california", "words": 120, "deficit": 1080, "line": 3001},
+    {"id": "fta-verification-defense-california", "words": 121, "deficit": 1079, "line": 2548},
+    {"id": "encryption-export-controls-california", "words": 125, "deficit": 1075, "line": 2942},
+    {"id": "cbp-focused-assessment-survival-guide-california", "words": 129, "deficit": 1071, "line": 1677},
+    {"id": "chile-fta-california-wine-exports", "words": 130, "deficit": 1070, "line": 2501},
+    {"id": "circumvention-allegations-defense-california", "words": 134, "deficit": 1066, "line": 3684},
+    {"id": "ofac-sanctions-screening-procedures-california", "words": 138, "deficit": 1062, "line": 2885},
+    {"id": "uflpa-solar-panel-imports-california", "words": 138, "deficit": 1062, "line": 3251},
+    {"id": "eapa-investigations-defense-california", "words": 138, "deficit": 1062, "line": 3581},
+    {"id": "ad-cvd-order-compliance-california", "words": 140, "deficit": 1060, "line": 3532},
+    {"id": "california-food-import-fda-usda-compliance", "words": 141, "deficit": 1059, "line": 3728},
+    {"id": "cbp-seizure-forfeiture-defense-california", "words": 142, "deficit": 1058, "line": 1990},
+    {"id": "false-claims-act-whistleblower-defense-california", "words": 142, "deficit": 1058, "line": 2044},
+    {"id": "customs-bond-requirements-california-importers", "words": 147, "deficit": 1053, "line": 2158},
+    {"id": "usmca-automotive-rules-california-manufacturers", "words": 147, "deficit": 1053, "line": 2344},
+    {"id": "itar-registration-requirements-california", "words": 149, "deficit": 1051, "line": 2739},
+    {"id": "cbp-isf-violations-penalties-california", "words": 153, "deficit": 1047, "line": 2205},
+    {"id": "drawback-claims", "words": 285, "deficit": 915, "line": 435},
+    {"id": "liquidated-damages", "words": 309, "deficit": 891, "line": 413}
+  ],
+
+  "seoQualityIssues": {
+    "introLengthProblems": 68,
+    "servicesLengthProblems": 67,
+    "subheadingLengthProblems": 54,
+    "keywordCountProblems": 42,
+    "keywordsNotInContent": 45,
+    "missingH2Structure": 31,
+    "insufficientParagraphs": 38
+  },
+
+  "contentQualityIssues": {
+    "missingStatutoryCitations": 39,
+    "insufficientCaliforniaFocus": 41,
+    "excessiveVagueLanguage": 28,
+    "lacksPracticalGuidance": 35,
+    "unclosedHTMLTags": 2
+  },
+
+  "impactAssessment": {
+    "lighthouseScore": "Will NOT achieve 100 - critical content issues",
+    "seoRanking": "Severely compromised - 58% of content below minimum threshold",
+    "userExperience": "Poor - thin content provides minimal value",
+    "competitivePosition": "Vulnerable - competitors with robust content will outrank"
+  },
+
+  "recommendedActions": {
+    "immediate": [
+      "Fix duplicate ID 'deemed-export-compliance-california' at line 2826",
+      "Expand all 43 articles under 1000 words to minimum 1200 words",
+      "Add 3-5 H2 sections with substantive content to 31 articles missing structure"
+    ],
+    "shortTerm": [
+      "Rewrite all intro sections to 120-150 words (68 articles affected)",
+      "Expand services sections to 75-100 words (67 articles affected)",
+      "Add California-specific content and statutory citations to 41 articles"
+    ],
+    "mediumTerm": [
+      "Review and optimize keyword strategy for 45 articles",
+      "Improve subheading quality for 54 articles",
+      "Replace vague language with definitive statements in 28 articles"
+    ]
+  },
+
+  "estimatedEffort": {
+    "contentWriting": "43 articles × 850 avg words = 36,550 words needed",
+    "hoursRequired": "Approximately 180-240 hours at 150-200 words/hour",
+    "priority": "CRITICAL - This blocks achieving Lighthouse 100 score"
+  }
+}

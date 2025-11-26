@@ -1,0 +1,107 @@
+[
+  {
+    "id": "foreign-trade-zones",
+    "intro": "An FTZ is legally outside U.S. Customs territory. Used correctly, it\\'s a massive cash-flow engine. We help you crunch the numbers and handle the complex application process.",
+    "wordCount": 27
+  },
+  {
+    "id": "tariff-classification",
+    "intro": "Your Harmonized Tariff Schedule (HTS) code drives everything: duty rates, admissibility, and FTA eligibility. Getting it wrong means either bleeding margin through overpayment or inviting severe penalties for underpayment.",
+    "wordCount": 29
+  },
+  {
+    "id": "customs-broker-liability",
+    "intro": "Customs Brokers are the gatekeepers of trade, held to a strict standard of \"Responsible Supervision and Control.\" When CBP targets a broker, they target your license. We defend it.",
+    "wordCount": 29
+  },
+  {
+    "id": "forced-labor-compliance",
+    "intro": "Under the Uyghur Forced Labor Prevention Act (UFLPA), CBP presumes goods from Xinjiang are banned. Overcoming this presumption requires \"clear and convincing evidence\" - an incredibly high legal bar.",
+    "wordCount": 29
+  },
+  {
+    "id": "itar-compliance",
+    "intro": "The International Traffic in Arms Regulations (ITAR) are unforgiving. One unauthorized email to a foreign national can trigger a federal investigation. We turn complex export controls into manageable business processes.",
+    "wordCount": 30
+  },
+  {
+    "id": "ofac-sanctions",
+    "intro": "Sanctions lists change daily. A customer who was legal yesterday might be blocked today. We help you screen, block, and license transactions to avoid running afoul of the Treasury Department.",
+    "wordCount": 30
+  },
+  {
+    "id": "isf-compliance",
+    "intro": "ISF isn\\'t just paperwork; it\\'s a \"Do Not Load\" trigger. Filing late or inaccurately stops your cargo at the foreign port. We help you build systems to capture data early.",
+    "wordCount": 30
+  },
+  {
+    "id": "ear-compliance",
+    "intro": "You don\\'t have to make missiles to violate export laws. If you export encryption software, sensors, or advanced electronics, you are likely subject to the EAR. BIS enforcement is ramping up.",
+    "wordCount": 31
+  },
+  {
+    "id": "liquidated-damages",
+    "intro": "Breaching your customs bond conditions results in \"Liquidated Damages.\" While not a criminal penalty, these claims can escalate to triple the value of the cargo. We petition to get them cancelled.",
+    "wordCount": 31
+  },
+  {
+    "id": "section-301-tariffs",
+    "intro": "Section 301 tariffs are no longer temporary; they are a fixed cost of doing business with China. Smart importers don\\'t just pay them - they engineer around them or fight for exclusions.",
+    "wordCount": 32
+  },
+  {
+    "id": "usmca-rules-of-origin",
+    "intro": "USMCA is not NAFTA 2.0. The rules - especially for automotive and textile sectors - are radically stricter. Qualifying for duty-free status now requires precise data on regional value content and labor rates.",
+    "wordCount": 33
+  },
+  {
+    "id": "antidumping-cvd",
+    "intro": "AD/CVD orders can impose duties exceeding 200%. This isn\\'t just a tax; it\\'s a market barrier. We help importers navigate investigations and scope rulings to keep their products viable in the U.S. market.",
+    "wordCount": 33
+  },
+  {
+    "id": "free-trade-agreements",
+    "intro": "Claiming an FTA preference (like KORUS or CAFTA-DR) instantly lowers your costs, but it puts a target on your back. CBP loves to audit these claims. If you can\\'t prove origin, you pay.",
+    "wordCount": 33
+  },
+  {
+    "id": "post-entry-compliance",
+    "intro": "Discovering an error after the cargo clears is common. Ignoring it is dangerous. Whether it\\'s a Post Summary Correction (PSC) or a Protest, you must act within statutory deadlines to fix the record.",
+    "wordCount": 33
+  },
+  {
+    "id": "customs-valuation",
+    "intro": "Declared value is the most common audit target. Importers mistakenly believe the invoice price is always the dutiable value. If you have \"Assists,\" Royalties, or Related Party pricing, your declared value is likely wrong.",
+    "wordCount": 34
+  },
+  {
+    "id": "cbp-focused-assessments",
+    "intro": "A Focused Assessment is not a random audit. It is a stress test of your company\\'s internal controls. CBP wants to verify that you have \"Reasonable Care\" baked into your operations, not just good intentions.",
+    "wordCount": 35
+  },
+  {
+    "id": "drawback-claims",
+    "intro": "If you import goods and then export them, you are likely donating money to the U.S. Treasury. Duty Drawback allows you to recover 99% of those duties. It is the most underutilized savings program in trade.",
+    "wordCount": 36
+  },
+  {
+    "id": "section-321-reform-california",
+    "intro": "Section 321 allows duty-free entry for shipments valued at $800 or less, revolutionizing e-commerce. However, CBP enforcement intensification and congressional reform proposals threaten the future of de minimis treatment for California online sellers and direct-to-consumer importers.",
+    "wordCount": 36
+  },
+  {
+    "id": "c-tpat-certification",
+    "intro": "In a world of supply chain disruptions, C-TPAT is your VIP pass. It\\'s not just about security; it\\'s about business continuity. Certified members sit at the front of the line when CBP inspections slow down the port.",
+    "wordCount": 37
+  },
+  {
+    "id": "customs-penalties-1592",
+    "intro": "19 U.S.C. § 1592 is CBP\\'s primary enforcement weapon. It allows the government to penalize you for negligence, gross negligence, or fraud. The penalties can exceed the value of the goods. We fight to reduce these to zero.",
+    "wordCount": 38
+  },
+  {
+    "id": "us-cit-litigation",
+    "intro": "Sometimes CBP is just wrong. When they deny your protest or ignore the law, the U.S. Court of International Trade (CIT) in New York is your recourse. We are admitted to practice and experienced in this specialized federal court.",
+    "wordCount": 39
+  }
+]

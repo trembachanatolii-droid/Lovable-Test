@@ -1,0 +1,114 @@
+{
+  "total_articles": 74,
+  "low_citation_count": 18,
+  "articles_needing_work": [
+    {
+      "id": "deemed-export-compliance-california",
+      "title": "Deemed Export Compliance California",
+      "citation_count": 0,
+      "content_length": 11636
+    },
+    {
+      "id": "california-food-import-fda-usda-compliance",
+      "title": "California Food Import FDA/USDA Compliance",
+      "citation_count": 0,
+      "content_length": 10346
+    },
+    {
+      "id": "california-wine-export-compliance",
+      "title": "California Wine Export Compliance",
+      "citation_count": 0,
+      "content_length": 9375
+    },
+    {
+      "id": "pharmaceutical-import-compliance-california",
+      "title": "Pharmaceutical Import Compliance California",
+      "citation_count": 0,
+      "content_length": 9249
+    },
+    {
+      "id": "tariff-classification",
+      "title": "Tariff Classification Disputes",
+      "citation_count": 1,
+      "content_length": 7843
+    },
+    {
+      "id": "usmca-rules-of-origin",
+      "title": "USMCA Rules of Origin",
+      "citation_count": 1,
+      "content_length": 8791
+    },
+    {
+      "id": "customs-valuation",
+      "title": "Customs Valuation",
+      "citation_count": 1,
+      "content_length": 2427
+    },
+    {
+      "id": "customs-broker-liability",
+      "title": "Customs Broker Liability",
+      "citation_count": 1,
+      "content_length": 1908
+    },
+    {
+      "id": "post-entry-compliance",
+      "title": "Post-Entry Compliance",
+      "citation_count": 1,
+      "content_length": 1800
+    },
+    {
+      "id": "cbp-focused-assessments",
+      "title": "CBP Focused Assessments",
+      "citation_count": 2,
+      "content_length": 9605
+    },
+    {
+      "id": "uflpa-compliance-california",
+      "title": "UFLPA Compliance for California Importers",
+      "citation_count": 2,
+      "content_length": 9620
+    },
+    {
+      "id": "customs-valuation-transfer-pricing-defense",
+      "title": "Customs Valuation Transfer Pricing Defense",
+      "citation_count": 2,
+      "content_length": 9841
+    },
+    {
+      "id": "country-of-origin-marking-requirements-california",
+      "title": "Country of Origin Marking Requirements California",
+      "citation_count": 2,
+      "content_length": 9516
+    },
+    {
+      "id": "customs-bond-requirements-california-importers",
+      "title": "Customs Bond Requirements California",
+      "citation_count": 2,
+      "content_length": 9955
+    },
+    {
+      "id": "usmca-certification-self-certification-california",
+      "title": "USMCA Certification Self-Certification",
+      "citation_count": 2,
+      "content_length": 16161
+    },
+    {
+      "id": "uflpa-detention-response-california-apparel",
+      "title": "UFLPA Detention Response California Apparel",
+      "citation_count": 2,
+      "content_length": 11640
+    },
+    {
+      "id": "uflpa-solar-panel-imports-california",
+      "title": "UFLPA Solar Panel Imports California",
+      "citation_count": 2,
+      "content_length": 9075
+    },
+    {
+      "id": "uflpa-electronics-imports-california",
+      "title": "UFLPA Electronics Imports California",
+      "citation_count": 2,
+      "content_length": 9169
+    }
+  ]
+}

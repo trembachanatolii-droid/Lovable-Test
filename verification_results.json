@@ -1,0 +1,121 @@
+{
+  "file_integrity": {
+    "valid_typescript": true,
+    "no_duplicate_ids": true,
+    "no_duplicate_titles": true,
+    "no_html_tag_issues": true
+  },
+  "content_quality": {
+    "avg_intro_words": 94.6,
+    "avg_services_words": 91.6,
+    "avg_h2_sections": 8.2,
+    "avg_total_words": 1839.1,
+    "avg_keywords": 10.5,
+    "intro_issues": 5,
+    "services_issues": 0,
+    "h2_issues": 0,
+    "word_count_issues": 2,
+    "keyword_issues": 3
+  },
+  "seo_requirements": {
+    "total_california_refs": 1924,
+    "avg_california_refs": 26.356164383561644,
+    "total_statutory_citations": 1037,
+    "avg_statutory_citations": 14.205479452054794,
+    "ca_ref_issues": 6
+  },
+  "statistics": {
+    "total_articles": 73,
+    "avg_intro_words": 83.31506849315069,
+    "avg_services_words": 91.45205479452055,
+    "avg_total_words": 1704.2054794520548,
+    "avg_h2_sections": 7.767123287671233,
+    "articles_over_1200": 65,
+    "articles_over_1200_pct": 89.04109589041096,
+    "articles_proper_h2": 73,
+    "articles_proper_h2_pct": 100.0
+  },
+  "issues": [],
+  "samples": [
+    {
+      "title": "Tariff Classification Disputes",
+      "intro_words": 29,
+      "services_words": 100,
+      "h2_sections": 7,
+      "total_words": 1182,
+      "keywords_count": 15
+    },
+    {
+      "title": "ITAR Compliance for Defense Contractors",
+      "intro_words": 31,
+      "services_words": 86,
+      "h2_sections": 7,
+      "total_words": 1420,
+      "keywords_count": 15
+    },
+    {
+      "title": "U.S. Court of International Trade",
+      "intro_words": 40,
+      "services_words": 94,
+      "h2_sections": 7,
+      "total_words": 889,
+      "keywords_count": 15
+    },
+    {
+      "title": "Section 321 De Minimis Reform and Impact on California E-Commerce",
+      "intro_words": 94,
+      "services_words": 91,
+      "h2_sections": 9,
+      "total_words": 1544,
+      "keywords_count": 15
+    },
+    {
+      "title": "CBP Informed Compliance Letters California",
+      "intro_words": 147,
+      "services_words": 88,
+      "h2_sections": 9,
+      "total_words": 2524,
+      "keywords_count": 15
+    },
+    {
+      "title": "CBP Focused Assessment Survival Guide",
+      "intro_words": 128,
+      "services_words": 89,
+      "h2_sections": 8,
+      "total_words": 1420,
+      "keywords_count": 0
+    },
+    {
+      "title": "Customs Bond Requirements California",
+      "intro_words": 137,
+      "services_words": 86,
+      "h2_sections": 8,
+      "total_words": 1525,
+      "keywords_count": 0
+    },
+    {
+      "title": "Chile FTA California Wine Exports",
+      "intro_words": 139,
+      "services_words": 92,
+      "h2_sections": 9,
+      "total_words": 1928,
+      "keywords_count": 15
+    },
+    {
+      "title": "Dual-Use Export Classification",
+      "intro_words": 142,
+      "services_words": 96,
+      "h2_sections": 8,
+      "total_words": 1607,
+      "keywords_count": 0
+    },
+    {
+      "title": "WRO Defense Strategies California",
+      "intro_words": 59,
+      "services_words": 94,
+      "h2_sections": 10,
+      "total_words": 4352,
+      "keywords_count": 15
+    }
+  ]
+}

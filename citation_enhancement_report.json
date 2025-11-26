@@ -1,0 +1,201 @@
+{
+  "total_enhanced": 39,
+  "enhanced_articles": [
+    {
+      "id": "section-301-tariffs",
+      "title": "Section 301 Tariffs",
+      "citations_added": 5
+    },
+    {
+      "id": "c-tpat-certification",
+      "title": "C-TPAT Certification",
+      "citations_added": 6
+    },
+    {
+      "id": "itar-compliance",
+      "title": "ITAR Compliance for Defense Contractors",
+      "citations_added": 6
+    },
+    {
+      "id": "ofac-sanctions",
+      "title": "OFAC Sanctions Compliance",
+      "citations_added": 6
+    },
+    {
+      "id": "antidumping-cvd",
+      "title": "Antidumping & Countervailing Duties",
+      "citations_added": 8
+    },
+    {
+      "id": "isf-compliance",
+      "title": "Importer Security Filing (ISF)",
+      "citations_added": 7
+    },
+    {
+      "id": "foreign-trade-zones",
+      "title": "Foreign Trade Zones",
+      "citations_added": 8
+    },
+    {
+      "id": "free-trade-agreements",
+      "title": "Free Trade Agreements",
+      "citations_added": 6
+    },
+    {
+      "id": "us-cit-litigation",
+      "title": "U.S. Court of International Trade",
+      "citations_added": 8
+    },
+    {
+      "id": "forced-labor-compliance",
+      "title": "Forced Labor Compliance (UFLPA)",
+      "citations_added": 5
+    },
+    {
+      "id": "ear-compliance",
+      "title": "Export Administration Regulations",
+      "citations_added": 4
+    },
+    {
+      "id": "liquidated-damages",
+      "title": "Liquidated Damages",
+      "citations_added": 9
+    },
+    {
+      "id": "uflpa-compliance-california",
+      "title": "UFLPA Compliance for California Importers",
+      "citations_added": 2
+    },
+    {
+      "id": "section-321-reform-california",
+      "title": "Section 321 De Minimis Reform and Impact on California E-Commerce",
+      "citations_added": 5
+    },
+    {
+      "id": "royalty-license-fee-treatment-customs-valuation",
+      "title": "Royalty and License Fee Treatment",
+      "citations_added": 6
+    },
+    {
+      "id": "customs-broker-liability-vs-importer-liability-california",
+      "title": "Customs Broker Liability vs Importer Liability",
+      "citations_added": 7
+    },
+    {
+      "id": "section-1592-penalties-california-defense",
+      "title": "19 USC 1592 Penalties California Defense",
+      "citations_added": 8
+    },
+    {
+      "id": "reasonable-care-standard-california-importers",
+      "title": "Reasonable Care Standard California",
+      "citations_added": 4
+    },
+    {
+      "id": "cbp-seizure-forfeiture-defense-california",
+      "title": "CBP Seizure and Forfeiture Defense",
+      "citations_added": 8
+    },
+    {
+      "id": "cbp-targeting-exams-california-ports",
+      "title": "CBP Targeting and Exams California Ports",
+      "citations_added": 4
+    },
+    {
+      "id": "cbp-isf-violations-penalties-california",
+      "title": "CBP ISF Violations and Penalties",
+      "citations_added": 7
+    },
+    {
+      "id": "usmca-rules-origin-california-manufacturers",
+      "title": "USMCA Rules of Origin for California Manufacturers",
+      "citations_added": 7
+    },
+    {
+      "id": "usmca-automotive-rules-california-manufacturers",
+      "title": "USMCA Automotive Rules California",
+      "citations_added": 7
+    },
+    {
+      "id": "korus-fta-qualification-california-importers",
+      "title": "KORUS FTA Qualification California",
+      "citations_added": 6
+    },
+    {
+      "id": "textiles-cafta-dr-compliance-california",
+      "title": "Textiles CAFTA-DR Compliance",
+      "citations_added": 6
+    },
+    {
+      "id": "chile-fta-california-wine-exports",
+      "title": "Chile FTA California Wine Exports",
+      "citations_added": 6
+    },
+    {
+      "id": "fta-verification-defense-california",
+      "title": "FTA Verification Defense California",
+      "citations_added": 6
+    },
+    {
+      "id": "itar-registration-requirements-california",
+      "title": "ITAR Registration Requirements California",
+      "citations_added": 6
+    },
+    {
+      "id": "ear-export-licensing-california-tech",
+      "title": "EAR Export Licensing California Tech",
+      "citations_added": 7
+    },
+    {
+      "id": "deemed-export-compliance-california",
+      "title": "Deemed Export Compliance California",
+      "citations_added": 4
+    },
+    {
+      "id": "ofac-sanctions-screening-procedures-california",
+      "title": "OFAC Sanctions Screening Procedures",
+      "citations_added": 6
+    },
+    {
+      "id": "encryption-export-controls-california",
+      "title": "Encryption Export Controls California",
+      "citations_added": 8
+    },
+    {
+      "id": "dual-use-export-classification-california",
+      "title": "Dual-Use Export Classification",
+      "citations_added": 7
+    },
+    {
+      "id": "voluntary-self-disclosure-export-violations-california",
+      "title": "Voluntary Self-Disclosure Export Violations",
+      "citations_added": 6
+    },
+    {
+      "id": "export-controls-semiconductors-california",
+      "title": "Export Controls for Semiconductors",
+      "citations_added": 7
+    },
+    {
+      "id": "uflpa-detention-response-california-apparel",
+      "title": "UFLPA Detention Response California Apparel",
+      "citations_added": 2
+    },
+    {
+      "id": "forced-labor-due-diligence-programs-california",
+      "title": "Forced Labor Due Diligence Programs",
+      "citations_added": 5
+    },
+    {
+      "id": "ad-cvd-order-compliance-california",
+      "title": "AD/CVD Order Compliance California",
+      "citations_added": 8
+    },
+    {
+      "id": "circumvention-allegations-defense-california",
+      "title": "Circumvention Allegations Defense",
+      "citations_added": 7
+    }
+  ],
+  "timestamp": "2025-11-26"
+}

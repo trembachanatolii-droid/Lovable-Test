@@ -1,0 +1,370 @@
+[
+  {
+    "id": "tariff-classification",
+    "old_keywords": "tariff classification attorney California, HTS classification lawyer, customs classification disputes, GRI legal defense, tariff reclassification California, binding ruling requests, HTS protest attorney, Court of International Trade classification, customs duty classification California, import classification lawyer",
+    "new_keywords": "binding ruling requests, customs california, import california, tariff california, classification california, duty california, cbp california, compliance california, defense california, litigation california, audit california, ruling california, protest california, trade california, legal california",
+    "old_count": 10,
+    "new_count": 15,
+    "removed_missing": 9
+  },
+  {
+    "id": "cbp-focused-assessments",
+    "old_keywords": "CBP focused assessment attorney California, customs audit defense, CBP audit lawyer, focused assessment California, reasonable care compliance California, CBP regulatory audit defense, customs compliance audit attorney, PAS defense lawyer California, CBP internal controls audit, import compliance attorney California",
+    "new_keywords": "customs attorney california, import attorney california, classification california, cbp california, compliance california, audit california, legal california, law firm california, cbp focused assessments attorney california, cbp focused assessments lawyer, customs compliance california, trade lawyer california",
+    "old_count": 10,
+    "new_count": 12,
+    "removed_missing": 10
+  },
+  {
+    "id": "usmca-rules-of-origin",
+    "old_keywords": "USMCA attorney California, USMCA compliance lawyer, NAFTA replacement attorney, regional value content lawyer California, USMCA verification defense, USMCA certification attorney, automotive USMCA compliance California, labor value content attorney, USMCA rules of origin lawyer California, USMCA trade attorney",
+    "new_keywords": "import attorney california, trade attorney california, tariff california, duty california, cbp california, compliance california, defense california, audit california, law firm california, usmca rules of origin attorney california, usmca rules of origin lawyer, customs compliance california, trade lawyer california",
+    "old_count": 10,
+    "new_count": 13,
+    "removed_missing": 10
+  },
+  {
+    "id": "section-301-tariffs",
+    "old_keywords": "Section 301 tariffs attorney California, China tariff lawyer, Section 301 exclusion attorney, tariff engineering California, substantial transformation lawyer, China trade war attorney California, Section 301 mitigation California, tariff avoidance attorney, duty engineering lawyer California, Section 301 compliance attorney",
+    "new_keywords": "customs attorney california, import attorney california, trade attorney california, tariff california, classification california, duty california, cbp california, litigation california, enforcement california, legal california, law firm california, counsel california",
+    "old_count": 10,
+    "new_count": 12,
+    "removed_missing": 10
+  },
+  {
+    "id": "customs-penalties-1592",
+    "old_keywords": "19 USC 1592 attorney California, customs penalty defense lawyer, CBP penalty mitigation California, customs fraud defense attorney, negligence penalty lawyer California, prior disclosure attorney, customs penalty attorney California, 1592 defense lawyer, CBP civil penalty defense California, customs enforcement attorney",
+    "new_keywords": "import california, classification california, duty california, cbp california, compliance california, defense california, penalty california, law firm california, customs penalties 1592 attorney california, customs penalties 1592 lawyer, customs compliance california, import attorney california, trade lawyer california",
+    "old_count": 10,
+    "new_count": 13,
+    "removed_missing": 10
+  },
+  {
+    "id": "customs-valuation",
+    "old_keywords": "customs valuation attorney California, transaction value lawyer, customs assists attorney, related party pricing lawyer California, transfer pricing customs attorney, first sale for export lawyer California, customs valuation defense, CBP valuation audit attorney California, dutiable value lawyer, customs appraisement attorney",
+    "new_keywords": "customs california, import california, export california, duty california, cbp california, defense california, audit california, legal california, law firm california, customs valuation attorney california, customs valuation lawyer, customs compliance california, import attorney california, trade lawyer california",
+    "old_count": 10,
+    "new_count": 14,
+    "removed_missing": 10
+  },
+  {
+    "id": "c-tpat-certification",
+    "old_keywords": "C-TPAT attorney California, C-TPAT certification lawyer, customs trade partnership attorney, C-TPAT validation defense California, supply chain security attorney, C-TPAT compliance lawyer California, Tier 2 C-TPAT attorney, trusted trader program lawyer California, CBP security program attorney, C-TPAT consultant California",
+    "new_keywords": "customs attorney california, import attorney california, export attorney california, trade attorney california, cbp california, compliance california, audit california, law firm california, c tpat certification attorney california, c tpat certification lawyer, customs compliance california, trade lawyer california",
+    "old_count": 10,
+    "new_count": 12,
+    "removed_missing": 10
+  },
+  {
+    "id": "itar-compliance",
+    "old_keywords": "ITAR attorney California, ITAR compliance lawyer, defense export controls attorney California, DDTC attorney, commodity jurisdiction lawyer California, ITAR violation defense, technical assistance agreement attorney, deemed export lawyer California, ITAR registration attorney California, defense contractor compliance lawyer",
+    "new_keywords": "import california, export california, compliance california, defense california, enforcement california, regulation california, trade california, legal california, law firm california, counsel california",
+    "old_count": 10,
+    "new_count": 10,
+    "removed_missing": 10
+  },
+  {
+    "id": "ofac-sanctions",
+    "old_keywords": "OFAC attorney California, sanctions compliance lawyer, OFAC violation defense attorney, SDN list screening lawyer California, 50% rule attorney, Russia sanctions lawyer California, OFAC license attorney, economic sanctions compliance California, Treasury sanctions attorney, OFAC voluntary disclosure lawyer California",
+    "new_keywords": "trade attorney california, compliance california, defense california, penalty california, enforcement california, regulation california, legal california, law firm california, counsel california, representation california",
+    "old_count": 10,
+    "new_count": 10,
+    "removed_missing": 10
+  },
+  {
+    "id": "antidumping-cvd",
+    "old_keywords": "antidumping attorney California, countervailing duty lawyer, AD CVD attorney California, scope ruling lawyer, DOC investigation attorney California, ITC attorney, EAPA defense lawyer California, trade remedies attorney, dumping margin litigation California, administrative review attorney",
+    "new_keywords": "import attorney california, export attorney california, trade attorney california, tariff california, duty california, cbp california, defense california, litigation california, ruling california, legal california, law firm california, representation california",
+    "old_count": 10,
+    "new_count": 12,
+    "removed_missing": 10
+  },
+  {
+    "id": "isf-compliance",
+    "old_keywords": "ISF attorney California, 10+2 compliance lawyer, importer security filing attorney, ISF penalty defense California, ISF liquidated damages attorney, ISF late filing lawyer California, customs security filing attorney, ISF bond claim defense, 10+2 lawyer California, ISF compliance attorney",
+    "new_keywords": "customs california, import california, cbp california, compliance california, defense california, penalty california, audit california, law firm california, counsel california, representation california",
+    "old_count": 10,
+    "new_count": 10,
+    "removed_missing": 10
+  },
+  {
+    "id": "foreign-trade-zones",
+    "old_keywords": "foreign trade zone attorney California, FTZ lawyer, duty deferral attorney California, FTZ application lawyer, inverted tariff attorney, FTZ activation California, duty elimination lawyer, foreign trade zone compliance attorney California, FTZ board attorney, zone admission lawyer",
+    "new_keywords": "customs california, import california, export california, tariff california, duty california, cbp california, compliance california, audit california, trade california, legal california, law firm california",
+    "old_count": 10,
+    "new_count": 11,
+    "removed_missing": 10
+  },
+  {
+    "id": "customs-broker-liability",
+    "old_keywords": "customs broker attorney California, broker license defense lawyer, 19 USC 1641 attorney, customs broker penalty defense California, broker revocation attorney, responsible supervision lawyer California, customs broker liability attorney, broker civil litigation California, CHB license defense, triennial report attorney",
+    "new_keywords": "customs attorney california, import attorney california, trade attorney california, cbp california, defense california, litigation california, enforcement california, law firm california, customs broker liability attorney california, customs broker liability lawyer, customs compliance california, trade lawyer california",
+    "old_count": 10,
+    "new_count": 12,
+    "removed_missing": 10
+  },
+  {
+    "id": "free-trade-agreements",
+    "old_keywords": "free trade agreement attorney California, FTA compliance lawyer, KORUS attorney California, CAFTA-DR lawyer, FTA verification defense attorney, certificate of origin lawyer California, tariff preference attorney, FTA audit defense California, yarn forward attorney, regional value content FTA lawyer",
+    "new_keywords": "import attorney california, trade attorney california, tariff california, duty california, cbp california, compliance california, defense california, penalty california, audit california, legal california, law firm california",
+    "old_count": 10,
+    "new_count": 11,
+    "removed_missing": 10
+  },
+  {
+    "id": "us-cit-litigation",
+    "old_keywords": "Court of International Trade attorney California, CIT lawyer, customs litigation attorney California, 1581(a) protest attorney, trade litigation lawyer California, customs court attorney, AD/CVD litigation California, federal trade court lawyer, customs appeal attorney California, CIT admitted lawyer",
+    "new_keywords": "customs attorney california, import attorney california, trade attorney california, tariff california, classification california, cbp california, litigation california, ruling california, protest california, law firm california",
+    "old_count": 10,
+    "new_count": 10,
+    "removed_missing": 10
+  },
+  {
+    "id": "forced-labor-compliance",
+    "old_keywords": "UFLPA attorney California, forced labor compliance lawyer, Uyghur forced labor attorney, Xinjiang detention defense California, UFLPA admissibility attorney, supply chain traceability lawyer California, forced labor due diligence attorney, UFLPA entity list lawyer California, forced labor detention release attorney, CBP WRO defense",
+    "new_keywords": "import california, cbp california, compliance california, audit california, trade california, law firm california, forced labor compliance attorney california, forced labor compliance lawyer, customs compliance california, import attorney california, trade lawyer california",
+    "old_count": 10,
+    "new_count": 11,
+    "removed_missing": 10
+  },
+  {
+    "id": "ear-compliance",
+    "old_keywords": "EAR attorney California, export administration regulations lawyer, ECCN classification attorney, BIS compliance lawyer California, dual-use export attorney, entity list screening lawyer California, EAR violation defense attorney, export license lawyer California, SNAP-R attorney, export controls California",
+    "new_keywords": "export attorney california, classification california, compliance california, defense california, penalty california, audit california, enforcement california, regulation california, law firm california, ear compliance attorney california, ear compliance lawyer, customs compliance california, import attorney california, trade lawyer california",
+    "old_count": 10,
+    "new_count": 14,
+    "removed_missing": 10
+  },
+  {
+    "id": "liquidated-damages",
+    "old_keywords": "liquidated damages attorney California, customs bond penalty lawyer, failure to redeliver attorney, customs bond claim defense California, liquidated damages mitigation lawyer, CBP bond breach attorney California, customs surety attorney, bond forfeiture defense lawyer California, CBP liquidated damages petition, customs bond attorney",
+    "new_keywords": "customs attorney california, import attorney california, trade attorney california, cbp california, compliance california, law firm california, liquidated damages attorney california, liquidated damages lawyer, customs compliance california, trade lawyer california",
+    "old_count": 10,
+    "new_count": 10,
+    "removed_missing": 10
+  },
+  {
+    "id": "drawback-claims",
+    "old_keywords": "duty drawback attorney California, drawback claims lawyer, TFTEA drawback attorney, substitution drawback lawyer California, unused merchandise drawback attorney, manufacturing drawback lawyer California, duty refund attorney, accelerated drawback California, drawback compliance lawyer, duty recovery attorney California",
+    "new_keywords": "import attorney california, export attorney california, trade attorney california, duty california, cbp california, audit california, ruling california, enforcement california, regulation california, law firm california",
+    "old_count": 10,
+    "new_count": 10,
+    "removed_missing": 10
+  },
+  {
+    "id": "post-entry-compliance",
+    "old_keywords": "post summary correction attorney California, PSC lawyer, customs protest attorney, post entry amendment lawyer California, liquidation protest attorney, prior disclosure lawyer California, entry correction attorney, customs refund lawyer California, 180 day protest attorney, voluntary tender lawyer",
+    "new_keywords": "customs california, import california, classification california, cbp california, compliance california, litigation california, penalty california, protest california, trade california, legal california, law firm california",
+    "old_count": 10,
+    "new_count": 11,
+    "removed_missing": 10
+  },
+  {
+    "id": "uflpa-compliance-california",
+    "old_keywords": "UFLPA compliance California, Uyghur Forced Labor Prevention Act attorney, UFLPA detention defense California, Xinjiang import ban lawyer, UFLPA Entity List screening, forced labor due diligence attorney California, UFLPA rebuttable presumption defense, China supply chain attorney California, UFLPA documentation requirements, CBP UFLPA detention lawyer",
+    "new_keywords": "UFLPA Entity List screening, customs attorney california, import attorney california, export attorney california, cbp california, compliance california, audit california, enforcement california, legal california, law firm california, counsel california",
+    "old_count": 10,
+    "new_count": 11,
+    "removed_missing": 9
+  },
+  {
+    "id": "section-321-reform-california",
+    "old_keywords": "Section 321 attorney California, de minimis import rules California, Section 321 reform California, ecommerce customs compliance attorney, Section 321 Chinese goods exclusion, online seller import lawyer California, $800 duty free threshold attorney, Section 321 abuse defense California, low value shipment compliance, direct to consumer import attorney California",
+    "new_keywords": "customs attorney california, import attorney california, export attorney california, trade attorney california, tariff california, classification california, duty california, cbp california, compliance california, penalty california, audit california, enforcement california, regulation california, legal california, law firm california",
+    "old_count": 10,
+    "new_count": 15,
+    "removed_missing": 10
+  },
+  {
+    "id": "cbp-seizure-forfeiture-defense",
+    "old_keywords": "CBP seizure attorney California, customs forfeiture defense lawyer, cargo seizure lawyer California, Notice of Seizure response attorney, 19 CFR Part 171 petition lawyer, innocent owner defense attorney California, cost bond forfeiture attorney, counterfeit goods seizure lawyer California, UFLPA seizure defense, customs forfeiture litigation California",
+    "new_keywords": "customs california, import california, cbp california, compliance california, defense california, litigation california, penalty california, audit california, enforcement california, regulation california, trade california, legal california, law firm california, counsel california",
+    "old_count": 10,
+    "new_count": 14,
+    "removed_missing": 10
+  },
+  {
+    "id": "deemed-export-compliance-california",
+    "old_keywords": "deemed export attorney California, technology transfer lawyer Silicon Valley, ITAR deemed export compliance California, EAR deemed export attorney, foreign national employee export controls, technology control plan lawyer California, university research export controls attorney, deemed export license California, BIS attorney California, DDTC deemed export defense lawyer",
+    "new_keywords": "export california, classification california, compliance california, defense california, audit california, enforcement california, regulation california, trade california, legal california, law firm california, counsel california",
+    "old_count": 10,
+    "new_count": 11,
+    "removed_missing": 10
+  },
+  {
+    "id": "hts-classification-california-technology-imports",
+    "old_keywords": "HTS classification California technology imports, semiconductor tariff classification attorney, AI hardware HTS codes lawyer, encryption device classification California, Chapter 85 classification disputes, binding ruling request attorney California, GPU tariff classification lawyer, CBP technology classification protest, Silicon Valley import compliance attorney, Los Angeles port classification disputes, neural processing unit HTS classification, export control classification crossover",
+    "new_keywords": "customs attorney california, import attorney california, export attorney california, trade attorney california, tariff california, classification california, duty california, cbp california, compliance california, audit california, ruling california, protest california, enforcement california, regulation california, law firm california",
+    "old_count": 12,
+    "new_count": 15,
+    "removed_missing": 12
+  },
+  {
+    "id": "customs-valuation-transfer-pricing-defense",
+    "old_keywords": "customs valuation, transfer pricing defense, related party transactions, 19 USC 1401a, CBP audit, CF-28 response, transaction value, computed value, deductive value, APA customs, California import compliance, multinational corporation valuation, IRS CBP conflict, customs defense attorney, transfer pricing customs",
+    "new_keywords": "customs valuation, related party transactions, 19 USC 1401a, CBP audit, CF-28 response, transaction value, computed value, deductive value, customs attorney california, import attorney california, trade attorney california, duty california, cbp california, compliance california, defense california",
+    "old_count": 15,
+    "new_count": 15,
+    "removed_missing": 7
+  },
+  {
+    "id": "country-of-origin-marking-requirements-california",
+    "old_keywords": "country of origin marking California, 19 USC 1304, substantial transformation test, WRO enforcement, CBP marking requirements, Made in USA regulations, California import compliance, origin marking penalties, 19 CFR Part 134, customs marking violations, California consumer protection, import marking laws, CBP ruling requests, tariff engineering, USMCA marking rules",
+    "new_keywords": "19 USC 1304, substantial transformation test, WRO enforcement, 19 CFR Part 134, California consumer protection, USMCA marking rules, customs attorney california, import attorney california, export attorney california, trade attorney california, tariff california, duty california, cbp california, compliance california, defense california",
+    "old_count": 15,
+    "new_count": 15,
+    "removed_missing": 9
+  },
+  {
+    "id": "first-sale-valuation-california-importers",
+    "old_keywords": "first sale valuation, California customs law, multi-tiered transactions, CBP audit defense, 19 USC 1401a, customs valuation, import duties, Nissho Iwai factors, transaction value, middleman sales, Los Angeles customs, Long Beach imports, customs compliance, trade law California, import documentation",
+    "new_keywords": "first sale valuation, multi-tiered transactions, 19 USC 1401a, customs valuation, Nissho Iwai factors, transaction value, customs california, import california, export california, duty california, cbp california, compliance california, audit california, ruling california, enforcement california",
+    "old_count": 15,
+    "new_count": 15,
+    "removed_missing": 9
+  },
+  {
+    "id": "cbp-informed-compliance-letters-california",
+    "old_keywords": "CBP informed compliance California, CF-28 request for information attorney, CF-29 notice of action lawyer, customs compliance letter response, prior disclosure attorney California, 19 USC 1592 defense, customs penalty mitigation California, reasonable care defense attorney, CBP audit response lawyer, import compliance attorney Los Angeles, customs enforcement defense California, TREO examination attorney",
+    "new_keywords": "customs attorney california, import attorney california, trade attorney california, tariff california, classification california, duty california, cbp california, compliance california, defense california, penalty california, audit california, ruling california, protest california, enforcement california, legal california",
+    "old_count": 12,
+    "new_count": 15,
+    "removed_missing": 12
+  },
+  {
+    "id": "royalty-license-fee-treatment-customs-valuation",
+    "old_keywords": "customs valuation royalties, license fee dutiability, 19 USC 1401a, CBP ruling request, trademark royalty customs, patent license duties, California import compliance, Hasbro test customs, Generra presumption, transaction value additions, dutiable royalty payments, intellectual property customs, software licensing duties, entertainment royalty imports, technology license valuation",
+    "new_keywords": "19 USC 1401a, CBP ruling request, Generra presumption, customs california, import california, export california, tariff california, duty california, cbp california, compliance california, audit california, ruling california, regulation california, trade california, legal california",
+    "old_count": 15,
+    "new_count": 15,
+    "removed_missing": 12
+  },
+  {
+    "id": "assists-tooling-charges-california-customs-valuation",
+    "old_keywords": "assists valuation attorney California, tooling charges customs lawyer, molds dies customs valuation, engineering assist attorney, CBP assist audit defense California, 19 USC 1401a attorney, customs valuation lawyer California, injection molding assist valuation, free tooling customs treatment, apportionment methodology attorney, manufacturing assist compliance California, prior disclosure assists attorney",
+    "new_keywords": "customs california, import california, duty california, cbp california, compliance california, defense california, penalty california, audit california, regulation california, legal california, law firm california",
+    "old_count": 12,
+    "new_count": 11,
+    "removed_missing": 12
+  },
+  {
+    "id": "customs-broker-liability-vs-importer-liability-california",
+    "old_keywords": "customs broker liability California, importer of record liability, 19 USC 1484 reasonable care, 19 CFR Part 111 broker violations, customs indemnification agreements, broker malpractice claims California, importer absolute liability defense, customs penalty allocation disputes, broker-importer litigation California, CBP enforcement defense attorney, customs compliance liability lawyer, international trade liability disputes",
+    "new_keywords": "customs attorney california, import attorney california, export attorney california, trade attorney california, classification california, duty california, cbp california, compliance california, defense california, litigation california, penalty california, audit california, enforcement california, regulation california, legal california",
+    "old_count": 12,
+    "new_count": 15,
+    "removed_missing": 12
+  },
+  {
+    "id": "cbp-reconciliation-procedures-california",
+    "old_keywords": "CBP reconciliation California, Type 09 entry, post-entry adjustment attorney, reconciliation refund claims, 19 CFR 141.113, customs value reconciliation lawyer, provisional pricing customs, reconciliation entry California, flagged entry procedures, ABI reconciliation filing, customs duty adjustment attorney, reconciliation protest lawyer California, retroactive price adjustments CBP, entry summary reconciliation",
+    "new_keywords": "Type 09 entry, customs attorney california, import attorney california, trade attorney california, tariff california, classification california, duty california, cbp california, compliance california, defense california, audit california, ruling california, protest california, regulation california, law firm california",
+    "old_count": 14,
+    "new_count": 15,
+    "removed_missing": 13
+  },
+  {
+    "id": "entry-type-selection-strategy-california",
+    "old_keywords": "entry type selection California, Type 01 consumption entry, Type 03 warehouse entry attorney, Type 06 FTZ entry lawyer, Type 11 informal entry California, Section 321 de minimis attorney, 19 CFR Part 141 compliance, customs entry strategy lawyer, bonded warehouse attorney California, foreign trade zone entry counsel, entry summary filing attorney, CBP entry type selection",
+    "new_keywords": "Type 01 consumption entry, customs california, import california, export california, tariff california, classification california, duty california, cbp california, compliance california, regulation california, trade california, legal california, law firm california, counsel california",
+    "old_count": 12,
+    "new_count": 14,
+    "removed_missing": 11
+  },
+  {
+    "id": "section-1592-penalties-california-defense",
+    "old_keywords": "reasonable care standard California, CBP compliance California, 19 USC 1484, customs compliance programs, informed compliance, California import requirements, customs broker supervision, CBP recordkeeping, trade compliance California, customs modernization act, import compliance procedures, reasonable care checklist CBP, California customs attorney",
+    "new_keywords": "19 USC 1484, informed compliance, customs broker supervision, customs modernization act, customs california, import california, export california, tariff california, classification california, duty california, cbp california, compliance california, defense california, penalty california, audit california",
+    "old_count": 13,
+    "new_count": 15,
+    "removed_missing": 9
+  },
+  {
+    "id": "liquidated-damages-defense-california",
+    "old_keywords": "liquidated damages attorney California, customs bond claim defense, petition for relief 19 CFR 172, CBP liquidated damages lawyer, failure to redeliver attorney California, TIB bond violation lawyer, Type 03 entry bond attorney, customs bond forfeiture defense California, CBP FP&F settlement attorney, surety bond claim lawyer California, continuous bond breach attorney, single transaction bond claim defense",
+    "new_keywords": "customs attorney california, customs lawyer california, import attorney california, import lawyer california, export attorney california, export lawyer california, trade attorney california, trade lawyer california, classification california, duty california, cbp california, compliance california, defense california, litigation california, penalty california",
+    "old_count": 12,
+    "new_count": 15,
+    "removed_missing": 12
+  },
+  {
+    "id": "cbp-seizure-forfeiture-defense-california",
+    "old_keywords": "CBP targeting, California port exams, ATS system, customs examinations, Los Angeles port inspections, Long Beach customs, Oakland port security, C-TPAT benefits, intensive exams, CET process, risk-based targeting, import compliance, container inspections, supply chain security, trade enforcement",
+    "new_keywords": "C-TPAT benefits, CET process, risk-based targeting, trade enforcement, customs california, import california, export california, duty california, cbp california, compliance california, defense california, audit california, enforcement california, regulation california, trade california",
+    "old_count": 15,
+    "new_count": 15,
+    "removed_missing": 11
+  },
+  {
+    "id": "customs-bond-requirements-california-importers",
+    "old_keywords": "USMCA rules of origin, RVC calculation California, regional value content USMCA, tariff shift rules, California manufacturers USMCA, transaction value method, net cost method, USMCA certification, automotive rules origin, electronics USMCA compliance, medical device origin rules, accumulation provisions USMCA, de minimis USMCA, product specific rules origin",
+    "new_keywords": "tariff shift rules, transaction value method, net cost method, customs california, import california, export california, tariff california, classification california, duty california, cbp california, compliance california, defense california, audit california, trade california, law firm california",
+    "old_count": 14,
+    "new_count": 15,
+    "removed_missing": 11
+  },
+  {
+    "id": "usmca-certification-self-certification-california",
+    "old_keywords": "USMCA self certification California, USMCA certification of origin, 19 CFR 182 requirements, importer exporter responsibilities USMCA, blanket certification USMCA, USMCA nine data elements, USMCA recordkeeping requirements, USMCA verification procedures, California USMCA attorney, self certification compliance, USMCA origin documentation, preferential treatment certification",
+    "new_keywords": "customs california, import california, export california, tariff california, classification california, duty california, cbp california, compliance california, audit california, enforcement california, trade california, legal california, law firm california, representation california",
+    "old_count": 12,
+    "new_count": 14,
+    "removed_missing": 12
+  },
+  {
+    "id": "usmca-automotive-rules-california-manufacturers",
+    "old_keywords": "Chile FTA wine exports, 19 CFR 10.401, California wine trade, TTB certification, agricultural product benefits, Napa Valley exports, Sonoma County wines, preferential origin rules, duty-free wine trade, FTA tariff elimination, wine export documentation, bilateral trade agreement, Chilean market access, California agricultural exports, wine certification requirements",
+    "new_keywords": "Chile FTA wine exports, 19 CFR 10.401, TTB certification, FTA tariff elimination, customs california, import california, export california, tariff california, classification california, duty california, compliance california, audit california, trade california, law firm california",
+    "old_count": 15,
+    "new_count": 14,
+    "removed_missing": 11
+  },
+  {
+    "id": "fta-verification-defense-california",
+    "old_keywords": "GSP revocation attorney California, Generalized System of Preferences lawyer, GSP termination impact California, duty-free revocation attorney, India GSP suspension lawyer California, Thailand GSP attorney, Turkey GSP revocation California, GSP alternative strategies attorney, FTA substitution lawyer California, tariff mitigation GSP California, CBP liquidation GSP attorney, GSP Congressional reauthorization lawyer",
+    "new_keywords": "customs california, import california, export california, tariff california, classification california, duty california, cbp california, compliance california, defense california, litigation california, audit california, ruling california, protest california, regulation california, trade california",
+    "old_count": 12,
+    "new_count": 15,
+    "removed_missing": 12
+  },
+  {
+    "id": "itar-registration-requirements-california",
+    "old_keywords": "deemed export California, technology transfer foreign nationals, EAR ITAR compliance, Silicon Valley export control, aerospace defense contractors, Technology Control Plan TCP, university research exemption, 15 CFR 734.13, 22 CFR 120.17, California export license, foreign employee compliance, NSDD-189 fundamental research",
+    "new_keywords": "university research exemption, 15 CFR 734.13, 22 CFR 120.17, import california, export california, classification california, compliance california, defense california, audit california, regulation california, trade california, law firm california",
+    "old_count": 12,
+    "new_count": 12,
+    "removed_missing": 9
+  },
+  {
+    "id": "ofac-sanctions-screening-procedures-california",
+    "old_keywords": "voluntary self-disclosure export California, BIS VSD attorney, DDTC disclosure lawyer, export violation defense California, EAR compliance attorney, ITAR voluntary disclosure, export penalty mitigation, California tech export violations, dual-use export attorney, defense article disclosure lawyer, export enforcement defense California, VSD timing requirements, export compliance remediation",
+    "new_keywords": "customs attorney california, import attorney california, export attorney california, trade attorney california, classification california, compliance california, defense california, penalty california, audit california, enforcement california, regulation california, legal california, law firm california",
+    "old_count": 13,
+    "new_count": 13,
+    "removed_missing": 13
+  },
+  {
+    "id": "export-controls-semiconductors-california",
+    "old_keywords": "semiconductor export controls, 15 CFR 744.21, ECCN 3A090, ECCN 4A090, China semiconductor restrictions, NVIDIA export controls, AMD licensing requirements, Intel export compliance, FDPR semiconductors, Entity List China, advanced computing chips, semiconductor manufacturing equipment, California export controls, October 2022 rules, October 2023 updates",
+    "new_keywords": "semiconductor export controls, 15 CFR 744.21, ECCN 3A090, ECCN 4A090, semiconductor manufacturing equipment, October 2023 updates, export california, classification california, compliance california, defense california, regulation california, law firm california, counsel california",
+    "old_count": 15,
+    "new_count": 13,
+    "removed_missing": 9
+  },
+  {
+    "id": "uflpa-detention-response-california-apparel",
+    "old_keywords": "WRO attorney California, Withhold Release Order lawyer, forced labor detention defense California, 19 USC 1307 attorney, CBP forced labor lawyer California, WRO rebuttal evidence attorney, UFLPA vs WRO lawyer California, supply chain audit attorney, Port of LA WRO defense, solar panel detention lawyer California, apparel forced labor attorney, electronics WRO California, CBP Forced Labor Division lawyer",
+    "new_keywords": "customs california, import california, export california, tariff california, classification california, duty california, cbp california, compliance california, defense california, litigation california, penalty california, audit california, enforcement california, trade california, legal california",
+    "old_count": 13,
+    "new_count": 15,
+    "removed_missing": 13
+  },
+  {
+    "id": "forced-labor-due-diligence-programs-california",
+    "old_keywords": "Section 321 California attorney, de minimis entry compliance lawyer, $800 duty free threshold, Type 86 entry requirements, UFLPA Section 321 enforcement, e-commerce customs attorney California, CBP de minimis violations, one entry per person per day, Section 321 structuring penalties, California fulfillment center compliance, 19 USC 1321 attorney, 19 CFR 10.151 compliance, informal entry e-commerce lawyer",
+    "new_keywords": "one entry per person per day, customs california, import california, export california, tariff california, classification california, duty california, cbp california, compliance california, penalty california, audit california, enforcement california, regulation california, trade california, legal california",
+    "old_count": 13,
+    "new_count": 15,
+    "removed_missing": 12
+  }
+]
