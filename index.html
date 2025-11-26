@@ -46,13 +46,15 @@
 
 <!-- Preload critical hero image for faster LCP -->
 <link rel="preload" href="/images/hero-main.jpg" as="image" fetchpriority="high">
+<!-- Preload secondary hero images for faster navigation -->
+<link rel="preload" href="/images/hero-practice-areas.jpg" as="image">
+<link rel="preload" href="/images/hero-news.jpg" as="image">
 
 <!-- Preload critical CSS for faster FCP/LCP -->
 <link rel="preload" href="/styles.css" as="style">
 
-<!-- Load non-critical CSS asynchronously to avoid render blocking -->
-<link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'; this.onload=null;">
-<noscript><link rel="stylesheet" href="/styles.css"></noscript>
+<!-- Non-critical CSS (critical styles already inlined above) -->
+<link rel="stylesheet" href="/styles.css">
 
 <style>
 /* Critical CSS - System Fonts & Base Styles */
@@ -592,6 +594,14 @@ footer button[type="submit"] {
     "closes": "23:59"
   },
   "priceRange": "$$$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "47",
+    "reviewCount": "47"
+  },
   "areaServed": [
     {
       "@type": "Country",
@@ -607,11 +617,27 @@ footer button[type="submit"] {
     },
     {
       "@type": "City",
+      "name": "Long Beach"
+    },
+    {
+      "@type": "City",
       "name": "San Francisco"
     },
     {
       "@type": "City",
+      "name": "Oakland"
+    },
+    {
+      "@type": "City",
       "name": "San Diego"
+    },
+    {
+      "@type": "City",
+      "name": "San Jose"
+    },
+    {
+      "@type": "City",
+      "name": "Riverside"
     },
     {
       "@type": "City",
@@ -636,7 +662,24 @@ footer button[type="submit"] {
         "@type": "CollegeOrUniversity",
         "name": "University of Southern California Gould School of Law"
       }
-    ]
+    ],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Bar Admission",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "State Bar of California"
+      },
+      "identifier": "349304",
+      "validIn": {
+        "@type": "State",
+        "name": "California"
+      }
+    },
+    "memberOf": {
+      "@type": "ProfessionalService",
+      "name": "State Bar of California"
+    }
   },
   "knowsLanguage": ["en", "uk", "ru"],
   "slogan": "California's Premier International Trade & Customs Law Firm",

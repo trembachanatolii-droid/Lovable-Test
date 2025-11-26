@@ -36,6 +36,8 @@ const ApparelTextilesIndustryPage = lazy(() => import('./pages/ApparelTextilesIn
 const FoodAgricultureIndustryPage = lazy(() => import('./pages/FoodAgricultureIndustryPage'));
 const FAQCenterPage = lazy(() => import('./pages/FAQCenterPage'));
 const ConsultationBookingPage = lazy(() => import('./pages/ConsultationBookingPage'));
+const Section301TariffsGuidePage = lazy(() => import('./pages/Section301TariffsGuidePage'));
+const UFLPAComplianceGuidePage = lazy(() => import('./pages/UFLPAComplianceGuidePage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 // Loading fallback component with explicit height to prevent CLS
@@ -177,6 +179,12 @@ const App: React.FC = () => {
         break;
       case 'schedule-consultation':
         content = <ConsultationBookingPage />;
+        break;
+      case 'resources/section-301-tariffs-guide':
+        content = <Section301TariffsGuidePage />;
+        break;
+      case 'resources/uflpa-compliance-guide':
+        content = <UFLPAComplianceGuidePage />;
         break;
       default:
         // Show 404 page for unknown routes

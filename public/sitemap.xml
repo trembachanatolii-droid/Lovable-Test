@@ -682,6 +682,20 @@
     <priority>0.80</priority>
   </url>
 
+  <url>
+    <loc>https://trembach.law/#resources/section-301-tariffs-guide</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#resources/uflpa-compliance-guide</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- Success Stories / Case Studies - Trust Building Content -->
   <url>
     <loc>https://trembach.law/#success-stories</loc>
