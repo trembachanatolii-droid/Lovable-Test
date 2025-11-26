@@ -171,7 +171,8 @@ const HomePage: React.FC = () => {
             flexDirection: 'row',
             gap: '0',
             alignItems: 'flex-start',
-            position: 'relative'
+            position: 'relative',
+            minHeight: '500px'
           }}>
             {/* Left Column - Heading & Description */}
             <div style={{
@@ -209,8 +210,9 @@ const HomePage: React.FC = () => {
             <div style={{
               position: 'absolute',
               left: '50%',
+              top: 0,
               width: 'calc(32% + 150px)',
-              overflow: 'hidden'
+              overflow: 'visible'
             }}>
               <div style={{
                 borderTop: '1px solid #e2e8f0',

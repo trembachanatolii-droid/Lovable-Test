@@ -53,31 +53,25 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
     <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
 
       {/* Hero Section */}
-      <section className="relative w-full h-[400px] overflow-hidden bg-primary-navy flex items-center">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1920&auto=format&fit=crop"
-            alt="E-commerce and online shopping representing digital trade and online seller customs compliance"
-            className="w-full h-full object-cover opacity-40"
-            loading="eager"
-            decoding="async"
-            width="1920"
-            height="1080"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/85 via-primary-navy/70 to-primary-navy/95"></div>
-        </div>
-
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
+      <section className="relative w-full min-h-[50vh] py-24 overflow-hidden flex items-center" style={{ backgroundColor: '#012169' }}>
+        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full">
           <div className="max-w-3xl">
             <div className="inline-block bg-secondary-teal/20 border border-secondary-teal px-4 py-2 rounded-full mb-4">
               <span className="text-secondary-teal font-semibold text-sm uppercase tracking-wide">Knowledge Hub</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold font-garamond text-white mb-6 tracking-tight leading-tight drop-shadow-lg">
+            <h1
+              className="text-4xl md:text-6xl font-bold font-garamond mb-6 tracking-tight leading-tight"
+              style={{ color: '#ffffff' }}
+            >
               E-Commerce & Digital Trade Compliance California
             </h1>
-            <p className="text-lg md:text-xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
+            <p
+              className="text-lg md:text-xl font-light mb-8 max-w-2xl leading-relaxed"
+              style={{ color: '#ffffff' }}
+            >
               Essential guide to ecommerce import rules, online seller customs compliance, digital trade law, and data transfer export controls for California businesses.
             </p>
+            <div className="w-24 h-1 bg-secondary-teal"></div>
           </div>
         </div>
       </section>
@@ -280,56 +274,56 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2 text-xl">1. Cross-Border Data Transfer Restrictions</h4>
                   <p className="text-text-secondary mb-3">California companies transferring personal data to/from the EU must comply with <strong>GDPR Article 44-50</strong> transfer mechanisms:</p>
-                  <ul className="text-text-secondary text-sm space-y-1 ml-4">
-                    <li>• <strong>Standard Contractual Clauses (SCCs):</strong> EU Commission-approved contract templates for data transfers</li>
-                    <li>• <strong>Adequacy Decisions:</strong> EU approval of third-country data protection laws (U.S. lacks general adequacy)</li>
-                    <li>• <strong>EU-U.S. Data Privacy Framework:</strong> Replaced Privacy Shield; allows certified companies to transfer EU data to U.S.</li>
-                    <li>• <strong>Binding Corporate Rules (BCRs):</strong> Internal policies for multinational intra-group data transfers</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li><strong>Standard Contractual Clauses (SCCs):</strong> EU Commission-approved contract templates for data transfers</li>
+                    <li><strong>Adequacy Decisions:</strong> EU approval of third-country data protection laws (U.S. lacks general adequacy)</li>
+                    <li><strong>EU-U.S. Data Privacy Framework:</strong> Replaced Privacy Shield; allows certified companies to transfer EU data to U.S.</li>
+                    <li><strong>Binding Corporate Rules (BCRs):</strong> Internal policies for multinational intra-group data transfers</li>
                   </ul>
                 </div>
 
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2 text-xl">2. Data Localization Requirements</h4>
                   <p className="text-text-secondary mb-3">Many countries mandate local data storage, impacting California cloud service providers:</p>
-                  <ul className="text-text-secondary text-sm space-y-1 ml-4">
-                    <li>• <strong>China:</strong> Personal Information Protection Law (PIPL) and Cybersecurity Law require China data to be stored on China servers</li>
-                    <li>• <strong>Russia:</strong> Federal Law 242-FZ requires Russian citizen data stored on Russian servers</li>
-                    <li>• <strong>India:</strong> Proposed data protection law includes data localization for sensitive personal data</li>
-                    <li>• <strong>Indonesia, Vietnam, Brazil:</strong> Various data residency requirements for financial, health, and government data</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li><strong>China:</strong> Personal Information Protection Law (PIPL) and Cybersecurity Law require China data to be stored on China servers</li>
+                    <li><strong>Russia:</strong> Federal Law 242-FZ requires Russian citizen data stored on Russian servers</li>
+                    <li><strong>India:</strong> Proposed data protection law includes data localization for sensitive personal data</li>
+                    <li><strong>Indonesia, Vietnam, Brazil:</strong> Various data residency requirements for financial, health, and government data</li>
                   </ul>
                 </div>
 
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2 text-xl">3. Digital Services Taxes (DST)</h4>
                   <p className="text-text-secondary mb-3">Foreign governments impose revenue-based taxes on California tech companies' digital services:</p>
-                  <ul className="text-text-secondary text-sm space-y-1 ml-4">
-                    <li>• <strong>EU Digital Services Tax:</strong> Proposed 3% tax on digital services revenue (currently deferred pending OECD Pillar One)</li>
-                    <li>• <strong>UK Digital Services Tax:</strong> 2% tax on UK-derived revenue from search, social media, and online marketplaces</li>
-                    <li>• <strong>France, Italy, Spain:</strong> National DSTs targeting Google, Facebook, Amazon (3-7% rates)</li>
-                    <li>• <strong>India Equalization Levy:</strong> 2% tax on e-commerce transactions</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li><strong>EU Digital Services Tax:</strong> Proposed 3% tax on digital services revenue (currently deferred pending OECD Pillar One)</li>
+                    <li><strong>UK Digital Services Tax:</strong> 2% tax on UK-derived revenue from search, social media, and online marketplaces</li>
+                    <li><strong>France, Italy, Spain:</strong> National DSTs targeting Google, Facebook, Amazon (3-7% rates)</li>
+                    <li><strong>India Equalization Levy:</strong> 2% tax on e-commerce transactions</li>
                   </ul>
                 </div>
 
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2 text-xl">4. Platform Liability and Content Moderation</h4>
                   <p className="text-text-secondary mb-3">Global platform regulations affect California social media, e-commerce, and content platforms:</p>
-                  <ul className="text-text-secondary text-sm space-y-1 ml-4">
-                    <li>• <strong>EU Digital Services Act (DSA):</strong> Requires platforms to moderate illegal content, conduct risk assessments, and provide transparency reports</li>
-                    <li>• <strong>EU Digital Markets Act (DMA):</strong> Antitrust rules for large platforms ("gatekeepers") requiring interoperability and data portability</li>
-                    <li>• <strong>Section 230 Reforms:</strong> U.S. legislative proposals to modify Section 230 immunity for platform content</li>
-                    <li>• <strong>Australia News Media Bargaining Code:</strong> Requires platforms to pay news publishers for content</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li><strong>EU Digital Services Act (DSA):</strong> Requires platforms to moderate illegal content, conduct risk assessments, and provide transparency reports</li>
+                    <li><strong>EU Digital Markets Act (DMA):</strong> Antitrust rules for large platforms ("gatekeepers") requiring interoperability and data portability</li>
+                    <li><strong>Section 230 Reforms:</strong> U.S. legislative proposals to modify Section 230 immunity for platform content</li>
+                    <li><strong>Australia News Media Bargaining Code:</strong> Requires platforms to pay news publishers for content</li>
                   </ul>
                 </div>
 
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2 text-xl">5. Source Code and Algorithm Disclosure</h4>
                   <p className="text-text-secondary mb-3">Some countries require source code disclosure as condition for market access:</p>
-                  <ul className="text-text-secondary text-sm space-y-1 ml-4">
-                    <li>• <strong>China Cybersecurity Review:</strong> Source code inspection for "critical information infrastructure" software</li>
-                    <li>• <strong>Vietnam Cybersecurity Law:</strong> Local data storage and potential source code disclosure for "national security"</li>
-                    <li>• <strong>Russia FSTEC Certification:</strong> Source code review for cryptographic software sold to Russian government</li>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li><strong>China Cybersecurity Review:</strong> Source code inspection for "critical information infrastructure" software</li>
+                    <li><strong>Vietnam Cybersecurity Law:</strong> Local data storage and potential source code disclosure for "national security"</li>
+                    <li><strong>Russia FSTEC Certification:</strong> Source code review for cryptographic software sold to Russian government</li>
                   </ul>
-                  <p className="text-text-secondary text-sm mt-2"><strong>Trade Secret Risk:</strong> Source code disclosure creates IP theft risk. Consider export control classification (EAR restrictions) and contractual protections.</p>
+                  <p className="text-text-secondary mt-2"><strong>Trade Secret Risk:</strong> Source code disclosure creates IP theft risk. Consider export control classification (EAR restrictions) and contractual protections.</p>
                 </div>
               </div>
 
@@ -357,44 +351,44 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
               <div className="space-y-4 mb-6">
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2">1. Software Source Code Exports (EAR ECCN 5D002, 5D992)</h4>
-                  <p className="text-text-secondary text-sm mb-2">EAR controls source code for:</p>
-                  <ul className="text-text-secondary text-xs space-y-1 ml-4">
-                    <li>• <strong>Encryption software:</strong> Source code for products using encryption (AES, RSA, etc.) requires self-classification under License Exception ENC</li>
-                    <li>• <strong>Intrusion software:</strong> Hacking tools, penetration testing software, and exploits (5D002.c.1)</li>
-                    <li>• <strong>Network surveillance:</strong> Deep packet inspection and communications monitoring software</li>
-                    <li>• <strong>Dual-use source code:</strong> Software for controlled end-uses (WMD, missile technology)</li>
+                  <p className="text-text-secondary mb-2">EAR controls source code for:</p>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li><strong>Encryption software:</strong> Source code for products using encryption (AES, RSA, etc.) requires self-classification under License Exception ENC</li>
+                    <li><strong>Intrusion software:</strong> Hacking tools, penetration testing software, and exploits (5D002.c.1)</li>
+                    <li><strong>Network surveillance:</strong> Deep packet inspection and communications monitoring software</li>
+                    <li><strong>Dual-use source code:</strong> Software for controlled end-uses (WMD, missile technology)</li>
                   </ul>
                 </div>
 
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2">2. Technical Data Transfers (EAR ECCN 5E002, ITAR Technical Data)</h4>
-                  <p className="text-text-secondary text-sm mb-2">Export controls apply to technical data for controlled products:</p>
-                  <ul className="text-text-secondary text-xs space-y-1 ml-4">
-                    <li>• <strong>Design specifications:</strong> CAD files, blueprints, schematics for controlled hardware</li>
-                    <li>• <strong>Manufacturing know-how:</strong> Process documentation, production techniques for dual-use items</li>
-                    <li>• <strong>ITAR technical data:</strong> Any data related to defense articles on U.S. Munitions List</li>
-                    <li>• <strong>Cloud-hosted data:</strong> Technical data stored in cloud accessible by foreign nationals</li>
+                  <p className="text-text-secondary mb-2">Export controls apply to technical data for controlled products:</p>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li><strong>Design specifications:</strong> CAD files, blueprints, schematics for controlled hardware</li>
+                    <li><strong>Manufacturing know-how:</strong> Process documentation, production techniques for dual-use items</li>
+                    <li><strong>ITAR technical data:</strong> Any data related to defense articles on U.S. Munitions List</li>
+                    <li><strong>Cloud-hosted data:</strong> Technical data stored in cloud accessible by foreign nationals</li>
                   </ul>
                 </div>
 
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2">3. Technology Exports (EAR Part 772 Definition)</h4>
-                  <p className="text-text-secondary text-sm mb-2">"Technology" = specific information necessary for development, production, or use of controlled items:</p>
-                  <ul className="text-text-secondary text-xs space-y-1 ml-4">
-                    <li>• <strong>Technical assistance:</strong> Remote support to foreign customers on controlled products</li>
-                    <li>• <strong>Training:</strong> Instruction to foreign persons on use/maintenance of controlled technology</li>
-                    <li>• <strong>Consulting services:</strong> Engineering services related to controlled products or processes</li>
+                  <p className="text-text-secondary mb-2">"Technology" = specific information necessary for development, production, or use of controlled items:</p>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li><strong>Technical assistance:</strong> Remote support to foreign customers on controlled products</li>
+                    <li><strong>Training:</strong> Instruction to foreign persons on use/maintenance of controlled technology</li>
+                    <li><strong>Consulting services:</strong> Engineering services related to controlled products or processes</li>
                   </ul>
                 </div>
 
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2">4. Deemed Exports (EAR § 734.13, ITAR § 120.17)</h4>
-                  <p className="text-text-secondary text-sm mb-2">Release of controlled technology/data to foreign nationals in the U.S. is a "deemed export":</p>
-                  <ul className="text-text-secondary text-xs space-y-1 ml-4">
-                    <li>• <strong>Employee access:</strong> Foreign national employees accessing controlled source code or technical data</li>
-                    <li>• <strong>Contractor access:</strong> Foreign contractors (H-1B, consultants) with access to controlled technology</li>
-                    <li>• <strong>University research:</strong> Foreign graduate students working on export-controlled research</li>
-                    <li>• <strong>Visitor access:</strong> Foreign visitors touring facilities with exposure to controlled data</li>
+                  <p className="text-text-secondary mb-2">Release of controlled technology/data to foreign nationals in the U.S. is a "deemed export":</p>
+                  <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
+                    <li><strong>Employee access:</strong> Foreign national employees accessing controlled source code or technical data</li>
+                    <li><strong>Contractor access:</strong> Foreign contractors (H-1B, consultants) with access to controlled technology</li>
+                    <li><strong>University research:</strong> Foreign graduate students working on export-controlled research</li>
+                    <li><strong>Visitor access:</strong> Foreign visitors touring facilities with exposure to controlled data</li>
                   </ul>
                 </div>
               </div>
