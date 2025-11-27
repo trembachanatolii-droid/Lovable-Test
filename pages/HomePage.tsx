@@ -126,6 +126,7 @@ const HomePage: React.FC = () => {
       <section className="hero" aria-label="Hero">
         {/* Port Harbor Background Image */}
         <picture className="hero-bg">
+          <source type="image/webp" srcSet="/images/hero-main.webp" />
           <img
             src="/images/hero-main.jpg"
             alt=""

@@ -194,16 +194,19 @@ const NewsPage: React.FC = () => {
       <section className="relative w-full min-h-[60vh] py-32 overflow-hidden bg-gray-200 flex items-center">
         {/* Background Image with Dark Overlay - LCP element */}
         <div className="absolute inset-0 z-0">
-          <img
-            src="/images/hero-news.jpg"
-            alt="Professional business news analysis representing trade law insights and industry updates"
-            className="w-full h-full object-cover object-center"
-            loading="eager"
-            decoding="async"
-            fetchpriority="high"
-            width="1920"
-            height="1080"
-          />
+          <picture>
+            <source type="image/webp" srcSet="/images/hero-news.webp" />
+            <img
+              src="/images/hero-news.jpg"
+              alt="Professional business news analysis representing trade law insights and industry updates"
+              className="w-full h-full object-cover object-center"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+              width="1920"
+              height="1080"
+            />
+          </picture>
           <div
             className="absolute inset-0"
             style={{ backgroundColor: 'rgba(1, 33, 105, 0.55)' }}
