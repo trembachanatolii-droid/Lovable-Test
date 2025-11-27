@@ -36,6 +36,25 @@ export interface MetaConfig {
   schema?: any;
 }
 
+export interface AddressConfig {
+  street: string;
+  city: string;
+  state: string;
+  stateAbbr: string;
+  zip: string;
+  country: string;
+  countryCode: string;
+}
+
+export interface ServiceAreasConfig {
+  primary: string[];
+  secondary: string[];
+  regions: string[];
+  ports: string[];
+  state: string;
+  nationwide: boolean;
+}
+
 export interface SiteConfig {
   siteName: string;
   siteUrl: string;
@@ -46,5 +65,9 @@ export interface SiteConfig {
   facebookAppId?: string;
   locale: string;
   phone: string;
+  phoneDisplay: string;
+  phoneTel: string;
   email: string;
+  address: AddressConfig;
+  serviceAreas: ServiceAreasConfig;
 }
