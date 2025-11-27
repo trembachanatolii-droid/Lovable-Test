@@ -58,8 +58,6 @@ const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
       case "Terms of Use":
         return (
           <div className="space-y-8 text-left">
-            <p className="text-sm font-bold text-text-secondary">Last Updated: November 18, 2025</p>
-            
             <section>
               <h2 className="text-2xl font-garamond font-bold text-primary-navy mb-4">1. Agreement to Terms</h2>
               <p className="text-lg leading-relaxed">

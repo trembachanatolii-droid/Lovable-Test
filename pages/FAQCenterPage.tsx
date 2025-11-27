@@ -342,15 +342,6 @@ const FAQCenterPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Last Updated Timestamp */}
-      <div className="py-4 px-4 bg-white border-b border-gray-100">
-        <div className="max-w-[1200px] mx-auto">
-          <p className="text-sm text-gray-500 text-center">
-            <span className="font-semibold text-primary-navy">Last Updated:</span> <time dateTime="2025-11-25">November 25, 2025</time>
-          </p>
-        </div>
-      </div>
-
       {/* Introduction */}
       <section className="py-20 px-6">
         <div className="max-w-[1200px] mx-auto">

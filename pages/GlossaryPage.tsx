@@ -1,9 +1,26 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
 import EvaluationForm from '../components/EvaluationForm';
 
 const GlossaryPage: React.FC = () => {
+  // State for accordion functionality
+  const [openTerms, setOpenTerms] = useState<{[key: string]: boolean}>({});
+
+  // Toggle function for glossary terms
+  const toggleTerm = (categoryIndex: number, termIndex: number) => {
+    const key = `${categoryIndex}-${termIndex}`;
+    setOpenTerms(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
+
+  // Check if term is open
+  const isTermOpen = (categoryIndex: number, termIndex: number) => {
+    return openTerms[`${categoryIndex}-${termIndex}`] || false;
+  };
+
   // Scroll to category function for in-page navigation
   const scrollToCategory = (categoryIndex: number) => {
     const element = document.getElementById(`category-${categoryIndex}`);
@@ -604,15 +621,6 @@ const GlossaryPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Last Updated Timestamp */}
-      <div className="py-20 px-6 bg-white border-b border-gray-100">
-        <div className="max-w-[1200px] mx-auto">
-          <p className="text-sm text-gray-500 text-center">
-            <span className="font-semibold text-primary-navy">Last Updated:</span> <time dateTime="2025-11-25">November 25, 2025</time>
-          </p>
-        </div>
-      </div>
-
       {/* Introduction Section */}
       <section className="py-20 px-6">
         <div className="max-w-[1200px] mx-auto">
@@ -649,7 +657,7 @@ const GlossaryPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Glossary Terms by Category */}
+      {/* Glossary Terms by Category - Accordion Format */}
       <section className="py-20 px-6">
         <div className="max-w-[1200px] mx-auto">
           {glossaryTerms.map((category, categoryIndex) => (
@@ -659,24 +667,53 @@ const GlossaryPage: React.FC = () => {
                 <div className="h-1 w-24 bg-secondary-gold"></div>
               </div>
 
-              <div className="space-y-6">
-                {category.terms.map((item, termIndex) => (
-                  <div key={termIndex} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <h3 className="text-xl font-bold text-primary-navy mb-3">{item.term}</h3>
-                    <p className="text-gray-700 leading-relaxed mb-3">{item.definition}</p>
-                    {item.relatedLink && (
-                      <a
-                        href={item.relatedLink.url}
-                        className="inline-flex items-center text-secondary-teal hover:text-primary-navy font-medium transition-colors"
+              <div className="space-y-3">
+                {category.terms.map((item, termIndex) => {
+                  const isOpen = isTermOpen(categoryIndex, termIndex);
+                  return (
+                    <div key={termIndex} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+                      {/* Accordion Header/Button */}
+                      <button
+                        onClick={() => toggleTerm(categoryIndex, termIndex)}
+                        className="w-full text-left p-5 flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-teal focus:ring-inset"
+                        aria-expanded={isOpen}
                       >
-                        {item.relatedLink.text}
-                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </a>
-                    )}
-                  </div>
-                ))}
+                        <h3 className={`text-lg font-semibold pr-4 transition-colors ${isOpen ? 'text-secondary-teal' : 'text-primary-navy'}`}>
+                          {item.term}
+                        </h3>
+                        <div className={`flex-shrink-0 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300
+                          ${isOpen ? 'border-secondary-teal bg-secondary-teal text-white rotate-45' : 'border-gray-300 text-gray-400'}`}>
+                          <span className="text-xl font-light leading-none">+</span>
+                        </div>
+                      </button>
+
+                      {/* Accordion Content */}
+                      <div
+                        style={{
+                          maxHeight: isOpen ? '2000px' : '0',
+                          opacity: isOpen ? 1 : 0,
+                          transition: 'max-height 300ms ease-in-out, opacity 300ms ease-in-out',
+                          overflow: 'hidden'
+                        }}
+                      >
+                        <div className="px-5 pb-5 border-t border-gray-100">
+                          <p className="text-gray-700 leading-relaxed pt-4 whitespace-pre-line">{item.definition}</p>
+                          {item.relatedLink && (
+                            <a
+                              href={item.relatedLink.url}
+                              className="inline-flex items-center mt-4 text-secondary-teal hover:text-primary-navy font-medium transition-colors"
+                            >
+                              {item.relatedLink.text}
+                              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           ))}
