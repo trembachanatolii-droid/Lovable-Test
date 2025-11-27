@@ -857,15 +857,15 @@ const Section301TariffsGuidePage: React.FC = () => {
             <ul className="space-y-2 mb-6">
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>$3-15M+ duty savings achieved</strong> through classification optimization, first sale, supply chain restructuring</span>
+                <span><strong>Duty savings strategies</strong> through classification optimization, first sale, supply chain restructuring</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>50+ successful exclusion requests</strong> during historical processes - ready for next round</span>
+                <span><strong>Exclusion request experience</strong> during historical processes - ready for next round</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>100+ binding rulings obtained</strong> for classification and origin certainty</span>
+                <span><strong>Binding rulings expertise</strong> for classification and origin certainty</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
