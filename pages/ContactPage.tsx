@@ -45,16 +45,19 @@ const ContactPage: React.FC = () => {
       <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[60vh]">
          {/* Background Image - LCP element */}
          <div className="absolute inset-0 z-0" aria-hidden="true">
-           <img
-             src="/images/hero-contact.jpg"
-             alt="California international trade attorney office - Contact Trembach Law Firm for customs and import law consultations"
-             className="w-full h-full object-cover object-center"
-             loading="eager"
-             decoding="async"
-             fetchpriority="high"
-             width="1920"
-             height="1080"
-           />
+           <picture>
+             <source type="image/webp" srcSet="/images/hero-contact.webp" />
+             <img
+               src="/images/hero-contact.jpg"
+               alt="California international trade attorney office - Contact Trembach Law Firm for customs and import law consultations"
+               className="w-full h-full object-cover object-center"
+               loading="eager"
+               decoding="async"
+               fetchpriority="high"
+               width="1920"
+               height="1080"
+             />
+           </picture>
            {/* Overlay with 55% opacity for better text visibility */}
            <div className="absolute inset-0" style={{backgroundColor: 'rgba(1, 33, 105, 0.55)'}}></div>
          </div>

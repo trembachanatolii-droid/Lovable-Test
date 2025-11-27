@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-11-27T00:51:49.073Z",
+  "summary": {
+    "filesConverted": 14,
+    "originalTotalBytes": 5295683,
+    "webpTotalBytes": 1325458,
+    "totalSavingsBytes": 3970225,
+    "totalSavingsPercent": 75
+  },
+  "files": [
+    {
+      "file": "customs-audits.jpg",
+      "originalSize": 113649,
+      "webpSize": 83548,
+      "savings": 26.5
+    },
+    {
+      "file": "duty-drawback.jpg",
+      "originalSize": 105665,
+      "webpSize": 44544,
+      "savings": 57.8
+    },
+    {
+      "file": "export-controls.jpg",
+      "originalSize": 119222,
+      "webpSize": 103862,
+      "savings": 12.9
+    },
+    {
+      "file": "forced-labor-compliance.jpg",
+      "originalSize": 71598,
+      "webpSize": 59980,
+      "savings": 16.2
+    },
+    {
+      "file": "hero-attorney-advertising.jpg",
+      "originalSize": 137773,
+      "webpSize": 92658,
+      "savings": 32.7
+    },
+    {
+      "file": "hero-careers.jpg",
+      "originalSize": 1104342,
+      "webpSize": 48884,
+      "savings": 95.6
+    },
+    {
+      "file": "hero-contact.jpg",
+      "originalSize": 1444832,
+      "webpSize": 76036,
+      "savings": 94.7
+    },
+    {
+      "file": "hero-main.jpg",
+      "originalSize": 97803,
+      "webpSize": 139308,
+      "savings": -42.4
+    },
+    {
+      "file": "hero-news.jpg",
+      "originalSize": 141906,
+      "webpSize": 97574,
+      "savings": 31.2
+    },
+    {
+      "file": "hero-practice-areas.jpg",
+      "originalSize": 128838,
+      "webpSize": 90910,
+      "savings": 29.4
+    },
+    {
+      "file": "hero-resources.jpg",
+      "originalSize": 1342679,
+      "webpSize": 88772,
+      "savings": 93.4
+    },
+    {
+      "file": "hero-useful-links.jpg",
+      "originalSize": 273637,
+      "webpSize": 228082,
+      "savings": 16.6
+    },
+    {
+      "file": "section-301-tariffs.jpg",
+      "originalSize": 99140,
+      "webpSize": 76714,
+      "savings": 22.6
+    },
+    {
+      "file": "usmca-fta.jpg",
+      "originalSize": 114599,
+      "webpSize": 94586,
+      "savings": 17.5
+    }
+  ]
+}

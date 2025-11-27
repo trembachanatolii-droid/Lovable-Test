@@ -31,17 +31,24 @@ right-[-80px] group-hover:right-0 z-10"
         <div className="relative flex flex-col md:flex-row h-full">
              {/* Image container with responsive layout */}
             <div className="md:w-[40%] flex-shrink-0">
-                <img
-                  src={card.image}
-                  srcSet={`${card.image} 800w, ${card.image} 600w, ${card.image} 400w`}
-                  sizes="(max-width: 768px) 100vw, 40vw"
-                  alt={card.title}
-                  className="w-full h-48 md:h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                  width="800"
-                  height="600"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={`${card.image.replace(/\.jpe?g$/i, '.webp')} 800w, ${card.image.replace(/\.jpe?g$/i, '.webp')} 600w, ${card.image.replace(/\.jpe?g$/i, '.webp')} 400w`}
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                  />
+                  <img
+                    src={card.image}
+                    srcSet={`${card.image} 800w, ${card.image} 600w, ${card.image} 400w`}
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                    alt={card.title}
+                    className="w-full h-48 md:h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                    width="800"
+                    height="600"
+                  />
+                </picture>
             </div>
              {/* Text content container */}
             <div className="p-8 flex flex-col flex-grow">

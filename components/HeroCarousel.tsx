@@ -57,16 +57,22 @@ return (
                 className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
                 style={{ visibility: index === currentIndex ? 'visible' : 'hidden' }}
             >
-                <img
-                    src={slide.image}
-                    alt={slide.title}
-                    className="w-full h-full object-cover"
-                    loading={index === 0 ? 'eager' : 'lazy'}
-                    decoding="async"
-                    fetchPriority={index === 0 ? 'high' : 'low'}
-                    width="1920"
-                    height="1080"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={slide.image.replace(/\.jpe?g$/i, '.webp')}
+                  />
+                  <img
+                      src={slide.image}
+                      alt={slide.title}
+                      className="w-full h-full object-cover"
+                      loading={index === 0 ? 'eager' : 'lazy'}
+                      decoding="async"
+                      fetchPriority={index === 0 ? 'high' : 'low'}
+                      width="1920"
+                      height="1080"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent"></div>
             </div>
         ))}
