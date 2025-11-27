@@ -45,7 +45,7 @@ const LosAngelesPortPage: React.FC = () => {
       <section className="relative w-full min-h-[600px] overflow-hidden bg-primary-navy flex items-center py-16">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?q=80&w=1920&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=1920&auto=format&fit=crop"
             alt="Port of Los Angeles and Long Beach shipping containers and cranes at sunset"
             className="w-full h-full object-cover opacity-40"
             loading="eager"
@@ -68,7 +68,7 @@ const LosAngelesPortPage: React.FC = () => {
               <Button href="#schedule-consultation" variant="solid">
                 Free Port Customs Consultation
               </Button>
-              <Button href="tel:+16317468290" variant="outline">
+              <Button href="tel:+16317468290" variant="hero-outline">
                 Call (631) 746-8290
               </Button>
             </div>
