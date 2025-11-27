@@ -149,7 +149,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             {/* Service 1 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold text-primary-navy mb-4">HTS Classification Strategy</h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-700 list-none">
                 <li>• Electronics classification analysis (smartphones, tablets, computers)</li>
                 <li>• Binding ruling requests to CBP</li>
                 <li>• First sale valuation strategies</li>
@@ -163,9 +163,9 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
             {/* Service 2 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">Export Control Compliance</h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-700 list-none">
                 <li>• ECCN classification for technology products</li>
                 <li>• Encryption registration and reporting (BIS)</li>
                 <li>• Export license applications (EAR)</li>
@@ -180,9 +180,9 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
             {/* Service 3 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">Semiconductor Supply Chain</h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-700 list-none">
                 <li>• Entity List impact analysis</li>
                 <li>• De minimis rule calculations</li>
                 <li>• Supply chain restructuring strategies</li>
@@ -197,9 +197,9 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
             {/* Service 4 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">Import Compliance Programs</h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-700 list-none">
                 <li>• Automated classification systems</li>
                 <li>• Scalable compliance for high-volume imports</li>
                 <li>• Integration with ERP systems (SAP, Oracle)</li>
@@ -213,9 +213,9 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
             {/* Service 5 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">CBP Defense & Litigation</h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-700 list-none">
                 <li>• Focused assessment defense</li>
                 <li>• Classification disputes (CIT litigation)</li>
                 <li>• Section 301 exclusion appeals</li>
@@ -229,9 +229,9 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
             {/* Service 6 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">Duty Savings Strategies</h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-700 list-none">
                 <li>• Foreign Trade Zone utilization</li>
                 <li>• Drawback claims for returned products</li>
                 <li>• First sale valuation programs</li>
@@ -255,7 +255,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-blue-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Smartphones & Tablets</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">�Smartphones & Tablets</h3>
               <p className="text-gray-700 mb-3">
                 <strong>Classification Challenges:</strong> May be classified as telephones (8517), computing machines (8471), or other devices depending on principal function. Classification affects duty rates (often free vs. 2.5%) and Section 301 applicability.
               </p>
@@ -281,7 +281,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-green-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Semiconductors & Components</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">�Semiconductors & Components</h3>
               <p className="text-gray-700 mb-3">
                 <strong>Classification Challenges:</strong> Semiconductor devices (diodes, transistors, ICs) fall under Chapter 85 with varying duty rates. Origin determinations are complex for multi-country manufacturing.
               </p>
@@ -294,7 +294,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-yellow-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">☁�Software & Cloud Services</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">☁�Software & Cloud Services</h3>
               <p className="text-gray-700 mb-3">
                 <strong>Classification Challenges:</strong> Software on physical media is dutiable. Downloaded/cloud software generally not subject to customs duties but may face other trade barriers.
               </p>
@@ -381,28 +381,28 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Technology Industry Expertise</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">�Technology Industry Expertise</h3>
               <p className="text-gray-700">
                 Deep understanding of technology products, manufacturing processes, and business models. We speak your language and understand the fast-paced nature of the tech sector.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Silicon Valley & California Focus</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">�Silicon Valley & California Focus</h3>
               <p className="text-gray-700">
                 Based in California with extensive experience representing Silicon Valley companies, Southern California tech firms, and San Diego innovators at Los Angeles and San Francisco ports.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Rapid Response for Product Launches</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">�Rapid Response for Product Launches</h3>
               <p className="text-gray-700">
                 Fast turnaround on classification analysis, export control reviews, and compliance documentation to support your product launch timelines.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Integration with Your Systems</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">�Integration with Your Systems</h3>
               <p className="text-gray-700">
                 Experience integrating compliance processes with ERP systems (SAP, Oracle), PLM systems, and e-commerce platforms for scalable automation.
               </p>

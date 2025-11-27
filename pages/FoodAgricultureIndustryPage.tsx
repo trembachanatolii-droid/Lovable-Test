@@ -138,7 +138,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
         <div className="container-custom max-w-5xl">
           <div className="text-center mb-6">
             <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-              üçCOMPLIANCE ALERT
+              ÔøΩCOMPLIANCE ALERT
             </div>
             <h2 className="text-3xl font-bold text-blue-900 mb-4">
               California Food Importers: Enhanced FDA Enforcement Under FSMA
@@ -153,25 +153,25 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-6 mt-6">
               <div>
                 <h3 className="font-bold text-blue-900 mb-3">What FDA Is Targeting:</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>‚úMissing or inadequate FSVP programs</li>
-                  <li>‚úLack of foreign supplier approval documentation</li>
-                  <li>‚úInsufficient hazard analysis for imported foods</li>
-                  <li>‚úFailure to verify supplier preventive controls</li>
-                  <li>‚úMisbranded products (labeling violations)</li>
-                  <li>‚úUnapproved health claims or supplement ingredients</li>
+                <ul className="space-y-2 text-gray-700 list-none">
+                  <li>ÔøΩMissing or inadequate FSVP programs</li>
+                  <li>ÔøΩLack of foreign supplier approval documentation</li>
+                  <li>ÔøΩInsufficient hazard analysis for imported foods</li>
+                  <li>ÔøΩFailure to verify supplier preventive controls</li>
+                  <li>ÔøΩMisbranded products (labeling violations)</li>
+                  <li>ÔøΩUnapproved health claims or supplement ingredients</li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-bold text-blue-900 mb-3">What Food Importers Must Do:</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>üîDevelop and document comprehensive FSVP</li>
-                  <li>üìConduct hazard analysis for each imported food</li>
-                  <li>üèVerify foreign suppliers have preventive controls</li>
-                  <li>‚úPerform or obtain supplier audits/certifications</li>
+                <ul className="space-y-2 text-gray-700 list-none">
+                  <li>ÔøΩDevelop and document comprehensive FSVP</li>
+                  <li>ÔøΩConduct hazard analysis for each imported food</li>
+                  <li>ÔøΩVerify foreign suppliers have preventive controls</li>
+                  <li>ÔøΩPerform or obtain supplier audits/certifications</li>
                   <li>üìù Maintain detailed FSVP records (2+ years)</li>
-                  <li>üéEnsure labeling complies with FDA regulations</li>
+                  <li>ÔøΩEnsure labeling complies with FDA regulations</li>
                 </ul>
               </div>
             </div>
@@ -197,9 +197,9 @@ const FoodAgricultureIndustryPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-green-600">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">FDA Compliance & FSVP</h3>
-              <ul className="space-y-2 text-gray-700 text-sm">
+              <ul className="space-y-2 text-gray-700 text-sm list-none">
                 <li>‚Ä¢ Foreign Supplier Verification Program (FSVP) development</li>
                 <li>‚Ä¢ Hazard analysis for imported foods</li>
                 <li>‚Ä¢ Foreign supplier approval and verification</li>
@@ -215,9 +215,9 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             {/* Service 2 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-blue-600">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">Food Labeling Compliance</h3>
-              <ul className="space-y-2 text-gray-700 text-sm">
+              <ul className="space-y-2 text-gray-700 text-sm list-none">
                 <li>‚Ä¢ Nutrition Facts Panel review and approval</li>
                 <li>‚Ä¢ Ingredient statement compliance</li>
                 <li>‚Ä¢ Allergen declaration (FALCPA compliance)</li>
@@ -233,9 +233,9 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             {/* Service 3 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-yellow-600">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">USDA & Phytosanitary</h3>
-              <ul className="space-y-2 text-gray-700 text-sm">
+              <ul className="space-y-2 text-gray-700 text-sm list-none">
                 <li>‚Ä¢ USDA import permit applications</li>
                 <li>‚Ä¢ Phytosanitary certificate coordination</li>
                 <li>‚Ä¢ APHIS compliance for plants/produce</li>
@@ -250,9 +250,9 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             {/* Service 4 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-red-600">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">FDA Refusal & Detention Defense</h3>
-              <ul className="space-y-2 text-gray-700 text-sm">
+              <ul className="space-y-2 text-gray-700 text-sm list-none">
                 <li>‚Ä¢ FDA refusal response and appeals</li>
                 <li>‚Ä¢ Detention release strategies</li>
                 <li>‚Ä¢ Admissibility review and evidence submission</li>
@@ -268,9 +268,9 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             {/* Service 5 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-purple-600">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">Food Classification & Duties</h3>
-              <ul className="space-y-2 text-gray-700 text-sm">
+              <ul className="space-y-2 text-gray-700 text-sm list-none">
                 <li>‚Ä¢ HTS classification for food products</li>
                 <li>‚Ä¢ Agricultural commodity determinations</li>
                 <li>‚Ä¢ Binding ruling requests (CBP)</li>
@@ -285,9 +285,9 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             {/* Service 6 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-orange-600">
-              
+
               <h3 className="text-xl font-bold text-primary-navy mb-4">Alcohol & Beverage (TTB)</h3>
-              <ul className="space-y-2 text-gray-700 text-sm">
+              <ul className="space-y-2 text-gray-700 text-sm list-none">
                 <li>‚Ä¢ TTB import permit applications (FAA Act)</li>
                 <li>‚Ä¢ Certificate of Label Approval (COLA)</li>
                 <li>‚Ä¢ Alcohol import compliance (wine, beer, spirits)</li>
@@ -312,7 +312,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-green-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">ü•Fresh Produce (Fruits & Vegetables)</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ÔøΩFresh Produce (Fruits & Vegetables)</h3>
               <p className="text-gray-700 mb-2">
                 <strong>FDA Requirements:</strong> Prior Notice required. Subject to FSVP if processed (cut, dried). Organic certification if labeled organic. Country of origin marking required (COOL).
               </p>
@@ -338,7 +338,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-yellow-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">ü•Dairy Products</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ÔøΩDairy Products</h3>
               <p className="text-gray-700 mb-2">
                 <strong>FDA Requirements:</strong> Grade A pasteurized milk requires IMS permit. Cheese subject to Standard of Identity rules. FSVP required for all dairy imports.
               </p>
@@ -351,7 +351,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-purple-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">üçWine, Beer & Spirits</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ÔøΩWine, Beer & Spirits</h3>
               <p className="text-gray-700 mb-2">
                 <strong>TTB Requirements:</strong> Importer must hold FAA Act Basic Permit. Certificate of Label Approval (COLA) required for each product. Formula approval for flavored beverages.
               </p>
@@ -364,7 +364,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-blue-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">üíDietary Supplements</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ÔøΩDietary Supplements</h3>
               <p className="text-gray-700 mb-2">
                 <strong>FDA Requirements:</strong> Strict regulation under DSHEA. New Dietary Ingredient (NDI) notification required for novel ingredients. cGMP compliance mandatory. Structure/function claims must be substantiated.
               </p>
@@ -418,7 +418,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
               <div>
                 <h3 className="font-bold text-primary-navy mb-2">Strategy:</h3>
                 <ul className="list-disc ml-6 space-y-1">
-                  <li>Immediately requested FDA testimony and appeal rights under 21 USC ¬381(a)</li>
+                  <li>Immediately requested FDA testimony and appeal rights under 21 USC ÔøΩ381(a)</li>
                   <li>Coordinated expedited pesticide residue testing at FDA-approved laboratory</li>
                   <li>Obtained organic certification documentation from Peruvian suppliers</li>
                   <li>Compiled complete chain of custody showing no pesticide application</li>
@@ -452,28 +452,28 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">üåCalifornia Agricultural Expertise</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ÔøΩCalifornia Agricultural Expertise</h3>
               <p className="text-gray-700">
                 Deep understanding of California's agricultural industry and food import community. Experience with Central Valley produce, wine country, and specialty food sectors.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">üõ°Ô∏FDA Detention Defense Excellence</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">üõ°ÔøΩFDA Detention Defense Excellence</h3>
               <p className="text-gray-700">
                 95% success rate securing release of detained food cargo. $75M+ in food products successfully admitted. Proven strategies for overturning FDA refusals.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">‚öRapid Response for Perishable Goods</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ÔøΩRapid Response for Perishable Goods</h3>
               <p className="text-gray-700">
                 24/7 availability for time-sensitive food detentions. Fast turnaround on FDA refusal responses, admissibility packages, and FSVP development.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">üîMulti-Agency Coordination</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">ÔøΩMulti-Agency Coordination</h3>
               <p className="text-gray-700">
                 Experience coordinating with FDA, USDA FSIS, USDA APHIS, EPA, TTB, and CBP. Navigate complex inter-agency requirements efficiently.
               </p>
