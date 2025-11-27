@@ -64,6 +64,16 @@ html {
   line-height: 1.5;
 }
 
+/* Anchor tag reset - prevent browser default blue link colors */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: inherit;
@@ -710,10 +720,20 @@ body {
 /* ==============================================================
    41. HOVER STATES
    ============================================================== */
+/* Background hover utilities */
+.hover\:bg-white:hover { background-color: var(--white); }
+.hover\:bg-primary-navy:hover { background-color: var(--navy-primary); }
 .hover\:bg-secondary-teal:hover { background-color: var(--teal-primary); }
 .hover\:bg-secondary-forestGreen:hover { background-color: var(--teal-forest); }
+
+/* Text hover utilities */
+.hover\:text-white:hover { color: var(--white); }
 .hover\:text-primary-navy:hover { color: var(--navy-primary); }
 .hover\:text-secondary-teal:hover { color: var(--teal-primary); }
+
+/* Border hover utilities */
+.hover\:border-white:hover { border-color: var(--white); }
+.hover\:border-primary-navy:hover { border-color: var(--navy-primary); }
 .hover\:border-secondary-teal:hover { border-color: var(--teal-primary); }
 
 .hover\:shadow-xl:hover { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
@@ -1185,8 +1205,9 @@ body {
 }
 
 .hero-cta-outline:hover {
-  background-color: var(--white);
-  color: var(--navy-primary);
+  background-color: var(--teal-primary);
+  color: var(--white);
+  border-color: var(--teal-primary);
 }
 
 .hero-cta-outline:focus-visible {

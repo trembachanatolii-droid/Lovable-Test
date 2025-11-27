@@ -167,7 +167,7 @@ const Footer: React.FC = () => {
                                                 className={`transition-colors duration-200 text-sm block ${
                                                     link.isAddress
                                                         ? 'cursor-default text-neutral-gray leading-relaxed'
-                                                        : 'hover:text-white'
+                                                        : 'text-neutral-gray hover:text-secondary-teal'
                                                 }`}
                                                 style={link.isAddress ? { pointerEvents: 'none' } : {}}
                                             >
