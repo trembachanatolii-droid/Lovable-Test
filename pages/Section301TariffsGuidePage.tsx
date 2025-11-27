@@ -869,15 +869,15 @@ const Section301TariffsGuidePage: React.FC = () => {
             <ul className="space-y-2 mb-6">
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>Classification optimization</strong> - strategic HTS analysis and first sale valuation strategies</span>
+                <span><strong>Duty savings strategies</strong> through classification optimization, first sale, supply chain restructuring</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>Exclusion request preparation</strong> - comprehensive filings for USTR exclusion processes</span>
+                <span><strong>Exclusion request experience</strong> during historical processes - ready for next round</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>Binding ruling services</strong> - obtain CBP rulings for classification and origin certainty</span>
+                <span><strong>Binding rulings expertise</strong> for classification and origin certainty</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
