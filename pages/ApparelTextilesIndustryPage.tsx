@@ -560,6 +560,134 @@ const ApparelTextilesIndustryPage: React.FC = () => {
         </div>
       </section>
 
+      {/* California Fashion Hub Local Knowledge */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 font-garamond">
+              Deep California Fashion Industry Local Knowledge
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              On-the-ground expertise serving fashion brands throughout the Los Angeles Garment District, San Francisco design community, and California's textile industry
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* LA Fashion District */}
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Los Angeles Fashion & Garment District</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Downtown LA Garment District:</strong> 90+ blocks of textile wholesalers, cut-and-sew operations, fashion showrooms (9th St to Olympic)
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>California Market Center:</strong> Apparel trade shows, permanent showrooms, buyer marketplace
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Santee Alley:</strong> Fashion wholesale hub, sample production, fast fashion sourcing
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Vernon Industrial Zone:</strong> Cut-and-sew facilities, textile finishing, denim processing
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Northern California Fashion */}
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Bay Area & Northern California Fashion</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>San Francisco SoMa:</strong> Tech-fashion startups, sustainable brands, DTC fashion headquarters
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Oakland Fashion District:</strong> Emerging designers, ethical manufacturing, streetwear brands
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Silicon Valley Athleisure:</strong> Performance apparel brands, wearable tech, activewear companies
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Port of Oakland:</strong> Container terminals handling Asian textile imports for NorCal brands
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Apparel Import Logistics */}
+          <div className="bg-primary-navy/5 rounded-lg p-6 mb-8">
+            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">California Apparel Import Infrastructure</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div>
+                <h4 className="font-bold text-primary-navy mb-2">LA/Long Beach Ports</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>Pier 400 - Largest container terminal</li>
+                  <li>Long Beach - Asian apparel gateway</li>
+                  <li>APM, Everport, TraPac terminals</li>
+                  <li>UFLPA inspection facilities</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-primary-navy mb-2">Distribution Centers</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>Carson/Compton - fashion logistics</li>
+                  <li>Inland Empire fulfillment</li>
+                  <li>City of Industry warehouses</li>
+                  <li>Rancho Dominguez textile DCs</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-primary-navy mb-2">CBP Apparel Facilities</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>LA/LB Service Port (textile team)</li>
+                  <li>UFLPA Task Force operations</li>
+                  <li>Apparel classification specialists</li>
+                  <li>Textile quota processing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* California Fashion Cities Served */}
+          <div className="bg-white border border-gray-200 rounded-lg p-6">
+            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">California Fashion Cities We Serve</h3>
+            <p className="text-center text-gray-600 mb-4">Available by appointment throughout California's fashion industry centers</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 text-center text-sm">
+              {[
+                'Los Angeles', 'Long Beach', 'Vernon', 'Commerce', 'Carson', 'Compton',
+                'San Francisco', 'Oakland', 'Berkeley', 'San Jose', 'Palo Alto', 'Santa Monica',
+                'West Hollywood', 'Beverly Hills', 'Burbank', 'Glendale', 'Torrance', 'Irvine',
+                'Costa Mesa', 'Newport Beach', 'San Diego', 'La Jolla', 'Calabasas', 'Pasadena'
+              ].map((city) => (
+                <span key={city} className="bg-gray-100 rounded px-3 py-2 text-gray-700">{city}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">

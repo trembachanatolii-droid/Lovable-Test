@@ -579,6 +579,134 @@ const FoodAgricultureIndustryPage: React.FC = () => {
         </div>
       </section>
 
+      {/* California Agricultural Region Local Knowledge */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 font-garamond">
+              Deep California Agricultural Region Local Knowledge
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              On-the-ground expertise serving agricultural producers and food importers throughout the Central Valley, Napa-Sonoma wine country, and California's farming communities
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Central Valley Agriculture */}
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Central Valley Agricultural Regions</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Sacramento Valley:</strong> Rice production, tomato processing, nut orchards (almonds, walnuts)
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>San Joaquin Valley:</strong> Stone fruits, table grapes, citrus, dairy operations, vegetable production
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Salinas Valley:</strong> "Salad Bowl of the World" - lettuce, spinach, strawberries, broccoli
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Imperial Valley:</strong> Winter vegetables, alfalfa, dates, border agricultural trade
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Wine & Specialty Foods */}
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Wine Country & Specialty Food Regions</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Napa Valley:</strong> Premium wine production, wine import/export compliance, TTB licensing
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Sonoma County:</strong> Sustainable wineries, artisan cheese, specialty food producers
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Paso Robles:</strong> Growing wine region, olive oil production, specialty crops
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Temecula Valley:</strong> Southern California wine country, citrus groves, avocado farms
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Food Import Infrastructure */}
+          <div className="bg-primary-navy/5 rounded-lg p-6 mb-8">
+            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">California Food Import & Agricultural Infrastructure</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div>
+                <h4 className="font-bold text-primary-navy mb-2">Ports of Entry</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>Port of LA/LB - refrigerated cargo</li>
+                  <li>Port of Oakland - produce imports</li>
+                  <li>San Diego Port - Mexico produce</li>
+                  <li>Calexico/Otay Mesa - USDA inspection</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-primary-navy mb-2">Cold Chain & Logistics</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>Los Angeles cold storage facilities</li>
+                  <li>Salinas Valley packing houses</li>
+                  <li>Fresno agricultural distribution</li>
+                  <li>San Diego produce terminals</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-primary-navy mb-2">FDA/USDA Facilities</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>LA FDA District Office</li>
+                  <li>Oakland FDA import operations</li>
+                  <li>USDA APHIS inspection stations</li>
+                  <li>California Dept of Food & Ag</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* California Agricultural Cities Served */}
+          <div className="bg-white border border-gray-200 rounded-lg p-6">
+            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">California Agricultural Cities We Serve</h3>
+            <p className="text-center text-gray-600 mb-4">Available by appointment throughout California's agricultural regions</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 text-center text-sm">
+              {[
+                'Fresno', 'Bakersfield', 'Modesto', 'Stockton', 'Sacramento', 'Salinas',
+                'Napa', 'Sonoma', 'Santa Rosa', 'Paso Robles', 'San Luis Obispo', 'Monterey',
+                'Los Angeles', 'Long Beach', 'San Diego', 'Temecula', 'Riverside', 'Oxnard',
+                'Ventura', 'Santa Barbara', 'Watsonville', 'Gilroy', 'Calabasas', 'El Centro'
+              ].map((city) => (
+                <span key={city} className="bg-gray-100 rounded px-3 py-2 text-gray-700">{city}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
