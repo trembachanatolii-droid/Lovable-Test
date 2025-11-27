@@ -324,34 +324,34 @@ const LosAngelesPortPage: React.FC = () => {
               <div>
                 <h4 className="font-bold text-secondary-teal mb-3">CBP Exam Facilities</h4>
                 <ul className="space-y-2 text-neutral-200 text-sm list-none">
-                  <li>• SSA Terminal - Pier A, Long Beach</li>
-                  <li>• LBCT (Long Beach Container Terminal)</li>
-                  <li>• TraPac Terminal - Port of LA</li>
-                  <li>• APM Terminals - Pier 400</li>
-                  <li>• Everport Terminal Services</li>
-                  <li>• ITS (International Transportation Service)</li>
+                  <li>SSA Terminal - Pier A, Long Beach</li>
+                  <li>LBCT (Long Beach Container Terminal)</li>
+                  <li>TraPac Terminal - Port of LA</li>
+                  <li>APM Terminals - Pier 400</li>
+                  <li>Everport Terminal Services</li>
+                  <li>ITS (International Transportation Service)</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-bold text-secondary-teal mb-3">Common Detention Points</h4>
                 <ul className="space-y-2 text-neutral-200 text-sm list-none">
-                  <li>• X-ray inspection queues (24-72hr delays)</li>
-                  <li>• VACIS exam holds (radiation scanning)</li>
-                  <li>• Intensive exams (full devanning)</li>
-                  <li>• Agriculture inspections (USDA holds)</li>
-                  <li>• FDA detention (food/drug/cosmetics)</li>
-                  <li>• IPR seizures (trademark/copyright)</li>
+                  <li>X-ray inspection queues (24-72hr delays)</li>
+                  <li>VACIS exam holds (radiation scanning)</li>
+                  <li>Intensive exams (full devanning)</li>
+                  <li>Agriculture inspections (USDA holds)</li>
+                  <li>FDA detention (food/drug/cosmetics)</li>
+                  <li>IPR seizures (trademark/copyright)</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-bold text-secondary-teal mb-3">Demurrage Cost Zones</h4>
                 <ul className="space-y-2 text-neutral-200 text-sm list-none">
-                  <li>• Terminal storage: $150-$400/day after free time</li>
-                  <li>• Chassis rental: $75-$125/day</li>
-                  <li>• Per diem penalties escalate daily</li>
-                  <li>• Weekend/holiday surcharges apply</li>
-                  <li>• Long-dwell penalties after 5 days</li>
-                  <li>• We negotiate fee waivers where possible</li>
+                  <li>Terminal storage: $150-$400/day after free time</li>
+                  <li>Chassis rental: $75-$125/day</li>
+                  <li>Per diem penalties escalate daily</li>
+                  <li>Weekend/holiday surcharges apply</li>
+                  <li>Long-dwell penalties after 5 days</li>
+                  <li>We negotiate fee waivers where possible</li>
                 </ul>
               </div>
             </div>

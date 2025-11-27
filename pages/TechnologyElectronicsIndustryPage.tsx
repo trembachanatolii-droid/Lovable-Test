@@ -150,11 +150,11 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold text-primary-navy mb-4">HTS Classification Strategy</h3>
               <ul className="space-y-2 text-gray-700 list-none">
-                <li>• Electronics classification analysis (smartphones, tablets, computers)</li>
-                <li>• Binding ruling requests to CBP</li>
-                <li>• First sale valuation strategies</li>
-                <li>• Section 301 tariff mitigation</li>
-                <li>• Product-specific duty optimization</li>
+                <li>Electronics classification analysis (smartphones, tablets, computers)</li>
+                <li>Binding ruling requests to CBP</li>
+                <li>First sale valuation strategies</li>
+                <li>Section 301 tariff mitigation</li>
+                <li>Product-specific duty optimization</li>
               </ul>
               <a href="#contact" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
                 Learn More →
@@ -166,12 +166,12 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">Export Control Compliance</h3>
               <ul className="space-y-2 text-gray-700 list-none">
-                <li>• ECCN classification for technology products</li>
-                <li>• Encryption registration and reporting (BIS)</li>
-                <li>• Export license applications (EAR)</li>
-                <li>• Entity List screening and compliance</li>
-                <li>• Deemed export programs for R&D teams</li>
-                <li>• Technology Control Plans (TCP)</li>
+                <li>ECCN classification for technology products</li>
+                <li>Encryption registration and reporting (BIS)</li>
+                <li>Export license applications (EAR)</li>
+                <li>Entity List screening and compliance</li>
+                <li>Deemed export programs for R&D teams</li>
+                <li>Technology Control Plans (TCP)</li>
               </ul>
               <a href="#export-controls-sanctions" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
                 Explore Export Controls →
@@ -183,12 +183,12 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">Semiconductor Supply Chain</h3>
               <ul className="space-y-2 text-gray-700 list-none">
-                <li>• Entity List impact analysis</li>
-                <li>• De minimis rule calculations</li>
-                <li>• Supply chain restructuring strategies</li>
-                <li>• CHIPS Act compliance and incentives</li>
-                <li>• Country of origin determinations</li>
-                <li>• Alternative sourcing analysis</li>
+                <li>Entity List impact analysis</li>
+                <li>De minimis rule calculations</li>
+                <li>Supply chain restructuring strategies</li>
+                <li>CHIPS Act compliance and incentives</li>
+                <li>Country of origin determinations</li>
+                <li>Alternative sourcing analysis</li>
               </ul>
               <a href="#contact" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
                 Discuss Your Supply Chain →
@@ -200,11 +200,11 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">Import Compliance Programs</h3>
               <ul className="space-y-2 text-gray-700 list-none">
-                <li>• Automated classification systems</li>
-                <li>• Scalable compliance for high-volume imports</li>
-                <li>• Integration with ERP systems (SAP, Oracle)</li>
-                <li>• Audit defense preparation</li>
-                <li>• Prior disclosure strategy</li>
+                <li>Automated classification systems</li>
+                <li>Scalable compliance for high-volume imports</li>
+                <li>Integration with ERP systems (SAP, Oracle)</li>
+                <li>Audit defense preparation</li>
+                <li>Prior disclosure strategy</li>
               </ul>
               <a href="#regulatory-compliance-advisory" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
                 Build Your Program →
@@ -216,11 +216,11 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">CBP Defense & Litigation</h3>
               <ul className="space-y-2 text-gray-700 list-none">
-                <li>• Focused assessment defense</li>
-                <li>• Classification disputes (CIT litigation)</li>
-                <li>• Section 301 exclusion appeals</li>
-                <li>• Penalty mitigation for tech companies</li>
-                <li>• Seizure release (counterfeit concerns)</li>
+                <li>Focused assessment defense</li>
+                <li>Classification disputes (CIT litigation)</li>
+                <li>Section 301 exclusion appeals</li>
+                <li>Penalty mitigation for tech companies</li>
+                <li>Seizure release (counterfeit concerns)</li>
               </ul>
               <a href="#customs-defense-litigation" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
                 Protect Your Business →
@@ -232,11 +232,11 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">Duty Savings Strategies</h3>
               <ul className="space-y-2 text-gray-700 list-none">
-                <li>• Foreign Trade Zone utilization</li>
-                <li>• Drawback claims for returned products</li>
-                <li>• First sale valuation programs</li>
-                <li>• FTA qualification (USMCA, KORUS)</li>
-                <li>• Section 9817 temporary imports</li>
+                <li>Foreign Trade Zone utilization</li>
+                <li>Drawback claims for returned products</li>
+                <li>First sale valuation programs</li>
+                <li>FTA qualification (USMCA, KORUS)</li>
+                <li>Section 9817 temporary imports</li>
               </ul>
               <a href="#contact" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
                 Maximize Savings →
