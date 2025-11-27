@@ -60,7 +60,7 @@ const RegulatoryCompliancePage: React.FC = () => {
           <p className="hero-subtitle">
             Federal trade compliance attorney. Import compliance programs, export compliance programs, trade compliance audits, prior disclosure customs, voluntary self disclosure export, customs record keeping, customs ruling requests & trade compliance for manufacturers. Proactive protection for California & USA businesses.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Free Compliance Consultation</a>
             <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>

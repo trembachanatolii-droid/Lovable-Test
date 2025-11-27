@@ -60,7 +60,7 @@ const ExportControlsPage: React.FC = () => {
           <p className="hero-subtitle">
             ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export regulations, dual use items compliance, deemed exports & restricted party screening. Expert guidance for California & USA tech companies, defense contractors & manufacturers.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Free Export Controls Consultation</a>
             <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>
