@@ -29,7 +29,7 @@ const NotFoundPage: React.FC = () => {
           We couldn't find the page you're looking for. It may have been moved, deleted, or the URL may be incorrect. As California's dedicated international trade law firm, we're committed to helping you navigate not just complex customs matters, but also our website.
         </p>
         <p className="text-base text-text-secondary mb-4">
-          Whether you're facing a CBP audit, dealing with a seized shipment, or need guidance on Section 301 tariffs, our legal team has successfully defended over 200 CBP enforcement actions with a 95% seizure release rate. With over $100 million in penalties mitigated for California importers, we understand the urgency of trade compliance issues.
+          Whether you're facing a CBP audit, dealing with a seized shipment, or need guidance on Section 301 tariffs, our legal team provides experienced representation in CBP enforcement actions. We understand the urgency of trade compliance issues for California importers.
         </p>
         <p className="text-base text-text-secondary mb-8">
           Explore our practice areas below to find the resources you need, or contact us directly for a free consultation. Our 24-hour emergency response team handles time-sensitive matters at the Ports of Los Angeles, Long Beach, and Oakland.
@@ -147,8 +147,8 @@ const NotFoundPage: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#success-stories" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
-                Success Stories - Client results and case studies
+              <a href="#practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+                Practice Areas - Comprehensive trade law services
               </a>
             </li>
           </ul>

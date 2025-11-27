@@ -218,7 +218,7 @@ const ConsultationBookingPage: React.FC = () => {
                                 <p><strong className="text-primary-navy">No-Obligation Assessment:</strong> Our initial consultation is completely free. You'll leave with a clear understanding of your legal position and recommended next steps.</p>
                             </div>
                             <div>
-                                <p className="mb-2"><strong className="text-primary-navy">Expert Analysis:</strong> With 200+ CBP matters defended and $100M+ in penalties mitigated, we provide actionable insights backed by experience.</p>
+                                <p className="mb-2"><strong className="text-primary-navy">Expert Analysis:</strong> Our experienced trade attorneys provide actionable insights and strategic guidance for your customs and trade compliance matters.</p>
                                 <p><strong className="text-primary-navy">Same-Day Scheduling:</strong> For urgent matters involving seizures, detentions, or imminent deadlines, we offer expedited scheduling and 24-hour emergency response.</p>
                             </div>
                         </div>

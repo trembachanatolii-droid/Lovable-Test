@@ -160,7 +160,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
             <div className="mt-6 p-4 bg-green-50 border-l-4 border-green-600">
               <p className="text-gray-700">
-                <strong>Our FDA Compliance Record:</strong> We have successfully secured release of $75M+ in detained food cargo and assisted 300+ food importers in achieving FDA admissibility. Zero food safety incidents among clients with our FSVP programs.
+                <strong>Our FDA Compliance Approach:</strong> We provide comprehensive FDA compliance guidance for California food importers, helping secure release of detained cargo and achieve FDA admissibility. Our FSVP programs are designed to prevent compliance issues before they occur.
               </p>
             </div>
           </div>
@@ -361,70 +361,6 @@ const FoodAgricultureIndustryPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Case Study */}
-      <section className="py-16 px-4 bg-gradient-to-br from-green-100 to-blue-100">
-        <div className="container-custom max-w-4xl">
-          <div className="text-center mb-8">
-            <div className="inline-block bg-green-700 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-              SUCCESS STORY
-            </div>
-            <h2 className="text-3xl font-bold text-primary-navy mb-4">
-              California Organic Food Importer: FDA Refusal Overturned, $1.3M Released
-            </h2>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8 mb-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-700 mb-2">$1.3M</div>
-                <div className="text-gray-600">Cargo Value Released</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-700 mb-2">14 Days</div>
-                <div className="text-gray-600">Refusal to Release</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-700 mb-2">100%</div>
-                <div className="text-gray-600">Admissibility Success</div>
-              </div>
-            </div>
-
-            <div className="space-y-4 text-gray-700">
-              <div>
-                <h3 className="font-bold text-primary-navy mb-2">Challenge:</h3>
-                <p>
-                  San Francisco-based organic foods importer had $1.3M shipment of quinoa and chia seeds refused by FDA at Oakland port. FDA cited "Appears to contain a pesticide" based on OASIS screening. Company faced supply disruption for key retail accounts and potential loss of organic certification if pesticides confirmed.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-bold text-primary-navy mb-2">Strategy:</h3>
-                <ul className="list-disc ml-6 space-y-1">
-                  <li>Immediately requested FDA testimony and appeal rights under 21 USC �381(a)</li>
-                  <li>Coordinated expedited pesticide residue testing at FDA-approved laboratory</li>
-                  <li>Obtained organic certification documentation from Peruvian suppliers</li>
-                  <li>Compiled complete chain of custody showing no pesticide application</li>
-                  <li>Submitted detailed admissibility package with test results, certifications, and supplier declarations</li>
-                  <li>Negotiated with FDA district office for expedited review given perishability concerns</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-bold text-primary-navy mb-2">Outcome:</h3>
-                <ul className="list-disc ml-6 space-y-1">
-                  <li>Independent lab testing confirmed no detectable pesticide residues</li>
-                  <li>FDA reversed refusal decision and admitted shipment after 14 days</li>
-                  <li>100% of cargo released with no destruction or re-export</li>
-                  <li>Implemented enhanced FSVP with pesticide testing protocols</li>
-                  <li>Established pre-clearance testing program preventing future detentions</li>
-                  <li>No subsequent FDA refusals during 3-year period</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us */}
       <section className="py-16 px-4">
         <div className="container-custom max-w-5xl">
@@ -443,7 +379,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-navy mb-3">FDA Detention Defense Excellence</h3>
               <p className="text-gray-700">
-                95% success rate securing release of detained food cargo. $75M+ in food products successfully admitted. Proven strategies for overturning FDA refusals.
+                Experienced representation for FDA refusals and food cargo detentions. Proven strategies for overturning FDA refusals and securing release of detained food products.
               </p>
             </div>
 
@@ -601,8 +537,8 @@ const FoodAgricultureIndustryPage: React.FC = () => {
           <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
             <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">Helpful Guides for Food Companies</h3>
             <div className="grid md:grid-cols-4 gap-4">
-              <a href="#article/fda-fsma-compliance" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">FSMA Guide</h4>
+              <a href="#article/california-food-import-fda-usda-compliance" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">FDA Import Guide</h4>
                 <p className="text-xs text-gray-600">FDA compliance basics</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -610,9 +546,9 @@ const FoodAgricultureIndustryPage: React.FC = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#article/food-labeling" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">Labeling Guide</h4>
-                <p className="text-xs text-gray-600">FDA label requirements</p>
+              <a href="#regulatory-compliance-advisory" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">Compliance Services</h4>
+                <p className="text-xs text-gray-600">Regulatory guidance</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>

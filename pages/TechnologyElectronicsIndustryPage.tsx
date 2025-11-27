@@ -291,69 +291,6 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Case Study */}
-      <section className="py-16 px-4 bg-gradient-to-br from-secondary-teal/10 to-primary-navy/10">
-        <div className="container-custom max-w-4xl">
-          <div className="text-center mb-8">
-            <div className="inline-block bg-secondary-gold text-primary-navy px-4 py-2 rounded-full text-sm font-bold mb-4">
-              SUCCESS STORY
-            </div>
-            <h2 className="text-3xl font-bold text-primary-navy mb-4">
-              Silicon Valley Tech Company: $4.2M Annual Duty Savings
-            </h2>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8 mb-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secondary-teal mb-2">$4.2M</div>
-                <div className="text-gray-600">Annual Savings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secondary-teal mb-2">3 Months</div>
-                <div className="text-gray-600">Implementation Time</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secondary-teal mb-2">Zero</div>
-                <div className="text-gray-600">CBP Challenges</div>
-              </div>
-            </div>
-
-            <div className="space-y-4 text-gray-700">
-              <div>
-                <h3 className="font-bold text-primary-navy mb-2">Challenge:</h3>
-                <p>
-                  California-based networking equipment manufacturer importing $150M annually from Chinese contract manufacturers. Products classified under HTS 8517 at 2.5% duty rate plus 25% Section 301 tariffs = 27.5% effective rate. Company facing $41M+ annual duty burden.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-bold text-primary-navy mb-2">Strategy:</h3>
-                <ul className="list-disc ml-6 space-y-1">
-                  <li>Conducted comprehensive classification analysis of 200+ product SKUs</li>
-                  <li>Identified 40% of products eligible for alternative classifications (8471, 8473) with duty-free treatment</li>
-                  <li>Restructured supply chain to source 30% of components from Vietnam and Malaysia (Section 301 exempt)</li>
-                  <li>Implemented first sale valuation program reducing dutiable value by 15%</li>
-                  <li>Obtained binding rulings from CBP for all new classifications</li>
-                  <li>Established Foreign Trade Zone for final assembly operations</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-bold text-primary-navy mb-2">Outcome:</h3>
-                <ul className="list-disc ml-6 space-y-1">
-                  <li>$4.2M annual duty savings (10.3% reduction in total duty burden)</li>
-                  <li>All binding rulings approved by CBP within 120 days</li>
-                  <li>No focused assessments or audits during 4-year period</li>
-                  <li>Scalable compliance program accommodating 50+ new products annually</li>
-                  <li>Enhanced export control compliance for EAR-controlled products</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us */}
       <section className="py-16 px-4">
         <div className="container-custom max-w-5xl">

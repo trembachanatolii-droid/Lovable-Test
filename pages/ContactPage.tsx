@@ -129,7 +129,7 @@ const ContactPage: React.FC = () => {
                   <div className="bg-white p-6 rounded-lg shadow-sm">
                       <h3 className="text-xl font-bold text-secondary-teal mb-3">UFLPA Detention Defense</h3>
                       <p className="text-gray-700">
-                          CBP has detained your apparel, solar, or electronics shipment under the Uyghur Forced Labor Prevention Act. Time is critical—our proven UFLPA release strategies have achieved 98% success rate. Contact us immediately upon receiving detention notice to begin cargo release process.
+                          CBP has detained your apparel, solar, or electronics shipment under the Uyghur Forced Labor Prevention Act. Time is critical—our UFLPA release strategies are designed to maximize your chance of cargo release. Contact us immediately upon receiving detention notice to begin cargo release process.
                       </p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -167,7 +167,7 @@ const ContactPage: React.FC = () => {
                       <div>
                           <h3 className="text-xl font-bold text-primary-navy mb-2">Strategic Recommendation</h3>
                           <p className="text-gray-700">
-                              Based on our experience with 200+ CBP audits, focused assessments, and investigations, we outline specific strategies tailored to your circumstances. You receive clear explanation of timing, process, expected outcomes, and potential risks.
+                              Based on our experience with CBP audits, focused assessments, and investigations, we outline specific strategies tailored to your circumstances. You receive clear explanation of timing, process, expected outcomes, and potential risks.
                           </p>
                       </div>
                   </div>

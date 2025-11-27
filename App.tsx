@@ -29,7 +29,6 @@ const TariffsClassificationGuidePage = lazy(() => import('./pages/TariffsClassif
 const SupplyChainESGGuidePage = lazy(() => import('./pages/SupplyChainESGGuidePage'));
 const EcommerceDigitalTradeGuidePage = lazy(() => import('./pages/EcommerceDigitalTradeGuidePage'));
 const ResourcesHubPage = lazy(() => import('./pages/ResourcesHubPage'));
-const SuccessStoriesPage = lazy(() => import('./pages/SuccessStoriesPage'));
 const GlossaryPage = lazy(() => import('./pages/GlossaryPage'));
 const TechnologyElectronicsIndustryPage = lazy(() => import('./pages/TechnologyElectronicsIndustryPage'));
 const ApparelTextilesIndustryPage = lazy(() => import('./pages/ApparelTextilesIndustryPage'));
@@ -158,9 +157,6 @@ const App: React.FC = () => {
         break;
       case 'ecommerce-digital-trade-guide':
         content = <EcommerceDigitalTradeGuidePage />;
-        break;
-      case 'success-stories':
-        content = <SuccessStoriesPage />;
         break;
       case 'trade-law-glossary':
         content = <GlossaryPage />;
