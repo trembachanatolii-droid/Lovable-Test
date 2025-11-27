@@ -411,6 +411,108 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Related Services & Resources */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container-custom max-w-5xl">
+          <h2 className="text-3xl font-bold text-primary-navy mb-8 text-center">
+            Related Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Legal Services */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Legal Services</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#export-controls-sanctions" className="text-secondary-teal hover:text-primary-navy font-medium">
+                    → Export Controls & Sanctions
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">ITAR/EAR compliance for tech</p>
+                </li>
+                <li>
+                  <a href="#customs-defense-litigation" className="text-secondary-teal hover:text-primary-navy font-medium">
+                    → Customs Defense & Litigation
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Section 301 disputes defense</p>
+                </li>
+                <li>
+                  <a href="#regulatory-compliance-advisory" className="text-secondary-teal hover:text-primary-navy font-medium">
+                    → Trade Compliance Programs
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Compliance program design</p>
+                </li>
+                <li>
+                  <a href="#practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium">
+                    → All Practice Areas
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* California Locations */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Serving Tech Hubs</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium">
+                    → San Francisco & Bay Area
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Silicon Valley tech expertise</p>
+                </li>
+                <li>
+                  <a href="#los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium">
+                    → Los Angeles & Long Beach Port
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Hardware imports through LA/LB</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Other Industries */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Other Industries</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium">
+                    → Apparel & Textiles
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Wearable tech compliance</p>
+                </li>
+                <li>
+                  <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium">
+                    → Food & Agriculture
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">AgTech trade compliance</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Helpful Guides */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">Helpful Guides for Tech Companies</h3>
+            <div className="grid md:grid-cols-4 gap-4">
+              <a href="#section-301-tariffs-guide" className="block p-4 bg-gray-50 rounded-lg hover:bg-secondary-teal/10 transition-colors text-center">
+                <h4 className="font-bold text-primary-navy mb-1">Section 301 Guide</h4>
+                <p className="text-xs text-gray-600">China tariff strategies</p>
+              </a>
+              <a href="#article/ear-compliance" className="block p-4 bg-gray-50 rounded-lg hover:bg-secondary-teal/10 transition-colors text-center">
+                <h4 className="font-bold text-primary-navy mb-1">EAR Compliance</h4>
+                <p className="text-xs text-gray-600">Export control basics</p>
+              </a>
+              <a href="#tariffs-classification-guide" className="block p-4 bg-gray-50 rounded-lg hover:bg-secondary-teal/10 transition-colors text-center">
+                <h4 className="font-bold text-primary-navy mb-1">HTS Classification</h4>
+                <p className="text-xs text-gray-600">Tech classification tips</p>
+              </a>
+              <a href="#faq-center" className="block p-4 bg-gray-50 rounded-lg hover:bg-secondary-teal/10 transition-colors text-center">
+                <h4 className="font-bold text-primary-navy mb-1">FAQ Center</h4>
+                <p className="text-xs text-gray-600">Tech trade questions</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-br from-primary-navy to-secondary-teal">
         <div className="container-custom max-w-4xl text-center">

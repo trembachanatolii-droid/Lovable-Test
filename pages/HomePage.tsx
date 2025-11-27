@@ -225,6 +225,102 @@ const HomePage: React.FC = () => {
         <EvaluationForm />
       </Suspense>
 
+      {/* California Service Areas & Industries */}
+      <section className="py-20 px-6 bg-neutral-50" aria-labelledby="service-areas-heading">
+        <div className="max-w-[1376px] mx-auto">
+          <div className="text-center mb-12">
+            <h2 id="service-areas-heading" className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-4">
+              Serving California & Nationwide
+            </h2>
+            <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+              Expert international trade and customs legal services for California businesses and nationwide clients.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* California Port Locations */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">California Port Locations</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Los Angeles & Long Beach Port
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Nation's busiest port complex</p>
+                </li>
+                <li>
+                  <a href="#bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> San Francisco & Bay Area
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Port of Oakland, Silicon Valley</p>
+                </li>
+              </ul>
+              <p className="text-sm text-text-secondary mt-4 italic">
+                Serving all California cities by appointment
+              </p>
+            </div>
+
+            {/* Industry Expertise */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Industry Expertise</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Technology & Electronics
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Export controls, Section 301</p>
+                </li>
+                <li>
+                  <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Apparel & Textiles
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">UFLPA, origin compliance</p>
+                </li>
+                <li>
+                  <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Food & Agriculture
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">FDA/USDA import compliance</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Helpful Resources */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Resources</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#section-301-tariffs-guide" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Section 301 Tariffs Guide
+                  </a>
+                </li>
+                <li>
+                  <a href="#uflpa-compliance-guide" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> UFLPA Compliance Guide
+                  </a>
+                </li>
+                <li>
+                  <a href="#tariffs-classification-guide" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Tariff Classification Guide
+                  </a>
+                </li>
+                <li>
+                  <a href="#faq-center" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> FAQ Center
+                  </a>
+                </li>
+                <li>
+                  <a href="#glossary" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Trade Law Glossary
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Recent News Section */}
       <section id="news-section" className="bg-white" aria-labelledby="news-heading" style={{ overflow: 'hidden' }}>
         <div className="container" style={{ maxWidth: '1376px', margin: '0 auto', padding: '4rem 1.25rem' }}>
