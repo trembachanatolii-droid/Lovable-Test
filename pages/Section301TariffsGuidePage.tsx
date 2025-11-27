@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
+import EvaluationForm from '../components/EvaluationForm';
 
 const Section301TariffsGuidePage: React.FC = () => {
+  // Scroll to section function for in-page navigation
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useMeta({
     title: 'Section 301 Tariffs CA | China Trade Duties & Mitigation',
     description: 'Complete Section 301 tariffs guide for California importers: Lists 1-4 coverage, exclusion strategies, HTS classification optimization, first sale valuation, supply chain restructuring, tariff engineering. Expert China trade compliance from international trade attorneys. $370B+ goods affected.',
@@ -46,7 +58,7 @@ const Section301TariffsGuidePage: React.FC = () => {
             Strategic compliance and mitigation for California importers navigating China trade tariffs
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#overview" className="hero-cta">Learn More</a>
+            <button onClick={() => scrollToSection('overview')} className="hero-cta">Learn More</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>
@@ -57,12 +69,12 @@ const Section301TariffsGuidePage: React.FC = () => {
         <div className="container-custom max-w-5xl">
           <h2 className="text-xl font-bold text-primary-navy mb-4 text-center">Jump to Section</h2>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
-            <a href="#overview" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">What is Section 301?</a>
-            <a href="#lists" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">Lists 1-4 Breakdown</a>
-            <a href="#applicability" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">Is My Product Covered?</a>
-            <a href="#mitigation" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">Mitigation Strategies</a>
-            <a href="#exclusions" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">Exclusions Process</a>
-            <a href="#compliance" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">Compliance Best Practices</a>
+            <button onClick={() => scrollToSection('overview')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">What is Section 301?</button>
+            <button onClick={() => scrollToSection('lists')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Lists 1-4 Breakdown</button>
+            <button onClick={() => scrollToSection('applicability')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Is My Product Covered?</button>
+            <button onClick={() => scrollToSection('mitigation')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Mitigation Strategies</button>
+            <button onClick={() => scrollToSection('exclusions')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Exclusions Process</button>
+            <button onClick={() => scrollToSection('compliance')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Compliance Best Practices</button>
           </div>
         </div>
       </section>
@@ -857,15 +869,15 @@ const Section301TariffsGuidePage: React.FC = () => {
             <ul className="space-y-2 mb-6">
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>$3-15M+ duty savings achieved</strong> through classification optimization, first sale, supply chain restructuring</span>
+                <span><strong>Classification optimization</strong> - strategic HTS analysis and first sale valuation strategies</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>50+ successful exclusion requests</strong> during historical processes - ready for next round</span>
+                <span><strong>Exclusion request preparation</strong> - comprehensive filings for USTR exclusion processes</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>100+ binding rulings obtained</strong> for classification and origin certainty</span>
+                <span><strong>Binding ruling services</strong> - obtain CBP rulings for classification and origin certainty</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
@@ -894,6 +906,9 @@ const Section301TariffsGuidePage: React.FC = () => {
 
         </div>
       </article>
+
+      {/* Evaluation Form */}
+      <EvaluationForm theme="light" />
     </div>
   );
 };

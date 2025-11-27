@@ -7,6 +7,14 @@ import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
 
 const EcommerceDigitalTradeGuidePage: React.FC = () => {
+  // Scroll to section function for in-page navigation
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   useMeta({
     title: 'CA Ecommerce Import | Online Sellers Customs & Digital Trade',
     description: 'California ecommerce import & online sellers customs compliance. Digital trade law, Section 321, data export controls for CA/USA retailers. Call 631-746-8290.',
@@ -73,7 +81,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
             Essential guide to ecommerce import rules, online seller customs compliance, digital trade law, and data transfer export controls for California businesses.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#ecommerce-import-rules" className="hero-cta">Learn More</a>
+            <button onClick={() => scrollToSection('ecommerce-import-rules')} className="hero-cta">Learn More</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>

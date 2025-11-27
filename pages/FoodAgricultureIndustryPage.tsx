@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../components/Button';
+import EvaluationForm from '../components/EvaluationForm';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema } from '../utils/seo';
 
@@ -598,6 +599,9 @@ const FoodAgricultureIndustryPage: React.FC = () => {
           </p>
         </div>
       </section>
+
+      {/* Evaluation Form */}
+      <EvaluationForm theme="light" />
     </div>
   );
 };

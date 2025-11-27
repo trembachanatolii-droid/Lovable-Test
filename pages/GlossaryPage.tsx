@@ -4,6 +4,14 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } fr
 import EvaluationForm from '../components/EvaluationForm';
 
 const GlossaryPage: React.FC = () => {
+  // Scroll to category function for in-page navigation
+  const scrollToCategory = (categoryIndex: number) => {
+    const element = document.getElementById(`category-${categoryIndex}`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -590,7 +598,7 @@ const GlossaryPage: React.FC = () => {
             Comprehensive definitions of customs, import/export, and trade compliance terms used in California international trade law.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#category-0" className="hero-cta">Browse Terms</a>
+            <button onClick={() => scrollToCategory(0)} className="hero-cta">Browse Terms</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>
@@ -627,14 +635,15 @@ const GlossaryPage: React.FC = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {glossaryTerms.map((category, index) => (
-              <a
+              <button
                 key={index}
-                href={`#category-${index}`}
-                className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-secondary-teal"
+                onClick={() => scrollToCategory(index)}
+                className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-secondary-teal text-left cursor-pointer"
+                type="button"
               >
                 <h3 className="font-semibold text-primary-navy">{category.category}</h3>
                 <p className="text-sm text-gray-600 mt-1">{category.terms.length} terms</p>
-              </a>
+              </button>
             ))}
           </div>
         </div>

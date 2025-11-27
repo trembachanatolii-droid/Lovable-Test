@@ -129,7 +129,7 @@ const ArticleCTA: React.FC<ArticleCTAProps> = ({ topic = 'this matter', variant 
         {/* Additional Trust Signal */}
         <div className="mt-6 pt-6 border-t border-gray-200">
           <p className="text-sm text-text-secondary text-center md:text-left">
-            <strong className="text-primary-navy">Proven Results:</strong> $100M+ in penalties mitigated • 95% seizure release rate • 200+ CBP audits defended
+            <strong className="text-primary-navy">Dedicated Advocacy:</strong> Comprehensive customs defense and trade compliance representation for California importers
           </p>
         </div>
       </div>

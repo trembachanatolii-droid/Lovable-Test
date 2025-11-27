@@ -100,7 +100,7 @@ const LosAngelesPortPage: React.FC = () => {
             <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Trade Litigation Experience</h3>
               <p className="text-text-secondary leading-relaxed">
-                As a California port customs lawyer, we've litigated classification disputes, AD/CVD scope rulings, and penalty cases through the U.S. Court of International Trade with proven results.
+                As a California port customs lawyer, we've litigated classification disputes, AD/CVD scope rulings, and penalty cases through the U.S. Court of International Trade.
               </p>
             </div>
           </div>

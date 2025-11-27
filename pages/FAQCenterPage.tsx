@@ -43,7 +43,7 @@ const FAQCenterPage: React.FC = () => {
         },
         {
           question: 'What is a binding ruling and when should I request one?',
-          answer: 'A binding ruling is an official written determination from CBP on the tariff classification, country of origin, or other customs treatment of specific merchandise. Binding rulings are: (1) Valid for 6 years and binding on all CBP ports; (2) Provide certainty on duty rates and regulatory treatment; (3) Protect against penalties if you rely on the ruling in good faith. Request binding rulings when: importing new products with uncertain classification; planning major purchases where duty savings are significant; facing potential CBP challenges on current classification; or needing documentation for internal approvals. Rulings typically take 30-120 days. Experienced customs attorneys draft ruling requests with detailed technical descriptions and legal analysis to maximize favorable outcomes.',
+          answer: 'A binding ruling is an official written determination from CBP on the tariff classification, country of origin, or other customs treatment of specific merchandise. Binding rulings are: (1) Valid for 6 years and binding on all CBP ports; (2) Provide certainty on duty rates and regulatory treatment; (3) Protect against penalties if you rely on the ruling in good faith. Request binding rulings when: importing new products with uncertain classification; planning major purchases where duty savings are significant; facing potential CBP challenges on current classification; or needing documentation for internal approvals. Rulings typically take 30-120 days. Experienced customs attorneys draft ruling requests with detailed technical descriptions and legal analysis to support your classification position.',
           link: { text: 'Binding Ruling Services', url: '#regulatory-compliance-advisory' },
         },
         {
@@ -208,7 +208,7 @@ const FAQCenterPage: React.FC = () => {
         },
         {
           question: 'What happens if CBP denies my USMCA preferential tariff claim?',
-          answer: 'CBP can deny USMCA claims and assess full (non-preferential) duty rates if: certification is invalid or incomplete; goods do not meet Rules of Origin; importer cannot provide supporting documentation; or CBP origin verification reveals non-compliance. When CBP denies USMCA claim: (1) CBP issues CF-29 proposing rate advance to full duty; (2) Importer has 30 days to respond with evidence; (3) If claim sustained, CBP liquidates entry at higher duty rate; (4) Importer must pay additional duties plus interest. Response options: (1) Provide additional documentation proving origin (supplier affidavits, manufacturing records, material sourcing evidence); (2) Obtain corrected certification from supplier if original was defective; (3) Challenge CBP determination through formal protest. For California importers: denials often result from incomplete certifications or insufficient documentation - maintain robust origin files and work with suppliers to ensure accurate certifications. If protest denied, can escalate to Court of International Trade litigation. We have recovered millions in denied USMCA claims through effective administrative and judicial challenges.',
+          answer: 'CBP can deny USMCA claims and assess full (non-preferential) duty rates if: certification is invalid or incomplete; goods do not meet Rules of Origin; importer cannot provide supporting documentation; or CBP origin verification reveals non-compliance. When CBP denies USMCA claim: (1) CBP issues CF-29 proposing rate advance to full duty; (2) Importer has 30 days to respond with evidence; (3) If claim sustained, CBP liquidates entry at higher duty rate; (4) Importer must pay additional duties plus interest. Response options: (1) Provide additional documentation proving origin (supplier affidavits, manufacturing records, material sourcing evidence); (2) Obtain corrected certification from supplier if original was defective; (3) Challenge CBP determination through formal protest. For California importers: denials often result from incomplete certifications or insufficient documentation - maintain robust origin files and work with suppliers to ensure accurate certifications. If protest denied, can escalate to Court of International Trade litigation.',
           link: { text: 'USMCA Claim Defense', url: '#customs-defense-litigation' },
         },
         {
@@ -233,7 +233,7 @@ const FAQCenterPage: React.FC = () => {
         },
         {
           question: 'What is an AD/CVD evasion investigation and how should I respond?',
-          answer: 'AD/CVD evasion occurs when importers attempt to avoid duties through: transshipment (routing goods through third countries to disguise origin); minor alterations (minimal processing to claim product is outside scope); misclassification; or false country of origin claims. CBP Enforce and Protect Act (EAPA) authorizes investigations into evasion allegations. EAPA investigation process: (1) Allegation filed (by domestic industry, CBP self-initiation, or other party); (2) CBP investigates (reviews entry data, issues questionnaires, conducts verifications, performs factory visits); (3) CBP makes evasion determination (typically within 300 days); (4) If evasion found: CBP extends AD/CVD orders to cover evaded entries, assesses duties retroactively, and may impose penalties. For California importers: EAPA investigations are serious - potential liability can reach millions in retroactive duties. Effective response requires: immediate engagement with experienced counsel; comprehensive documentation of supply chain and manufacturing; cooperation with CBP investigation; submission of detailed factual and legal arguments. We have successfully defended 100+ EAPA investigations with 85% favorable outcomes.',
+          answer: 'AD/CVD evasion occurs when importers attempt to avoid duties through: transshipment (routing goods through third countries to disguise origin); minor alterations (minimal processing to claim product is outside scope); misclassification; or false country of origin claims. CBP Enforce and Protect Act (EAPA) authorizes investigations into evasion allegations. EAPA investigation process: (1) Allegation filed (by domestic industry, CBP self-initiation, or other party); (2) CBP investigates (reviews entry data, issues questionnaires, conducts verifications, performs factory visits); (3) CBP makes evasion determination (typically within 300 days); (4) If evasion found: CBP extends AD/CVD orders to cover evaded entries, assesses duties retroactively, and may impose penalties. For California importers: EAPA investigations are serious - potential liability can reach millions in retroactive duties. Effective response requires: immediate engagement with experienced counsel; comprehensive documentation of supply chain and manufacturing; cooperation with CBP investigation; submission of detailed factual and legal arguments.',
           link: { text: 'EAPA Investigation Defense', url: '#customs-defense-litigation' },
         },
       ],
@@ -300,6 +300,14 @@ const FAQCenterPage: React.FC = () => {
     return openFAQs[`${categoryIndex}-${faqIndex}`] || false;
   };
 
+  // Scroll to category function for in-page navigation
+  const scrollToCategory = (categoryIndex: number) => {
+    const element = document.getElementById(`category-${categoryIndex}`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -328,7 +336,7 @@ const FAQCenterPage: React.FC = () => {
             Get answers to common questions about customs compliance, import/export regulations, UFLPA, export controls, and California trade law.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#category-0" className="hero-cta">Browse FAQs</a>
+            <button onClick={() => scrollToCategory(0)} className="hero-cta">Browse FAQs</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Ask a Question</a>
           </div>
         </div>
@@ -365,10 +373,11 @@ const FAQCenterPage: React.FC = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {faqCategories.map((category, index) => (
-              <a
+              <button
                 key={index}
-                href={`#category-${index}`}
-                className="card-link group relative overflow-hidden"
+                onClick={() => scrollToCategory(index)}
+                className="card-link group relative overflow-hidden text-left"
+                type="button"
               >
                 <h3 className="font-semibold text-primary-navy mb-1">{category.category}</h3>
                 <p className="text-sm text-gray-600">{category.faqs.length} questions</p>
@@ -377,7 +386,7 @@ const FAQCenterPage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </button>
             ))}
           </div>
         </div>
