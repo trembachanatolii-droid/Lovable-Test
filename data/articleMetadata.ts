@@ -10,6 +10,11 @@ export interface ArticleMetadataItem {
 }
 
 export const articleMetadata: Record<string, ArticleMetadataItem> = {
+  // November 27, 2025 (3 articles)
+  'ieepa-tariff-constitutional-challenge-california': { date: 'NOVEMBER 27, 2025', isoDate: '2025-11-27', readTime: '6 MIN READ' },
+  'section-232-trucks-tariffs-california': { date: 'NOVEMBER 27, 2025', isoDate: '2025-11-27', readTime: '6 MIN READ' },
+  'us-china-kuala-lumpur-trade-agreement-california': { date: 'NOVEMBER 27, 2025', isoDate: '2025-11-27', readTime: '6 MIN READ' },
+
   // November 26, 2025 (5 articles)
   'tariff-classification': { date: 'NOVEMBER 26, 2025', isoDate: '2025-11-26', readTime: '5 MIN READ' },
   'cbp-focused-assessments': { date: 'NOVEMBER 26, 2025', isoDate: '2025-11-26', readTime: '6 MIN READ' },
@@ -148,6 +153,11 @@ export const formatDateForDisplay = (date: string): string => {
 // Get category based on article ID (simplified mapping)
 export const getArticleCategory = (articleId: string): string => {
   const categoryMap: Record<string, string> = {
+    // November 27, 2025 Articles
+    'ieepa-tariff-constitutional-challenge-california': 'CUSTOMS LITIGATION',
+    'section-232-trucks-tariffs-california': 'TRADE POLICY',
+    'us-china-kuala-lumpur-trade-agreement-california': 'TRADE POLICY',
+
     // Customs Litigation
     'tariff-classification': 'CUSTOMS LITIGATION',
     'customs-penalties-1592': 'CUSTOMS LITIGATION',
