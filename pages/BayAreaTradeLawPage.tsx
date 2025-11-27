@@ -46,13 +46,13 @@ const BayAreaTradeLawPage: React.FC = () => {
           <img
             src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1920&auto=format&fit=crop"
             alt="San Francisco Bay Area skyline and Golden Gate Bridge representing tech innovation"
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-cover opacity-50"
             loading="eager"
             decoding="async"
             width="1920"
             height="1080"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/70 via-primary-navy/50 to-primary-navy/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/80 via-primary-navy/60 to-primary-navy/95"></div>
         </div>
 
         <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
@@ -60,11 +60,11 @@ const BayAreaTradeLawPage: React.FC = () => {
             <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-none drop-shadow-lg">
               San Francisco & Bay Area Trade Compliance Attorney
             </h1>
-            <p className="text-xl md:text-2xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
+            <p className="text-xl md:text-2xl text-neutral-200 font-light mb-12 max-w-2xl leading-relaxed drop-shadow-md">
               Expert trade law advice for startups California and tech companies. Export controls, customs compliance, and global trade strategy for Silicon Valley's innovation economy.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
-              <Button href="#contact" variant="solid">
+              <Button href="#schedule-consultation" variant="solid">
                 Free Tech Trade Consultation
               </Button>
               <Button href="tel:+16317468290" variant="outline">
@@ -394,7 +394,7 @@ const BayAreaTradeLawPage: React.FC = () => {
                 <h4 className="font-bold text-primary-navy mb-2">E-commerce & Digital Trade</h4>
                 <p className="text-sm text-text-secondary">SaaS and cloud compliance</p>
               </a>
-              <a href="#faq-center" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#trade-law-faq" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Export control FAQ</p>
               </a>

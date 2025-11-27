@@ -291,27 +291,27 @@ const HomePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Resources</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#section-301-tariffs-guide" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                  <a href="#resources/section-301-tariffs-guide" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
                     <span>→</span> Section 301 Tariffs Guide
                   </a>
                 </li>
                 <li>
-                  <a href="#uflpa-compliance-guide" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                  <a href="#resources/uflpa-compliance-guide" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
                     <span>→</span> UFLPA Compliance Guide
                   </a>
                 </li>
                 <li>
-                  <a href="#tariffs-classification-guide" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                  <a href="#tariffs-duties-classification-guide" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
                     <span>→</span> Tariff Classification Guide
                   </a>
                 </li>
                 <li>
-                  <a href="#faq-center" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                  <a href="#trade-law-faq" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
                     <span>→</span> FAQ Center
                   </a>
                 </li>
                 <li>
-                  <a href="#glossary" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                  <a href="#trade-law-glossary" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
                     <span>→</span> Trade Law Glossary
                   </a>
                 </li>

@@ -166,7 +166,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
     const styles = getThemeStyles();
 
     return (
-        <section id="evaluation-form" aria-labelledby="evaluation-heading" className={`${styles.sectionBg} py-20 px-6 ${styles.textColor}`}>
+        <section id="schedule-consultation" aria-labelledby="evaluation-heading" className={`${styles.sectionBg} py-20 px-6 ${styles.textColor}`}>
             <div className="max-w-6xl mx-auto">
                 <header className="text-center mb-12">
                     <h2 id="evaluation-heading" className={`font-garamond text-5xl font-bold ${styles.headingColor} mb-4`}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema } from '../utils/seo';
 
@@ -27,26 +28,38 @@ const ApparelTextilesIndustryPage: React.FC = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
+    <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-navy via-purple-900 to-primary-navy py-16 px-4">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block bg-secondary-gold text-primary-navy px-4 py-2 rounded-full text-sm font-bold mb-4">
-              INDUSTRY FOCUS: APPAREL & TEXTILES
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+      <section className="relative w-full h-[500px] overflow-hidden bg-primary-navy flex items-center">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1558171813-4c088753af8f?q=80&w=1920&auto=format&fit=crop"
+            alt="Apparel and textile manufacturing representing California fashion industry trade law"
+            className="w-full h-full object-cover opacity-50"
+            loading="eager"
+            decoding="async"
+            width="1920"
+            height="1080"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/80 via-primary-navy/60 to-primary-navy/95"></div>
+        </div>
+
+        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-none drop-shadow-lg">
               California Trade Law Attorney for Apparel & Textile Companies
             </h1>
-            <p className="text-xl text-gray-100 mb-8">
-              Specialized compliance for fashion brands, apparel importers, textile manufacturers, and e-commerce clothing sellers navigating complex trade regulations
+            <p className="text-xl md:text-2xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
+              Specialized compliance for fashion brands, apparel importers, textile manufacturers, and e-commerce clothing sellers. Expert UFLPA forced labor defense, HTS classification, country of origin, and supply chain compliance.
             </p>
-            <a
-              href="#contact"
-              className="inline-block bg-secondary-gold hover:bg-yellow-500 text-primary-navy font-bold py-4 px-8 rounded-lg transition-colors shadow-lg"
-            >
-              Schedule UFLPA Consultation
-            </a>
+            <div className="flex flex-col md:flex-row gap-4">
+              <Button href="#schedule-consultation" variant="solid">
+                Schedule UFLPA Consultation
+              </Button>
+              <Button href="tel:+16317468290" variant="outline">
+                Call (631) 746-8290
+              </Button>
+            </div>
           </div>
         </div>
       </section>
