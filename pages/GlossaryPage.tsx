@@ -644,7 +644,7 @@ const GlossaryPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {glossaryTerms.map((category, index) => (
               <button
-                key={index}
+                key={category.category}
                 onClick={() => scrollToCategory(index)}
                 className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-secondary-teal text-left cursor-pointer"
                 type="button"
@@ -671,7 +671,7 @@ const GlossaryPage: React.FC = () => {
                 {category.terms.map((item, termIndex) => {
                   const isOpen = isTermOpen(categoryIndex, termIndex);
                   return (
-                    <div key={termIndex} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+                    <div key={item.term} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                       {/* Accordion Header/Button */}
                       <button
                         onClick={() => toggleTerm(categoryIndex, termIndex)}

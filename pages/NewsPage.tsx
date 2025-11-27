@@ -303,6 +303,11 @@ const NewsPage: React.FC = () => {
       {/* News List Section */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-[1200px] mx-auto">
+          {/* Screen reader announcement for search results */}
+          <div aria-live="polite" aria-atomic="true" className="sr-only">
+            {filteredNews.length} {filteredNews.length === 1 ? 'article' : 'articles'} found
+          </div>
+
           {/* Heading with underline */}
           <div className="mb-10">
             <h2 className="font-garamond font-bold" style={{

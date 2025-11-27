@@ -365,7 +365,7 @@ const FAQCenterPage: React.FC = () => {
           <div className="flex flex-wrap gap-4 justify-center">
             {faqCategories.map((category, index) => (
               <button
-                key={index}
+                key={category.category}
                 onClick={() => scrollToCategory(index)}
                 className="card-link group relative overflow-hidden text-left w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]"
                 type="button"
@@ -398,7 +398,7 @@ const FAQCenterPage: React.FC = () => {
                 {category.faqs.map((faq, faqIndex) => {
                   const isOpen = isFAQOpen(categoryIndex, faqIndex);
                   return (
-                    <div key={faqIndex} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+                    <div key={faq.question} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                       <button
                         onClick={() => toggleFAQ(categoryIndex, faqIndex)}
                         className="w-full text-left p-5 flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-teal focus:ring-inset"

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, memo } from 'react';
 import type { HeroSlide } from '../types';
 import Button from './Button';
 import ServiceBox from './ServiceBox';
@@ -142,4 +142,4 @@ return (
 );
 };
 
-export default HeroCarousel;
+export default memo(HeroCarousel);

@@ -66,6 +66,8 @@ interface FormFieldProps {
     autoComplete?: string;
     inputClassName?: string;
     labelColor?: string;
+    error?: string;
+    onBlur?: (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }
 
 const FormField: React.FC<FormFieldProps> = ({
@@ -77,7 +79,9 @@ const FormField: React.FC<FormFieldProps> = ({
     placeholder,
     autoComplete,
     inputClassName,
-    labelColor = 'text-white'
+    labelColor = 'text-white',
+    error,
+    onBlur
 }) => {
     const commonProps = {
         id,
@@ -85,7 +89,10 @@ const FormField: React.FC<FormFieldProps> = ({
         required,
         placeholder,
         autoComplete,
+        onBlur,
         'aria-required': required,
+        'aria-invalid': !!error,
+        'aria-describedby': error ? `${id}-error` : undefined,
         className: `w-full px-5 py-4 text-base rounded transition-all focus-visible:outline focus-visible:outline-3 focus-visible:outline-secondary-teal focus-visible:outline-offset-2 ${inputClassName}`,
     };
 
@@ -99,6 +106,11 @@ const FormField: React.FC<FormFieldProps> = ({
             ) : (
                 <input type={type} {...commonProps} aria-label={label} />
             )}
+            {error && (
+                <span id={`${id}-error`} className="text-red-500 text-sm mt-1 block" role="alert">
+                    {error}
+                </span>
+            )}
         </div>
     );
 };
@@ -108,6 +120,40 @@ interface EvaluationFormProps {
 }
 
 const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
+    const [fieldErrors, setFieldErrors] = React.useState<Record<string, string>>({});
+
+    const validateField = (name: string, value: string) => {
+        let error = '';
+
+        // Required field validation
+        if (!value.trim()) {
+            const fieldLabels: Record<string, string> = {
+                fullName: 'First Name',
+                lastName: 'Last Name',
+                company: 'Company Name',
+                email: 'Email Address',
+                phone: 'Phone Number',
+                subject: 'Subject',
+                message: 'Tell us about your case'
+            };
+            error = `${fieldLabels[name] || name} is required`;
+        } else if (name === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+            error = 'Please enter a valid email address';
+        } else if (name === 'phone' && !/^[\d\s\-\(\)\+]+$/.test(value)) {
+            error = 'Please enter a valid phone number';
+        }
+
+        setFieldErrors(prev => {
+            const newErrors = { ...prev };
+            if (error) {
+                newErrors[name] = error;
+            } else {
+                delete newErrors[name];
+            }
+            return newErrors;
+        });
+    };
+
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         // Show success message in an accessible way
@@ -122,6 +168,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
             successMessage.remove();
         }, 5000);
         form.reset();
+        setFieldErrors({});
     };
 
     const getThemeStyles = () => {
@@ -206,15 +253,67 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
 
                     <form onSubmit={handleSubmit} className="space-y-6" aria-label="Case evaluation request form" noValidate>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <FormField id="fullName" label="First Name" required placeholder="" autoComplete="given-name" inputClassName={styles.inputBg} labelColor={styles.labelColor} />
-                            <FormField id="lastName" label="Last Name" required placeholder="" autoComplete="family-name" inputClassName={styles.inputBg} labelColor={styles.labelColor} />
+                            <FormField
+                                id="fullName"
+                                label="First Name"
+                                required
+                                placeholder=""
+                                autoComplete="given-name"
+                                inputClassName={styles.inputBg}
+                                labelColor={styles.labelColor}
+                                error={fieldErrors.fullName}
+                                onBlur={(e) => validateField('fullName', e.target.value)}
+                            />
+                            <FormField
+                                id="lastName"
+                                label="Last Name"
+                                required
+                                placeholder=""
+                                autoComplete="family-name"
+                                inputClassName={styles.inputBg}
+                                labelColor={styles.labelColor}
+                                error={fieldErrors.lastName}
+                                onBlur={(e) => validateField('lastName', e.target.value)}
+                            />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <FormField id="company" label="Company Name" required placeholder="" autoComplete="organization" inputClassName={styles.inputBg} labelColor={styles.labelColor} />
-                            <FormField id="email" label="Email Address" type="email" required placeholder="" autoComplete="email" inputClassName={styles.inputBg} labelColor={styles.labelColor} />
+                            <FormField
+                                id="company"
+                                label="Company Name"
+                                required
+                                placeholder=""
+                                autoComplete="organization"
+                                inputClassName={styles.inputBg}
+                                labelColor={styles.labelColor}
+                                error={fieldErrors.company}
+                                onBlur={(e) => validateField('company', e.target.value)}
+                            />
+                            <FormField
+                                id="email"
+                                label="Email Address"
+                                type="email"
+                                required
+                                placeholder=""
+                                autoComplete="email"
+                                inputClassName={styles.inputBg}
+                                labelColor={styles.labelColor}
+                                error={fieldErrors.email}
+                                onBlur={(e) => validateField('email', e.target.value)}
+                            />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <FormField id="phone" label="Phone Number" type="tel" required placeholder="" autoComplete="tel" inputClassName={styles.inputBg} labelColor={styles.labelColor} />
+                            <FormField
+                                id="phone"
+                                label="Phone Number"
+                                type="tel"
+                                required
+                                placeholder=""
+                                autoComplete="tel"
+                                inputClassName={styles.inputBg}
+                                labelColor={styles.labelColor}
+                                error={fieldErrors.phone}
+                                onBlur={(e) => validateField('phone', e.target.value)}
+                            />
                             <div>
                                 <label htmlFor="subject" className={`block text-base font-semibold mb-3 ${styles.labelColor}`}>
                                     Subject <span className="text-secondary-teal" aria-label="required">*</span>
@@ -225,7 +324,10 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                                         name="subject"
                                         required
                                         aria-required="true"
+                                        aria-invalid={!!fieldErrors.subject}
+                                        aria-describedby={fieldErrors.subject ? 'subject-error' : undefined}
                                         aria-label="Subject area of practice"
+                                        onBlur={(e) => validateField('subject', e.target.value)}
                                         className={`w-full px-5 py-4 text-base rounded transition-all appearance-none pr-10 focus-visible:outline focus-visible:outline-3 focus-visible:outline-secondary-teal focus-visible:outline-offset-2 ${styles.inputBg}`}
                                         defaultValue=""
                                     >
@@ -242,10 +344,25 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                                         <svg className="fill-current h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
                                     </div>
                                 </div>
+                                {fieldErrors.subject && (
+                                    <span id="subject-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                        {fieldErrors.subject}
+                                    </span>
+                                )}
                             </div>
                         </div>
                         <div>
-                            <FormField id="message" label="Tell us about your case" isTextArea required placeholder="" inputClassName={styles.inputBg} labelColor={styles.labelColor} />
+                            <FormField
+                                id="message"
+                                label="Tell us about your case"
+                                isTextArea
+                                required
+                                placeholder=""
+                                inputClassName={styles.inputBg}
+                                labelColor={styles.labelColor}
+                                error={fieldErrors.message}
+                                onBlur={(e) => validateField('message', e.target.value)}
+                            />
                         </div>
                         <div className="text-center pt-4">
                             <Button type="submit" variant="solid" className="bg-secondary-forestGreen text-white hover:bg-secondary-teal transform transition-transform duration-200 hover:scale-[1.03] px-16 py-5 text-base font-bold" aria-label="Submit case evaluation request">

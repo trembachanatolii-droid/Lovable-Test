@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, memo } from 'react';
 
 const easeOutQuad = (t: number) => t * (2 - t);
 
@@ -147,4 +147,4 @@ aria-hidden="true"
 );
 };
 
-export default StatsSection;
+export default memo(StatsSection);
