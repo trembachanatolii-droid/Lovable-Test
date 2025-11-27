@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { memo } from 'react';
 import { PracticeArea } from '../types';
 import PracticeCard from './PracticeCard';
 
@@ -106,4 +106,4 @@ Expert counsel across the most critical areas of international trade compliance,
 );
 };
 
-export default PracticeAreasSection;
+export default memo(PracticeAreasSection);

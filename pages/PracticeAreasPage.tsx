@@ -582,21 +582,36 @@ const PracticeAreasPage: React.FC = () => {
               })
               .filter((category): category is NonNullable<typeof category> => category !== null);
 
+            // Calculate total filtered items for screen reader announcement
+            const totalFilteredItems = filteredCategories.reduce((sum, cat) => sum + cat.items.length, 0);
+
             if (filteredCategories.length === 0 && searchTerm !== '') {
               return (
-                <div className="text-center py-20">
-                  <p className="text-2xl text-neutral-400 font-garamond italic">No practice areas found matching "{searchTerm}"</p>
-                  <button
-                    onClick={() => setSearchTerm('')}
-                    className="mt-4 text-secondary-teal font-bold hover:underline"
-                  >
-                    Clear Search
-                  </button>
-                </div>
+                <>
+                  {/* Screen reader announcement for no results */}
+                  <div aria-live="polite" aria-atomic="true" className="sr-only">
+                    0 practice areas found
+                  </div>
+                  <div className="text-center py-20">
+                    <p className="text-2xl text-neutral-400 font-garamond italic">No practice areas found matching "{searchTerm}"</p>
+                    <button
+                      onClick={() => setSearchTerm('')}
+                      className="mt-4 text-secondary-teal font-bold hover:underline"
+                    >
+                      Clear Search
+                    </button>
+                  </div>
+                </>
               );
             }
 
-            return filteredCategories.map((category, catIndex) => (
+            return (
+              <>
+                {/* Screen reader announcement for search results */}
+                <div aria-live="polite" aria-atomic="true" className="sr-only">
+                  {totalFilteredItems} practice {totalFilteredItems === 1 ? 'area' : 'areas'} found
+                </div>
+                {filteredCategories.map((category, catIndex) => (
               <section key={catIndex} aria-labelledby={`cat-${catIndex}`}>
                 <div className="mb-4 border-b border-secondary-teal/30 pb-3">
                   <h2
@@ -623,7 +638,9 @@ const PracticeAreasPage: React.FC = () => {
                   })}
                 </div>
               </section>
-            ));
+            ))}
+              </>
+            );
           })()}
         </div>
       </div>
