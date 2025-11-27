@@ -684,25 +684,19 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-primary-navy to-secondary-teal text-white">
+      <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-white mb-6">
             Need Help Understanding Your Trade Compliance Obligations?
           </h2>
-          <p className="text-xl text-white mb-8">
+          <p className="text-xl opacity-95 mb-8 leading-relaxed text-white">
             Understanding the terminology is just the first step. Our California international trade attorneys provide practical guidance on applying these concepts to your specific situation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#schedule-consultation"
-              className="inline-block bg-secondary-gold hover:bg-yellow-500 text-primary-navy font-bold py-4 px-8 rounded-lg transition-colors shadow-lg"
-            >
+            <a href="#schedule-consultation" className="hero-cta">
               Schedule a Consultation
             </a>
-            <a
-              href="#resources"
-              className="inline-block bg-white hover:bg-gray-100 text-primary-navy font-bold py-4 px-8 rounded-lg transition-colors shadow-lg"
-            >
+            <a href="#resources" className="hero-cta-outline">
               Explore More Resources
             </a>
           </div>

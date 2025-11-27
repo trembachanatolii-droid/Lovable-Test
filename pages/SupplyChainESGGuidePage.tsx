@@ -506,21 +506,21 @@ const SupplyChainESGGuidePage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-white mb-6">
             Build Ethical and Compliant Supply Chains
           </h2>
-          <p className="text-xl text-text-secondary mb-8 leading-relaxed">
+          <p className="text-xl opacity-95 mb-8 leading-relaxed text-white">
             California importers face increasing ESG scrutiny from CBP, DOJ, and other enforcement agencies. Our trade law practice helps you implement forced labor compliance programs, navigate UFLPA requirements, and build anti-corruption controls. Contact us for expert guidance on supply chain ethics and ESG compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <a href="#schedule-consultation" className="hero-cta">
               Schedule Free Consultation
-            </Button>
-            <Button href="tel:+16317468290" variant="outlined">
+            </a>
+            <a href="tel:+16317468290" className="hero-cta-outline">
               Call (631) 746-8290
-            </Button>
+            </a>
           </div>
         </div>
       </section>
