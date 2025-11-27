@@ -358,6 +358,109 @@ const RegulatoryCompliancePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Related Services & Resources */}
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Related Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Related Services */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Practice Areas</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#customs-defense-litigation" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Customs Defense & Litigation
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">When compliance fails, we defend you</p>
+                </li>
+                <li>
+                  <a href="#export-controls-sanctions" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Export Controls & Sanctions
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">ITAR/EAR/OFAC compliance programs</p>
+                </li>
+                <li>
+                  <a href="#practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> All Practice Areas
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Full range of international trade services</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Location Pages */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Serving California Businesses</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Los Angeles & Long Beach Port
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Compliance programs for LA/LB importers</p>
+                </li>
+                <li>
+                  <a href="#bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> San Francisco & Bay Area
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Tech company compliance programs</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Industry Focus */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Industry Compliance Solutions</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Technology & Electronics
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Export compliance for tech companies</p>
+                </li>
+                <li>
+                  <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Apparel & Textiles
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">UFLPA supply chain compliance</p>
+                </li>
+                <li>
+                  <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Food & Agriculture
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">FDA/USDA import compliance</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Helpful Guides */}
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides & Resources</h3>
+            <div className="grid md:grid-cols-4 gap-6">
+              <a href="#tariffs-classification-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
+                <p className="text-sm text-text-secondary">Master HTS classification best practices</p>
+              </a>
+              <a href="#section-301-tariffs-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
+                <p className="text-sm text-text-secondary">Strategies for China tariff mitigation</p>
+              </a>
+              <a href="#uflpa-compliance-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
+                <p className="text-sm text-text-secondary">Build UFLPA-compliant supply chains</p>
+              </a>
+              <a href="#glossary" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">Trade Law Glossary</h4>
+                <p className="text-sm text-text-secondary">Definitions of key compliance terms</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[900px] mx-auto text-center">

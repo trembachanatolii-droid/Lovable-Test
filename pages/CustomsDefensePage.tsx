@@ -321,6 +321,109 @@ const CustomsDefensePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Related Services & Resources */}
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Related Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Related Services */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Practice Areas</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#regulatory-compliance-advisory" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Trade Compliance Programs
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Prevent issues before they become enforcement actions</p>
+                </li>
+                <li>
+                  <a href="#export-controls-sanctions" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Export Controls & Sanctions
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">ITAR/EAR compliance and BIS enforcement defense</p>
+                </li>
+                <li>
+                  <a href="#practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> All Practice Areas
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Full range of international trade services</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Location Pages */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Serving California Ports</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Los Angeles & Long Beach Port
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">CBP defense for LA/LB port importers</p>
+                </li>
+                <li>
+                  <a href="#bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> San Francisco & Bay Area
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Oakland port and tech company defense</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Industry Focus */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Industry Expertise</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Technology & Electronics
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Section 301 and classification disputes</p>
+                </li>
+                <li>
+                  <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Apparel & Textiles
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">UFLPA and forced labor defense</p>
+                </li>
+                <li>
+                  <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Food & Agriculture
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">FDA/USDA detention release</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Helpful Guides */}
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides & Resources</h3>
+            <div className="grid md:grid-cols-4 gap-6">
+              <a href="#article/cbp-focused-assessment-survival-guide-california" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">CBP Audit Survival Guide</h4>
+                <p className="text-sm text-text-secondary">How to prepare for and survive a Focused Assessment</p>
+              </a>
+              <a href="#section-301-tariffs-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
+                <p className="text-sm text-text-secondary">Navigate China tariffs and exclusion strategies</p>
+              </a>
+              <a href="#uflpa-compliance-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
+                <p className="text-sm text-text-secondary">Forced labor detention defense strategies</p>
+              </a>
+              <a href="#faq-center" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
+                <p className="text-sm text-text-secondary">Answers to common customs defense questions</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">

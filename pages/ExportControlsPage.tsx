@@ -411,6 +411,109 @@ const ExportControlsPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Related Services & Resources */}
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Related Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Related Services */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Practice Areas</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#regulatory-compliance-advisory" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Trade Compliance Programs
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Import/export compliance program design</p>
+                </li>
+                <li>
+                  <a href="#customs-defense-litigation" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Customs Defense & Litigation
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">CBP enforcement defense</p>
+                </li>
+                <li>
+                  <a href="#practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> All Practice Areas
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Full range of international trade services</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Location Pages */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Serving California Tech Hubs</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> San Francisco & Bay Area
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Silicon Valley export controls expertise</p>
+                </li>
+                <li>
+                  <a href="#los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Los Angeles & Long Beach Port
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Defense/aerospace export compliance</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Industry Focus */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Industry Export Solutions</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Technology & Electronics
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Semiconductor & software export controls</p>
+                </li>
+                <li>
+                  <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Apparel & Textiles
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Technical textile export controls</p>
+                </li>
+                <li>
+                  <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
+                    <span>→</span> Food & Agriculture
+                  </a>
+                  <p className="text-sm text-text-secondary mt-1">Agricultural export compliance</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Helpful Guides */}
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides & Resources</h3>
+            <div className="grid md:grid-cols-4 gap-6">
+              <a href="#article/ear-compliance" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">EAR Compliance Guide</h4>
+                <p className="text-sm text-text-secondary">Export Administration Regulations overview</p>
+              </a>
+              <a href="#article/itar-compliance" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">ITAR Compliance Guide</h4>
+                <p className="text-sm text-text-secondary">Defense trade controls essentials</p>
+              </a>
+              <a href="#article/ofac-sanctions" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">OFAC Sanctions Guide</h4>
+                <p className="text-sm text-text-secondary">Sanctions screening and compliance</p>
+              </a>
+              <a href="#faq-center" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+                <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
+                <p className="text-sm text-text-secondary">Answers to export control questions</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[900px] mx-auto text-center">
