@@ -47,28 +47,28 @@ const LosAngelesPortPage: React.FC = () => {
           <img
             src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=1920&auto=format&fit=crop"
             alt="Port of Los Angeles and Long Beach shipping containers and cranes at sunset"
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-30"
             loading="eager"
             decoding="async"
             width="1920"
             height="1080"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/90 via-primary-navy/80 to-primary-navy/95"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-navy/95 via-primary-navy/85 to-primary-navy/70"></div>
         </div>
 
         <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-tight" style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.5), 0 4px 20px rgba(0, 0, 0, 0.3)' }}>
+          <div className="max-w-3xl bg-primary-navy/60 backdrop-blur-sm p-8 md:p-10 rounded-lg">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-garamond text-white mb-6 tracking-tight leading-tight" style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.7), 0 4px 20px rgba(0, 0, 0, 0.5)' }}>
               Los Angeles & Long Beach Port Customs Attorney
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-white font-light mb-8 max-w-2xl leading-relaxed" style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.4)' }}>
+            <p className="text-base md:text-lg lg:text-xl text-white font-light mb-8 max-w-2xl leading-relaxed" style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.6)' }}>
               Expert California port customs lawyer serving the LA/Long Beach port complex - the nation's busiest gateway for international trade.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="#schedule-consultation" variant="solid">
+              <Button href="#schedule-consultation" variant="solid" className="!px-6 !py-2 text-sm">
                 Free Port Customs Consultation
               </Button>
-              <Button href="tel:+16317468290" variant="hero-outline">
+              <Button href="tel:+16317468290" variant="hero-outline" className="!px-6 !py-2 text-sm">
                 Call (631) 746-8290
               </Button>
             </div>
