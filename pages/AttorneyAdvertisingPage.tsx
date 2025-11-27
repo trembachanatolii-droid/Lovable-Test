@@ -444,30 +444,30 @@ const AttorneyAdvertisingPage: React.FC = () => {
           </section>
 
           <section id="contact-firm" aria-labelledby="contact-firm-heading" className="bg-primary-navy text-white p-8 my-8 rounded-lg">
-            <h2 id="contact-firm-heading" className="text-2xl md:text-3xl font-bold font-garamond mb-4">CONTACT TREMBACH LAW FIRM</h2>
-            <p className="mb-4">
+            <h2 id="contact-firm-heading" className="text-2xl md:text-3xl font-bold font-garamond mb-4 text-white">CONTACT TREMBACH LAW FIRM</h2>
+            <p className="mb-4 text-white">
               If you would like to discuss a potential legal matter or request information about our qualifications and experience, please contact us:
             </p>
             <address className="not-italic mb-4">
               <strong className="text-soft-teal text-xl block mb-2">Trembach Law Firm, APC</strong>
               <p className="text-soft-teal mb-4">International Trade Law & Customs Law</p>
-              <p className="mb-2">
+              <p className="mb-2 text-white">
                 <strong>Phone:</strong> 631-746-8290<br />
                 <span className="text-sm">Available 24 hours a day, 7 days a week</span>
               </p>
-              <p className="mb-2">
+              <p className="mb-2 text-white">
                 <strong>Email:</strong> <a href="mailto:infotrade@trembachlaw.com" className="text-soft-teal hover:underline">infotrade@trembachlaw.com</a>
               </p>
-              <p className="mb-4">
+              <p className="mb-4 text-white">
                 <strong>Mailing Address:</strong><br />
                 27001 Agoura Road, Suite 350<br />
                 Calabasas, California 91301<br />
                 United States
               </p>
-              <p className="mb-2">
+              <p className="mb-2 text-white">
                 <strong>Serving:</strong> All 58 California counties and federal courts nationwide
               </p>
-              <p>
+              <p className="text-white">
                 <strong>Languages:</strong> English, Ukrainian, Russian
               </p>
             </address>

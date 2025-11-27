@@ -312,7 +312,7 @@ const LosAngelesPortPage: React.FC = () => {
 
           {/* CBP Examination Sites & Breakdown Hotspots */}
           <div className="bg-primary-navy text-white p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-6 font-garamond">CBP Examination Sites & Common Breakdown Points</h3>
+            <h3 className="text-2xl font-bold mb-6 font-garamond text-white">CBP Examination Sites & Common Breakdown Points</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
                 <h4 className="font-bold text-secondary-teal mb-3">CBP Exam Facilities</h4>
@@ -553,10 +553,10 @@ const LosAngelesPortPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Protect Your LA/Long Beach Port Operations
           </h2>
-          <p className="text-xl mb-8 opacity-95 leading-relaxed">
+          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">
             Don't let CBP audits, detentions, or penalties disrupt your business. Contact our Los Angeles customs attorney and Long Beach port trade lawyer team for a free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">

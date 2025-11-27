@@ -403,10 +403,10 @@ const ResourcesHubPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Need Personalized Legal Guidance?
           </h2>
-          <p className="text-xl mb-8 leading-relaxed opacity-90">
+          <p className="text-xl mb-8 leading-relaxed opacity-90 text-white">
             While our resources provide comprehensive information, every business faces unique compliance challenges. Contact our California international trade law team for tailored advice.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">

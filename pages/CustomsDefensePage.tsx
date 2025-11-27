@@ -495,10 +495,10 @@ const CustomsDefensePage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Don't Face CBP Alone
           </h2>
-          <p className="text-xl mb-8 opacity-95 leading-relaxed">
+          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">
             When CBP targets your business with investigations, audits, penalties, or seizures, you need a customs defense attorney California who knows how to fight back. Contact us for aggressive representation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
