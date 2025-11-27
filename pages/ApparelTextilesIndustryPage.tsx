@@ -57,36 +57,12 @@ const ApparelTextilesIndustryPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 px-4 bg-white">
-        <div className="container-custom max-w-5xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">$50M+</div>
-              <div className="text-gray-600">Apparel Cargo Released</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">98%</div>
-              <div className="text-gray-600">UFLPA Release Success Rate</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">150+</div>
-              <div className="text-gray-600">Fashion Brands Represented</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">Zero</div>
-              <div className="text-gray-600">UFLPA Forfeitures</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Critical 2025 Update - UFLPA */}
       <section className="py-12 px-4 bg-red-50 border-y-4 border-red-500">
         <div className="container-custom max-w-5xl">
           <div className="text-center mb-6">
             <div className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-              ⚠�CRITICAL COMPLIANCE ALERT
+              CRITICAL COMPLIANCE ALERT
             </div>
             <h2 className="text-3xl font-bold text-red-900 mb-4">
               UFLPA Forced Labor Enforcement: Highest Risk for Apparel Importers
@@ -116,9 +92,9 @@ const ApparelTextilesIndustryPage: React.FC = () => {
                   <li>Map supply chains to raw material level (cotton farms, spinning mills)</li>
                   <li>Obtain fiber/cotton origin documentation from all suppliers</li>
                   <li>Screen suppliers against UFLPA Entity List (updated monthly)</li>
-                  <li>⚖ Implement third-party audits and forced labor due diligence</li>
-                  <li>📝 Prepare detention response protocols before cargo ships</li>
-                  <li>🔄 Diversify sourcing away from high-risk regions</li>
+                  <li>Implement third-party audits and forced labor due diligence</li>
+                  <li>Prepare detention response protocols before cargo ships</li>
+                  <li>Diversify sourcing away from high-risk regions</li>
                 </ul>
               </div>
             </div>
@@ -312,7 +288,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
 
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-blue-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�T-Shirts & Knit Apparel</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">T-Shirts & Knit Apparel</h3>
               <p className="text-gray-700 mb-2">
                 <strong>Classification:</strong> Men's/boys' knit shirts (HTS 6109) vs. women's/girls' (6110) with duties ranging from 16.5% to 32% depending on fiber content and construction.
               </p>
@@ -325,7 +301,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-purple-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Denim & Woven Bottoms</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Denim & Woven Bottoms</h3>
               <p className="text-gray-700 mb-2">
                 <strong>Classification:</strong> Men's/boys' trousers (HTS 6203) vs. women's/girls' (6204). Duty rates 16.6% for cotton denim, 28.2% for synthetic blends.
               </p>
@@ -338,7 +314,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-pink-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Dresses & Formal Wear</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Dresses & Formal Wear</h3>
               <p className="text-gray-700 mb-2">
                 <strong>Classification:</strong> Women's/girls' dresses (HTS 6204.41-49 for woven, 6104 for knit). Duty rates vary widely by fiber content (6% to 16%).
               </p>
@@ -351,7 +327,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-green-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Outerwear & Jackets</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Outerwear & Jackets</h3>
               <p className="text-gray-700 mb-2">
                 <strong>Classification:</strong> Coats, jackets, windbreakers (HTS 6201-6202 for woven, 6101-6102 for knit). Duty rates 16% to 27.7%.
               </p>
@@ -440,28 +416,28 @@ const ApparelTextilesIndustryPage: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Deep Apparel Industry Knowledge</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Deep Apparel Industry Knowledge</h3>
               <p className="text-gray-700">
                 Extensive experience with fashion brands, apparel importers, and textile manufacturers. We understand your supply chains, product categories, and business pressures.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">🛡�UFLPA Defense Excellence</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">UFLPA Defense Excellence</h3>
               <p className="text-gray-700">
                 98% success rate securing release of detained apparel cargo. $50M+ in UFLPA cargo released. Zero forfeitures. Proven strategies for overcoming the rebuttable presumption.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">🌴 California Fashion Hub Focus</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">California Fashion Hub Focus</h3>
               <p className="text-gray-700">
                 Based in Los Angeles fashion district with deep connections to California apparel community. Experience at LA/Long Beach ports where most West Coast apparel enters.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Rapid Response for Time-Sensitive Cargo</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Rapid Response for Time-Sensitive Cargo</h3>
               <p className="text-gray-700">
                 Fast turnaround on detention responses, classification analysis, and compliance documentation to minimize supply chain disruptions and inventory shortages.
               </p>
