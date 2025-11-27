@@ -39,39 +39,32 @@ const LosAngelesPortPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
+    <div className="font-montserrat text-neutral-darkGray bg-white min-h-screen">
 
-      {/* Hero Section */}
-      <section className="relative w-full min-h-[600px] overflow-hidden bg-primary-navy flex items-center py-16">
-        <div className="absolute inset-0 z-0">
+      {/* Hero Section - matching site-wide hero pattern */}
+      <section className="hero" aria-label="Los Angeles Port Hero">
+        <picture className="hero-bg">
           <img
             src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=1920&auto=format&fit=crop"
-            alt="Port of Los Angeles and Long Beach shipping containers and cranes at sunset"
-            className="w-full h-full object-cover opacity-30"
-            loading="eager"
-            decoding="async"
+            alt=""
+            role="presentation"
             width="1920"
             height="1080"
+            loading="eager"
+            decoding="async"
+            className="hero-bg-image"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-navy/95 via-primary-navy/85 to-primary-navy/70"></div>
-        </div>
+        </picture>
+        <div className="hero-overlay" aria-hidden="true"></div>
 
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
-          <div className="max-w-3xl bg-primary-navy/60 backdrop-blur-sm p-8 md:p-10 rounded-lg">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-garamond text-white mb-6 tracking-tight leading-tight" style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.7), 0 4px 20px rgba(0, 0, 0, 0.5)' }}>
-              Los Angeles & Long Beach Port Customs Attorney
-            </h1>
-            <p className="text-base md:text-lg lg:text-xl text-white font-light mb-8 max-w-2xl leading-relaxed" style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.6)' }}>
-              Expert California port customs lawyer serving the LA/Long Beach port complex - the nation's busiest gateway for international trade.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="#schedule-consultation" variant="solid" className="!px-6 !py-2 text-sm">
-                Free Port Customs Consultation
-              </Button>
-              <Button href="tel:+16317468290" variant="hero-outline" className="!px-6 !py-2 text-sm">
-                Call (631) 746-8290
-              </Button>
-            </div>
+        <div className="container">
+          <h1>Los Angeles & Long Beach<br />Port Customs Attorney</h1>
+          <p className="hero-subtitle">
+            Expert California port customs lawyer serving the LA/Long Beach port complex — the nation's busiest gateway for international trade.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>
         </div>
       </section>

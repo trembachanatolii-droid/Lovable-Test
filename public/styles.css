@@ -1171,6 +1171,29 @@ body {
   outline-offset: 3px;
 }
 
+.hero-cta-outline {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--white);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-cta-outline:hover {
+  background-color: var(--white);
+  color: var(--navy-primary);
+}
+
+.hero-cta-outline:focus-visible {
+  outline: 3px solid var(--teal-primary);
+  outline-offset: 3px;
+}
+
 /* ==============================================================
    55. SERVICES/PRACTICE AREAS SECTION
    ============================================================== */
