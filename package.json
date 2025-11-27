@@ -15,7 +15,9 @@
     "react-error-boundary": "^6.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
+    "@types/node": "^22.19.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.0.0",
     "sharp": "^0.34.5",
     "terser": "^5.36.0",

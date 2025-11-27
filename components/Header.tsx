@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef, memo } from 'react';
 import { MenuIcon } from './icons/MenuIcon';
 import { CloseIcon } from './icons/CloseIcon';
 import { SearchIcon } from './icons/SearchIcon';
@@ -75,8 +75,16 @@ const Header: React.FC = () => {
   ];
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 10);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     const handleHashChange = () => {
@@ -192,14 +200,22 @@ const Header: React.FC = () => {
 
             {/* Right: Search Icon & Phone Number */}
             <div className="desktop-search">
-              <button aria-label="Search" style={{
-                padding: '0.5rem',
-                color: 'var(--gray-dark)',
-                transition: 'color 0.3s',
-                cursor: 'pointer'
-              }}>
+              <a
+                href="#news"
+                onClick={(e) => handleHashLinkClick(e, '#news')}
+                aria-label="Search articles and news"
+                style={{
+                  padding: '0.5rem',
+                  color: 'var(--gray-dark)',
+                  transition: 'color 0.3s',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+              >
                 <SearchIcon style={{ height: '1.5rem', width: '1.5rem' }} aria-hidden="true" />
-              </button>
+              </a>
               <a
                 href="tel:+16317468290"
                 aria-label="Call us at 631-746-8290 for free consultation"
@@ -399,4 +415,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default memo(Header);

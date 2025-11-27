@@ -1,9 +1,28 @@
 
-import React from 'react';
+import React, { memo, useState } from 'react';
 import Button from './Button';
 
+interface FooterLink {
+    label: string;
+    href: string;
+    isAddress?: boolean;
+}
+
 const Footer: React.FC = () => {
-    const footerLinks = {
+    const [subscribed, setSubscribed] = useState(false);
+
+    const handleNewsletterSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        const form = e.target as HTMLFormElement;
+        const email = (form.elements.namedItem('email') as HTMLInputElement)?.value;
+        if (email) {
+            // For now just show success - in production this would call an API
+            setSubscribed(true);
+            setTimeout(() => setSubscribed(false), 3000);
+        }
+    };
+
+    const footerLinks: Record<string, FooterLink[]> = {
         'Firm': [
             { label: 'About Us', href: '#about' },
             { label: 'Practice Areas', href: '#practice-areas' },
@@ -80,11 +99,13 @@ const Footer: React.FC = () => {
                             </div>
                         </div>
                         <div className="text-lg font-semibold text-white mb-3">Stay Informed</div>
-                        <form className="flex flex-row gap-3 mb-4" style={{ minHeight: '48px' }}>
+                        <form onSubmit={handleNewsletterSubmit} className="flex flex-row gap-3 mb-4" style={{ minHeight: '48px' }}>
                             <input
+                                name="email"
                                 type="email"
                                 placeholder="Enter your email"
                                 aria-label="Email address for newsletter subscription"
+                                required
                                 className="bg-primary-darkBlue text-white placeholder-neutral-gray px-4 py-3 flex-grow focus:outline-none focus:ring-2 focus:ring-secondary-teal text-base"
                                 style={{ minHeight: '48px' }}
                             />
@@ -100,6 +121,11 @@ const Footer: React.FC = () => {
                                 SUBSCRIBE
                             </button>
                         </form>
+                        {subscribed && (
+                            <p aria-live="polite" className="text-secondary-teal text-sm mt-2 mb-4">
+                                Thank you for subscribing!
+                            </p>
+                        )}
 
                         {/* Social Media Icons */}
                         <div className="flex gap-4">
@@ -155,7 +181,7 @@ const Footer: React.FC = () => {
                                     flexDirection: 'column',
                                     gap: '2px'
                                 }}>
-                                    {links.map((link: any, index: number) => (
+                                    {links.map((link: FooterLink, index: number) => (
                                         <li
                                             key={link.label}
                                             className={link.isAddress ? 'leading-relaxed' : ''}
@@ -189,4 +215,4 @@ const Footer: React.FC = () => {
     );
 };
 
-export default Footer;
+export default memo(Footer);

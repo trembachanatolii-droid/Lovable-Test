@@ -77,7 +77,7 @@ export function removeMetaTag(attribute: string, attributeValue: string): void {
 /**
  * Sets or updates JSON-LD structured data
  */
-export function setJsonLd(id: string, data: any): void {
+export function setJsonLd(id: string, data: Record<string, unknown>): void {
   let script = document.getElementById(id) as HTMLScriptElement;
 
   if (!script) {
@@ -112,7 +112,7 @@ export function generateArticleSchema(config: {
   dateModified?: string;
   authorName?: string;
   authorUrl?: string;
-}): any {
+}): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -149,7 +149,7 @@ export function generateWebPageSchema(config: {
   title: string;
   description: string;
   url: string;
-}): any {
+}): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -171,7 +171,7 @@ export function generateWebPageSchema(config: {
 export function generateBreadcrumbSchema(breadcrumbs: Array<{
   name: string;
   url: string;
-}>): any {
+}>): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -234,7 +234,7 @@ export function generateServiceSchema(config: {
   description: string;
   url?: string;
   serviceType?: string;
-}): any {
+}): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -261,7 +261,7 @@ export function generateServiceSchema(config: {
 export function generateFAQSchema(questions: Array<{
   question: string;
   answer: string;
-}>): any {
+}>): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -289,7 +289,7 @@ export function generateJobPostingSchema(config: {
   baseSalaryMin?: number;
   baseSalaryMax?: number;
   salaryCurrency?: string;
-}): any {
+}): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
@@ -340,7 +340,7 @@ export function generateJobPostingSchema(config: {
  * Generate LocalBusiness Schema.org JSON-LD
  * Critical for Local SEO - helps Google understand business location and service areas
  */
-export function generateLocalBusinessSchema(): any {
+export function generateLocalBusinessSchema(): Record<string, unknown> {
   const serviceAreas = [
     // Primary California cities
     ...siteConfig.serviceAreas.primary.map(city => ({
@@ -447,7 +447,7 @@ export function generatePortServiceSchema(config: {
   cityName: string;
   description: string;
   url: string;
-}): any {
+}): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
