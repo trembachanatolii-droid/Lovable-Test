@@ -326,30 +326,6 @@ const RegulatoryCompliancePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 px-6 bg-primary-navy text-white">
-        <div className="max-w-[1200px] mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">150+</div>
-              <div className="text-lg opacity-90">Compliance Programs Built</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">$45M+</div>
-              <div className="text-lg opacity-90">Duties Saved Through Optimization</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">98%</div>
-              <div className="text-lg opacity-90">Audit Pass Rate for Clients</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">24hr</div>
-              <div className="text-lg opacity-90">Response for Prior Disclosures</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Related Services & Resources */}
       <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">

@@ -68,30 +68,6 @@ const SuccessStoriesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Results Overview */}
-      <section className="py-16 px-6 bg-primary-navy text-white">
-        <div className="max-w-[1200px] mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">$100M+</div>
-              <div className="text-lg opacity-90">Duties Saved & Penalties Mitigated</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">95%</div>
-              <div className="text-lg opacity-90">Success Rate in Seizure Release</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">200+</div>
-              <div className="text-lg opacity-90">CBP Audits Successfully Defended</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">50+</div>
-              <div className="text-lg opacity-90">Court of International Trade Wins</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Introduction */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-[900px] mx-auto text-center">

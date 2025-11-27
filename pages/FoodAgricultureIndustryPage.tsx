@@ -57,30 +57,6 @@ const FoodAgricultureIndustryPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 px-4 bg-white">
-        <div className="container-custom max-w-5xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-green-700 mb-2">$75M+</div>
-              <div className="text-gray-600">Food Cargo Released</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-green-700 mb-2">300+</div>
-              <div className="text-gray-600">FDA Admissibility Reviews</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-green-700 mb-2">95%</div>
-              <div className="text-gray-600">Release Success Rate</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-green-700 mb-2">Zero</div>
-              <div className="text-gray-600">Food Safety Incidents</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Industry Challenges Section */}
       <section className="py-16 px-4">
         <div className="container-custom max-w-5xl">
@@ -144,7 +120,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
         <div className="container-custom max-w-5xl">
           <div className="text-center mb-6">
             <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-              �COMPLIANCE ALERT
+              COMPLIANCE ALERT
             </div>
             <h2 className="text-3xl font-bold text-blue-900 mb-4">
               California Food Importers: Enhanced FDA Enforcement Under FSMA
@@ -160,24 +136,24 @@ const FoodAgricultureIndustryPage: React.FC = () => {
               <div>
                 <h3 className="font-bold text-blue-900 mb-3">What FDA Is Targeting:</h3>
                 <ul className="space-y-2 text-gray-700 list-none">
-                  <li>�Missing or inadequate FSVP programs</li>
-                  <li>�Lack of foreign supplier approval documentation</li>
-                  <li>�Insufficient hazard analysis for imported foods</li>
-                  <li>�Failure to verify supplier preventive controls</li>
-                  <li>�Misbranded products (labeling violations)</li>
-                  <li>�Unapproved health claims or supplement ingredients</li>
+                  <li>Missing or inadequate FSVP programs</li>
+                  <li>Lack of foreign supplier approval documentation</li>
+                  <li>Insufficient hazard analysis for imported foods</li>
+                  <li>Failure to verify supplier preventive controls</li>
+                  <li>Misbranded products (labeling violations)</li>
+                  <li>Unapproved health claims or supplement ingredients</li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-bold text-blue-900 mb-3">What Food Importers Must Do:</h3>
                 <ul className="space-y-2 text-gray-700 list-none">
-                  <li>�Develop and document comprehensive FSVP</li>
-                  <li>�Conduct hazard analysis for each imported food</li>
-                  <li>�Verify foreign suppliers have preventive controls</li>
-                  <li>�Perform or obtain supplier audits/certifications</li>
-                  <li>📝 Maintain detailed FSVP records (2+ years)</li>
-                  <li>�Ensure labeling complies with FDA regulations</li>
+                  <li>Develop and document comprehensive FSVP</li>
+                  <li>Conduct hazard analysis for each imported food</li>
+                  <li>Verify foreign suppliers have preventive controls</li>
+                  <li>Perform or obtain supplier audits/certifications</li>
+                  <li>Maintain detailed FSVP records (2+ years)</li>
+                  <li>Ensure labeling complies with FDA regulations</li>
                 </ul>
               </div>
             </div>
@@ -318,7 +294,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-green-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Fresh Produce (Fruits & Vegetables)</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Fresh Produce (Fruits & Vegetables)</h3>
               <p className="text-gray-700 mb-2">
                 <strong>FDA Requirements:</strong> Prior Notice required. Subject to FSVP if processed (cut, dried). Organic certification if labeled organic. Country of origin marking required (COOL).
               </p>
@@ -331,7 +307,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-red-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">🥩 Meat, Poultry & Seafood</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Meat, Poultry & Seafood</h3>
               <p className="text-gray-700 mb-2">
                 <strong>USDA FSIS:</strong> Meat and poultry from foreign establishments approved by USDA. Continuous inspection required. Strict food safety standards. Many countries ineligible.
               </p>
@@ -344,7 +320,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-yellow-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Dairy Products</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Dairy Products</h3>
               <p className="text-gray-700 mb-2">
                 <strong>FDA Requirements:</strong> Grade A pasteurized milk requires IMS permit. Cheese subject to Standard of Identity rules. FSVP required for all dairy imports.
               </p>
@@ -357,7 +333,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-purple-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Wine, Beer & Spirits</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Wine, Beer & Spirits</h3>
               <p className="text-gray-700 mb-2">
                 <strong>TTB Requirements:</strong> Importer must hold FAA Act Basic Permit. Certificate of Label Approval (COLA) required for each product. Formula approval for flavored beverages.
               </p>
@@ -370,7 +346,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-blue-50 to-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Dietary Supplements</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Dietary Supplements</h3>
               <p className="text-gray-700 mb-2">
                 <strong>FDA Requirements:</strong> Strict regulation under DSHEA. New Dietary Ingredient (NDI) notification required for novel ingredients. cGMP compliance mandatory. Structure/function claims must be substantiated.
               </p>
@@ -458,28 +434,28 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�California Agricultural Expertise</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">California Agricultural Expertise</h3>
               <p className="text-gray-700">
                 Deep understanding of California's agricultural industry and food import community. Experience with Central Valley produce, wine country, and specialty food sectors.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">🛡�FDA Detention Defense Excellence</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">FDA Detention Defense Excellence</h3>
               <p className="text-gray-700">
                 95% success rate securing release of detained food cargo. $75M+ in food products successfully admitted. Proven strategies for overturning FDA refusals.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Rapid Response for Perishable Goods</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Rapid Response for Perishable Goods</h3>
               <p className="text-gray-700">
                 24/7 availability for time-sensitive food detentions. Fast turnaround on FDA refusal responses, admissibility packages, and FSVP development.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">�Multi-Agency Coordination</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-3">Multi-Agency Coordination</h3>
               <p className="text-gray-700">
                 Experience coordinating with FDA, USDA FSIS, USDA APHIS, EPA, TTB, and CBP. Navigate complex inter-agency requirements efficiently.
               </p>

@@ -379,30 +379,6 @@ const ExportControlsPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 px-6 bg-primary-navy text-white">
-        <div className="max-w-[1200px] mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">500+</div>
-              <div className="text-lg opacity-90">Export Licenses Obtained</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">$85M</div>
-              <div className="text-lg opacity-90">Penalties Reduced in Settlements</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">200+</div>
-              <div className="text-lg opacity-90">ECCN Classifications Completed</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-garamond text-secondary-teal mb-2">100%</div>
-              <div className="text-lg opacity-90">Security Clearances Preserved</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Related Services & Resources */}
       <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">

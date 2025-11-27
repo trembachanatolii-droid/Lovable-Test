@@ -291,25 +291,6 @@ const CustomsDefensePage: React.FC = () => {
             Why Businesses Trust Our Customs Defense Team
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-secondary-teal mb-4">$15M+</div>
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Penalties Mitigated</h3>
-              <p className="text-text-secondary">We've saved clients millions in penalties through aggressive defense and strategic negotiations.</p>
-            </div>
-
-            <div className="text-center">
-              <div className="text-5xl font-bold text-secondary-teal mb-4">95%</div>
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Seizure Release Rate</h3>
-              <p className="text-text-secondary">We successfully release detained cargo in 95% of cases through admissibility packages and redelivery bonds.</p>
-            </div>
-
-            <div className="text-center">
-              <div className="text-5xl font-bold text-secondary-teal mb-4">24hr</div>
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Emergency Response</h3>
-              <p className="text-text-secondary">We respond to customs emergencies within 24 hours to protect your cargo and business operations.</p>
-            </div>
-          </div>
         </div>
       </section>
 
