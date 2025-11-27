@@ -52,7 +52,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
           <p className="hero-subtitle">
             Specialized international trade compliance for semiconductor manufacturers, electronics importers, software companies, and technology supply chains.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Schedule Strategic Consultation</a>
             <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>

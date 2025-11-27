@@ -84,7 +84,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
           <p className="hero-subtitle">
             Complete guide to forced labor import bans, UFLPA compliance, green trade regulations, carbon border adjustment, and anti-corruption requirements for California importers.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToSection('forced-labor-import-bans')} className="hero-cta">Learn More</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>

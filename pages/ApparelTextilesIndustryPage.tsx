@@ -52,7 +52,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
           <p className="hero-subtitle">
             Specialized compliance for fashion brands, apparel importers, textile manufacturers, and e-commerce clothing sellers. Expert UFLPA forced labor defense, HTS classification, and supply chain compliance.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Schedule UFLPA Consultation</a>
             <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>

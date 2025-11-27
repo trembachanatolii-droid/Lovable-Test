@@ -335,7 +335,7 @@ const FAQCenterPage: React.FC = () => {
           <p className="hero-subtitle">
             Get answers to common questions about customs compliance, import/export regulations, UFLPA, export controls, and California trade law.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToCategory(0)} className="hero-cta">Browse FAQs</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Ask a Question</a>
           </div>

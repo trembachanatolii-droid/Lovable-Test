@@ -62,7 +62,7 @@ const LosAngelesPortPage: React.FC = () => {
           <p className="hero-subtitle">
             Expert California port customs lawyer serving the LA/Long Beach port complex — the nation's busiest gateway for international trade.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
             <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>

@@ -597,7 +597,7 @@ const GlossaryPage: React.FC = () => {
           <p className="hero-subtitle">
             Comprehensive definitions of customs, import/export, and trade compliance terms used in California international trade law.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToCategory(0)} className="hero-cta">Browse Terms</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
