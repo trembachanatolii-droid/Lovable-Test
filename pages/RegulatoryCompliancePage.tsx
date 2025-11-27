@@ -285,7 +285,7 @@ const RegulatoryCompliancePage: React.FC = () => {
             Why California Businesses Trust Our Compliance Practice
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 justify-center">
             <div>
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Industry-Specific Expertise</h3>
               <p className="text-text-secondary leading-relaxed mb-6">
@@ -324,7 +324,7 @@ const RegulatoryCompliancePage: React.FC = () => {
             Related Services & Resources
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
             {/* Related Services */}
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Practice Areas</h3>
@@ -454,7 +454,7 @@ const RegulatoryCompliancePage: React.FC = () => {
           {/* Helpful Guides */}
           <div className="bg-white p-8 rounded-lg shadow-md overflow-hidden">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides & Resources</h3>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-4 gap-6 justify-center">
               <a href="#tariffs-duties-classification-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
                 <p className="text-sm text-text-secondary">Master HTS classification best practices</p>

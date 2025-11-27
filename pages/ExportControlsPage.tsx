@@ -80,7 +80,7 @@ const ExportControlsPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 justify-center">
             <div className="bg-neutral-50 p-8 rounded-lg border-t-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">ITAR Compliance</h3>
               <p className="text-text-secondary leading-relaxed">
@@ -285,7 +285,7 @@ const ExportControlsPage: React.FC = () => {
             California Industries We Serve
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             <div className="bg-neutral-50 p-6 rounded-lg">
               <h3 className="text-xl font-bold text-primary-navy mb-3 font-garamond">Aerospace & Defense</h3>
               <p className="text-text-secondary leading-relaxed text-sm">
@@ -338,7 +338,7 @@ const ExportControlsPage: React.FC = () => {
             Why California Tech Companies Choose Us
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 justify-center">
             <div>
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Technical Expertise</h3>
               <p className="text-text-secondary leading-relaxed mb-6">
@@ -377,7 +377,7 @@ const ExportControlsPage: React.FC = () => {
             Related Services & Resources
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
             {/* Related Services */}
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Practice Areas</h3>
@@ -507,7 +507,7 @@ const ExportControlsPage: React.FC = () => {
           {/* Helpful Guides */}
           <div className="bg-white p-8 rounded-lg shadow-md overflow-hidden">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides & Resources</h3>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-4 gap-6 justify-center">
               <a href="#article/ear-compliance" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">EAR Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Export Administration Regulations overview</p>

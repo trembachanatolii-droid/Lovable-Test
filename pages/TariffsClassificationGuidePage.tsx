@@ -229,7 +229,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
               </p>
 
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond mt-8">California Industries Most Affected by AD Duties</h3>
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="grid md:grid-cols-2 gap-6 mb-6 justify-center">
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2">Steel & Aluminum Products</h4>
                   <p className="text-text-secondary text-sm">Over 50 active AD orders covering steel pipes, plates, wire, and aluminum extrusions imported through California ports</p>
@@ -524,7 +524,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
               </p>
 
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond mt-8">The Customs-Tax Conflict</h3>
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="grid md:grid-cols-2 gap-6 mb-6 justify-center">
                 <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
                   <h4 className="font-bold text-red-900 mb-2">Tax Transfer Pricing Objective</h4>
                   <p className="text-text-secondary text-sm">Maximize intercompany prices to shift profits to low-tax jurisdictions (e.g., price U.S. imports high to reduce U.S. taxable income)</p>

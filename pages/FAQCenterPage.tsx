@@ -362,12 +362,12 @@ const FAQCenterPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-primary-navy mb-6 text-center">
             Browse by Topic
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             {faqCategories.map((category, index) => (
               <button
                 key={index}
                 onClick={() => scrollToCategory(index)}
-                className="card-link group relative overflow-hidden text-left"
+                className="card-link group relative overflow-hidden text-left w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]"
                 type="button"
                 aria-label={`Navigate to ${category.category} section`}
               >
@@ -471,10 +471,10 @@ const FAQCenterPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-primary-navy mb-8 text-center">
             Additional Resources
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="flex flex-wrap gap-6 justify-center">
             <a
               href="#trade-law-glossary"
-              className="card-link group"
+              className="card-link group w-full md:w-[calc(33.333%-1rem)]"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">Trade Law Glossary</h3>
               <p className="text-gray-600 text-sm">
@@ -488,7 +488,7 @@ const FAQCenterPage: React.FC = () => {
             </a>
             <a
               href="#resources"
-              className="card-link group"
+              className="card-link group w-full md:w-[calc(33.333%-1rem)]"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">Resource Guides</h3>
               <p className="text-gray-600 text-sm">
@@ -502,7 +502,7 @@ const FAQCenterPage: React.FC = () => {
             </a>
             <a
               href="#practice-areas"
-              className="card-link group"
+              className="card-link group w-full md:w-[calc(33.333%-1rem)]"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">Practice Areas</h3>
               <p className="text-gray-600 text-sm">

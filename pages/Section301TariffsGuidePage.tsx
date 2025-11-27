@@ -116,7 +116,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                 USTR's Section 301 investigation, initiated in August 2017, found that China engages in four categories of unfair acts, policies, and practices:
               </p>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="grid md:grid-cols-2 gap-6 mb-8 justify-center">
                 <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary-teal">
                   <h4 className="text-lg font-bold text-primary-navy mb-3">Technology Transfer Requirements</h4>
                   <p className="text-text-secondary leading-relaxed">
@@ -155,7 +155,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                 Section 301 tariffs are administered by U.S. Customs and Border Protection (CBP) at the time of import entry. CBP automatically applies Section 301 duties based on:
               </p>
 
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="grid md:grid-cols-3 gap-6 mb-8 justify-center">
                 <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary-teal">
                   <h4 className="text-lg font-bold text-primary-navy mb-3">Product Classification</h4>
                   <p className="text-text-secondary leading-relaxed">
@@ -943,7 +943,7 @@ const Section301TariffsGuidePage: React.FC = () => {
             Related Services & Resources
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 justify-center">
             {/* Legal Services */}
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Section 301 Legal Services</h3>

@@ -116,7 +116,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 justify-center">
             <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Forced Labor Prevention</h3>
               <p className="text-text-secondary leading-relaxed">
@@ -154,7 +154,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
                 <strong>Supply chain ESG compliance</strong> integrates environmental sustainability, social responsibility (labor rights, human rights), and governance (anti-corruption, transparency) into international trade operations. For California importers, ESG compliance is no longer voluntary—it's legally mandated through:
               </p>
 
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="grid md:grid-cols-3 gap-6 mb-8 justify-center">
                 <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
                   <h3 className="font-bold text-green-900 mb-2">Environmental (E)</h3>
                   <ul className="list-disc list-inside text-text-secondary space-y-1 ml-2">
@@ -295,7 +295,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
               </p>
 
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond mt-8">Industries Most Affected by UFLPA</h3>
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="grid md:grid-cols-2 gap-6 mb-6 justify-center">
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2">Apparel & Textiles</h4>
                   <p className="text-text-secondary text-sm mb-3">Xinjiang produces 85% of China's cotton and 20% of global cotton. Apparel imports to California face extreme scrutiny.</p>
@@ -541,7 +541,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
             Related Services & Resources
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
             {/* Legal Services */}
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Forced Labor Compliance Services</h3>
@@ -655,7 +655,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
           {/* Helpful Resources */}
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful ESG Compliance Resources</h3>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-4 gap-6 justify-center">
               <a href="#resources/uflpa-compliance-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Forced labor detention defense strategies</p>

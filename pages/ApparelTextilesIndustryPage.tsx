@@ -76,7 +76,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
               <strong>The apparel and textile industry faces the highest enforcement risk under the Uyghur Forced Labor Prevention Act (UFLPA).</strong> CBP has detained thousands of apparel shipments, with many fashion brands experiencing significant supply chain disruptions.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 mt-6">
+            <div className="grid md:grid-cols-2 gap-6 mt-6 justify-center">
               <div>
                 <h3 className="font-bold text-red-900 mb-3">Why Apparel Is Highest Risk:</h3>
                 <ul className="space-y-2 text-gray-700 list-none">
@@ -120,7 +120,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 justify-center">
             <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Complex Classification Rules</h3>
               <p className="text-text-secondary leading-relaxed">
@@ -338,7 +338,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             Why Apparel & Textile Companies Choose Trembach Law
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 justify-center">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-navy mb-3">Deep Apparel Industry Knowledge</h3>
               <p className="text-gray-700">
@@ -377,7 +377,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             Related Services & Resources
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
             {/* Legal Services */}
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4">Legal Services</h3>
@@ -506,7 +506,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
           {/* Helpful Guides */}
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for Apparel Companies</h3>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-4 gap-6 justify-center">
               <a href="#supply-chain-esg-compliance-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Forced labor detention defense</p>
@@ -561,7 +561,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-12 justify-center">
             {/* LA Fashion District */}
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-xl font-bold text-primary-navy mb-4">Los Angeles Fashion & Garment District</h3>
