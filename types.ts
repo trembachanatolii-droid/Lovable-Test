@@ -43,7 +43,7 @@ export interface ArticleData {
   intro: string; // Paragraph 1
   services: string; // Paragraph 2
   content: string; // Full HTML content
-  keywords?: string; // SEO keywords specific to this article
+  keywords?: string | string[]; // SEO keywords specific to this article (comma-separated string or array)
   publishedDate: string; // Publication date in ISO 8601 format (YYYY-MM-DD)
   lastModified: string; // Last modified date in ISO 8601 format (YYYY-MM-DD)
 }
