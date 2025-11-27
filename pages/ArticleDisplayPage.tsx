@@ -158,24 +158,6 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
               </span>
             </div>
 
-            {article.lastModified && article.publishedDate !== article.lastModified && (
-              <>
-                <div className="hidden md:block w-px h-10" style={{ backgroundColor: '#E5E7EB' }}></div>
-
-                <div className="flex flex-col text-left">
-                  <span className="text-[11px] uppercase tracking-widest mb-0.5" style={{ color: '#9CA3AF' }}>
-                    Last Updated
-                  </span>
-                  <span className="font-bold text-sm" style={{ color: '#012169' }}>
-                    {new Date(article.lastModified).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    })}
-                  </span>
-                </div>
-              </>
-            )}
           </div>
         </header>
 

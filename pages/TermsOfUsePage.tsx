@@ -59,8 +59,7 @@ const TermsOfUsePage: React.FC = () => {
         <div className="space-y-8 leading-relaxed">
           <section aria-labelledby="effective-date">
             <p className="font-semibold mb-4">
-              Effective Date: November 18, 2025<br />
-              Last Updated: November 18, 2025
+              Effective Date: November 18, 2025
             </p>
             <p className="mb-4">
               <strong>RESPONSIBLE ATTORNEY:</strong><br />

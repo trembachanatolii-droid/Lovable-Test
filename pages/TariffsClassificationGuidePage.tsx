@@ -92,15 +92,6 @@ const TariffsClassificationGuidePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Last Updated Timestamp */}
-      <div className="py-4 px-6 bg-white border-b border-gray-100">
-        <div className="max-w-[900px] mx-auto">
-          <p className="text-sm text-gray-500 text-center">
-            <span className="font-semibold text-primary-navy">Last Updated:</span> <time dateTime="2025-11-25">November 25, 2025</time>
-          </p>
-        </div>
-      </div>
-
       {/* Introduction */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-[900px] mx-auto">
