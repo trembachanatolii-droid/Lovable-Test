@@ -24,30 +24,30 @@ const Section301TariffsGuidePage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-navy via-secondary-teal to-primary-navy py-16 px-4">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 font-garamond">
-              Section 301 Tariffs Guide
-            </h1>
-            <p className="text-xl text-gray-100 mb-8">
-              Strategic compliance and mitigation for California importers navigating China trade tariffs
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-white">
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-secondary-gold">$370B+</div>
-                <div className="text-sm">Goods Covered</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-secondary-gold">7.5-100%</div>
-                <div className="text-sm">Additional Duty Rates</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-secondary-gold">$3-15M+</div>
-                <div className="text-sm">Client Savings Achieved</div>
-              </div>
-            </div>
+      {/* Hero Section - matching site-wide hero pattern */}
+      <section className="hero" aria-label="Section 301 Tariffs Guide Hero">
+        <picture className="hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1920&auto=format&fit=crop"
+            alt=""
+            role="presentation"
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async"
+            className="hero-bg-image"
+          />
+        </picture>
+        <div className="hero-overlay" aria-hidden="true"></div>
+
+        <div className="container">
+          <h1>Section 301 Tariffs Guide</h1>
+          <p className="hero-subtitle">
+            Strategic compliance and mitigation for California importers navigating China trade tariffs
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#overview" className="hero-cta">Learn More</a>
+            <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>
       </section>
@@ -256,7 +256,7 @@ const Section301TariffsGuidePage: React.FC = () => {
 
                 <div className="bg-blue-50 p-4 rounded">
                   <p className="text-sm text-gray-800 mb-2"><strong>Strategy Note:</strong> List 4 targets remaining consumer goods not covered by Lists 1-3, including highly visible consumer products. Lower rate (7.5%) reflects Phase One Agreement de-escalation from original 15%.</p>
-                  <p className="text-sm text-red-700 font-semibold">âš ï¸Important: List 4B was originally scheduled for Dec 15, 2019, but implementation was suspended. However, portions were later implemented. Verify specific HTS applicability carefully.</p>
+                  <p className="text-sm text-red-700 font-semibold">âš ï¿½Important: List 4B was originally scheduled for Dec 15, 2019, but implementation was suspended. However, portions were later implemented. Verify specific HTS applicability carefully.</p>
                 </div>
               </div>
             </div>
@@ -302,7 +302,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   <li>Note: Some HTS subheadings are partially covered (specific products within broader classification) - review product descriptions carefully</li>
                 </ul>
                 <div className="mt-3 bg-teal-50 p-3 rounded">
-                  <p className="text-sm text-gray-800"><strong>âš ï¸Classification Risk:</strong> Even minor classification differences can mean presence/absence of 25% additional duty. Small product modifications or reclassification can potentially avoid Section 301 coverage.</p>
+                  <p className="text-sm text-gray-800"><strong>âš ï¿½Classification Risk:</strong> Even minor classification differences can mean presence/absence of 25% additional duty. Small product modifications or reclassification can potentially avoid Section 301 coverage.</p>
                 </div>
               </div>
 
@@ -319,7 +319,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   <li><strong>Third-country processing:</strong> Chinese materials/components processed in third country (Vietnam, Mexico, etc.) - analyze whether third-country processing was substantial transformation</li>
                 </ul>
                 <div className="mt-3 bg-teal-50 p-3 rounded">
-                  <p className="text-sm text-gray-800"><strong>ðŸ’Mitigation Opportunity:</strong> For goods processed in multiple countries, careful origin analysis may demonstrate non-Chinese origin despite Chinese inputs. Obtain CBP binding origin rulings for certainty.</p>
+                  <p className="text-sm text-gray-800"><strong>ï¿½Mitigation Opportunity:</strong> For goods processed in multiple countries, careful origin analysis may demonstrate non-Chinese origin despite Chinese inputs. Obtain CBP binding origin rulings for certainty.</p>
                 </div>
               </div>
 
@@ -336,7 +336,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   <li>New exclusion processes may open - monitor USTR Federal Register notices</li>
                 </ul>
                 <div className="mt-3 bg-amber-50 p-3 rounded border border-amber-200">
-                  <p className="text-sm text-gray-800"><strong>ðŸ“Current Status Note:</strong> Most historical exclusions have expired. If exclusion process reopens, immediate filing is critical as review can take 6-12+ months. We assist with exclusion requests including economic analysis and legal advocacy.</p>
+                  <p className="text-sm text-gray-800"><strong>ï¿½Current Status Note:</strong> Most historical exclusions have expired. If exclusion process reopens, immediate filing is critical as review can take 6-12+ months. We assist with exclusion requests including economic analysis and legal advocacy.</p>
                 </div>
               </div>
             </div>
@@ -346,19 +346,19 @@ const Section301TariffsGuidePage: React.FC = () => {
 
               <div className="space-y-4 text-sm">
                 <div className="bg-white p-4 rounded shadow-sm">
-                  <p className="font-bold text-gray-800 mb-2">âœScenario 1: Direct Chinese Import</p>
+                  <p className="font-bold text-gray-800 mb-2">ï¿½Scenario 1: Direct Chinese Import</p>
                   <p className="text-gray-700 mb-1"><strong>Facts:</strong> Electronic component manufactured entirely in China, HTS 8504.40.95, imported directly from Chinese factory</p>
                   <p className="text-gray-700"><strong>Result:</strong> Subject to Section 301 List 3 (25%) if HTS 8504.40.95 is on List 3 Annex</p>
                 </div>
 
                 <div className="bg-white p-4 rounded shadow-sm">
-                  <p className="font-bold text-gray-800 mb-2">âœScenario 2: Third-Country Assembly</p>
+                  <p className="font-bold text-gray-800 mb-2">ï¿½Scenario 2: Third-Country Assembly</p>
                   <p className="text-gray-700 mb-1"><strong>Facts:</strong> Chinese-made fabric shipped to Vietnam, cut and sewn into finished apparel in Vietnam, imported from Vietnam</p>
                   <p className="text-gray-700"><strong>Result:</strong> Likely Vietnamese origin (substantial transformation) - NOT subject to Section 301 despite Chinese inputs</p>
                 </div>
 
                 <div className="bg-white p-4 rounded shadow-sm">
-                  <p className="font-bold text-gray-800 mb-2">âœScenario 3: Transshipment</p>
+                  <p className="font-bold text-gray-800 mb-2">ï¿½Scenario 3: Transshipment</p>
                   <p className="text-gray-700 mb-1"><strong>Facts:</strong> Finished Chinese goods shipped through Vietnam with minor repackaging, declared as Vietnamese origin</p>
                   <p className="text-gray-700 text-red-700"><strong>Result:</strong> Chinese origin (no substantial transformation) - Subject to Section 301 + penalties for false origin declaration</p>
                 </div>
@@ -417,12 +417,12 @@ const Section301TariffsGuidePage: React.FC = () => {
                   <div>
                     <h4 className="text-xl font-bold text-primary-navy mb-3">First Sale Valuation</h4>
                     <p className="text-gray-700 mb-3">
-                      For multi-tiered transactions (manufacturer â†middleman â†U.S. importer), use "first sale" valuation to calculate duties on manufacturer's sale price rather than middleman's markup.
+                      For multi-tiered transactions (manufacturer ï¿½middleman ï¿½U.S. importer), use "first sale" valuation to calculate duties on manufacturer's sale price rather than middleman's markup.
                     </p>
                     <div className="bg-gray-50 p-4 rounded mb-3">
                       <p className="text-sm font-semibold text-gray-800 mb-2">Strategy Implementation:</p>
                       <ul className="text-sm text-gray-700 list-disc pl-5 space-y-1">
-                        <li>Document multi-tier transaction structure (manufacturer â†trading company â†importer)</li>
+                        <li>Document multi-tier transaction structure (manufacturer ï¿½trading company ï¿½importer)</li>
                         <li>Demonstrate manufacturer's sale is bona fide "sale for export to United States"</li>
                         <li>Maintain detailed records of manufacturer pricing, middleman markup, and services provided</li>
                         <li>Calculate duties based on lower first sale price</li>
@@ -455,7 +455,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                       </ul>
                     </div>
                     <p className="text-sm text-red-700 font-semibold mb-2">
-                      âš ï¸Critical Compliance Warning: Ensure genuine substantial transformation occurs in new country. Simply routing Chinese goods through third country without meaningful processing is transshipment (illegal) and results in severe penalties.
+                      âš ï¿½Critical Compliance Warning: Ensure genuine substantial transformation occurs in new country. Simply routing Chinese goods through third country without meaningful processing is transshipment (illegal) and results in severe penalties.
                     </p>
                     <p className="text-sm text-gray-600 italic">
                       <strong>Savings Potential:</strong> Eliminates 7.5-25% Section 301 duty. Potential to achieve duty-free treatment with USMCA or other FTAs. Long-term solution with greatest savings.
@@ -586,7 +586,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                       <strong>Savings Potential:</strong> Complete elimination of Section 301 duty for granted exclusions. Duration typically 1 year (potentially extended). High-value strategy but uncertain/lengthy process (6-12+ months).
                     </p>
                     <p className="text-sm text-amber-700 font-semibold">
-                      ðŸ“Current Status: Most historical exclusions expired. New exclusion process may open in 2025 - we monitor continuously and can mobilize exclusion requests within days of announcement.
+                      ï¿½Current Status: Most historical exclusions expired. New exclusion process may open in 2025 - we monitor continuously and can mobilize exclusion requests within days of announcement.
                     </p>
                   </div>
                 </div>
@@ -716,7 +716,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                 <li>Can request expedited review for severe economic hardship</li>
               </ul>
               <p className="text-gray-800 font-semibold">
-                âšTrembach Law Firm maintains exclusion process monitoring and can mobilize exclusion requests within 24-48 hours of USTR announcement. Contact us to prepare exclusion request packages in advance of next process opening.
+                ï¿½Trembach Law Firm maintains exclusion process monitoring and can mobilize exclusion requests within 24-48 hours of USTR announcement. Contact us to prepare exclusion request packages in advance of next process opening.
               </p>
             </div>
           </section>
@@ -817,7 +817,7 @@ const Section301TariffsGuidePage: React.FC = () => {
               </div>
 
               <div className="bg-red-50 border-l-4 border-red-600 p-6">
-                <h3 className="text-xl font-bold text-red-900 mb-3">âš ï¸Common Section 301 Compliance Violations</h3>
+                <h3 className="text-xl font-bold text-red-900 mb-3">âš ï¿½Common Section 301 Compliance Violations</h3>
                 <p className="text-gray-800 mb-3">Avoid these high-risk errors:</p>
                 <ul className="text-gray-700 space-y-2">
                   <li className="flex items-start">

@@ -563,30 +563,30 @@ const GlossaryPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-navy via-primary-navy to-secondary-gold py-16 px-4">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              International Trade Law Glossary
-            </h1>
-            <p className="text-xl text-gray-100 mb-8">
-              Comprehensive definitions of customs, import/export, and trade compliance terms used in California international trade law
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-white">
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-secondary-gold">110+</div>
-                <div className="text-sm">Defined Terms</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-secondary-gold">7</div>
-                <div className="text-sm">Categories</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-secondary-gold">A-Z</div>
-                <div className="text-sm">Alphabetical</div>
-              </div>
-            </div>
+      {/* Hero Section - matching site-wide hero pattern */}
+      <section className="hero" aria-label="Trade Law Glossary Hero">
+        <picture className="hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1920&auto=format&fit=crop"
+            alt=""
+            role="presentation"
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async"
+            className="hero-bg-image"
+          />
+        </picture>
+        <div className="hero-overlay" aria-hidden="true"></div>
+
+        <div className="container">
+          <h1>International Trade Law<br />Glossary</h1>
+          <p className="hero-subtitle">
+            Comprehensive definitions of customs, import/export, and trade compliance terms used in California international trade law.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#customs-terms" className="hero-cta">Browse Terms</a>
+            <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>
       </section>

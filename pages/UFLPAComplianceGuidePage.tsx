@@ -26,30 +26,30 @@ const UFLPAComplianceGuidePage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-navy via-secondary-teal to-primary-navy py-16 px-4">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 font-garamond">
-              UFLPA Compliance Guide
-            </h1>
-            <p className="text-xl text-gray-100 mb-8">
-              Complete strategy for navigating the Uyghur Forced Labor Prevention Act - from supply chain due diligence to detention defense
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-white">
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-secondary-gold">$1.5B+</div>
-                <div className="text-sm">Goods Detained by CBP</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-secondary-gold">98%</div>
-                <div className="text-sm">Our Release Rate</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-secondary-gold">28-45</div>
-                <div className="text-sm">Days Avg. Release</div>
-              </div>
-            </div>
+      {/* Hero Section - matching site-wide hero pattern */}
+      <section className="hero" aria-label="UFLPA Compliance Guide Hero">
+        <picture className="hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1920&auto=format&fit=crop"
+            alt=""
+            role="presentation"
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async"
+            className="hero-bg-image"
+          />
+        </picture>
+        <div className="hero-overlay" aria-hidden="true"></div>
+
+        <div className="container">
+          <h1>UFLPA Compliance Guide</h1>
+          <p className="hero-subtitle">
+            Complete strategy for navigating the Uyghur Forced Labor Prevention Act — from supply chain due diligence to detention defense.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#overview" className="hero-cta">Learn More</a>
+            <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>
       </section>

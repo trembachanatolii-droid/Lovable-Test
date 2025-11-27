@@ -28,38 +28,31 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
   });
 
   return (
-    <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
-      {/* Hero Section */}
-      <section className="relative w-full min-h-[600px] overflow-hidden bg-primary-navy flex items-center py-16">
-        <div className="absolute inset-0 z-0">
+    <div className="font-montserrat text-neutral-darkGray bg-white min-h-screen">
+      {/* Hero Section - matching site-wide hero pattern */}
+      <section className="hero" aria-label="Technology Electronics Trade Law Hero">
+        <picture className="hero-bg">
           <img
             src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1920&auto=format&fit=crop"
-            alt="Technology and electronics representing advanced tech industry trade compliance"
-            className="w-full h-full object-cover opacity-40"
-            loading="eager"
-            decoding="async"
+            alt=""
+            role="presentation"
             width="1920"
             height="1080"
+            loading="eager"
+            decoding="async"
+            className="hero-bg-image"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/90 via-primary-navy/80 to-primary-navy/95"></div>
-        </div>
+        </picture>
+        <div className="hero-overlay" aria-hidden="true"></div>
 
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-tight" style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.5), 0 4px 20px rgba(0, 0, 0, 0.3)' }}>
-              California Trade Law Attorney for Technology & Electronics Companies
-            </h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-white font-light mb-8 max-w-2xl leading-relaxed" style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.4)' }}>
-              Specialized international trade compliance for semiconductor manufacturers, electronics importers, software companies, and technology supply chains. Expert HTS classification, Section 301 tariff strategies, export controls, and supply chain optimization.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="#schedule-consultation" variant="solid">
-                Schedule Strategic Consultation
-              </Button>
-              <Button href="tel:+16317468290" variant="outline">
-                Call (631) 746-8290
-              </Button>
-            </div>
+        <div className="container">
+          <h1>California Trade Law Attorney for<br />Technology & Electronics Companies</h1>
+          <p className="hero-subtitle">
+            Specialized international trade compliance for semiconductor manufacturers, electronics importers, software companies, and technology supply chains.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#schedule-consultation" className="hero-cta">Schedule Strategic Consultation</a>
+            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>
         </div>
       </section>
