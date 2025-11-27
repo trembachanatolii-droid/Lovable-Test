@@ -505,7 +505,7 @@ const ExportControlsPage: React.FC = () => {
                 <h4 className="font-bold text-primary-navy mb-2">OFAC Sanctions Guide</h4>
                 <p className="text-sm text-text-secondary">Sanctions screening and compliance</p>
               </a>
-              <a href="#faq-center" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#trade-law-faq" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Answers to export control questions</p>
               </a>

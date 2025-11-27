@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema } from '../utils/seo';
 
@@ -27,26 +28,38 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
+    <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-navy via-primary-navy to-secondary-teal py-16 px-4">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block bg-secondary-gold text-primary-navy px-4 py-2 rounded-full text-sm font-bold mb-4">
-              INDUSTRY FOCUS: TECHNOLOGY & ELECTRONICS
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+      <section className="relative w-full h-[500px] overflow-hidden bg-primary-navy flex items-center">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1920&auto=format&fit=crop"
+            alt="Technology and electronics representing advanced tech industry trade compliance"
+            className="w-full h-full object-cover opacity-50"
+            loading="eager"
+            decoding="async"
+            width="1920"
+            height="1080"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/80 via-primary-navy/60 to-primary-navy/95"></div>
+        </div>
+
+        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-none drop-shadow-lg">
               California Trade Law Attorney for Technology & Electronics Companies
             </h1>
-            <p className="text-xl text-gray-100 mb-8">
-              Specialized international trade compliance for semiconductor manufacturers, electronics importers, software companies, and technology supply chains
+            <p className="text-xl md:text-2xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
+              Specialized international trade compliance for semiconductor manufacturers, electronics importers, software companies, and technology supply chains. Expert HTS classification, Section 301 tariff strategies, export controls, and supply chain optimization.
             </p>
-            <a
-              href="#contact"
-              className="inline-block bg-secondary-gold hover:bg-yellow-500 text-primary-navy font-bold py-4 px-8 rounded-lg transition-colors shadow-lg"
-            >
-              Schedule Strategic Consultation
-            </a>
+            <div className="flex flex-col md:flex-row gap-4">
+              <Button href="#schedule-consultation" variant="solid">
+                Schedule Strategic Consultation
+              </Button>
+              <Button href="tel:+16317468290" variant="outline">
+                Call (631) 746-8290
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -492,7 +505,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">Helpful Guides for Tech Companies</h3>
             <div className="grid md:grid-cols-4 gap-4">
-              <a href="#section-301-tariffs-guide" className="block p-4 bg-gray-50 rounded-lg hover:bg-secondary-teal/10 transition-colors text-center">
+              <a href="#resources/section-301-tariffs-guide" className="block p-4 bg-gray-50 rounded-lg hover:bg-secondary-teal/10 transition-colors text-center">
                 <h4 className="font-bold text-primary-navy mb-1">Section 301 Guide</h4>
                 <p className="text-xs text-gray-600">China tariff strategies</p>
               </a>
@@ -500,11 +513,11 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
                 <h4 className="font-bold text-primary-navy mb-1">EAR Compliance</h4>
                 <p className="text-xs text-gray-600">Export control basics</p>
               </a>
-              <a href="#tariffs-classification-guide" className="block p-4 bg-gray-50 rounded-lg hover:bg-secondary-teal/10 transition-colors text-center">
+              <a href="#tariffs-duties-classification-guide" className="block p-4 bg-gray-50 rounded-lg hover:bg-secondary-teal/10 transition-colors text-center">
                 <h4 className="font-bold text-primary-navy mb-1">HTS Classification</h4>
                 <p className="text-xs text-gray-600">Tech classification tips</p>
               </a>
-              <a href="#faq-center" className="block p-4 bg-gray-50 rounded-lg hover:bg-secondary-teal/10 transition-colors text-center">
+              <a href="#trade-law-faq" className="block p-4 bg-gray-50 rounded-lg hover:bg-secondary-teal/10 transition-colors text-center">
                 <h4 className="font-bold text-primary-navy mb-1">FAQ Center</h4>
                 <p className="text-xs text-gray-600">Tech trade questions</p>
               </a>

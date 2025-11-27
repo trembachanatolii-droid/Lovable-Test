@@ -440,19 +440,19 @@ const RegulatoryCompliancePage: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides & Resources</h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <a href="#tariffs-classification-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#tariffs-duties-classification-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
                 <p className="text-sm text-text-secondary">Master HTS classification best practices</p>
               </a>
-              <a href="#section-301-tariffs-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#resources/section-301-tariffs-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">Strategies for China tariff mitigation</p>
               </a>
-              <a href="#uflpa-compliance-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#resources/uflpa-compliance-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Build UFLPA-compliant supply chains</p>
               </a>
-              <a href="#glossary" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#trade-law-glossary" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">Trade Law Glossary</h4>
                 <p className="text-sm text-text-secondary">Definitions of key compliance terms</p>
               </a>

@@ -407,15 +407,15 @@ const CustomsDefensePage: React.FC = () => {
                 <h4 className="font-bold text-primary-navy mb-2">CBP Audit Survival Guide</h4>
                 <p className="text-sm text-text-secondary">How to prepare for and survive a Focused Assessment</p>
               </a>
-              <a href="#section-301-tariffs-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#resources/section-301-tariffs-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">Navigate China tariffs and exclusion strategies</p>
               </a>
-              <a href="#uflpa-compliance-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#resources/uflpa-compliance-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Forced labor detention defense strategies</p>
               </a>
-              <a href="#faq-center" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#trade-law-faq" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Answers to common customs defense questions</p>
               </a>

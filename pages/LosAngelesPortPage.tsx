@@ -47,16 +47,16 @@ const LosAngelesPortPage: React.FC = () => {
           <img
             src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?q=80&w=1920&auto=format&fit=crop"
             alt="Port of Los Angeles and Long Beach shipping containers and cranes at sunset"
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-cover opacity-50"
             loading="eager"
             decoding="async"
             width="1920"
             height="1080"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/70 via-primary-navy/50 to-primary-navy/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/80 via-primary-navy/60 to-primary-navy/95"></div>
         </div>
 
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
+        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left pb-12">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-none drop-shadow-lg">
               Los Angeles & Long Beach Port Customs Attorney
@@ -65,7 +65,7 @@ const LosAngelesPortPage: React.FC = () => {
               Expert California port customs lawyer serving the LA/Long Beach port complex - the nation's busiest gateway for international trade.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
-              <Button href="#contact" variant="solid">
+              <Button href="#schedule-consultation" variant="solid">
                 Free Port Customs Consultation
               </Button>
               <Button href="tel:+16317468290" variant="outline">
@@ -471,19 +471,19 @@ const LosAngelesPortPage: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for LA/LB Importers</h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <a href="#section-301-tariffs-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#resources/section-301-tariffs-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">China tariff mitigation strategies</p>
               </a>
-              <a href="#uflpa-compliance-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#resources/uflpa-compliance-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Forced labor detention defense</p>
               </a>
-              <a href="#tariffs-classification-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#tariffs-duties-classification-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
                 <p className="text-sm text-text-secondary">HTS classification best practices</p>
               </a>
-              <a href="#faq-center" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#trade-law-faq" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Common port customs questions</p>
               </a>
