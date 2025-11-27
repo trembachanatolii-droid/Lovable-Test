@@ -518,6 +518,134 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
         </div>
       </section>
 
+      {/* California Tech Hub Local Knowledge */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 font-garamond">
+              Deep California Tech Hub Local Knowledge
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              On-the-ground expertise serving technology companies throughout Silicon Valley, Southern California tech corridors, and San Diego's innovation district
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Silicon Valley Tech Corridors */}
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Silicon Valley & Bay Area Tech Corridors</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Highway 101 Corridor:</strong> San Francisco → San Jose, connecting major tech campuses (Meta, Google, Apple, Tesla)
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>I-280 Tech Belt:</strong> Palo Alto → San Jose, Stanford Research Park to downtown San Jose tech district
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>East Bay Tech Hub:</strong> Fremont (Tesla), Dublin/Pleasanton logistics, Port of Oakland access via I-880
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>San Francisco Tech District:</strong> SoMa, Mission Bay biotech cluster, SF port terminal access
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Southern California Tech */}
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Southern California Tech & Logistics</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Silicon Beach:</strong> Santa Monica, Venice, Playa Vista - LA's tech startup hub near LAX
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Irvine Tech Corridor:</strong> Orange County tech headquarters, semiconductor companies along I-405
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>Inland Empire Distribution:</strong> Ontario, Riverside, San Bernardino - major fulfillment centers for tech products
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal mr-2 font-bold">•</span>
+                  <div>
+                    <strong>San Diego Tech:</strong> Qualcomm corridor, biotech cluster (Sorrento Valley), Naval tech contractors
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Tech Import Logistics */}
+          <div className="bg-primary-navy/5 rounded-lg p-6 mb-8">
+            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">California Tech Import & Distribution Infrastructure</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div>
+                <h4 className="font-bold text-primary-navy mb-2">Bay Area Ports</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>Port of Oakland - Asia-Pacific electronics gateway</li>
+                  <li>San Francisco Pier terminals</li>
+                  <li>Oakland International Airport cargo</li>
+                  <li>SFO international freight</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-primary-navy mb-2">SoCal Ports</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>Port of LA - largest container volume</li>
+                  <li>Port of Long Beach - tech imports hub</li>
+                  <li>LAX cargo - express shipments</li>
+                  <li>Ontario Airport freight</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-primary-navy mb-2">CBP Tech Facilities</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>San Francisco CBP Office</li>
+                  <li>Oakland Port CBP</li>
+                  <li>LA/Long Beach Service Port</li>
+                  <li>San Diego tech border processing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* California Tech Cities Served */}
+          <div className="bg-white border border-gray-200 rounded-lg p-6">
+            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">California Tech Cities We Serve</h3>
+            <p className="text-center text-gray-600 mb-4">Available by appointment throughout California's technology corridors</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 text-center text-sm">
+              {[
+                'San Jose', 'Palo Alto', 'Mountain View', 'Cupertino', 'Santa Clara', 'Sunnyvale',
+                'Fremont', 'San Francisco', 'Oakland', 'Menlo Park', 'Redwood City', 'San Mateo',
+                'Irvine', 'Santa Monica', 'Los Angeles', 'San Diego', 'Burbank', 'Pasadena',
+                'Costa Mesa', 'Newport Beach', 'Torrance', 'El Segundo', 'Carlsbad', 'Calabasas'
+              ].map((city) => (
+                <span key={city} className="bg-gray-100 rounded px-3 py-2 text-gray-700">{city}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">

@@ -149,8 +149,8 @@ const GeneralApplicationPage: React.FC = () => {
                         </div>
                         <div>
                             <strong className="text-primary-navy">Phone:</strong>{' '}
-                            <a href="tel:631-746-8290" className="text-secondary-teal hover:underline">
-                                631-746-8290
+                            <a href="tel:+16317468290" className="text-secondary-teal hover:underline">
+                                (631) 746-8290
                             </a>
                         </div>
                     </div>

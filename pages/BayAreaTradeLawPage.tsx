@@ -287,6 +287,141 @@ const BayAreaTradeLawPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Deep Local Knowledge */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6 text-center">
+            Deep Bay Area Local Knowledge
+          </h2>
+          <p className="text-xl text-text-secondary text-center mb-12 max-w-3xl mx-auto">
+            Our attorneys understand Bay Area port logistics, Silicon Valley business culture, and California export compliance requirements. We serve clients by appointment throughout the Bay Area region.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Port of Oakland Routes */}
+            <div className="bg-neutral-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Port of Oakland Truck Routes & Corridors</h3>
+              <p className="text-text-secondary mb-4">Understanding Bay Area freight corridors is essential for managing port logistics and avoiding costly delays:</p>
+              <ul className="space-y-3 text-text-secondary">
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">I-880</span>
+                  <span>Nimitz Freeway — primary port access connecting Oakland terminals to distribution centers in Hayward, Fremont, and San Jose</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">I-80</span>
+                  <span>East-west corridor connecting Port of Oakland to I-680, Sacramento, and national distribution networks</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">I-580</span>
+                  <span>Connects I-880 to I-5 and Inland Empire; critical for east-bound distribution</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">SR-13</span>
+                  <span>Warren Freeway — connects Berkeley and Ashby Avenue to port area</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">SR-101</span>
+                  <span>Peninsula access — connects Silicon Valley tech centers to air freight at SFO and SJC</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Industrial Areas */}
+            <div className="bg-neutral-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Bay Area Industrial & Distribution Zones</h3>
+              <p className="text-text-secondary mb-4">Key warehousing and manufacturing districts for tech and trade compliance:</p>
+              <ul className="space-y-3 text-text-secondary">
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">West Oakland</span>
+                  <span>Primary container freight station (CFS) district, transload facilities, port-adjacent warehousing</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">Hayward/San Leandro</span>
+                  <span>I-880 logistics corridor — tech distribution centers, semiconductor handling facilities</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">Fremont/Newark</span>
+                  <span>Manufacturing hub — Tesla Fremont, semiconductor fabs, electronics assembly</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">Dublin/Pleasanton</span>
+                  <span>East Bay distribution — tech logistics centers, I-580/I-680 interchange access</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">Silicon Valley</span>
+                  <span>San Jose, Palo Alto, Mountain View — R&D centers, export-controlled technology facilities</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Port Terminals & CBP Sites */}
+            <div className="bg-neutral-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Port of Oakland Terminals & CBP Facilities</h3>
+              <p className="text-text-secondary mb-4">Understanding terminal operations and examination procedures:</p>
+              <ul className="space-y-3 text-text-secondary">
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">SSA Marine</span>
+                  <span>Berths 55-59 — major container terminal, CBP examination site</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">TraPac</span>
+                  <span>Berths 25-33 — automated terminal, Asia-Pacific trade lanes</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">Matson</span>
+                  <span>Berths 61-63 — Hawaii/Pacific Island trade, VACIS x-ray inspections</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-teal font-bold mr-2">Everport</span>
+                  <span>Berths 20-24 — container operations, customs clearance processing</span>
+                </li>
+              </ul>
+              <p className="text-sm text-text-secondary mt-4 italic">
+                Average Port of Oakland demurrage costs: $150-$350/day. We respond to CBP holds within 24 hours.
+              </p>
+            </div>
+
+            {/* Cities Served */}
+            <div className="bg-neutral-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Bay Area Cities We Serve</h3>
+              <p className="text-text-secondary mb-4">Available by appointment throughout the San Francisco Bay Area:</p>
+              <div className="grid grid-cols-3 gap-2 text-sm text-text-secondary">
+                <span>San Francisco</span>
+                <span>Oakland</span>
+                <span>San Jose</span>
+                <span>Palo Alto</span>
+                <span>Mountain View</span>
+                <span>Sunnyvale</span>
+                <span>Santa Clara</span>
+                <span>Cupertino</span>
+                <span>Fremont</span>
+                <span>Hayward</span>
+                <span>Berkeley</span>
+                <span>Richmond</span>
+                <span>Redwood City</span>
+                <span>San Mateo</span>
+                <span>Daly City</span>
+                <span>San Leandro</span>
+                <span>Dublin</span>
+                <span>Pleasanton</span>
+                <span>Livermore</span>
+                <span>Newark</span>
+                <span>Union City</span>
+                <span>Milpitas</span>
+                <span>Campbell</span>
+                <span>Los Gatos</span>
+              </div>
+              <p className="text-sm text-text-secondary mt-4">
+                <strong>Headquarters:</strong> 27001 Agoura Road, Suite 350, Calabasas, CA 91301<br />
+                <strong>Phone:</strong> <a href="tel:+16317468290" className="text-secondary-teal hover:underline">(631) 746-8290</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Services & Resources */}
       <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">
