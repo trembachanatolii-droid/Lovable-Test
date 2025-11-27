@@ -378,10 +378,11 @@ const FAQCenterPage: React.FC = () => {
                 onClick={() => scrollToCategory(index)}
                 className="card-link group relative overflow-hidden text-left"
                 type="button"
+                aria-label={`Navigate to ${category.category} section`}
               >
                 <h3 className="font-semibold text-primary-navy mb-1">{category.category}</h3>
                 <p className="text-sm text-gray-600">{category.faqs.length} questions</p>
-                <div className="triangle-slide">
+                <div className="triangle-slide" aria-hidden="true">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>

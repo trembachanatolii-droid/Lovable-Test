@@ -417,7 +417,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                       </ul>
                     </div>
                     <p className="text-sm text-gray-600 italic">
-                      <strong>Savings Potential:</strong> Can eliminate 7.5-25% additional duty if product qualifies for non-covered HTS classification. We have saved clients $500K-3M+ annually through strategic reclassification.
+                      <strong>Savings Potential:</strong> Can eliminate 7.5-25% additional duty if product qualifies for non-covered HTS classification. Strategic reclassification analysis identifies duty reduction opportunities for California importers.
                     </p>
                   </div>
                 </div>

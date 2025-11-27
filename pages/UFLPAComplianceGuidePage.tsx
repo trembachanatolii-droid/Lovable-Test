@@ -675,7 +675,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
           <section className="mt-16 bg-gradient-to-br from-primary-navy to-secondary-teal text-white p-8 rounded-lg shadow-xl">
             <h2 className="text-3xl font-bold mb-4 font-garamond">Expert UFLPA Compliance and Detention Defense</h2>
             <p className="text-lg mb-6">
-              Trembach Law Firm provides comprehensive UFLPA services for California importers, from proactive compliance program development to emergency detention response. Our track record includes:
+              Trembach Law Firm provides comprehensive UFLPA services for California importers, from proactive compliance program development to emergency detention response. Our services include:
             </p>
             <ul className="space-y-2 mb-6">
               <li className="flex items-start">
