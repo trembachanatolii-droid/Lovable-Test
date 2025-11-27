@@ -50,28 +50,31 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
+    <main className="font-montserrat text-neutral-darkGray bg-white">
 
       {/* Hero Section */}
-      <section className="relative w-full min-h-[50vh] py-24 overflow-hidden flex items-center" style={{ backgroundColor: '#012169' }}>
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full">
-          <div className="max-w-3xl">
-            <div className="inline-block bg-secondary-teal/20 border border-secondary-teal px-4 py-2 rounded-full mb-4">
-              <span className="text-secondary-teal font-semibold text-sm uppercase tracking-wide">Knowledge Hub</span>
-            </div>
-            <h1
-              className="text-4xl md:text-6xl font-bold font-garamond mb-6 tracking-tight leading-tight"
-              style={{ color: '#ffffff' }}
-            >
-              E-Commerce & Digital Trade Compliance California
-            </h1>
-            <p
-              className="text-lg md:text-xl font-light mb-8 max-w-2xl leading-relaxed"
-              style={{ color: '#ffffff' }}
-            >
-              Essential guide to ecommerce import rules, online seller customs compliance, digital trade law, and data transfer export controls for California businesses.
-            </p>
-            <div className="w-24 h-1 bg-secondary-teal"></div>
+      <section className="hero" aria-label="E-Commerce Digital Trade Guide Hero">
+        <picture className="hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1920&auto=format&fit=crop"
+            alt=""
+            role="presentation"
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async"
+            className="hero-bg-image"
+          />
+        </picture>
+        <div className="hero-overlay" aria-hidden="true"></div>
+        <div className="container">
+          <h1>E-Commerce & Digital Trade<br />Compliance California</h1>
+          <p className="hero-subtitle">
+            Essential guide to ecommerce import rules, online seller customs compliance, digital trade law, and data transfer export controls for California businesses.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#ecommerce-import-rules" className="hero-cta">Learn More</a>
+            <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>
       </section>
@@ -462,7 +465,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
 
       {/* Evaluation Form */}
       <EvaluationForm theme="light" />
-    </div>
+    </main>
   );
 };
 

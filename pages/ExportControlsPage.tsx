@@ -38,39 +38,31 @@ const ExportControlsPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
+    <main className="font-montserrat text-neutral-darkGray bg-white">
 
       {/* Hero Section */}
-      <section className="relative w-full h-[500px] overflow-hidden bg-primary-navy flex items-center">
-        <div className="absolute inset-0 z-0">
+      <section className="hero" aria-label="Export Controls Lawyer Hero">
+        <picture className="hero-bg">
           <img
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920&auto=format&fit=crop"
-            alt="Global technology network representing export controls and sanctions compliance"
-            className="w-full h-full object-cover opacity-50"
-            loading="eager"
-            decoding="async"
+            alt=""
+            role="presentation"
             width="1920"
             height="1080"
+            loading="eager"
+            decoding="async"
+            className="hero-bg-image"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/85 via-primary-navy/65 to-primary-navy/95"></div>
-        </div>
-
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-none drop-shadow-lg">
-              Export Controls Lawyer California & USA | Trade Sanctions Attorney
-            </h1>
-            <p className="text-xl md:text-2xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
-              ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export regulations, dual use items compliance, deemed exports & restricted party screening. Expert guidance for California & USA tech companies, defense contractors & manufacturers.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4">
-              <Button href="#contact" variant="solid">
-                Free Export Controls Consultation
-              </Button>
-              <Button href="tel:+16317468290" variant="outline">
-                Call (631) 746-8290
-              </Button>
-            </div>
+        </picture>
+        <div className="hero-overlay" aria-hidden="true"></div>
+        <div className="container">
+          <h1>Export Controls Lawyer California<br />& USA | Trade Sanctions Attorney</h1>
+          <p className="hero-subtitle">
+            ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export regulations, dual use items compliance, deemed exports & restricted party screening. Expert guidance for California & USA tech companies, defense contractors & manufacturers.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#contact" className="hero-cta">Free Export Controls Consultation</a>
+            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>
         </div>
       </section>
@@ -536,7 +528,7 @@ const ExportControlsPage: React.FC = () => {
 
       {/* Evaluation Form */}
       <EvaluationForm theme="light" />
-    </div>
+    </main>
   );
 };
 
