@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
 
                         {/* Trust Signals */}
                         <div className="mb-5 pb-5 border-b border-white/20">
-                            <div className="grid grid-cols-2 gap-x-6 gap-y-1 max-w-md text-xs">
+                            <div className="grid grid-cols-2 gap-x-6 max-w-md text-xs" style={{ rowGap: '2px' }}>
                                 <div className="flex items-center gap-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-secondary-gold flex-shrink-0" aria-hidden="true">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
@@ -149,12 +149,17 @@ const Footer: React.FC = () => {
                         {Object.entries(footerLinks).map(([title, links]) => (
                             <div key={title}>
                                 <div className="font-bold text-white mb-4 uppercase tracking-wider text-sm">{title}</div>
-                                <ul className="space-y-1 list-none" style={title === 'Firm' || title === 'Legal' ? { paddingTop: '7px' } : {}}>
+                                <ul className="list-none" style={{
+                                    ...(title === 'Firm' || title === 'Legal' ? { paddingTop: '7px' } : {}),
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    gap: '4px'
+                                }}>
                                     {links.map((link: any, index: number) => (
                                         <li
                                             key={link.label}
                                             className={link.isAddress ? 'leading-relaxed' : ''}
-                                            style={title === 'Connect' && link.isAddress && index === 1 ? { marginTop: '20px' } : {}}
+                                            style={title === 'Connect' && link.isAddress && index === 1 ? { marginTop: '10px' } : {}}
                                         >
                                             <a
                                                 href={link.href}
