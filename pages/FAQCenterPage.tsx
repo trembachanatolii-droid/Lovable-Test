@@ -43,7 +43,7 @@ const FAQCenterPage: React.FC = () => {
         },
         {
           question: 'What is a binding ruling and when should I request one?',
-          answer: 'A binding ruling is an official written determination from CBP on the tariff classification, country of origin, or other customs treatment of specific merchandise. Binding rulings are: (1) Valid for 6 years and binding on all CBP ports; (2) Provide certainty on duty rates and regulatory treatment; (3) Protect against penalties if you rely on the ruling in good faith. Request binding rulings when: importing new products with uncertain classification; planning major purchases where duty savings are significant; facing potential CBP challenges on current classification; or needing documentation for internal approvals. Rulings typically take 30-120 days. Experienced customs attorneys draft ruling requests with detailed technical descriptions and legal analysis to maximize favorable outcomes.',
+          answer: 'A binding ruling is an official written determination from CBP on the tariff classification, country of origin, or other customs treatment of specific merchandise. Binding rulings are: (1) Valid for 6 years and binding on all CBP ports; (2) Provide certainty on duty rates and regulatory treatment; (3) Protect against penalties if you rely on the ruling in good faith. Request binding rulings when: importing new products with uncertain classification; planning major purchases where duty savings are significant; facing potential CBP challenges on current classification; or needing documentation for internal approvals. Rulings typically take 30-120 days. Experienced customs attorneys draft ruling requests with detailed technical descriptions and legal analysis to support your classification position.',
           link: { text: 'Binding Ruling Services', url: '#regulatory-compliance-advisory' },
         },
         {
@@ -300,6 +300,14 @@ const FAQCenterPage: React.FC = () => {
     return openFAQs[`${categoryIndex}-${faqIndex}`] || false;
   };
 
+  // Scroll to category function for in-page navigation
+  const scrollToCategory = (categoryIndex: number) => {
+    const element = document.getElementById(`category-${categoryIndex}`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -328,7 +336,7 @@ const FAQCenterPage: React.FC = () => {
             Get answers to common questions about customs compliance, import/export regulations, UFLPA, export controls, and California trade law.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#category-0" className="hero-cta">Browse FAQs</a>
+            <button onClick={() => scrollToCategory(0)} className="hero-cta">Browse FAQs</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Ask a Question</a>
           </div>
         </div>
@@ -365,10 +373,11 @@ const FAQCenterPage: React.FC = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {faqCategories.map((category, index) => (
-              <a
+              <button
                 key={index}
-                href={`#category-${index}`}
-                className="card-link group relative overflow-hidden"
+                onClick={() => scrollToCategory(index)}
+                className="card-link group relative overflow-hidden text-left"
+                type="button"
               >
                 <h3 className="font-semibold text-primary-navy mb-1">{category.category}</h3>
                 <p className="text-sm text-gray-600">{category.faqs.length} questions</p>
@@ -377,7 +386,7 @@ const FAQCenterPage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </button>
             ))}
           </div>
         </div>

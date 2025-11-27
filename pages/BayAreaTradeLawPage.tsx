@@ -437,9 +437,18 @@ const BayAreaTradeLawPage: React.FC = () => {
           {/* Helpful Guides */}
           <div className="bg-white p-8 rounded-lg shadow-md overflow-hidden">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for Tech Companies</h3>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-5 gap-6">
+              <a href="#resources/uflpa-compliance-guide" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">UFLPA Guide</h4>
+                <p className="text-sm text-text-secondary">Supply chain compliance</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
               <a href="#article/ear-compliance" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">EAR Compliance Guide</h4>
+                <h4 className="font-bold text-primary-navy mb-2">EAR Compliance</h4>
                 <p className="text-sm text-text-secondary">Export Administration Regulations</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -448,7 +457,7 @@ const BayAreaTradeLawPage: React.FC = () => {
                 </div>
               </a>
               <a href="#article/encryption-export-controls-california" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">Encryption Export Guide</h4>
+                <h4 className="font-bold text-primary-navy mb-2">Encryption Export</h4>
                 <p className="text-sm text-text-secondary">EAR encryption controls</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -457,7 +466,7 @@ const BayAreaTradeLawPage: React.FC = () => {
                 </div>
               </a>
               <a href="#ecommerce-digital-trade-guide" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">E-commerce & Digital Trade</h4>
+                <h4 className="font-bold text-primary-navy mb-2">E-commerce</h4>
                 <p className="text-sm text-text-secondary">SaaS and cloud compliance</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -467,7 +476,7 @@ const BayAreaTradeLawPage: React.FC = () => {
               </a>
               <a href="#trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
-                <p className="text-sm text-text-secondary">Export control FAQ</p>
+                <p className="text-sm text-text-secondary">Trade law FAQ</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>

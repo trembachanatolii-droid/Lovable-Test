@@ -7,6 +7,14 @@ import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
 
 const TariffsClassificationGuidePage: React.FC = () => {
+  // Scroll to section function for in-page navigation
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   useMeta({
     title: 'HTS Classification CA | AD/CVD Duties | Section 301 Tariffs Guide',
     description: 'Complete guide: HTS classification California, antidumping duties, countervailing duties, Section 301/232 tariffs, trade remedies, customs valuation & transfer pricing for CA/USA importers. Expert compliance strategies. Call 631-746-8290.',
@@ -78,7 +86,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
             Expert insights on HTS classification, antidumping/countervailing duties, Section 301/232 tariffs, trade remedies, and customs valuation for California importers.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#hts-classification" className="hero-cta">Learn More</a>
+            <button onClick={() => scrollToSection('hts-classification')} className="hero-cta">Learn More</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>
