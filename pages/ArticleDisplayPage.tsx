@@ -1,6 +1,6 @@
 
-import React, { useEffect } from 'react';
-import { articles } from '../data/articles';
+import React, { useEffect, useState } from 'react';
+import { loadArticle } from '../data/articlesLoader';
 import { articleMetadata, getArticleCategory, formatDateForDisplay } from '../data/articleMetadata';
 import EvaluationForm from '../components/EvaluationForm';
 import RelatedArticles from '../components/RelatedArticles';
@@ -8,14 +8,34 @@ import ArticleCTA from '../components/ArticleCTA';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateBreadcrumbSchema } from '../utils/seo';
+import { sanitizeHTML } from '../utils/sanitize';
+import type { ArticleData } from '../types';
 
 interface ArticleDisplayPageProps {
   articleId: string;
 }
 
 const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) => {
-  const article = articles.find(a => a.id === articleId);
+  const [article, setArticle] = useState<ArticleData | undefined>(undefined);
+  const [isLoading, setIsLoading] = useState(true);
   const metadata = article ? articleMetadata[article.id] : undefined;
+
+  // Lazy load the article when component mounts or articleId changes
+  useEffect(() => {
+    let isMounted = true;
+    setIsLoading(true);
+
+    loadArticle(articleId).then((loadedArticle) => {
+      if (isMounted) {
+        setArticle(loadedArticle);
+        setIsLoading(false);
+      }
+    });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [articleId]);
 
   // Get dates from metadata or use fallbacks
   const publishedDate = metadata?.isoDate || '2025-11-26';
@@ -78,6 +98,18 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [articleId]);
+
+  // Show loading state while article is being fetched
+  if (isLoading) {
+    return (
+      <div className="pt-32 pb-20 text-center min-h-[60vh]">
+        <div className="flex items-center justify-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-secondary-teal"></div>
+        </div>
+        <p className="text-lg font-garamond text-primary-navy mt-4">Loading article...</p>
+      </div>
+    );
+  }
 
   if (!article) {
     return (
@@ -183,7 +215,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
             {/* Render Full HTML Content with Exact Template Styling */}
             <div
               className="article-content"
-              dangerouslySetInnerHTML={{ __html: article.content }}
+              dangerouslySetInnerHTML={{ __html: sanitizeHTML(article.content) }}
             />
 
             <style>{`
