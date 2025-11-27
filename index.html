@@ -44,11 +44,12 @@
 <!-- Preconnect disabled - using local resources only -->
 <!-- <link rel="preconnect" href="https://images.unsplash.com" crossorigin> -->
 
-<!-- Preload critical hero image for faster LCP -->
+<!-- Preload critical hero image for faster LCP - WebP with JPG fallback -->
+<link rel="preload" href="/images/hero-main.webp" as="image" type="image/webp" fetchpriority="high">
 <link rel="preload" href="/images/hero-main.jpg" as="image" fetchpriority="high">
 <!-- Preload secondary hero images for faster navigation -->
-<link rel="preload" href="/images/hero-practice-areas.jpg" as="image">
-<link rel="preload" href="/images/hero-news.jpg" as="image">
+<link rel="preload" href="/images/hero-practice-areas.webp" as="image" type="image/webp">
+<link rel="preload" href="/images/hero-news.webp" as="image" type="image/webp">
 
 <!-- Preload critical CSS for faster FCP/LCP -->
 <link rel="preload" href="/styles.css" as="style">
