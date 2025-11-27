@@ -69,51 +69,70 @@ export default defineConfig(({ mode }) => {
         chunkSizeWarningLimit: 500,
         // Module preload polyfill for better performance
         modulePreload: {
-          polyfill: false, // Disable polyfill to reduce bundle size
+          polyfill: false, // Disable polyfill to reduce bundle size for modern browsers
           resolveDependencies: (filename, deps) => {
-            // Only preload critical dependencies for the entry point
-            // Filter out large non-critical chunks like pages-resources
+            // Only preload truly critical dependencies for initial render
+            // Exclude framer-motion since it's lazy loaded via JusticePillars
+            // Exclude non-critical page chunks
             return deps.filter(dep =>
               dep.includes('react-vendor') ||
               dep.includes('pages-core') ||
-              (filename.includes('index') && !dep.includes('pages-resources'))
+              (filename.includes('index') &&
+                !dep.includes('framer-motion') &&
+                !dep.includes('pages-resources') &&
+                !dep.includes('pages-practice') &&
+                !dep.includes('pages-legal'))
             );
           },
         },
-        // Rollup options for better optimization
+        // Rollup options for better optimization and reduced unused JS
         rollupOptions: {
           output: {
-            // Manual chunk splitting for optimal caching
-            manualChunks: {
-              // Vendor chunks
-              'react-vendor': ['react', 'react-dom'],
-              'framer-motion': ['framer-motion'],
-              // Page chunks by category
-              'pages-core': [
-                './pages/HomePage.tsx',
-                './pages/ContactPage.tsx',
-                './pages/AboutPage.tsx',
-              ],
-              'pages-practice': [
-                './pages/PracticeAreasPage.tsx',
-                './pages/CustomsDefensePage.tsx',
-                './pages/RegulatoryCompliancePage.tsx',
-                './pages/ExportControlsPage.tsx',
-              ],
-              'pages-resources': [
-                './pages/ResourcesHubPage.tsx',
-                './pages/NewsPage.tsx',
-                './pages/GlossaryPage.tsx',
-                './pages/FAQCenterPage.tsx',
-              ],
-              'pages-legal': [
-                './pages/PrivacyPolicyPage.tsx',
-                './pages/TermsOfUsePage.tsx',
-                './pages/LegalPage.tsx',
-                './pages/AttorneyAdvertisingPage.tsx',
-              ],
+            // Manual chunk splitting for optimal caching and tree-shaking
+            manualChunks: (id) => {
+              // Vendor chunks - separate large libraries for better caching
+              if (id.includes('node_modules')) {
+                // React core - always needed for initial render
+                if (id.includes('react') || id.includes('react-dom')) {
+                  return 'react-vendor';
+                }
+                // Framer Motion - lazy loaded only when JusticePillars renders
+                if (id.includes('framer-motion')) {
+                  return 'framer-motion';
+                }
+                // Other vendor dependencies in separate chunk
+                return 'vendor';
+              }
+
+              // Page chunks by category - all lazy loaded via App.tsx
+              if (id.includes('/pages/HomePage.tsx') ||
+                  id.includes('/pages/ContactPage.tsx') ||
+                  id.includes('/pages/AboutPage.tsx')) {
+                return 'pages-core';
+              }
+
+              if (id.includes('/pages/PracticeAreasPage.tsx') ||
+                  id.includes('/pages/CustomsDefensePage.tsx') ||
+                  id.includes('/pages/RegulatoryCompliancePage.tsx') ||
+                  id.includes('/pages/ExportControlsPage.tsx')) {
+                return 'pages-practice';
+              }
+
+              if (id.includes('/pages/ResourcesHubPage.tsx') ||
+                  id.includes('/pages/NewsPage.tsx') ||
+                  id.includes('/pages/GlossaryPage.tsx') ||
+                  id.includes('/pages/FAQCenterPage.tsx')) {
+                return 'pages-resources';
+              }
+
+              if (id.includes('/pages/PrivacyPolicyPage.tsx') ||
+                  id.includes('/pages/TermsOfUsePage.tsx') ||
+                  id.includes('/pages/LegalPage.tsx') ||
+                  id.includes('/pages/AttorneyAdvertisingPage.tsx')) {
+                return 'pages-legal';
+              }
             },
-            // Optimize chunk naming for caching
+            // Optimize chunk naming for long-term caching
             chunkFileNames: 'assets/[name]-[hash].js',
             entryFileNames: 'assets/[name]-[hash].js',
             assetFileNames: 'assets/[name]-[hash].[ext]',
