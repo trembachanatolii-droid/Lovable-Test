@@ -897,7 +897,7 @@ const Section301TariffsGuidePage: React.FC = () => {
               </a>
               <a
                 href="#practice-areas"
-                className="inline-block bg-white hover:bg-gray-100 text-primary-navy font-bold py-4 px-8 rounded-lg transition-colors shadow-lg text-center"
+                className="hero-cta-outline"
               >
                 View All Services
               </a>
