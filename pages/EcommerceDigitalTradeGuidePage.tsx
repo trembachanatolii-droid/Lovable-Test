@@ -140,7 +140,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
       {/* Main Content Sections */}
       <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">
-          <div className="space-y-12">
+          <div className="flex flex-col space-y-12">
 
             {/* Ecommerce Import Rules California */}
             <article className="bg-white p-10 rounded-lg shadow-md">
@@ -155,7 +155,8 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                 As an importer, California online sellers must comply with all CBP regulations:
               </p>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="flex justify-center">
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2">1. HTS Classification</h4>
                   <p className="text-text-secondary text-sm mb-2">Assign correct 10-digit HTS code to all imported products. Classification determines duty rate (0% to 37.5%) and Section 301 tariff exposure.</p>
@@ -202,6 +203,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                   <h4 className="font-bold text-primary-navy mb-2">8. Recordkeeping (19 CFR § 163)</h4>
                   <p className="text-text-secondary text-sm mb-2">Maintain all import records (invoices, packing lists, entry docs) for 5 years. CBP can audit any entry within 5-year window.</p>
                   <p className="text-xs text-text-secondary"><strong>Requirement:</strong> Must produce records within 30 days of CBP CF-28 request</p>
+                </div>
                 </div>
               </div>
 
@@ -250,7 +252,8 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                 CBP has identified systematic abuse of Section 321 by Chinese e-commerce platforms (Shein, Temu, AliExpress) and dropshippers. Common violations:
               </p>
 
-              <div className="space-y-4 mb-6">
+              <div className="flex justify-center">
+                <div className="space-y-4 mb-6">
                 <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
                   <h4 className="font-bold text-red-900 mb-2">Undervaluation</h4>
                   <p className="text-text-secondary text-sm">Declaring false values ($5 declared for $50 product) to qualify for Section 321. CBP uses e-commerce platform data and online pricing to detect undervaluation.</p>
@@ -269,6 +272,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                 <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
                   <h4 className="font-bold text-red-900 mb-2">Section 301 Evasion</h4>
                   <p className="text-text-secondary text-sm">Using Section 321 to avoid Section 301 tariffs on Chinese goods (Section 301 still applies to low-value shipments, but enforcement is difficult).</p>
+                </div>
                 </div>
               </div>
 
@@ -310,7 +314,8 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
 
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond mt-8">Key Digital Trade Law Issues for California Companies</h3>
 
-              <div className="space-y-6 mb-6">
+              <div className="flex justify-center">
+                <div className="space-y-6 mb-6">
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2 text-xl">1. Cross-Border Data Transfer Restrictions</h4>
                   <p className="text-text-secondary mb-3">California companies transferring personal data to/from the EU must comply with <strong>GDPR Article 44-50</strong> transfer mechanisms:</p>
@@ -365,6 +370,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                   </ul>
                   <p className="text-text-secondary mt-2"><strong>Trade Secret Risk:</strong> Source code disclosure creates IP theft risk. Consider export control classification (EAR restrictions) and contractual protections.</p>
                 </div>
+                </div>
               </div>
 
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond mt-8">Trade Agreement Digital Trade Chapters</h3>
@@ -388,7 +394,8 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
 
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond mt-8">What Data Transfers Are Controlled?</h3>
 
-              <div className="space-y-4 mb-6">
+              <div className="flex justify-center">
+                <div className="space-y-4 mb-6">
                 <div className="bg-neutral-50 p-6 rounded-lg">
                   <h4 className="font-bold text-primary-navy mb-2">1. Software Source Code Exports (EAR ECCN 5D002, 5D992)</h4>
                   <p className="text-text-secondary mb-2">EAR controls source code for:</p>
@@ -430,6 +437,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                     <li><strong>University research:</strong> Foreign graduate students working on export-controlled research</li>
                     <li><strong>Visitor access:</strong> Foreign visitors touring facilities with exposure to controlled data</li>
                   </ul>
+                </div>
                 </div>
               </div>
 

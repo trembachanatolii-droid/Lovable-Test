@@ -135,29 +135,31 @@ const FoodAgricultureIndustryPage: React.FC = () => {
               <strong>FDA has significantly increased food import enforcement.</strong> The Foreign Supplier Verification Program (FSVP) is now a primary focus of FDA inspections and import screening. California ports see heightened scrutiny.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 mt-6">
-              <div>
-                <h3 className="font-bold text-blue-900 mb-3">What FDA Is Targeting:</h3>
-                <ul className="space-y-2 text-gray-700 list-none">
-                  <li>Missing or inadequate FSVP programs</li>
-                  <li>Lack of foreign supplier approval documentation</li>
-                  <li>Insufficient hazard analysis for imported foods</li>
-                  <li>Failure to verify supplier preventive controls</li>
-                  <li>Misbranded products (labeling violations)</li>
-                  <li>Unapproved health claims or supplement ingredients</li>
-                </ul>
-              </div>
+            <div className="flex justify-center">
+              <div className="grid md:grid-cols-2 gap-6 mt-6">
+                <div>
+                  <h3 className="font-bold text-blue-900 mb-3">What FDA Is Targeting:</h3>
+                  <ul className="space-y-2 text-gray-700 list-none">
+                    <li>Missing or inadequate FSVP programs</li>
+                    <li>Lack of foreign supplier approval documentation</li>
+                    <li>Insufficient hazard analysis for imported foods</li>
+                    <li>Failure to verify supplier preventive controls</li>
+                    <li>Misbranded products (labeling violations)</li>
+                    <li>Unapproved health claims or supplement ingredients</li>
+                  </ul>
+                </div>
 
-              <div>
-                <h3 className="font-bold text-blue-900 mb-3">What Food Importers Must Do:</h3>
-                <ul className="space-y-2 text-gray-700 list-none">
-                  <li>Develop and document comprehensive FSVP</li>
-                  <li>Conduct hazard analysis for each imported food</li>
-                  <li>Verify foreign suppliers have preventive controls</li>
-                  <li>Perform or obtain supplier audits/certifications</li>
-                  <li>Maintain detailed FSVP records (2+ years)</li>
-                  <li>Ensure labeling complies with FDA regulations</li>
-                </ul>
+                <div>
+                  <h3 className="font-bold text-blue-900 mb-3">What Food Importers Must Do:</h3>
+                  <ul className="space-y-2 text-gray-700 list-none">
+                    <li>Develop and document comprehensive FSVP</li>
+                    <li>Conduct hazard analysis for each imported food</li>
+                    <li>Verify foreign suppliers have preventive controls</li>
+                    <li>Perform or obtain supplier audits/certifications</li>
+                    <li>Maintain detailed FSVP records (2+ years)</li>
+                    <li>Ensure labeling complies with FDA regulations</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -357,33 +359,35 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             Why Food & Agricultural Companies Choose Trembach Law
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">California Agricultural Expertise</h3>
-              <p className="text-gray-700">
-                Deep understanding of California's agricultural industry and food import community. Experience with Central Valley produce, wine country, and specialty food sectors.
-              </p>
-            </div>
+          <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-primary-navy mb-3">California Agricultural Expertise</h3>
+                <p className="text-gray-700">
+                  Deep understanding of California's agricultural industry and food import community. Experience with Central Valley produce, wine country, and specialty food sectors.
+                </p>
+              </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">FDA Detention Defense Excellence</h3>
-              <p className="text-gray-700">
-                Experienced representation for FDA refusals and food cargo detentions. Proven strategies for overturning FDA refusals and securing release of detained food products.
-              </p>
-            </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-primary-navy mb-3">FDA Detention Defense Excellence</h3>
+                <p className="text-gray-700">
+                  Experienced representation for FDA refusals and food cargo detentions. Proven strategies for overturning FDA refusals and securing release of detained food products.
+                </p>
+              </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Rapid Response for Perishable Goods</h3>
-              <p className="text-gray-700">
-                24/7 availability for time-sensitive food detentions. Fast turnaround on FDA refusal responses, admissibility packages, and FSVP development.
-              </p>
-            </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-primary-navy mb-3">Rapid Response for Perishable Goods</h3>
+                <p className="text-gray-700">
+                  24/7 availability for time-sensitive food detentions. Fast turnaround on FDA refusal responses, admissibility packages, and FSVP development.
+                </p>
+              </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Multi-Agency Coordination</h3>
-              <p className="text-gray-700">
-                Experience coordinating with FDA, USDA FSIS, USDA APHIS, EPA, TTB, and CBP. Navigate complex inter-agency requirements efficiently.
-              </p>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-primary-navy mb-3">Multi-Agency Coordination</h3>
+                <p className="text-gray-700">
+                  Experience coordinating with FDA, USDA FSIS, USDA APHIS, EPA, TTB, and CBP. Navigate complex inter-agency requirements efficiently.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -580,67 +584,69 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Central Valley Agriculture */}
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-primary-navy mb-4">Central Valley Agricultural Regions</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <div>
-                    <strong>Sacramento Valley:</strong> Rice production, tomato processing, nut orchards (almonds, walnuts)
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <div>
-                    <strong>San Joaquin Valley:</strong> Stone fruits, table grapes, citrus, dairy operations, vegetable production
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <div>
-                    <strong>Salinas Valley:</strong> "Salad Bowl of the World" - lettuce, spinach, strawberries, broccoli
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <div>
-                    <strong>Imperial Valley:</strong> Winter vegetables, alfalfa, dates, border agricultural trade
-                  </div>
-                </li>
-              </ul>
-            </div>
+          <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              {/* Central Valley Agriculture */}
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-primary-navy mb-4">Central Valley Agricultural Regions</h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-secondary-teal mr-2 font-bold">•</span>
+                    <div>
+                      <strong>Sacramento Valley:</strong> Rice production, tomato processing, nut orchards (almonds, walnuts)
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary-teal mr-2 font-bold">•</span>
+                    <div>
+                      <strong>San Joaquin Valley:</strong> Stone fruits, table grapes, citrus, dairy operations, vegetable production
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary-teal mr-2 font-bold">•</span>
+                    <div>
+                      <strong>Salinas Valley:</strong> "Salad Bowl of the World" - lettuce, spinach, strawberries, broccoli
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary-teal mr-2 font-bold">•</span>
+                    <div>
+                      <strong>Imperial Valley:</strong> Winter vegetables, alfalfa, dates, border agricultural trade
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-            {/* Wine & Specialty Foods */}
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-primary-navy mb-4">Wine Country & Specialty Food Regions</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <div>
-                    <strong>Napa Valley:</strong> Premium wine production, wine import/export compliance, TTB licensing
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <div>
-                    <strong>Sonoma County:</strong> Sustainable wineries, artisan cheese, specialty food producers
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <div>
-                    <strong>Paso Robles:</strong> Growing wine region, olive oil production, specialty crops
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal mr-2 font-bold">•</span>
-                  <div>
-                    <strong>Temecula Valley:</strong> Southern California wine country, citrus groves, avocado farms
-                  </div>
-                </li>
-              </ul>
+              {/* Wine & Specialty Foods */}
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-primary-navy mb-4">Wine Country & Specialty Food Regions</h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-secondary-teal mr-2 font-bold">•</span>
+                    <div>
+                      <strong>Napa Valley:</strong> Premium wine production, wine import/export compliance, TTB licensing
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary-teal mr-2 font-bold">•</span>
+                    <div>
+                      <strong>Sonoma County:</strong> Sustainable wineries, artisan cheese, specialty food producers
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary-teal mr-2 font-bold">•</span>
+                    <div>
+                      <strong>Paso Robles:</strong> Growing wine region, olive oil production, specialty crops
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary-teal mr-2 font-bold">•</span>
+                    <div>
+                      <strong>Temecula Valley:</strong> Southern California wine country, citrus groves, avocado farms
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 

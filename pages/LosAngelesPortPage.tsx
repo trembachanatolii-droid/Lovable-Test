@@ -203,7 +203,7 @@ const LosAngelesPortPage: React.FC = () => {
             Why Port Businesses Choose Trembach Law
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 justify-center">
             <div>
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Los Angeles Customs Attorney with National Reach</h3>
               <p className="text-text-secondary leading-relaxed mb-6">
@@ -248,7 +248,7 @@ const LosAngelesPortPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-12 justify-center">
             {/* Truck Routes & Corridors */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Major Truck Routes & Corridors</h3>
@@ -383,7 +383,7 @@ const LosAngelesPortPage: React.FC = () => {
             Related Services & Resources
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
             {/* Legal Services */}
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services for Port Importers</h3>
@@ -508,7 +508,7 @@ const LosAngelesPortPage: React.FC = () => {
           {/* Helpful Guides */}
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for LA/LB Importers</h3>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-4 gap-6 justify-center">
               <a href="#resources/section-301-tariffs-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">China tariff mitigation strategies</p>

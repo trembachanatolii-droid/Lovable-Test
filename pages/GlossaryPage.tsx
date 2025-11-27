@@ -622,7 +622,7 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 flex justify-center">
         <div className="max-w-[1200px] mx-auto">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -636,7 +636,7 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* Category Navigation */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-20 px-6 bg-gray-50 flex justify-center">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-2xl font-bold text-primary-navy mb-6 text-center">
             Quick Navigation by Category
@@ -658,7 +658,7 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* Glossary Terms by Category - Accordion Format */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 flex justify-center">
         <div className="max-w-[1200px] mx-auto">
           {glossaryTerms.map((category, categoryIndex) => (
             <div key={categoryIndex} id={`category-${categoryIndex}`} className="mb-16">
@@ -721,7 +721,7 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-primary-navy text-white">
+      <section className="py-20 px-6 bg-primary-navy text-white flex justify-center">
         <div className="max-w-[900px] mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold font-garamond text-white mb-6">
             Need Help Understanding Your Trade Compliance Obligations?
@@ -741,7 +741,7 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* Additional Resources Section */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-20 px-6 bg-gray-50 flex justify-center">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-2xl font-bold text-primary-navy mb-8 text-center">
             Related Resources & Guides
@@ -794,7 +794,7 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-20 px-6 bg-gray-100">
+      <section className="py-20 px-6 bg-gray-100 flex justify-center">
         <div className="max-w-[1200px] mx-auto">
           <p className="text-sm text-gray-600 text-center">
             <strong>Disclaimer:</strong> This glossary is provided for informational purposes only and does not constitute legal advice. The definitions are simplified explanations of complex legal concepts. Specific applications may vary depending on facts and circumstances. For advice on your particular situation, please consult with a qualified international trade attorney.

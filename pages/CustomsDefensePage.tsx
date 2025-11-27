@@ -80,7 +80,7 @@ const CustomsDefensePage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
+          <div className="grid md:grid-cols-2 gap-12 mb-16 justify-center">
             <div>
               <h3 className="text-3xl font-bold text-primary-navy mb-6 font-garamond">The Government's Arsenal</h3>
               <ul className="space-y-4">
@@ -282,7 +282,7 @@ const CustomsDefensePage: React.FC = () => {
             Why Businesses Trust Our Customs Defense Team
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 justify-center">
             <div>
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Aggressive Defense Experience</h3>
               <p className="text-text-secondary leading-relaxed mb-6">

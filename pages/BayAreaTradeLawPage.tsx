@@ -204,7 +204,8 @@ const BayAreaTradeLawPage: React.FC = () => {
             Why Startups & Tech Companies Trust Us
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="flex justify-center">
+            <div className="w-full grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">We Speak Tech & Law</h3>
               <p className="text-text-secondary leading-relaxed mb-6">
@@ -231,6 +232,7 @@ const BayAreaTradeLawPage: React.FC = () => {
               <p className="text-text-secondary leading-relaxed mb-6">
                 Investors and acquirers conduct <strong>export compliance due diligence</strong>. We prepare your compliance documentation, remediate historical issues, and represent you in negotiations. Don't let trade compliance kill your deal.
               </p>
+            </div>
             </div>
           </div>
         </div>
@@ -297,7 +299,8 @@ const BayAreaTradeLawPage: React.FC = () => {
             Our attorneys understand Bay Area port logistics, Silicon Valley business culture, and California export compliance requirements. We serve clients by appointment throughout the Bay Area region.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="flex justify-center">
+            <div className="w-full grid md:grid-cols-2 gap-8 mb-12">
             {/* Port of Oakland Routes */}
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Port of Oakland Truck Routes & Corridors</h3>
@@ -353,9 +356,11 @@ const BayAreaTradeLawPage: React.FC = () => {
                 </li>
               </ul>
             </div>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="flex justify-center">
+            <div className="w-full grid md:grid-cols-2 gap-8 mb-12">
             {/* Port Terminals & CBP Sites */}
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Port of Oakland Terminals & CBP Facilities</h3>
@@ -417,6 +422,7 @@ const BayAreaTradeLawPage: React.FC = () => {
                 <strong>Headquarters:</strong> 27001 Agoura Road, Suite 350, Calabasas, CA 91301<br />
                 <strong>Phone:</strong> <a href="tel:+16317468290" className="text-secondary-teal hover:underline">(631) 746-8290</a>
               </p>
+            </div>
             </div>
           </div>
         </div>
