@@ -561,20 +561,22 @@ const ApparelTextilesIndustryPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-br from-purple-900 to-primary-navy">
-        <div className="container-custom max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+      <section className="py-20 px-6 bg-primary-navy text-white">
+        <div className="max-w-[900px] mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-white mb-6">
             Protect Your Apparel Supply Chain from UFLPA Disruptions
           </h2>
-          <p className="text-xl text-gray-100 mb-8">
+          <p className="text-xl opacity-95 mb-8 leading-relaxed text-white">
             Schedule a consultation with California's leading trade law attorney for apparel and textile companies.
           </p>
-          <a
-            href="#schedule-consultation"
-            className="inline-block bg-secondary-gold hover:bg-yellow-500 text-primary-navy font-bold py-4 px-8 rounded-lg transition-colors shadow-lg text-lg"
-          >
-            Schedule UFLPA Consultation
-          </a>
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <a href="#schedule-consultation" className="hero-cta">
+              Schedule UFLPA Consultation
+            </a>
+            <a href="tel:+16317468290" className="hero-cta-outline">
+              Call (631) 746-8290
+            </a>
+          </div>
           <p className="text-gray-300 mt-6">
             Serving Los Angeles, San Francisco, and California fashion brands nationwide
           </p>

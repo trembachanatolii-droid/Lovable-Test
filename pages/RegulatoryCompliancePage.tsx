@@ -506,19 +506,19 @@ const RegulatoryCompliancePage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-white mb-6">
             Build Your Trade Compliance Program Today
           </h2>
-          <p className="text-xl text-text-secondary mb-8 leading-relaxed">
+          <p className="text-xl opacity-95 mb-8 leading-relaxed text-white">
             Don't wait for a CBP audit to implement compliance controls. Contact our trade compliance California team for a free risk assessment and program design consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
-            <Button href="tel:+16317468290" variant="outlined">
+            <Button href="tel:+16317468290" variant="outline">
               Call (631) 746-8290
             </Button>
           </div>
