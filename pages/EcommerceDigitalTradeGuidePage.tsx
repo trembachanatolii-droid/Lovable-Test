@@ -108,6 +108,44 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Why Digital Trade Compliance Matters */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+              Navigate Digital Economy Trade Rules
+            </h2>
+            <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+              California dominates e-commerce and digital services. Online sellers importing goods from Asia and tech companies transferring data globally must comply with evolving customs, export control, and digital trade regulations.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">E-Commerce Compliance</h3>
+              <p className="text-text-secondary leading-relaxed">
+                Amazon FBA sellers and online retailers are importers of record. Master HTS classification, Section 321 rules, product safety standards, and CBP enforcement targeting e-commerce.
+              </p>
+            </div>
+
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Digital Trade Law</h3>
+              <p className="text-text-secondary leading-relaxed">
+                Navigate cross-border data transfer restrictions, data localization requirements, digital services taxes, and platform liability rules for California tech companies.
+              </p>
+            </div>
+
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Export Controls on Data</h3>
+              <p className="text-text-secondary leading-relaxed">
+                Comply with EAR and ITAR controls on software source code, technical data transfers, deemed exports, and encryption technology for California tech companies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content Sections */}
       <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">
@@ -451,22 +489,185 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Related Services & Resources */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Related Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* E-Commerce Services */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">E-Commerce Compliance Services</h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#customs-defense-litigation" className="service-link">
+                    <span className="service-link__title">Amazon FBA Compliance</span>
+                    <p className="service-link__description">Import compliance for online sellers</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#regulatory-compliance-advisory" className="service-link">
+                    <span className="service-link__title">Section 321 Defense</span>
+                    <p className="service-link__description">De minimis entry compliance</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#regulatory-compliance-advisory" className="service-link">
+                    <span className="service-link__title">Product Safety Compliance</span>
+                    <p className="service-link__description">CPSC, FDA, FCC standards</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Digital Trade & Export Controls */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Tech Export Control Services</h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#export-controls-sanctions" className="service-link">
+                    <span className="service-link__title">Software Export Controls</span>
+                    <p className="service-link__description">EAR encryption compliance</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#export-controls-sanctions" className="service-link">
+                    <span className="service-link__title">Deemed Export Controls</span>
+                    <p className="service-link__description">Foreign national access controls</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#practice-areas" className="service-link">
+                    <span className="service-link__title">All Practice Areas</span>
+                    <p className="service-link__description">Full range of trade law services</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Related Guides */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Compliance Guides</h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                    <span className="service-link__title">Tariffs & Classification Guide</span>
+                    <p className="service-link__description">HTS classification & Section 301</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#supply-chain-esg-compliance-guide" className="service-link">
+                    <span className="service-link__title">Supply Chain ESG Guide</span>
+                    <p className="service-link__description">UFLPA & forced labor compliance</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Helpful Resources */}
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Resources for Digital Economy</h3>
+            <div className="grid md:grid-cols-4 gap-6">
+              <a href="#resources/section-321-guide" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">Section 321 Best Practices</h4>
+                <p className="text-sm text-text-secondary">De minimis compliance for online sellers</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#resources/encryption-export-controls" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">Encryption Export Controls</h4>
+                <p className="text-sm text-text-secondary">EAR compliance for software</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#resources/gdpr-data-transfers" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">GDPR Data Transfers</h4>
+                <p className="text-sm text-text-secondary">Cross-border data compliance</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#trade-law-faq" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
+                <p className="text-sm text-text-secondary">Common e-commerce questions</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Navigate E-Commerce and Digital Trade Compliance
           </h2>
-          <p className="text-xl opacity-95 mb-8 leading-relaxed text-white">
+          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">
             California online sellers and tech companies face evolving customs and export control requirements. Our trade law practice helps you comply with ecommerce import rules, Section 321 regulations, digital trade laws, and data transfer export controls. Contact us for expert guidance on e-commerce and digital trade compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">
+            <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
-            </a>
-            <a href="tel:+16317468290" className="hero-cta-outline">
-              Call (631) 746-8290
-            </a>
+            </Button>
+            <Button href={siteConfig.phoneTel} variant="outline">
+              Call {siteConfig.phoneDisplay}
+            </Button>
           </div>
         </div>
       </section>

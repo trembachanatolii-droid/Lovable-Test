@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../components/Button';
 import EvaluationForm from '../components/EvaluationForm';
 import { useMeta } from '../hooks/useMeta';
+import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema } from '../utils/seo';
 
 const TechnologyElectronicsIndustryPage: React.FC = () => {
@@ -59,56 +60,57 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
       </section>
 
       {/* Industry Challenges Section */}
-      <section className="py-16 px-4">
-        <div className="container-custom max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4">
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
               Unique Trade Compliance Challenges for Technology Companies
             </h2>
-            <p className="text-xl text-gray-600">
+            <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
               The technology sector faces complex regulatory requirements across multiple jurisdictions
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Classification Complexity</h3>
-              <p className="text-gray-700">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Classification Complexity</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Technology products often have ambiguous HTS classifications affecting duty rates. Smartphones, tablets, and IoT devices may fall into multiple tariff categories. Incorrect classification can result in significant overpayment or CBP penalties.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Section 301 Tariff Exposure</h3>
-              <p className="text-gray-700">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Section 301 Tariff Exposure</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Most electronics imported from China face 25% Section 301 additional duties. California tech companies must develop tariff mitigation strategies including classification optimization, supply chain restructuring, and exclusion requests.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Export Control Compliance</h3>
-              <p className="text-gray-700">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Export Control Compliance</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Technology products containing encryption or advanced computing capabilities require EAR classification and potential export licenses. Deemed exports to foreign national employees add complexity. Violations carry severe penalties.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Semiconductor Supply Chain Risks</h3>
-              <p className="text-gray-700">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Semiconductor Supply Chain Risks</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Semiconductor shortages and geopolitical tensions require supply chain agility. Companies must navigate Entity List restrictions, understand de minimis rules for products containing U.S. content, and comply with CHIPS Act requirements.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Rapid Product Cycles</h3>
-              <p className="text-gray-700">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Rapid Product Cycles</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Technology companies release new products constantly, each requiring customs classification, export control analysis, and compliance documentation. Manual processes cannot keep pace with innovation.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Cross-Border Data Transfer</h3>
-              <p className="text-gray-700">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Cross-Border Data Transfer</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Cloud services and software companies must navigate international data privacy laws, data localization requirements, and export controls on technology. GDPR, CCPA, and Chinese data laws create compliance complexity.
               </p>
             </div>
@@ -117,38 +119,33 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container-custom max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4">
-              Specialized Services for Technology & Electronics Companies
-            </h2>
-            <p className="text-xl text-gray-600">
-              Strategic trade law guidance tailored to the technology industry
-            </p>
-          </div>
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Specialized Services for Technology & Electronics Companies
+          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service 1 */}
+          <div className="space-y-6">
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-primary-navy mb-4">HTS Classification Strategy</h3>
-              <ul className="space-y-2 text-gray-700 list-none">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">HTS Classification Strategy</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Electronics classification analysis, binding ruling requests to CBP, and first sale valuation strategies. Section 301 tariff mitigation and product-specific duty optimization for technology products.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>Electronics classification analysis (smartphones, tablets, computers)</li>
                 <li>Binding ruling requests to CBP</li>
                 <li>First sale valuation strategies</li>
                 <li>Section 301 tariff mitigation</li>
                 <li>Product-specific duty optimization</li>
               </ul>
-              <a href="#schedule-consultation" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
-                Learn More →
-              </a>
             </div>
 
-            {/* Service 2 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">Export Control Compliance</h3>
-              <ul className="space-y-2 text-gray-700 list-none">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Export Control Compliance</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                ECCN classification for technology products, encryption registration and reporting, export license applications, and Entity List screening. Deemed export programs for R&D teams and Technology Control Plans.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>ECCN classification for technology products</li>
                 <li>Encryption registration and reporting (BIS)</li>
                 <li>Export license applications (EAR)</li>
@@ -156,16 +153,14 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
                 <li>Deemed export programs for R&D teams</li>
                 <li>Technology Control Plans (TCP)</li>
               </ul>
-              <a href="#export-controls-sanctions" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
-                Explore Export Controls →
-              </a>
             </div>
 
-            {/* Service 3 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">Semiconductor Supply Chain</h3>
-              <ul className="space-y-2 text-gray-700 list-none">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Semiconductor Supply Chain</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Entity List impact analysis, de minimis rule calculations, and supply chain restructuring strategies. CHIPS Act compliance guidance and alternative sourcing analysis for semiconductor companies.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>Entity List impact analysis</li>
                 <li>De minimis rule calculations</li>
                 <li>Supply chain restructuring strategies</li>
@@ -173,66 +168,57 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
                 <li>Country of origin determinations</li>
                 <li>Alternative sourcing analysis</li>
               </ul>
-              <a href="#schedule-consultation" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
-                Discuss Your Supply Chain →
-              </a>
             </div>
 
-            {/* Service 4 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">Import Compliance Programs</h3>
-              <ul className="space-y-2 text-gray-700 list-none">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Import Compliance Programs</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Automated classification systems and scalable compliance for high-volume imports. Integration with ERP systems (SAP, Oracle), audit defense preparation, and prior disclosure strategy development.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>Automated classification systems</li>
                 <li>Scalable compliance for high-volume imports</li>
                 <li>Integration with ERP systems (SAP, Oracle)</li>
                 <li>Audit defense preparation</li>
                 <li>Prior disclosure strategy</li>
               </ul>
-              <a href="#regulatory-compliance-advisory" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
-                Build Your Program →
-              </a>
             </div>
 
-            {/* Service 5 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">CBP Defense & Litigation</h3>
-              <ul className="space-y-2 text-gray-700 list-none">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">CBP Defense & Litigation</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Focused assessment defense for technology companies, classification disputes at the Court of International Trade, Section 301 exclusion appeals, and penalty mitigation. Seizure release for counterfeit concerns.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>Focused assessment defense</li>
                 <li>Classification disputes (CIT litigation)</li>
                 <li>Section 301 exclusion appeals</li>
                 <li>Penalty mitigation for tech companies</li>
                 <li>Seizure release (counterfeit concerns)</li>
               </ul>
-              <a href="#customs-defense-litigation" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
-                Protect Your Business →
-              </a>
             </div>
 
-            {/* Service 6 */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">Duty Savings Strategies</h3>
-              <ul className="space-y-2 text-gray-700 list-none">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Duty Savings Strategies</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Foreign Trade Zone utilization, drawback claims for returned products, and first sale valuation programs. FTA qualification strategies (USMCA, KORUS) and Section 9817 temporary import programs.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>Foreign Trade Zone utilization</li>
                 <li>Drawback claims for returned products</li>
                 <li>First sale valuation programs</li>
                 <li>FTA qualification (USMCA, KORUS)</li>
                 <li>Section 9817 temporary imports</li>
               </ul>
-              <a href="#schedule-consultation" className="inline-block mt-6 text-secondary-teal hover:text-primary-navy font-semibold">
-                Maximize Savings →
-              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Technology-Specific Issues */}
-      <section className="py-16 px-4">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-3xl font-bold text-primary-navy mb-8 text-center">
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             Product-Specific Trade Compliance Guidance
           </h2>
 
@@ -293,9 +279,9 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 px-4">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-3xl font-bold text-primary-navy mb-8 text-center">
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             Why Technology Companies Choose Trembach Law
           </h2>
 
@@ -332,9 +318,9 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
       </section>
 
       {/* Related Services & Resources */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-3xl font-bold text-primary-navy mb-8 text-center">
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             Related Services & Resources
           </h2>
 
@@ -465,48 +451,39 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
           </div>
 
           {/* Helpful Guides */}
-          <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">Helpful Guides for Tech Companies</h3>
-            <div className="grid md:grid-cols-5 gap-4">
-              <a href="#resources/section-301-tariffs-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">Section 301 Guide</h4>
-                <p className="text-xs text-gray-600">China tariff strategies</p>
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for Tech Companies</h3>
+            <div className="grid md:grid-cols-4 gap-6">
+              <a href="#resources/section-301-tariffs-guide" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
+                <p className="text-sm text-text-secondary">China tariff mitigation strategies</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
               </a>
-              <a href="#resources/uflpa-compliance-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">UFLPA Guide</h4>
-                <p className="text-xs text-gray-600">Supply chain compliance</p>
+              <a href="#resources/uflpa-compliance-guide" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
+                <p className="text-sm text-text-secondary">Supply chain compliance</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
               </a>
-              <a href="#tariffs-duties-classification-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">HTS Classification</h4>
-                <p className="text-xs text-gray-600">Tech classification tips</p>
+              <a href="#tariffs-duties-classification-guide" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
+                <p className="text-sm text-text-secondary">HTS classification best practices</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
               </a>
-              <a href="#export-controls-sanctions" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">Export Controls</h4>
-                <p className="text-xs text-gray-600">EAR/ITAR compliance</p>
-                <div className="triangle-slide">
-                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </div>
-              </a>
-              <a href="#trade-law-faq" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">FAQ Center</h4>
-                <p className="text-xs text-gray-600">Tech trade questions</p>
+              <a href="#trade-law-faq" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
+                <p className="text-sm text-text-secondary">Common tech trade questions</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -519,13 +496,14 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
       </section>
 
       {/* California Tech Hub Local Knowledge */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 font-garamond">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
               Deep California Tech Hub Local Knowledge
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
               On-the-ground expertise serving technology companies throughout Silicon Valley, Southern California tech corridors, and San Diego's innovation district
             </p>
           </div>
@@ -649,23 +627,20 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Ready to Optimize Your Technology Trade Compliance?
           </h2>
-          <p className="text-xl opacity-95 mb-8 leading-relaxed text-white">
+          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">
             Schedule a consultation with California's leading trade law attorney for technology and electronics companies.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">
+            <Button href="#schedule-consultation" variant="solid">
               Schedule Strategic Consultation
-            </a>
-            <a href="tel:+16317468290" className="hero-cta-outline">
-              Call (631) 746-8290
-            </a>
+            </Button>
+            <Button href={siteConfig.phoneTel} variant="outline">
+              Call {siteConfig.phoneDisplay}
+            </Button>
           </div>
-          <p className="text-gray-300 mt-6">
-            Serving Silicon Valley, Los Angeles, San Diego, and California technology companies nationwide
-          </p>
         </div>
       </section>
 

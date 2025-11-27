@@ -112,6 +112,44 @@ const SupplyChainESGGuidePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Why ESG Compliance Matters */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+              Critical ESG Compliance Areas for California Importers
+            </h2>
+            <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+              Federal enforcement agencies are aggressively targeting forced labor imports, corruption in trade, and environmental violations. California importers must implement robust ESG compliance programs to avoid detention, seizure, and criminal prosecution.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Forced Labor Prevention</h3>
+              <p className="text-text-secondary leading-relaxed">
+                Navigate UFLPA requirements, CBP Withhold Release Orders, and supplier due diligence to prevent forced labor violations. Protect your supply chain from detention and reputational damage.
+              </p>
+            </div>
+
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Environmental Standards</h3>
+              <p className="text-text-secondary leading-relaxed">
+                Comply with green trade regulations, California climate disclosure laws, and product-specific environmental requirements. Prepare for carbon border adjustment mechanisms.
+              </p>
+            </div>
+
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Anti-Corruption Compliance</h3>
+              <p className="text-text-secondary leading-relaxed">
+                Implement FCPA compliance programs to prevent bribery in customs clearance, freight forwarding, and government procurement. Avoid criminal prosecution and debarment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content Sections */}
       <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">
@@ -505,22 +543,185 @@ const SupplyChainESGGuidePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Related Services & Resources */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Related Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Legal Services */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Forced Labor Compliance Services</h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#customs-defense-litigation" className="service-link">
+                    <span className="service-link__title">UFLPA Detention Defense</span>
+                    <p className="service-link__description">Release detained Xinjiang-related goods</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#regulatory-compliance-advisory" className="service-link">
+                    <span className="service-link__title">WRO Response Services</span>
+                    <p className="service-link__description">Withhold Release Order admissibility packages</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#regulatory-compliance-advisory" className="service-link">
+                    <span className="service-link__title">Supply Chain Due Diligence</span>
+                    <p className="service-link__description">Supplier audits and ESG compliance programs</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Environmental & Anti-Corruption */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Environmental & FCPA Services</h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#regulatory-compliance-advisory" className="service-link">
+                    <span className="service-link__title">Green Trade Compliance</span>
+                    <p className="service-link__description">California climate disclosure & CBAM</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#regulatory-compliance-advisory" className="service-link">
+                    <span className="service-link__title">FCPA Compliance Programs</span>
+                    <p className="service-link__description">Anti-corruption controls for trade</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#practice-areas" className="service-link">
+                    <span className="service-link__title">All Practice Areas</span>
+                    <p className="service-link__description">Full range of trade law services</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Related Guides */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Compliance Guides</h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                    <span className="service-link__title">Tariffs & Classification Guide</span>
+                    <p className="service-link__description">HTS classification & trade remedies</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#ecommerce-digital-trade-guide" className="service-link">
+                    <span className="service-link__title">E-Commerce Trade Guide</span>
+                    <p className="service-link__description">Section 321 & online seller compliance</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Helpful Resources */}
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful ESG Compliance Resources</h3>
+            <div className="grid md:grid-cols-4 gap-6">
+              <a href="#resources/uflpa-compliance-guide" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
+                <p className="text-sm text-text-secondary">Forced labor detention defense strategies</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#resources/wro-defense" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">WRO Defense Toolkit</h4>
+                <p className="text-sm text-text-secondary">Withhold Release Order response guide</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#resources/fcpa-trade-compliance" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">FCPA for Importers</h4>
+                <p className="text-sm text-text-secondary">Anti-corruption best practices</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#trade-law-faq" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
+                <p className="text-sm text-text-secondary">Common ESG compliance questions</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Build Ethical and Compliant Supply Chains
           </h2>
-          <p className="text-xl opacity-95 mb-8 leading-relaxed text-white">
+          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">
             California importers face increasing ESG scrutiny from CBP, DOJ, and other enforcement agencies. Our trade law practice helps you implement forced labor compliance programs, navigate UFLPA requirements, and build anti-corruption controls. Contact us for expert guidance on supply chain ethics and ESG compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">
+            <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
-            </a>
-            <a href="tel:+16317468290" className="hero-cta-outline">
-              Call (631) 746-8290
-            </a>
+            </Button>
+            <Button href={siteConfig.phoneTel} variant="outline">
+              Call {siteConfig.phoneDisplay}
+            </Button>
           </div>
         </div>
       </section>

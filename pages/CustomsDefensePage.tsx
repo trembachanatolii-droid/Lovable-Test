@@ -291,6 +291,35 @@ const CustomsDefensePage: React.FC = () => {
             Why Businesses Trust Our Customs Defense Team
           </h2>
 
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Aggressive Defense Experience</h3>
+              <p className="text-text-secondary leading-relaxed mb-6">
+                Our customs defense attorney California team has defended clients in <strong>hundreds of CBP audits, penalty cases, and trade litigation matters</strong>. We know CBP's enforcement strategies and how to counter them effectively.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Court of International Trade Litigation</h3>
+              <p className="text-text-secondary leading-relaxed mb-6">
+                We regularly litigate before the <strong>U.S. Court of International Trade</strong> in New York, the specialized federal court for customs disputes. Our attorneys are admitted to practice before the CIT and Federal Circuit.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Multi-Jurisdictional Defense</h3>
+              <p className="text-text-secondary leading-relaxed mb-6">
+                CBP investigations often trigger <strong>parallel proceedings</strong>: civil penalties, criminal prosecution, and False Claims Act litigation. We coordinate defense strategies across all forums to protect your business and personal freedom.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Immediate Response Capability</h3>
+              <p className="text-text-secondary leading-relaxed mb-6">
+                When CBP serves a CF-28, seizes cargo, or issues a penalty notice, <strong>timing is critical</strong>. We respond within 24 hours to protect your rights, file emergency motions, and negotiate with CBP officers.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
