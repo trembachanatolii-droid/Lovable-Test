@@ -7,6 +7,14 @@ import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
 
 const SupplyChainESGGuidePage: React.FC = () => {
+  // Scroll to section function for in-page navigation
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   useMeta({
     title: 'Supply Chain ESG CA | UFLPA | Forced Labor Import Bans Guide',
     description: 'Complete guide: Supply chain ESG compliance California, UFLPA (Uyghur Forced Labor Prevention Act), forced labor import bans, green trade regulations, carbon border adjustment, bribery/corruption risks & FCPA for CA/USA importers. Call 631-746-8290.',
@@ -77,7 +85,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
             Complete guide to forced labor import bans, UFLPA compliance, green trade regulations, carbon border adjustment, and anti-corruption requirements for California importers.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#forced-labor-import-bans" className="hero-cta">Learn More</a>
+            <button onClick={() => scrollToSection('forced-labor-import-bans')} className="hero-cta">Learn More</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>

@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 import { siteConfig } from '../config/siteConfig';
+import EvaluationForm from '../components/EvaluationForm';
 
 const UFLPAComplianceGuidePage: React.FC = () => {
+  // Scroll to section function for in-page navigation
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useMeta({
     title: 'UFLPA Compliance CA | Uyghur Forced Labor Prevention Guide',
     description: 'Comprehensive UFLPA compliance guide for California importers: detention defense strategies, supply chain mapping, Entity List screening, high-risk products (textiles, solar panels, tomatoes, electronics), evidence standards, CBP response procedures. Expert guidance from international trade attorneys.',
@@ -48,7 +60,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
             Complete strategy for navigating the Uyghur Forced Labor Prevention Act — from supply chain due diligence to detention defense.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#overview" className="hero-cta">Learn More</a>
+            <button onClick={() => scrollToSection('overview')} className="hero-cta">Learn More</button>
             <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>
@@ -59,12 +71,12 @@ const UFLPAComplianceGuidePage: React.FC = () => {
         <div className="container-custom max-w-5xl">
           <h2 className="text-xl font-bold text-primary-navy mb-4 text-center">Jump to Section</h2>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
-            <a href="#overview" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">What is UFLPA?</a>
-            <a href="#high-risk" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">High-Risk Products</a>
-            <a href="#entity-list" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">Entity List</a>
-            <a href="#due-diligence" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">Due Diligence</a>
-            <a href="#detention-response" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">Detention Response</a>
-            <a href="#best-practices" className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium">Best Practices</a>
+            <button onClick={() => scrollToSection('overview')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">What is UFLPA?</button>
+            <button onClick={() => scrollToSection('high-risk')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">High-Risk Products</button>
+            <button onClick={() => scrollToSection('entity-list')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Entity List</button>
+            <button onClick={() => scrollToSection('due-diligence')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Due Diligence</button>
+            <button onClick={() => scrollToSection('detention-response')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Detention Response</button>
+            <button onClick={() => scrollToSection('best-practices')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Best Practices</button>
           </div>
         </div>
       </section>
@@ -701,6 +713,9 @@ const UFLPAComplianceGuidePage: React.FC = () => {
 
         </div>
       </article>
+
+      {/* Evaluation Form */}
+      <EvaluationForm theme="light" />
     </div>
   );
 };

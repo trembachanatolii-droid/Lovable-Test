@@ -370,9 +370,9 @@ const ExportControlsPage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Enforcement Defense Record</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Enforcement Defense Experience</h3>
               <p className="text-text-secondary leading-relaxed mb-6">
-                We've defended clients in <strong>50+ BIS enforcement actions</strong> and negotiated settlements reducing proposed penalties by an average of <strong>75%</strong>. We protect your business and preserve security clearances.
+                Our attorneys have extensive experience defending clients in BIS enforcement actions and negotiating penalty settlements. We work to protect your business and preserve security clearances.
               </p>
             </div>
           </div>

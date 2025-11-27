@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../components/Button';
+import EvaluationForm from '../components/EvaluationForm';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema } from '../utils/seo';
 
@@ -466,7 +467,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
           {/* Helpful Guides */}
           <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
             <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">Helpful Guides for Tech Companies</h3>
-            <div className="grid md:grid-cols-4 gap-4">
+            <div className="grid md:grid-cols-5 gap-4">
               <a href="#resources/section-301-tariffs-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
                 <h4 className="font-bold text-primary-navy mb-1">Section 301 Guide</h4>
                 <p className="text-xs text-gray-600">China tariff strategies</p>
@@ -476,9 +477,9 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#article/ear-compliance" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">EAR Compliance</h4>
-                <p className="text-xs text-gray-600">Export control basics</p>
+              <a href="#resources/uflpa-compliance-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">UFLPA Guide</h4>
+                <p className="text-xs text-gray-600">Supply chain compliance</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -488,6 +489,15 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
               <a href="#tariffs-duties-classification-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
                 <h4 className="font-bold text-primary-navy mb-1">HTS Classification</h4>
                 <p className="text-xs text-gray-600">Tech classification tips</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#export-controls-sanctions" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">Export Controls</h4>
+                <p className="text-xs text-gray-600">EAR/ITAR compliance</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -528,6 +538,9 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
           </p>
         </div>
       </section>
+
+      {/* Evaluation Form */}
+      <EvaluationForm theme="light" />
     </div>
   );
 };
