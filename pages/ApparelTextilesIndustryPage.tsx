@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../components/Button';
 import EvaluationForm from '../components/EvaluationForm';
 import { useMeta } from '../hooks/useMeta';
+import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema } from '../utils/seo';
 
 const ApparelTextilesIndustryPage: React.FC = () => {
@@ -110,53 +111,54 @@ const ApparelTextilesIndustryPage: React.FC = () => {
       </section>
 
       {/* Industry Challenges */}
-      <section className="py-16 px-4">
-        <div className="container-custom max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4">
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
               Unique Trade Compliance Challenges for Apparel & Textile Companies
             </h2>
+            <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-600">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Complex Classification Rules</h3>
-              <p className="text-gray-700">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Complex Classification Rules</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Apparel classification under HTS Chapters 61-62 requires precise determination of fiber content, construction method (knit vs. woven), gender, and garment type. Small classification errors result in incorrect duty rates (ranging from 0% to 32%) and potential CBP penalties.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-600">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Country of Origin Rules</h3>
-              <p className="text-gray-700">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Country of Origin Rules</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Textile and apparel have unique country of origin rules. For textiles, origin is where fabric is woven/knit. For apparel, origin is where cutting and assembly occur. Marking requirements are strict. Errors result in penalties and re-exportation.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-600">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Quota & Visa Requirements</h3>
-              <p className="text-gray-700">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Quota & Visa Requirements</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Despite elimination of most textile quotas, certain categories still require export visas. Many countries maintain bilateral textile agreements requiring documentation. Non-compliance results in entry rejection and return of goods.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Multi-Tier Supply Chains</h3>
-              <p className="text-gray-700">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Multi-Tier Supply Chains</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Fashion industry supply chains involve multiple tiers: fiber producers, spinners, weavers, dyers, cut-and-sew operations, and finishing facilities across multiple countries. Visibility and documentation challenges create compliance risks.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-600">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">Fast Fashion Compliance</h3>
-              <p className="text-gray-700">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Fast Fashion Compliance</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Fast fashion business models require rapid product turnover with hundreds of new SKUs monthly. Manual classification and compliance processes cannot scale. Automation is essential but requires sophisticated systems and controls.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-600">
-              <h3 className="text-xl font-bold text-primary-navy mb-3">E-Commerce Section 321 Scrutiny</h3>
-              <p className="text-gray-700">
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">E-Commerce Section 321 Scrutiny</h3>
+              <p className="text-text-secondary leading-relaxed">
                 Direct-to-consumer apparel sellers using Section 321 de minimis face increased CBP scrutiny. New regulations limit certain textile/apparel products. Undervaluation enforcement is intensifying. Compliance programs must adapt.
               </p>
             </div>
@@ -165,20 +167,19 @@ const ApparelTextilesIndustryPage: React.FC = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container-custom max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4">
-              Specialized Services for Apparel & Textile Companies
-            </h2>
-          </div>
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Specialized Services for Apparel & Textile Companies
+          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-red-600">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">UFLPA Forced Labor Compliance</h3>
-              <ul className="space-y-2 text-gray-700 text-sm list-none">
+          <div className="space-y-6">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">UFLPA Forced Labor Compliance</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Supply chain mapping to raw material level, cotton/fiber origin documentation, and UFLPA Entity List screening protocols. Due diligence programs, detention response, and alternative sourcing strategies.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>Supply chain mapping to raw material level</li>
                 <li>Cotton/fiber origin documentation</li>
                 <li>UFLPA Entity List screening protocols</li>
@@ -187,16 +188,14 @@ const ApparelTextilesIndustryPage: React.FC = () => {
                 <li>Supplier audit programs</li>
                 <li>Alternative sourcing strategies</li>
               </ul>
-              <a href="#supply-chain-esg-compliance-guide" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
-                UFLPA Compliance Guide →
-              </a>
             </div>
 
-            {/* Service 2 */}
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-purple-600">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">Apparel Classification Expertise</h3>
-              <ul className="space-y-2 text-gray-700 text-sm list-none">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Apparel Classification Expertise</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                HTS classification for all garment types, fiber content analysis, and knit vs. woven determinations. Classification for accessories, binding ruling requests to CBP, and duty optimization strategies.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>HTS classification for all garment types</li>
                 <li>Fiber content analysis and testing coordination</li>
                 <li>Knit vs. woven determinations</li>
@@ -205,16 +204,14 @@ const ApparelTextilesIndustryPage: React.FC = () => {
                 <li>Classification databases for product lines</li>
                 <li>Duty optimization strategies</li>
               </ul>
-              <a href="#schedule-consultation" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
-                Classify Your Products →
-              </a>
             </div>
 
-            {/* Service 3 */}
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-blue-600">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">Country of Origin & Marking</h3>
-              <ul className="space-y-2 text-gray-700 text-sm list-none">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Country of Origin & Marking</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Country of origin determinations following textile rules, marking compliance, and substantial transformation analysis. FTA qualification strategies and supply chain documentation.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>Country of origin determinations (textile rules)</li>
                 <li>Marking compliance (care labels, tags)</li>
                 <li>Substantial transformation analysis</li>
@@ -222,16 +219,14 @@ const ApparelTextilesIndustryPage: React.FC = () => {
                 <li>Marking exception strategies</li>
                 <li>Supply chain documentation</li>
               </ul>
-              <a href="#regulatory-compliance-advisory" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
-                Origin Compliance →
-              </a>
             </div>
 
-            {/* Service 4 */}
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-green-600">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">CBP Audits & Defense</h3>
-              <ul className="space-y-2 text-gray-700 text-sm list-none">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">CBP Audits & Defense</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Focused assessment defense for apparel companies, classification dispute resolution, and country of origin challenges. Undervaluation defense, penalty mitigation, and seizure release services.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>Focused assessment defense (apparel-specific)</li>
                 <li>Classification dispute resolution</li>
                 <li>Country of origin challenges</li>
@@ -239,16 +234,14 @@ const ApparelTextilesIndustryPage: React.FC = () => {
                 <li>Penalty mitigation for textile violations</li>
                 <li>Seizure release (trademark, UFLPA)</li>
               </ul>
-              <a href="#customs-defense-litigation" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
-                Defend Your Business →
-              </a>
             </div>
 
-            {/* Service 5 */}
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-yellow-600">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">E-Commerce & Section 321</h3>
-              <ul className="space-y-2 text-gray-700 text-sm list-none">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">E-Commerce & Section 321</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Section 321 compliance for DTC sellers, marketplace seller programs, and undervaluation risk mitigation. Section 321 textile exclusions navigation and high-volume entry automation.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>Section 321 compliance for DTC sellers</li>
                 <li>Marketplace seller programs (Amazon FBA)</li>
                 <li>Undervaluation risk mitigation</li>
@@ -256,34 +249,29 @@ const ApparelTextilesIndustryPage: React.FC = () => {
                 <li>High-volume entry automation</li>
                 <li>Express consignment compliance</li>
               </ul>
-              <a href="#ecommerce-digital-trade-guide" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
-                E-Commerce Guide →
-              </a>
             </div>
 
-            {/* Service 6 */}
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-orange-600">
-
-              <h3 className="text-xl font-bold text-primary-navy mb-4">AD/CVD & Trade Remedies</h3>
-              <ul className="space-y-2 text-gray-700 text-sm list-none">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">AD/CVD & Trade Remedies</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Antidumping/countervailing duty defense, scope ruling requests for apparel AD/CVD orders, and circumvention analysis. Trade preference programs and tariff engineering strategies.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 <li>Antidumping/countervailing duty defense</li>
                 <li>Scope ruling requests (apparel AD/CVD orders)</li>
                 <li>Circumvention analysis and defense</li>
                 <li>Trade preference programs (GSP, AGOA)</li>
                 <li>Tariff engineering strategies</li>
               </ul>
-              <a href="#tariffs-duties-classification-guide" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
-                AD/CVD Strategy →
-              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Apparel-Specific Compliance Issues */}
-      <section className="py-16 px-4">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-3xl font-bold text-primary-navy mb-8 text-center">
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             Product Category Compliance Guidance
           </h2>
 
@@ -344,9 +332,9 @@ const ApparelTextilesIndustryPage: React.FC = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 px-4">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-3xl font-bold text-primary-navy mb-8 text-center">
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             Why Apparel & Textile Companies Choose Trembach Law
           </h2>
 
@@ -383,9 +371,9 @@ const ApparelTextilesIndustryPage: React.FC = () => {
       </section>
 
       {/* Related Services & Resources */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-3xl font-bold text-primary-navy mb-8 text-center">
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             Related Services & Resources
           </h2>
 
@@ -516,39 +504,39 @@ const ApparelTextilesIndustryPage: React.FC = () => {
           </div>
 
           {/* Helpful Guides */}
-          <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">Helpful Guides for Apparel Companies</h3>
-            <div className="grid md:grid-cols-4 gap-4">
-              <a href="#supply-chain-esg-compliance-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">UFLPA Guide</h4>
-                <p className="text-xs text-gray-600">Forced labor compliance</p>
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for Apparel Companies</h3>
+            <div className="grid md:grid-cols-4 gap-6">
+              <a href="#supply-chain-esg-compliance-guide" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
+                <p className="text-sm text-text-secondary">Forced labor detention defense</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
               </a>
-              <a href="#tariffs-duties-classification-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">HTS Classification</h4>
-                <p className="text-xs text-gray-600">Apparel classification tips</p>
+              <a href="#tariffs-duties-classification-guide" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
+                <p className="text-sm text-text-secondary">HTS classification best practices</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
               </a>
-              <a href="#ecommerce-digital-trade-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">E-Commerce Guide</h4>
-                <p className="text-xs text-gray-600">Section 321 & DTC</p>
+              <a href="#ecommerce-digital-trade-guide" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">E-Commerce Guide</h4>
+                <p className="text-sm text-text-secondary">Section 321 & DTC compliance</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
               </a>
-              <a href="#trade-law-faq" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
-                <h4 className="font-bold text-primary-navy mb-1">FAQ Center</h4>
-                <p className="text-xs text-gray-600">Apparel trade questions</p>
+              <a href="#trade-law-faq" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
+                <p className="text-sm text-text-secondary">Common apparel trade questions</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -561,13 +549,14 @@ const ApparelTextilesIndustryPage: React.FC = () => {
       </section>
 
       {/* California Fashion Hub Local Knowledge */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 font-garamond">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
               Deep California Fashion Industry Local Knowledge
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
               On-the-ground expertise serving fashion brands throughout the Los Angeles Garment District, San Francisco design community, and California's textile industry
             </p>
           </div>
@@ -691,23 +680,20 @@ const ApparelTextilesIndustryPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Protect Your Apparel Supply Chain from UFLPA Disruptions
           </h2>
-          <p className="text-xl opacity-95 mb-8 leading-relaxed text-white">
+          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">
             Schedule a consultation with California's leading trade law attorney for apparel and textile companies.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">
+            <Button href="#schedule-consultation" variant="solid">
               Schedule UFLPA Consultation
-            </a>
-            <a href="tel:+16317468290" className="hero-cta-outline">
-              Call (631) 746-8290
-            </a>
+            </Button>
+            <Button href={siteConfig.phoneTel} variant="outline">
+              Call {siteConfig.phoneDisplay}
+            </Button>
           </div>
-          <p className="text-gray-300 mt-6">
-            Serving Los Angeles, San Francisco, and California fashion brands nationwide
-          </p>
         </div>
       </section>
 

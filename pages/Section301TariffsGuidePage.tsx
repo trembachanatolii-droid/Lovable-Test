@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 import EvaluationForm from '../components/EvaluationForm';
+import Button from '../components/Button';
+import { siteConfig } from '../config/siteConfig';
 
 const Section301TariffsGuidePage: React.FC = () => {
   // Scroll to section function for in-page navigation
@@ -90,85 +92,119 @@ const Section301TariffsGuidePage: React.FC = () => {
 
       {/* Main Content */}
       <article className="py-12 px-4">
-        <div className="container-custom max-w-4xl prose prose-lg">
+        <div className="max-w-[1200px] mx-auto">
 
           {/* Section 1: Overview */}
-          <section id="overview" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary-navy mb-6 font-garamond">What are Section 301 Tariffs?</h2>
+          <section id="overview" className="py-20 px-6 bg-white">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+                  What are Section 301 Tariffs?
+                </h2>
+                <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+                <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                  Section 301 of the Trade Act of 1974 authorizes the U.S. Trade Representative (USTR) to investigate foreign trade practices and impose retaliatory tariffs when foreign countries engage in unfair trade practices that harm U.S. commerce. Beginning in 2018, USTR imposed <strong>additional tariffs ranging from 7.5% to 100%</strong> on over <strong>$370 billion worth of Chinese imports</strong> across four separate Lists, in response to China's acts, policies, and practices related to technology transfer, intellectual property, and innovation.
+                </p>
+              </div>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Section 301 of the Trade Act of 1974 authorizes the U.S. Trade Representative (USTR) to investigate foreign trade practices and impose retaliatory tariffs when foreign countries engage in unfair trade practices that harm U.S. commerce. Beginning in 2018, USTR imposed <strong>additional tariffs ranging from 7.5% to 100%</strong> on over <strong>$370 billion worth of Chinese imports</strong> across four separate Lists, in response to China's acts, policies, and practices related to technology transfer, intellectual property, and innovation.
-            </p>
+              <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal mb-8">
+                <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Critical Understanding for California Importers</h3>
+                <p className="text-text-secondary leading-relaxed mb-4">
+                  Section 301 tariffs are <strong>additional duties imposed on top of regular customs duties.</strong> These are not replacements - they stack on top of normal tariff rates.
+                </p>
+                <p className="text-text-secondary leading-relaxed mb-4">
+                  <strong>Example:</strong> Widget classified under HTS 8501.10.40 normally has 2.5% duty rate. If Widget is also subject to List 3 Section 301 tariffs at 25%, the total duty is 27.5% (2.5% + 25%).
+                </p>
+                <p className="text-primary-navy font-semibold leading-relaxed">
+                  For California importers bringing high volumes from China, Section 301 can <strong>double or triple total duty costs</strong>, fundamentally impacting profitability and competitiveness.
+                </p>
+              </div>
 
-            <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-6">
-              <h3 className="text-xl font-bold text-blue-900 mb-3">Critical Understanding for California Importers</h3>
-              <p className="text-gray-800 mb-2">
-                Section 301 tariffs are <strong>additional duties imposed on top of regular customs duties.</strong> These are not replacements - they stack on top of normal tariff rates.
+              <h3 className="text-2xl font-bold text-primary-navy mb-6">Legislative Background and Trade War Context</h3>
+              <p className="text-text-secondary leading-relaxed mb-6 max-w-3xl">
+                USTR's Section 301 investigation, initiated in August 2017, found that China engages in four categories of unfair acts, policies, and practices:
               </p>
-              <p className="text-gray-700 text-sm mb-3">
-                <strong>Example:</strong> Widget classified under HTS 8501.10.40 normally has 2.5% duty rate. If Widget is also subject to List 3 Section 301 tariffs at 25%, the total duty is 27.5% (2.5% + 25%).
+
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary-teal">
+                  <h4 className="text-lg font-bold text-primary-navy mb-3">Technology Transfer Requirements</h4>
+                  <p className="text-text-secondary leading-relaxed">
+                    Forcing U.S. companies to transfer technology to Chinese entities as condition of market access
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary-teal">
+                  <h4 className="text-lg font-bold text-primary-navy mb-3">Discriminatory Licensing</h4>
+                  <p className="text-text-secondary leading-relaxed">
+                    Imposing unfair terms and conditions on U.S. companies' licensing of technology to Chinese entities
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary-teal">
+                  <h4 className="text-lg font-bold text-primary-navy mb-3">State-Directed Investment</h4>
+                  <p className="text-text-secondary leading-relaxed">
+                    Directing systematic investment in U.S. companies to acquire cutting-edge technologies and intellectual property
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary-teal">
+                  <h4 className="text-lg font-bold text-primary-navy mb-3">Cyber Intrusions</h4>
+                  <p className="text-text-secondary leading-relaxed">
+                    Conducting or supporting unauthorized cyber intrusions into U.S. commercial networks to steal trade secrets
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-text-secondary leading-relaxed mb-8 max-w-3xl">
+                In response to these findings, USTR imposed Section 301 tariffs in four tranches between July 2018 and September 2019, covering an estimated $370+ billion in annual Chinese imports. Despite negotiations including the Phase One Agreement in January 2020, most Section 301 tariffs remain in effect as of 2025, with periodic reviews and modifications.
               </p>
-              <p className="text-gray-800 font-semibold">
-                For California importers bringing high volumes from China, Section 301 can <strong>double or triple total duty costs</strong>, fundamentally impacting profitability and competitiveness.
+
+              <h3 className="text-2xl font-bold text-primary-navy mb-6">Current Status and Enforcement</h3>
+              <p className="text-text-secondary leading-relaxed mb-6 max-w-3xl">
+                Section 301 tariffs are administered by U.S. Customs and Border Protection (CBP) at the time of import entry. CBP automatically applies Section 301 duties based on:
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary-teal">
+                  <h4 className="text-lg font-bold text-primary-navy mb-3">Product Classification</h4>
+                  <p className="text-text-secondary leading-relaxed">
+                    HTS 10-digit classification determines if product falls within covered subheadings
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary-teal">
+                  <h4 className="text-lg font-bold text-primary-navy mb-3">Country of Origin</h4>
+                  <p className="text-text-secondary leading-relaxed">
+                    Must be Chinese-origin goods (substantial transformation in China or "Made in China")
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary-teal">
+                  <h4 className="text-lg font-bold text-primary-navy mb-3">Exclusion Status</h4>
+                  <p className="text-text-secondary leading-relaxed">
+                    Whether product has obtained product-specific exclusion (if exclusion process is active)
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-text-secondary leading-relaxed max-w-3xl">
+                For California importers, the Ports of Los Angeles, Long Beach, Oakland, and San Diego handle the majority of Chinese imports and have sophisticated systems to identify and collect Section 301 duties. Misclassification or incorrect origin declarations to avoid Section 301 exposure can result in: duty underpayment, penalties, interest, and potential fraud investigations.
               </p>
             </div>
-
-            <h3 className="text-2xl font-bold text-primary-navy mt-8 mb-4">Legislative Background and Trade War Context</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              USTR's Section 301 investigation, initiated in August 2017, found that China engages in four categories of unfair acts, policies, and practices:
-            </p>
-
-            <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
-              <li><strong>Technology Transfer Requirements:</strong> Forcing U.S. companies to transfer technology to Chinese entities as condition of market access</li>
-              <li><strong>Discriminatory Licensing:</strong> Imposing unfair terms and conditions on U.S. companies' licensing of technology to Chinese entities</li>
-              <li><strong>State-Directed Investment:</strong> Directing systematic investment in U.S. companies to acquire cutting-edge technologies and intellectual property</li>
-              <li><strong>Cyber Intrusions:</strong> Conducting or supporting unauthorized cyber intrusions into U.S. commercial networks to steal trade secrets</li>
-            </ul>
-
-            <p className="text-gray-700 leading-relaxed mb-4">
-              In response to these findings, USTR imposed Section 301 tariffs in four tranches between July 2018 and September 2019, covering an estimated $370+ billion in annual Chinese imports. Despite negotiations including the Phase One Agreement in January 2020, most Section 301 tariffs remain in effect as of 2025, with periodic reviews and modifications.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary-navy mt-8 mb-4">Current Status and Enforcement</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Section 301 tariffs are administered by U.S. Customs and Border Protection (CBP) at the time of import entry. CBP automatically applies Section 301 duties based on:
-            </p>
-
-            <div className="bg-white p-6 rounded-lg shadow-md mb-6">
-              <ol className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-secondary-teal font-bold mr-3">1.</span>
-                  <div>
-                    <strong className="text-primary-navy">Product Classification:</strong> HTS 10-digit classification determines if product falls within covered subheadings
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal font-bold mr-3">2.</span>
-                  <div>
-                    <strong className="text-primary-navy">Country of Origin:</strong> Must be Chinese-origin goods (substantial transformation in China or "Made in China")
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary-teal font-bold mr-3">3.</span>
-                  <div>
-                    <strong className="text-primary-navy">Exclusion Status:</strong> Whether product has obtained product-specific exclusion (if exclusion process is active)
-                  </div>
-                </li>
-              </ol>
-            </div>
-
-            <p className="text-gray-700 leading-relaxed">
-              For California importers, the Ports of Los Angeles, Long Beach, Oakland, and San Diego handle the majority of Chinese imports and have sophisticated systems to identify and collect Section 301 duties. Misclassification or incorrect origin declarations to avoid Section 301 exposure can result in: duty underpayment, penalties, interest, and potential fraud investigations.
-            </p>
           </section>
 
           {/* Section 2: Lists Breakdown */}
-          <section id="lists" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary-navy mb-6 font-garamond">Section 301 Lists 1-4: Complete Breakdown</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              Section 301 tariffs were imposed in four separate actions, each covering different products and duty rates. Understanding which List covers your products is critical for cost calculation and mitigation strategies.
-            </p>
+          <section id="lists" className="py-20 px-6 bg-neutral-50">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+                  Section 301 Lists 1-4: Complete Breakdown
+                </h2>
+                <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+                <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                  Section 301 tariffs were imposed in four separate actions, each covering different products and duty rates. Understanding which List covers your products is critical for cost calculation and mitigation strategies.
+                </p>
+              </div>
 
             <div className="space-y-6 mb-8">
               <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-red-600">
@@ -273,30 +309,48 @@ const Section301TariffsGuidePage: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-red-50 border-l-4 border-red-600 p-6 my-6">
-              <h3 className="text-xl font-bold text-red-900 mb-3">California Importer Impact Analysis</h3>
-              <p className="text-gray-800 mb-3">
-                For typical California import portfolio from China:
-              </p>
-              <ul className="text-gray-700 list-disc pl-5 space-y-2">
-                <li><strong>Electronics importers:</strong> 60-80% of products likely covered by Lists 1-3 (25% additional duty)</li>
-                <li><strong>Consumer goods importers:</strong> 70-90% of products likely covered by Lists 3-4 (7.5-25% additional duty)</li>
-                <li><strong>Industrial equipment importers:</strong> 50-70% of products likely covered by Lists 1-2 (25% additional duty)</li>
-                <li><strong>Apparel/footwear importers:</strong> 80-95% of products likely covered by Lists 3-4A (7.5-25% additional duty)</li>
-              </ul>
-              <p className="text-gray-800 mt-3 font-semibold">
-                Total additional duty exposure can range from $500,000 to $10M+ annually for mid-sized importers, making mitigation strategies business-critical.
-              </p>
+              <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-red-600 mt-8">
+                <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">California Importer Impact Analysis</h3>
+                <p className="text-text-secondary leading-relaxed mb-4">
+                  For typical California import portfolio from China:
+                </p>
+                <ul className="text-text-secondary space-y-3 mb-4">
+                  <li className="flex items-start">
+                    <span className="text-red-600 font-bold mr-3">•</span>
+                    <span><strong>Electronics importers:</strong> 60-80% of products likely covered by Lists 1-3 (25% additional duty)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 font-bold mr-3">•</span>
+                    <span><strong>Consumer goods importers:</strong> 70-90% of products likely covered by Lists 3-4 (7.5-25% additional duty)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 font-bold mr-3">•</span>
+                    <span><strong>Industrial equipment importers:</strong> 50-70% of products likely covered by Lists 1-2 (25% additional duty)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 font-bold mr-3">•</span>
+                    <span><strong>Apparel/footwear importers:</strong> 80-95% of products likely covered by Lists 3-4A (7.5-25% additional duty)</span>
+                  </li>
+                </ul>
+                <p className="text-primary-navy font-semibold leading-relaxed">
+                  Total additional duty exposure can range from $500,000 to $10M+ annually for mid-sized importers, making mitigation strategies business-critical.
+                </p>
+              </div>
             </div>
           </section>
 
           {/* Section 3: Applicability */}
-          <section id="applicability" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary-navy mb-6 font-garamond">Is My Product Subject to Section 301 Tariffs?</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              Determining Section 301 applicability requires careful analysis of three factors: HTS classification, country of origin, and exclusion status. Errors in any factor can result in duty underpayment or overpayment.
-            </p>
+          <section id="applicability" className="py-20 px-6 bg-white">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+                  Is My Product Subject to Section 301 Tariffs?
+                </h2>
+                <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+                <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                  Determining Section 301 applicability requires careful analysis of three factors: HTS classification, country of origin, and exclusion status. Errors in any factor can result in duty underpayment or overpayment.
+                </p>
+              </div>
 
             <h3 className="text-2xl font-bold text-primary-navy mb-4">Step-by-Step Applicability Analysis</h3>
 
@@ -382,15 +436,21 @@ const Section301TariffsGuidePage: React.FC = () => {
                 </div>
               </div>
             </div>
+            </div>
           </section>
 
           {/* Section 4: Mitigation Strategies */}
-          <section id="mitigation" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary-navy mb-6 font-garamond">Section 301 Mitigation Strategies</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              For California importers facing substantial Section 301 exposure, comprehensive mitigation strategies can reduce duty costs by 30-70%. The most effective approach combines multiple strategies tailored to your specific product portfolio and supply chain.
-            </p>
+          <section id="mitigation" className="py-20 px-6 bg-neutral-50">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+                  Section 301 Mitigation Strategies
+                </h2>
+                <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+                <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                  For California importers facing substantial Section 301 exposure, comprehensive mitigation strategies can reduce duty costs by 30-70%. The most effective approach combines multiple strategies tailored to your specific product portfolio and supply chain.
+                </p>
+              </div>
 
             <div className="space-y-8">
               <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-6 rounded-lg shadow-lg">
@@ -605,29 +665,44 @@ const Section301TariffsGuidePage: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-green-50 border-l-4 border-green-600 p-6 mt-8">
-              <h3 className="text-xl font-bold text-green-900 mb-3">Comprehensive Mitigation Approach</h3>
-              <p className="text-gray-800 mb-3">
-                Most effective strategy combines multiple approaches:
-              </p>
-              <ol className="text-gray-700 list-decimal pl-5 space-y-2">
-                <li><strong>Immediate (0-3 months):</strong> HTS classification review, first sale implementation, binding ruling requests</li>
-                <li><strong>Short-term (3-12 months):</strong> Tariff engineering, exclusion requests if available, drawback program</li>
-                <li><strong>Long-term (12-24 months):</strong> Supply chain restructuring, FTZ operations, country diversification</li>
-              </ol>
-              <p className="text-gray-800 mt-3 font-semibold">
-                Combined strategies can reduce Section 301 exposure by 40-70%, saving $1M-10M+ annually for mid-to-large California importers.
-              </p>
+              <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-green-600 mt-8">
+                <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Comprehensive Mitigation Approach</h3>
+                <p className="text-text-secondary leading-relaxed mb-4">
+                  Most effective strategy combines multiple approaches:
+                </p>
+                <ol className="text-text-secondary space-y-3 mb-4">
+                  <li className="flex items-start">
+                    <span className="text-green-600 font-bold mr-3">1.</span>
+                    <span><strong>Immediate (0-3 months):</strong> HTS classification review, first sale implementation, binding ruling requests</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 font-bold mr-3">2.</span>
+                    <span><strong>Short-term (3-12 months):</strong> Tariff engineering, exclusion requests if available, drawback program</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 font-bold mr-3">3.</span>
+                    <span><strong>Long-term (12-24 months):</strong> Supply chain restructuring, FTZ operations, country diversification</span>
+                  </li>
+                </ol>
+                <p className="text-primary-navy font-semibold leading-relaxed">
+                  Combined strategies can reduce Section 301 exposure by 40-70%, saving $1M-10M+ annually for mid-to-large California importers.
+                </p>
+              </div>
             </div>
           </section>
 
           {/* Section 5: Exclusions */}
-          <section id="exclusions" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary-navy mb-6 font-garamond">Section 301 Exclusions Process</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              USTR has periodically offered product-specific exclusion processes allowing importers and other interested parties to request exclusions from Section 301 tariffs for specific products. Understanding the exclusion process, criteria, and current status is critical for California importers seeking relief.
-            </p>
+          <section id="exclusions" className="py-20 px-6 bg-white">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+                  Section 301 Exclusions Process
+                </h2>
+                <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+                <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                  USTR has periodically offered product-specific exclusion processes allowing importers and other interested parties to request exclusions from Section 301 tariffs for specific products. Understanding the exclusion process, criteria, and current status is critical for California importers seeking relief.
+                </p>
+              </div>
 
             <h3 className="text-2xl font-bold text-primary-navy mb-4">Historical Exclusion Processes</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -727,19 +802,25 @@ const Section301TariffsGuidePage: React.FC = () => {
                 <li>Review and decision process takes 6-12+ months</li>
                 <li>Can request expedited review for severe economic hardship</li>
               </ul>
-              <p className="text-gray-800 font-semibold">
-                �Trembach Law Firm maintains exclusion process monitoring and can mobilize exclusion requests within 24-48 hours of USTR announcement. Contact us to prepare exclusion request packages in advance of next process opening.
+              <p className="text-primary-navy font-semibold leading-relaxed">
+                Trembach Law Firm maintains exclusion process monitoring and can mobilize exclusion requests within 24-48 hours of USTR announcement. Contact us to prepare exclusion request packages in advance of next process opening.
               </p>
+            </div>
             </div>
           </section>
 
           {/* Section 6: Compliance */}
-          <section id="compliance" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary-navy mb-6 font-garamond">Section 301 Compliance Best Practices</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              Proper Section 301 compliance protects against underpayment penalties, CBP audits, and ensures eligibility for any future relief programs. California importers should implement systematic compliance programs addressing classification, origin, and recordkeeping.
-            </p>
+          <section id="compliance" className="py-20 px-6 bg-neutral-50">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+                  Section 301 Compliance Best Practices
+                </h2>
+                <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+                <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                  Proper Section 301 compliance protects against underpayment penalties, CBP audits, and ensures eligibility for any future relief programs. California importers should implement systematic compliance programs addressing classification, origin, and recordkeeping.
+                </p>
+              </div>
 
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -858,54 +939,162 @@ const Section301TariffsGuidePage: React.FC = () => {
                 </p>
               </div>
             </div>
-          </section>
-
-          {/* Conclusion / CTA */}
-          <section className="mt-16 bg-gradient-to-br from-primary-navy to-secondary-teal text-white p-8 rounded-lg shadow-xl">
-            <h2 className="text-3xl font-bold mb-4 font-garamond">Expert Section 301 Strategy and Compliance</h2>
-            <p className="text-lg mb-6">
-              Trembach Law Firm provides comprehensive Section 301 services for California importers, from strategic mitigation planning to compliance implementation and CBP audit defense. Our expertise includes:
-            </p>
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start">
-                <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>Duty savings strategies</strong> through classification optimization, first sale, supply chain restructuring</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>Exclusion request experience</strong> during historical processes - ready for next round</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>Binding rulings expertise</strong> for classification and origin certainty</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>Supply chain restructuring guidance</strong> - compliant country diversification strategies</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>CBP audit defense</strong> - protecting Section 301 mitigation strategies during enforcement actions</span>
-              </li>
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#schedule-consultation"
-                className="inline-block bg-secondary-gold hover:bg-yellow-500 text-primary-navy font-bold py-4 px-8 rounded-lg transition-colors shadow-lg text-center"
-              >
-                Schedule Section 301 Consultation
-              </a>
-              <a
-                href="#practice-areas"
-                className="hero-cta-outline"
-              >
-                View All Services
-              </a>
             </div>
           </section>
 
         </div>
       </article>
+
+      {/* Related Services & Resources */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Related Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Legal Services */}
+            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Section 301 Legal Services</h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#customs-defense-litigation" className="service-link">
+                    <span className="service-link__title">CBP Audit Defense</span>
+                    <p className="service-link__description">Section 301 compliance audits</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#regulatory-compliance-advisory" className="service-link">
+                    <span className="service-link__title">Tariff Classification</span>
+                    <p className="service-link__description">HTS optimization strategies</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#trade-litigation-services" className="service-link">
+                    <span className="service-link__title">Trade Litigation</span>
+                    <p className="service-link__description">Court of International Trade</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Related Resources */}
+            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Resources</h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#resources/uflpa-compliance-guide" className="service-link">
+                    <span className="service-link__title">UFLPA Compliance Guide</span>
+                    <p className="service-link__description">Forced labor regulations</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                    <span className="service-link__title">HTS Classification Guide</span>
+                    <p className="service-link__description">Tariff classification strategies</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#trade-law-faq" className="service-link">
+                    <span className="service-link__title">Trade Law FAQ</span>
+                    <p className="service-link__description">Common customs questions</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* California Locations */}
+            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">California Service Areas</h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#los-angeles-port-customs-attorney" className="service-link">
+                    <span className="service-link__title">LA/Long Beach Port</span>
+                    <p className="service-link__description">Major port customs services</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#bay-area-trade-law-attorney" className="service-link">
+                    <span className="service-link__title">San Francisco Bay Area</span>
+                    <p className="service-link__description">Port of Oakland services</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#practice-areas" className="service-link">
+                    <span className="service-link__title">All Practice Areas</span>
+                    <p className="service-link__description">Full trade law services</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-6 bg-primary-navy text-white">
+        <div className="max-w-[900px] mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
+            Expert Section 301 Strategy and Compliance
+          </h2>
+          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">
+            Trembach Law Firm provides comprehensive Section 301 services for California importers, from strategic mitigation planning to compliance implementation and CBP audit defense. Reduce duty costs by 30-70% with proven strategies.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <Button href="#schedule-consultation" variant="solid">
+              Schedule Section 301 Consultation
+            </Button>
+            <Button href={siteConfig.phoneTel} variant="outline">
+              Call {siteConfig.phoneDisplay}
+            </Button>
+          </div>
+        </div>
+      </section>
 
       {/* Evaluation Form */}
       <EvaluationForm theme="light" />
