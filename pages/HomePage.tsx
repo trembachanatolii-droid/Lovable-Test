@@ -148,7 +148,7 @@ const HomePage: React.FC = () => {
           <p className="hero-subtitle">
             Premier California & USA international trade attorney. Multinational trade law expertise for import/export businesses nationwide. CBP defense, federal trade compliance, global trade strategy, customs audits & export controls. Protecting your business in complex international trade law.
           </p>
-          <a href="#contact" className="hero-cta" aria-label="Get free consultation with California trade attorney">Get Free Consultation</a>
+          <a href="#schedule-consultation" className="hero-cta" aria-label="Get free consultation with California trade attorney">Get Free Consultation</a>
         </div>
       </section>
 

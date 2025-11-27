@@ -385,78 +385,123 @@ const LosAngelesPortPage: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Legal Services */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services for Port Importers</h3>
-              <ul className="space-y-3">
-                <li>
-                  <a href="#customs-defense-litigation" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Customs Defense & Litigation
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#customs-defense-litigation" className="service-link">
+                    <span className="service-link__title">Customs Defense & Litigation</span>
+                    <p className="service-link__description">CBP audits, seizures, penalty defense</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
                   </a>
-                  <p className="text-sm text-text-secondary mt-1">CBP audits, seizures, penalty defense</p>
-                </li>
-                <li>
-                  <a href="#regulatory-compliance-advisory" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Trade Compliance Programs
+                </div>
+                <div className="service-link-item">
+                  <a href="#regulatory-compliance-advisory" className="service-link">
+                    <span className="service-link__title">Trade Compliance Programs</span>
+                    <p className="service-link__description">Import compliance for high-volume importers</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
                   </a>
-                  <p className="text-sm text-text-secondary mt-1">Import compliance for high-volume importers</p>
-                </li>
-                <li>
-                  <a href="#export-controls-sanctions" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Export Controls & Sanctions
+                </div>
+                <div className="service-link-item">
+                  <a href="#export-controls-sanctions" className="service-link">
+                    <span className="service-link__title">Export Controls & Sanctions</span>
+                    <p className="service-link__description">Re-export compliance through LA/LB</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
                   </a>
-                  <p className="text-sm text-text-secondary mt-1">Re-export compliance through LA/LB</p>
-                </li>
-                <li>
-                  <a href="#practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> All Practice Areas
+                </div>
+                <div className="service-link-item">
+                  <a href="#practice-areas" className="service-link">
+                    <span className="service-link__title">All Practice Areas</span>
+                    <p className="service-link__description">Full range of trade law services</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
                   </a>
-                  <p className="text-sm text-text-secondary mt-1">Full range of trade law services</p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
             {/* Industry Focus */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">LA/LB Port Industry Focus</h3>
-              <ul className="space-y-3">
-                <li>
-                  <a href="#technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Technology & Electronics
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#technology-electronics-trade-attorney" className="service-link">
+                    <span className="service-link__title">Technology & Electronics</span>
+                    <p className="service-link__description">Major LA/LB import sector</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
                   </a>
-                  <p className="text-sm text-text-secondary mt-1">Major LA/LB import sector</p>
-                </li>
-                <li>
-                  <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Apparel & Textiles
+                </div>
+                <div className="service-link-item">
+                  <a href="#apparel-textiles-trade-attorney" className="service-link">
+                    <span className="service-link__title">Apparel & Textiles</span>
+                    <p className="service-link__description">LA Fashion District importers</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
                   </a>
-                  <p className="text-sm text-text-secondary mt-1">LA Fashion District importers</p>
-                </li>
-                <li>
-                  <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Food & Agriculture
+                </div>
+                <div className="service-link-item">
+                  <a href="#food-agriculture-trade-attorney" className="service-link">
+                    <span className="service-link__title">Food & Agriculture</span>
+                    <p className="service-link__description">Perishable cargo specialists</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
                   </a>
-                  <p className="text-sm text-text-secondary mt-1">Perishable cargo specialists</p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
             {/* Other Locations */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
-              <ul className="space-y-3">
-                <li>
-                  <a href="#bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> San Francisco & Bay Area
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#bay-area-trade-law-attorney" className="service-link">
+                    <span className="service-link__title">San Francisco & Bay Area</span>
+                    <p className="service-link__description">Port of Oakland, Silicon Valley tech</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
                   </a>
-                  <p className="text-sm text-text-secondary mt-1">Port of Oakland, Silicon Valley tech</p>
-                </li>
-                <li>
-                  <a href="#contact" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Calabasas HQ Office
+                </div>
+                <div className="service-link-item">
+                  <a href="#schedule-consultation" className="service-link">
+                    <span className="service-link__title">Calabasas HQ Office</span>
+                    <p className="service-link__description">27001 Agoura Road, Suite 350</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
                   </a>
-                  <p className="text-sm text-text-secondary mt-1">27001 Agoura Road, Suite 350</p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -464,21 +509,41 @@ const LosAngelesPortPage: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for LA/LB Importers</h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <a href="#resources/section-301-tariffs-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#resources/section-301-tariffs-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">China tariff mitigation strategies</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#resources/uflpa-compliance-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#resources/uflpa-compliance-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Forced labor detention defense</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#tariffs-duties-classification-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#tariffs-duties-classification-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
                 <p className="text-sm text-text-secondary">HTS classification best practices</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#trade-law-faq" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Common port customs questions</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
             </div>
           </div>

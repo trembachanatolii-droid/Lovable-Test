@@ -298,30 +298,58 @@ const BayAreaTradeLawPage: React.FC = () => {
             {/* Legal Services */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services for Tech Companies</h3>
-              <ul className="space-y-3">
+              <ul className="space-y-3 overflow-hidden">
                 <li>
-                  <a href="#export-controls-sanctions" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Export Controls & Sanctions
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">ITAR/EAR/OFAC compliance</p>
+                  <div className="service-link-item">
+                    <a href="#export-controls-sanctions" className="service-link">
+                      <span className="service-link__title">Export Controls & Sanctions</span>
+                      <p className="service-link__description">ITAR/EAR/OFAC compliance</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#regulatory-compliance-advisory" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Trade Compliance Programs
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Export compliance program design</p>
+                  <div className="service-link-item">
+                    <a href="#regulatory-compliance-advisory" className="service-link">
+                      <span className="service-link__title">Trade Compliance Programs</span>
+                      <p className="service-link__description">Export compliance program design</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#customs-defense-litigation" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Customs Defense & Litigation
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">BIS enforcement defense</p>
+                  <div className="service-link-item">
+                    <a href="#customs-defense-litigation" className="service-link">
+                      <span className="service-link__title">Customs Defense & Litigation</span>
+                      <p className="service-link__description">BIS enforcement defense</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> All Practice Areas
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Full range of trade law services</p>
+                  <div className="service-link-item">
+                    <a href="#practice-areas" className="service-link">
+                      <span className="service-link__title">All Practice Areas</span>
+                      <p className="service-link__description">Full range of trade law services</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -329,24 +357,45 @@ const BayAreaTradeLawPage: React.FC = () => {
             {/* Industry Focus */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Bay Area Industry Focus</h3>
-              <ul className="space-y-3">
+              <ul className="space-y-3 overflow-hidden">
                 <li>
-                  <a href="#technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Technology & Electronics
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Silicon Valley's primary sector</p>
+                  <div className="service-link-item">
+                    <a href="#technology-electronics-trade-attorney" className="service-link">
+                      <span className="service-link__title">Technology & Electronics</span>
+                      <p className="service-link__description">Silicon Valley's primary sector</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Apparel & Textiles
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Athletic wear & fashion tech</p>
+                  <div className="service-link-item">
+                    <a href="#apparel-textiles-trade-attorney" className="service-link">
+                      <span className="service-link__title">Apparel & Textiles</span>
+                      <p className="service-link__description">Athletic wear & fashion tech</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Food & Agriculture
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Wine, organic, and specialty foods</p>
+                  <div className="service-link-item">
+                    <a href="#food-agriculture-trade-attorney" className="service-link">
+                      <span className="service-link__title">Food & Agriculture</span>
+                      <p className="service-link__description">Wine, organic, and specialty foods</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -354,42 +403,76 @@ const BayAreaTradeLawPage: React.FC = () => {
             {/* Other Locations */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
-              <ul className="space-y-3">
+              <ul className="space-y-3 overflow-hidden">
                 <li>
-                  <a href="#los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Los Angeles & Long Beach Port
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Nation's busiest port complex</p>
+                  <div className="service-link-item">
+                    <a href="#los-angeles-port-customs-attorney" className="service-link">
+                      <span className="service-link__title">Los Angeles & Long Beach Port</span>
+                      <p className="service-link__description">Nation's busiest port complex</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#contact" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Calabasas HQ Office
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">27001 Agoura Road, Suite 350</p>
+                  <div className="service-link-item">
+                    <a href="#schedule-consultation" className="service-link">
+                      <span className="service-link__title">Calabasas HQ Office</span>
+                      <p className="service-link__description">27001 Agoura Road, Suite 350</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
 
           {/* Helpful Guides */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md overflow-hidden">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for Tech Companies</h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <a href="#article/ear-compliance" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#article/ear-compliance" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">EAR Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Export Administration Regulations</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#article/encryption-export-controls-california" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#article/encryption-export-controls-california" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Encryption Export Guide</h4>
                 <p className="text-sm text-text-secondary">EAR encryption controls</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#ecommerce-digital-trade-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#ecommerce-digital-trade-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">E-commerce & Digital Trade</h4>
                 <p className="text-sm text-text-secondary">SaaS and cloud compliance</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#trade-law-faq" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Export control FAQ</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
             </div>
           </div>

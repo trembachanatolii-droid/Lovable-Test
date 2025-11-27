@@ -61,7 +61,7 @@ const ExportControlsPage: React.FC = () => {
             ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export regulations, dual use items compliance, deemed exports & restricted party screening. Expert guidance for California & USA tech companies, defense contractors & manufacturers.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#contact" className="hero-cta">Free Export Controls Consultation</a>
+            <a href="#schedule-consultation" className="hero-cta">Free Export Controls Consultation</a>
             <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>
         </div>
@@ -412,94 +412,170 @@ const ExportControlsPage: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Related Services */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Practice Areas</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#regulatory-compliance-advisory" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Trade Compliance Programs
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Import/export compliance program design</p>
+                  <div className="service-link-item">
+                    <a href="#regulatory-compliance-advisory" className="service-link">
+                      <span className="service-link__title">Trade Compliance Programs</span>
+                      <p className="service-link__description">Import/export compliance program design</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#customs-defense-litigation" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Customs Defense & Litigation
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">CBP enforcement defense</p>
+                  <div className="service-link-item">
+                    <a href="#customs-defense-litigation" className="service-link">
+                      <span className="service-link__title">Customs Defense & Litigation</span>
+                      <p className="service-link__description">CBP enforcement defense</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> All Practice Areas
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Full range of international trade services</p>
+                  <div className="service-link-item">
+                    <a href="#practice-areas" className="service-link">
+                      <span className="service-link__title">All Practice Areas</span>
+                      <p className="service-link__description">Full range of international trade services</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
 
             {/* Location Pages */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Serving California Tech Hubs</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> San Francisco & Bay Area
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Silicon Valley export controls expertise</p>
+                  <div className="service-link-item">
+                    <a href="#bay-area-trade-law-attorney" className="service-link">
+                      <span className="service-link__title">San Francisco & Bay Area</span>
+                      <p className="service-link__description">Silicon Valley export controls expertise</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Los Angeles & Long Beach Port
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Defense/aerospace export compliance</p>
+                  <div className="service-link-item">
+                    <a href="#los-angeles-port-customs-attorney" className="service-link">
+                      <span className="service-link__title">Los Angeles & Long Beach Port</span>
+                      <p className="service-link__description">Defense/aerospace export compliance</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
 
             {/* Industry Focus */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Industry Export Solutions</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Technology & Electronics
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Semiconductor & software export controls</p>
+                  <div className="service-link-item">
+                    <a href="#technology-electronics-trade-attorney" className="service-link">
+                      <span className="service-link__title">Technology & Electronics</span>
+                      <p className="service-link__description">Semiconductor & software export controls</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Apparel & Textiles
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Technical textile export controls</p>
+                  <div className="service-link-item">
+                    <a href="#apparel-textiles-trade-attorney" className="service-link">
+                      <span className="service-link__title">Apparel & Textiles</span>
+                      <p className="service-link__description">Technical textile export controls</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Food & Agriculture
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Agricultural export compliance</p>
+                  <div className="service-link-item">
+                    <a href="#food-agriculture-trade-attorney" className="service-link">
+                      <span className="service-link__title">Food & Agriculture</span>
+                      <p className="service-link__description">Agricultural export compliance</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
 
           {/* Helpful Guides */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md overflow-hidden">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides & Resources</h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <a href="#article/ear-compliance" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#article/ear-compliance" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">EAR Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Export Administration Regulations overview</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#article/itar-compliance" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#article/itar-compliance" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">ITAR Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Defense trade controls essentials</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#article/ofac-sanctions" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#article/ofac-sanctions" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">OFAC Sanctions Guide</h4>
                 <p className="text-sm text-text-secondary">Sanctions screening and compliance</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#trade-law-faq" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Answers to export control questions</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
             </div>
           </div>
@@ -519,7 +595,7 @@ const ExportControlsPage: React.FC = () => {
             <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
-            <Button href="tel:+16317468290" variant="outline">
+            <Button href="tel:+16317468290" variant="outlined">
               Call (631) 746-8290
             </Button>
           </div>

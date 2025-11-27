@@ -43,7 +43,7 @@ const NotFoundPage: React.FC = () => {
             Return to Homepage
           </a>
           <a
-            href="#contact"
+            href="#schedule-consultation"
             className="inline-block bg-white text-primary-navy border-2 border-primary-navy px-8 py-3 rounded-md font-semibold hover:bg-primary-navy hover:text-white transition-colors duration-300"
           >
             Contact Us
