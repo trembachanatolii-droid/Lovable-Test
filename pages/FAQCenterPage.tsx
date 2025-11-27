@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
 import EvaluationForm from '../components/EvaluationForm';
@@ -53,7 +53,7 @@ const FAQCenterPage: React.FC = () => {
         },
         {
           question: 'Can I get a refund if I overpaid customs duties?',
-          answer: 'Yes, importers can recover overpaid duties through: (1) Protests: If CBP increased duty rate at liquidation, file CBP Form 19 protest within 180 days challenging the rate; (2) Post-Entry Amendments (PEAs): For certain errors, request PEA to correct classification or value before liquidation; (3) Court of International Trade (CIT) Litigation: If protest denied, file lawsuit in CIT within 180 days; (4) Drawback Claims: Recover 99% of duties paid on goods that are exported or used to manufacture exported products. California importers should conduct periodic classification audits to identify overpayments. Refunds can be substantial - we have recovered $3-15M+ for clients through CIT litigation and drawback programs.',
+          answer: 'Yes, importers can recover overpaid duties through: (1) Protests: If CBP increased duty rate at liquidation, file CBP Form 19 protest within 180 days challenging the rate; (2) Post-Entry Amendments (PEAs): For certain errors, request PEA to correct classification or value before liquidation; (3) Court of International Trade (CIT) Litigation: If protest denied, file lawsuit in CIT within 180 days; (4) Drawback Claims: Recover 99% of duties paid on goods that are exported or used to manufacture exported products. California importers should conduct periodic classification audits to identify overpayments. Refunds can be substantial through CIT litigation and drawback programs.',
           link: { text: 'CIT Litigation Services', url: '#customs-defense-litigation' },
         },
       ],
@@ -68,7 +68,7 @@ const FAQCenterPage: React.FC = () => {
         },
         {
           question: 'What happens if my shipment is detained under UFLPA?',
-          answer: 'UFLPA detentions are among the most serious customs enforcement actions. When CBP detains a shipment: (1) Cargo is held at port and importer receives detention notice; (2) Importer has burden to prove goods are NOT made with forced labor (extremely difficult standard); (3) CBP may request extensive supply chain documentation going back to raw materials; (4) Detention can last 90+ days; (5) If importer cannot overcome presumption, goods are excluded and may be forfeited. For California importers, UFLPA detention response requires: immediate engagement with experienced counsel, emergency supply chain mapping to document complete custody chain, sworn declarations from all supply chain tiers, third-party audit reports, and comprehensive evidence packages. We have achieved 98% release rate for UFLPA detentions averaging 28-45 days.',
+          answer: 'UFLPA detentions are among the most serious customs enforcement actions. When CBP detains a shipment: (1) Cargo is held at port and importer receives detention notice; (2) Importer has burden to prove goods are NOT made with forced labor (extremely difficult standard); (3) CBP may request extensive supply chain documentation going back to raw materials; (4) Detention can last 90+ days; (5) If importer cannot overcome presumption, goods are excluded and may be forfeited. For California importers, UFLPA detention response requires: immediate engagement with experienced counsel, emergency supply chain mapping to document complete custody chain, sworn declarations from all supply chain tiers, third-party audit reports, and comprehensive evidence packages.',
           link: { text: 'UFLPA Detention Defense', url: '#customs-defense-litigation' },
         },
         {
@@ -118,17 +118,17 @@ const FAQCenterPage: React.FC = () => {
         },
         {
           question: 'Should I file a prior disclosure if I discover compliance errors?',
-          answer: 'Prior disclosure is voluntary submission to CBP of potential violations before CBP discovers them independently. Benefits: (1) Eliminates or substantially reduces monetary penalties; (2) Avoids criminal prosecution consideration; (3) Demonstrates good faith and reasonable care; (4) Allows controlled correction of errors. Prior disclosure is appropriate when: you discover material compliance errors (classification, valuation, origin); errors resulted in underpayment of duties; errors were not intentional; and CBP has not yet commenced investigation. Timing is critical - prior disclosure loses effectiveness once CBP has evidence of violations. The process requires: detailed written disclosure, payment of lost duties, and cooperation with CBP review. For California importers, prior disclosure can convert million-dollar penalty exposure into zero penalties. We have submitted 100+ prior disclosures with 95%+ success rate.',
+          answer: 'Prior disclosure is voluntary submission to CBP of potential violations before CBP discovers them independently. Benefits: (1) Eliminates or substantially reduces monetary penalties; (2) Avoids criminal prosecution consideration; (3) Demonstrates good faith and reasonable care; (4) Allows controlled correction of errors. Prior disclosure is appropriate when: you discover material compliance errors (classification, valuation, origin); errors resulted in underpayment of duties; errors were not intentional; and CBP has not yet commenced investigation. Timing is critical - prior disclosure loses effectiveness once CBP has evidence of violations. The process requires: detailed written disclosure, payment of lost duties, and cooperation with CBP review. For California importers, prior disclosure can convert significant penalty exposure into reduced or eliminated penalties.',
           link: { text: 'Prior Disclosure Services', url: '#regulatory-compliance-advisory' },
         },
         {
           question: 'What are the penalties for customs violations and can they be reduced?',
-          answer: 'CBP penalties vary by violation type and culpability level: (1) Negligent violations: Domestic value of merchandise or 40% of lost duties (whichever is less); (2) Grossly negligent violations: Domestic value or 80% of lost duties; (3) Fraud violations: Domestic value or actual loss plus interest; (4) Additional specific penalties: $10,000-100,000 for recordkeeping violations; $5,000 per ISF violation; $1,000-$10,000 for marking violations. Penalties can be mitigated through: (1) Supplemental petition demonstrating mitigating circumstances; (2) Prior disclosure (if before CBP investigation); (3) Evidence of strong compliance program; (4) Cooperation with CBP; (5) Reasonable care efforts; (6) First-time violation. We routinely achieve 70-95% penalty reductions through effective mitigation, reducing $5M+ penalty assessments to $200,000-500,000 settlements.',
+          answer: 'CBP penalties vary by violation type and culpability level: (1) Negligent violations: Domestic value of merchandise or 40% of lost duties (whichever is less); (2) Grossly negligent violations: Domestic value or 80% of lost duties; (3) Fraud violations: Domestic value or actual loss plus interest; (4) Additional specific penalties: $10,000-100,000 for recordkeeping violations; $5,000 per ISF violation; $1,000-$10,000 for marking violations. Penalties can be mitigated through: (1) Supplemental petition demonstrating mitigating circumstances; (2) Prior disclosure (if before CBP investigation); (3) Evidence of strong compliance program; (4) Cooperation with CBP; (5) Reasonable care efforts; (6) First-time violation. Effective mitigation strategies can achieve significant penalty reductions.',
           link: { text: 'Penalty Mitigation Services', url: '#customs-defense-litigation' },
         },
         {
           question: 'Can CBP seize my goods and how do I get them released?',
-          answer: 'CBP can seize goods for violations including: incorrect classification, undervaluation, illegal transshipment (false country of origin), trademark/copyright infringement, forced labor, safety violations, or prohibited imports. After seizure: (1) CBP issues seizure notice; (2) Importer has 30 days to file petition for remission/mitigation; (3) CBP evaluates petition and determines whether to release, forfeit, or compromise; (4) If denied, importer can file supplemental petition or administrative appeal; (5) Some seizures can escalate to criminal prosecution. For California importers facing seizure: immediate action is critical. Effective petitions require: detailed factual showing that goods do not violate law; evidence of good faith and reasonable care; demonstration that violation was unintentional; and legal arguments for release. We have achieved release of $100M+ in seized cargo with 95%+ success rate, often within 60-90 days.',
+          answer: 'CBP can seize goods for violations including: incorrect classification, undervaluation, illegal transshipment (false country of origin), trademark/copyright infringement, forced labor, safety violations, or prohibited imports. After seizure: (1) CBP issues seizure notice; (2) Importer has 30 days to file petition for remission/mitigation; (3) CBP evaluates petition and determines whether to release, forfeit, or compromise; (4) If denied, importer can file supplemental petition or administrative appeal; (5) Some seizures can escalate to criminal prosecution. For California importers facing seizure: immediate action is critical. Effective petitions require: detailed factual showing that goods do not violate law; evidence of good faith and reasonable care; demonstration that violation was unintentional; and legal arguments for release. Prompt, well-prepared seizure petitions can often secure release within 60-90 days.',
           link: { text: 'Seizure Defense', url: '#customs-defense-litigation' },
         },
       ],
@@ -173,7 +173,7 @@ const FAQCenterPage: React.FC = () => {
         },
         {
           question: 'What happens if FDA refuses my food shipment?',
-          answer: 'FDA can refuse entry of food imports that "appear" to violate U.S. law (adulteration, misbranding, lacking required permits). When FDA issues refusal: (1) Shipment held at port; (2) Importer receives Notice of FDA Action; (3) Importer must respond within 10 business days (or shipment will be destroyed/exported); (4) Options: provide evidence of admissibility, request reconditioning (relabeling), or voluntarily destroy/export; (5) FDA reviews evidence and makes final decision. Common refusal reasons: labeling violations, pesticide residues, filth/contamination, missing import permits, lack of FSVP, facility not registered with FDA. For California food importers, FDA refusal response requires: immediate analysis of violation basis; gathering evidence (lab testing, certifications, documentation); preparing detailed admissibility package; and working with FDA district office. Effective responses can achieve release in 14-30 days. We have 95% success rate overturning FDA refusals.',
+          answer: 'FDA can refuse entry of food imports that "appear" to violate U.S. law (adulteration, misbranding, lacking required permits). When FDA issues refusal: (1) Shipment held at port; (2) Importer receives Notice of FDA Action; (3) Importer must respond within 10 business days (or shipment will be destroyed/exported); (4) Options: provide evidence of admissibility, request reconditioning (relabeling), or voluntarily destroy/export; (5) FDA reviews evidence and makes final decision. Common refusal reasons: labeling violations, pesticide residues, filth/contamination, missing import permits, lack of FSVP, facility not registered with FDA. For California food importers, FDA refusal response requires: immediate analysis of violation basis; gathering evidence (lab testing, certifications, documentation); preparing detailed admissibility package; and working with FDA district office. Effective responses can often achieve release in 14-30 days.',
           link: { text: 'FDA Refusal Defense', url: '#food-agriculture-trade-attorney' },
         },
         {
@@ -285,6 +285,21 @@ const FAQCenterPage: React.FC = () => {
     ],
   });
 
+  // State for tracking open FAQ items
+  const [openFAQs, setOpenFAQs] = useState<{[key: string]: boolean}>({});
+
+  const toggleFAQ = (categoryIndex: number, faqIndex: number) => {
+    const key = `${categoryIndex}-${faqIndex}`;
+    setOpenFAQs(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
+
+  const isFAQOpen = (categoryIndex: number, faqIndex: number) => {
+    return openFAQs[`${categoryIndex}-${faqIndex}`] || false;
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -313,7 +328,7 @@ const FAQCenterPage: React.FC = () => {
             Get answers to common questions about customs compliance, import/export regulations, UFLPA, export controls, and California trade law.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#customs-compliance" className="hero-cta">Browse FAQs</a>
+            <a href="#category-0" className="hero-cta">Browse FAQs</a>
             <a href="#schedule-consultation" className="hero-cta-outline">Ask a Question</a>
           </div>
         </div>
@@ -378,24 +393,51 @@ const FAQCenterPage: React.FC = () => {
                 <div className="h-1 w-24 bg-secondary-gold"></div>
               </div>
 
-              <div className="space-y-6">
-                {category.faqs.map((faq, faqIndex) => (
-                  <div key={faqIndex} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <h3 className="text-xl font-bold text-secondary-teal mb-4">{faq.question}</h3>
-                    <p className="text-gray-700 leading-relaxed whitespace-pre-line">{faq.answer}</p>
-                    {faq.link && (
-                      <a
-                        href={faq.link.url}
-                        className="inline-flex items-center mt-4 text-secondary-teal hover:text-primary-navy font-medium transition-colors"
+              <div className="space-y-3">
+                {category.faqs.map((faq, faqIndex) => {
+                  const isOpen = isFAQOpen(categoryIndex, faqIndex);
+                  return (
+                    <div key={faqIndex} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+                      <button
+                        onClick={() => toggleFAQ(categoryIndex, faqIndex)}
+                        className="w-full text-left p-5 flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-teal focus:ring-inset"
+                        aria-expanded={isOpen}
                       >
-                        {faq.link.text}
-                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </a>
-                    )}
-                  </div>
-                ))}
+                        <h3 className={`text-lg font-semibold pr-4 transition-colors ${isOpen ? 'text-secondary-teal' : 'text-primary-navy'}`}>
+                          {faq.question}
+                        </h3>
+                        <div
+                          className={`flex-shrink-0 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${isOpen ? 'border-secondary-teal bg-secondary-teal text-white rotate-45' : 'border-gray-300 text-gray-400'}`}
+                        >
+                          <span className="text-xl font-light leading-none">+</span>
+                        </div>
+                      </button>
+                      <div
+                        style={{
+                          maxHeight: isOpen ? '2000px' : '0',
+                          opacity: isOpen ? 1 : 0,
+                          transition: 'max-height 300ms ease-in-out, opacity 300ms ease-in-out',
+                          overflow: 'hidden'
+                        }}
+                      >
+                        <div className="px-5 pb-5 border-t border-gray-100">
+                          <p className="text-gray-700 leading-relaxed pt-4 whitespace-pre-line">{faq.answer}</p>
+                          {faq.link && (
+                            <a
+                              href={faq.link.url}
+                              className="inline-flex items-center mt-4 text-secondary-teal hover:text-primary-navy font-medium transition-colors"
+                            >
+                              {faq.link.text}
+                              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           ))}
@@ -464,12 +506,12 @@ const FAQCenterPage: React.FC = () => {
               </div>
             </a>
             <a
-              href="#success-stories"
+              href="#practice-areas"
               className="card-link group"
             >
-              <h3 className="text-xl font-bold text-primary-navy mb-2">Success Stories</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-2">Practice Areas</h3>
               <p className="text-gray-600 text-sm">
-                Real case studies showing proven results in customs defense and compliance
+                Comprehensive trade law services for California importers and exporters
               </p>
               <div className="triangle-slide">
                 <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

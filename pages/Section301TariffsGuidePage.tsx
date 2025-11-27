@@ -256,7 +256,7 @@ const Section301TariffsGuidePage: React.FC = () => {
 
                 <div className="bg-blue-50 p-4 rounded">
                   <p className="text-sm text-gray-800 mb-2"><strong>Strategy Note:</strong> List 4 targets remaining consumer goods not covered by Lists 1-3, including highly visible consumer products. Lower rate (7.5%) reflects Phase One Agreement de-escalation from original 15%.</p>
-                  <p className="text-sm text-red-700 font-semibold">⚠�Important: List 4B was originally scheduled for Dec 15, 2019, but implementation was suspended. However, portions were later implemented. Verify specific HTS applicability carefully.</p>
+                  <p className="text-sm text-red-700 font-semibold">Important: List 4B was originally scheduled for Dec 15, 2019, but implementation was suspended. However, portions were later implemented. Verify specific HTS applicability carefully.</p>
                 </div>
               </div>
             </div>
@@ -302,7 +302,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   <li>Note: Some HTS subheadings are partially covered (specific products within broader classification) - review product descriptions carefully</li>
                 </ul>
                 <div className="mt-3 bg-teal-50 p-3 rounded">
-                  <p className="text-sm text-gray-800"><strong>⚠�Classification Risk:</strong> Even minor classification differences can mean presence/absence of 25% additional duty. Small product modifications or reclassification can potentially avoid Section 301 coverage.</p>
+                  <p className="text-sm text-gray-800"><strong>Classification Risk:</strong> Even minor classification differences can mean presence/absence of 25% additional duty. Small product modifications or reclassification can potentially avoid Section 301 coverage.</p>
                 </div>
               </div>
 
@@ -455,7 +455,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                       </ul>
                     </div>
                     <p className="text-sm text-red-700 font-semibold mb-2">
-                      ⚠�Critical Compliance Warning: Ensure genuine substantial transformation occurs in new country. Simply routing Chinese goods through third country without meaningful processing is transshipment (illegal) and results in severe penalties.
+                      Critical Compliance Warning: Ensure genuine substantial transformation occurs in new country. Simply routing Chinese goods through third country without meaningful processing is transshipment (illegal) and results in severe penalties.
                     </p>
                     <p className="text-sm text-gray-600 italic">
                       <strong>Savings Potential:</strong> Eliminates 7.5-25% Section 301 duty. Potential to achieve duty-free treatment with USMCA or other FTAs. Long-term solution with greatest savings.
@@ -817,7 +817,7 @@ const Section301TariffsGuidePage: React.FC = () => {
               </div>
 
               <div className="bg-red-50 border-l-4 border-red-600 p-6">
-                <h3 className="text-xl font-bold text-red-900 mb-3">⚠�Common Section 301 Compliance Violations</h3>
+                <h3 className="text-xl font-bold text-red-900 mb-3">Common Section 301 Compliance Violations</h3>
                 <p className="text-gray-800 mb-3">Avoid these high-risk errors:</p>
                 <ul className="text-gray-700 space-y-2">
                   <li className="flex items-start">

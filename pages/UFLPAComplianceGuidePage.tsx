@@ -6,7 +6,7 @@ import { siteConfig } from '../config/siteConfig';
 const UFLPAComplianceGuidePage: React.FC = () => {
   useMeta({
     title: 'UFLPA Compliance CA | Uyghur Forced Labor Prevention Guide',
-    description: 'Comprehensive UFLPA compliance guide for California importers: detention defense strategies, supply chain mapping, Entity List screening, high-risk products (textiles, solar panels, tomatoes, electronics), evidence standards, CBP response procedures. Expert guidance from international trade attorneys with 98% release rate.',
+    description: 'Comprehensive UFLPA compliance guide for California importers: detention defense strategies, supply chain mapping, Entity List screening, high-risk products (textiles, solar panels, tomatoes, electronics), evidence standards, CBP response procedures. Expert guidance from international trade attorneys.',
     canonical: 'resources/uflpa-compliance-guide',
     ogType: 'article',
     ogImage: `${siteConfig.siteUrl}/og-image-uflpa.jpg`,
@@ -519,7 +519,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
                 <li><strong>Legal Strategy:</strong> Effective legal arguments framing evidence and addressing CBP concerns</li>
               </ul>
               <p className="text-gray-800 mt-3 font-semibold">
-                Our firm has achieved 98% release rate for UFLPA detentions with average release time of 28-45 days (vs. 90+ day industry average). This success rate reflects systematic approach combining emergency supply chain investigation, comprehensive evidence development, and persuasive legal advocacy.
+                Our firm provides systematic UFLPA detention defense combining emergency supply chain investigation, comprehensive evidence development, and persuasive legal advocacy to maximize the chance of cargo release.
               </p>
             </div>
           </section>
@@ -668,15 +668,15 @@ const UFLPAComplianceGuidePage: React.FC = () => {
             <ul className="space-y-2 mb-6">
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>98% UFLPA detention release rate</strong> - industry-leading success through systematic evidence development</span>
+                <span><strong>Systematic UFLPA detention defense</strong> - comprehensive evidence development and strategic CBP engagement</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>28-45 day average release time</strong> - vs. 90+ day industry average</span>
+                <span><strong>Expedited response</strong> - immediate mobilization for time-sensitive detention cases</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>
-                <span><strong>$100M+ in detained cargo released</strong> - including high-risk textiles, solar panels, and electronics</span>
+                <span><strong>High-risk industry expertise</strong> - textiles, solar panels, tomatoes, and electronics</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary-gold mr-2">✓</span>

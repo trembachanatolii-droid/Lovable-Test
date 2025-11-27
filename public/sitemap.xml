@@ -696,14 +696,6 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Success Stories / Case Studies - Trust Building Content -->
-  <url>
-    <loc>https://trembach.law/#success-stories</loc>
-    <lastmod>2025-11-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
   <!-- Trade Law Glossary - Educational Resource -->
   <url>
     <loc>https://trembach.law/#trade-law-glossary</loc>

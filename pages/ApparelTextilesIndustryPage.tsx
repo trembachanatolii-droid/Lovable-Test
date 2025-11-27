@@ -101,7 +101,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
 
             <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-500">
               <p className="text-gray-700">
-                <strong>Our UFLPA Defense Record:</strong> We have successfully secured the release of $50M+ in detained apparel cargo, achieving a 98% release rate through comprehensive documentation, supply chain mapping, and strategic CBP engagement.
+                <strong>Our UFLPA Defense Approach:</strong> We provide comprehensive UFLPA detention defense through thorough documentation, supply chain mapping, and strategic CBP engagement to secure release of detained apparel cargo.
               </p>
             </div>
           </div>
@@ -342,71 +342,6 @@ const ApparelTextilesIndustryPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Case Study */}
-      <section className="py-16 px-4 bg-gradient-to-br from-purple-100 to-pink-100">
-        <div className="container-custom max-w-4xl">
-          <div className="text-center mb-8">
-            <div className="inline-block bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-              SUCCESS STORY
-            </div>
-            <h2 className="text-3xl font-bold text-primary-navy mb-4">
-              Los Angeles Fashion Brand: $2.1M UFLPA Detention Release in 28 Days
-            </h2>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8 mb-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">$2.1M</div>
-                <div className="text-gray-600">Cargo Value Released</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">28 Days</div>
-                <div className="text-gray-600">Detention to Release</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">100%</div>
-                <div className="text-gray-600">Cargo Released</div>
-              </div>
-            </div>
-
-            <div className="space-y-4 text-gray-700">
-              <div>
-                <h3 className="font-bold text-primary-navy mb-2">Challenge:</h3>
-                <p>
-                  California-based fast-fashion brand had $2.1M in cotton apparel detained at Los Angeles port under UFLPA. CBP suspected Xinjiang cotton due to shipment origin from Shenzhen supplier. Company faced inventory shortages during peak season with potential $500K+ revenue loss.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-bold text-primary-navy mb-2">Strategy:</h3>
-                <ul className="list-disc ml-6 space-y-1">
-                  <li>Immediately engaged with CBP UFLPA Center to understand specific concerns</li>
-                  <li>Conducted emergency supply chain mapping tracing cotton to specific farms in India</li>
-                  <li>Obtained sworn declarations from spinning mill, fabric producer, and garment factory</li>
-                  <li>Secured third-party audit reports confirming no Xinjiang exposure</li>
-                  <li>Compiled 200+ page documentation package with complete chain of custody</li>
-                  <li>Submitted comprehensive rebuttal under UFLPA �3(c) exception process</li>
-                  <li>Coordinated with international suppliers for rapid document production</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-bold text-primary-navy mb-2">Outcome:</h3>
-                <ul className="list-disc ml-6 space-y-1">
-                  <li>100% of cargo released after 28 days (industry average 90+ days)</li>
-                  <li>Zero forfeiture or penalties</li>
-                  <li>Inventory arrived in time for seasonal sales</li>
-                  <li>Implemented ongoing UFLPA compliance program preventing future detentions</li>
-                  <li>Established pre-clearance documentation protocols for all shipments</li>
-                  <li>No subsequent UFLPA detentions during 18-month period</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us */}
       <section className="py-16 px-4">
         <div className="container-custom max-w-5xl">
@@ -425,7 +360,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-navy mb-3">UFLPA Defense Excellence</h3>
               <p className="text-gray-700">
-                98% success rate securing release of detained apparel cargo. $50M+ in UFLPA cargo released. Zero forfeitures. Proven strategies for overcoming the rebuttable presumption.
+                Experienced representation for UFLPA detention cases. Proven strategies for overcoming the rebuttable presumption and securing release of detained apparel cargo.
               </p>
             </div>
 

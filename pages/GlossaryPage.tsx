@@ -590,7 +590,7 @@ const GlossaryPage: React.FC = () => {
             Comprehensive definitions of customs, import/export, and trade compliance terms used in California international trade law.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#customs-terms" className="hero-cta">Browse Terms</a>
+            <a href="#category-0" className="hero-cta">Browse Terms</a>
             <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>
