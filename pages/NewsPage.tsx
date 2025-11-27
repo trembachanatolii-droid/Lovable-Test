@@ -291,6 +291,7 @@ const NewsPage: React.FC = () => {
                 letterSpacing: '0.05em',
                 whiteSpace: 'nowrap'
               }}
+              aria-label="Search news articles"
             >
               SEARCH
             </button>
