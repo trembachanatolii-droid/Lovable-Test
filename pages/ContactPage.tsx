@@ -208,7 +208,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                       <h3 className="text-xl font-bold text-primary-navy mb-3">Parking & Access</h3>
-                      <ul className="space-y-2 text-gray-700">
+                      <ul className="space-y-2 text-gray-700 list-none">
                           <li>• <strong>Parking:</strong> Free visitor parking available in building structure</li>
                           <li>• <strong>Accessibility:</strong> ADA-compliant elevator access to Suite 350</li>
                           <li>• <strong>Nearby Landmarks:</strong> The Commons at Calabasas shopping center</li>
