@@ -96,21 +96,21 @@ const ApparelTextilesIndustryPage: React.FC = () => {
               <div>
                 <h3 className="font-bold text-red-900 mb-3">Why Apparel Is Highest Risk:</h3>
                 <ul className="space-y-2 text-gray-700 list-none">
-                  <li>�Xinjiang produces 20% of global cotton and 40% of China's polysilicon (synthetic fibers)</li>
-                  <li>�Complex, multi-tier supply chains obscure cotton/fiber sourcing</li>
-                  <li>�Many UFLPA Entity List companies are textile manufacturers</li>
-                  <li>�CBP detaining shipments even with indirect Xinjiang exposure</li>
-                  <li>�Limited exceptions; rebuttable presumption is extremely difficult to overcome</li>
+                  <li>Xinjiang produces 20% of global cotton and 40% of China's polysilicon (synthetic fibers)</li>
+                  <li>Complex, multi-tier supply chains obscure cotton/fiber sourcing</li>
+                  <li>Many UFLPA Entity List companies are textile manufacturers</li>
+                  <li>CBP detaining shipments even with indirect Xinjiang exposure</li>
+                  <li>Limited exceptions; rebuttable presumption is extremely difficult to overcome</li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-bold text-red-900 mb-3">What Fashion Brands Must Do Now:</h3>
                 <ul className="space-y-2 text-gray-700 list-none">
-                  <li>�Map supply chains to raw material level (cotton farms, spinning mills)</li>
-                  <li>�Obtain fiber/cotton origin documentation from all suppliers</li>
-                  <li>�Screen suppliers against UFLPA Entity List (updated monthly)</li>
-                  <li>⚖�Implement third-party audits and forced labor due diligence</li>
+                  <li>Map supply chains to raw material level (cotton farms, spinning mills)</li>
+                  <li>Obtain fiber/cotton origin documentation from all suppliers</li>
+                  <li>Screen suppliers against UFLPA Entity List (updated monthly)</li>
+                  <li>⚖ Implement third-party audits and forced labor due diligence</li>
                   <li>📝 Prepare detention response protocols before cargo ships</li>
                   <li>🔄 Diversify sourcing away from high-risk regions</li>
                 </ul>
@@ -196,13 +196,13 @@ const ApparelTextilesIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">UFLPA Forced Labor Compliance</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• Supply chain mapping to raw material level</li>
-                <li>• Cotton/fiber origin documentation</li>
-                <li>• UFLPA Entity List screening protocols</li>
-                <li>• Due diligence programs (UN Guiding Principles)</li>
-                <li>• Detention response and cargo release</li>
-                <li>• Supplier audit programs</li>
-                <li>• Alternative sourcing strategies</li>
+                <li>Supply chain mapping to raw material level</li>
+                <li>Cotton/fiber origin documentation</li>
+                <li>UFLPA Entity List screening protocols</li>
+                <li>Due diligence programs (UN Guiding Principles)</li>
+                <li>Detention response and cargo release</li>
+                <li>Supplier audit programs</li>
+                <li>Alternative sourcing strategies</li>
               </ul>
               <a href="#supply-chain-esg-compliance-guide" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
                 UFLPA Compliance Guide →
@@ -214,13 +214,13 @@ const ApparelTextilesIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">Apparel Classification Expertise</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• HTS classification for all garment types</li>
-                <li>• Fiber content analysis and testing coordination</li>
-                <li>• Knit vs. woven determinations</li>
-                <li>• Classification for accessories (HTS 42, 64, 65)</li>
-                <li>• Binding ruling requests to CBP</li>
-                <li>• Classification databases for product lines</li>
-                <li>• Duty optimization strategies</li>
+                <li>HTS classification for all garment types</li>
+                <li>Fiber content analysis and testing coordination</li>
+                <li>Knit vs. woven determinations</li>
+                <li>Classification for accessories (HTS 42, 64, 65)</li>
+                <li>Binding ruling requests to CBP</li>
+                <li>Classification databases for product lines</li>
+                <li>Duty optimization strategies</li>
               </ul>
               <a href="#contact" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
                 Classify Your Products →
@@ -232,12 +232,12 @@ const ApparelTextilesIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">Country of Origin & Marking</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• Country of origin determinations (textile rules)</li>
-                <li>• Marking compliance (care labels, tags)</li>
-                <li>• Substantial transformation analysis</li>
-                <li>• FTA qualification (USMCA, CAFTA-DR)</li>
-                <li>• Marking exception strategies</li>
-                <li>• Supply chain documentation</li>
+                <li>Country of origin determinations (textile rules)</li>
+                <li>Marking compliance (care labels, tags)</li>
+                <li>Substantial transformation analysis</li>
+                <li>FTA qualification (USMCA, CAFTA-DR)</li>
+                <li>Marking exception strategies</li>
+                <li>Supply chain documentation</li>
               </ul>
               <a href="#regulatory-compliance-advisory" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
                 Origin Compliance →
@@ -249,12 +249,12 @@ const ApparelTextilesIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">CBP Audits & Defense</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• Focused assessment defense (apparel-specific)</li>
-                <li>• Classification dispute resolution</li>
-                <li>• Country of origin challenges</li>
-                <li>• Undervaluation defense</li>
-                <li>• Penalty mitigation for textile violations</li>
-                <li>• Seizure release (trademark, UFLPA)</li>
+                <li>Focused assessment defense (apparel-specific)</li>
+                <li>Classification dispute resolution</li>
+                <li>Country of origin challenges</li>
+                <li>Undervaluation defense</li>
+                <li>Penalty mitigation for textile violations</li>
+                <li>Seizure release (trademark, UFLPA)</li>
               </ul>
               <a href="#customs-defense-litigation" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
                 Defend Your Business →
@@ -266,12 +266,12 @@ const ApparelTextilesIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">E-Commerce & Section 321</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• Section 321 compliance for DTC sellers</li>
-                <li>• Marketplace seller programs (Amazon FBA)</li>
-                <li>• Undervaluation risk mitigation</li>
-                <li>• Section 321 textile exclusions navigation</li>
-                <li>• High-volume entry automation</li>
-                <li>• Express consignment compliance</li>
+                <li>Section 321 compliance for DTC sellers</li>
+                <li>Marketplace seller programs (Amazon FBA)</li>
+                <li>Undervaluation risk mitigation</li>
+                <li>Section 321 textile exclusions navigation</li>
+                <li>High-volume entry automation</li>
+                <li>Express consignment compliance</li>
               </ul>
               <a href="#ecommerce-digital-trade-guide" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
                 E-Commerce Guide →
@@ -283,11 +283,11 @@ const ApparelTextilesIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">AD/CVD & Trade Remedies</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• Antidumping/countervailing duty defense</li>
-                <li>• Scope ruling requests (apparel AD/CVD orders)</li>
-                <li>• Circumvention analysis and defense</li>
-                <li>• Trade preference programs (GSP, AGOA)</li>
-                <li>• Tariff engineering strategies</li>
+                <li>Antidumping/countervailing duty defense</li>
+                <li>Scope ruling requests (apparel AD/CVD orders)</li>
+                <li>Circumvention analysis and defense</li>
+                <li>Trade preference programs (GSP, AGOA)</li>
+                <li>Tariff engineering strategies</li>
               </ul>
               <a href="#tariffs-duties-classification-guide" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
                 AD/CVD Strategy →

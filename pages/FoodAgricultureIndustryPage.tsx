@@ -200,13 +200,13 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">FDA Compliance & FSVP</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• Foreign Supplier Verification Program (FSVP) development</li>
-                <li>• Hazard analysis for imported foods</li>
-                <li>• Foreign supplier approval and verification</li>
-                <li>• Preventive controls consultation</li>
-                <li>• FDA facility registration</li>
-                <li>• Prior Notice filing protocols</li>
-                <li>• FSMA compliance training</li>
+                <li>Foreign Supplier Verification Program (FSVP) development</li>
+                <li>Hazard analysis for imported foods</li>
+                <li>Foreign supplier approval and verification</li>
+                <li>Preventive controls consultation</li>
+                <li>FDA facility registration</li>
+                <li>Prior Notice filing protocols</li>
+                <li>FSMA compliance training</li>
               </ul>
               <a href="#contact" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
                 FDA Compliance Program →
@@ -218,13 +218,13 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">Food Labeling Compliance</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• Nutrition Facts Panel review and approval</li>
-                <li>• Ingredient statement compliance</li>
-                <li>• Allergen declaration (FALCPA compliance)</li>
-                <li>• Health and nutrient content claims review</li>
-                <li>• Country of origin labeling (COOL)</li>
-                <li>• Organic certification coordination</li>
-                <li>• Bilingual labeling (English/Spanish)</li>
+                <li>Nutrition Facts Panel review and approval</li>
+                <li>Ingredient statement compliance</li>
+                <li>Allergen declaration (FALCPA compliance)</li>
+                <li>Health and nutrient content claims review</li>
+                <li>Country of origin labeling (COOL)</li>
+                <li>Organic certification coordination</li>
+                <li>Bilingual labeling (English/Spanish)</li>
               </ul>
               <a href="#contact" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
                 Label Review Services →
@@ -236,12 +236,12 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">USDA & Phytosanitary</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• USDA import permit applications</li>
-                <li>• Phytosanitary certificate coordination</li>
-                <li>• APHIS compliance for plants/produce</li>
-                <li>• FSIS requirements for meat/poultry</li>
-                <li>• Lacey Act compliance (plants)</li>
-                <li>• Wood packaging material (ISPM-15)</li>
+                <li>USDA import permit applications</li>
+                <li>Phytosanitary certificate coordination</li>
+                <li>APHIS compliance for plants/produce</li>
+                <li>FSIS requirements for meat/poultry</li>
+                <li>Lacey Act compliance (plants)</li>
+                <li>Wood packaging material (ISPM-15)</li>
               </ul>
               <a href="#contact" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
                 USDA Compliance →
@@ -253,13 +253,13 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">FDA Refusal & Detention Defense</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• FDA refusal response and appeals</li>
-                <li>• Detention release strategies</li>
-                <li>• Admissibility review and evidence submission</li>
-                <li>• Re-conditioning and relabeling coordination</li>
-                <li>• Reconditioning under FDA supervision</li>
-                <li>• Voluntary destruction coordination</li>
-                <li>• Import Alert removal strategies</li>
+                <li>FDA refusal response and appeals</li>
+                <li>Detention release strategies</li>
+                <li>Admissibility review and evidence submission</li>
+                <li>Re-conditioning and relabeling coordination</li>
+                <li>Reconditioning under FDA supervision</li>
+                <li>Voluntary destruction coordination</li>
+                <li>Import Alert removal strategies</li>
               </ul>
               <a href="#customs-defense-litigation" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
                 FDA Defense →
@@ -271,12 +271,12 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">Food Classification & Duties</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• HTS classification for food products</li>
-                <li>• Agricultural commodity determinations</li>
-                <li>• Binding ruling requests (CBP)</li>
-                <li>• Duty optimization strategies</li>
-                <li>• FTA qualification (produce, processed foods)</li>
-                <li>• First sale valuation for food imports</li>
+                <li>HTS classification for food products</li>
+                <li>Agricultural commodity determinations</li>
+                <li>Binding ruling requests (CBP)</li>
+                <li>Duty optimization strategies</li>
+                <li>FTA qualification (produce, processed foods)</li>
+                <li>First sale valuation for food imports</li>
               </ul>
               <a href="#regulatory-compliance-advisory" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
                 Classification Services →
@@ -288,12 +288,12 @@ const FoodAgricultureIndustryPage: React.FC = () => {
 
               <h3 className="text-xl font-bold text-primary-navy mb-4">Alcohol & Beverage (TTB)</h3>
               <ul className="space-y-2 text-gray-700 text-sm list-none">
-                <li>• TTB import permit applications (FAA Act)</li>
-                <li>• Certificate of Label Approval (COLA)</li>
-                <li>• Alcohol import compliance (wine, beer, spirits)</li>
-                <li>• State alcohol licensing coordination</li>
-                <li>• Excise tax compliance</li>
-                <li>• Formula approval for flavored beverages</li>
+                <li>TTB import permit applications (FAA Act)</li>
+                <li>Certificate of Label Approval (COLA)</li>
+                <li>Alcohol import compliance (wine, beer, spirits)</li>
+                <li>State alcohol licensing coordination</li>
+                <li>Excise tax compliance</li>
+                <li>Formula approval for flavored beverages</li>
               </ul>
               <a href="#contact" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
                 Beverage Compliance →
