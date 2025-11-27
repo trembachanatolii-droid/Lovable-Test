@@ -10,7 +10,7 @@ const JusticePillars = lazy(() => import('../components/JusticePillars'));
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 import type { NewsArticle } from '../types';
 import { useMeta } from '../hooks/useMeta';
-import { generateWebPageSchema, generateFAQSchema } from '../utils/seo';
+import { generateWebPageSchema, generateFAQSchema, generateLocalBusinessSchema } from '../utils/seo';
 import { siteConfig } from '../config/siteConfig';
 import { articles } from '../data/articles';
 import { articleMetadata } from '../data/articleMetadata';
@@ -72,7 +72,7 @@ const HomePage: React.FC = () => {
   // SEO Meta Tags and Open Graph - Optimized for Main Hub Keywords
   useMeta({
     title: 'California International Trade Attorney | USA Customs Lawyer',
-    description: 'Premier California & USA international trade attorney. Expert customs lawyer for import/export law, CBP defense, trade compliance & global trade strategy. Serving CA businesses nationwide. Call 631-746-8290.',
+    description: 'Premier California & USA international trade attorney. Expert customs lawyer for import/export law, CBP defense, trade compliance & global trade strategy. Serving Los Angeles, Long Beach, San Francisco, all CA cities by appointment. Call (631) 746-8290.',
     canonical: '',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-home.jpg`,
@@ -81,6 +81,7 @@ const HomePage: React.FC = () => {
     ogImageHeight: 630,
     twitterCard: 'summary_large_image',
     schema: [
+      generateLocalBusinessSchema(),
       generateWebPageSchema({
         title: 'Trembach Law Firm | California International Trade Attorney',
         description: 'Premier California international trade attorney and customs lawyer providing expert legal counsel for import/export compliance, CBP defense, and global trade strategy.',

@@ -4,16 +4,17 @@ import EvaluationForm from '../components/EvaluationForm';
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
-import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema } from '../utils/seo';
+import { generateWebPageSchema, generateBreadcrumbSchema, generateLocalBusinessSchema, generatePortServiceSchema } from '../utils/seo';
 
 const LosAngelesPortPage: React.FC = () => {
   useMeta({
     title: 'Los Angeles Customs Attorney | Long Beach Port Lawyer CA',
-    description: 'Los Angeles customs attorney & Long Beach port trade lawyer. California port customs lawyer for LA/Long Beach port complex. CBP defense, customs audits, trade compliance for import/export businesses. Call 631-746-8290.',
+    description: 'Los Angeles customs attorney & Long Beach port trade lawyer. California port customs lawyer for LA/Long Beach port complex. Serving Carson, Wilmington, San Pedro, Torrance, Compton, Vernon, Commerce. CBP defense, customs audits, trade compliance. Call (631) 746-8290.',
     canonical: 'los-angeles-port-customs-attorney',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-la-port.jpg`,
     schema: [
+      generateLocalBusinessSchema(),
       generateWebPageSchema({
         title: 'Los Angeles & Long Beach Port Customs Attorney - California Port Trade Lawyer',
         description: 'Serving the LA/Long Beach port complex with expert customs defense, trade compliance, and import/export legal services.',
@@ -21,13 +22,13 @@ const LosAngelesPortPage: React.FC = () => {
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Local Offices', url: `${siteConfig.siteUrl}/#local-offices` },
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
         { name: 'Los Angeles & Long Beach Port', url: `${siteConfig.siteUrl}/#los-angeles-port-customs-attorney` }
       ]),
-      generateServiceSchema({
-        name: 'Los Angeles & Long Beach Port Customs Legal Services',
+      generatePortServiceSchema({
+        portName: 'Port of Los Angeles & Port of Long Beach',
+        cityName: 'Los Angeles',
         description: 'Comprehensive customs defense, trade compliance, and import/export legal representation for businesses operating through the Port of Los Angeles and Port of Long Beach. Expert Los Angeles customs attorney and Long Beach port trade lawyer services including CBP audits defense, customs seizures, tariff classification, USMCA compliance, and trade litigation.',
-        serviceType: 'Port Customs Law',
         url: `${siteConfig.siteUrl}/#los-angeles-port-customs-attorney`,
       }),
     ],
@@ -241,6 +242,147 @@ const LosAngelesPortPage: React.FC = () => {
         </div>
       </section>
 
+      {/* LA/Long Beach Local Area Knowledge - Truck Routes & Industrial Areas */}
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
+              Deep Local Knowledge: LA/Long Beach Port Area
+            </h2>
+            <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+              We know the <strong>Southern California logistics corridor</strong> inside and out. From truck routes to warehousing districts, our local expertise helps resolve customs issues faster.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Truck Routes & Corridors */}
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Major Truck Routes & Corridors</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Understanding the logistics network helps us coordinate with freight forwarders and expedite cargo releases:
+              </p>
+              <ul className="space-y-3 text-text-secondary">
+                <li className="flex items-start gap-2">
+                  <span className="text-secondary-teal font-bold">I-710</span>
+                  <span>Long Beach Freeway - Primary port access, connects POLB/POLA to Inland Empire distribution centers</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-secondary-teal font-bold">I-110</span>
+                  <span>Harbor Freeway - Connects San Pedro terminals to downtown LA and beyond</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-secondary-teal font-bold">SR-47</span>
+                  <span>Terminal Island access route - Vincent Thomas Bridge to container terminals</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-secondary-teal font-bold">I-405</span>
+                  <span>San Diego Freeway - Alternative route connecting South Bay to OC warehousing</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-secondary-teal font-bold">SR-91</span>
+                  <span>Artesia Freeway - East-west corridor to Inland Empire (Ontario, Riverside)</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Industrial Areas & Warehousing */}
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Industrial Areas & Warehousing Districts</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                We serve importers and warehouses throughout Southern California's industrial zones:
+              </p>
+              <ul className="space-y-3 text-text-secondary">
+                <li className="flex items-start gap-2">
+                  <span className="text-secondary-teal font-bold">Carson/Rancho Dominguez</span>
+                  <span>Major distribution hub - Watson Industrial Park, Dominguez Technology Center</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-secondary-teal font-bold">Vernon/Commerce</span>
+                  <span>Food processing & consumer goods - 1,800+ businesses, bonded warehouses</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-secondary-teal font-bold">Wilmington/San Pedro</span>
+                  <span>Port-adjacent warehousing - CFS stations, transload facilities</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-secondary-teal font-bold">Compton/Paramount</span>
+                  <span>Light manufacturing & distribution - proximity to I-710/I-105 interchange</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-secondary-teal font-bold">Inland Empire</span>
+                  <span>Ontario, Fontana, Riverside - massive fulfillment centers, FTZ operations</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* CBP Examination Sites & Breakdown Hotspots */}
+          <div className="bg-primary-navy text-white p-8 rounded-lg">
+            <h3 className="text-2xl font-bold mb-6 font-garamond">CBP Examination Sites & Common Breakdown Points</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div>
+                <h4 className="font-bold text-secondary-teal mb-3">CBP Exam Facilities</h4>
+                <ul className="space-y-2 text-neutral-200 text-sm">
+                  <li>• SSA Terminal - Pier A, Long Beach</li>
+                  <li>• LBCT (Long Beach Container Terminal)</li>
+                  <li>• TraPac Terminal - Port of LA</li>
+                  <li>• APM Terminals - Pier 400</li>
+                  <li>• Everport Terminal Services</li>
+                  <li>• ITS (International Transportation Service)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-secondary-teal mb-3">Common Detention Points</h4>
+                <ul className="space-y-2 text-neutral-200 text-sm">
+                  <li>• X-ray inspection queues (24-72hr delays)</li>
+                  <li>• VACIS exam holds (radiation scanning)</li>
+                  <li>• Intensive exams (full devanning)</li>
+                  <li>• Agriculture inspections (USDA holds)</li>
+                  <li>• FDA detention (food/drug/cosmetics)</li>
+                  <li>• IPR seizures (trademark/copyright)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-secondary-teal mb-3">Demurrage Cost Zones</h4>
+                <ul className="space-y-2 text-neutral-200 text-sm">
+                  <li>• Terminal storage: $150-$400/day after free time</li>
+                  <li>• Chassis rental: $75-$125/day</li>
+                  <li>• Per diem penalties escalate daily</li>
+                  <li>• Weekend/holiday surcharges apply</li>
+                  <li>• Long-dwell penalties after 5 days</li>
+                  <li>• We negotiate fee waivers where possible</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cities We Serve - Local SEO */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-3xl font-bold font-garamond text-primary-navy mb-8 text-center">
+            Serving All California Cities by Appointment
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+            {[
+              'Los Angeles', 'Long Beach', 'Carson', 'Torrance', 'Wilmington', 'San Pedro',
+              'Compton', 'Paramount', 'Vernon', 'Commerce', 'Huntington Beach', 'Irvine',
+              'Ontario', 'Riverside', 'Fontana', 'San Bernardino', 'Anaheim', 'Santa Ana',
+              'Costa Mesa', 'Newport Beach', 'Calabasas', 'Woodland Hills', 'Van Nuys', 'Burbank'
+            ].map((city) => (
+              <div key={city} className="bg-neutral-50 py-3 px-4 rounded-lg text-sm font-medium text-primary-navy hover:bg-secondary-teal hover:text-white transition-colors cursor-default">
+                {city}
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-text-secondary mt-6">
+            <strong>Office:</strong> 27001 Agoura Road, Suite 350, Calabasas, CA 91301 | <strong>Phone:</strong> <a href={siteConfig.phoneTel} className="text-secondary-teal hover:underline">{siteConfig.phoneDisplay}</a>
+          </p>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
@@ -254,8 +396,8 @@ const LosAngelesPortPage: React.FC = () => {
             <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
-            <Button href="tel:+16317468290" variant="outline">
-              Call (631) 746-8290
+            <Button href={siteConfig.phoneTel} variant="outline">
+              Call {siteConfig.phoneDisplay}
             </Button>
           </div>
         </div>

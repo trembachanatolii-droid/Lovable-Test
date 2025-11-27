@@ -314,11 +314,11 @@ export function generateJobPostingSchema(config: {
       '@type': 'Place',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '27001 Agoura Road, Suite 350',
-        addressLocality: 'Calabasas',
-        addressRegion: 'CA',
-        postalCode: '91301',
-        addressCountry: 'US',
+        streetAddress: siteConfig.address.street,
+        addressLocality: siteConfig.address.city,
+        addressRegion: siteConfig.address.stateAbbr,
+        postalCode: siteConfig.address.zip,
+        addressCountry: siteConfig.address.countryCode,
       },
     },
     ...(config.baseSalaryMin && config.baseSalaryMax && {
@@ -333,5 +333,148 @@ export function generateJobPostingSchema(config: {
         },
       },
     }),
+  };
+}
+
+/**
+ * Generate LocalBusiness Schema.org JSON-LD
+ * Critical for Local SEO - helps Google understand business location and service areas
+ */
+export function generateLocalBusinessSchema(): any {
+  const serviceAreas = [
+    // Primary California cities
+    ...siteConfig.serviceAreas.primary.map(city => ({
+      '@type': 'City',
+      name: city,
+      containedInPlace: { '@type': 'State', name: 'California' }
+    })),
+    // California regions
+    ...siteConfig.serviceAreas.regions.map(region => ({
+      '@type': 'AdministrativeArea',
+      name: region
+    })),
+    // State level
+    { '@type': 'State', name: 'California', sameAs: 'https://en.wikipedia.org/wiki/California' },
+    // Federal/nationwide for Court of International Trade
+    { '@type': 'Country', name: 'United States' }
+  ];
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': ['LegalService', 'LocalBusiness', 'ProfessionalService'],
+    '@id': 'https://trembach.law/#localbusiness',
+    name: siteConfig.siteName,
+    legalName: 'Trembach Law Firm, APC',
+    description: 'California international trade attorney and customs lawyer serving Los Angeles, Long Beach, San Francisco, Oakland, San Diego, and all California cities by appointment. Expert CBP defense, trade compliance, and import/export law.',
+    url: siteConfig.siteUrl,
+    telephone: siteConfig.phoneDisplay,
+    email: siteConfig.email,
+    image: `${siteConfig.siteUrl}/logo.png`,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${siteConfig.siteUrl}/logo.png`,
+      width: 600,
+      height: 60,
+    },
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: siteConfig.address.street,
+      addressLocality: siteConfig.address.city,
+      addressRegion: siteConfig.address.stateAbbr,
+      postalCode: siteConfig.address.zip,
+      addressCountry: siteConfig.address.countryCode,
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 34.1367,
+      longitude: -118.6606,
+    },
+    areaServed: serviceAreas,
+    serviceArea: serviceAreas,
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'International Trade & Customs Legal Services',
+      itemListElement: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Customs Audits & CBP Defense' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Import/Export Compliance' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tariff Classification' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Section 301 Tariff Mitigation' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'USMCA & FTA Compliance' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Trade Litigation' } },
+      ]
+    },
+    priceRange: '$$$',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00',
+      }
+    ],
+    paymentAccepted: ['Cash', 'Credit Card', 'Wire Transfer', 'Check'],
+    currenciesAccepted: 'USD',
+    sameAs: [
+      'https://www.linkedin.com/company/trembach-law',
+      'https://twitter.com/trembachlaw',
+    ],
+    founder: {
+      '@type': 'Person',
+      name: 'Anatolii Trembach',
+      jobTitle: 'International Trade & Customs Attorney',
+      url: `${siteConfig.siteUrl}/#attorney-profile`,
+    },
+    knowsAbout: [
+      'International Trade Law',
+      'U.S. Customs Law',
+      'CBP Audits',
+      'Import/Export Compliance',
+      'Tariff Classification',
+      'USMCA',
+      'Section 301 Tariffs',
+      'ITAR/EAR Export Controls',
+    ],
+    slogan: 'California International Trade Attorney - Serving All CA Cities by Appointment',
+  };
+}
+
+/**
+ * Generate California Port-Specific Service Schema
+ * For location-specific pages targeting port cities
+ */
+export function generatePortServiceSchema(config: {
+  portName: string;
+  cityName: string;
+  description: string;
+  url: string;
+}): any {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `${config.cityName} Customs Attorney Services`,
+    description: config.description,
+    url: config.url,
+    provider: {
+      '@type': 'LegalService',
+      '@id': 'https://trembach.law/#localbusiness',
+      name: siteConfig.siteName,
+      telephone: siteConfig.phoneDisplay,
+    },
+    serviceType: 'Port Customs Law',
+    areaServed: [
+      { '@type': 'City', name: config.cityName },
+      { '@type': 'Place', name: config.portName },
+      { '@type': 'State', name: 'California' },
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: `${config.portName} Legal Services`,
+      itemListElement: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'CBP Audits Defense' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cargo Detention Release' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tariff Classification' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AD/CVD Defense' } },
+      ]
+    }
   };
 }
