@@ -148,8 +148,8 @@ const Footer: React.FC = () => {
                     <div className="grid grid-cols-3 gap-8 col-span-1 md:col-span-2 lg:col-span-2">
                         {Object.entries(footerLinks).map(([title, links]) => (
                             <div key={title}>
-                                <div className="font-bold text-white mb-5 uppercase tracking-wider text-sm">{title}</div>
-                                <ul className="space-y-3 list-none">
+                                <div className="font-bold text-white mb-4 uppercase tracking-wider text-sm">{title}</div>
+                                <ul className="space-y-2 list-none">
                                     {links.map((link: any, index: number) => (
                                         <li
                                             key={link.label}
