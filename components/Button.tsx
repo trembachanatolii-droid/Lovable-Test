@@ -3,7 +3,7 @@ import React from 'react';
 
 type ButtonProps = {
 children: React.ReactNode;
-variant?: 'solid' | 'outlined';
+variant?: 'solid' | 'outlined' | 'outline' | 'hero-outline';
 href?: string;
 className?: string;
 type?: 'button' | 'submit' | 'reset';
@@ -22,6 +22,8 @@ const baseClasses = 'inline-flex items-center justify-center px-8 py-3 font-robo
 const variantClasses = {
     solid: 'bg-secondary-forestGreen text-white hover:bg-secondary-teal focus-visible:outline-white',
     outlined: 'bg-transparent border-2 border-primary-navy text-primary-navy hover:bg-secondary-teal hover:text-white hover:border-secondary-teal focus-visible:outline-secondary-teal',
+    outline: 'bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-navy focus-visible:outline-white',
+    'hero-outline': 'bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-navy focus-visible:outline-white',
 };
 
 const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${className}`;

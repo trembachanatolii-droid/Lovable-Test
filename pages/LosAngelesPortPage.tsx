@@ -42,29 +42,29 @@ const LosAngelesPortPage: React.FC = () => {
     <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
 
       {/* Hero Section */}
-      <section className="relative w-full h-[500px] overflow-hidden bg-primary-navy flex items-center">
+      <section className="relative w-full min-h-[600px] overflow-hidden bg-primary-navy flex items-center py-16">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?q=80&w=1920&auto=format&fit=crop"
             alt="Port of Los Angeles and Long Beach shipping containers and cranes at sunset"
-            className="w-full h-full object-cover opacity-50"
+            className="w-full h-full object-cover opacity-40"
             loading="eager"
             decoding="async"
             width="1920"
             height="1080"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/80 via-primary-navy/60 to-primary-navy/95"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/90 via-primary-navy/80 to-primary-navy/95"></div>
         </div>
 
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left pb-12">
+        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-none drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-tight" style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.5), 0 4px 20px rgba(0, 0, 0, 0.3)' }}>
               Los Angeles & Long Beach Port Customs Attorney
             </h1>
-            <p className="text-xl md:text-2xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
+            <p className="text-lg md:text-xl lg:text-2xl text-white font-light mb-8 max-w-2xl leading-relaxed" style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.4)' }}>
               Expert California port customs lawyer serving the LA/Long Beach port complex - the nation's busiest gateway for international trade.
             </p>
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button href="#schedule-consultation" variant="solid">
                 Free Port Customs Consultation
               </Button>
