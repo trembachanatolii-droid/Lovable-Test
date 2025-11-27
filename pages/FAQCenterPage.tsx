@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
+import EvaluationForm from '../components/EvaluationForm';
 
 const FAQCenterPage: React.FC = () => {
   const faqCategories = [
@@ -284,6 +285,10 @@ const FAQCenterPage: React.FC = () => {
     ],
   });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
       {/* Hero Section - matching site-wide hero pattern */}
@@ -316,7 +321,7 @@ const FAQCenterPage: React.FC = () => {
 
       {/* Last Updated Timestamp */}
       <div className="py-4 px-4 bg-white border-b border-gray-100">
-        <div className="container-custom max-w-5xl">
+        <div className="max-w-[1200px] mx-auto">
           <p className="text-sm text-gray-500 text-center">
             <span className="font-semibold text-primary-navy">Last Updated:</span> <time dateTime="2025-11-25">November 25, 2025</time>
           </p>
@@ -324,8 +329,8 @@ const FAQCenterPage: React.FC = () => {
       </div>
 
       {/* Introduction */}
-      <section className="py-12 px-4">
-        <div className="container-custom max-w-5xl">
+      <section className="py-20 px-6">
+        <div className="max-w-[1200px] mx-auto">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 leading-relaxed">
               This FAQ center provides detailed answers to the most common questions California importers, exporters, and international businesses ask about U.S. trade compliance. These answers are based on our experience representing hundreds of clients before CBP, FDA, BIS, and other agencies.
@@ -338,8 +343,8 @@ const FAQCenterPage: React.FC = () => {
       </section>
 
       {/* Category Navigation */}
-      <section className="py-8 px-4 bg-gray-50">
-        <div className="container-custom max-w-5xl">
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-[1200px] mx-auto">
           <h2 className="text-2xl font-bold text-primary-navy mb-6 text-center">
             Browse by Topic
           </h2>
@@ -348,10 +353,15 @@ const FAQCenterPage: React.FC = () => {
               <a
                 key={index}
                 href={`#category-${index}`}
-                className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-secondary-teal"
+                className="card-link group relative overflow-hidden"
               >
                 <h3 className="font-semibold text-primary-navy mb-1">{category.category}</h3>
                 <p className="text-sm text-gray-600">{category.faqs.length} questions</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
             ))}
           </div>
@@ -359,8 +369,8 @@ const FAQCenterPage: React.FC = () => {
       </section>
 
       {/* FAQ Categories */}
-      <section className="py-12 px-4">
-        <div className="container-custom max-w-5xl">
+      <section className="py-20 px-6">
+        <div className="max-w-[1200px] mx-auto">
           {faqCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} id={`category-${categoryIndex}`} className="mb-16">
               <div className="mb-8">
@@ -393,12 +403,12 @@ const FAQCenterPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-br from-primary-navy to-secondary-teal">
-        <div className="container-custom max-w-4xl text-center">
+      <section className="py-20 px-6 bg-gradient-to-br from-primary-navy to-secondary-teal text-white">
+        <div className="max-w-[900px] mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Didn't Find Your Answer?
           </h2>
-          <p className="text-xl text-gray-100 mb-8">
+          <p className="text-xl text-white mb-8">
             Every international trade situation is unique. Our California trade law attorneys provide personalized guidance tailored to your specific compliance challenges.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -419,42 +429,60 @@ const FAQCenterPage: React.FC = () => {
       </section>
 
       {/* Related Resources */}
-      <section className="py-12 px-4 bg-gray-50">
-        <div className="container-custom max-w-5xl">
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-[1200px] mx-auto">
           <h2 className="text-2xl font-bold text-primary-navy mb-8 text-center">
             Additional Resources
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <a
               href="#trade-law-glossary"
-              className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="card-link group"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">Trade Law Glossary</h3>
               <p className="text-gray-600 text-sm">
                 200+ definitions of essential customs and trade law terms
               </p>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </a>
             <a
               href="#resources"
-              className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="card-link group"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">Resource Guides</h3>
               <p className="text-gray-600 text-sm">
                 Comprehensive guides on tariffs, UFLPA, ESG compliance, and e-commerce
               </p>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </a>
             <a
               href="#success-stories"
-              className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="card-link group"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">Success Stories</h3>
               <p className="text-gray-600 text-sm">
                 Real case studies showing proven results in customs defense and compliance
               </p>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </a>
           </div>
         </div>
       </section>
+
+      {/* Evaluation Form */}
+      <EvaluationForm theme="light" />
     </div>
   );
 };

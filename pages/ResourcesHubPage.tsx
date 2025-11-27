@@ -1,6 +1,7 @@
 
 import React, { useEffect } from 'react';
 import Button from '../components/Button';
+import EvaluationForm from '../components/EvaluationForm';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
@@ -121,8 +122,8 @@ const ResourcesHubPage: React.FC = () => {
       </div>
 
       {/* Introduction */}
-      <section className="py-16 px-6 bg-white">
-        <div className="max-w-[900px] mx-auto text-center">
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto text-center">
           <p className="text-xl text-text-secondary leading-relaxed mb-6">
             Welcome to our <strong>California International Trade Law Resources</strong> hub. We've created comprehensive, practical guides to help California businesses navigate the complex world of international trade compliance.
           </p>
@@ -144,7 +145,7 @@ const ResourcesHubPage: React.FC = () => {
 
           <div className="space-y-8">
             {/* Tariffs & Classification Guide */}
-            <article className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
+            <article className="relative overflow-hidden bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold mb-3">
@@ -209,10 +210,15 @@ const ResourcesHubPage: React.FC = () => {
                   Read Full Guide →
                 </Button>
               </div>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </article>
 
             {/* Supply Chain ESG Guide */}
-            <article className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
+            <article className="relative overflow-hidden bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <div className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold mb-3">
@@ -277,10 +283,15 @@ const ResourcesHubPage: React.FC = () => {
                   Read Full Guide →
                 </Button>
               </div>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </article>
 
             {/* E-Commerce & Digital Trade Guide */}
-            <article className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
+            <article className="relative overflow-hidden bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <div className="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-3">
@@ -345,6 +356,11 @@ const ResourcesHubPage: React.FC = () => {
                   Read Full Guide →
                 </Button>
               </div>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </article>
           </div>
         </div>
@@ -403,10 +419,10 @@ const ResourcesHubPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Need Personalized Legal Guidance?
           </h2>
-          <p className="text-xl mb-8 leading-relaxed opacity-90">
+          <p className="text-xl mb-8 leading-relaxed opacity-90 text-white">
             While our resources provide comprehensive information, every business faces unique compliance challenges. Contact our California international trade law team for tailored advice.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
@@ -431,32 +447,47 @@ const ResourcesHubPage: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <a href="#news" className="bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
-              <h3 className="text-xl font-bold text-primary-navy mb-2 font-garamond">Latest News & Updates</h3>
-              <p className="text-text-secondary text-sm mb-4">
+            <a href="#news" className="card-link group relative overflow-hidden bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
+              <h4 className="font-bold text-primary-navy mb-2">Latest News & Updates</h4>
+              <p className="text-sm text-text-secondary">
                 Stay informed on breaking developments in international trade law and CBP enforcement.
               </p>
-              <span className="text-secondary-teal font-semibold text-sm">Read Articles →</span>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </a>
 
-            <a href="#useful-links" className="bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
-              <h3 className="text-xl font-bold text-primary-navy mb-2 font-garamond">Government Links</h3>
-              <p className="text-text-secondary text-sm mb-4">
+            <a href="#useful-links" className="card-link group relative overflow-hidden bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
+              <h4 className="font-bold text-primary-navy mb-2">Government Links</h4>
+              <p className="text-sm text-text-secondary">
                 Direct access to CBP, Commerce, BIS, DDTC, and other federal agency resources.
               </p>
-              <span className="text-secondary-teal font-semibold text-sm">View Links →</span>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </a>
 
-            <a href="#practice-areas" className="bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
-              <h3 className="text-xl font-bold text-primary-navy mb-2 font-garamond">Practice Areas</h3>
-              <p className="text-text-secondary text-sm mb-4">
+            <a href="#practice-areas" className="card-link group relative overflow-hidden bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
+              <h4 className="font-bold text-primary-navy mb-2">Practice Areas</h4>
+              <p className="text-sm text-text-secondary">
                 Explore our full range of legal services in international trade and customs law.
               </p>
-              <span className="text-secondary-teal font-semibold text-sm">View Services →</span>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </a>
           </div>
         </div>
       </section>
+
+      {/* Evaluation Form */}
+      <EvaluationForm theme="light" />
 
     </div>
   );

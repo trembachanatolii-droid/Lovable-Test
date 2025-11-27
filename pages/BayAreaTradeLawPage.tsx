@@ -482,10 +482,10 @@ const BayAreaTradeLawPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Scale Your Global Business Compliantly
           </h2>
-          <p className="text-xl mb-8 opacity-95 leading-relaxed">
+          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">
             Don't let export compliance slow down your go-to-market strategy. Contact our San Francisco trade compliance attorney and Oakland port customs lawyer team for expert trade law advice for startups California.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">

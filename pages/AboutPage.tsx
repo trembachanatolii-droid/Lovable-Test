@@ -151,10 +151,10 @@ const AboutPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white text-center">
          <div className="max-w-4xl mx-auto">
-           <h2 className="text-3xl md:text-4xl font-bold font-garamond mb-6">
+           <h2 className="text-3xl md:text-4xl font-bold font-garamond mb-6 text-white">
              Innovative Solutions for a Global Marketplace
            </h2>
-           <p className="text-xl text-neutral-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+           <p className="text-xl text-white mb-10 max-w-2xl mx-auto leading-relaxed">
              With customs and international trade issues now receiving C-Suite level attention, the scope of our practice matches current needs for innovative solutions.
            </p>
            <a 

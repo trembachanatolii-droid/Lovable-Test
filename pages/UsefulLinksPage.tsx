@@ -410,7 +410,7 @@ const UsefulLinksPage: React.FC = () => {
       </section>
 
       {/* Search Section */}
-      <section className="py-12 px-6 bg-white">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-[1200px] mx-auto">
           <p className="text-center text-text-secondary mb-6 max-w-3xl mx-auto">
             Use the search below to quickly find specific agencies, forms, or regulations. Whether you need HTS classification tools, CBP ruling databases, export licensing portals, or OFAC sanctions lists, this directory provides direct access to authoritative government resources.
@@ -518,7 +518,7 @@ const UsefulLinksPage: React.FC = () => {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-12 px-6 bg-white">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-[1376px] mx-auto">
           <div className="p-6 bg-blue-50 rounded-xl border-l-4 border-primary-midBlue max-w-4xl mx-auto">
             <p className="text-sm text-primary-navy/80 leading-relaxed mb-2">

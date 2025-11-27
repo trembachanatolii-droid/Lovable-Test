@@ -435,10 +435,10 @@ const SuccessStoriesPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Get Similar Results for Your Business
           </h2>
-          <p className="text-xl mb-8 leading-relaxed opacity-90">
+          <p className="text-xl mb-8 leading-relaxed opacity-90 text-white">
             Whether you're facing CBP enforcement, navigating UFLPA requirements, or need proactive compliance programs, we deliver proven results. Schedule a free consultation to discuss your specific situation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">

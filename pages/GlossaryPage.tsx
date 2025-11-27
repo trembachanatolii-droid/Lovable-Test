@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
+import EvaluationForm from '../components/EvaluationForm';
 
 const GlossaryPage: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const glossaryTerms = [
     {
       category: 'Customs & Import Compliance',
@@ -592,8 +597,8 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* Last Updated Timestamp */}
-      <div className="py-4 px-4 bg-white border-b border-gray-100">
-        <div className="container-custom max-w-5xl">
+      <div className="py-20 px-6 bg-white border-b border-gray-100">
+        <div className="max-w-[1200px] mx-auto">
           <p className="text-sm text-gray-500 text-center">
             <span className="font-semibold text-primary-navy">Last Updated:</span> <time dateTime="2025-11-25">November 25, 2025</time>
           </p>
@@ -601,8 +606,8 @@ const GlossaryPage: React.FC = () => {
       </div>
 
       {/* Introduction Section */}
-      <section className="py-12 px-4">
-        <div className="container-custom max-w-5xl">
+      <section className="py-20 px-6">
+        <div className="max-w-[1200px] mx-auto">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 leading-relaxed">
               This glossary provides clear definitions of essential terms used in international trade law, customs compliance, export controls, and trade regulations. Whether you're an importer, exporter, customs broker, or trade compliance professional in California, understanding these terms is critical for navigating U.S. customs and trade laws.
@@ -615,8 +620,8 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* Category Navigation */}
-      <section className="py-8 px-4 bg-gray-50">
-        <div className="container-custom max-w-5xl">
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-[1200px] mx-auto">
           <h2 className="text-2xl font-bold text-primary-navy mb-6 text-center">
             Quick Navigation by Category
           </h2>
@@ -625,7 +630,7 @@ const GlossaryPage: React.FC = () => {
               <a
                 key={index}
                 href={`#category-${index}`}
-                className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-secondary-gold"
+                className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-secondary-teal"
               >
                 <h3 className="font-semibold text-primary-navy">{category.category}</h3>
                 <p className="text-sm text-gray-600 mt-1">{category.terms.length} terms</p>
@@ -636,8 +641,8 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* Glossary Terms by Category */}
-      <section className="py-12 px-4">
-        <div className="container-custom max-w-5xl">
+      <section className="py-20 px-6">
+        <div className="max-w-[1200px] mx-auto">
           {glossaryTerms.map((category, categoryIndex) => (
             <div key={categoryIndex} id={`category-${categoryIndex}`} className="mb-16">
               <div className="mb-8">
@@ -670,12 +675,12 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-br from-primary-navy to-secondary-teal">
-        <div className="container-custom max-w-4xl text-center">
+      <section className="py-20 px-6 bg-gradient-to-br from-primary-navy to-secondary-teal text-white">
+        <div className="max-w-[900px] mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Need Help Understanding Your Trade Compliance Obligations?
           </h2>
-          <p className="text-xl text-gray-100 mb-8">
+          <p className="text-xl text-white mb-8">
             Understanding the terminology is just the first step. Our California international trade attorneys provide practical guidance on applying these concepts to your specific situation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -696,51 +701,69 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* Additional Resources Section */}
-      <section className="py-12 px-4 bg-gray-50">
-        <div className="container-custom max-w-5xl">
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-[1200px] mx-auto">
           <h2 className="text-2xl font-bold text-primary-navy mb-8 text-center">
             Related Resources & Guides
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <a
               href="#tariffs-duties-classification-guide"
-              className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="card-link group"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">Tariffs & Classification Guide</h3>
               <p className="text-gray-600 text-sm">
                 In-depth guide to HTS classification, AD/CVD, Section 301/232 tariffs, and customs valuation
               </p>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </a>
             <a
               href="#supply-chain-esg-compliance-guide"
-              className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="card-link group"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">Supply Chain ESG Compliance</h3>
               <p className="text-gray-600 text-sm">
                 Comprehensive resource on UFLPA, forced labor import bans, and supply chain due diligence
               </p>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </a>
             <a
               href="#ecommerce-digital-trade-guide"
-              className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="card-link group"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">E-Commerce & Digital Trade</h3>
               <p className="text-gray-600 text-sm">
                 Guide to Section 321 de minimis, marketplace seller compliance, and cross-border e-commerce
               </p>
+              <div className="triangle-slide">
+                <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </a>
           </div>
         </div>
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 px-4 bg-gray-100">
-        <div className="container-custom max-w-5xl">
+      <section className="py-20 px-6 bg-gray-100">
+        <div className="max-w-[1200px] mx-auto">
           <p className="text-sm text-gray-600 text-center">
             <strong>Disclaimer:</strong> This glossary is provided for informational purposes only and does not constitute legal advice. The definitions are simplified explanations of complex legal concepts. Specific applications may vary depending on facts and circumstances. For advice on your particular situation, please consult with a qualified international trade attorney.
           </p>
         </div>
       </section>
+
+      {/* Evaluation Form */}
+      <EvaluationForm theme="light" />
     </div>
   );
 };

@@ -55,8 +55,8 @@ const GeneralApplicationPage: React.FC = () => {
     return (
         <div className="pt-20 bg-gray-50 min-h-screen font-montserrat text-neutral-darkGray pb-20">
              <div className="bg-primary-navy text-white py-12 px-6 text-center">
-                <h1 className="text-4xl md:text-5xl font-bold font-garamond mb-4">General Application</h1>
-                <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+                <h1 className="text-4xl md:text-5xl font-bold font-garamond mb-4 text-white">General Application</h1>
+                <p className="text-lg text-white max-w-2xl mx-auto">
                     Please select the appropriate category for your application below. All submissions are kept strictly confidential.
                 </p>
             </div>
