@@ -1676,3 +1676,146 @@ body {
     overflow: visible;
   }
 }
+
+/* ==============================================================
+   58. SERVICE LINKS - GREEN SLIDE ANIMATION (Reusable)
+   ============================================================== */
+.service-link-item {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.service-link-item:first-child {
+  border-top: 1px solid #e2e8f0;
+}
+
+.service-link {
+  display: block;
+  padding: 1.25rem 0;
+  color: #012169;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.service-link:hover {
+  color: #3FBB94;
+}
+
+.service-link__title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: inherit;
+  margin: 0;
+  position: relative;
+  z-index: 0;
+  padding-right: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-link__description {
+  font-size: 0.875rem;
+  color: #5A5A5A;
+  margin-top: 0.25rem;
+  padding-right: 4rem;
+}
+
+/* Green slide triangle for service links */
+.service-link .triangle-slide {
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 60px;
+  height: 60px;
+  background: #3FBB94;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  transition: right 300ms ease-in-out;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.service-link:hover .triangle-slide,
+.service-link:focus .triangle-slide {
+  right: 0;
+}
+
+.service-link .triangle-slide__icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: white;
+}
+
+/* Card with green slide effect */
+.card-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: #F8FAFC;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card-link:hover {
+  background: rgba(63, 187, 148, 0.1);
+  transform: translateY(-2px);
+}
+
+.card-link .triangle-slide {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  background: #3FBB94;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  transition: right 300ms ease-in-out;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.card-link:hover .triangle-slide,
+.card-link:focus .triangle-slide {
+  right: 0;
+}
+
+.card-link .triangle-slide__icon {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+
+/* Responsive adjustments for service links */
+@media (min-width: 768px) {
+  .service-link {
+    padding: 1.5rem 0;
+  }
+
+  .service-link__title {
+    font-size: 1.25rem;
+  }
+
+  .service-link .triangle-slide {
+    width: 70px;
+    height: 70px;
+    right: -70px;
+  }
+
+  .service-link .triangle-slide__icon {
+    width: 18px;
+    height: 18px;
+    top: 14px;
+    right: 14px;
+  }
+}

@@ -685,7 +685,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
             </ul>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#contact"
+                href="#schedule-consultation"
                 className="inline-block bg-secondary-gold hover:bg-yellow-500 text-primary-navy font-bold py-4 px-8 rounded-lg transition-colors shadow-lg text-center"
               >
                 Schedule UFLPA Consultation

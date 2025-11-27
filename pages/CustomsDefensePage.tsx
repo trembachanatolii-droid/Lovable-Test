@@ -61,7 +61,7 @@ const CustomsDefensePage: React.FC = () => {
             Expert customs audits defense, CBP penalty mitigation, customs seizures, import detention release & customs litigation. Aggressive defense against False Claims Act, whistleblower trade cases & export violations. Protecting California & USA businesses when stakes are highest.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#contact" className="hero-cta">Free Defense Consultation</a>
+            <a href="#schedule-consultation" className="hero-cta">Free Defense Consultation</a>
             <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>
         </div>
@@ -322,94 +322,170 @@ const CustomsDefensePage: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Related Services */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Practice Areas</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#regulatory-compliance-advisory" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Trade Compliance Programs
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Prevent issues before they become enforcement actions</p>
+                  <div className="service-link-item">
+                    <a href="#regulatory-compliance-advisory" className="service-link">
+                      <span className="service-link__title">Trade Compliance Programs</span>
+                      <p className="service-link__description">Prevent issues before they become enforcement actions</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#export-controls-sanctions" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Export Controls & Sanctions
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">ITAR/EAR compliance and BIS enforcement defense</p>
+                  <div className="service-link-item">
+                    <a href="#export-controls-sanctions" className="service-link">
+                      <span className="service-link__title">Export Controls & Sanctions</span>
+                      <p className="service-link__description">ITAR/EAR compliance and BIS enforcement defense</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> All Practice Areas
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Full range of international trade services</p>
+                  <div className="service-link-item">
+                    <a href="#practice-areas" className="service-link">
+                      <span className="service-link__title">All Practice Areas</span>
+                      <p className="service-link__description">Full range of international trade services</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
 
             {/* Location Pages */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Serving California Ports</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Los Angeles & Long Beach Port
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">CBP defense for LA/LB port importers</p>
+                  <div className="service-link-item">
+                    <a href="#los-angeles-port-customs-attorney" className="service-link">
+                      <span className="service-link__title">Los Angeles & Long Beach Port</span>
+                      <p className="service-link__description">CBP defense for LA/LB port importers</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> San Francisco & Bay Area
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Oakland port and tech company defense</p>
+                  <div className="service-link-item">
+                    <a href="#bay-area-trade-law-attorney" className="service-link">
+                      <span className="service-link__title">San Francisco & Bay Area</span>
+                      <p className="service-link__description">Oakland port and tech company defense</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
 
             {/* Industry Focus */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Industry Expertise</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Technology & Electronics
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">Section 301 and classification disputes</p>
+                  <div className="service-link-item">
+                    <a href="#technology-electronics-trade-attorney" className="service-link">
+                      <span className="service-link__title">Technology & Electronics</span>
+                      <p className="service-link__description">Section 301 and classification disputes</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Apparel & Textiles
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">UFLPA and forced labor defense</p>
+                  <div className="service-link-item">
+                    <a href="#apparel-textiles-trade-attorney" className="service-link">
+                      <span className="service-link__title">Apparel & Textiles</span>
+                      <p className="service-link__description">UFLPA and forced labor defense</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium flex items-center gap-2">
-                    <span>→</span> Food & Agriculture
-                  </a>
-                  <p className="text-sm text-text-secondary mt-1">FDA/USDA detention release</p>
+                  <div className="service-link-item">
+                    <a href="#food-agriculture-trade-attorney" className="service-link">
+                      <span className="service-link__title">Food & Agriculture</span>
+                      <p className="service-link__description">FDA/USDA detention release</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
 
           {/* Helpful Guides */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md overflow-hidden">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides & Resources</h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <a href="#article/cbp-focused-assessment-survival-guide-california" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#article/cbp-focused-assessment-survival-guide-california" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">CBP Audit Survival Guide</h4>
                 <p className="text-sm text-text-secondary">How to prepare for and survive a Focused Assessment</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#resources/section-301-tariffs-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#resources/section-301-tariffs-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">Navigate China tariffs and exclusion strategies</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#resources/uflpa-compliance-guide" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#resources/uflpa-compliance-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Forced labor detention defense strategies</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
-              <a href="#trade-law-faq" className="block p-4 bg-neutral-50 rounded-lg hover:bg-secondary-teal/10 transition-colors">
+              <a href="#trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Answers to common customs defense questions</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </a>
             </div>
           </div>
@@ -426,7 +502,7 @@ const CustomsDefensePage: React.FC = () => {
             When CBP targets your business with investigations, audits, penalties, or seizures, you need a customs defense attorney California who knows how to fight back. Contact us for aggressive representation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#contact" variant="solid">
+            <Button href="#schedule-consultation" variant="solid">
               Schedule Free Defense Consultation
             </Button>
             <Button href="tel:+16317468290" variant="outline">

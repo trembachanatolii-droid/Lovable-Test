@@ -228,7 +228,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
                 <li>Classification databases for product lines</li>
                 <li>Duty optimization strategies</li>
               </ul>
-              <a href="#contact" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
+              <a href="#schedule-consultation" className="inline-block mt-6 text-purple-600 hover:text-primary-navy font-semibold text-sm">
                 Classify Your Products →
               </a>
             </div>
@@ -470,6 +470,184 @@ const ApparelTextilesIndustryPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Related Services & Resources */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container-custom max-w-5xl">
+          <h2 className="text-3xl font-bold text-primary-navy mb-8 text-center">
+            Related Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Legal Services */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Legal Services</h3>
+              <ul className="space-y-3">
+                <li>
+                  <div className="service-link-item">
+                    <a href="#supply-chain-esg-compliance-guide" className="service-link">
+                      <span className="service-link__title">UFLPA Forced Labor Compliance</span>
+                      <p className="service-link__description">Supply chain due diligence</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="service-link-item">
+                    <a href="#customs-defense-litigation" className="service-link">
+                      <span className="service-link__title">Customs Defense & Litigation</span>
+                      <p className="service-link__description">Detention and audit defense</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="service-link-item">
+                    <a href="#regulatory-compliance-advisory" className="service-link">
+                      <span className="service-link__title">Trade Compliance Programs</span>
+                      <p className="service-link__description">Classification and compliance</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="service-link-item">
+                    <a href="#practice-areas" className="service-link">
+                      <span className="service-link__title">All Practice Areas</span>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* California Locations */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Serving Fashion Hubs</h3>
+              <ul className="space-y-3">
+                <li>
+                  <div className="service-link-item">
+                    <a href="#los-angeles-port-customs-attorney" className="service-link">
+                      <span className="service-link__title">Los Angeles Fashion District</span>
+                      <p className="service-link__description">LA/LB port apparel imports</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="service-link-item">
+                    <a href="#bay-area-trade-law-attorney" className="service-link">
+                      <span className="service-link__title">San Francisco Bay Area</span>
+                      <p className="service-link__description">Northern CA fashion brands</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Other Industries */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Other Industries</h3>
+              <ul className="space-y-3">
+                <li>
+                  <div className="service-link-item">
+                    <a href="#technology-electronics-trade-attorney" className="service-link">
+                      <span className="service-link__title">Technology & Electronics</span>
+                      <p className="service-link__description">Wearable tech & smart textiles</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="service-link-item">
+                    <a href="#food-agriculture-trade-attorney" className="service-link">
+                      <span className="service-link__title">Food & Agriculture</span>
+                      <p className="service-link__description">Natural fiber & textile materials</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Helpful Guides */}
+          <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">Helpful Guides for Apparel Companies</h3>
+            <div className="grid md:grid-cols-4 gap-4">
+              <a href="#supply-chain-esg-compliance-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">UFLPA Guide</h4>
+                <p className="text-xs text-gray-600">Forced labor compliance</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#tariffs-duties-classification-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">HTS Classification</h4>
+                <p className="text-xs text-gray-600">Apparel classification tips</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#ecommerce-digital-trade-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">E-Commerce Guide</h4>
+                <p className="text-xs text-gray-600">Section 321 & DTC</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#trade-law-faq" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">FAQ Center</h4>
+                <p className="text-xs text-gray-600">Apparel trade questions</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-br from-purple-900 to-primary-navy">
         <div className="container-custom max-w-4xl text-center">
@@ -480,7 +658,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             Schedule a consultation with California's leading trade law attorney for apparel and textile companies.
           </p>
           <a
-            href="#contact"
+            href="#schedule-consultation"
             className="inline-block bg-secondary-gold hover:bg-yellow-500 text-primary-navy font-bold py-4 px-8 rounded-lg transition-colors shadow-lg text-lg"
           >
             Schedule UFLPA Consultation

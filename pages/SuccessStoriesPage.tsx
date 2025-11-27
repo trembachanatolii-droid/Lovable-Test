@@ -57,7 +57,7 @@ const SuccessStoriesPage: React.FC = () => {
               Real cases. Real outcomes. Real protection for California businesses facing CBP enforcement, customs audits, and trade compliance challenges.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
-              <Button href="#contact" variant="solid">
+              <Button href="#schedule-consultation" variant="solid">
                 Get Similar Results
               </Button>
               <Button href="tel:+16317468290" variant="outline">

@@ -214,7 +214,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
                 <li>Prior Notice filing protocols</li>
                 <li>FSMA compliance training</li>
               </ul>
-              <a href="#contact" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
+              <a href="#schedule-consultation" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
                 FDA Compliance Program →
               </a>
             </div>
@@ -232,7 +232,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
                 <li>Organic certification coordination</li>
                 <li>Bilingual labeling (English/Spanish)</li>
               </ul>
-              <a href="#contact" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
+              <a href="#schedule-consultation" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
                 Label Review Services →
               </a>
             </div>
@@ -249,7 +249,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
                 <li>Lacey Act compliance (plants)</li>
                 <li>Wood packaging material (ISPM-15)</li>
               </ul>
-              <a href="#contact" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
+              <a href="#schedule-consultation" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
                 USDA Compliance →
               </a>
             </div>
@@ -301,7 +301,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
                 <li>Excise tax compliance</li>
                 <li>Formula approval for flavored beverages</li>
               </ul>
-              <a href="#contact" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
+              <a href="#schedule-consultation" className="inline-block mt-6 text-green-700 hover:text-primary-navy font-semibold text-sm">
                 Beverage Compliance →
               </a>
             </div>
@@ -488,6 +488,184 @@ const FoodAgricultureIndustryPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Related Services & Resources */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container-custom max-w-5xl">
+          <h2 className="text-3xl font-bold text-primary-navy mb-8 text-center">
+            Related Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Legal Services */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Legal Services</h3>
+              <ul className="space-y-3">
+                <li>
+                  <div className="service-link-item">
+                    <a href="#regulatory-compliance-advisory" className="service-link">
+                      <span className="service-link__title">FDA/USDA Compliance</span>
+                      <p className="service-link__description">Food safety & FSMA programs</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="service-link-item">
+                    <a href="#customs-defense-litigation" className="service-link">
+                      <span className="service-link__title">FDA Detention Defense</span>
+                      <p className="service-link__description">Refusal response & release</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="service-link-item">
+                    <a href="#tariffs-duties-classification-guide" className="service-link">
+                      <span className="service-link__title">Food Classification</span>
+                      <p className="service-link__description">HTS & duty optimization</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="service-link-item">
+                    <a href="#practice-areas" className="service-link">
+                      <span className="service-link__title">All Practice Areas</span>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* California Locations */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Serving Agricultural Regions</h3>
+              <ul className="space-y-3">
+                <li>
+                  <div className="service-link-item">
+                    <a href="#bay-area-trade-law-attorney" className="service-link">
+                      <span className="service-link__title">San Francisco Bay Area</span>
+                      <p className="service-link__description">Wine country & specialty foods</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="service-link-item">
+                    <a href="#los-angeles-port-customs-attorney" className="service-link">
+                      <span className="service-link__title">Los Angeles & Long Beach Port</span>
+                      <p className="service-link__description">Fresh produce imports</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Other Industries */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4">Other Industries</h3>
+              <ul className="space-y-3">
+                <li>
+                  <div className="service-link-item">
+                    <a href="#technology-electronics-trade-attorney" className="service-link">
+                      <span className="service-link__title">Technology & Electronics</span>
+                      <p className="service-link__description">AgTech & food processing equipment</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="service-link-item">
+                    <a href="#apparel-textiles-trade-attorney" className="service-link">
+                      <span className="service-link__title">Apparel & Textiles</span>
+                      <p className="service-link__description">Natural fibers & agricultural textiles</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Helpful Guides */}
+          <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+            <h3 className="text-xl font-bold text-primary-navy mb-4 text-center">Helpful Guides for Food Companies</h3>
+            <div className="grid md:grid-cols-4 gap-4">
+              <a href="#article/fda-fsma-compliance" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">FSMA Guide</h4>
+                <p className="text-xs text-gray-600">FDA compliance basics</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#article/food-labeling" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">Labeling Guide</h4>
+                <p className="text-xs text-gray-600">FDA label requirements</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#tariffs-duties-classification-guide" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">HTS Classification</h4>
+                <p className="text-xs text-gray-600">Food classification tips</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+              <a href="#trade-law-faq" className="card-link block p-4 bg-gray-50 rounded-lg text-center overflow-hidden relative">
+                <h4 className="font-bold text-primary-navy mb-1">FAQ Center</h4>
+                <p className="text-xs text-gray-600">Food import questions</p>
+                <div className="triangle-slide">
+                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-br from-green-800 to-green-900">
         <div className="container-custom max-w-4xl text-center">
@@ -498,7 +676,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             Schedule a consultation with California's leading trade law attorney for food and agricultural companies.
           </p>
           <a
-            href="#contact"
+            href="#schedule-consultation"
             className="inline-block bg-secondary-gold hover:bg-yellow-500 text-green-900 font-bold py-4 px-8 rounded-lg transition-colors shadow-lg text-lg"
           >
             Schedule FDA/USDA Consultation

@@ -192,7 +192,7 @@ const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
                If you have any questions about these policies, please contact us.
              </p>
              <a
-              href="#contact"
+              href="#schedule-consultation"
               onClick={(e) => {
                 e.preventDefault();
                 window.location.hash = '#contact';
