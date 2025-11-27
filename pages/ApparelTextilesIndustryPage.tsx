@@ -28,38 +28,31 @@ const ApparelTextilesIndustryPage: React.FC = () => {
   });
 
   return (
-    <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
-      {/* Hero Section */}
-      <section className="relative w-full h-[500px] overflow-hidden bg-primary-navy flex items-center">
-        <div className="absolute inset-0 z-0">
+    <div className="font-montserrat text-neutral-darkGray bg-white min-h-screen">
+      {/* Hero Section - matching site-wide hero pattern */}
+      <section className="hero" aria-label="Apparel Textiles Trade Law Hero">
+        <picture className="hero-bg">
           <img
             src="https://images.unsplash.com/photo-1558171813-4c088753af8f?q=80&w=1920&auto=format&fit=crop"
-            alt="Apparel and textile manufacturing representing California fashion industry trade law"
-            className="w-full h-full object-cover opacity-50"
-            loading="eager"
-            decoding="async"
+            alt=""
+            role="presentation"
             width="1920"
             height="1080"
+            loading="eager"
+            decoding="async"
+            className="hero-bg-image"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/80 via-primary-navy/60 to-primary-navy/95"></div>
-        </div>
+        </picture>
+        <div className="hero-overlay" aria-hidden="true"></div>
 
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full text-center md:text-left">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold font-garamond text-white mb-6 tracking-tight leading-none drop-shadow-lg">
-              California Trade Law Attorney for Apparel & Textile Companies
-            </h1>
-            <p className="text-xl md:text-2xl text-neutral-200 font-light mb-8 max-w-2xl leading-relaxed drop-shadow-md">
-              Specialized compliance for fashion brands, apparel importers, textile manufacturers, and e-commerce clothing sellers. Expert UFLPA forced labor defense, HTS classification, country of origin, and supply chain compliance.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4">
-              <Button href="#schedule-consultation" variant="solid">
-                Schedule UFLPA Consultation
-              </Button>
-              <Button href="tel:+16317468290" variant="outline">
-                Call (631) 746-8290
-              </Button>
-            </div>
+        <div className="container">
+          <h1>California Trade Law Attorney for<br />Apparel & Textile Companies</h1>
+          <p className="hero-subtitle">
+            Specialized compliance for fashion brands, apparel importers, textile manufacturers, and e-commerce clothing sellers. Expert UFLPA forced labor defense, HTS classification, and supply chain compliance.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#schedule-consultation" className="hero-cta">Schedule UFLPA Consultation</a>
+            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
           </div>
         </div>
       </section>

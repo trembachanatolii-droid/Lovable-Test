@@ -54,28 +54,32 @@ const TariffsClassificationGuidePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="pt-20 font-montserrat text-neutral-darkGray bg-white min-h-screen">
+    <div className="font-montserrat text-neutral-darkGray bg-white min-h-screen">
 
-      {/* Hero Section */}
-      <section className="relative w-full min-h-[50vh] py-24 overflow-hidden flex items-center" style={{ backgroundColor: '#012169' }}>
-        <div className="relative z-10 max-w-[1376px] mx-auto px-6 w-full">
-          <div className="max-w-3xl">
-            <div className="inline-block bg-secondary-teal/20 border border-secondary-teal px-4 py-2 rounded-full mb-4">
-              <span className="text-secondary-teal font-semibold text-sm uppercase tracking-wide">Knowledge Hub</span>
-            </div>
-            <h1
-              className="text-4xl md:text-6xl font-bold font-garamond mb-6 tracking-tight leading-tight"
-              style={{ color: '#ffffff' }}
-            >
-              Complete Guide to Tariffs, Duties & HTS Classification California
-            </h1>
-            <p
-              className="text-lg md:text-xl font-light mb-8 max-w-2xl leading-relaxed"
-              style={{ color: '#ffffff' }}
-            >
-              Expert insights on HTS classification, antidumping/countervailing duties, Section 301/232 tariffs, trade remedies, and customs valuation for California importers.
-            </p>
-            <div className="w-24 h-1 bg-secondary-teal"></div>
+      {/* Hero Section - matching site-wide hero pattern */}
+      <section className="hero" aria-label="Tariffs Classification Guide Hero">
+        <picture className="hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1920&auto=format&fit=crop"
+            alt=""
+            role="presentation"
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async"
+            className="hero-bg-image"
+          />
+        </picture>
+        <div className="hero-overlay" aria-hidden="true"></div>
+
+        <div className="container">
+          <h1>Complete Guide to Tariffs, Duties &<br />HTS Classification California</h1>
+          <p className="hero-subtitle">
+            Expert insights on HTS classification, antidumping/countervailing duties, Section 301/232 tariffs, trade remedies, and customs valuation for California importers.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#hts-classification" className="hero-cta">Learn More</a>
+            <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
           </div>
         </div>
       </section>
