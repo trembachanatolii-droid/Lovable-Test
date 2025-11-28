@@ -8,8 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const BayAreaTradeLawPage: React.FC = () => {
   useMeta({
-    title: 'San Francisco Trade Attorney | Bay Area Customs Lawyer CA',
-    description: 'San Francisco trade compliance attorney & Oakland port customs lawyer. Trade law advice for startups California, export controls for tech companies, ITAR/EAR compliance. Serving Bay Area, Silicon Valley, San Jose. Call 631-746-8290.',
+    title: 'SF Bay Area Trade Attorney | Silicon Valley CA',
+    description: 'San Francisco trade attorney & Oakland port customs lawyer. Export controls for tech companies, ITAR/EAR, startups. Bay Area. 631-746-8290.',
     canonical: 'bay-area-trade-law-attorney',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-bay-area.jpg`,

@@ -7,8 +7,8 @@ import { siteConfig } from '../config/siteConfig';
 
 const AboutPage: React.FC = () => {
   useMeta({
-    title: 'About California Trade Attorney | Expert Customs Lawyer CA',
-    description: 'California international trade attorney & customs lawyer. USC Law LL.M. Expert in CBP defense, customs audits, trade compliance. Boutique firm expertise, competitive fees. Serving CA & USA businesses.',
+    title: 'About Us | California Trade & Customs Attorney',
+    description: 'California trade attorney & customs lawyer. USC Law LL.M. CBP defense, customs audits, trade compliance. Boutique firm serving CA & USA.',
     canonical: 'about',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-about.jpg`,

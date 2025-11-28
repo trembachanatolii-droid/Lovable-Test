@@ -8,8 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const CustomsDefensePage: React.FC = () => {
   useMeta({
-    title: 'Customs Defense Attorney CA & USA | CBP Investigation Defense',
-    description: 'Expert customs defense attorney for California & USA. CBP investigation defense, customs audits, penalty mitigation, seizures, import detention release, customs litigation, fraud defense, False Claims Act, whistleblower cases & export violations defense. Call 631-746-8290.',
+    title: 'CA Customs Defense | CBP Investigation Attorney',
+    description: 'Expert customs defense attorney CA/USA. CBP investigation defense, customs audits, penalty mitigation, seizures, litigation. Call 631-746-8290.',
     canonical: 'customs-defense-litigation',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-customs-defense.jpg`,

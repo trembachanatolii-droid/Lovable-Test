@@ -8,8 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateLocalBusinessS
 
 const LosAngelesPortPage: React.FC = () => {
   useMeta({
-    title: 'Los Angeles Customs Attorney | Long Beach Port Lawyer CA',
-    description: 'Los Angeles customs attorney & Long Beach port trade lawyer. California port customs lawyer for LA/Long Beach port complex. Serving Carson, Wilmington, San Pedro, Torrance, Compton, Vernon, Commerce. CBP defense, customs audits, trade compliance. Call (631) 746-8290.',
+    title: 'LA Customs Attorney | Long Beach Port Lawyer CA',
+    description: 'Los Angeles customs attorney & Long Beach port lawyer. CA port customs, CBP defense, customs audits, trade compliance. Carson to Torrance. 631-746-8290.',
     canonical: 'los-angeles-port-customs-attorney',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-la-port.jpg`,

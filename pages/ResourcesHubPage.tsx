@@ -8,8 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 
 const ResourcesHubPage: React.FC = () => {
   useMeta({
-    title: 'CA Trade Law Resources | Import Export Guides & Knowledge Hub',
-    description: 'Comprehensive California international trade law resources and compliance guides. Expert insights on tariffs, HTS classification, supply chain ESG, UFLPA, ecommerce import rules, and digital trade law for California importers and exporters. Free educational resources from experienced trade attorneys.',
+    title: 'CA Trade Law Resources | Import Export Guides',
+    description: 'California trade law resources: tariffs, HTS classification, supply chain ESG, UFLPA, e-commerce rules, digital trade. Expert compliance guides.',
     canonical: 'resources',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-resources.jpg`,

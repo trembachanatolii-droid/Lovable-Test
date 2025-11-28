@@ -8,8 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const ExportControlsPage: React.FC = () => {
   useMeta({
-    title: 'Export Controls Lawyer CA & USA | ITAR EAR OFAC | Trade Sanctions',
-    description: 'Export controls lawyer for California & USA. Trade sanctions attorney for ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export, dual use items, deemed exports & restricted party screening. Call 631-746-8290.',
+    title: 'Export Controls CA | ITAR EAR OFAC Attorney',
+    description: 'California export controls lawyer. ITAR, EAR, OFAC compliance, export licensing, technology controls, deemed exports, sanctions screening. 631-746-8290.',
     canonical: 'export-controls-sanctions',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-export-controls.jpg`,

@@ -74,8 +74,8 @@ const practiceAreasPreviewData = [
 const HomePage: React.FC = () => {
   // SEO Meta Tags and Open Graph - Optimized for Main Hub Keywords
   useMeta({
-    title: 'California International Trade Attorney | USA Customs Lawyer',
-    description: 'Premier California & USA international trade attorney. Expert customs lawyer for import/export law, CBP defense, trade compliance & global trade strategy. Serving Los Angeles, Long Beach, San Francisco, all CA cities by appointment. Call (631) 746-8290.',
+    title: 'CA Trade Attorney | USA Customs Lawyer',
+    description: 'California international trade attorney & customs lawyer. CBP defense, trade compliance, import/export law. Serving LA, SF & all CA cities.',
     canonical: '',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-home.jpg`,
