@@ -187,7 +187,7 @@ const resourcesData: LinkCategory[] = [
       {
         title: "Americas",
         links: [
-          { label: "OAS Foreign Trade Information System", url: "http://www.sice.oas.org/" },
+          { label: "OAS Foreign Trade Information System", url: "https://www.sice.oas.org/" },
           { label: "CAFTA-DR (CBP Resource)", url: "https://www.cbp.gov/trade/priority-issues/trade-agreements/free-trade-agreements/cafta-dr" },
         ]
       },

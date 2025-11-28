@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 
 interface TitleConfig {
   offset: [string, string];
@@ -86,7 +86,7 @@ function AboutTitle({ name }: AboutTitleProps) {
   const rotate = useTransform(scrollYProgress, [0, 0.5, 1], config.rotate);
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       className="about-title"
       style={{
@@ -98,7 +98,7 @@ function AboutTitle({ name }: AboutTitleProps) {
       }}
     >
       {name}
-    </motion.div>
+    </m.div>
   );
 }
 

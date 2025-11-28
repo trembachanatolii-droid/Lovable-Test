@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { articles } from '../data/articles';
+import { getArticlePreviews } from '../data/articlesLoader';
 
 interface RelatedArticlesProps {
   currentArticleId: string;
@@ -96,8 +96,10 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = memo(({ currentArticleId
     .filter(id => id !== currentArticleId)
     .slice(0, maxArticles);
 
+  // Use lightweight previews instead of full articles for better performance
+  const articlePreviews = getArticlePreviews();
   const relatedArticles = relatedArticleIds
-    .map(id => articles.find(a => a.id === id))
+    .map(id => articlePreviews.find(a => a.id === id))
     .filter(Boolean);
 
   if (relatedArticles.length === 0) {

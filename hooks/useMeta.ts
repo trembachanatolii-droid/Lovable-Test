@@ -144,7 +144,9 @@ export function useMeta(config: MetaConfig): void {
     config.articleModifiedTime,
     config.articleAuthor,
     config.articleSection,
+    config.articleTags,
     config.robots,
+    config.schema,
     schemaId,
   ]);
 }

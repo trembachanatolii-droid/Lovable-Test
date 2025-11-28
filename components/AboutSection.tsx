@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { memo } from 'react';
 
 const AboutSection: React.FC = () => {
     return (
@@ -34,4 +34,4 @@ const AboutSection: React.FC = () => {
     );
 };
 
-export default AboutSection;
+export default memo(AboutSection);

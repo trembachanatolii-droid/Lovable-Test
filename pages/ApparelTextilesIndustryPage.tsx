@@ -76,7 +76,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
               <strong>The apparel and textile industry faces the highest enforcement risk under the Uyghur Forced Labor Prevention Act (UFLPA).</strong> CBP has detained thousands of apparel shipments, with many fashion brands experiencing significant supply chain disruptions.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 mt-6 justify-center">
+            <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
               <div>
                 <h3 className="font-bold text-red-900 mb-3">Why Apparel Is Highest Risk:</h3>
                 <ul className="space-y-2 text-gray-700 list-none">
@@ -338,7 +338,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             Why Apparel & Textile Companies Choose Trembach Law
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 justify-center">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-navy mb-3">Deep Apparel Industry Knowledge</h3>
               <p className="text-gray-700">
@@ -504,46 +504,62 @@ const ApparelTextilesIndustryPage: React.FC = () => {
           </div>
 
           {/* Helpful Guides */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for Apparel Companies</h3>
-            <div className="grid md:grid-cols-4 gap-6 justify-center">
-              <a href="#supply-chain-esg-compliance-guide" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
-                <p className="text-sm text-text-secondary">Forced labor detention defense</p>
-                <div className="triangle-slide">
-                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
+          <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+            <h3 className="text-xl font-bold text-primary-navy mb-4">Helpful Guides for Apparel Companies</h3>
+            <ul className="space-y-3">
+              <li>
+                <div className="service-link-item">
+                  <a href="#supply-chain-esg-compliance-guide" className="service-link">
+                    <span className="service-link__title">UFLPA Compliance Guide</span>
+                    <p className="service-link__description">Forced labor detention defense</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a href="#tariffs-duties-classification-guide" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
-                <p className="text-sm text-text-secondary">HTS classification best practices</p>
-                <div className="triangle-slide">
-                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
+              </li>
+              <li>
+                <div className="service-link-item">
+                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                    <span className="service-link__title">Tariff Classification Guide</span>
+                    <p className="service-link__description">HTS classification best practices</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a href="#ecommerce-digital-trade-guide" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">E-Commerce Guide</h4>
-                <p className="text-sm text-text-secondary">Section 321 & DTC compliance</p>
-                <div className="triangle-slide">
-                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
+              </li>
+              <li>
+                <div className="service-link-item">
+                  <a href="#ecommerce-digital-trade-guide" className="service-link">
+                    <span className="service-link__title">E-Commerce Guide</span>
+                    <p className="service-link__description">Section 321 & DTC compliance</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a href="#trade-law-faq" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
-                <p className="text-sm text-text-secondary">Common apparel trade questions</p>
-                <div className="triangle-slide">
-                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
+              </li>
+              <li>
+                <div className="service-link-item">
+                  <a href="#trade-law-faq" className="service-link">
+                    <span className="service-link__title">FAQ Center</span>
+                    <p className="service-link__description">Common apparel trade questions</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

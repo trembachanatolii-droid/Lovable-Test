@@ -397,7 +397,7 @@ const AttorneyAdvertisingPage: React.FC = () => {
               845 S. Figueroa Street<br />
               Los Angeles, CA 90017<br />
               Phone: (213) 765-1000<br />
-              Website: <a href="http://www.calbar.ca.gov" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.calbar.ca.gov</a>
+              Website: <a href="https://www.calbar.ca.gov" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.calbar.ca.gov</a>
             </address>
           </section>
 

@@ -362,24 +362,82 @@ const FAQCenterPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-primary-navy mb-6 text-center">
             Browse by Topic
           </h2>
-          <div className="flex flex-wrap gap-4 justify-center">
-            {faqCategories.map((category, index) => (
-              <button
-                key={index}
-                onClick={() => scrollToCategory(index)}
-                className="card-link group relative overflow-hidden text-left w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]"
-                type="button"
-                aria-label={`Navigate to ${category.category} section`}
-              >
-                <h3 className="font-semibold text-primary-navy mb-1">{category.category}</h3>
-                <p className="text-sm text-gray-600">{category.faqs.length} questions</p>
-                <div className="triangle-slide" aria-hidden="true">
-                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </div>
-              </button>
-            ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Column 1 */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <ul className="space-y-3">
+                {faqCategories.slice(0, 4).map((category, index) => (
+                  <li key={category.category}>
+                    <div className="service-link-item">
+                      <button
+                        onClick={() => scrollToCategory(index)}
+                        className="service-link w-full text-left"
+                        type="button"
+                        aria-label={`Navigate to ${category.category} section`}
+                      >
+                        <span className="service-link__title">{category.category}</span>
+                        <p className="service-link__description">{category.faqs.length} questions</p>
+                        <div className="triangle-slide" aria-hidden="true">
+                          <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Column 2 */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <ul className="space-y-3">
+                {faqCategories.slice(4, 7).map((category, index) => (
+                  <li key={category.category}>
+                    <div className="service-link-item">
+                      <button
+                        onClick={() => scrollToCategory(index + 4)}
+                        className="service-link w-full text-left"
+                        type="button"
+                        aria-label={`Navigate to ${category.category} section`}
+                      >
+                        <span className="service-link__title">{category.category}</span>
+                        <p className="service-link__description">{category.faqs.length} questions</p>
+                        <div className="triangle-slide" aria-hidden="true">
+                          <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Column 3 */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <ul className="space-y-3">
+                {faqCategories.slice(7).map((category, index) => (
+                  <li key={category.category}>
+                    <div className="service-link-item">
+                      <button
+                        onClick={() => scrollToCategory(index + 7)}
+                        className="service-link w-full text-left"
+                        type="button"
+                        aria-label={`Navigate to ${category.category} section`}
+                      >
+                        <span className="service-link__title">{category.category}</span>
+                        <p className="service-link__description">{category.faqs.length} questions</p>
+                        <div className="triangle-slide" aria-hidden="true">
+                          <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -398,7 +456,7 @@ const FAQCenterPage: React.FC = () => {
                 {category.faqs.map((faq, faqIndex) => {
                   const isOpen = isFAQOpen(categoryIndex, faqIndex);
                   return (
-                    <div key={faqIndex} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+                    <div key={faq.question} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                       <button
                         onClick={() => toggleFAQ(categoryIndex, faqIndex)}
                         className="w-full text-left p-5 flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-teal focus:ring-inset"
@@ -456,10 +514,10 @@ const FAQCenterPage: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">
-              Schedule a Consultation
+              Get in Touch
             </a>
             <a href="#resources" className="hero-cta-outline">
-              Explore Resources
+              View Resources
             </a>
           </div>
         </div>

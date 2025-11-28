@@ -9,6 +9,7 @@
 <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
 <!-- Mobile App Meta Tags -->
 <meta name="theme-color" content="#012169" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -147,7 +148,7 @@ img {
   left: -9999px;
   z-index: 999;
   padding: 1rem 1.5rem;
-  background-color: var(--teal-primary);
+  background-color: var(--teal-forest);
   color: white;
   font-weight: 600;
   text-decoration: none;
@@ -416,7 +417,7 @@ button, [role="button"], a[href] {
 
 .hero-cta {
   display: inline-block;
-  background-color: var(--teal-primary);
+  background-color: var(--teal-forest);
   color: var(--white);
   font-size: 1.125rem;
   font-weight: 600;
@@ -428,7 +429,8 @@ button, [role="button"], a[href] {
 }
 
 .hero-cta:hover {
-  background-color: var(--teal-forest);
+  background-color: var(--white);
+  color: var(--navy-primary);
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
@@ -508,19 +510,22 @@ button, [role="button"], a[href] {
 /* Footer - Reserve exact space to prevent CLS */
 footer.bg-primary-navy {
   min-height: 520px;
-  contain: layout style;
-  content-visibility: visible;
+  contain: layout style paint;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 520px;
 }
 
 @media (min-width: 768px) {
   footer.bg-primary-navy {
     min-height: 420px;
+    contain-intrinsic-size: 0 420px;
   }
 }
 
 @media (min-width: 1024px) {
   footer.bg-primary-navy {
     min-height: 380px;
+    contain-intrinsic-size: 0 380px;
   }
 }
 

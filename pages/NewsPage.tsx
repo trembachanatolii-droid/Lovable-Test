@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { SearchIcon } from '../components/icons/SearchIcon';
 import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
-import { articles } from '../data/articles';
+import { getArticlePreviews } from '../data/articlesLoader';
 import { articleMetadata, getArticleCategory } from '../data/articleMetadata';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
@@ -20,19 +20,20 @@ interface NewsItem {
   isoDate: string;
 }
 
-// --- Data: Map articles with their metadata and sort by date (newest first) ---
-const newsItems: NewsItem[] = articles
-  .map((article) => {
-    const metadata = articleMetadata[article.id];
+// --- Data: Map article previews with their metadata and sort by date (newest first) ---
+// Using lightweight previews instead of full articles for better performance
+const newsItems: NewsItem[] = getArticlePreviews()
+  .map((preview) => {
+    const metadata = articleMetadata[preview.id];
     return {
-      id: article.id,
-      title: article.title,
+      id: preview.id,
+      title: preview.title,
       source: 'Trembach Law Firm',
-      category: getArticleCategory(article.id),
+      category: getArticleCategory(preview.id),
       date: metadata?.date || 'NOVEMBER 26, 2025',
       readTime: metadata?.readTime || '5 MIN READ',
       isoDate: metadata?.isoDate || '2025-11-26',
-      link: `#article/${article.id}`
+      link: `#article/${preview.id}`
     };
   })
   .sort((a, b) => new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime());
@@ -302,6 +303,11 @@ const NewsPage: React.FC = () => {
       {/* News List Section */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-[1200px] mx-auto">
+          {/* Screen reader announcement for search results */}
+          <div aria-live="polite" aria-atomic="true" className="sr-only">
+            {filteredNews.length} {filteredNews.length === 1 ? 'article' : 'articles'} found
+          </div>
+
           {/* Heading with underline */}
           <div className="mb-10">
             <h2 className="font-garamond font-bold" style={{

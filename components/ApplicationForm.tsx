@@ -40,6 +40,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
     const [currentStep, setCurrentStep] = useState(0);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
 
     // Initial State for Trial Cases
     const emptyTrialCase = { name: '', court: '', caseNumber: '', year: '', role: '', subject: '', outcome: '' };
@@ -122,10 +123,42 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
 
     const handleCheckboxGroupChange = (value: string, checked: boolean) => {
         setFormData(prev => {
-            const newAreas = checked 
+            const newAreas = checked
                 ? [...prev.areasFocus, value]
                 : prev.areasFocus.filter(a => a !== value);
             return { ...prev, areasFocus: newAreas };
+        });
+    };
+
+    const validateField = (name: string, value: string) => {
+        let error = '';
+
+        // Required field validation
+        if (!value.trim()) {
+            const fieldLabels: Record<string, string> = {
+                office: 'Office',
+                position: 'Position',
+                firstName: 'First Name',
+                lastName: 'Last Name',
+                email: 'Email Address',
+                phone: 'Phone Number',
+                whyTrembach: 'Why are you interested in Trembach Law Firm'
+            };
+            error = `${fieldLabels[name] || name} is required`;
+        } else if (name === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+            error = 'Please enter a valid email address';
+        } else if (name === 'phone' && !/^[\d\s\-\(\)\+]+$/.test(value)) {
+            error = 'Please enter a valid phone number';
+        }
+
+        setFieldErrors(prev => {
+            const newErrors = { ...prev };
+            if (error) {
+                newErrors[name] = error;
+            } else {
+                delete newErrors[name];
+            }
+            return newErrors;
         });
     };
 
@@ -236,15 +269,23 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 name="office"
                                 value={formData.office}
                                 onChange={handleInputChange}
+                                onBlur={(e) => validateField('office', e.target.value)}
                                 className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy bg-white"
                                 required
                                 aria-required="true"
+                                aria-invalid={!!fieldErrors.office}
+                                aria-describedby={fieldErrors.office ? 'office-error' : undefined}
                                 aria-label="Office location"
                             >
                                 <option value="">Select Office...</option>
                                 <option value="Los Angeles">Los Angeles (Primary Office)</option>
                                 <option value="Remote">Remote - U.S. Federal Practice</option>
                             </select>
+                            {fieldErrors.office && (
+                                <span id="office-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                    {fieldErrors.office}
+                                </span>
+                            )}
                         </div>
                         <div>
                             <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="department">Department <span className="text-red-500" aria-hidden="true">*</span></label>
@@ -265,9 +306,12 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 name="position"
                                 value={formData.position}
                                 onChange={handleInputChange}
+                                onBlur={(e) => validateField('position', e.target.value)}
                                 className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy bg-white"
                                 required
                                 aria-required="true"
+                                aria-invalid={!!fieldErrors.position}
+                                aria-describedby={fieldErrors.position ? 'position-error' : undefined}
                                 aria-label="Position applying for"
                             >
                                 <option value="">Select Position...</option>
@@ -279,6 +323,11 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 {category === 'students' && <option value="Summer Associate">Summer Associate</option>}
                                 {category === 'students' && <option value="Law Clerk (Part-Time)">Law Clerk (Part-Time)</option>}
                             </select>
+                            {fieldErrors.position && (
+                                <span id="position-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                    {fieldErrors.position}
+                                </span>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -290,20 +339,88 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                     <h2 className="text-2xl font-garamond font-bold text-primary-navy border-b pb-2 mb-6">Personal Information</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                          <div>
-                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="firstName">First Name <span className="text-red-500">*</span></label>
-                            <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} className="w-full p-3 border border-neutral-300 rounded" required />
+                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="firstName">First Name <span className="text-red-500" aria-hidden="true">*</span></label>
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                value={formData.firstName}
+                                onChange={handleInputChange}
+                                onBlur={(e) => validateField('firstName', e.target.value)}
+                                className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy"
+                                required
+                                aria-required="true"
+                                aria-invalid={!!fieldErrors.firstName}
+                                aria-describedby={fieldErrors.firstName ? 'firstName-error' : undefined}
+                            />
+                            {fieldErrors.firstName && (
+                                <span id="firstName-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                    {fieldErrors.firstName}
+                                </span>
+                            )}
                         </div>
                         <div>
-                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="lastName">Last Name <span className="text-red-500">*</span></label>
-                            <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} className="w-full p-3 border border-neutral-300 rounded" required />
+                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="lastName">Last Name <span className="text-red-500" aria-hidden="true">*</span></label>
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                value={formData.lastName}
+                                onChange={handleInputChange}
+                                onBlur={(e) => validateField('lastName', e.target.value)}
+                                className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy"
+                                required
+                                aria-required="true"
+                                aria-invalid={!!fieldErrors.lastName}
+                                aria-describedby={fieldErrors.lastName ? 'lastName-error' : undefined}
+                            />
+                            {fieldErrors.lastName && (
+                                <span id="lastName-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                    {fieldErrors.lastName}
+                                </span>
+                            )}
                         </div>
                         <div>
-                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="email">Email Address <span className="text-red-500">*</span></label>
-                            <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} className="w-full p-3 border border-neutral-300 rounded" required />
+                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="email">Email Address <span className="text-red-500" aria-hidden="true">*</span></label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                onBlur={(e) => validateField('email', e.target.value)}
+                                className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy"
+                                required
+                                aria-required="true"
+                                aria-invalid={!!fieldErrors.email}
+                                aria-describedby={fieldErrors.email ? 'email-error' : undefined}
+                            />
+                            {fieldErrors.email && (
+                                <span id="email-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                    {fieldErrors.email}
+                                </span>
+                            )}
                         </div>
                         <div>
-                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="phone">Phone Number <span className="text-red-500">*</span></label>
-                            <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange} className="w-full p-3 border border-neutral-300 rounded" required />
+                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="phone">Phone Number <span className="text-red-500" aria-hidden="true">*</span></label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleInputChange}
+                                onBlur={(e) => validateField('phone', e.target.value)}
+                                className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy"
+                                required
+                                aria-required="true"
+                                aria-invalid={!!fieldErrors.phone}
+                                aria-describedby={fieldErrors.phone ? 'phone-error' : undefined}
+                            />
+                            {fieldErrors.phone && (
+                                <span id="phone-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                    {fieldErrors.phone}
+                                </span>
+                            )}
                         </div>
                         <div className="md:col-span-2">
                             <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="address">Mailing Address</label>
@@ -534,10 +651,27 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
             {currentStep === 5 && (
                 <div className="animate-fadeIn space-y-6">
                      <h2 className="text-2xl font-garamond font-bold text-primary-navy border-b pb-2 mb-6">Additional Information</h2>
-                     
+
                      <div>
-                        <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="whyTrembach">Why are you interested in Trembach Law Firm’s international trade practice?</label>
-                        <textarea id="whyTrembach" name="whyTrembach" value={formData.whyTrembach} onChange={handleInputChange} rows={4} className="w-full p-3 border border-neutral-300 rounded" required />
+                        <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="whyTrembach">Why are you interested in Trembach Law Firm's international trade practice? <span className="text-red-500" aria-hidden="true">*</span></label>
+                        <textarea
+                            id="whyTrembach"
+                            name="whyTrembach"
+                            value={formData.whyTrembach}
+                            onChange={handleInputChange}
+                            onBlur={(e) => validateField('whyTrembach', e.target.value)}
+                            rows={4}
+                            className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy"
+                            required
+                            aria-required="true"
+                            aria-invalid={!!fieldErrors.whyTrembach}
+                            aria-describedby={fieldErrors.whyTrembach ? 'whyTrembach-error' : undefined}
+                        />
+                        {fieldErrors.whyTrembach && (
+                            <span id="whyTrembach-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                {fieldErrors.whyTrembach}
+                            </span>
+                        )}
                      </div>
                      
                      {category === 'attorney' && (

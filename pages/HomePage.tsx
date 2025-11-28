@@ -4,25 +4,28 @@ import AboutSection from '../components/AboutSection';
 import NewsArticleCard from '../components/NewsArticleCard';
 import PracticeAreasSection from '../components/PracticeAreasSection';
 import Button from '../components/Button';
+import JusticePillars from '../components/JusticePillars';
 
 // Lazy load below-the-fold components to reduce initial bundle
-const JusticePillars = lazy(() => import('../components/JusticePillars'));
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 import type { NewsArticle } from '../types';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateFAQSchema, generateLocalBusinessSchema } from '../utils/seo';
 import { siteConfig } from '../config/siteConfig';
-import { articles } from '../data/articles';
+import { getArticlePreviews } from '../data/articlesLoader';
 import { articleMetadata } from '../data/articleMetadata';
 
-// Get the latest 3 articles by date
+// Get the latest 3 articles by date (using lightweight previews)
 const getLatestArticles = (): NewsArticle[] => {
-  // Get articles that have metadata
-  const articlesWithMetadata = articles
-    .filter(article => articleMetadata[article.id])
-    .map(article => ({
-      article,
-      metadata: articleMetadata[article.id]
+  // Get article previews (lightweight, no full content)
+  const previews = getArticlePreviews();
+
+  // Filter to only include articles that have metadata
+  const articlesWithMetadata = previews
+    .filter(preview => articleMetadata[preview.id])
+    .map(preview => ({
+      preview,
+      metadata: articleMetadata[preview.id]
     }));
 
   // Sort by isoDate descending (latest first)
@@ -36,9 +39,9 @@ const getLatestArticles = (): NewsArticle[] => {
     date: item.metadata.date.split(' ').map((word, i) =>
       i === 0 ? word.charAt(0) + word.slice(1).toLowerCase() : word
     ).join(' '), // Convert "NOVEMBER 26, 2025" to "November 26, 2025"
-    title: item.article.title,
-    description: item.article.intro,
-    linkHref: `#article/${item.article.id}`,
+    title: item.preview.title,
+    description: item.preview.intro,
+    linkHref: `#article/${item.preview.id}`,
     readTime: item.metadata.readTime.toLowerCase().replace(' min', ' min'),
   }));
 };
@@ -212,10 +215,8 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Other Sections */}
-      {/* Suspense fallbacks with explicit heights to prevent CLS (Cumulative Layout Shift) */}
-      <Suspense fallback={<div style={{ minHeight: '400px', background: 'transparent' }} aria-label="Loading justice pillars section" />}>
-        <JusticePillars />
-      </Suspense>
+      {/* JusticePillars inlined (above-the-fold, tiny component) */}
+      <JusticePillars />
       <StatsSection />
       <AboutSection />
       <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading practice areas section" />}>
