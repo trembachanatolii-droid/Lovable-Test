@@ -254,7 +254,7 @@ const Header: React.FC = () => {
             </div>
 
             {/* Mobile Actions: Phone + Menu Button */}
-            <div className="mobile-menu-btn" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <div className="mobile-menu-btn" style={{ alignItems: 'center', gap: '0.75rem' }}>
               {/* Mobile Phone CTA */}
               <a
                 href="tel:+16317468290"
