@@ -95,6 +95,9 @@ function AboutTitle({ name }: AboutTitleProps) {
         opacity,
         translate,
         rotate,
+        willChange: 'transform, opacity, filter',
+        contain: 'layout style',
+        transformOrigin: 'center center',
       }}
     >
       {name}
