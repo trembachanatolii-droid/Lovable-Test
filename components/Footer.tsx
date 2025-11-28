@@ -58,10 +58,7 @@ const Footer: React.FC = () => {
             role="contentinfo"
             className="bg-primary-navy text-neutral-gray border-t"
             style={{
-                borderTopColor: 'rgba(255, 255, 255, 0.2)',
-                contain: 'layout style paint',
-                contentVisibility: 'auto',
-                containIntrinsicSize: '0 450px'
+                borderTopColor: 'rgba(255, 255, 255, 0.2)'
             }}
         >
             <div className="max-w-[1376px] mx-auto px-5 py-12">
@@ -101,7 +98,7 @@ const Footer: React.FC = () => {
                             </div>
                         </div>
                         <div className="text-lg font-semibold text-white mb-3">Stay Informed</div>
-                        <form onSubmit={handleNewsletterSubmit} className="flex flex-row gap-3 mb-4" style={{ minHeight: '48px' }}>
+                        <form onSubmit={handleNewsletterSubmit} className="flex flex-row gap-3 mb-4" style={{ height: '48px', minHeight: '48px', maxHeight: '48px' }}>
                             <input
                                 name="email"
                                 type="email"
@@ -123,12 +120,10 @@ const Footer: React.FC = () => {
                                 SUBSCRIBE
                             </button>
                         </form>
-                        <div style={{ minHeight: '28px' }} aria-live="polite">
-                            {subscribed && (
-                                <p className="text-secondary-teal text-sm mt-2 mb-4">
-                                    Thank you for subscribing!
-                                </p>
-                            )}
+                        <div style={{ height: '28px', minHeight: '28px', maxHeight: '28px', overflow: 'hidden' }} aria-live="polite">
+                            <p className={`text-secondary-teal text-sm ${subscribed ? 'opacity-100' : 'opacity-0'}`} style={{ transition: 'opacity 0.2s ease-in-out' }}>
+                                Thank you for subscribing!
+                            </p>
                         </div>
 
                         {/* Social Media Icons */}
