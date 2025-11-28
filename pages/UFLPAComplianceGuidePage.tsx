@@ -68,10 +68,10 @@ const UFLPAComplianceGuidePage: React.FC = () => {
       </section>
 
       {/* Quick Navigation */}
-      <section className="py-8 px-4 bg-gray-50 border-b border-gray-200">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-xl font-bold text-primary-navy mb-4 text-center">Jump to Section</h2>
-          <div className="flex flex-wrap justify-center gap-3 text-sm">
+      <section className="py-10 px-4 bg-gray-50 border-b border-gray-200">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-primary-navy mb-6 text-center">Jump to Section</h2>
+          <div className="flex flex-wrap justify-center gap-4 text-base">
             <button onClick={() => scrollToSection('overview')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">What is UFLPA?</button>
             <button onClick={() => scrollToSection('high-risk')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">High-Risk Products</button>
             <button onClick={() => scrollToSection('entity-list')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Entity List</button>

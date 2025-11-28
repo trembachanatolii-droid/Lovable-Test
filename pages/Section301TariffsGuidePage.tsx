@@ -67,10 +67,10 @@ const Section301TariffsGuidePage: React.FC = () => {
       </section>
 
       {/* Quick Navigation */}
-      <section className="py-8 px-4 bg-gray-50 border-b border-gray-200">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-xl font-bold text-primary-navy mb-4 text-center">Jump to Section</h2>
-          <div className="flex flex-wrap justify-center gap-3 text-sm">
+      <section className="py-10 px-4 bg-gray-50 border-b border-gray-200">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-primary-navy mb-6 text-center">Jump to Section</h2>
+          <div className="flex flex-wrap justify-center gap-4 text-base">
             <button onClick={() => scrollToSection('overview')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">What is Section 301?</button>
             <button onClick={() => scrollToSection('lists')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Lists 1-4 Breakdown</button>
             <button onClick={() => scrollToSection('applicability')} className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-primary-navy hover:text-secondary-teal font-medium cursor-pointer">Is My Product Covered?</button>
@@ -376,7 +376,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   <li><strong>Third-country processing:</strong> Chinese materials/components processed in third country (Vietnam, Mexico, etc.) - analyze whether third-country processing was substantial transformation</li>
                 </ul>
                 <div className="mt-3 bg-teal-50 p-3 rounded">
-                  <p className="text-sm text-gray-800"><strong>�Mitigation Opportunity:</strong> For goods processed in multiple countries, careful origin analysis may demonstrate non-Chinese origin despite Chinese inputs. Obtain CBP binding origin rulings for certainty.</p>
+                  <p className="text-sm text-gray-800"><strong>Mitigation Opportunity:</strong> For goods processed in multiple countries, careful origin analysis may demonstrate non-Chinese origin despite Chinese inputs. Obtain CBP binding origin rulings for certainty.</p>
                 </div>
               </div>
 
@@ -393,7 +393,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   <li>New exclusion processes may open - monitor USTR Federal Register notices</li>
                 </ul>
                 <div className="mt-3 bg-amber-50 p-3 rounded border border-amber-200">
-                  <p className="text-sm text-gray-800"><strong>�Current Status Note:</strong> Most historical exclusions have expired. If exclusion process reopens, immediate filing is critical as review can take 6-12+ months. We assist with exclusion requests including economic analysis and legal advocacy.</p>
+                  <p className="text-sm text-gray-800"><strong>Current Status Note:</strong> Most historical exclusions have expired. If exclusion process reopens, immediate filing is critical as review can take 6-12+ months. We assist with exclusion requests including economic analysis and legal advocacy.</p>
                 </div>
               </div>
             </div>
@@ -403,19 +403,19 @@ const Section301TariffsGuidePage: React.FC = () => {
 
               <div className="space-y-4 text-sm">
                 <div className="bg-white p-4 rounded shadow-sm">
-                  <p className="font-bold text-gray-800 mb-2">�Scenario 1: Direct Chinese Import</p>
+                  <p className="font-bold text-gray-800 mb-2">Scenario 1: Direct Chinese Import</p>
                   <p className="text-gray-700 mb-1"><strong>Facts:</strong> Electronic component manufactured entirely in China, HTS 8504.40.95, imported directly from Chinese factory</p>
                   <p className="text-gray-700"><strong>Result:</strong> Subject to Section 301 List 3 (25%) if HTS 8504.40.95 is on List 3 Annex</p>
                 </div>
 
                 <div className="bg-white p-4 rounded shadow-sm">
-                  <p className="font-bold text-gray-800 mb-2">�Scenario 2: Third-Country Assembly</p>
+                  <p className="font-bold text-gray-800 mb-2">Scenario 2: Third-Country Assembly</p>
                   <p className="text-gray-700 mb-1"><strong>Facts:</strong> Chinese-made fabric shipped to Vietnam, cut and sewn into finished apparel in Vietnam, imported from Vietnam</p>
                   <p className="text-gray-700"><strong>Result:</strong> Likely Vietnamese origin (substantial transformation) - NOT subject to Section 301 despite Chinese inputs</p>
                 </div>
 
                 <div className="bg-white p-4 rounded shadow-sm">
-                  <p className="font-bold text-gray-800 mb-2">�Scenario 3: Transshipment</p>
+                  <p className="font-bold text-gray-800 mb-2">Scenario 3: Transshipment</p>
                   <p className="text-gray-700 mb-1"><strong>Facts:</strong> Finished Chinese goods shipped through Vietnam with minor repackaging, declared as Vietnamese origin</p>
                   <p className="text-gray-700 text-red-700"><strong>Result:</strong> Chinese origin (no substantial transformation) - Subject to Section 301 + penalties for false origin declaration</p>
                 </div>
@@ -480,12 +480,12 @@ const Section301TariffsGuidePage: React.FC = () => {
                   <div>
                     <h4 className="text-xl font-bold text-primary-navy mb-3">First Sale Valuation</h4>
                     <p className="text-gray-700 mb-3">
-                      For multi-tiered transactions (manufacturer �middleman �U.S. importer), use "first sale" valuation to calculate duties on manufacturer's sale price rather than middleman's markup.
+                      For multi-tiered transactions (manufacturer → middleman → U.S. importer), use "first sale" valuation to calculate duties on manufacturer's sale price rather than middleman's markup.
                     </p>
                     <div className="bg-gray-50 p-4 rounded mb-3">
                       <p className="text-sm font-semibold text-gray-800 mb-2">Strategy Implementation:</p>
                       <ul className="text-sm text-gray-700 list-disc pl-5 space-y-1">
-                        <li>Document multi-tier transaction structure (manufacturer �trading company �importer)</li>
+                        <li>Document multi-tier transaction structure (manufacturer → trading company → importer)</li>
                         <li>Demonstrate manufacturer's sale is bona fide "sale for export to United States"</li>
                         <li>Maintain detailed records of manufacturer pricing, middleman markup, and services provided</li>
                         <li>Calculate duties based on lower first sale price</li>
@@ -649,7 +649,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                       <strong>Savings Potential:</strong> Complete elimination of Section 301 duty for granted exclusions. Duration typically 1 year (potentially extended). High-value strategy but uncertain/lengthy process (6-12+ months).
                     </p>
                     <p className="text-sm text-amber-700 font-semibold">
-                      �Current Status: Most historical exclusions expired. New exclusion process may open in 2025 - we monitor continuously and can mobilize exclusion requests within days of announcement.
+                      Current Status: Most historical exclusions expired. New exclusion process may open in 2025 - we monitor continuously and can mobilize exclusion requests within days of announcement.
                     </p>
                   </div>
                 </div>
