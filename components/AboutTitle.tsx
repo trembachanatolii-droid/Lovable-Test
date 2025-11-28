@@ -1,5 +1,5 @@
-import React, { useRef, useState, useEffect } from "react";
-import { m, useScroll, useTransform, useReducedMotion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 
 interface TitleConfig {
   offset: [string, string];
@@ -65,18 +65,7 @@ interface AboutTitleProps {
 function AboutTitle({ name }: AboutTitleProps) {
   const config = TITLE_CONFIG[name] || TITLE_CONFIG["Compliance"];
   const shouldReduceMotion = useReducedMotion();
-  const [isReady, setIsReady] = useState(false);
-
   const ref = useRef<HTMLDivElement>(null);
-
-  // Defer animations until after initial paint to prevent forced reflows
-  useEffect(() => {
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        setIsReady(true);
-      });
-    });
-  }, []);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -89,8 +78,8 @@ function AboutTitle({ name }: AboutTitleProps) {
   const translate = useTransform(scrollYProgress, [0, 1], config.translate);
   const rotate = useTransform(scrollYProgress, [0, 0.5, 1], config.rotate);
 
-  // If reduced motion is preferred or animations not ready, show static version
-  if (shouldReduceMotion || !isReady) {
+  // If reduced motion is preferred, show static version
+  if (shouldReduceMotion) {
     return (
       <div
         ref={ref}
@@ -107,7 +96,7 @@ function AboutTitle({ name }: AboutTitleProps) {
   }
 
   return (
-    <m.div
+    <motion.div
       ref={ref}
       className="about-title"
       style={{
@@ -115,17 +104,13 @@ function AboutTitle({ name }: AboutTitleProps) {
         opacity,
         translate,
         rotate,
-        // Only use transform and opacity for GPU acceleration - NO blur filter
         willChange: 'transform, opacity',
-        // Add paint containment to isolate layout calculations
         contain: 'layout style paint',
         transformOrigin: 'center center',
-        // Force GPU layer to prevent reflows
-        transform: 'translateZ(0)',
       }}
     >
       {name}
-    </m.div>
+    </motion.div>
   );
 }
 
