@@ -320,8 +320,8 @@ const PracticeAccordionItem: React.FC<{
 
 const PracticeAreasPage: React.FC = () => {
   useMeta({
-    title: 'CA Trade Law Services | Customs Defense & Export Compliance',
-    description: 'California trade law: customs defense, CBP investigations, ITAR/EAR compliance, trade finance, drawback claims, foreign trade zones, maritime law, tariff engineering. Expert CA/USA representation.',
+    title: 'CA Trade Law | Customs Defense & Export Services',
+    description: 'California trade law services: customs defense, CBP investigations, export controls ITAR/EAR, trade finance, maritime law. Expert CA/USA representation.',
     canonical: 'practice-areas',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-practice-areas.jpg`,

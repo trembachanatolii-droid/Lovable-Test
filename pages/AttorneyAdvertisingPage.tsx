@@ -81,7 +81,7 @@ const AttorneyAdvertisingPage: React.FC = () => {
           <section id="nature" aria-labelledby="nature-heading">
             <h2 id="nature-heading" className="text-2xl md:text-3xl font-bold font-garamond text-primary-navy mb-4">1. NATURE OF THIS WEBSITE</h2>
             <p className="mb-4">
-              This website, <a href="http://www.trembachlaw.com" className="text-secondary-teal hover:underline">www.trembachlaw.com</a>, is maintained by Trembach Law Firm, APC and is considered attorney advertising under the California Rules of Professional Conduct, specifically Rules 7.1, 7.2, and 7.3, and applicable provisions of the California Business and Professions Code (Sections 6157-6159.2).
+              This website, <a href="https://www.trembachlaw.com" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.trembachlaw.com</a>, is maintained by Trembach Law Firm, APC and is considered attorney advertising under the California Rules of Professional Conduct, specifically Rules 7.1, 7.2, and 7.3, and applicable provisions of the California Business and Professions Code (Sections 6157-6159.2).
             </p>
             <p className="mb-4 font-semibold">
               WHAT THIS MEANS: The content on this website is designed, in part, to provide information about our legal services and to attract potential clients who may need assistance with international trade law and customs law matters.

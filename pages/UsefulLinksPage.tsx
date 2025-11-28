@@ -203,7 +203,7 @@ const resourcesData: LinkCategory[] = [
         title: "Asia-Pacific",
         links: [
           { label: "Australian Border Force", url: "https://www.customs.gov.au" },
-          { label: "China Customs", url: "http://english.customs.gov.cn" },
+          { label: "China Customs", url: "https://english.customs.gov.cn" },
           { label: "Japan Customs", url: "https://www.customs.go.jp/english/index.htm" },
           { label: "Korea Customs Service", url: "https://www.customs.go.kr/english/main.do" },
         ]

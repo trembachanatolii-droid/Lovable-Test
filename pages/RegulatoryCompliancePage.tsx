@@ -8,8 +8,8 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 const RegulatoryCompliancePage: React.FC = () => {
   useMeta({
-    title: 'Trade Compliance CA & USA | Import Export Compliance Program',
-    description: 'Trade compliance attorney for California & USA. Import compliance programs, export compliance programs, federal trade compliance, trade compliance audits, prior disclosure customs, voluntary self disclosure, customs record keeping, ruling requests & compliance for manufacturers. Call 631-746-8290.',
+    title: 'Trade Compliance CA | Import Export Programs',
+    description: 'Trade compliance attorney CA/USA. Import/export compliance programs, audits, prior disclosure, customs records, ruling requests. 631-746-8290.',
     canonical: 'regulatory-compliance-advisory',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-compliance.jpg`,

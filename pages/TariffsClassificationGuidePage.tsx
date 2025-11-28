@@ -16,8 +16,8 @@ const TariffsClassificationGuidePage: React.FC = () => {
   };
 
   useMeta({
-    title: 'HTS Classification CA | AD/CVD Duties | Section 301 Tariffs Guide',
-    description: 'Complete guide: HTS classification California, antidumping duties, countervailing duties, Section 301/232 tariffs, trade remedies, customs valuation & transfer pricing for CA/USA importers. Expert compliance strategies. Call 631-746-8290.',
+    title: 'HTS Classification CA | AD/CVD | Section 301 Guide',
+    description: 'Complete guide: HTS classification, antidumping/countervailing duties, Section 301/232 tariffs, trade remedies, customs valuation. 631-746-8290.',
     canonical: 'tariffs-duties-classification-guide',
     ogType: 'article',
     ogImage: `${siteConfig.siteUrl}/og-image-tariffs-guide.jpg`,
