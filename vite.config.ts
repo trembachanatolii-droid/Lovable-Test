@@ -36,6 +36,7 @@ const resourceHintsPlugin = () => {
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
+
     return {
       server: {
         port: 3000,
@@ -150,6 +151,20 @@ export default defineConfig(({ mode }) => {
         },
         // Rollup options for better optimization and reduced unused JS
         rollupOptions: {
+          // Enable aggressive tree-shaking
+          treeshake: {
+            preset: 'recommended',
+            // Mark all modules as side-effect free by default for better tree-shaking
+            moduleSideEffects: (id) => {
+              // Only keep side effects for CSS and entry points
+              if (id.endsWith('.css') || id.includes('index.tsx')) return true;
+              return false;
+            },
+            // Enable property reading side effect detection
+            propertyReadSideEffects: false,
+            // Remove unused exports more aggressively
+            unknownGlobalSideEffects: false,
+          },
           output: {
             // Manual chunk splitting for optimal caching and tree-shaking
             manualChunks: (id) => {
@@ -200,6 +215,12 @@ export default defineConfig(({ mode }) => {
             chunkFileNames: 'assets/[name]-[hash].js',
             entryFileNames: 'assets/[name]-[hash].js',
             assetFileNames: 'assets/[name]-[hash].[ext]',
+            // Enable compact output for smaller bundles
+            compact: true,
+            // Use ES modules for better tree-shaking
+            format: 'es',
+            // Minimize hoisting for better tree-shaking
+            hoistTransitiveImports: false,
           },
         },
         // Source maps for production debugging (can be disabled for smaller size)

@@ -1,58 +1,189 @@
 # Cache Control Headers for Static Assets
-# These rules ensure optimal caching for static assets with content hashes
+# These rules ensure optimal caching for all static assets
+# Compatible with Netlify, Cloudflare Pages, and similar hosting platforms
 
-# Hashed assets (JS, CSS) - Long-term caching since filenames include content hash
+# Default: All assets with content hash - long-term immutable caching (1 year)
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
-# Images - Long-term caching (assuming versioned/hashed filenames)
+# Images in assets folder - long-term caching
+/assets/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/assets/*.png
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/assets/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/assets/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/assets/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/assets/*.gif
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# JavaScript files - long-term caching (hashed filenames ensure cache busting)
+/assets/*.js
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  Content-Type: application/javascript; charset=utf-8
+
+# CSS files - long-term caching
+/assets/*.css
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  Content-Type: text/css; charset=utf-8
+
+# Root-level static files
+/styles.css
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  Content-Type: text/css; charset=utf-8
+
+# Images in public folder - long-term caching
 /images/*
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
-# General JS and CSS files with hashes
-/*.js
+/images/*.webp
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
-/*.css
+/images/*.png
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
-# HTML files - Short cache with revalidation
-/*.html
-  Cache-Control: public, max-age=0, must-revalidate
+/images/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
-# Root HTML
-/
-  Cache-Control: public, max-age=0, must-revalidate
+/images/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
-# Manifest and other static files - Medium cache
-/*.json
-  Cache-Control: public, max-age=3600, must-revalidate
+# Icons folder
+/icons/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
-/*.xml
-  Cache-Control: public, max-age=3600, must-revalidate
-
-/*.txt
-  Cache-Control: public, max-age=3600, must-revalidate
-
-# Webp images
+# Root-level image files
 /*.webp
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
-# Other image formats
 /*.png
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
 /*.jpg
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
 /*.jpeg
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
 /*.svg
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
 /*.ico
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
 /*.gif
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# Font files - long-term caching
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/*.ttf
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/*.otf
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/*.eot
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# Root JS files (if any)
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  Content-Type: application/javascript; charset=utf-8
+
+# Root CSS files
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  Content-Type: text/css; charset=utf-8
+
+# HTML files - Short cache with revalidation for instant updates
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# Root HTML (index.html)
+/
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# Manifest and configuration files - Medium cache with revalidation
+/manifest.json
+  Cache-Control: public, max-age=86400, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/*.json
+  Cache-Control: public, max-age=3600, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# XML files (sitemap, etc.)
+/*.xml
+  Cache-Control: public, max-age=3600, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/sitemap.xml
+  Cache-Control: public, max-age=86400, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# Text files
+/*.txt
+  Cache-Control: public, max-age=3600, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/robots.txt
+  Cache-Control: public, max-age=86400, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# Service worker - no caching to ensure updates
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/service-worker.js
+  Cache-Control: no-cache, no-store, must-revalidate
+  X-Content-Type-Options: nosniff
