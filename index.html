@@ -191,10 +191,12 @@ html, body {
   overscroll-behavior: none;
 }
 
-/* Minimum touch target size */
-button, [role="button"], a[href] {
-  min-height: 44px;
-  min-width: 44px;
+/* Minimum touch target size - mobile only */
+@media (max-width: 1023px) {
+  button, [role="button"], a[href] {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
 
 /* ==============================================================
@@ -518,100 +520,18 @@ button, [role="button"], a[href] {
   color: var(--gray-dark);
 }
 
-/* Footer - Reserve minimum space to prevent CLS */
-footer.bg-primary-navy,
-footer.footer-stable {
-  /* Use min-height only for flexibility */
-  min-height: 520px;
-  /* Layout containment for performance */
-  contain: layout style;
-  content-visibility: visible;
-  /* Reserve intrinsic size for browser optimization */
-  contain-intrinsic-block-size: 520px;
-  /* Ensure stable box model */
-  box-sizing: border-box;
-}
-
-@media (min-width: 768px) {
-  footer.bg-primary-navy,
-  footer.footer-stable {
-    min-height: 420px;
-    contain-intrinsic-block-size: 420px;
-  }
-}
-
+/* Footer - Stable layout for desktop */
 @media (min-width: 1024px) {
   footer.bg-primary-navy,
   footer.footer-stable {
-    min-height: 380px;
-    contain-intrinsic-block-size: 380px;
+    contain: layout style;
   }
 }
 
-/* Footer inner container */
-footer .max-w-\[1376px\] {
-  min-height: inherit;
-  box-sizing: border-box;
-}
-
-/* Footer grid */
-footer .grid {
-  min-height: 280px;
-}
-
-@media (min-width: 768px) {
-  footer .grid {
-    min-height: 220px;
-  }
-}
-
+/* AboutSection/JusticePillars - Desktop only containment */
 @media (min-width: 1024px) {
-  footer .grid {
-    min-height: 180px;
-  }
-}
-
-/* Form elements fixed dimensions to prevent CLS */
-footer form {
-  min-height: 48px;
-}
-
-footer input[type="email"],
-footer button[type="submit"] {
-  min-height: 48px;
-  box-sizing: border-box;
-}
-
-/* AboutSection/JusticePillars - CLS prevention */
-.about-section {
-  /* CSS containment to isolate layout calculations */
-  contain: layout style;
-  box-sizing: border-box;
-}
-
-/* About title - fixed dimensions to prevent CLS when framer-motion loads */
-.about-title {
-  /* Reserve exact space based on font size to prevent shifts */
-  min-height: 80px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-@media (min-width: 640px) {
-  .about-title {
-    min-height: 110px;
-  }
-}
-
-@media (min-width: 768px) {
-  .about-title {
-    min-height: 140px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .about-title {
-    min-height: 200px;
+  .about-section {
+    contain: layout style;
   }
 }
 

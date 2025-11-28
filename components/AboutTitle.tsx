@@ -1,8 +1,5 @@
 import React, { useRef, useMemo, useEffect, useState } from "react";
 
-// Lazy import framer-motion types to avoid loading if not needed
-type MotionValue<T> = { get: () => T };
-
 interface TitleConfig {
   offset: [string, string];
   scale: [number, number];
@@ -76,7 +73,6 @@ function AboutTitle({ name }: AboutTitleProps) {
   useEffect(() => {
     if (prefersReducedMotion) return;
 
-    // Use IntersectionObserver for efficient viewport detection
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -107,23 +103,9 @@ function AboutTitle({ name }: AboutTitleProps) {
   }, [isInView]);
 
   // Static render for reduced motion or before animation loads
-  // CRITICAL: Initial styles must match config values to prevent CLS when framer-motion loads
   if (prefersReducedMotion || !motionModule) {
     return (
-      <div
-        ref={ref}
-        className="about-title"
-        style={{
-          // Use final animation values (not starting values) to prevent CLS
-          // When framer-motion loads, it will animate FROM these values
-          opacity: 1,
-          transform: 'none',
-          contain: 'layout style paint',
-          // Ensure consistent box model
-          boxSizing: 'border-box',
-          willChange: 'auto',
-        }}
-      >
+      <div ref={ref} className="about-title">
         {name}
       </div>
     );
@@ -145,11 +127,8 @@ const AnimatedTitle: React.FC<{
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: config.offset as any,
-    // Use layoutEffect: false to prevent forced reflows
-    layoutEffect: false,
   });
 
-  // Only use GPU-accelerated properties
   const scale = useTransform(scrollYProgress, [0, 1], config.scale);
   const opacity = useTransform(scrollYProgress, [0, 1], config.opacity);
   const translate = useTransform(scrollYProgress, [0, 1], config.translate);
@@ -165,11 +144,6 @@ const AnimatedTitle: React.FC<{
         translate,
         rotate,
         willChange: 'transform, opacity',
-        contain: 'layout style paint',
-        transformOrigin: 'center center',
-        // Prevent layout thrashing
-        backfaceVisibility: 'hidden',
-        perspective: 1000,
       }}
     >
       {name}
