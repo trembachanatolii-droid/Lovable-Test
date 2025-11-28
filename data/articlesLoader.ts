@@ -26,7 +26,10 @@ export async function loadArticle(id: string): Promise<ArticleData | undefined> 
 
     return article;
   } catch (error) {
-    console.error('Failed to load article:', id, error);
+    // Only log errors in development
+    if (import.meta.env.DEV) {
+      console.error('Failed to load article:', id, error);
+    }
     return undefined;
   }
 }

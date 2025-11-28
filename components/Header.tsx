@@ -174,7 +174,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className={`header-wrapper ${isScrolled ? 'scrolled' : ''}`}>
+      <header role="banner" className={`header-wrapper ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container">
           <div className="header-content">
             {/* Left: Logo */}

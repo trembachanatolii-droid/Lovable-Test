@@ -145,7 +145,7 @@ const PrivacyPolicyPage: React.FC = () => {
 
             <h3 className="text-xl font-semibold text-primary-darkBlue mb-3 mt-6">2.4 Do Not Track Signals</h3>
             <p className="mb-4">
-              Your web browser may have settings that allow you to transmit a "Do Not Track" signal when you visit various websites or use online services. Like many websites, our Site is not designed to respond to "Do Not Track" signals received from browsers. To learn more about "Do Not Track" signals, visit <a href="http://www.allaboutdnt.com" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.allaboutdnt.com</a>.
+              Your web browser may have settings that allow you to transmit a "Do Not Track" signal when you visit various websites or use online services. Like many websites, our Site is not designed to respond to "Do Not Track" signals received from browsers. To learn more about "Do Not Track" signals, visit <a href="https://www.allaboutdnt.com" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.allaboutdnt.com</a>.
             </p>
 
             <h3 className="text-xl font-semibold text-primary-darkBlue mb-3 mt-6">2.5 Managing Cookies</h3>
@@ -161,7 +161,7 @@ const PrivacyPolicyPage: React.FC = () => {
               We and our vendors may use first-party cookies or other first-party identifiers as well as third-party cookies or other third-party identifiers to deliver advertisements, create a profile of you, measure your interests, detect your demographics and location, identify your device, and personalize content.
             </p>
             <p className="mb-4">
-              For more information about how Google Analytics uses data collected through the Site, visit <a href="http://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.google.com/policies/privacy/partners/</a>. To opt out of Google Analytics cookies, visit: <a href="http://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.google.com/settings/ads</a> and <a href="https://tools.google.com/dlpage/gaoptout/" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">https://tools.google.com/dlpage/gaoptout/</a>.
+              For more information about how Google Analytics uses data collected through the Site, visit <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.google.com/policies/privacy/partners/</a>. To opt out of Google Analytics cookies, visit: <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.google.com/settings/ads</a> and <a href="https://tools.google.com/dlpage/gaoptout/" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">https://tools.google.com/dlpage/gaoptout/</a>.
             </p>
             <p className="mb-4">
               Trembach Law Firm is not responsible for the privacy policies or practices of any third parties, including our vendors providing analytics and other tracking technologies associated with our Site. We encourage you to familiarize yourself with their privacy policies.
