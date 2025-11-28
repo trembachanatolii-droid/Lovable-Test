@@ -527,46 +527,62 @@ const FoodAgricultureIndustryPage: React.FC = () => {
           </div>
 
           {/* Helpful Guides */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for Food Companies</h3>
-            <div className="grid md:grid-cols-4 gap-6">
-              <a href="#article/california-food-import-fda-usda-compliance" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">FDA Import Guide</h4>
-                <p className="text-sm text-text-secondary">FDA compliance basics</p>
-                <div className="triangle-slide">
-                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
+          <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+            <h3 className="text-xl font-bold text-primary-navy mb-4">Helpful Guides for Food Companies</h3>
+            <ul className="space-y-3">
+              <li>
+                <div className="service-link-item">
+                  <a href="#article/california-food-import-fda-usda-compliance" className="service-link">
+                    <span className="service-link__title">FDA Import Guide</span>
+                    <p className="service-link__description">FDA compliance basics</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a href="#regulatory-compliance-advisory" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">Compliance Services</h4>
-                <p className="text-sm text-text-secondary">Regulatory guidance</p>
-                <div className="triangle-slide">
-                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
+              </li>
+              <li>
+                <div className="service-link-item">
+                  <a href="#regulatory-compliance-advisory" className="service-link">
+                    <span className="service-link__title">Compliance Services</span>
+                    <p className="service-link__description">Regulatory guidance</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a href="#tariffs-duties-classification-guide" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
-                <p className="text-sm text-text-secondary">HTS classification best practices</p>
-                <div className="triangle-slide">
-                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
+              </li>
+              <li>
+                <div className="service-link-item">
+                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                    <span className="service-link__title">Tariff Classification Guide</span>
+                    <p className="service-link__description">HTS classification best practices</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a href="#trade-law-faq" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
-                <p className="text-sm text-text-secondary">Common food import questions</p>
-                <div className="triangle-slide">
-                  <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
+              </li>
+              <li>
+                <div className="service-link-item">
+                  <a href="#trade-law-faq" className="service-link">
+                    <span className="service-link__title">FAQ Center</span>
+                    <p className="service-link__description">Common food import questions</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
