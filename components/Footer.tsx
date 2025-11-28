@@ -1,12 +1,34 @@
 
 import React, { memo, useState } from 'react';
-import Button from './Button';
 
 interface FooterLink {
     label: string;
     href: string;
     isAddress?: boolean;
 }
+
+// Static footer links defined outside component to prevent re-creation
+const FOOTER_LINKS: Record<string, FooterLink[]> = {
+    'Firm': [
+        { label: 'About Us', href: '#about' },
+        { label: 'Practice Areas', href: '#practice-areas' },
+        { label: 'Careers', href: '#careers' },
+    ],
+    'Legal': [
+        { label: 'Privacy Policy', href: '#privacy-policy' },
+        { label: 'Terms of Use', href: '#terms' },
+        { label: 'Disclaimers', href: '#disclaimers' },
+        { label: 'Attorney Advertising', href: '#attorney-advertising' },
+    ],
+    'Connect': [
+        { label: 'Contact Us', href: '#contact' },
+        { label: '27001 Agoura Road', href: '#', isAddress: true },
+        { label: 'Suite 350', href: '#', isAddress: true },
+        { label: 'Calabasas, CA, 91301', href: '#', isAddress: true },
+        { label: '631-746-8290', href: 'tel:+16317468290' },
+        { label: 'infotrade@trembachlaw.com', href: 'mailto:infotrade@trembachlaw.com' },
+    ],
+};
 
 const Footer: React.FC = () => {
     const [subscribed, setSubscribed] = useState(false);
@@ -22,28 +44,6 @@ const Footer: React.FC = () => {
         }
     };
 
-    const footerLinks: Record<string, FooterLink[]> = {
-        'Firm': [
-            { label: 'About Us', href: '#about' },
-            { label: 'Practice Areas', href: '#practice-areas' },
-            { label: 'Careers', href: '#careers' },
-        ],
-        'Legal': [
-            { label: 'Privacy Policy', href: '#privacy-policy' },
-            { label: 'Terms of Use', href: '#terms' },
-            { label: 'Disclaimers', href: '#disclaimers' },
-            { label: 'Attorney Advertising', href: '#attorney-advertising' },
-        ],
-        'Connect': [
-            { label: 'Contact Us', href: '#contact' },
-            { label: '27001 Agoura Road', href: '#', isAddress: true },
-            { label: 'Suite 350', href: '#', isAddress: true },
-            { label: 'Calabasas, CA, 91301', href: '#', isAddress: true },
-            { label: '631-746-8290', href: 'tel:+16317468290' },
-            { label: 'infotrade@trembachlaw.com', href: 'mailto:infotrade@trembachlaw.com' },
-        ],
-    };
-
     const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         if (href.startsWith('#') && href !== '#') {
             e.preventDefault();
@@ -56,11 +56,9 @@ const Footer: React.FC = () => {
     return (
         <footer
             role="contentinfo"
-            className="bg-primary-navy border-t"
+            className="bg-primary-navy border-t footer-stable"
             style={{
                 borderTopColor: 'rgba(255, 255, 255, 0.2)',
-                contain: 'layout',
-                minHeight: '500px',
                 color: 'rgba(255, 255, 255, 0.85)'
             }}
         >
@@ -175,8 +173,8 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* Links */}
-                    <div className="grid grid-cols-3 gap-4 col-span-1 md:col-span-2 lg:col-span-2" style={{ contain: 'layout', minHeight: '250px' }}>
-                        {Object.entries(footerLinks).map(([title, links]) => (
+                    <div className="grid grid-cols-3 gap-4 col-span-1 md:col-span-2 lg:col-span-2 footer-links-grid">
+                        {Object.entries(FOOTER_LINKS).map(([title, links]) => (
                             <div key={title} style={{ contain: 'layout' }}>
                                 <div className="font-bold text-white mb-4 uppercase tracking-wider text-sm" style={{ minHeight: '20px', lineHeight: '1.4' }}>{title}</div>
                                 <ul className="list-none" style={{

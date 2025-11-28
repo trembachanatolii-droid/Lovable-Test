@@ -522,46 +522,78 @@ button, [role="button"], a[href] {
   color: var(--gray-dark);
 }
 
-/* Footer - Reserve exact space to prevent CLS */
-footer.bg-primary-navy {
-  min-height: 520px;
-  contain: layout style paint;
-  content-visibility: auto;
-  contain-intrinsic-block-size: 520px;
+/* Footer - Reserve exact space to prevent CLS with strict containment */
+footer.bg-primary-navy,
+footer.footer-stable {
+  /* Use exact heights instead of min-height to prevent any shifts */
+  height: 580px;
+  min-height: 580px;
+  max-height: 580px;
+  /* Strict containment prevents any internal changes from affecting layout */
+  contain: strict;
+  /* Don't use content-visibility: auto as it can cause shifts when scrolling into view */
+  content-visibility: visible;
+  /* Reserve exact intrinsic size */
+  contain-intrinsic-block-size: 580px;
+  contain-intrinsic-size: auto 580px;
+  /* Prevent any overflow from affecting layout */
+  overflow: hidden;
+  /* Ensure stable box model */
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
-  footer.bg-primary-navy {
-    min-height: 420px;
-    contain-intrinsic-block-size: 420px;
+  footer.bg-primary-navy,
+  footer.footer-stable {
+    height: 440px;
+    min-height: 440px;
+    max-height: 440px;
+    contain-intrinsic-block-size: 440px;
+    contain-intrinsic-size: auto 440px;
   }
 }
 
 @media (min-width: 1024px) {
-  footer.bg-primary-navy {
-    min-height: 380px;
-    contain-intrinsic-block-size: 380px;
+  footer.bg-primary-navy,
+  footer.footer-stable {
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+    contain-intrinsic-block-size: 400px;
+    contain-intrinsic-size: auto 400px;
   }
 }
 
+/* Footer inner container with fixed dimensions */
 footer .max-w-\[1376px\] {
-  min-height: inherit;
+  height: 100%;
+  contain: layout style;
+  box-sizing: border-box;
 }
 
+/* Footer grid with fixed dimensions */
 footer .grid {
-  min-height: 280px;
+  height: auto;
+  min-height: 300px;
+  contain: layout;
 }
 
 @media (min-width: 768px) {
   footer .grid {
-    min-height: 220px;
+    min-height: 240px;
   }
 }
 
 @media (min-width: 1024px) {
   footer .grid {
-    min-height: 180px;
+    min-height: 200px;
   }
+}
+
+/* Footer links grid with fixed dimensions */
+footer .footer-links-grid {
+  contain: layout style;
+  min-height: 200px;
 }
 
 /* Form elements fixed dimensions to prevent CLS */
@@ -569,6 +601,7 @@ footer form {
   height: 48px;
   min-height: 48px;
   max-height: 48px;
+  contain: layout;
 }
 
 footer input[type="email"],
@@ -576,6 +609,7 @@ footer button[type="submit"] {
   height: 48px;
   min-height: 48px;
   max-height: 48px;
+  box-sizing: border-box;
 }
 
 /* Newsletter success message fixed height */
@@ -584,6 +618,7 @@ footer [aria-live="polite"] {
   min-height: 28px;
   max-height: 28px;
   overflow: hidden;
+  contain: layout;
 }
 
 .section-divider {
