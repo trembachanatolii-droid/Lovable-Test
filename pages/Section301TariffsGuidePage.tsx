@@ -974,7 +974,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-litigation-services" className="service-link">
+                  <a href="#customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Trade Litigation</span>
                     <p className="service-link__description">Court of International Trade</p>
                     <div className="triangle-slide">

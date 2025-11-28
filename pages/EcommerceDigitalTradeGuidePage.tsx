@@ -613,7 +613,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Resources for Digital Economy</h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <a href="#resources/section-321-guide" className="card-link">
+              <a href="#article/e-commerce-section-321-california" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Section 321 Best Practices</h4>
                 <p className="text-sm text-text-secondary">De minimis compliance for online sellers</p>
                 <div className="triangle-slide">
@@ -622,7 +622,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#resources/encryption-export-controls" className="card-link">
+              <a href="#article/encryption-export-controls-california" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Encryption Export Controls</h4>
                 <p className="text-sm text-text-secondary">EAR compliance for software</p>
                 <div className="triangle-slide">
@@ -631,8 +631,8 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#resources/gdpr-data-transfers" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">GDPR Data Transfers</h4>
+              <a href="#regulatory-compliance-advisory" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">Regulatory Compliance</h4>
                 <p className="text-sm text-text-secondary">Cross-border data compliance</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

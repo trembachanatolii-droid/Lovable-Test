@@ -668,7 +668,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#resources/wro-defense" className="card-link">
+              <a href="#article/wro-defense-strategies-california" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">WRO Defense Toolkit</h4>
                 <p className="text-sm text-text-secondary">Withhold Release Order response guide</p>
                 <div className="triangle-slide">
@@ -677,8 +677,8 @@ const SupplyChainESGGuidePage: React.FC = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#resources/fcpa-trade-compliance" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">FCPA for Importers</h4>
+              <a href="#regulatory-compliance-advisory" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">Regulatory Compliance</h4>
                 <p className="text-sm text-text-secondary">Anti-corruption best practices</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
