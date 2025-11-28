@@ -221,8 +221,8 @@ const Header: React.FC = () => {
                 <SearchIcon style={{ height: '1.5rem', width: '1.5rem' }} aria-hidden="true" />
               </a>
               <a
-                href="tel:+16317468290"
-                aria-label="Call us at 631-746-8290 for free consultation"
+                href="tel:+13107441328"
+                aria-label="Call us at (310) 744-1328 for free consultation"
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -252,7 +252,7 @@ const Header: React.FC = () => {
                 </svg>
                 <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2 }}>
                   <span style={{ fontSize: '0.6875rem', opacity: 0.9, textTransform: 'uppercase', letterSpacing: '0.03em' }}>Free Consultation</span>
-                  <span style={{ fontWeight: 600, fontSize: '0.8125rem' }}>631-746-8290</span>
+                  <span style={{ fontWeight: 600, fontSize: '0.8125rem' }}>(310) 744-1328</span>
                 </div>
               </a>
             </div>
@@ -261,8 +261,8 @@ const Header: React.FC = () => {
             <div className="mobile-menu-btn" style={{ alignItems: 'center', gap: '0.75rem' }}>
               {/* Mobile Phone CTA */}
               <a
-                href="tel:+16317468290"
-                aria-label="Call us at 631-746-8290"
+                href="tel:+13107441328"
+                aria-label="Call us at (310) 744-1328"
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -379,8 +379,8 @@ const Header: React.FC = () => {
             </MobileNavLink>
           ))}
           <a
-            href="tel:+16317468290"
-            aria-label="Call us at 631-746-8290 for free consultation"
+            href="tel:+13107441328"
+            aria-label="Call us at (310) 744-1328 for free consultation"
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -410,7 +410,7 @@ const Header: React.FC = () => {
             </svg>
             <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.3 }}>
               <span style={{ fontSize: '0.75rem', opacity: 0.95, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Free Consultation</span>
-              <span style={{ fontWeight: 600 }}>631-746-8290</span>
+              <span style={{ fontWeight: 600 }}>(310) 744-1328</span>
             </div>
           </a>
         </nav>

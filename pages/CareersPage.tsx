@@ -338,7 +338,7 @@ const CareersPage: React.FC = () => {
                         <div>
                             <h3 className="text-lg font-bold text-primary-navy mb-3">Contact for Questions</h3>
                             <p className="text-text-secondary text-sm mb-2">Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a></p>
-                            <p className="text-text-secondary text-sm">Phone: <a href="tel:+16317468290" className="text-secondary-teal hover:underline">(631) 746-8290</a></p>
+                            <p className="text-text-secondary text-sm">Phone: <a href="tel:+13107441328" className="text-secondary-teal hover:underline">(310) 744-1328</a></p>
                         </div>
                     </div>
                 </div>

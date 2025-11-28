@@ -25,7 +25,8 @@ const FOOTER_LINKS: Record<string, FooterLink[]> = {
         { label: '27001 Agoura Road', href: '#', isAddress: true },
         { label: 'Suite 350', href: '#', isAddress: true },
         { label: 'Calabasas, CA, 91301', href: '#', isAddress: true },
-        { label: '631-746-8290', href: 'tel:+16317468290' },
+        { label: '(310) 744-1328', href: 'tel:+13107441328' },
+        { label: 'Fax: (310) 744-1219', href: '#', isAddress: true },
         { label: 'infotrade@trembachlaw.com', href: 'mailto:infotrade@trembachlaw.com' },
     ],
 };

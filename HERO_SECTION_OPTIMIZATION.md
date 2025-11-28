@@ -85,7 +85,7 @@ The hero section has been optimized to use the harbor/port background image whil
 
 ### 3. Meta Description ✅
 - **Status:** PASS (155 chars)
-- **Content:** "California international trade attorney & customs lawyer. CBP defense, trade compliance, import/export law for CA businesses. Free consultation: 631-746-8290."
+- **Content:** "California international trade attorney & customs lawyer. CBP defense, trade compliance, import/export law for CA businesses. Free consultation: (310) 744-1328."
 
 ### 4. Canonical Link ✅
 - **Status:** PASS

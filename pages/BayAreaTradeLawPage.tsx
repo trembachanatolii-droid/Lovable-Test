@@ -12,7 +12,7 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const BayAreaTradeLawPage: React.FC = () => {
   useMeta({
     title: 'SF Bay Area Trade Attorney | Silicon Valley CA',
-    description: 'San Francisco trade attorney & Oakland port customs lawyer. Export controls for tech companies, ITAR/EAR, startups. Bay Area. 631-746-8290.',
+    description: 'San Francisco trade attorney & Oakland port customs lawyer. Export controls for tech companies, ITAR/EAR, startups. Bay Area. (310) 744-1328.',
     canonical: 'bay-area-trade-law-attorney',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-bay-area.jpg`,
@@ -66,7 +66,7 @@ const BayAreaTradeLawPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Free Tech Trade Consultation</a>
-            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
+            <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
       </section>
@@ -423,7 +423,7 @@ const BayAreaTradeLawPage: React.FC = () => {
               </div>
               <p className="text-sm text-text-secondary mt-4">
                 <strong>Headquarters:</strong> 27001 Agoura Road, Suite 350, Calabasas, CA 91301<br />
-                <strong>Phone:</strong> <a href="tel:+16317468290" className="text-secondary-teal hover:underline">(631) 746-8290</a>
+                <strong>Phone:</strong> <a href="tel:+13107441328" className="text-secondary-teal hover:underline">(310) 744-1328</a>
               </p>
             </div>
             </div>
@@ -645,8 +645,8 @@ const BayAreaTradeLawPage: React.FC = () => {
             <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
-            <Button href="tel:+16317468290" variant="outline">
-              Call (631) 746-8290
+            <Button href="tel:+13107441328" variant="outline">
+              Call (310) 744-1328
             </Button>
           </div>
         </div>

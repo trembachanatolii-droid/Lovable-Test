@@ -67,7 +67,7 @@ const AttorneyAdvertisingPage: React.FC = () => {
               Trembach Law Firm, APC<br />
               27001 Agoura Road, Suite 350<br />
               Calabasas, California 91301<br />
-              Phone: 631-746-8290<br />
+              Phone: (310) 744-1328<br />
               Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a>
             </p>
           </section>
@@ -97,7 +97,7 @@ const AttorneyAdvertisingPage: React.FC = () => {
               Trembach Law Firm, APC<br />
               27001 Agoura Road, Suite 350<br />
               Calabasas, California 91301<br />
-              Phone: 631-746-8290<br />
+              Phone: (310) 744-1328<br />
               Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a>
             </address>
           </section>
@@ -204,7 +204,7 @@ const AttorneyAdvertisingPage: React.FC = () => {
 
             <h3 className="text-xl font-semibold text-primary-darkBlue mb-3 mt-6">4.2 To Request Information or Schedule a Consultation</h3>
             <p className="mb-2">
-              Phone: 631-746-8290 (available 24 hours a day, 7 days a week)<br />
+              Phone: (310) 744-1328 (available 24 hours a day, 7 days a week)<br />
               Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a>
             </p>
           </section>
@@ -385,7 +385,7 @@ const AttorneyAdvertisingPage: React.FC = () => {
               Attention: Advertising Compliance<br />
               27001 Agoura Road, Suite 350<br />
               Calabasas, California 91301<br />
-              Phone: 631-746-8290<br />
+              Phone: (310) 744-1328<br />
               Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a>
             </address>
 
@@ -451,7 +451,7 @@ const AttorneyAdvertisingPage: React.FC = () => {
               <strong className="text-soft-teal text-xl block mb-2">Trembach Law Firm, APC</strong>
               <p className="text-soft-teal mb-4">International Trade Law & Customs Law</p>
               <p className="mb-2 text-white">
-                <strong>Phone:</strong> 631-746-8290<br />
+                <strong>Phone:</strong> (310) 744-1328<br />
                 <span className="text-sm">Available 24 hours a day, 7 days a week</span>
               </p>
               <p className="mb-2 text-white">

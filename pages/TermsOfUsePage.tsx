@@ -67,7 +67,7 @@ const TermsOfUsePage: React.FC = () => {
               Trembach Law Firm, APC<br />
               27001 Agoura Road, Suite 350<br />
               Calabasas, California 91301<br />
-              Phone: 631-746-8290<br />
+              Phone: (310) 744-1328<br />
               Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a>
             </p>
           </section>
@@ -99,7 +99,7 @@ const TermsOfUsePage: React.FC = () => {
               Calabasas, California 91301
             </p>
             <p className="mb-4">
-              Phone: 631-746-8290 (available 24 hours a day, 7 days a week)<br />
+              Phone: (310) 744-1328 (available 24 hours a day, 7 days a week)<br />
               Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a>
             </p>
             <p className="mb-4">
@@ -439,7 +439,7 @@ const TermsOfUsePage: React.FC = () => {
               Trembach Law Firm, APC<br />
               Attention: Website Terms Inquiry<br />
               <br />
-              Phone: 631-746-8290 (available 24 hours a day, 7 days a week)<br />
+              Phone: (310) 744-1328 (available 24 hours a day, 7 days a week)<br />
               Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a><br />
               <br />
               Mailing Address:<br />
@@ -455,7 +455,7 @@ const TermsOfUsePage: React.FC = () => {
               If you are a California resident, you may have additional rights under California law, including under the California Consumer Privacy Act (CCPA). Please see our <a href="#privacy-policy" className="text-secondary-teal hover:underline">Privacy Policy</a> for more information about your privacy rights.
             </p>
             <p className="mb-4">
-              Under California Civil Code Section 1789.3, California users are entitled to the following specific consumer rights notice: If you have a question or complaint regarding the Site, please send an email to <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a>. You may also contact us by writing to the address listed above or by calling 631-746-8290. California residents may reach the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by mail at 1625 North Market Blvd., Suite N 112, Sacramento, CA 95834, or by telephone at (916) 445-1254 or (800) 952-5210.
+              Under California Civil Code Section 1789.3, California users are entitled to the following specific consumer rights notice: If you have a question or complaint regarding the Site, please send an email to <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a>. You may also contact us by writing to the address listed above or by calling (310) 744-1328. California residents may reach the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by mail at 1625 North Market Blvd., Suite N 112, Sacramento, CA 95834, or by telephone at (916) 445-1254 or (800) 952-5210.
             </p>
           </section>
 

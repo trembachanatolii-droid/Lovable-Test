@@ -423,8 +423,8 @@ const ResourcesHubPage: React.FC = () => {
             <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
-            <Button href="tel:+16317468290" variant="outline">
-              Call (631) 746-8290
+            <Button href="tel:+13107441328" variant="outline">
+              Call (310) 744-1328
             </Button>
           </div>
         </div>

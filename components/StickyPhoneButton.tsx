@@ -23,8 +23,8 @@ const StickyPhoneButton: React.FC<StickyPhoneButtonProps> = ({ showOnMobileOnly 
 
   return (
     <a
-      href="tel:+16317468290"
-      aria-label="Call us at 631-746-8290"
+      href="tel:+13107441328"
+      aria-label="Call us at (310) 744-1328"
       className={`${showOnMobileOnly ? 'md:hidden' : ''} fixed bottom-6 right-6 z-50 transition-all duration-300 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16 pointer-events-none'
       }`}
@@ -61,7 +61,7 @@ const StickyPhoneButton: React.FC<StickyPhoneButtonProps> = ({ showOnMobileOnly 
         {/* Text (hidden on smaller mobile, shown on larger mobile) */}
         <div className="hidden xs:block text-left whitespace-nowrap">
           <div className="text-sm uppercase tracking-wider opacity-90">Call Now</div>
-          <div className="font-bold text-base">631-746-8290</div>
+          <div className="font-bold text-base">(310) 744-1328</div>
         </div>
       </div>
     </a>

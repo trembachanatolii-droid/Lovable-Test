@@ -20,7 +20,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
 
   useMeta({
     title: 'HTS Classification CA | AD/CVD | Section 301 Guide',
-    description: 'Complete guide: HTS classification, antidumping/countervailing duties, Section 301/232 tariffs, trade remedies, customs valuation. 631-746-8290.',
+    description: 'Complete guide: HTS classification, antidumping/countervailing duties, Section 301/232 tariffs, trade remedies, customs valuation. (310) 744-1328.',
     canonical: 'tariffs-duties-classification-guide',
     ogType: 'article',
     ogImage: `${siteConfig.siteUrl}/og-image-tariffs-guide.jpg`,

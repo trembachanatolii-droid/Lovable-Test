@@ -67,7 +67,7 @@ const PrivacyPolicyPage: React.FC = () => {
               Trembach Law Firm, APC<br />
               27001 Agoura Road, Suite 350<br />
               Calabasas, California 91301<br />
-              Phone: 631-746-8290<br />
+              Phone: (310) 744-1328<br />
               Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a>
             </p>
           </section>
@@ -474,7 +474,7 @@ const PrivacyPolicyPage: React.FC = () => {
             <p className="mb-2">To exercise any of these rights, please submit a request by:</p>
             <ul className="list-disc ml-6 mb-4 space-y-2">
               <li>EMAIL: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a></li>
-              <li>PHONE: 631-746-8290 (available 24 hours a day, 7 days a week)</li>
+              <li>PHONE: (310) 744-1328 (available 24 hours a day, 7 days a week)</li>
               <li>MAIL: Trembach Law Firm, APC, Attention: Privacy Request, 27001 Agoura Road, Suite 350, Calabasas, California 91301</li>
             </ul>
             <p className="mb-4">
@@ -521,7 +521,7 @@ const PrivacyPolicyPage: React.FC = () => {
               Trembach Law Firm, APC<br />
               Attention: Privacy Inquiry<br />
               <br />
-              Phone: 631-746-8290 (available 24 hours a day, 7 days a week)<br />
+              Phone: (310) 744-1328 (available 24 hours a day, 7 days a week)<br />
               Email: <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a><br />
               <br />
               Mailing Address:<br />

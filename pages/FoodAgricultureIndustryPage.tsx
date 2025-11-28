@@ -11,7 +11,7 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const FoodAgricultureIndustryPage: React.FC = () => {
   useMeta({
     title: 'Food Import Attorney CA | Agriculture Trade Lawyer | FDA',
-    description: 'California food import attorney & agricultural trade lawyer. FDA compliance, USDA regulations, food safety, HTS classification & produce import compliance. Expert for food importers & agricultural producers. Call 631-746-8290.',
+    description: 'California food import attorney & agricultural trade lawyer. FDA compliance, USDA regulations, food safety, HTS classification & produce import compliance. Expert for food importers & agricultural producers. Call (310) 744-1328.',
     canonical: 'food-agriculture-trade-attorney',
     schema: [
       generateWebPageSchema({
@@ -57,7 +57,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Schedule FDA/USDA Consultation</a>
-            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
+            <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
       </section>

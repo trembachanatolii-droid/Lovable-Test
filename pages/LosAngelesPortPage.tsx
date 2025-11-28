@@ -12,7 +12,7 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const LosAngelesPortPage: React.FC = () => {
   useMeta({
     title: 'LA Customs Attorney | Long Beach Port Lawyer CA',
-    description: 'Los Angeles customs attorney & Long Beach port lawyer. CA port customs, CBP defense, customs audits, trade compliance. Carson to Torrance. 631-746-8290.',
+    description: 'Los Angeles customs attorney & Long Beach port lawyer. CA port customs, CBP defense, customs audits, trade compliance. Carson to Torrance. (310) 744-1328.',
     canonical: 'los-angeles-port-customs-attorney',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-la-port.jpg`,
@@ -67,7 +67,7 @@ const LosAngelesPortPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
-            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
+            <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
       </section>
