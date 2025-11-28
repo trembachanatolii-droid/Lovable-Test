@@ -14,7 +14,7 @@ import { siteConfig } from '../config/siteConfig';
 import { getArticlePreviews } from '../data/articlesLoader';
 import { articleMetadata } from '../data/articleMetadata';
 
-// Get the latest 3 articles by date (using lightweight previews)
+// Get the latest 5 articles by date (using lightweight previews)
 // This function is now called inside the component to avoid blocking module load
 const getLatestArticles = (): NewsArticle[] => {
   // Get article previews (lightweight, no full content)
@@ -33,8 +33,8 @@ const getLatestArticles = (): NewsArticle[] => {
     b.metadata.isoDate.localeCompare(a.metadata.isoDate)
   );
 
-  // Take top 3 and map to NewsArticle format
-  return articlesWithMetadata.slice(0, 3).map((item, index) => ({
+  // Take top 5 and map to NewsArticle format
+  return articlesWithMetadata.slice(0, 5).map((item, index) => ({
     id: index + 1,
     date: item.metadata.date.split(' ').map((word, i) =>
       i === 0 ? word.charAt(0) + word.slice(1).toLowerCase() : word
