@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
+
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
-import EvaluationForm from '../components/EvaluationForm';
 
+
+// Lazy load EvaluationForm (below-the-fold component)
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const GlossaryPage: React.FC = () => {
   // State for accordion functionality
   const [openTerms, setOpenTerms] = useState<{[key: string]: boolean}>({});
@@ -803,7 +806,9 @@ const GlossaryPage: React.FC = () => {
       </section>
 
       {/* Evaluation Form */}
-      <EvaluationForm theme="light" />
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}>
+        <EvaluationForm theme="light" />
+      </Suspense>
     </div>
   );
 };

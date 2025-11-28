@@ -1,9 +1,11 @@
 
-import React, { useEffect } from 'react';
-import EvaluationForm from '../components/EvaluationForm';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateBreadcrumbSchema } from '../utils/seo';
+
+// Lazy load EvaluationForm (below-the-fold component)
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
 const ContactPage: React.FC = () => {
   useMeta({
@@ -262,7 +264,9 @@ const ContactPage: React.FC = () => {
       </section>
 
       {/* Use Light theme for visual separation from footer and white section above */}
-      <EvaluationForm theme="light" />
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading contact form" />}>
+        <EvaluationForm theme="light" />
+      </Suspense>
     </div>
   );
 };

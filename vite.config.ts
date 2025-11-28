@@ -3,6 +3,37 @@ import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import compression from 'vite-plugin-compression';
 
+// Custom plugin to optimize resource hints and reduce critical request chain
+const resourceHintsPlugin = () => {
+  return {
+    name: 'resource-hints-plugin',
+    transformIndexHtml: {
+      // Use 'post' order to access generated bundle information
+      order: 'post',
+      handler(html: string, { bundle }) {
+        // In post-build, we can access the actual chunk names with hashes
+        if (!bundle) return html;
+
+        // Find framer-motion chunk for prefetch hint
+        const chunks = Object.values(bundle).filter(
+          (chunk: any) => chunk.type === 'chunk' && chunk.fileName.includes('framer-motion')
+        );
+
+        if (chunks.length > 0) {
+          const framerChunk = chunks[0] as any;
+          const prefetchHint = `
+    <!-- Prefetch framer-motion for near-immediate loading after initial render -->
+    <link rel="prefetch" href="/${framerChunk.fileName}" as="script" crossorigin>`;
+
+          return html.replace('</head>', `${prefetchHint}\n</head>`);
+        }
+
+        return html;
+      },
+    },
+  };
+};
+
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
@@ -15,6 +46,8 @@ export default defineConfig(({ mode }) => {
           // Optimize JSX runtime
           jsxRuntime: 'automatic',
         }),
+        // Resource hints for optimal critical request chain
+        resourceHintsPlugin(),
         // Gzip compression
         compression({
           algorithm: 'gzip',
@@ -70,33 +103,49 @@ export default defineConfig(({ mode }) => {
         // Module preload polyfill for better performance
         modulePreload: {
           polyfill: false, // Disable polyfill to reduce bundle size for modern browsers
-          resolveDependencies: (filename, deps, depsWithFullPath) => {
-            // Aggressive preloading strategy to reduce critical request chain
-            // Priority: react-vendor > pages-core > other critical deps
+          resolveDependencies: (filename, deps) => {
+            // CRITICAL REQUEST CHAIN OPTIMIZATION
+            // This function determines which dependencies get <link rel="modulepreload"> hints
+            // Goal: Reduce waterfall by preloading critical chunks in parallel with parent chunk
+            //
+            // Critical Path Priority (for initial page load):
+            // 1. react-vendor (React + ReactDOM - required for all renders)
+            // 2. pages-core (HomePage, AboutPage, ContactPage - initial route)
+            // 3. vendor (other critical utilities)
+            //
+            // Excluded from critical path:
+            // - framer-motion (lazy loaded after initial render via DeferredMotionProvider)
+            // - pages-practice, pages-resources, pages-legal (lazy loaded on navigation)
 
-            // Always preload react-vendor (highest priority - needed for all renders)
-            const criticalDeps = deps.filter(dep => dep.includes('react-vendor'));
+            // Filter out non-critical chunks that should NOT be preloaded
+            const excludedChunks = [
+              'framer-motion',      // Deferred loading for better FCP/LCP
+              'pages-resources',    // Lazy loaded on navigation
+              'pages-practice',     // Lazy loaded on navigation
+              'pages-legal',        // Lazy loaded on navigation
+            ];
 
-            // Preload pages-core for initial HomePage render
-            const pageCoreDeps = deps.filter(dep => dep.includes('pages-core'));
-            criticalDeps.push(...pageCoreDeps);
+            // Start with all dependencies, then filter out excluded ones
+            let preloadDeps = deps.filter(dep =>
+              !excludedChunks.some(excluded => dep.includes(excluded))
+            );
 
-            // For index chunk, also preload vendor chunk (contains React Router and other essentials)
+            // For the main index chunk, ensure critical dependencies are prioritized
             if (filename.includes('index')) {
-              const vendorDeps = deps.filter(dep =>
-                dep.includes('vendor') && !dep.includes('react-vendor')
-              );
-              criticalDeps.push(...vendorDeps);
+              // Sort to ensure critical chunks are preloaded first (browser processes in order)
+              preloadDeps.sort((a, b) => {
+                // Priority order: react-vendor > pages-core > vendor > others
+                const getPriority = (dep: string) => {
+                  if (dep.includes('react-vendor')) return 1;
+                  if (dep.includes('pages-core')) return 2;
+                  if (dep.includes('vendor')) return 3;
+                  return 4;
+                };
+                return getPriority(a) - getPriority(b);
+              });
             }
 
-            // Explicitly EXCLUDE framer-motion from critical path (lazy loaded after initial render)
-            // Exclude non-critical page chunks (practice, resources, legal pages)
-            return criticalDeps.filter(dep =>
-              !dep.includes('framer-motion') &&
-              !dep.includes('pages-resources') &&
-              !dep.includes('pages-practice') &&
-              !dep.includes('pages-legal')
-            );
+            return preloadDeps;
           },
         },
         // Rollup options for better optimization and reduced unused JS
@@ -160,10 +209,17 @@ export default defineConfig(({ mode }) => {
         // Report compressed size
         reportCompressedSize: true,
       },
-      // Optimize dependencies
+      // Optimize dependencies for faster cold starts
       optimizeDeps: {
-        include: ['react', 'react-dom'],
+        // Pre-bundle critical dependencies to reduce request waterfalls
+        include: [
+          'react',
+          'react-dom',
+          'react/jsx-runtime',
+          'react-dom/client',
+        ],
         // Exclude framer-motion from eager optimization since it's lazy loaded
+        // This prevents it from being bundled with critical dependencies
         exclude: ['framer-motion'],
       },
       // Enable esbuild optimizations

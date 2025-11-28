@@ -1,8 +1,8 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
+
 import { loadArticle } from '../data/articlesLoader';
 import { articleMetadata, getArticleCategory, formatDateForDisplay } from '../data/articleMetadata';
-import EvaluationForm from '../components/EvaluationForm';
 import RelatedArticles from '../components/RelatedArticles';
 import ArticleCTA from '../components/ArticleCTA';
 import { useMeta } from '../hooks/useMeta';
@@ -11,6 +11,9 @@ import { generateBreadcrumbSchema } from '../utils/seo';
 import { sanitizeHTML } from '../utils/sanitize';
 import type { ArticleData } from '../types';
 
+
+// Lazy load EvaluationForm (below-the-fold component)
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 interface ArticleDisplayPageProps {
   articleId: string;
 }
@@ -311,7 +314,9 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
       <div className="bg-white py-11"></div>
 
       {/* Evaluation CTA */}
-      <EvaluationForm theme="light" />
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}>
+        <EvaluationForm theme="light" />
+      </Suspense>
     </>
   );
 };

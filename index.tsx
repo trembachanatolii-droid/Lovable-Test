@@ -18,9 +18,25 @@ const DeferredMotionProvider: React.FC<{ children: React.ReactNode }> = ({ child
   const [shouldLoadMotion, setShouldLoadMotion] = useState(false);
 
   useEffect(() => {
-    // Load framer-motion after initial render
-    const timer = setTimeout(() => setShouldLoadMotion(true), 0);
-    return () => clearTimeout(timer);
+    // Use requestIdleCallback to load framer-motion during idle time
+    // This prevents blocking the main thread during critical rendering
+    // Fallback to setTimeout for browsers that don't support requestIdleCallback
+    const scheduleMotionLoad = () => {
+      if ('requestIdleCallback' in window) {
+        const idleCallbackId = requestIdleCallback(
+          () => setShouldLoadMotion(true),
+          { timeout: 2000 } // Fallback timeout to ensure it loads eventually
+        );
+        return () => cancelIdleCallback(idleCallbackId);
+      } else {
+        // Fallback: defer with longer timeout to let critical rendering complete
+        const timer = setTimeout(() => setShouldLoadMotion(true), 100);
+        return () => clearTimeout(timer);
+      }
+    };
+
+    const cleanup = scheduleMotionLoad();
+    return cleanup;
   }, []);
 
   if (!shouldLoadMotion) {

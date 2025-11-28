@@ -1,12 +1,15 @@
 
-import React, { useEffect, useState } from 'react';
-import EvaluationForm from '../components/EvaluationForm';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
+
 import { SearchIcon } from '../components/icons/SearchIcon';
 import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 
+
+// Lazy load EvaluationForm (below-the-fold component)
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 // --- Types ---
 type LinkItem = {
   label: string;
@@ -532,7 +535,9 @@ const UsefulLinksPage: React.FC = () => {
       </section>
 
       {/* Evaluation Form */}
-      <EvaluationForm theme="light" />
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}>
+        <EvaluationForm theme="light" />
+      </Suspense>
     </div>
   );
 };
