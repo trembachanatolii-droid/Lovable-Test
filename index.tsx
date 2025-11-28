@@ -1,7 +1,39 @@
-import React from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import { LazyMotion, domAnimation } from 'framer-motion';
 import App from './App';
+
+// Defer framer-motion loading until after initial render to reduce critical path
+const FramerMotionWrapper = lazy(() =>
+  import('framer-motion').then((mod) => ({
+    default: ({ children }: { children: React.ReactNode }) => (
+      <mod.LazyMotion features={mod.domAnimation} strict>
+        {children}
+      </mod.LazyMotion>
+    ),
+  }))
+);
+
+// Component that defers framer-motion loading
+const DeferredMotionProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [shouldLoadMotion, setShouldLoadMotion] = useState(false);
+
+  useEffect(() => {
+    // Load framer-motion after initial render
+    const timer = setTimeout(() => setShouldLoadMotion(true), 0);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!shouldLoadMotion) {
+    // Render without framer-motion initially for faster first paint
+    return <>{children}</>;
+  }
+
+  return (
+    <Suspense fallback={children}>
+      <FramerMotionWrapper>{children}</FramerMotionWrapper>
+    </Suspense>
+  );
+};
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -10,8 +42,8 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <LazyMotion features={domAnimation} strict>
+    <DeferredMotionProvider>
       <App />
-    </LazyMotion>
+    </DeferredMotionProvider>
   </React.StrictMode>
 );

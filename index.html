@@ -43,6 +43,12 @@
 <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/styles.css"></noscript>
 
+<!-- Critical JS Preload Hints - Reduce request waterfall -->
+<!-- Note: Vite will inject modulepreload tags automatically during build -->
+<!-- These are backup hints for critical vendor chunks -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+
 <style>
 /* Critical CSS - System Fonts & Base Styles */
 :root {

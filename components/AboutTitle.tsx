@@ -1,11 +1,10 @@
-import React, { useRef } from "react";
-import { m, useScroll, useTransform } from "framer-motion";
+import React, { useRef, useState, useEffect } from "react";
+import { m, useScroll, useTransform, useReducedMotion } from "framer-motion";
 
 interface TitleConfig {
   offset: [string, string];
   scale: [number, number];
   opacity: [number, number];
-  blur: [string, string, string];
   translate: [string, string];
   rotate: [string, string, string];
 }
@@ -19,7 +18,6 @@ const TITLE_CONFIG: TitleConfigMap = {
     offset: ["0.7 0", "1 1"],
     scale: [0.8, 1],
     opacity: [0, 1],
-    blur: ["blur(15px)", "blur(0px)", "blur(0px)"],
     translate: ["0px 350px", "0px 0px"],
     rotate: ["0deg", "0deg", "0deg"],
   },
@@ -27,7 +25,6 @@ const TITLE_CONFIG: TitleConfigMap = {
     offset: ["0.7 0", "1 1"],
     scale: [0.8, 1],
     opacity: [0.1, 1],
-    blur: ["blur(15px)", "blur(0px)", "blur(0px)"],
     translate: ["0px 150px", "0px 0px"],
     rotate: ["0deg", "0deg", "0deg"],
   },
@@ -35,7 +32,6 @@ const TITLE_CONFIG: TitleConfigMap = {
     offset: ["0 0", "1 1"],
     scale: [0.8, 1],
     opacity: [0.2, 1],
-    blur: ["blur(10px)", "blur(0px)", "blur(0px)"],
     translate: ["0px 150px", "0px 0px"],
     rotate: ["180deg", "180deg", "0deg"],
   },
@@ -43,7 +39,6 @@ const TITLE_CONFIG: TitleConfigMap = {
     offset: ["0.7 0", "1 1"],
     scale: [0.8, 1],
     opacity: [0.1, 1],
-    blur: ["blur(15px)", "blur(0px)", "blur(0px)"],
     translate: ["0px 150px", "0px 0px"],
     rotate: ["0deg", "0deg", "0deg"],
   },
@@ -51,7 +46,6 @@ const TITLE_CONFIG: TitleConfigMap = {
     offset: ["0.7 0", "1 1"],
     scale: [0.8, 1],
     opacity: [0.1, 1],
-    blur: ["blur(15px)", "blur(0px)", "blur(0px)"],
     translate: ["0px 150px", "0px 0px"],
     rotate: ["0deg", "0deg", "0deg"],
   },
@@ -59,7 +53,6 @@ const TITLE_CONFIG: TitleConfigMap = {
     offset: ["0.7 0", "1 1"],
     scale: [0.8, 1],
     opacity: [0.1, 1],
-    blur: ["blur(15px)", "blur(0px)", "blur(0px)"],
     translate: ["0px 150px", "0px 0px"],
     rotate: ["0deg", "0deg", "0deg"],
   },
@@ -71,19 +64,47 @@ interface AboutTitleProps {
 
 function AboutTitle({ name }: AboutTitleProps) {
   const config = TITLE_CONFIG[name] || TITLE_CONFIG["Compliance"];
+  const shouldReduceMotion = useReducedMotion();
+  const [isReady, setIsReady] = useState(false);
 
   const ref = useRef<HTMLDivElement>(null);
+
+  // Defer animations until after initial paint to prevent forced reflows
+  useEffect(() => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setIsReady(true);
+      });
+    });
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: config.offset as any,
   });
 
+  // Only use GPU-accelerated properties: transform and opacity
   const scale = useTransform(scrollYProgress, [0, 1], config.scale);
   const opacity = useTransform(scrollYProgress, [0, 1], config.opacity);
-  const blur = useTransform(scrollYProgress, [0, 0.5, 1], config.blur);
   const translate = useTransform(scrollYProgress, [0, 1], config.translate);
   const rotate = useTransform(scrollYProgress, [0, 0.5, 1], config.rotate);
+
+  // If reduced motion is preferred or animations not ready, show static version
+  if (shouldReduceMotion || !isReady) {
+    return (
+      <div
+        ref={ref}
+        className="about-title"
+        style={{
+          opacity: 1,
+          transform: 'none',
+          contain: 'layout style paint',
+        }}
+      >
+        {name}
+      </div>
+    );
+  }
 
   return (
     <m.div
@@ -91,13 +112,16 @@ function AboutTitle({ name }: AboutTitleProps) {
       className="about-title"
       style={{
         scale,
-        filter: blur,
         opacity,
         translate,
         rotate,
-        willChange: 'transform, opacity, filter',
-        contain: 'layout style',
+        // Only use transform and opacity for GPU acceleration - NO blur filter
+        willChange: 'transform, opacity',
+        // Add paint containment to isolate layout calculations
+        contain: 'layout style paint',
         transformOrigin: 'center center',
+        // Force GPU layer to prevent reflows
+        transform: 'translateZ(0)',
       }}
     >
       {name}

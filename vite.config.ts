@@ -70,18 +70,32 @@ export default defineConfig(({ mode }) => {
         // Module preload polyfill for better performance
         modulePreload: {
           polyfill: false, // Disable polyfill to reduce bundle size for modern browsers
-          resolveDependencies: (filename, deps) => {
-            // Only preload truly critical dependencies for initial render
-            // Exclude framer-motion since it's lazy loaded via JusticePillars
-            // Exclude non-critical page chunks
-            return deps.filter(dep =>
-              dep.includes('react-vendor') ||
-              dep.includes('pages-core') ||
-              (filename.includes('index') &&
-                !dep.includes('framer-motion') &&
-                !dep.includes('pages-resources') &&
-                !dep.includes('pages-practice') &&
-                !dep.includes('pages-legal'))
+          resolveDependencies: (filename, deps, depsWithFullPath) => {
+            // Aggressive preloading strategy to reduce critical request chain
+            // Priority: react-vendor > pages-core > other critical deps
+
+            // Always preload react-vendor (highest priority - needed for all renders)
+            const criticalDeps = deps.filter(dep => dep.includes('react-vendor'));
+
+            // Preload pages-core for initial HomePage render
+            const pageCoreDeps = deps.filter(dep => dep.includes('pages-core'));
+            criticalDeps.push(...pageCoreDeps);
+
+            // For index chunk, also preload vendor chunk (contains React Router and other essentials)
+            if (filename.includes('index')) {
+              const vendorDeps = deps.filter(dep =>
+                dep.includes('vendor') && !dep.includes('react-vendor')
+              );
+              criticalDeps.push(...vendorDeps);
+            }
+
+            // Explicitly EXCLUDE framer-motion from critical path (lazy loaded after initial render)
+            // Exclude non-critical page chunks (practice, resources, legal pages)
+            return criticalDeps.filter(dep =>
+              !dep.includes('framer-motion') &&
+              !dep.includes('pages-resources') &&
+              !dep.includes('pages-practice') &&
+              !dep.includes('pages-legal')
             );
           },
         },
@@ -96,7 +110,8 @@ export default defineConfig(({ mode }) => {
                 if (id.includes('react') || id.includes('react-dom')) {
                   return 'react-vendor';
                 }
-                // Framer Motion - lazy loaded only when JusticePillars renders
+                // Framer Motion - lazy loaded after initial render to reduce critical path
+                // This improves First Contentful Paint (FCP) and Largest Contentful Paint (LCP)
                 if (id.includes('framer-motion')) {
                   return 'framer-motion';
                 }
@@ -147,9 +162,9 @@ export default defineConfig(({ mode }) => {
       },
       // Optimize dependencies
       optimizeDeps: {
-        include: ['react', 'react-dom', 'framer-motion'],
-        // Exclude large deps that should be loaded separately
-        exclude: [],
+        include: ['react', 'react-dom'],
+        // Exclude framer-motion from eager optimization since it's lazy loaded
+        exclude: ['framer-motion'],
       },
       // Enable esbuild optimizations
       esbuild: {
