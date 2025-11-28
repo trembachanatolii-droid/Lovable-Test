@@ -55,6 +55,7 @@ const Footer: React.FC = () => {
 
     return (
         <footer
+            role="contentinfo"
             className="bg-primary-navy text-neutral-gray border-t"
             style={{
                 borderTopColor: 'rgba(255, 255, 255, 0.2)',

@@ -29,17 +29,17 @@ const handleNext = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
 }, [slides.length]);
 
-const handlePrevious = () => {
+const handlePrevious = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
-};
+}, [slides.length]);
 
-const handleServiceBoxClick = (index: number) => {
+const handleServiceBoxClick = useCallback((index: number) => {
     setCurrentIndex(index);
-};
+}, []);
 
-const togglePlayPause = () => {
-    setIsPlaying(!isPlaying);
-}
+const togglePlayPause = useCallback(() => {
+    setIsPlaying((prev) => !prev);
+}, []);
 
 useEffect(() => {
     if (isPlaying) {

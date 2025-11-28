@@ -200,7 +200,7 @@ const App: React.FC = () => {
           Skip to main content
         </a>
         <Header />
-        <main id="main-content" className="flex-grow" tabIndex={-1}>
+        <main id="main-content" role="main" className="flex-grow" tabIndex={-1}>
           <ErrorBoundary>
             <Suspense fallback={<PageLoader />}>
               {content}

@@ -74,14 +74,14 @@ const TermsOfUsePage: React.FC = () => {
 
           <section className="bg-gray-light border-l-4 border-secondary-teal p-6 my-8">
             <p className="font-semibold text-lg">
-              <strong>IMPORTANT:</strong> Please read these Terms of Use carefully before using this website. By accessing or using <a href="http://www.trembachlaw.com" className="text-secondary-teal hover:underline">www.trembachlaw.com</a>, you agree to be bound by these Terms of Use and our <a href="#privacy-policy" className="text-secondary-teal hover:underline">Privacy Policy</a>. If you do not agree to these terms, please do not use this website.
+              <strong>IMPORTANT:</strong> Please read these Terms of Use carefully before using this website. By accessing or using <a href="https://www.trembachlaw.com" className="text-secondary-teal hover:underline">www.trembachlaw.com</a>, you agree to be bound by these Terms of Use and our <a href="#privacy-policy" className="text-secondary-teal hover:underline">Privacy Policy</a>. If you do not agree to these terms, please do not use this website.
             </p>
           </section>
 
           <section id="acceptance" aria-labelledby="acceptance-heading">
             <h2 id="acceptance-heading" className="text-2xl md:text-3xl font-bold font-garamond text-primary-navy mb-4">1. ACCEPTANCE OF TERMS</h2>
             <p className="mb-4">
-              Welcome to the website of Trembach Law Firm, APC ("Trembach Law," "we," "our," or "us"). These Terms of Use ("Terms") govern your access to and use of our website located at <a href="http://www.trembachlaw.com" className="text-secondary-teal hover:underline">www.trembachlaw.com</a> (the "Site"), including all content, functionality, and services offered on or through the Site.
+              Welcome to the website of Trembach Law Firm, APC ("Trembach Law," "we," "our," or "us"). These Terms of Use ("Terms") govern your access to and use of our website located at <a href="https://www.trembachlaw.com" className="text-secondary-teal hover:underline">www.trembachlaw.com</a> (the "Site"), including all content, functionality, and services offered on or through the Site.
             </p>
             <p className="mb-4">
               By accessing or using the Site, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy, which is incorporated by reference into these Terms. If you do not agree to these Terms, you must not access or use the Site.
