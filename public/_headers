@@ -1,0 +1,58 @@
+# Cache Control Headers for Static Assets
+# These rules ensure optimal caching for static assets with content hashes
+
+# Hashed assets (JS, CSS) - Long-term caching since filenames include content hash
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images - Long-term caching (assuming versioned/hashed filenames)
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# General JS and CSS files with hashes
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML files - Short cache with revalidation
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Root HTML
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Manifest and other static files - Medium cache
+/*.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/*.xml
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/*.txt
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Webp images
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+# Other image formats
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.gif
+  Cache-Control: public, max-age=31536000, immutable
