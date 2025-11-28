@@ -4,9 +4,8 @@ import AboutSection from '../components/AboutSection';
 import NewsArticleCard from '../components/NewsArticleCard';
 import PracticeAreasSection from '../components/PracticeAreasSection';
 import Button from '../components/Button';
+import JusticePillars from '../components/JusticePillars';
 // Lazy load below-the-fold components to reduce initial bundle
-// JusticePillars uses framer-motion via AboutTitle, so lazy load to defer that heavy dependency
-const JusticePillars = lazy(() => import('../components/JusticePillars'));
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 import type { NewsArticle } from '../types';
 import { useMeta } from '../hooks/useMeta';
@@ -215,10 +214,8 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Other Sections */}
-      {/* JusticePillars lazy-loaded to defer framer-motion dependency */}
-      <Suspense fallback={<div style={{ minHeight: '400px', background: 'transparent' }} aria-label="Loading animated section" />}>
-        <JusticePillars />
-      </Suspense>
+      {/* JusticePillars - framer-motion deferred via DeferredMotionProvider in index.tsx */}
+      <JusticePillars />
       <StatsSection />
       <AboutSection />
       <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading practice areas section" />}>
