@@ -452,63 +452,97 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Helpful Guides */}
-          <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-            <h3 className="text-xl font-bold text-primary-navy mb-4">Helpful Guides for Tech Companies</h3>
-            <ul className="space-y-3">
-              <li>
-                <div className="service-link-item">
-                  <a href="#resources/section-301-tariffs-guide" className="service-link">
-                    <span className="service-link__title">Section 301 Tariffs Guide</span>
-                    <p className="service-link__description">China tariff mitigation strategies</p>
-                    <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                      </svg>
-                    </div>
-                  </a>
+          {/* Helpful Guides for Tech Companies */}
+          <div className="mt-12">
+            <h3 className="text-3xl font-bold text-primary-navy mb-8 text-center font-garamond">
+              Helpful Guides for Tech Companies
+            </h3>
+            <div className="w-24 h-1 bg-secondary-teal mx-auto mb-12"></div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+                <h4 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Tariff Resources</h4>
+                <div className="space-y-0">
+                  <div className="service-link-item">
+                    <a href="#resources/section-301-tariffs-guide" className="service-link">
+                      <span className="service-link__title">Section 301 Tariffs Guide</span>
+                      <p className="service-link__description">China tariff mitigation strategies</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="service-link-item">
+                    <a href="#tariffs-duties-classification-guide" className="service-link">
+                      <span className="service-link__title">Tariff Classification Guide</span>
+                      <p className="service-link__description">HTS classification best practices</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div className="service-link-item">
-                  <a href="#resources/uflpa-compliance-guide" className="service-link">
-                    <span className="service-link__title">UFLPA Compliance Guide</span>
-                    <p className="service-link__description">Supply chain compliance</p>
-                    <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                      </svg>
-                    </div>
-                  </a>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+                <h4 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Compliance Guides</h4>
+                <div className="space-y-0">
+                  <div className="service-link-item">
+                    <a href="#resources/uflpa-compliance-guide" className="service-link">
+                      <span className="service-link__title">UFLPA Compliance Guide</span>
+                      <p className="service-link__description">Supply chain compliance</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="service-link-item">
+                    <a href="#export-controls-sanctions" className="service-link">
+                      <span className="service-link__title">Export Controls Guide</span>
+                      <p className="service-link__description">EAR/ITAR compliance for tech</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
-                    <span className="service-link__title">Tariff Classification Guide</span>
-                    <p className="service-link__description">HTS classification best practices</p>
-                    <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                      </svg>
-                    </div>
-                  </a>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+                <h4 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Learn More</h4>
+                <div className="space-y-0">
+                  <div className="service-link-item">
+                    <a href="#trade-law-faq" className="service-link">
+                      <span className="service-link__title">FAQ Center</span>
+                      <p className="service-link__description">Common tech trade questions</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="service-link-item">
+                    <a href="#schedule-consultation" className="service-link">
+                      <span className="service-link__title">Schedule Consultation</span>
+                      <p className="service-link__description">Get personalized guidance</p>
+                      <div className="triangle-slide">
+                        <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
-                    <span className="service-link__title">FAQ Center</span>
-                    <p className="service-link__description">Common tech trade questions</p>
-                    <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                      </svg>
-                    </div>
-                  </a>
-                </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
