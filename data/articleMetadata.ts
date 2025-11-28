@@ -1,5 +1,5 @@
 // Article metadata with publication dates and reading times
-// Dates range from November 1, 2025 to November 26, 2025
+// Dates range from November 1, 2025 to November 28, 2025
 // 3-6 articles per day for optimal content freshness
 // Reading times calculated based on actual article word count (225 words/minute)
 
@@ -10,6 +10,11 @@ export interface ArticleMetadataItem {
 }
 
 export const articleMetadata: Record<string, ArticleMetadataItem> = {
+  // November 28, 2025 (3 articles)
+  'doj-ai-tariff-evasion-enforcement-california': { date: 'NOVEMBER 28, 2025', isoDate: '2025-11-28', readTime: '14 MIN READ' },
+  'uflpa-entity-list-expansion-2025-california': { date: 'NOVEMBER 28, 2025', isoDate: '2025-11-28', readTime: '10 MIN READ' },
+  'de-minimis-section-321-changes-2025-california': { date: 'NOVEMBER 28, 2025', isoDate: '2025-11-28', readTime: '12 MIN READ' },
+
   // November 27, 2025 (3 articles)
   'ieepa-tariff-constitutional-challenge-california': { date: 'NOVEMBER 27, 2025', isoDate: '2025-11-27', readTime: '6 MIN READ' },
   'section-232-trucks-tariffs-california': { date: 'NOVEMBER 27, 2025', isoDate: '2025-11-27', readTime: '6 MIN READ' },
