@@ -12,7 +12,7 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const RegulatoryCompliancePage: React.FC = () => {
   useMeta({
     title: 'Trade Compliance CA | Import Export Programs',
-    description: 'Trade compliance attorney CA/USA. Import/export compliance programs, audits, prior disclosure, customs records, ruling requests. 631-746-8290.',
+    description: 'Trade compliance attorney CA/USA. Import/export compliance programs, audits, prior disclosure, customs records, ruling requests. (310) 744-1328.',
     canonical: 'regulatory-compliance-advisory',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-compliance.jpg`,
@@ -65,7 +65,7 @@ const RegulatoryCompliancePage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Free Compliance Consultation</a>
-            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
+            <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
       </section>
@@ -512,8 +512,8 @@ const RegulatoryCompliancePage: React.FC = () => {
             <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
-            <Button href="tel:+16317468290" variant="outline">
-              Call (631) 746-8290
+            <Button href="tel:+13107441328" variant="outline">
+              Call (310) 744-1328
             </Button>
           </div>
         </div>

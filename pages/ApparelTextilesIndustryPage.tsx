@@ -11,7 +11,7 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const ApparelTextilesIndustryPage: React.FC = () => {
   useMeta({
     title: 'Apparel Import Attorney CA | Textile Trade Lawyer | UFLPA',
-    description: 'California apparel import attorney & textile customs lawyer. Fashion industry trade law for UFLPA forced labor compliance, HTS classification, country of origin & textile supply chain. Expert for fashion brands. Call 631-746-8290.',
+    description: 'California apparel import attorney & textile customs lawyer. Fashion industry trade law for UFLPA forced labor compliance, HTS classification, country of origin & textile supply chain. Expert for fashion brands. Call (310) 744-1328.',
     canonical: 'apparel-textiles-trade-attorney',
     schema: [
       generateWebPageSchema({
@@ -57,7 +57,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Schedule UFLPA Consultation</a>
-            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
+            <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
       </section>

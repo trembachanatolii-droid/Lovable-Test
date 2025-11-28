@@ -8,9 +8,9 @@ export const siteConfig: SiteConfig = {
   defaultImage: 'https://trembach.law/og-image-default.jpg',
   twitterHandle: '@trembachlaw',
   locale: 'en_US',
-  phone: '+1-631-746-8290',
-  phoneDisplay: '(631) 746-8290',
-  phoneTel: 'tel:+16317468290',
+  phone: '+1-310-744-1328',
+  phoneDisplay: '(310) 744-1328',
+  phoneTel: 'tel:+13107441328',
   email: 'infotrade@trembachlaw.com',
   // NAP - Name, Address, Phone for Local SEO consistency
   address: {

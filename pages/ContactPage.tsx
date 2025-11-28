@@ -10,7 +10,7 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const ContactPage: React.FC = () => {
   useMeta({
     title: 'Contact Us | Free Trade Law Consultation',
-    description: 'Contact California customs attorney for free consultation. 24/7 CBP defense. Serving LA, Oakland, San Diego ports. Call 631-746-8290.',
+    description: 'Contact California customs attorney for free consultation. 24/7 CBP defense. Serving LA, Oakland, San Diego ports. Call (310) 744-1328.',
     canonical: 'contact',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-contact.jpg`,
@@ -86,7 +86,8 @@ const ContactPage: React.FC = () => {
                       <p className="text-lg text-neutral-darkGray mb-2"><strong>Trembach Law Firm, APC</strong></p>
                       <p className="text-lg text-neutral-darkGray mb-2">27001 Agoura Road, Suite 350</p>
                       <p className="text-lg text-neutral-darkGray mb-6">Calabasas, California 91301</p>
-                      <p className="text-lg text-neutral-darkGray mb-2"><strong>Phone:</strong> 631-746-8290</p>
+                      <p className="text-lg text-neutral-darkGray mb-2"><strong>Phone:</strong> (310) 744-1328</p>
+                      <p className="text-lg text-neutral-darkGray mb-2"><strong>Fax:</strong> (310) 744-1219</p>
                       <p className="text-lg text-neutral-darkGray mb-6"><strong>Email:</strong> infotrade@trembachlaw.com</p>
                       <div className="mt-6 pt-6 border-t border-gray-200">
                           <h4 className="font-bold text-primary-navy mb-3">Service Areas</h4>

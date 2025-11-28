@@ -72,6 +72,9 @@ const App: React.FC = () => {
       // If route is empty, default to home
       if (!route) route = '';
 
+      // Scroll to top of page when route changes
+      window.scrollTo(0, 0);
+
       // Use startTransition to mark route updates as non-urgent
       // This allows React to keep the UI responsive during route changes
       startTransition(() => {

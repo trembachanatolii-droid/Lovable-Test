@@ -12,7 +12,7 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const CustomsDefensePage: React.FC = () => {
   useMeta({
     title: 'CA Customs Defense | CBP Investigation Attorney',
-    description: 'Expert customs defense attorney CA/USA. CBP investigation defense, customs audits, penalty mitigation, seizures, litigation. Call 631-746-8290.',
+    description: 'Expert customs defense attorney CA/USA. CBP investigation defense, customs audits, penalty mitigation, seizures, litigation. Call (310) 744-1328.',
     canonical: 'customs-defense-litigation',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-customs-defense.jpg`,
@@ -65,7 +65,7 @@ const CustomsDefensePage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Free Defense Consultation</a>
-            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
+            <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
       </section>
@@ -509,8 +509,8 @@ const CustomsDefensePage: React.FC = () => {
             <Button href="#schedule-consultation" variant="solid">
               Schedule Free Defense Consultation
             </Button>
-            <Button href="tel:+16317468290" variant="outline">
-              Call (631) 746-8290
+            <Button href="tel:+13107441328" variant="outline">
+              Call (310) 744-1328
             </Button>
           </div>
         </div>

@@ -12,7 +12,7 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const ExportControlsPage: React.FC = () => {
   useMeta({
     title: 'Export Controls CA | ITAR EAR OFAC Attorney',
-    description: 'California export controls lawyer. ITAR, EAR, OFAC compliance, export licensing, technology controls, deemed exports, sanctions screening. 631-746-8290.',
+    description: 'California export controls lawyer. ITAR, EAR, OFAC compliance, export licensing, technology controls, deemed exports, sanctions screening. (310) 744-1328.',
     canonical: 'export-controls-sanctions',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-export-controls.jpg`,
@@ -65,7 +65,7 @@ const ExportControlsPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Free Export Controls Consultation</a>
-            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
+            <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
       </section>
@@ -565,8 +565,8 @@ const ExportControlsPage: React.FC = () => {
             <Button href="#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
-            <Button href="tel:+16317468290" variant="outline">
-              Call (631) 746-8290
+            <Button href="tel:+13107441328" variant="outline">
+              Call (310) 744-1328
             </Button>
           </div>
         </div>

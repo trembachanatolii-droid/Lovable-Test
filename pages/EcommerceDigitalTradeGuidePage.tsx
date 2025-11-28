@@ -20,7 +20,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
 
   useMeta({
     title: 'CA Ecommerce Import | Online Sellers Customs & Digital Trade',
-    description: 'California ecommerce import & online sellers customs compliance. Digital trade law, Section 321, data export controls for CA/USA retailers. Call 631-746-8290.',
+    description: 'California ecommerce import & online sellers customs compliance. Digital trade law, Section 321, data export controls for CA/USA retailers. Call (310) 744-1328.',
     canonical: 'ecommerce-digital-trade-guide',
     ogType: 'article',
     ogImage: `${siteConfig.siteUrl}/og-image-ecommerce-guide.jpg`,

@@ -11,7 +11,7 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const TechnologyElectronicsIndustryPage: React.FC = () => {
   useMeta({
     title: 'Tech Industry Trade Attorney CA | Electronics Import Lawyer',
-    description: 'California electronics import attorney & tech industry customs lawyer. HTS classification, Section 301 tariffs, encryption export controls, semiconductor trade compliance & technology supply chain law. Call 631-746-8290.',
+    description: 'California electronics import attorney & tech industry customs lawyer. HTS classification, Section 301 tariffs, encryption export controls, semiconductor trade compliance & technology supply chain law. Call (310) 744-1328.',
     canonical: 'technology-electronics-trade-attorney',
     schema: [
       generateWebPageSchema({
@@ -57,7 +57,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Schedule Strategic Consultation</a>
-            <a href="tel:+16317468290" className="hero-cta-outline">Call (631) 746-8290</a>
+            <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
       </section>

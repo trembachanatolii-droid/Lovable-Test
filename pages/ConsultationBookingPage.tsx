@@ -495,7 +495,7 @@ const ConsultationBookingPage: React.FC = () => {
                                 This consultation request does not establish an attorney-client relationship.
                             </p>
                             <p className="text-sm text-text-secondary">
-                                <strong>What happens next:</strong> You'll receive a confirmation email within 24 hours with your appointment details. If your preferred time is unavailable, we'll propose alternative options. For urgent matters, call us directly at (631) 746-8290.
+                                <strong>What happens next:</strong> You'll receive a confirmation email within 24 hours with your appointment details. If your preferred time is unavailable, we'll propose alternative options. For urgent matters, call us directly at (310) 744-1328.
                             </p>
                         </div>
 
@@ -518,7 +518,7 @@ const ConsultationBookingPage: React.FC = () => {
                             Need immediate assistance? Call us directly:
                         </p>
                         <a
-                            href="tel:+16317468290"
+                            href="tel:+13107441328"
                             className="inline-flex items-center gap-3 text-2xl font-bold text-primary-navy hover:text-secondary-teal transition-colors"
                         >
                             <svg
@@ -531,7 +531,7 @@ const ConsultationBookingPage: React.FC = () => {
                             >
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                             </svg>
-                            (631) 746-8290
+                            (310) 744-1328
                         </a>
                     </div>
                 </div>

@@ -104,9 +104,9 @@ const ArticleCTA: React.FC<ArticleCTAProps> = ({ topic = 'this matter', variant 
           </Button>
 
           <a
-            href="tel:+16317468290"
+            href="tel:+13107441328"
             className="group flex items-center justify-center gap-3 w-full md:w-auto px-6 py-3 border-2 border-primary-navy text-primary-navy rounded hover:bg-primary-navy hover:text-white transition-all duration-200 font-bold"
-            aria-label={`Call for ${content.phoneLabel}: 631-746-8290`}
+            aria-label={`Call for ${content.phoneLabel}: (310) 744-1328`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ const ArticleCTA: React.FC<ArticleCTAProps> = ({ topic = 'this matter', variant 
             </svg>
             <div className="text-left">
               <div className="text-xs uppercase tracking-wider opacity-75">{content.phoneLabel}</div>
-              <div className="font-bold">631-746-8290</div>
+              <div className="font-bold">(310) 744-1328</div>
             </div>
           </a>
         </div>
