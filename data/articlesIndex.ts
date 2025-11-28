@@ -13,6 +13,33 @@ export interface ArticlePreview {
 
 export const articlePreviews: ArticlePreview[] = [
   {
+    "id": "doj-ai-tariff-evasion-enforcement-california",
+    "title": "DOJ AI-Powered Tariff Evasion Enforcement and False Claims Act Prosecution",
+    "subheading": "Federal Criminal and Civil Investigation Risks for California Importers Under New Detection Technology",
+    "intro": "The Department of Justice has deployed advanced artificial intelligence systems to detect tariff evasion schemes, transforming customs enforcement into a high-stakes federal prosecution environment. With $101.2 billion in tariff revenue collected between January and August 2025 - driven by average effective rates surging from 2.2% to 10.55% - the federal government now has unprecedented financial incentive to pursue transshipment violations and country of origin fraud through the False Claims Act. California importers processing goods through the Ports of Los Angeles, Long Beach, and Oakland face heightened scrutiny as DOJ's AI algorithms flag suspicious routing patterns, documentation anomalies, and tariff avoidance indicators. Under 31 U.S.C. § 3729, each false customs declaration constitutes a separate FCA violation carrying treble damages plus penalties up to $28,619 per claim. With CBP implementing mandatory e214 validations and FTZ admission transaction controls in ACE starting December 11, 2025, importers must immediately audit compliance systems, assess prior disclosure obligations, and prepare defense strategies against DOJ's technology-enhanced enforcement apparatus.",
+    "keywords": "DOJ tariff enforcement attorney California, False Claims Act customs lawyer, tariff evasion defense California, transshipment compliance attorney, AI customs enforcement lawyer California, country of origin attorney, FCA whistleblower defense California, DOJ customs investigation lawyer, tariff fraud defense attorney California, customs compliance AI detection",
+    "publishedDate": "2025-11-28",
+    "lastModified": "2025-11-28"
+  },
+  {
+    "id": "uflpa-entity-list-expansion-2025-california",
+    "title": "UFLPA Entity List Expansion: 37 New Designations and High-Priority Sector Enforcement",
+    "subheading": "California Importers Face Intensified CBP Scrutiny Under Expanded Forced Labor Compliance Requirements for PVC, Aluminum, and Seafood Sectors",
+    "intro": "On January 15, 2025, the Forced Labor Enforcement Task Force (FLETF) designated 37 additional China-based companies to the Uyghur Forced Labor Prevention Act (UFLPA) Entity List, bringing the total to 144 entities subject to the rebuttable presumption prohibition. For California importers processing goods through the Ports of Los Angeles, Long Beach, and Oakland, this expansion creates immediate supply chain compliance obligations across previously unscrutinized sectors. The FLETF simultaneously designated polyvinyl chloride (PVC), aluminum, and seafood as new high-priority enforcement sectors, joining apparel, cotton, silica-based products, and tomatoes on the enhanced scrutiny list. CBP detention statistics underscore the urgency: in the first half of 2025 alone, CBP detained 6,636 shipments under UFLPA - surpassing the 4,619 total detentions for all of 2024. With 82.8% of detentions involving Chinese-origin goods and CBP deploying AI and satellite surveillance to verify supply chain claims, California importers must immediately audit supplier relationships, implement enhanced tracing systems, and prepare detention response protocols.",
+    "keywords": "UFLPA entity list attorney California, forced labor compliance lawyer, UFLPA entity list 2025, UFLPA high priority sectors attorney, aluminum UFLPA compliance California, PVC forced labor attorney, UFLPA detention defense California, supply chain tracing lawyer, FLETF entity list attorney California, UFLPA compliance program California",
+    "publishedDate": "2025-11-28",
+    "lastModified": "2025-11-28"
+  },
+  {
+    "id": "de-minimis-section-321-changes-2025-california",
+    "title": "Section 321 De Minimis Elimination: August 2025 Rule Changes for Non-Postal Shipments",
+    "subheading": "California E-Commerce Importers Face Duty Obligations on All Non-Postal Low-Value Imports Under New CBP Enforcement Framework",
+    "intro": "Effective August 29, 2025, the landscape of U.S. e-commerce imports underwent a seismic regulatory shift: all goods imported through non-postal networks - regardless of value - now trigger duty and tax obligations, effectively eliminating the de minimis exemption for express courier and freight forwarder shipments. This transformation ends a decade of duty-free treatment that enabled California's e-commerce ecosystem to flourish, where platforms and direct-to-consumer sellers shipped millions of packages annually under the $800 Section 321 threshold. For California businesses operating fulfillment centers in Ontario, City of Industry, and Tracy, the August 29 deadline represents a compliance inflection point requiring immediate restructuring of entry procedures, duty payment systems, customs broker relationships, and supply chain economics. With Mexico now accounting for 15% of U.S. imports and California ports processing over 40% of containerized goods, understanding the new non-postal regime is essential to avoiding CBP penalties and maintaining operational viability.",
+    "keywords": "Section 321 de minimis attorney California, e-commerce customs lawyer, de minimis rule changes 2025, Section 321 compliance California, small parcel import attorney, customs duty exemption lawyer California, e-commerce tariff compliance, Section 321 abolition attorney California, de minimis threshold lawyer, e-commerce import duties California",
+    "publishedDate": "2025-11-28",
+    "lastModified": "2025-11-28"
+  },
+  {
     "id": "ieepa-tariff-constitutional-challenge-california",
     "title": "IEEPA Tariffs Constitutional Challenge",
     "subheading": "Defending California Importers Through Landmark Presidential Tariff Authority Litigation",
