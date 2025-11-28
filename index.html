@@ -52,7 +52,9 @@
 <!-- Configuration: /vite.config.ts > build.modulePreload.resolveDependencies -->
 <!-- Excluded from critical path: framer-motion (deferred), non-core pages (lazy) -->
 
-<!-- DNS prefetch for external font resources -->
+<!-- Preconnect for external font resources (stronger than dns-prefetch) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
