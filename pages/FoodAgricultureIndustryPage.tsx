@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
