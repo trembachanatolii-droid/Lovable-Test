@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef, memo } from 'react';
+import React, { useState, useEffect, useCallback, useRef, memo, useTransition } from 'react';
 import { MenuIcon } from './icons/MenuIcon';
 import { CloseIcon } from './icons/CloseIcon';
 import { SearchIcon } from './icons/SearchIcon';
@@ -60,6 +60,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentRoute, setCurrentRoute] = useState<string>('');
+  const [isPending, startTransition] = useTransition();
   const menuRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -89,7 +90,10 @@ const Header: React.FC = () => {
 
     const handleHashChange = () => {
       const hash = window.location.hash.slice(1); // Remove the # character
-      setCurrentRoute(hash);
+      // Use startTransition for non-urgent route updates to prevent blocking
+      startTransition(() => {
+        setCurrentRoute(hash);
+      });
     };
 
     // Set initial route
@@ -104,7 +108,7 @@ const Header: React.FC = () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('hashchange', handleHashChange);
     };
-  }, []);
+  }, [startTransition]);
 
   const toggleMenu = useCallback(() => {
     setIsMenuOpen(prev => !prev);

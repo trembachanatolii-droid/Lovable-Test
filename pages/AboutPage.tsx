@@ -1,10 +1,13 @@
 
-import React, { useEffect } from 'react';
-import EvaluationForm from '../components/EvaluationForm';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 import { siteConfig } from '../config/siteConfig';
 
+
+
+// Lazy load EvaluationForm (below-the-fold component)
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const AboutPage: React.FC = () => {
   useMeta({
     title: 'About Us | California Trade & Customs Attorney',
@@ -171,7 +174,9 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Evaluation Form */}
-      <EvaluationForm theme="light" />
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}>
+        <EvaluationForm theme="light" />
+      </Suspense>
     </div>
   );
 };

@@ -43,9 +43,16 @@
 <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/styles.css"></noscript>
 
-<!-- Critical JS Preload Hints - Reduce request waterfall -->
-<!-- Note: Vite will inject modulepreload tags automatically during build -->
-<!-- These are backup hints for critical vendor chunks -->
+<!-- Critical Request Chain Optimization -->
+<!-- Vite automatically injects <link rel="modulepreload"> tags during build -->
+<!-- These hints reduce the request waterfall by preloading critical chunks: -->
+<!--   1. react-vendor.js (React + ReactDOM)               -->
+<!--   2. pages-core.js (HomePage, AboutPage, ContactPage) -->
+<!--   3. vendor.js (other critical utilities)             -->
+<!-- Configuration: /vite.config.ts > build.modulePreload.resolveDependencies -->
+<!-- Excluded from critical path: framer-motion (deferred), non-core pages (lazy) -->
+
+<!-- DNS prefetch for external font resources -->
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
@@ -57,7 +64,7 @@
   --teal-primary: #3FBB94;
   --teal-forest: #2D8469;
   --gray-dark: #333333;
-  --gray-medium: #D8D8D8;
+  --gray-medium: #EDEDED;
   --gray-light: #F2F2F2;
   --gray-lighter: #F8FAFC;
   --gold-primary: #FBBF24;

@@ -1,11 +1,14 @@
 
-import React, { useEffect } from 'react';
-import EvaluationForm from '../components/EvaluationForm';
+import React, { lazy, Suspense, useEffect } from 'react';
+
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateLocalBusinessSchema, generatePortServiceSchema } from '../utils/seo';
 
+
+// Lazy load EvaluationForm (below-the-fold component)
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const LosAngelesPortPage: React.FC = () => {
   useMeta({
     title: 'LA Customs Attorney | Long Beach Port Lawyer CA',
@@ -571,7 +574,9 @@ const LosAngelesPortPage: React.FC = () => {
       </section>
 
       {/* Evaluation Form */}
-      <EvaluationForm theme="light" />
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}>
+        <EvaluationForm theme="light" />
+      </Suspense>
     </div>
   );
 };

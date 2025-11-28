@@ -1,11 +1,14 @@
 
-import React, { useEffect } from 'react';
-import EvaluationForm from '../components/EvaluationForm';
+import React, { lazy, Suspense, useEffect } from 'react';
+
 import { useMeta } from '../hooks/useMeta';
 import { generatePersonSchema } from '../utils/structuredData';
 import { siteConfig } from '../config/siteConfig';
 import { generateBreadcrumbSchema } from '../utils/seo';
 
+
+// Lazy load EvaluationForm (below-the-fold component)
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const AttorneyProfilePage: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -128,7 +131,9 @@ const AttorneyProfilePage: React.FC = () => {
       </article>
 
       {/* Evaluation Form - Teal theme for contrast against white page bottom */}
-      <EvaluationForm theme="light" />
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}>
+        <EvaluationForm theme="light" />
+      </Suspense>
     </div>
   );
 };

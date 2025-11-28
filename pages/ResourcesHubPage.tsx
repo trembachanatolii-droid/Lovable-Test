@@ -1,11 +1,14 @@
 
-import React, { useEffect } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
+
 import Button from '../components/Button';
-import EvaluationForm from '../components/EvaluationForm';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 
+
+// Lazy load EvaluationForm (below-the-fold component)
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const ResourcesHubPage: React.FC = () => {
   useMeta({
     title: 'CA Trade Law Resources | Import Export Guides',
@@ -478,7 +481,9 @@ const ResourcesHubPage: React.FC = () => {
       </section>
 
       {/* Evaluation Form */}
-      <EvaluationForm theme="light" />
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}>
+        <EvaluationForm theme="light" />
+      </Suspense>
 
     </div>
   );

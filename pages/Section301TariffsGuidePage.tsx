@@ -1,10 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
+
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
-import EvaluationForm from '../components/EvaluationForm';
 import Button from '../components/Button';
 import { siteConfig } from '../config/siteConfig';
 
+
+// Lazy load EvaluationForm (below-the-fold component)
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 const Section301TariffsGuidePage: React.FC = () => {
   // Scroll to section function for in-page navigation
   const scrollToSection = (sectionId: string) => {
@@ -1088,7 +1091,9 @@ const Section301TariffsGuidePage: React.FC = () => {
       </section>
 
       {/* Evaluation Form */}
-      <EvaluationForm theme="light" />
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}>
+        <EvaluationForm theme="light" />
+      </Suspense>
     </div>
   );
 };

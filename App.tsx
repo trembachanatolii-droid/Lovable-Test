@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { useState, useEffect, lazy, Suspense, useTransition } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import StickyPhoneButton from './components/StickyPhoneButton';
@@ -60,6 +60,7 @@ const PageLoader: React.FC = () => (
 
 const App: React.FC = () => {
   const [currentRoute, setCurrentRoute] = useState<string>('');
+  const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -67,11 +68,15 @@ const App: React.FC = () => {
       // Normalize hash: remove '#' and trailing slash if any
       // Note: We keep query parameters for logic below
       let route = hash.replace(/^#\/?/, '');
-      
+
       // If route is empty, default to home
       if (!route) route = '';
-      
-      setCurrentRoute(route);
+
+      // Use startTransition to mark route updates as non-urgent
+      // This allows React to keep the UI responsive during route changes
+      startTransition(() => {
+        setCurrentRoute(route);
+      });
     };
 
     // Initial check
@@ -80,7 +85,7 @@ const App: React.FC = () => {
     // Listen for hash changes
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
+  }, [startTransition]);
 
   let content;
   

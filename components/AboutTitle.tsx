@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
+import { m, useScroll, useTransform, useReducedMotion } from "framer-motion";
 
 interface TitleConfig {
   offset: [string, string];
@@ -96,7 +96,7 @@ function AboutTitle({ name }: AboutTitleProps) {
   }
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       className="about-title"
       style={{
@@ -110,7 +110,7 @@ function AboutTitle({ name }: AboutTitleProps) {
       }}
     >
       {name}
-    </motion.div>
+    </m.div>
   );
 }
 

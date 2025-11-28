@@ -1,12 +1,15 @@
 
-import React, { useEffect, useState } from 'react';
-import EvaluationForm from '../components/EvaluationForm';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
+
 import { SearchIcon } from '../components/icons/SearchIcon';
 import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateBreadcrumbSchema, generateServiceSchema, generateFAQSchema } from '../utils/seo';
 
+
+// Lazy load EvaluationForm (below-the-fold component)
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 // --- Data Structure for Content ---
 const practiceData = [
   {
@@ -646,7 +649,9 @@ const PracticeAreasPage: React.FC = () => {
       </div>
 
       {/* Evaluation Form - Changed to 'teal' theme for contrast */}
-      <EvaluationForm theme="teal" />
+      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}>
+        <EvaluationForm theme="teal" />
+      </Suspense>
     </div>
   );
 };

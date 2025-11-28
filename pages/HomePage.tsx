@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useMemo } from 'react';
+import React, { lazy, Suspense, useMemo, useTransition } from 'react';
 import StatsSection from '../components/StatsSection';
 import AboutSection from '../components/AboutSection';
 import NewsArticleCard from '../components/NewsArticleCard';
@@ -15,6 +15,7 @@ import { getArticlePreviews } from '../data/articlesLoader';
 import { articleMetadata } from '../data/articleMetadata';
 
 // Get the latest 3 articles by date (using lightweight previews)
+// This function is now called inside the component to avoid blocking module load
 const getLatestArticles = (): NewsArticle[] => {
   // Get article previews (lightweight, no full content)
   const previews = getArticlePreviews();
@@ -45,8 +46,6 @@ const getLatestArticles = (): NewsArticle[] => {
   }));
 };
 
-const newsArticlesData: NewsArticle[] = getLatestArticles();
-
 const practiceAreasPreviewData = [
   {
     title: 'Retaliatory Tariffs Assistance',
@@ -71,6 +70,52 @@ const practiceAreasPreviewData = [
 ];
 
 const HomePage: React.FC = () => {
+  // Memoize article processing to avoid recalculating on every render
+  // This defers the calculation until the component actually renders
+  const newsArticlesData = useMemo(() => getLatestArticles(), []);
+
+  // Memoize heavy schema generation to avoid recalculating
+  // This helps reduce initial render blocking time
+  const schemaData = useMemo(() => [
+    generateLocalBusinessSchema(),
+    generateWebPageSchema({
+      title: 'Trembach Law Firm | California International Trade Attorney',
+      description: 'Premier California international trade attorney and customs lawyer providing expert legal counsel for import/export compliance, CBP defense, and global trade strategy.',
+      url: `${siteConfig.siteUrl}/`,
+    }),
+    generateFAQSchema([
+      {
+        question: 'What is a California international trade attorney?',
+        answer: 'A California international trade attorney is a lawyer specializing in federal and international laws governing import/export activities, customs compliance, trade regulations, and cross-border transactions. They handle CBP defense, customs audits, ITAR/EAR compliance, OFAC sanctions, tariff classification, and trade litigation for California businesses engaged in international commerce.',
+      },
+      {
+        question: 'When do I need a customs attorney in California?',
+        answer: 'You need a California customs attorney when facing CBP audits (Focused Assessments), customs investigations, penalty assessments, import seizures or detentions, classification or valuation disputes, prior disclosure filing, False Claims Act allegations, or when establishing import/export compliance programs for your California business.',
+      },
+      {
+        question: 'What does CBP investigation defense involve?',
+        answer: 'CBP investigation defense involves representing importers/exporters during U.S. Customs and Border Protection investigations, responding to CF-28/CF-29 notices, defending against penalty assessments, mitigating liquidated damages, handling customs fraud allegations, and protecting your rights during CBP audits and enforcement actions.',
+      },
+      {
+        question: 'What are ITAR and EAR compliance requirements?',
+        answer: 'ITAR (International Traffic in Arms Regulations) governs defense articles and services exports, while EAR (Export Administration Regulations) covers dual-use items and commercial products. California companies exporting controlled technology, software, or equipment must obtain proper export licenses, classify items correctly, screen restricted parties, and maintain detailed compliance records.',
+      },
+      {
+        question: 'How can trade compliance programs help my California business?',
+        answer: 'Trade compliance programs establish policies, procedures, and internal controls to ensure your California business complies with customs and export regulations. They include import/export compliance protocols, record-keeping systems, employee training, risk assessments, and audit readiness - minimizing penalty exposure and facilitating smooth international trade operations.',
+      },
+    ]),
+    // Speakable schema for voice search optimization
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['.hero h1', '.hero-subtitle', '#services-heading'],
+      },
+    },
+  ], []);
+
   // SEO Meta Tags and Open Graph - Optimized for Main Hub Keywords
   useMeta({
     title: 'CA Trade Attorney | USA Customs Lawyer',
@@ -82,45 +127,7 @@ const HomePage: React.FC = () => {
     ogImageWidth: 1200,
     ogImageHeight: 630,
     twitterCard: 'summary_large_image',
-    schema: [
-      generateLocalBusinessSchema(),
-      generateWebPageSchema({
-        title: 'Trembach Law Firm | California International Trade Attorney',
-        description: 'Premier California international trade attorney and customs lawyer providing expert legal counsel for import/export compliance, CBP defense, and global trade strategy.',
-        url: `${siteConfig.siteUrl}/`,
-      }),
-      generateFAQSchema([
-        {
-          question: 'What is a California international trade attorney?',
-          answer: 'A California international trade attorney is a lawyer specializing in federal and international laws governing import/export activities, customs compliance, trade regulations, and cross-border transactions. They handle CBP defense, customs audits, ITAR/EAR compliance, OFAC sanctions, tariff classification, and trade litigation for California businesses engaged in international commerce.',
-        },
-        {
-          question: 'When do I need a customs attorney in California?',
-          answer: 'You need a California customs attorney when facing CBP audits (Focused Assessments), customs investigations, penalty assessments, import seizures or detentions, classification or valuation disputes, prior disclosure filing, False Claims Act allegations, or when establishing import/export compliance programs for your California business.',
-        },
-        {
-          question: 'What does CBP investigation defense involve?',
-          answer: 'CBP investigation defense involves representing importers/exporters during U.S. Customs and Border Protection investigations, responding to CF-28/CF-29 notices, defending against penalty assessments, mitigating liquidated damages, handling customs fraud allegations, and protecting your rights during CBP audits and enforcement actions.',
-        },
-        {
-          question: 'What are ITAR and EAR compliance requirements?',
-          answer: 'ITAR (International Traffic in Arms Regulations) governs defense articles and services exports, while EAR (Export Administration Regulations) covers dual-use items and commercial products. California companies exporting controlled technology, software, or equipment must obtain proper export licenses, classify items correctly, screen restricted parties, and maintain detailed compliance records.',
-        },
-        {
-          question: 'How can trade compliance programs help my California business?',
-          answer: 'Trade compliance programs establish policies, procedures, and internal controls to ensure your California business complies with customs and export regulations. They include import/export compliance protocols, record-keeping systems, employee training, risk assessments, and audit readiness - minimizing penalty exposure and facilitating smooth international trade operations.',
-        },
-      ]),
-      // Speakable schema for voice search optimization
-      {
-        '@context': 'https://schema.org',
-        '@type': 'WebPage',
-        speakable: {
-          '@type': 'SpeakableSpecification',
-          cssSelector: ['.hero h1', '.hero-subtitle', '#services-heading'],
-        },
-      },
-    ],
+    schema: schemaData,
   });
 
   return (
