@@ -229,7 +229,7 @@ const PracticeAccordionItem: React.FC<{
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
-    <div className="w-full mb-2" id={slug}>
+    <div className="w-full mb-2" id={slug} style={{ scrollMarginTop: '100px' }}>
       <button
         onClick={onToggle}
         onMouseEnter={() => setIsHovered(true)}
