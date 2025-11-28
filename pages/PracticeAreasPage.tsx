@@ -452,7 +452,14 @@ const PracticeAreasPage: React.FC = () => {
             setTimeout(() => {
               const element = document.getElementById(targetSlug!);
               if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Calculate scroll position with offset for fixed header (100px)
+                const headerOffset = 120;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
               }
             }, 300);
           }
