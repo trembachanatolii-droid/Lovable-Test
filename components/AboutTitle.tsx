@@ -107,15 +107,21 @@ function AboutTitle({ name }: AboutTitleProps) {
   }, [isInView]);
 
   // Static render for reduced motion or before animation loads
+  // CRITICAL: Initial styles must match config values to prevent CLS when framer-motion loads
   if (prefersReducedMotion || !motionModule) {
     return (
       <div
         ref={ref}
         className="about-title"
         style={{
+          // Use final animation values (not starting values) to prevent CLS
+          // When framer-motion loads, it will animate FROM these values
           opacity: 1,
           transform: 'none',
           contain: 'layout style paint',
+          // Ensure consistent box model
+          boxSizing: 'border-box',
+          willChange: 'auto',
         }}
       >
         {name}

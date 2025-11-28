@@ -52,11 +52,7 @@
 <!-- Configuration: /vite.config.ts > build.modulePreload.resolveDependencies -->
 <!-- Excluded from critical path: framer-motion (deferred), non-core pages (lazy) -->
 
-<!-- Preconnect for external font resources (stronger than dns-prefetch) -->
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<!-- Google Fonts preconnect removed - site uses system fonts for better performance -->
 
 <style>
 /* Critical CSS - System Fonts & Base Styles */
@@ -522,22 +518,16 @@ button, [role="button"], a[href] {
   color: var(--gray-dark);
 }
 
-/* Footer - Reserve exact space to prevent CLS with strict containment */
+/* Footer - Reserve minimum space to prevent CLS */
 footer.bg-primary-navy,
 footer.footer-stable {
-  /* Use exact heights instead of min-height to prevent any shifts */
-  height: 580px;
-  min-height: 580px;
-  max-height: 580px;
-  /* Strict containment prevents any internal changes from affecting layout */
-  contain: strict;
-  /* Don't use content-visibility: auto as it can cause shifts when scrolling into view */
+  /* Use min-height only for flexibility */
+  min-height: 520px;
+  /* Layout containment for performance */
+  contain: layout style;
   content-visibility: visible;
-  /* Reserve exact intrinsic size */
-  contain-intrinsic-block-size: 580px;
-  contain-intrinsic-size: auto 580px;
-  /* Prevent any overflow from affecting layout */
-  overflow: hidden;
+  /* Reserve intrinsic size for browser optimization */
+  contain-intrinsic-block-size: 520px;
   /* Ensure stable box model */
   box-sizing: border-box;
 }
@@ -545,80 +535,84 @@ footer.footer-stable {
 @media (min-width: 768px) {
   footer.bg-primary-navy,
   footer.footer-stable {
-    height: 440px;
-    min-height: 440px;
-    max-height: 440px;
-    contain-intrinsic-block-size: 440px;
-    contain-intrinsic-size: auto 440px;
+    min-height: 420px;
+    contain-intrinsic-block-size: 420px;
   }
 }
 
 @media (min-width: 1024px) {
   footer.bg-primary-navy,
   footer.footer-stable {
-    height: 400px;
-    min-height: 400px;
-    max-height: 400px;
-    contain-intrinsic-block-size: 400px;
-    contain-intrinsic-size: auto 400px;
+    min-height: 380px;
+    contain-intrinsic-block-size: 380px;
   }
 }
 
-/* Footer inner container with fixed dimensions */
+/* Footer inner container */
 footer .max-w-\[1376px\] {
-  height: 100%;
-  contain: layout style;
+  min-height: inherit;
   box-sizing: border-box;
 }
 
-/* Footer grid with fixed dimensions */
+/* Footer grid */
 footer .grid {
-  height: auto;
-  min-height: 300px;
-  contain: layout;
+  min-height: 280px;
 }
 
 @media (min-width: 768px) {
   footer .grid {
-    min-height: 240px;
+    min-height: 220px;
   }
 }
 
 @media (min-width: 1024px) {
   footer .grid {
-    min-height: 200px;
+    min-height: 180px;
   }
-}
-
-/* Footer links grid with fixed dimensions */
-footer .footer-links-grid {
-  contain: layout style;
-  min-height: 200px;
 }
 
 /* Form elements fixed dimensions to prevent CLS */
 footer form {
-  height: 48px;
   min-height: 48px;
-  max-height: 48px;
-  contain: layout;
 }
 
 footer input[type="email"],
 footer button[type="submit"] {
-  height: 48px;
   min-height: 48px;
-  max-height: 48px;
   box-sizing: border-box;
 }
 
-/* Newsletter success message fixed height */
-footer [aria-live="polite"] {
-  height: 28px;
-  min-height: 28px;
-  max-height: 28px;
-  overflow: hidden;
-  contain: layout;
+/* AboutSection/JusticePillars - CLS prevention */
+.about-section {
+  /* CSS containment to isolate layout calculations */
+  contain: layout style;
+  box-sizing: border-box;
+}
+
+/* About title - fixed dimensions to prevent CLS when framer-motion loads */
+.about-title {
+  /* Reserve exact space based on font size to prevent shifts */
+  min-height: 80px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .about-title {
+    min-height: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-title {
+    min-height: 140px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-title {
+    min-height: 200px;
+  }
 }
 
 .section-divider {
