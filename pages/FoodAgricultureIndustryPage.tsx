@@ -168,8 +168,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* Services Section */}
       <section className="py-20 px-6 bg-neutral-50">
