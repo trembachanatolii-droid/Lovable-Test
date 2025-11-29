@@ -187,9 +187,11 @@ button, a, input, select, textarea {
   }
 }
 
-/* Prevent body scroll issues */
+/* Prevent body scroll issues and horizontal scrolling */
 html, body {
   overscroll-behavior: none;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* Minimum touch target size - mobile only */
