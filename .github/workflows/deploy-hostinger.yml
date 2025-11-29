@@ -25,20 +25,19 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Creates dist/deploy.txt so we can verify from the browser that the new build landed.
+      # Creates a file you can check at https://YOURDOMAIN.com/deploy.txt
       - name: Create deploy marker
         run: |
           echo "sha=${GITHUB_SHA}" > dist/deploy.txt
-          date >> dist/deploy.txt
+          echo "run_id=${GITHUB_RUN_ID}" >> dist/deploy.txt
+          date -u +"utc=%Y-%m-%dT%H:%M:%SZ" >> dist/deploy.txt
 
       - name: Verify build output
         run: |
-          echo "Listing dist/:"
-          ls -la dist
-          echo "Checking deploy marker:"
-          cat dist/deploy.txt
-          echo "Checking index.html exists:"
           test -f dist/index.html
+          test -f dist/deploy.txt
+          echo "---- dist/deploy.txt ----"
+          cat dist/deploy.txt
 
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
@@ -49,61 +48,16 @@ jobs:
           USER: ${{ secrets.HOSTINGER_USER }}
           PASS: ${{ secrets.HOSTINGER_PASS }}
           PORT: ${{ secrets.HOSTINGER_PORT }}
-          # IMPORTANT: set this secret to a single dot: .
           DIR: ${{ secrets.HOSTINGER_DIR }}
         run: |
           set -euo pipefail
 
-          HOST="$(echo "${HOST:-}" | tr -d '\r' | xargs)"
-          USER="$(echo "${USER:-}" | tr -d '\r' | xargs)"
-          PORT="$(echo "${PORT:-}" | tr -d '\r' | xargs)"
-          DIR="$(echo "${DIR:-}" | tr -d '\r' | xargs)"
+          # Default DIR to "." if not set
+          DIR="${DIR:-.}"
 
-          if [ -z "$HOST" ] || [ -z "$USER" ] || [ -z "${PASS:-}" ] || [ -z "$PORT" ] || [ -z "$DIR" ]; then
-            echo "Missing secrets. Needed: HOSTINGER_HOST, HOSTINGER_USER, HOSTINGER_PASS, HOSTINGER_PORT, HOSTINGER_DIR"
-            exit 1
-          fi
-
-          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^ftps?://##i' | sed -E 's#/.*$##' | sed -E 's#:[0-9]+$##')"
-          PORT_CLEAN="$(echo "$PORT" | tr -cd '0-9')"
-
-          if [ -z "$HOST_CLEAN" ] || [ -z "$PORT_CLEAN" ]; then
-            echo "Invalid HOST/PORT values after cleanup."
-            exit 1
-          fi
-
-          lftp -f /dev/stdin <<LFTP
-          set cmd:fail-exit yes
-          set ftp:passive-mode yes
-          set ftp:ssl-allow yes
-          set ftp:ssl-force true
-          set ftp:ssl-protect-data true
-          set ssl:verify-certificate no
-          set net:timeout 30
-          set net:max-retries 2
-
-          open -p $PORT_CLEAN ftp://$HOST_CLEAN
-          user "$USER" "$PASS"
-
-          echo "Remote PWD before cd:"
-          pwd
-          echo "Remote ls before cd:"
-          ls
-
-          cd "$DIR"
-
-          echo "Remote PWD after cd:"
-          pwd
-          echo "Remote ls after cd:"
-          ls
-
-          # Force upload of the marker to the *current* remote folder:
-          put dist/deploy.txt -o deploy.txt
-          echo "Remote deploy.txt after put:"
-          cls -l deploy.txt
-
-          # Upload everything from dist into the current remote folder:
-          mirror -R --delete --verbose dist .
-
-          quit
-LFTP
+          # Clean inputs (common issue: copied secrets with whitespace/newlines)
+          HOST="$(echo "${HOST}" | tr -d '\r' | xargs)"
+          USER="$(echo "${USER}" | tr -d '\r' | xargs)"
+          PASS="$(echo "${PASS}" | tr -d '\r' | xargs)"
+          PORT="$(echo "${PORT}" | tr -d '\r' | tr -cd '0-9')"
+          DIR="$(echo "${DIR}" | tr -d '\r' | xa
