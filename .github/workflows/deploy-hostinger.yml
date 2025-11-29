@@ -1,33 +1,3 @@
-name: Deploy to Hostinger (FTPS)
-
-on:
-  push:
-    branches: [ "main" ]
-  workflow_dispatch:
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Install lftp
-        run: sudo apt-get update && sudo apt-get install -y lftp
-
       - name: Upload dist -> Hostinger (FTPS mirror)
         env:
           HOST: ${{ secrets.HOSTINGER_HOST }}
@@ -38,7 +8,6 @@ jobs:
         run: |
           set -euo pipefail
 
-          # trim spaces/newlines that commonly break HOST
           HOST="$(echo "${HOST:-}" | tr -d '\r' | xargs)"
           USER="$(echo "${USER:-}" | tr -d '\r' | xargs)"
           PORT="$(echo "${PORT:-}" | tr -d '\r' | xargs)"
@@ -49,7 +18,6 @@ jobs:
             exit 1
           fi
 
-          # accept values like ftp://191.101.13.110 and strip protocol/paths/port
           HOST_CLEAN="$(echo "$HOST" | sed -E 's#^ftp(s)?://##i' | sed -E 's#/.*$##' | sed -E 's#:[0-9]+$##')"
           PORT_CLEAN="$(echo "$PORT" | tr -cd '0-9')"
 
@@ -58,7 +26,7 @@ jobs:
             exit 1
           fi
 
-          lftp -f <<LFTP
+          lftp -f /dev/stdin <<LFTP
           set cmd:fail-exit yes
           set ftp:passive-mode yes
           set ftp:ssl-allow yes
@@ -69,6 +37,6 @@ jobs:
           set net:max-retries 2
           open -p $PORT_CLEAN ftp://$HOST_CLEAN
           user "$USER" "$PASS"
-          mirror -R --delete --verbose dist $DIR
+          mirror -R --delete --verbose dist "$DIR"
           quit
           LFTP
