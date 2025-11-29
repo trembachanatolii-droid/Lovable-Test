@@ -2,16 +2,17 @@ name: Deploy to Hostinger (FTPS)
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   workflow_dispatch:
 
 concurrency:
-  group: deploy-hostinger
+  group: hostinger-deploy-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -20,8 +21,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
+          node-version: 20
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
@@ -37,14 +38,14 @@ jobs:
       - name: Verify build output
         run: |
           test -f dist/index.html
-          ls -la dist | head -n 200
+          ls -la dist | head -50
 
       - name: Install lftp
         run: |
           sudo apt-get update
           sudo apt-get install -y lftp
 
-      - name: Upload dist -> Hostinger (explicit FTPS)
+      - name: Upload dist -> Hostinger (FTPS)
         env:
           HOST: ${{ secrets.HOSTINGER_HOST }}
           USER: ${{ secrets.HOSTINGER_USER }}
@@ -54,30 +55,11 @@ jobs:
         run: |
           set -euo pipefail
 
-          echo "Deploying to host=${HOST} port=${PORT} dir=${DIR}"
+          # Basic validation
+          : "${HOST:?Missing HOSTINGER_HOST}"
+          : "${USER:?Missing HOSTINGER_USER}"
+          : "${PASS:?Missing HOSTINGER_PASS}"
+          : "${PORT:?Missing HOSTINGER_PORT}"
 
-          # Default DIR to '.' if blank
-          if [ -z "${DIR:-}" ]; then DIR="."; fi
-
-          # Strip protocol if someone pasted "ftp://..." or "ftps://..."
-          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^https?://##; s#^ftps?://##; s#/$##')"
-
-          # Avoid empty port
-          PORT_CLEAN="${PORT:-21}"
-
-          lftp -u "$USER","$PASS" -p "$PORT_CLEAN" "ftp://$HOST_CLEAN" << 'LFTP'
-          set ftp:ssl-allow yes
-          set ftp:ssl-force true
-          set ftp:ssl-protect-data true
-          set ssl:verify-certificate no
-
-          # Hard timeouts (fail fast instead of hanging)
-          set net:timeout 20
-          set net:max-retries 2
-          set net:reconnect-interval-base 3
-          set net:reconnect-interval-max 6
-          set dns:fatal-timeout 10
-
-          # More robustness
-          set net:socket-buffer 0
-          set ftp:passive-mode yes
+          # Clean HOST: remove protocol, trailing slash, and :port if user accidentally included it
+          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^[A-Za-z]()_
