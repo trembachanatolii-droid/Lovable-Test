@@ -5,43 +5,73 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+concurrency:
+  group: deploy-hostinger
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Setup Node
-      uses: actions/setup-node@v4
-      with:
-        node-version: "20"
-        cache: "npm"
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Build
-      run: npm run build
+      - name: Build
+        run: npm run build
 
-    - name: Create deploy marker
-      run: |
-        echo "sha=${GITHUB_SHA}" > dist/deploy.txt
-        date -u >> dist/deploy.txt
+      - name: Create deploy marker
+        run: |
+          echo "sha=${GITHUB_SHA}" > dist/deploy.txt
+          date -u >> dist/deploy.txt
 
-    - name: Upload dist → Hostinger (FTPS mirror)
-      env:
-        HOST: ${{ secrets.HOSTINGER_HOST }}
-        USER: ${{ secrets.HOSTINGER_USER }}
-        PASS: ${{ secrets.HOSTINGER_PASS }}
-        PORT: ${{ secrets.HOSTINGER_PORT }}
-        DIR:  ${{ secrets.HOSTINGER_DIR }}
-      run: |
-        set -euo pipefail
-        sudo apt-get update && sudo apt-get install -y lftp
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
 
-        # Use default directory if none is set
-        if [ -z "$DIR" ]; then DIR="."; fi
+      - name: Upload dist -> Hostinger (explicit FTPS)
+        shell: bash
+        env:
+          HOST: ${{ secrets.HOSTINGER_HOST }}
+          USER: ${{ secrets.HOSTINGER_USER }}
+          PASS: ${{ secrets.HOSTINGER_PASS }}
+          PORT: ${{ secrets.HOSTINGER_PORT }}
+          DIR:  ${{ secrets.HOSTINGER_DIR }}
+        run: |
+          set -euo pipefail
 
-        lftp -c "set ftp:passive-mode yes; set ftp:ssl-allow yes; set ftp:ssl-force true; set ftp:ssl-protect-data true; set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 2; open -p ${PORT} ftps://${HOST}; user \"${USER}\" \"${PASS}\"; cd ${DIR}; put dist/deploy.txt -o deploy.txt; mirror -R --delete --verbose dist .; quit"
+          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^[a-z]+://##; s#/.*##')"
+          PORT_CLEAN="$(echo "${PORT:-21}" | sed -E 's/[^0-9]//g')"
+          [ -z "$PORT_CLEAN" ] && PORT_CLEAN="21"
+          DIR_CLEAN="${DIR:-/public_html}"
+
+          echo "Deploying to: $HOST_CLEAN:$PORT_CLEAN dir=$DIR_CLEAN"
+
+          lftp -e "
+            set cmd:fail-exit yes
+            set net:timeout 30
+            set net:max-retries 10
+            set net:reconnect-interval-base 5
+            set net:reconnect-interval-max 30
+
+            set ftp:passive-mode yes
+            set ftp:ssl-allow yes
+            set ftp:ssl-force true
+            set ftp:ssl-protect-data true
+            set ssl:verify-certificate no
+
+            open -p ${PORT_CLEAN} -u \"${USER}\",\"${PASS}\" ftp://${HOST_CLEAN}
+            cd \"${DIR_CLEAN}\"
+
+            put dist/deploy.txt -o deploy.txt
+            mirror -R --delete --verbose dist .
+            bye
+          "
