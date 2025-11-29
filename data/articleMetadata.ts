@@ -10,6 +10,11 @@ export interface ArticleMetadataItem {
 }
 
 export const articleMetadata: Record<string, ArticleMetadataItem> = {
+  // November 29, 2025 (3 articles)
+  'scotus-ieepa-tariff-challenge-november-2025': { date: 'NOVEMBER 29, 2025', isoDate: '2025-11-29', readTime: '6 MIN READ' },
+  'section-301-maritime-tariffs-california-ports-2025': { date: 'NOVEMBER 29, 2025', isoDate: '2025-11-29', readTime: '6 MIN READ' },
+  'uflpa-enforcement-surge-2025-california': { date: 'NOVEMBER 29, 2025', isoDate: '2025-11-29', readTime: '6 MIN READ' },
+
   // November 28, 2025 (3 articles)
   'doj-ai-tariff-evasion-enforcement-california': { date: 'NOVEMBER 28, 2025', isoDate: '2025-11-28', readTime: '14 MIN READ' },
   'uflpa-entity-list-expansion-2025-california': { date: 'NOVEMBER 28, 2025', isoDate: '2025-11-28', readTime: '10 MIN READ' },
