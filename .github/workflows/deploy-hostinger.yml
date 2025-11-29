@@ -1,0 +1,38 @@
+name: Deploy to Hostinger (FTP)
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Upload dist -> Hostinger (FTP mirror)
+        env:
+          HOST: ${{ secrets.HOSTINGER_HOST }}
+          USER: ${{ secrets.HOSTINGER_USER }}
+          PASS: ${{ secrets.HOSTINGER_PASS }}
+          PORT: ${{ secrets.HOSTINGER_PORT }}
+          DIR:  ${{ secrets.HOSTINGER_DIR }}
+        run: |
+          lftp -e "
+            set ftp:ssl-allow no;
+            open -u $USER,$PASS ftp://$HOST:$PORT;
+            mirror -R --delete --verbose dist/ $DIR;
+            quit
+          "
