@@ -2,17 +2,20 @@ name: Deploy to Hostinger (FTPS)
 
 on:
   push:
-    branches: ["main"]
+    branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
-  group: hostinger-deploy-${{ github.ref }}
+  group: deploy-hostinger
   cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
 
     steps:
       - name: Checkout
@@ -30,92 +33,22 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Create deploy marker
+      - name: Create deploy marker (dist/deploy.txt)
         run: |
-          echo "sha=${GITHUB_SHA}" > dist/deploy.txt
-          date -u >> dist/deploy.txt
+          {
+            echo "sha=${GITHUB_SHA}"
+            echo "time_utc=$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+          } > dist/deploy.txt
+          echo "Local dist/deploy.txt:"
+          cat dist/deploy.txt
 
-      - name: Verify build output
-        run: |
-          test -f dist/index.html
-          test -f dist/deploy.txt
-          ls -la dist | head -50
-
-      - name: Install lftp
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y lftp
-
-      - name: Upload dist -> Hostinger (FTPS)
+      - name: Upload dist -> Hostinger (explicit FTPS)
         env:
           HOST: ${{ secrets.HOSTINGER_HOST }}
           USER: ${{ secrets.HOSTINGER_USER }}
           PASS: ${{ secrets.HOSTINGER_PASS }}
           PORT: ${{ secrets.HOSTINGER_PORT }}
-          DIR:  ${{ secrets.HOSTINGER_DIR }}
+          REMOTE_DIR: ${{ secrets.HOSTINGER_DIR }}
         run: |
           set -euo pipefail
-
-          # Fail immediately if secrets are missing
-          : "${HOST:?Missing HOSTINGER_HOST}"
-          : "${USER:?Missing HOSTINGER_USER}"
-          : "${PASS:?Missing HOSTINGER_PASS}"
-          : "${PORT:?Missing HOSTINGER_PORT}"
-
-          # Sanitize HOST:
-          # - remove protocol (ftp:// ftps://)
-          # - remove everything after first slash (file-manager URLs)
-          # - remove :port if user included it
-          # - trim trailing slashes
-          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^[A-Za-z]+://##; s#/.*$##; s#:[0-9]+$##; s#/+$##')"
-
-          # Remote dir default:
-          REMOTE_DIR="${DIR:-.}"
-
-          # FTPS mode:
-          # - 990 is usually implicit FTPS (ftps://)
-          # - 21 is usually explicit FTPS (ftp:// + ssl-force)
-          if [ "$PORT" = "990" ]; then
-            URL="ftps://${HOST_CLEAN}"
-          else
-            URL="ftp://${HOST_CLEAN}"
-          fi
-
-          echo "Deploy target: host=${HOST_CLEAN} port=${PORT} dir=${REMOTE_DIR}"
-
-          LFTP_CMDS="
-            set cmd:fail-exit yes;
-
-            set ftp:passive-mode yes;
-            set ftp:ssl-allow yes;
-            set ftp:ssl-force true;
-            set ftp:ssl-protect-data true;
-            set ssl:verify-certificate no;
-
-            # Hard timeouts so it fails fast instead of hanging:
-            set net:timeout 20;
-            set net:max-retries 2;
-            set net:reconnect-interval-base 3;
-            set net:reconnect-interval-max 6;
-            set dns:fatal-timeout 10;
-
-            open -p ${PORT} -u \"${USER}\",\"${PASS}\" ${URL};
-            pwd;
-            ls;
-          "
-
-          if [ -n "${REMOTE_DIR}" ] && [ "${REMOTE_DIR}" != "." ]; then
-            LFTP_CMDS="${LFTP_CMDS}
-              cd \"${REMOTE_DIR}\";
-              pwd;
-              ls;
-            "
-          fi
-
-          LFTP_CMDS="${LFTP_CMDS}
-            put dist/deploy.txt -o deploy.txt;
-            mirror -R --delete --verbose dist .;
-            bye;
-          "
-
-          lftp -c "$LFTP_CMDS"
+          sudo a
