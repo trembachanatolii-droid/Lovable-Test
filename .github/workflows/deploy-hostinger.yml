@@ -1,53 +1,30 @@
-name: Deploy to Hostinger (FTPS)
+- name: Upload dist → Hostinger (FTPS mirror)
+  env:
+    HOST: ${{ secrets.HOSTINGER_HOST }}
+    USER: ${{ secrets.HOSTINGER_USER }}
+    PASS: ${{ secrets.HOSTINGER_PASS }}
+    PORT: ${{ secrets.HOSTINGER_PORT }}
+    DIR:  ${{ secrets.HOSTINGER_DIR }}
+  run: |
+    set -euo pipefail
+    sudo apt-get update && sudo apt-get install -y lftp
 
-on:
-  push:
-    branches: ["main"]
-  workflow_dispatch:
+    # Default to the current directory (.) if DIR is blank
+    if [ -z "$DIR" ]; then DIR="."; fi
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      # Creates a marker file that will show the commit SHA on your live site
-      - name: Create deploy marker
-        run: |
-          echo "sha=${GITHUB_SHA}" > dist/deploy.txt
-          date -u >> dist/deploy.txt
-
-      # Upload the built site to Hostinger via FTPS
-      - name: Upload dist -> Hostinger (FTPS mirror)
-        env:
-          HOST: ${{ secrets.HOSTINGER_HOST }}
-          USER: ${{ secrets.HOSTINGER_USER }}
-          PASS: ${{ secrets.HOSTINGER_PASS }}
-          PORT: ${{ secrets.HOSTINGER_PORT }}
-          DIR: ${{ secrets.HOSTINGER_DIR }}
-        run: |
-          set -euo pipefail
-          sudo apt-get update && sudo apt-get install -y lftp
-
-          # Use default directory if none is set
-          if [ -z "$DIR" ]; then DIR="."; fi
-
-          # Clean host and port (strip protocols or ports from HOST)
-          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^ftps?://##' | sed -E 's#/.*$##' | sed -E 's#:[0-9]+$##')"
-          PORT_CLEAN="$(echo "$PORT" | tr -cd '0-9')"
-
-          lftp -c "set ftp:passive-mode yes; set ftp:ssl-allow yes; set ftp:ssl-force true; set ftp:ssl-protect-data true; set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 2; open -p ${PORT_CLEAN} ftp://${HOST_CLEAN}; user \"${USER}\" \"${PASS}\"; cd ${DIR}; put dist/deploy.txt -o deploy.txt; mirror -R --delete --verbose dist .; quit"
+    # The key lftp settings:
+    lftp -c "
+      set ftp:passive-mode yes;
+      set ftp:ssl-allow yes;
+      set ftp:ssl-force true;
+      set ftp:ssl-protect-data true;
+      set ssl:verify-certificate no;
+      set net:timeout 30;
+      set net:max-retries 2;
+      open -p $PORT ftps://$HOST;
+      user \"$USER\" \"$PASS\";
+      cd $DIR;
+      put dist/deploy.txt -o deploy.txt;
+      mirror -R --delete --verbose dist .;
+      quit;
+    "
