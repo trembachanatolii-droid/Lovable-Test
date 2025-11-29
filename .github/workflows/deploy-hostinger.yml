@@ -34,33 +34,41 @@ jobs:
           USER: ${{ secrets.HOSTINGER_USER }}
           PASS: ${{ secrets.HOSTINGER_PASS }}
           PORT: ${{ secrets.HOSTINGER_PORT }}
-          DIR: ${{ secrets.HOSTINGER_DIR }}
+          DIR:  ${{ secrets.HOSTINGER_DIR }}
         run: |
           set -euo pipefail
 
-          if [ -z "${HOST:-}" ] || [ -z "${USER:-}" ] || [ -z "${PASS:-}" ] || [ -z "${PORT:-}" ] || [ -z "${DIR:-}" ]; then
+          # trim spaces/newlines that commonly break HOST
+          HOST="$(echo "${HOST:-}" | tr -d '\r' | xargs)"
+          USER="$(echo "${USER:-}" | tr -d '\r' | xargs)"
+          PORT="$(echo "${PORT:-}" | tr -d '\r' | xargs)"
+          DIR="$(echo "${DIR:-}"  | tr -d '\r' | xargs)"
+
+          if [ -z "$HOST" ] || [ -z "$USER" ] || [ -z "${PASS:-}" ] || [ -z "$PORT" ] || [ -z "$DIR" ]; then
             echo "Missing secrets. Needed: HOSTINGER_HOST, HOSTINGER_USER, HOSTINGER_PASS, HOSTINGER_PORT, HOSTINGER_DIR"
             exit 1
           fi
 
-          # Clean up common copy/paste values (like ftp://191.101.13.110)
-          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^ftp(s)?://##' | sed -E 's#/*$##')"
+          # accept values like ftp://191.101.13.110 and strip protocol/paths/port
+          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^ftp(s)?://##i' | sed -E 's#/.*$##' | sed -E 's#:[0-9]+$##')"
           PORT_CLEAN="$(echo "$PORT" | tr -cd '0-9')"
 
-          if [ -z "$PORT_CLEAN" ]; then
-            echo "HOSTINGER_PORT must be a number (example: 21)"
+          if [ -z "$HOST_CLEAN" ] || [ -z "$PORT_CLEAN" ]; then
+            echo "Invalid HOST/PORT values after cleanup."
             exit 1
           fi
 
-          lftp -e "
-            set ftp:passive-mode yes;
-            set ftp:ssl-allow yes;
-            set ftp:ssl-force true;
-            set ftp:ssl-protect-data true;
-            set ssl:verify-certificate no;
-            set net:timeout 20;
-            set net:max-retries 2;
-            open -p ${PORT_CLEAN} -u ${USER},${PASS} ftp://${HOST_CLEAN};
-            mirror -R --delete --verbose dist ${DIR};
-            quit
-          "
+          lftp -f <<LFTP
+          set cmd:fail-exit yes
+          set ftp:passive-mode yes
+          set ftp:ssl-allow yes
+          set ftp:ssl-force true
+          set ftp:ssl-protect-data true
+          set ssl:verify-certificate no
+          set net:timeout 30
+          set net:max-retries 2
+          open -p $PORT_CLEAN ftp://$HOST_CLEAN
+          user "$USER" "$PASS"
+          mirror -R --delete --verbose dist $DIR
+          quit
+          LFTP
