@@ -161,7 +161,7 @@ const Footer: React.FC = () => {
                                             <a
                                                 href={link.href}
                                                 onClick={(e) => handleLinkClick(e, link.href)}
-                                                className={`transition-colors duration-200 text-sm block ${
+                                                className={`transition-colors duration-200 text-sm block break-all ${
                                                     link.isAddress
                                                         ? 'cursor-default leading-relaxed pointer-events-none'
                                                         : 'hover:text-secondary-teal'
