@@ -151,7 +151,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* Links */}
-                    <div className="grid grid-cols-3 gap-4 col-span-1 md:col-span-2 lg:col-span-2 footer-links-grid">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 col-span-1 md:col-span-2 lg:col-span-2 footer-links-grid">
                         {Object.entries(FOOTER_LINKS).map(([title, links]) => (
                             <div key={title}>
                                 <div className="font-bold text-white mb-4 uppercase tracking-wider text-sm">{title}</div>
@@ -161,11 +161,12 @@ const Footer: React.FC = () => {
                                             <a
                                                 href={link.href}
                                                 onClick={(e) => handleLinkClick(e, link.href)}
-                                                className={`transition-colors duration-200 text-sm block break-all ${
+                                                className={`transition-colors duration-200 text-sm block ${
                                                     link.isAddress
                                                         ? 'cursor-default leading-relaxed pointer-events-none'
                                                         : 'hover:text-secondary-teal'
                                                 }`}
+                                                style={link.href.startsWith('mailto:') ? { wordBreak: 'break-word', overflowWrap: 'anywhere' } : undefined}
                                             >
                                                 {link.label}
                                             </a>
