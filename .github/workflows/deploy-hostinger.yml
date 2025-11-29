@@ -34,11 +34,17 @@ jobs:
           echo "sha=${GITHUB_SHA}" > dist/deploy.txt
           date -u >> dist/deploy.txt
 
+      - name: Verify build output
+        run: |
+          test -f dist/index.html
+          ls -la dist | head -n 200
+
       - name: Install lftp
-        run: sudo apt-get update && sudo apt-get install -y lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
 
       - name: Upload dist -> Hostinger (explicit FTPS)
-        shell: bash
         env:
           HOST: ${{ secrets.HOSTINGER_HOST }}
           USER: ${{ secrets.HOSTINGER_USER }}
@@ -48,30 +54,30 @@ jobs:
         run: |
           set -euo pipefail
 
-          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^[a-z]+://##; s#/.*##')"
-          PORT_CLEAN="$(echo "${PORT:-21}" | sed -E 's/[^0-9]//g')"
-          [ -z "$PORT_CLEAN" ] && PORT_CLEAN="21"
-          DIR_CLEAN="${DIR:-/public_html}"
+          echo "Deploying to host=${HOST} port=${PORT} dir=${DIR}"
 
-          echo "Deploying to: $HOST_CLEAN:$PORT_CLEAN dir=$DIR_CLEAN"
+          # Default DIR to '.' if blank
+          if [ -z "${DIR:-}" ]; then DIR="."; fi
 
-          lftp -e "
-            set cmd:fail-exit yes
-            set net:timeout 30
-            set net:max-retries 10
-            set net:reconnect-interval-base 5
-            set net:reconnect-interval-max 30
+          # Strip protocol if someone pasted "ftp://..." or "ftps://..."
+          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^https?://##; s#^ftps?://##; s#/$##')"
 
-            set ftp:passive-mode yes
-            set ftp:ssl-allow yes
-            set ftp:ssl-force true
-            set ftp:ssl-protect-data true
-            set ssl:verify-certificate no
+          # Avoid empty port
+          PORT_CLEAN="${PORT:-21}"
 
-            open -p ${PORT_CLEAN} -u \"${USER}\",\"${PASS}\" ftp://${HOST_CLEAN}
-            cd \"${DIR_CLEAN}\"
+          lftp -u "$USER","$PASS" -p "$PORT_CLEAN" "ftp://$HOST_CLEAN" << 'LFTP'
+          set ftp:ssl-allow yes
+          set ftp:ssl-force true
+          set ftp:ssl-protect-data true
+          set ssl:verify-certificate no
 
-            put dist/deploy.txt -o deploy.txt
-            mirror -R --delete --verbose dist .
-            bye
-          "
+          # Hard timeouts (fail fast instead of hanging)
+          set net:timeout 20
+          set net:max-retries 2
+          set net:reconnect-interval-base 3
+          set net:reconnect-interval-max 6
+          set dns:fatal-timeout 10
+
+          # More robustness
+          set net:socket-buffer 0
+          set ftp:passive-mode yes
