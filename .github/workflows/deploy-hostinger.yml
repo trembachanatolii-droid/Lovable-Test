@@ -25,23 +25,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Creates a file you can check at https://YOURDOMAIN.com/deploy.txt
+      # Creates a marker file that will show the commit SHA on your live site
       - name: Create deploy marker
         run: |
           echo "sha=${GITHUB_SHA}" > dist/deploy.txt
-          echo "run_id=${GITHUB_RUN_ID}" >> dist/deploy.txt
-          date -u +"utc=%Y-%m-%dT%H:%M:%SZ" >> dist/deploy.txt
+          date -u >> dist/deploy.txt
 
-      - name: Verify build output
-        run: |
-          test -f dist/index.html
-          test -f dist/deploy.txt
-          echo "---- dist/deploy.txt ----"
-          cat dist/deploy.txt
-
-      - name: Install lftp
-        run: sudo apt-get update && sudo apt-get install -y lftp
-
+      # Upload the built site to Hostinger via FTPS
       - name: Upload dist -> Hostinger (FTPS mirror)
         env:
           HOST: ${{ secrets.HOSTINGER_HOST }}
@@ -51,13 +41,13 @@ jobs:
           DIR: ${{ secrets.HOSTINGER_DIR }}
         run: |
           set -euo pipefail
+          sudo apt-get update && sudo apt-get install -y lftp
 
-          # Default DIR to "." if not set
-          DIR="${DIR:-.}"
+          # Use default directory if none is set
+          if [ -z "$DIR" ]; then DIR="."; fi
 
-          # Clean inputs (common issue: copied secrets with whitespace/newlines)
-          HOST="$(echo "${HOST}" | tr -d '\r' | xargs)"
-          USER="$(echo "${USER}" | tr -d '\r' | xargs)"
-          PASS="$(echo "${PASS}" | tr -d '\r' | xargs)"
-          PORT="$(echo "${PORT}" | tr -d '\r' | tr -cd '0-9')"
-          DIR="$(echo "${DIR}" | tr -d '\r' | xa
+          # Clean host and port (strip protocols or ports from HOST)
+          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^ftps?://##' | sed -E 's#/.*$##' | sed -E 's#:[0-9]+$##')"
+          PORT_CLEAN="$(echo "$PORT" | tr -cd '0-9')"
+
+          lftp -c "set ftp:passive-mode yes; set ftp:ssl-allow yes; set ftp:ssl-force true; set ftp:ssl-protect-data true; set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 2; open -p ${PORT_CLEAN} ftp://${HOST_CLEAN}; user \"${USER}\" \"${PASS}\"; cd ${DIR}; put dist/deploy.txt -o deploy.txt; mirror -R --delete --verbose dist .; quit"
