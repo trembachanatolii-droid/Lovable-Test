@@ -2,7 +2,7 @@ name: Deploy to Hostinger (FTPS)
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
@@ -25,6 +25,20 @@ jobs:
       - name: Build
         run: npm run build
 
+      # ✅ Proof file so you can verify deploy from the browser:
+      # https://trembachlaw.com/deploy.txt
+      - name: Create deploy marker
+        run: |
+          echo "sha=${GITHUB_SHA}" > dist/deploy.txt
+          date >> dist/deploy.txt
+
+      # ✅ Fail early if build output isn't what we expect
+      - name: Verify build output
+        run: |
+          echo "Listing dist/"
+          ls -la dist || true
+          test -f dist/index.html
+
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 
@@ -34,28 +48,34 @@ jobs:
           USER: ${{ secrets.HOSTINGER_USER }}
           PASS: ${{ secrets.HOSTINGER_PASS }}
           PORT: ${{ secrets.HOSTINGER_PORT }}
-          DIR: ${{ secrets.HOSTINGER_DIR }}
+          DIR:  ${{ secrets.HOSTINGER_DIR }}
         run: |
           set -euo pipefail
 
+          # Trim whitespace/CRLF in case secrets were pasted oddly
           HOST="$(echo "${HOST:-}" | tr -d '\r' | xargs)"
           USER="$(echo "${USER:-}" | tr -d '\r' | xargs)"
+          PASS="$(echo "${PASS:-}" | tr -d '\r' | xargs)"
           PORT="$(echo "${PORT:-}" | tr -d '\r' | xargs)"
           DIR="$(echo "${DIR:-}"  | tr -d '\r' | xargs)"
 
-          if [ -z "$HOST" ] || [ -z "$USER" ] || [ -z "${PASS:-}" ] || [ -z "$PORT" ] || [ -z "$DIR" ]; then
+          if [ -z "$HOST" ] || [ -z "$USER" ] || [ -z "$PASS" ] || [ -z "$PORT" ] || [ -z "$DIR" ]; then
             echo "Missing secrets. Needed: HOSTINGER_HOST, HOSTINGER_USER, HOSTINGER_PASS, HOSTINGER_PORT, HOSTINGER_DIR"
             exit 1
           fi
 
-          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^ftp(s)?://##i' | sed -E 's#/.*$##' | sed -E 's#:[0-9]+$##')"
+          # Normalize host and port
+          HOST_CLEAN="$(echo "$HOST" | sed -E 's#^ftps?://##' | sed -E 's#/:.*$##' | sed -E 's#:[0-9]+$##')"
           PORT_CLEAN="$(echo "$PORT" | tr -cd '0-9')"
 
           if [ -z "$HOST_CLEAN" ] || [ -z "$PORT_CLEAN" ]; then
-            echo "Invalid HOST/PORT values after cleanup."
+            echo "Invalid HOST/PORT after cleanup."
             exit 1
           fi
 
+          # IMPORTANT:
+          # We cd into DIR, then mirror dist -> .
+          # This avoids absolute-path confusion and nested public_html issues.
           lftp -f /dev/stdin <<LFTP
           set cmd:fail-exit yes
           set ftp:passive-mode yes
@@ -65,8 +85,20 @@ jobs:
           set ssl:verify-certificate no
           set net:timeout 30
           set net:max-retries 2
+
           open -p $PORT_CLEAN ftp://$HOST_CLEAN
           user "$USER" "$PASS"
-          mirror -R --delete --verbose dist "$DIR"
+
+          echo "Remote PWD before cd:"
+          pwd
+          echo "Remote ls before cd:"
+          ls
+
+          cd "$DIR"
+          echo "Remote PWD after cd:"
+          pwd
+          echo "Remote ls after cd:"
+          ls
+          mirror -R --delete --verbose dist .
           quit
           LFTP
