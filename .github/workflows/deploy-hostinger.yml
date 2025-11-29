@@ -5,10 +5,13 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+concurrency:
+  group: deploy-hostinger
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,22 +37,26 @@ jobs:
           USER: ${{ secrets.HOSTINGER_USER }}
           PASS: ${{ secrets.HOSTINGER_PASS }}
           PORT: ${{ secrets.HOSTINGER_PORT }}
-          DIR:  ${{ secrets.HOSTINGER_DIR }}
+          DIR: ${{ secrets.HOSTINGER_DIR }}
         run: |
-          if [ -z "$HOST" ] || [ -z "$USER" ] || [ -z "$PASS" ] || [ -z "$PORT" ] || [ -z "$DIR" ]; then
+          set -euo pipefail
+
+          if [ -z "${HOST:-}" ] || [ -z "${USER:-}" ] || [ -z "${PASS:-}" ] || [ -z "${PORT:-}" ] || [ -z "${DIR:-}" ]; then
             echo "Missing secrets. Needed: HOSTINGER_HOST, HOSTINGER_USER, HOSTINGER_PASS, HOSTINGER_PORT, HOSTINGER_DIR"
             exit 1
           fi
 
-          echo "Deploying dist/ to ftps://$HOST:$PORT -> $DIR"
-
-          lftp -c "
+          lftp -u "$USER","$PASS" -p "$PORT" "ftps://$HOST" -e "
             set ftp:passive-mode yes;
             set ftp:ssl-allow yes;
             set ftp:ssl-force true;
+            set ftp:ssl-protect-data true;
             set ssl:verify-certificate no;
             set net:timeout 20;
             set net:max-retries 2;
-            open -u $USER,$PASS ftps://$HOST:$PORT;
-            mirror -R --delete --verbose dist/ $DIR;
+            set net:reconnect-interval-base 5;
+            mkdir -p $DIR;
+            cd $DIR;
+            mirror -R --delete --verbose dist/ .;
+            quit
           "
