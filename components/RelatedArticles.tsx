@@ -12,6 +12,7 @@ const topicClusters: Record<string, { pillar: string; pillarTitle: string; artic
     pillar: 'customs-defense-litigation',
     pillarTitle: 'Customs Defense & Litigation',
     articles: [
+      "scotus-ieepa-tariff-challenge-november-2025",
       "tariff-classification", "cbp-focused-assessments", "customs-penalties-1592",
       "customs-valuation", "antidumping-cvd", "isf-compliance", "us-cit-litigation",
       "liquidated-damages", "post-entry-compliance", "section-321-reform-california",
@@ -50,6 +51,7 @@ const topicClusters: Record<string, { pillar: string; pillarTitle: string; artic
     pillar: 'regulatory-compliance-advisory',
     pillarTitle: 'Regulatory Compliance & Advisory',
     articles: [
+      "section-301-maritime-tariffs-california-ports-2025",
       "usmca-rules-of-origin", "section-301-tariffs", "c-tpat-certification",
       "foreign-trade-zones", "customs-broker-liability", "free-trade-agreements",
       "drawback-claims", "customs-broker-liability-vs-importer-liability-california",
@@ -65,6 +67,7 @@ const topicClusters: Record<string, { pillar: string; pillarTitle: string; artic
     pillar: 'supply-chain-esg-compliance-guide',
     pillarTitle: 'Supply Chain ESG & UFLPA Compliance',
     articles: [
+      "uflpa-enforcement-surge-2025-california",
       "forced-labor-compliance", "uflpa-compliance-california", "section-321-reform-california",
       "uflpa-detention-response-california-apparel", "uflpa-entity-list-monitoring-california",
       "uflpa-solar-panel-imports-california", "uflpa-electronics-imports-california",

@@ -13,6 +13,33 @@ export interface ArticlePreview {
 
 export const articlePreviews: ArticlePreview[] = [
   {
+    "id": "scotus-ieepa-tariff-challenge-november-2025",
+    "title": "Supreme Court IEEPA Tariff Challenge: Preparing for Potential Tariff Refunds",
+    "subheading": "California Importers Must Preserve Refund Rights as Justices Signal Skepticism Toward Presidential Tariff Authority",
+    "intro": "On November 5, 2025, the United States Supreme Court heard oral arguments in Learning Resources v. Trump, consolidated with Trump v. V.O.S. Selections, in what may become the most consequential international trade decision in decades. The cases challenge the lawfulness of tariffs imposed under the International Emergency Economic Powers Act (IEEPA), with billions of dollars in potential refunds hanging in the balance for California importers. During the oral arguments, several justices expressed significant skepticism about presidential authority to impose tariffs without explicit Congressional authorization, with Chief Justice Roberts and Justice Sotomayor emphasizing that tariffs are essentially taxes—a power Article I of the Constitution reserves exclusively to Congress. The Federal Circuit's 7-4 decision holding IEEPA tariffs unlawful now faces Supreme Court review, with a decision expected by the end of 2025 or early 2026. For California importers who have paid millions in IEEPA-based duties on goods entering through the Port of Los Angeles, Port of Long Beach, and Port of Oakland, the stakes could not be higher. However, only importers who properly preserved their refund rights through timely protests will be eligible for recovery if the Supreme Court invalidates these tariffs.",
+    "keywords": "Supreme Court tariff case California, IEEPA tariff attorney, Learning Resources v Trump lawyer, tariff refund attorney California, IEEPA constitutional challenge, presidential tariff authority lawyer, customs tariff protest California, tariff recovery attorney, Article I tariff power, IEEPA tariff defense California",
+    "publishedDate": "2025-11-29",
+    "lastModified": "2025-11-29"
+  },
+  {
+    "id": "section-301-maritime-tariffs-california-ports-2025",
+    "title": "Section 301 Maritime Tariffs: China-Linked Port Equipment and California Terminal Operations",
+    "subheading": "Understanding the One-Year Suspension and Preparing for 100% Duties on Ship-to-Shore Cranes and Cargo Equipment",
+    "intro": "On November 9, 2025, the Office of the United States Trade Representative (USTR) finalized sweeping 100% ad valorem tariffs on Chinese-linked ship-to-shore cranes, intermodal chassis, and cargo-handling equipment under Section 301 of the Trade Act of 1974. These maritime-focused duties targeted imports from ZPMC (Shanghai Zhenhua Heavy Industries), which manufactures approximately 80% of the ship-to-shore cranes operating at U.S. ports. However, following the U.S.-China trade agreement reached in Kuala Lumpur on November 1, 2025, these Section 301 maritime actions were suspended for one year effective November 10, 2025. California port operators at the Los Angeles, Long Beach, and Oakland terminals—which collectively handle over 40% of U.S. containerized imports—now face critical strategic decisions during this suspension period. Port authorities must balance immediate modernization needs against the risk of tariff resumption in November 2026, while navigating exemptions for equipment contracted before April 17, 2025. This article examines the Section 301 maritime investigation, analyzes California port exposure, and provides compliance strategies for terminal operators preparing for potential duty implementation.",
+    "keywords": "Section 301 maritime tariff attorney California, ship-to-shore crane tariff lawyer, ZPMC tariff California, port equipment tariff attorney, Section 301 crane duties, maritime tariff compliance lawyer, port modernization tariff California, cargo handling equipment tariff, Section 301 suspension attorney, California port tariff lawyer",
+    "publishedDate": "2025-11-29",
+    "lastModified": "2025-11-29"
+  },
+  {
+    "id": "uflpa-enforcement-surge-2025-california",
+    "title": "UFLPA Enforcement Surge 2025: Record Detentions and Five New High-Priority Sectors",
+    "subheading": "California Importers Face Intensified Scrutiny as CBP Adds Caustic Soda, Copper, Lithium, Jujubes, and Steel to Priority Enforcement",
+    "intro": "The first half of 2025 has witnessed an unprecedented escalation in Uyghur Forced Labor Prevention Act (UFLPA) enforcement, with U.S. Customs and Border Protection (CBP) detaining 6,636 shipments—already surpassing the 4,619 total detentions recorded for all of 2024, representing a staggering 144% increase. On August 19, 2025, the Department of Homeland Security released updated UFLPA enforcement strategies that fundamentally altered the compliance landscape for California importers. The strategy expanded the UFLPA Entity List to 144 entities and introduced five new high-priority sectors: caustic soda, copper, lithium, jujubes (red dates), and steel. These additions bring the total number of high-priority sectors to thirteen, creating heightened scrutiny for shipments entering through California's major ports of Los Angeles, Long Beach, and Oakland. For California's technology manufacturers, construction companies, and agricultural importers, these changes demand immediate supply chain audits and enhanced forced labor due diligence. The recent Withhold Release Orders issued against Firemount Group Ltd. (November 18, 2025) and Giant Manufacturing Co. Ltd. (September 24, 2025) underscore CBP's aggressive enforcement posture as we approach year-end.",
+    "keywords": "UFLPA 2025 attorney California, forced labor detention lawyer, UFLPA high priority sectors 2025, copper UFLPA compliance California, lithium forced labor attorney, steel UFLPA detention, UFLPA enforcement surge California, CBP detention response lawyer, UFLPA admissibility attorney California, caustic soda UFLPA compliance",
+    "publishedDate": "2025-11-29",
+    "lastModified": "2025-11-29"
+  },
+  {
     "id": "doj-ai-tariff-evasion-enforcement-california",
     "title": "DOJ AI-Powered Tariff Evasion Enforcement and False Claims Act Prosecution",
     "subheading": "Federal Criminal and Civil Investigation Risks for California Importers Under New Detection Technology",
