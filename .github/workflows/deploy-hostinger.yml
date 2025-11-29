@@ -25,19 +25,22 @@ jobs:
       - name: Build
         run: npm run build
 
-      # ✅ Proof file so you can verify deploy from the browser:
-      # https://trembachlaw.com/deploy.txt
+      # Creates a marker file so we can confirm which commit/time is live
       - name: Create deploy marker
         run: |
           echo "sha=${GITHUB_SHA}" > dist/deploy.txt
-          date >> dist/deploy.txt
+          date -u >> dist/deploy.txt
+          echo "=== deploy.txt (local) ==="
+          cat dist/deploy.txt
+          echo "=== dist listing (local) ==="
+          ls -la dist | head -n 200
 
-      # ✅ Fail early if build output isn't what we expect
+      # Fail early if dist is not what we expect
       - name: Verify build output
         run: |
-          echo "Listing dist/"
-          ls -la dist || true
+          test -d dist
           test -f dist/index.html
+          test -f dist/deploy.txt
 
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
@@ -52,7 +55,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          # Trim whitespace/CRLF in case secrets were pasted oddly
+          # Trim CRLF/whitespace that can accidentally be pasted into secrets
           HOST="$(echo "${HOST:-}" | tr -d '\r' | xargs)"
           USER="$(echo "${USER:-}" | tr -d '\r' | xargs)"
           PASS="$(echo "${PASS:-}" | tr -d '\r' | xargs)"
@@ -64,7 +67,7 @@ jobs:
             exit 1
           fi
 
-          # Normalize host and port
+          # normalize host + port
           HOST_CLEAN="$(echo "$HOST" | sed -E 's#^ftps?://##' | sed -E 's#/:.*$##' | sed -E 's#:[0-9]+$##')"
           PORT_CLEAN="$(echo "$PORT" | tr -cd '0-9')"
 
@@ -73,9 +76,6 @@ jobs:
             exit 1
           fi
 
-          # IMPORTANT:
-          # We cd into DIR, then mirror dist -> .
-          # This avoids absolute-path confusion and nested public_html issues.
           lftp -f /dev/stdin <<LFTP
           set cmd:fail-exit yes
           set ftp:passive-mode yes
@@ -99,6 +99,14 @@ jobs:
           pwd
           echo "Remote ls after cd:"
           ls
+
+          # Force upload of the marker so we can verify from browser:
+          # https://trembachlaw.com/deploy.txt
+          put dist/deploy.txt -o deploy.txt
+          echo "Remote deploy.txt after put:"
+          cls -l deploy.txt
+
+          # Mirror full dist to the current remote directory
           mirror -R --delete --verbose dist .
           quit
           LFTP
