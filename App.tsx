@@ -135,6 +135,23 @@ const SanDiegoSection301Page = lazy(() => import('./pages/SanDiegoSection301Page
 const SacramentoUFLPAAttorneyPage = lazy(() => import('./pages/SacramentoUFLPAAttorneyPage'));
 const RiversideCustomsSeizurePage = lazy(() => import('./pages/RiversideCustomsSeizurePage'));
 const FremontSemiconductorTariffPage = lazy(() => import('./pages/FremontSemiconductorTariffPage'));
+// Batch 2 - Additional City-Keyword Pages
+const LosAngelesCBPAuditPage = lazy(() => import('./pages/LosAngelesCBPAuditPage'));
+const SanJoseSection301Page = lazy(() => import('./pages/SanJoseSection301Page'));
+const OaklandUFLPAPage = lazy(() => import('./pages/OaklandUFLPAPage'));
+const AnaheimCustomsSeizurePage = lazy(() => import('./pages/AnaheimCustomsSeizurePage'));
+const SanFranciscoChinaTariffPage = lazy(() => import('./pages/SanFranciscoChinaTariffPage'));
+// Batch 3 - More City-Keyword Pages
+const LongBeachCBPAuditPage = lazy(() => import('./pages/LongBeachCBPAuditPage'));
+const SanDiegoCBPAuditPage = lazy(() => import('./pages/SanDiegoCBPAuditPage'));
+const SacramentoSection301Page = lazy(() => import('./pages/SacramentoSection301Page'));
+const FresnoSection301Page = lazy(() => import('./pages/FresnoSection301Page'));
+const BakersfieldUFLPAPage = lazy(() => import('./pages/BakersfieldUFLPAPage'));
+const LongBeachUFLPAPage = lazy(() => import('./pages/LongBeachUFLPAPage'));
+const SanDiegoCustomsSeizurePage = lazy(() => import('./pages/SanDiegoCustomsSeizurePage'));
+const LongBeachCustomsSeizurePage = lazy(() => import('./pages/LongBeachCustomsSeizurePage'));
+const SanJosePharmaImportPage = lazy(() => import('./pages/SanJosePharmaImportPage'));
+const FremontAutomotiveTariffPage = lazy(() => import('./pages/FremontAutomotiveTariffPage'));
 
 // Loading fallback component with explicit height to prevent CLS
 const PageLoader: React.FC = () => (
@@ -562,6 +579,53 @@ const App: React.FC = () => {
         break;
       case 'fremont-semiconductor-tariff':
         content = <FremontSemiconductorTariffPage />;
+        break;
+      // Batch 2 - Additional City-Keyword Pages
+      case 'los-angeles-cbp-audit':
+        content = <LosAngelesCBPAuditPage />;
+        break;
+      case 'san-jose-section-301':
+        content = <SanJoseSection301Page />;
+        break;
+      case 'oakland-uflpa':
+        content = <OaklandUFLPAPage />;
+        break;
+      case 'anaheim-customs-seizure':
+        content = <AnaheimCustomsSeizurePage />;
+        break;
+      case 'san-francisco-china-tariff':
+        content = <SanFranciscoChinaTariffPage />;
+        break;
+      // Batch 3 - More City-Keyword Pages
+      case 'long-beach-cbp-audit':
+        content = <LongBeachCBPAuditPage />;
+        break;
+      case 'san-diego-cbp-audit':
+        content = <SanDiegoCBPAuditPage />;
+        break;
+      case 'sacramento-section-301':
+        content = <SacramentoSection301Page />;
+        break;
+      case 'fresno-section-301':
+        content = <FresnoSection301Page />;
+        break;
+      case 'bakersfield-uflpa':
+        content = <BakersfieldUFLPAPage />;
+        break;
+      case 'long-beach-uflpa':
+        content = <LongBeachUFLPAPage />;
+        break;
+      case 'san-diego-customs-seizure':
+        content = <SanDiegoCustomsSeizurePage />;
+        break;
+      case 'long-beach-customs-seizure':
+        content = <LongBeachCustomsSeizurePage />;
+        break;
+      case 'san-jose-pharma-import':
+        content = <SanJosePharmaImportPage />;
+        break;
+      case 'fremont-automotive-tariff':
+        content = <FremontAutomotiveTariffPage />;
         break;
       default:
         // Show 404 page for unknown routes
