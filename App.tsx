@@ -183,6 +183,68 @@ const SanDiegoSemiconductorTariffPage = lazy(() => import('./pages/SanDiegoSemic
 const OaklandPharmaceuticalImportPage = lazy(() => import('./pages/OaklandPharmaceuticalImportPage'));
 const FresnoAgriculturalEquipmentTariffPage = lazy(() => import('./pages/FresnoAgriculturalEquipmentTariffPage'));
 const IrvineMedicalDeviceImportPage = lazy(() => import('./pages/IrvineMedicalDeviceImportPage'));
+// Batch 5 - More Specialized Agent Pages (25 new pages)
+// Anti-Dumping Pages
+const SantaClaraAntiDumpingPage = lazy(() => import('./pages/SantaClaraAntiDumpingPage'));
+const StocktonAntiDumpingPage = lazy(() => import('./pages/StocktonAntiDumpingPage'));
+const ModestoAntiDumpingPage = lazy(() => import('./pages/ModestoAntiDumpingPage'));
+const GlendaleAntiDumpingPage = lazy(() => import('./pages/GlendaleAntiDumpingPage'));
+const HuntingtonBeachAntiDumpingPage = lazy(() => import('./pages/HuntingtonBeachAntiDumpingPage'));
+// Countervailing Duty Pages
+const SantaRosaCountervailingPage = lazy(() => import('./pages/SantaRosaCountervailingPage'));
+const ElkGroveCountervailingPage = lazy(() => import('./pages/ElkGroveCountervailingPage'));
+const CoronaCountervailingPage = lazy(() => import('./pages/CoronaCountervailingPage'));
+const LancasterCountervailingPage = lazy(() => import('./pages/LancasterCountervailingPage'));
+const PalmdaleCountervailingPage = lazy(() => import('./pages/PalmdaleCountervailingPage'));
+// Foreign Trade Zone Pages
+const SalinasTradeZonePage = lazy(() => import('./pages/SalinasTradeZonePage'));
+const PomonaTradeZonePage = lazy(() => import('./pages/PomonaTradeZonePage'));
+const HaywardTradeZonePage = lazy(() => import('./pages/HaywardTradeZonePage'));
+const EscondidoTradeZonePage = lazy(() => import('./pages/EscondidoTradeZonePage'));
+const SunnyvaleTradeZonePage = lazy(() => import('./pages/SunnyvaleTradeZonePage'));
+// HTS Classification Pages
+const FullertonHTSClassificationPage = lazy(() => import('./pages/FullertonHTSClassificationPage'));
+const ThousandOaksHTSClassificationPage = lazy(() => import('./pages/ThousandOaksHTSClassificationPage'));
+const VisaliaHTSClassificationPage = lazy(() => import('./pages/VisaliaHTSClassificationPage'));
+const RosevilleHTSClassificationPage = lazy(() => import('./pages/RosevilleHTSClassificationPage'));
+const ConcordHTSClassificationPage = lazy(() => import('./pages/ConcordHTSClassificationPage'));
+// Export Control Pages
+const SimiValleyExportControlPage = lazy(() => import('./pages/SimiValleyExportControlPage'));
+const SantaMariaExportControlPage = lazy(() => import('./pages/SantaMariaExportControlPage'));
+const BerkeleyExportControlPage = lazy(() => import('./pages/BerkeleyExportControlPage'));
+const ElMonteExportControlPage = lazy(() => import('./pages/ElMonteExportControlPage'));
+const CarlsbadExportControlPage = lazy(() => import('./pages/CarlsbadExportControlPage'));
+// Batch 6 - More Specialized Agent Pages (25 new pages)
+// Penalty Mitigation Pages
+const RanchoCucamongaPenaltyMitigationPage = lazy(() => import('./pages/RanchoCucamongaPenaltyMitigationPage'));
+const OntarioPenaltyMitigationPage = lazy(() => import('./pages/OntarioPenaltyMitigationPage'));
+const FontanaPenaltyMitigationPage = lazy(() => import('./pages/FontanaPenaltyMitigationPage'));
+const MorenoValleyPenaltyMitigationPage = lazy(() => import('./pages/MorenoValleyPenaltyMitigationPage'));
+const SanBernardinoPenaltyMitigationPage = lazy(() => import('./pages/SanBernardinoPenaltyMitigationPage'));
+// Prior Disclosure Pages
+const WestCovinaPriorDisclosurePage = lazy(() => import('./pages/WestCovinaPriorDisclosurePage'));
+const NorwalkPriorDisclosurePage = lazy(() => import('./pages/NorwalkPriorDisclosurePage'));
+const BurbankPriorDisclosurePage = lazy(() => import('./pages/BurbankPriorDisclosurePage'));
+const ElCajonPriorDisclosurePage = lazy(() => import('./pages/ElCajonPriorDisclosurePage'));
+const RialtoPriorDisclosurePage = lazy(() => import('./pages/RialtoPriorDisclosurePage'));
+// Drawback Pages
+const DalyCityDrawbackPage = lazy(() => import('./pages/DalyCityDrawbackPage'));
+const SouthGateDrawbackPage = lazy(() => import('./pages/SouthGateDrawbackPage'));
+const MissionViejoDrawbackPage = lazy(() => import('./pages/MissionViejoDrawbackPage'));
+const CarsonDrawbackPage = lazy(() => import('./pages/CarsonDrawbackPage'));
+const SantaClaritaDrawbackPage = lazy(() => import('./pages/SantaClaritaDrawbackPage'));
+// Bonded Warehouse Pages
+const VacavilleBondedWarehousePage = lazy(() => import('./pages/VacavilleBondedWarehousePage'));
+const FairfieldBondedWarehousePage = lazy(() => import('./pages/FairfieldBondedWarehousePage'));
+const AntiochBondedWarehousePage = lazy(() => import('./pages/AntiochBondedWarehousePage'));
+const RichmondBondedWarehousePage = lazy(() => import('./pages/RichmondBondedWarehousePage'));
+const SanLeandroBondedWarehousePage = lazy(() => import('./pages/SanLeandroBondedWarehousePage'));
+// Customs Valuation Pages
+const RedwoodCityCustomsValuationPage = lazy(() => import('./pages/RedwoodCityCustomsValuationPage'));
+const LakeForestCustomsValuationPage = lazy(() => import('./pages/LakeForestCustomsValuationPage'));
+const NapaCustomsValuationPage = lazy(() => import('./pages/NapaCustomsValuationPage'));
+const MantecaCustomsValuationPage = lazy(() => import('./pages/MantecaCustomsValuationPage'));
+const ChinoCustomsValuationPage = lazy(() => import('./pages/ChinoCustomsValuationPage'));
 
 // Loading fallback component with explicit height to prevent CLS
 const PageLoader: React.FC = () => (
@@ -738,6 +800,168 @@ const App: React.FC = () => {
         break;
       case 'irvine-medical-device-import':
         content = <IrvineMedicalDeviceImportPage />;
+        break;
+      // Batch 5 - More Specialized Agent Pages (25 new pages)
+      // Anti-Dumping Pages
+      case 'santa-clara-anti-dumping':
+        content = <SantaClaraAntiDumpingPage />;
+        break;
+      case 'stockton-anti-dumping':
+        content = <StocktonAntiDumpingPage />;
+        break;
+      case 'modesto-anti-dumping':
+        content = <ModestoAntiDumpingPage />;
+        break;
+      case 'glendale-anti-dumping':
+        content = <GlendaleAntiDumpingPage />;
+        break;
+      case 'huntington-beach-anti-dumping':
+        content = <HuntingtonBeachAntiDumpingPage />;
+        break;
+      // Countervailing Duty Pages
+      case 'santa-rosa-countervailing':
+        content = <SantaRosaCountervailingPage />;
+        break;
+      case 'elk-grove-countervailing':
+        content = <ElkGroveCountervailingPage />;
+        break;
+      case 'corona-countervailing':
+        content = <CoronaCountervailingPage />;
+        break;
+      case 'lancaster-countervailing':
+        content = <LancasterCountervailingPage />;
+        break;
+      case 'palmdale-countervailing':
+        content = <PalmdaleCountervailingPage />;
+        break;
+      // Foreign Trade Zone Pages
+      case 'salinas-trade-zone':
+        content = <SalinasTradeZonePage />;
+        break;
+      case 'pomona-trade-zone':
+        content = <PomonaTradeZonePage />;
+        break;
+      case 'hayward-trade-zone':
+        content = <HaywardTradeZonePage />;
+        break;
+      case 'escondido-trade-zone':
+        content = <EscondidoTradeZonePage />;
+        break;
+      case 'sunnyvale-trade-zone':
+        content = <SunnyvaleTradeZonePage />;
+        break;
+      // HTS Classification Pages
+      case 'fullerton-hts-classification':
+        content = <FullertonHTSClassificationPage />;
+        break;
+      case 'thousand-oaks-hts-classification':
+        content = <ThousandOaksHTSClassificationPage />;
+        break;
+      case 'visalia-hts-classification':
+        content = <VisaliaHTSClassificationPage />;
+        break;
+      case 'roseville-hts-classification':
+        content = <RosevilleHTSClassificationPage />;
+        break;
+      case 'concord-hts-classification':
+        content = <ConcordHTSClassificationPage />;
+        break;
+      // Export Control Pages
+      case 'simi-valley-export-control':
+        content = <SimiValleyExportControlPage />;
+        break;
+      case 'santa-maria-export-control':
+        content = <SantaMariaExportControlPage />;
+        break;
+      case 'berkeley-export-control':
+        content = <BerkeleyExportControlPage />;
+        break;
+      case 'el-monte-export-control':
+        content = <ElMonteExportControlPage />;
+        break;
+      case 'carlsbad-export-control':
+        content = <CarlsbadExportControlPage />;
+        break;
+      // Batch 6 - More Specialized Agent Pages (25 new pages)
+      // Penalty Mitigation Pages
+      case 'rancho-cucamonga-penalty-mitigation':
+        content = <RanchoCucamongaPenaltyMitigationPage />;
+        break;
+      case 'ontario-penalty-mitigation':
+        content = <OntarioPenaltyMitigationPage />;
+        break;
+      case 'fontana-penalty-mitigation':
+        content = <FontanaPenaltyMitigationPage />;
+        break;
+      case 'moreno-valley-penalty-mitigation':
+        content = <MorenoValleyPenaltyMitigationPage />;
+        break;
+      case 'san-bernardino-penalty-mitigation':
+        content = <SanBernardinoPenaltyMitigationPage />;
+        break;
+      // Prior Disclosure Pages
+      case 'west-covina-prior-disclosure':
+        content = <WestCovinaPriorDisclosurePage />;
+        break;
+      case 'norwalk-prior-disclosure':
+        content = <NorwalkPriorDisclosurePage />;
+        break;
+      case 'burbank-prior-disclosure':
+        content = <BurbankPriorDisclosurePage />;
+        break;
+      case 'el-cajon-prior-disclosure':
+        content = <ElCajonPriorDisclosurePage />;
+        break;
+      case 'rialto-prior-disclosure':
+        content = <RialtoPriorDisclosurePage />;
+        break;
+      // Drawback Pages
+      case 'daly-city-drawback':
+        content = <DalyCityDrawbackPage />;
+        break;
+      case 'south-gate-drawback':
+        content = <SouthGateDrawbackPage />;
+        break;
+      case 'mission-viejo-drawback':
+        content = <MissionViejoDrawbackPage />;
+        break;
+      case 'carson-drawback':
+        content = <CarsonDrawbackPage />;
+        break;
+      case 'santa-clarita-drawback':
+        content = <SantaClaritaDrawbackPage />;
+        break;
+      // Bonded Warehouse Pages
+      case 'vacaville-bonded-warehouse':
+        content = <VacavilleBondedWarehousePage />;
+        break;
+      case 'fairfield-bonded-warehouse':
+        content = <FairfieldBondedWarehousePage />;
+        break;
+      case 'antioch-bonded-warehouse':
+        content = <AntiochBondedWarehousePage />;
+        break;
+      case 'richmond-bonded-warehouse':
+        content = <RichmondBondedWarehousePage />;
+        break;
+      case 'san-leandro-bonded-warehouse':
+        content = <SanLeandroBondedWarehousePage />;
+        break;
+      // Customs Valuation Pages
+      case 'redwood-city-customs-valuation':
+        content = <RedwoodCityCustomsValuationPage />;
+        break;
+      case 'lake-forest-customs-valuation':
+        content = <LakeForestCustomsValuationPage />;
+        break;
+      case 'napa-customs-valuation':
+        content = <NapaCustomsValuationPage />;
+        break;
+      case 'manteca-customs-valuation':
+        content = <MantecaCustomsValuationPage />;
+        break;
+      case 'chino-customs-valuation':
+        content = <ChinoCustomsValuationPage />;
         break;
       default:
         // Show 404 page for unknown routes
