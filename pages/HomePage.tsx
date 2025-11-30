@@ -118,12 +118,13 @@ const HomePage: React.FC = () => {
 
   // SEO Meta Tags and Open Graph - Optimized for Main Hub Keywords
   useMeta({
-    title: 'CA Trade Attorney | USA Customs Lawyer',
-    description: 'California international trade attorney & customs lawyer. CBP defense, trade compliance, import/export law. Serving LA, SF & all CA cities.',
+    title: 'California Tariff Lawyer | Customs Attorney Calabasas',
+    description: 'California tariff lawyer & customs attorney based in Calabasas. CBP defense, tariff classification, customs audits, trade compliance. Serving LA, SF & all CA cities. (310) 744-1328.',
+    keywords: 'tariff lawyer california, customs attorney calabasas, international trade attorney, tariff classification attorney, CBP defense lawyer, customs audit attorney, import export lawyer california, trade compliance attorney, calabasas trade lawyer',
     canonical: '',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-home.jpg`,
-    ogImageAlt: 'Trembach Law Firm - California International Trade & Customs Attorney',
+    ogImageAlt: 'Trembach Law Firm - California Tariff Lawyer & Customs Attorney',
     ogImageWidth: 1200,
     ogImageHeight: 630,
     twitterCard: 'summary_large_image',
@@ -241,10 +242,21 @@ const HomePage: React.FC = () => {
           <div className="w-24 h-1 bg-secondary-teal mx-auto mb-12"></div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* California Port Locations */}
+            {/* California Locations */}
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">California Port Locations</h3>
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">California Locations</h3>
               <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#calabasas-customs-attorney" className="service-link">
+                    <span className="service-link__title">Calabasas Office (HQ)</span>
+                    <p className="service-link__description">Tariff lawyer & customs attorney</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
                 <div className="service-link-item">
                   <a href="#los-angeles-port-customs-attorney" className="service-link">
                     <span className="service-link__title">Los Angeles & Long Beach Port</span>
