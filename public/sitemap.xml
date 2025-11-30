@@ -1386,4 +1386,16 @@
     <priority>0.80</priority>
   </url>
 
+  <!-- ============================================== -->
+  <!-- TRENDING 2025 TARIFF PAGES -->
+  <!-- ============================================== -->
+
+  <!-- 2025 Trump Tariff Attorney -->
+  <url>
+    <loc>https://trembach.law/#trump-2025-tariff-attorney</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
 </urlset>
