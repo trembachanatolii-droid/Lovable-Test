@@ -129,6 +129,13 @@ const VisaliaTariffLawyerPage = lazy(() => import('./pages/VisaliaTariffLawyerPa
 // Trending 2025 Tariff Pages
 const Trump2025TariffAttorneyPage = lazy(() => import('./pages/Trump2025TariffAttorneyPage'));
 
+// NEW: Keyword-City Expansion Pages (1000+ keywords)
+const IrvineCBPAuditDefensePage = lazy(() => import('./pages/IrvineCBPAuditDefensePage'));
+const SanDiegoSection301Page = lazy(() => import('./pages/SanDiegoSection301Page'));
+const SacramentoUFLPAAttorneyPage = lazy(() => import('./pages/SacramentoUFLPAAttorneyPage'));
+const RiversideCustomsSeizurePage = lazy(() => import('./pages/RiversideCustomsSeizurePage'));
+const FremontSemiconductorTariffPage = lazy(() => import('./pages/FremontSemiconductorTariffPage'));
+
 // Loading fallback component with explicit height to prevent CLS
 const PageLoader: React.FC = () => (
   <div
@@ -539,6 +546,22 @@ const App: React.FC = () => {
       // Trending 2025 Tariff Pages
       case 'trump-2025-tariff-attorney':
         content = <Trump2025TariffAttorneyPage />;
+        break;
+      // NEW: Keyword-City Expansion Pages (1000+ keywords)
+      case 'irvine-cbp-audit-defense':
+        content = <IrvineCBPAuditDefensePage />;
+        break;
+      case 'san-diego-section-301':
+        content = <SanDiegoSection301Page />;
+        break;
+      case 'sacramento-uflpa-attorney':
+        content = <SacramentoUFLPAAttorneyPage />;
+        break;
+      case 'riverside-customs-seizure':
+        content = <RiversideCustomsSeizurePage />;
+        break;
+      case 'fremont-semiconductor-tariff':
+        content = <FremontSemiconductorTariffPage />;
         break;
       default:
         // Show 404 page for unknown routes
