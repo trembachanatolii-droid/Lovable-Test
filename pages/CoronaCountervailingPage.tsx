@@ -46,7 +46,7 @@ const CoronaCountervailingPage: React.FC = () => {
         },
         {
           question: 'Can you help Corona manufacturers facing EAPA investigations?',
-          answer: 'Yes. CBP's Enforce and Protect Act (EAPA) investigates CVD evasion through transshipment or country of origin misrepresentation. EAPA investigations can result in detention of goods and massive retroactive CVD. Our Corona attorney provides immediate EAPA response including comprehensive documentation, supply chain verification, and substantial transformation analysis.',
+          answer: 'Yes. CBP Enforce and Protect Act (EAPA) investigates CVD evasion through transshipment or country of origin misrepresentation. EAPA investigations can result in detention of goods and massive retroactive CVD. Our Corona attorney provides immediate EAPA response including comprehensive documentation, supply chain verification, and substantial transformation analysis.',
         },
         {
           question: 'Do you serve other Inland Empire cities besides Corona?',
