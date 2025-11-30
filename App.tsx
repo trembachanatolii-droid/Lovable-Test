@@ -152,6 +152,37 @@ const SanDiegoCustomsSeizurePage = lazy(() => import('./pages/SanDiegoCustomsSei
 const LongBeachCustomsSeizurePage = lazy(() => import('./pages/LongBeachCustomsSeizurePage'));
 const SanJosePharmaImportPage = lazy(() => import('./pages/SanJosePharmaImportPage'));
 const FremontAutomotiveTariffPage = lazy(() => import('./pages/FremontAutomotiveTariffPage'));
+// Batch 4 - Specialized Agent Created Pages (25 new pages)
+// CBP Audit Pages
+const OaklandCBPAuditPage = lazy(() => import('./pages/OaklandCBPAuditPage'));
+const FresnoCBPAuditPage = lazy(() => import('./pages/FresnoCBPAuditPage'));
+const SantaAnaCBPAuditPage = lazy(() => import('./pages/SantaAnaCBPAuditPage'));
+const PasadenaCBPAuditPage = lazy(() => import('./pages/PasadenaCBPAuditPage'));
+const TorranceCBPAuditPage = lazy(() => import('./pages/TorranceCBPAuditPage'));
+// Section 301 Pages
+const LongBeachSection301Page = lazy(() => import('./pages/LongBeachSection301Page'));
+const IrvineSection301Page = lazy(() => import('./pages/IrvineSection301Page'));
+const OaklandSection301Page = lazy(() => import('./pages/OaklandSection301Page'));
+const AnaheimSection301Page = lazy(() => import('./pages/AnaheimSection301Page'));
+const TorranceSection301Page = lazy(() => import('./pages/TorranceSection301Page'));
+// UFLPA Pages
+const SanDiegoUFLPAPage = lazy(() => import('./pages/SanDiegoUFLPAPage'));
+const FresnoUFLPAPage = lazy(() => import('./pages/FresnoUFLPAPage'));
+const IrvineUFLPAPage = lazy(() => import('./pages/IrvineUFLPAPage'));
+const SanJoseUFLPAPage = lazy(() => import('./pages/SanJoseUFLPAPage'));
+const TorranceUFLPAPage = lazy(() => import('./pages/TorranceUFLPAPage'));
+// Customs Seizure Pages
+const LosAngelesCustomsSeizurePage = lazy(() => import('./pages/LosAngelesCustomsSeizurePage'));
+const OaklandCustomsSeizurePage = lazy(() => import('./pages/OaklandCustomsSeizurePage'));
+const FresnoCustomsSeizurePage = lazy(() => import('./pages/FresnoCustomsSeizurePage'));
+const SacramentoCustomsSeizurePage = lazy(() => import('./pages/SacramentoCustomsSeizurePage'));
+const IrvineCustomsSeizurePage = lazy(() => import('./pages/IrvineCustomsSeizurePage'));
+// Industry-Specific Pages
+const LosAngelesAutomotiveTariffPage = lazy(() => import('./pages/LosAngelesAutomotiveTariffPage'));
+const SanDiegoSemiconductorTariffPage = lazy(() => import('./pages/SanDiegoSemiconductorTariffPage'));
+const OaklandPharmaceuticalImportPage = lazy(() => import('./pages/OaklandPharmaceuticalImportPage'));
+const FresnoAgriculturalEquipmentTariffPage = lazy(() => import('./pages/FresnoAgriculturalEquipmentTariffPage'));
+const IrvineMedicalDeviceImportPage = lazy(() => import('./pages/IrvineMedicalDeviceImportPage'));
 
 // Loading fallback component with explicit height to prevent CLS
 const PageLoader: React.FC = () => (
@@ -626,6 +657,87 @@ const App: React.FC = () => {
         break;
       case 'fremont-automotive-tariff':
         content = <FremontAutomotiveTariffPage />;
+        break;
+      // Batch 4 - Specialized Agent Created Pages (25 new pages)
+      // CBP Audit Pages
+      case 'oakland-cbp-audit':
+        content = <OaklandCBPAuditPage />;
+        break;
+      case 'fresno-cbp-audit':
+        content = <FresnoCBPAuditPage />;
+        break;
+      case 'santa-ana-cbp-audit':
+        content = <SantaAnaCBPAuditPage />;
+        break;
+      case 'pasadena-cbp-audit':
+        content = <PasadenaCBPAuditPage />;
+        break;
+      case 'torrance-cbp-audit':
+        content = <TorranceCBPAuditPage />;
+        break;
+      // Section 301 Pages
+      case 'long-beach-section-301':
+        content = <LongBeachSection301Page />;
+        break;
+      case 'irvine-section-301':
+        content = <IrvineSection301Page />;
+        break;
+      case 'oakland-section-301':
+        content = <OaklandSection301Page />;
+        break;
+      case 'anaheim-section-301':
+        content = <AnaheimSection301Page />;
+        break;
+      case 'torrance-section-301':
+        content = <TorranceSection301Page />;
+        break;
+      // UFLPA Pages
+      case 'san-diego-uflpa':
+        content = <SanDiegoUFLPAPage />;
+        break;
+      case 'fresno-uflpa':
+        content = <FresnoUFLPAPage />;
+        break;
+      case 'irvine-uflpa':
+        content = <IrvineUFLPAPage />;
+        break;
+      case 'san-jose-uflpa':
+        content = <SanJoseUFLPAPage />;
+        break;
+      case 'torrance-uflpa':
+        content = <TorranceUFLPAPage />;
+        break;
+      // Customs Seizure Pages
+      case 'los-angeles-customs-seizure':
+        content = <LosAngelesCustomsSeizurePage />;
+        break;
+      case 'oakland-customs-seizure':
+        content = <OaklandCustomsSeizurePage />;
+        break;
+      case 'fresno-customs-seizure':
+        content = <FresnoCustomsSeizurePage />;
+        break;
+      case 'sacramento-customs-seizure':
+        content = <SacramentoCustomsSeizurePage />;
+        break;
+      case 'irvine-customs-seizure':
+        content = <IrvineCustomsSeizurePage />;
+        break;
+      // Industry-Specific Pages
+      case 'los-angeles-automotive-tariff':
+        content = <LosAngelesAutomotiveTariffPage />;
+        break;
+      case 'san-diego-semiconductor-tariff':
+        content = <SanDiegoSemiconductorTariffPage />;
+        break;
+      case 'oakland-pharmaceutical-import':
+        content = <OaklandPharmaceuticalImportPage />;
+        break;
+      case 'fresno-agricultural-equipment-tariff':
+        content = <FresnoAgriculturalEquipmentTariffPage />;
+        break;
+      case 'irvine-medical-device-import':
+        content = <IrvineMedicalDeviceImportPage />;
         break;
       default:
         // Show 404 page for unknown routes
