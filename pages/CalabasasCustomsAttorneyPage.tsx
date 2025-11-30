@@ -2,6 +2,7 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 
 import Button from '../components/Button';
+import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateLocalBusinessSchema, generateFAQSchema } from '../utils/seo';
@@ -499,6 +500,9 @@ const CalabasasCustomsAttorneyPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Related California Tariff Lawyer Locations - Internal Linking */}
+      <RelatedCityPages currentCity="Calabasas" region="los-angeles" />
 
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">

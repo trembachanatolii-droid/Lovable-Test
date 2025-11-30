@@ -126,6 +126,9 @@ const TorranceTradeAttorneyPage = lazy(() => import('./pages/TorranceTradeAttorn
 const VallejoTariffAttorneyPage = lazy(() => import('./pages/VallejoTariffAttorneyPage'));
 const VisaliaTariffLawyerPage = lazy(() => import('./pages/VisaliaTariffLawyerPage'));
 
+// Trending 2025 Tariff Pages
+const Trump2025TariffAttorneyPage = lazy(() => import('./pages/Trump2025TariffAttorneyPage'));
+
 // Loading fallback component with explicit height to prevent CLS
 const PageLoader: React.FC = () => (
   <div
@@ -532,6 +535,10 @@ const App: React.FC = () => {
         break;
       case 'visalia-tariff-lawyer':
         content = <VisaliaTariffLawyerPage />;
+        break;
+      // Trending 2025 Tariff Pages
+      case 'trump-2025-tariff-attorney':
+        content = <Trump2025TariffAttorneyPage />;
         break;
       default:
         // Show 404 page for unknown routes
