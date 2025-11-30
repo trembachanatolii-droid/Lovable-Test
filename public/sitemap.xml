@@ -1564,4 +1564,186 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Batch 4 - Specialized Agent Created Pages (25 new pages) -->
+
+  <!-- CBP Audit Pages -->
+  <url>
+    <loc>https://trembach.law/#oakland-cbp-audit</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#fresno-cbp-audit</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#santa-ana-cbp-audit</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#pasadena-cbp-audit</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#torrance-cbp-audit</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Section 301 Pages -->
+  <url>
+    <loc>https://trembach.law/#long-beach-section-301</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#irvine-section-301</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#oakland-section-301</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#anaheim-section-301</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#torrance-section-301</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- UFLPA Pages -->
+  <url>
+    <loc>https://trembach.law/#san-diego-uflpa</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#fresno-uflpa</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#irvine-uflpa</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#san-jose-uflpa</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#torrance-uflpa</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Customs Seizure Pages -->
+  <url>
+    <loc>https://trembach.law/#los-angeles-customs-seizure</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#oakland-customs-seizure</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#fresno-customs-seizure</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#sacramento-customs-seizure</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#irvine-customs-seizure</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Industry-Specific Pages -->
+  <url>
+    <loc>https://trembach.law/#los-angeles-automotive-tariff</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#san-diego-semiconductor-tariff</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#oakland-pharmaceutical-import</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#fresno-agricultural-equipment-tariff</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/#irvine-medical-device-import</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
