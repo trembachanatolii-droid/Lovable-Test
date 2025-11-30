@@ -13,6 +13,33 @@ export interface ArticlePreview {
 
 export const articlePreviews: ArticlePreview[] = [
   {
+    "id": "eu-us-trade-deal-california-importers-2025",
+    "title": "EU-US Trade Deal 2025: $750 Billion Energy Commitment and 15% Tariff Framework",
+    "subheading": "California Importers Navigate New Trade Relationship Between United States and European Union",
+    "intro": "In a historic development that reshapes the transatlantic economic landscape, the European Union and United States reached a comprehensive trade agreement in November 2025 that establishes a new framework for bilateral commerce. The landmark deal includes an EU commitment to purchase $750 billion in American energy resources over the next decade, alongside $600 billion in direct European investment in U.S. infrastructure and manufacturing by 2028. In exchange, the United States will implement a uniform 15% tariff rate on most European imports, replacing the patchwork of tariffs, exemptions, and trade disputes that have characterized U.S.-EU relations in recent years.",
+    "keywords": "EU US trade deal attorney California, EU tariff lawyer, European Union trade agreement California, EU 15% tariff compliance, EU energy trade attorney, California EU import lawyer, transatlantic trade attorney California, EU investment compliance lawyer, European import tariff California, EU trade deal attorney",
+    "publishedDate": "2025-11-30",
+    "lastModified": "2025-11-30"
+  },
+  {
+    "id": "agricultural-products-tariff-exemption-california-2025",
+    "title": "Agricultural Products Tariff Exemption: November 2025 Executive Order Analysis",
+    "subheading": "California Food Importers Benefit from Reciprocal Tariff Exclusions on Food and Agricultural Products",
+    "intro": "On November 14, 2025, President Trump signed a landmark executive order exempting agricultural products and food items from all reciprocal tariffs, with the exemption taking effect retroactively to November 13, 2025. This significant policy shift provides critical relief to California's massive agricultural import sector, which handles over $50 billion in annual agricultural trade.",
+    "keywords": "agricultural tariff exemption attorney California, food import tariff lawyer, reciprocal tariff exclusion California, agricultural trade attorney, food tariff exemption lawyer California, produce import compliance attorney, agricultural export lawyer California, food trade exemption attorney, farm product tariff California, agricultural import lawyer",
+    "publishedDate": "2025-11-30",
+    "lastModified": "2025-11-30"
+  },
+  {
+    "id": "section-301-exclusion-extensions-california-november-2025",
+    "title": "Section 301 Tariff Exclusions Extended: 178 Products Through November 2026",
+    "subheading": "California Importers Gain One-Year Relief as US-China Deal Extends Critical Product Exclusions",
+    "intro": "In a significant development for California importers and manufacturers, the United States Trade Representative (USTR) announced the extension of 178 product-specific exclusions from Section 301 tariffs on Chinese goods through November 10, 2026. This extension, resulting from bilateral negotiations concluded in Kuala Lumpur, Malaysia, provides critical relief to businesses that were facing the November 29, 2025 expiration deadline.",
+    "keywords": "Section 301 exclusion attorney California, tariff exclusion extension lawyer, China tariff exclusion California, Section 301 extension attorney, USTR exclusion lawyer California, tariff relief attorney, China trade deal exclusion California, Section 301 compliance lawyer, tariff exclusion renewal attorney California, 301 exclusion extension attorney",
+    "publishedDate": "2025-11-30",
+    "lastModified": "2025-11-30"
+  },
+  {
     "id": "scotus-ieepa-tariff-challenge-november-2025",
     "title": "Supreme Court IEEPA Tariff Challenge: Preparing for Potential Tariff Refunds",
     "subheading": "California Importers Must Preserve Refund Rights as Justices Signal Skepticism Toward Presidential Tariff Authority",

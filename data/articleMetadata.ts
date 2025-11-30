@@ -10,6 +10,11 @@ export interface ArticleMetadataItem {
 }
 
 export const articleMetadata: Record<string, ArticleMetadataItem> = {
+  // November 30, 2025 (3 articles)
+  'eu-us-trade-deal-california-importers-2025': { date: 'NOVEMBER 30, 2025', isoDate: '2025-11-30', readTime: '8 MIN READ' },
+  'agricultural-products-tariff-exemption-california-2025': { date: 'NOVEMBER 30, 2025', isoDate: '2025-11-30', readTime: '8 MIN READ' },
+  'section-301-exclusion-extensions-california-november-2025': { date: 'NOVEMBER 30, 2025', isoDate: '2025-11-30', readTime: '8 MIN READ' },
+
   // November 29, 2025 (3 articles)
   'scotus-ieepa-tariff-challenge-november-2025': { date: 'NOVEMBER 29, 2025', isoDate: '2025-11-29', readTime: '6 MIN READ' },
   'section-301-maritime-tariffs-california-ports-2025': { date: 'NOVEMBER 29, 2025', isoDate: '2025-11-29', readTime: '6 MIN READ' },

@@ -1,6 +1,12 @@
 import { ArticleData } from '../types';
+import { euUsTradeArticle } from './article-eu-us-trade-deal-november-2025';
+import { agriculturalExemptionArticle } from './article-agricultural-tariff-exemption-2025';
+import { section301ExtensionsArticle } from './article-section-301-exclusion-extensions-2025';
 
 export const articles: ArticleData[] = [
+  euUsTradeArticle,
+  agriculturalExemptionArticle,
+  section301ExtensionsArticle,
   {
     id: 'scotus-ieepa-tariff-challenge-november-2025',
     title: 'Supreme Court IEEPA Tariff Challenge: Preparing for Potential Tariff Refunds',
