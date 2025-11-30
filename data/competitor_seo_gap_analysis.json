@@ -1,0 +1,358 @@
+{
+  "_metadata": {
+    "version": "1.0",
+    "generated": "2025-11-30",
+    "description": "Comprehensive competitor SEO gap analysis for tariff lawyer calabasas keyword",
+    "analysis_depth": "extreme",
+    "competitors_analyzed": 11
+  },
+  "why_ranking_page_2": {
+    "critical_issues": [
+      {
+        "issue": "Hash-Based Routing Architecture",
+        "severity": "CRITICAL",
+        "impact": "Google treats all pages as one URL, limiting indexation",
+        "current": "https://trembach.law/#calabasas-customs-attorney",
+        "recommended": "https://trembach.law/calabasas-customs-attorney",
+        "fix_difficulty": "HIGH - Requires architecture change",
+        "priority": 1
+      },
+      {
+        "issue": "Keyword Order Mismatch",
+        "severity": "HIGH",
+        "impact": "Exact match 'tariff lawyer calabasas' not in H1",
+        "current_h1": "Calabasas Tariff Lawyer",
+        "search_query": "tariff lawyer calabasas",
+        "fix_difficulty": "LOW - Content update",
+        "priority": 2,
+        "status": "FIXED"
+      },
+      {
+        "issue": "Lower Domain Authority",
+        "severity": "MEDIUM",
+        "impact": "Competitors have more backlinks and trust",
+        "your_da": "Estimated 15-20",
+        "competitor_range": "7-46",
+        "harris_sliwoski": "DA 46, 4,320 referring domains",
+        "fix_difficulty": "LONG-TERM - Link building",
+        "priority": 3
+      },
+      {
+        "issue": "Limited Keyword Density",
+        "severity": "MEDIUM",
+        "impact": "Target keyword not prominent enough in content",
+        "current_density": "Low",
+        "recommended_density": "1-2% with natural variations",
+        "fix_difficulty": "LOW - Content update",
+        "priority": 4,
+        "status": "FIXED"
+      }
+    ],
+    "quick_wins_implemented": [
+      "Updated title tag to lead with 'Tariff Lawyer Calabasas'",
+      "H1 now includes exact match 'Tariff Lawyer Calabasas CA'",
+      "Meta description includes primary keyword",
+      "Added 27+ keyword variations to meta keywords",
+      "Schema description updated with primary keyword",
+      "Hero subtitle reinforces keyword naturally"
+    ]
+  },
+  "competitor_analysis": {
+    "nakachi_eckhardt_jacobson": {
+      "url": "tradelawcounsel.com",
+      "domain_authority": 17,
+      "referring_domains": 85,
+      "monthly_traffic": 120,
+      "keywords_ranking": 74,
+      "strengths": [
+        "Clean URL structure /california-customs-attorney",
+        "Specialized focus on customs law only",
+        "Multiple California city pages",
+        "Strong internal linking"
+      ],
+      "weaknesses": [
+        "Limited content freshness",
+        "Low backlink count",
+        "No blog or news section visible"
+      ],
+      "keywords_they_target": [
+        "california customs attorney",
+        "customs attorney california",
+        "los angeles customs attorneys",
+        "san francisco customs law",
+        "orange county customs lawyer",
+        "tariff classification disputes",
+        "cf28 cf29 responses",
+        "customs penalties defense"
+      ],
+      "gaps_to_exploit": [
+        "Section 301 tariff content",
+        "UFLPA compliance content",
+        "2025 tariff news coverage",
+        "Industry-specific pages"
+      ]
+    },
+    "tuttle_law": {
+      "url": "tuttlelaw.com",
+      "domain_authority": 30,
+      "referring_domains": 262,
+      "monthly_traffic": 180,
+      "keywords_ranking": 272,
+      "strengths": [
+        "Highest DA among direct competitors",
+        "Strong brand recognition",
+        "Comprehensive service pages",
+        "Good internal linking structure"
+      ],
+      "weaknesses": [
+        "Dated design",
+        "Limited California-specific content",
+        "No local city pages"
+      ],
+      "keywords_they_target": [
+        "customs attorney",
+        "international trade law firm",
+        "import duties",
+        "customs penalties",
+        "liquidated damages",
+        "cbp audits",
+        "duty drawback"
+      ],
+      "gaps_to_exploit": [
+        "California city-specific pages",
+        "Local SEO optimization",
+        "2025 tariff developments",
+        "UFLPA enforcement content"
+      ]
+    },
+    "braumiller_law_group": {
+      "url": "braumillerlaw.com",
+      "domain_authority": 31,
+      "referring_domains": 499,
+      "monthly_traffic": 2200,
+      "keywords_ranking": 597,
+      "strengths": [
+        "High traffic volume",
+        "Excellent content marketing",
+        "Strong topical authority",
+        "Many service-specific pages"
+      ],
+      "weaknesses": [
+        "Texas-focused, less CA presence",
+        "High spam score (24%)",
+        "Generic location targeting"
+      ],
+      "keywords_they_target": [
+        "retaliatory tariffs",
+        "deemed exports",
+        "export controls",
+        "customs compliance",
+        "trade remedies",
+        "antidumping duties",
+        "section 301 tariffs",
+        "cbp audits"
+      ],
+      "gaps_to_exploit": [
+        "California-specific content",
+        "Port of LA/Long Beach focus",
+        "Local attorney presence",
+        "California industry focus"
+      ]
+    },
+    "harris_sliwoski": {
+      "url": "harris-sliwoski.com",
+      "domain_authority": 46,
+      "referring_domains": 4320,
+      "monthly_traffic": 3600,
+      "keywords_ranking": 2381,
+      "strengths": [
+        "Highest domain authority",
+        "Massive backlink profile",
+        "Strong content marketing",
+        "Multi-office presence"
+      ],
+      "weaknesses": [
+        "Not customs-specialized",
+        "Broad practice areas",
+        "Generic approach"
+      ],
+      "keywords_they_target": [
+        "international law",
+        "international trade law",
+        "los angeles international lawyers",
+        "corporate legal services",
+        "cross-border transactions"
+      ],
+      "gaps_to_exploit": [
+        "Specialized customs focus",
+        "CBP defense expertise",
+        "Tariff-specific content",
+        "Calabasas local presence"
+      ]
+    },
+    "roll_harris": {
+      "url": "thetradelawfirm.com",
+      "domain_authority": 7,
+      "referring_domains": 34,
+      "monthly_traffic": 4,
+      "keywords_ranking": 9,
+      "strengths": [
+        "Specialized trade focus",
+        "Clear service offerings"
+      ],
+      "weaknesses": [
+        "Very low authority",
+        "Minimal traffic",
+        "Limited content"
+      ],
+      "keywords_they_target": [
+        "international trade law",
+        "customs law",
+        "tariffs duties",
+        "import compliance"
+      ],
+      "gaps_to_exploit": [
+        "Content volume",
+        "Location pages",
+        "Educational resources",
+        "News coverage"
+      ]
+    },
+    "stein_shostak": {
+      "url": "steinshostak.com",
+      "domain_authority": 16,
+      "referring_domains": 31,
+      "monthly_traffic": 0,
+      "keywords_ranking": 0,
+      "strengths": [
+        "Long history in customs law",
+        "Specialized expertise"
+      ],
+      "weaknesses": [
+        "No organic traffic",
+        "Outdated SEO",
+        "No content marketing"
+      ],
+      "keywords_they_target": [
+        "customs seizures",
+        "detentions penalties",
+        "tariff classification",
+        "valuation",
+        "country of origin"
+      ],
+      "gaps_to_exploit": [
+        "Modern SEO approach",
+        "Content marketing",
+        "Local optimization",
+        "Fresh content"
+      ]
+    }
+  },
+  "missing_keywords_from_competitors": {
+    "high_priority": [
+      "customs attorney near me",
+      "tariff lawyer near me",
+      "best customs attorney california",
+      "top tariff lawyer california",
+      "customs attorney reviews",
+      "tariff lawyer cost",
+      "free customs consultation",
+      "emergency customs attorney",
+      "urgent CBP defense",
+      "same day customs lawyer"
+    ],
+    "service_gaps": [
+      "duty refund attorney",
+      "tariff exemption lawyer",
+      "customs recertification attorney",
+      "entry summary correction lawyer",
+      "protest liquidation attorney",
+      "rate advance appeal lawyer",
+      "supplemental information request attorney",
+      "customs summons defense",
+      "importer audit attorney",
+      "reasonable care consultation"
+    ],
+    "industry_gaps": [
+      "solar panel tariff attorney",
+      "EV battery customs lawyer",
+      "lithium import attorney",
+      "rare earth customs lawyer",
+      "chip import attorney",
+      "semiconductor tariff lawyer",
+      "AI hardware customs attorney",
+      "drone import lawyer",
+      "medical PPE customs attorney",
+      "vaccine import lawyer"
+    ],
+    "2025_trending_gaps": [
+      "trump 2025 tariff attorney",
+      "reciprocal tariff lawyer",
+      "liberation day tariff attorney",
+      "IEEPA tariff defense",
+      "emergency tariff attorney",
+      "tariff pause lawyer",
+      "tariff exemption request 2025",
+      "china tariff mitigation 2025",
+      "mexico tariff attorney 2025",
+      "canada tariff lawyer 2025"
+    ]
+  },
+  "action_plan_for_top_3": {
+    "immediate_actions_completed": [
+      "Title tag optimization with exact keyword",
+      "H1 optimization with exact keyword",
+      "Meta description with keyword",
+      "Schema markup with keyword",
+      "Hero content with keyword variations"
+    ],
+    "short_term_actions": [
+      "Add more keyword-rich content sections",
+      "Implement internal linking from all pages",
+      "Add FAQ schema with keyword-rich questions",
+      "Create city-specific landing pages",
+      "Add testimonials with location mentions"
+    ],
+    "medium_term_actions": [
+      "Build backlinks from legal directories",
+      "Guest posts on trade publications",
+      "PR mentions in tariff news",
+      "Social proof optimization",
+      "Google Business Profile optimization"
+    ],
+    "long_term_actions": [
+      "Consider static site generation for key pages",
+      "Implement proper URL structure without hashes",
+      "Build topical authority with 100+ articles",
+      "Establish thought leadership",
+      "Speaking engagements and citations"
+    ]
+  },
+  "keyword_density_recommendations": {
+    "primary_keyword": "tariff lawyer calabasas",
+    "recommended_occurrences": {
+      "h1": 1,
+      "h2": 2,
+      "first_100_words": 1,
+      "body_content": "5-8 (naturally distributed)",
+      "last_100_words": 1,
+      "alt_tags": 1,
+      "meta_title": 1,
+      "meta_description": 1
+    },
+    "secondary_keywords": [
+      "customs attorney calabasas",
+      "calabasas customs lawyer",
+      "tariff attorney calabasas ca",
+      "calabasas trade lawyer"
+    ],
+    "lsi_keywords": [
+      "CBP defense calabasas",
+      "import lawyer calabasas",
+      "export attorney calabasas",
+      "trade compliance calabasas",
+      "tariff classification calabasas",
+      "customs audit calabasas"
+    ]
+  }
+}
