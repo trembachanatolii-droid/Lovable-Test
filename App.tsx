@@ -22,6 +22,7 @@ const GeneralApplicationPage = lazy(() => import('./pages/GeneralApplicationPage
 const AttorneyAdvertisingPage = lazy(() => import('./pages/AttorneyAdvertisingPage'));
 const LosAngelesPortPage = lazy(() => import('./pages/LosAngelesPortPage'));
 const BayAreaTradeLawPage = lazy(() => import('./pages/BayAreaTradeLawPage'));
+const CalabasasCustomsAttorneyPage = lazy(() => import('./pages/CalabasasCustomsAttorneyPage'));
 const CustomsDefensePage = lazy(() => import('./pages/CustomsDefensePage'));
 const RegulatoryCompliancePage = lazy(() => import('./pages/RegulatoryCompliancePage'));
 const ExportControlsPage = lazy(() => import('./pages/ExportControlsPage'));
@@ -147,6 +148,9 @@ const App: React.FC = () => {
         break;
       case 'bay-area-trade-law-attorney':
         content = <BayAreaTradeLawPage />;
+        break;
+      case 'calabasas-customs-attorney':
+        content = <CalabasasCustomsAttorneyPage />;
         break;
       case 'customs-defense-litigation':
         content = <CustomsDefensePage />;
