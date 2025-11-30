@@ -1440,4 +1440,128 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Batch 2 - Additional City-Keyword Pages -->
+
+  <!-- Los Angeles CBP Audit Defense -->
+  <url>
+    <loc>https://trembach.law/#los-angeles-cbp-audit</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- San Jose Section 301 Tariff Attorney -->
+  <url>
+    <loc>https://trembach.law/#san-jose-section-301</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Oakland UFLPA Attorney -->
+  <url>
+    <loc>https://trembach.law/#oakland-uflpa</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Anaheim Customs Seizure Attorney -->
+  <url>
+    <loc>https://trembach.law/#anaheim-customs-seizure</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- San Francisco China Tariff Attorney -->
+  <url>
+    <loc>https://trembach.law/#san-francisco-china-tariff</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Batch 3 - More City-Keyword Pages -->
+
+  <!-- Long Beach CBP Audit Defense -->
+  <url>
+    <loc>https://trembach.law/#long-beach-cbp-audit</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- San Diego CBP Audit Defense -->
+  <url>
+    <loc>https://trembach.law/#san-diego-cbp-audit</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Sacramento Section 301 Attorney -->
+  <url>
+    <loc>https://trembach.law/#sacramento-section-301</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Fresno Section 301 Attorney -->
+  <url>
+    <loc>https://trembach.law/#fresno-section-301</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Bakersfield UFLPA Attorney -->
+  <url>
+    <loc>https://trembach.law/#bakersfield-uflpa</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Long Beach UFLPA Attorney -->
+  <url>
+    <loc>https://trembach.law/#long-beach-uflpa</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- San Diego Customs Seizure Attorney -->
+  <url>
+    <loc>https://trembach.law/#san-diego-customs-seizure</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Long Beach Customs Seizure Attorney -->
+  <url>
+    <loc>https://trembach.law/#long-beach-customs-seizure</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- San Jose Pharmaceutical Import Attorney -->
+  <url>
+    <loc>https://trembach.law/#san-jose-pharma-import</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Fremont Automotive Tariff Attorney -->
+  <url>
+    <loc>https://trembach.law/#fremont-automotive-tariff</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
