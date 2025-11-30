@@ -245,6 +245,37 @@ const LakeForestCustomsValuationPage = lazy(() => import('./pages/LakeForestCust
 const NapaCustomsValuationPage = lazy(() => import('./pages/NapaCustomsValuationPage'));
 const MantecaCustomsValuationPage = lazy(() => import('./pages/MantecaCustomsValuationPage'));
 const ChinoCustomsValuationPage = lazy(() => import('./pages/ChinoCustomsValuationPage'));
+// Batch 7 - More Specialized Agent Pages (25 new pages)
+// Import Compliance Pages
+const InglewoodImportCompliancePage = lazy(() => import('./pages/InglewoodImportCompliancePage'));
+const VenturaImportCompliancePage = lazy(() => import('./pages/VenturaImportCompliancePage'));
+const SantaBarbaraImportCompliancePage = lazy(() => import('./pages/SantaBarbaraImportCompliancePage'));
+const OceansideImportCompliancePage = lazy(() => import('./pages/OceansideImportCompliancePage'));
+const GardenGroveImportCompliancePage = lazy(() => import('./pages/GardenGroveImportCompliancePage'));
+// Customs Broker Pages
+const ChulaVistaCustomsBrokerPage = lazy(() => import('./pages/ChulaVistaCustomsBrokerPage'));
+const DowneyCustomsBrokerPage = lazy(() => import('./pages/DowneyCustomsBrokerPage'));
+const CostaMesaCustomsBrokerPage = lazy(() => import('./pages/CostaMesaCustomsBrokerPage'));
+const SanMateoCustomsBrokerPage = lazy(() => import('./pages/SanMateoCustomsBrokerPage'));
+const ClovisCustomsBrokerPage = lazy(() => import('./pages/ClovisCustomsBrokerPage'));
+// USMCA Pages
+const TracyUSMCAPage = lazy(() => import('./pages/TracyUSMCAPage'));
+const LivermoreUSMCAPage = lazy(() => import('./pages/LivermoreUSMCAPage'));
+const PleasantonUSMCAPage = lazy(() => import('./pages/PleasantonUSMCAPage'));
+const WalnutCreekUSMCAPage = lazy(() => import('./pages/WalnutCreekUSMCAPage'));
+const MenifeeUSMCAPage = lazy(() => import('./pages/MenifeeUSMCAPage'));
+// Country of Origin Pages
+const HemetCountryOfOriginPage = lazy(() => import('./pages/HemetCountryOfOriginPage'));
+const LakeElsinoreCountryOfOriginPage = lazy(() => import('./pages/LakeElsinoreCountryOfOriginPage'));
+const MurrietaCountryOfOriginPage = lazy(() => import('./pages/MurrietaCountryOfOriginPage'));
+const TemeculaCountryOfOriginPage = lazy(() => import('./pages/TemeculaCountryOfOriginPage'));
+const VictorvilleCountryOfOriginPage = lazy(() => import('./pages/VictorvilleCountryOfOriginPage'));
+// Customs Bond Pages
+const HesperiaCustomsBondPage = lazy(() => import('./pages/HesperiaCustomsBondPage'));
+const AppleValleyCustomsBondPage = lazy(() => import('./pages/AppleValleyCustomsBondPage'));
+const YucaipaCustomsBondPage = lazy(() => import('./pages/YucaipaCustomsBondPage'));
+const LomaLindaCustomsBondPage = lazy(() => import('./pages/LomaLindaCustomsBondPage'));
+const UplandCustomsBondPage = lazy(() => import('./pages/UplandCustomsBondPage'));
 
 // Loading fallback component with explicit height to prevent CLS
 const PageLoader: React.FC = () => (
@@ -962,6 +993,87 @@ const App: React.FC = () => {
         break;
       case 'chino-customs-valuation':
         content = <ChinoCustomsValuationPage />;
+        break;
+      // Batch 7 - More Specialized Agent Pages (25 new pages)
+      // Import Compliance Pages
+      case 'inglewood-import-compliance':
+        content = <InglewoodImportCompliancePage />;
+        break;
+      case 'ventura-import-compliance':
+        content = <VenturaImportCompliancePage />;
+        break;
+      case 'santa-barbara-import-compliance':
+        content = <SantaBarbaraImportCompliancePage />;
+        break;
+      case 'oceanside-import-compliance':
+        content = <OceansideImportCompliancePage />;
+        break;
+      case 'garden-grove-import-compliance':
+        content = <GardenGroveImportCompliancePage />;
+        break;
+      // Customs Broker Pages
+      case 'chula-vista-customs-broker':
+        content = <ChulaVistaCustomsBrokerPage />;
+        break;
+      case 'downey-customs-broker':
+        content = <DowneyCustomsBrokerPage />;
+        break;
+      case 'costa-mesa-customs-broker':
+        content = <CostaMesaCustomsBrokerPage />;
+        break;
+      case 'san-mateo-customs-broker':
+        content = <SanMateoCustomsBrokerPage />;
+        break;
+      case 'clovis-customs-broker':
+        content = <ClovisCustomsBrokerPage />;
+        break;
+      // USMCA Pages
+      case 'tracy-usmca':
+        content = <TracyUSMCAPage />;
+        break;
+      case 'livermore-usmca':
+        content = <LivermoreUSMCAPage />;
+        break;
+      case 'pleasanton-usmca':
+        content = <PleasantonUSMCAPage />;
+        break;
+      case 'walnut-creek-usmca':
+        content = <WalnutCreekUSMCAPage />;
+        break;
+      case 'menifee-usmca':
+        content = <MenifeeUSMCAPage />;
+        break;
+      // Country of Origin Pages
+      case 'hemet-country-of-origin':
+        content = <HemetCountryOfOriginPage />;
+        break;
+      case 'lake-elsinore-country-of-origin':
+        content = <LakeElsinoreCountryOfOriginPage />;
+        break;
+      case 'murrieta-country-of-origin':
+        content = <MurrietaCountryOfOriginPage />;
+        break;
+      case 'temecula-country-of-origin':
+        content = <TemeculaCountryOfOriginPage />;
+        break;
+      case 'victorville-country-of-origin':
+        content = <VictorvilleCountryOfOriginPage />;
+        break;
+      // Customs Bond Pages
+      case 'hesperia-customs-bond':
+        content = <HesperiaCustomsBondPage />;
+        break;
+      case 'apple-valley-customs-bond':
+        content = <AppleValleyCustomsBondPage />;
+        break;
+      case 'yucaipa-customs-bond':
+        content = <YucaipaCustomsBondPage />;
+        break;
+      case 'loma-linda-customs-bond':
+        content = <LomaLindaCustomsBondPage />;
+        break;
+      case 'upland-customs-bond':
+        content = <UplandCustomsBondPage />;
         break;
       default:
         // Show 404 page for unknown routes
