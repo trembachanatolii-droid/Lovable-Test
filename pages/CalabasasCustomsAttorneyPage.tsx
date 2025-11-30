@@ -12,9 +12,9 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
 const CalabasasCustomsAttorneyPage: React.FC = () => {
   useMeta({
-    title: 'Calabasas Tariff Lawyer | Customs Attorney CA',
-    description: 'Calabasas tariff lawyer & customs attorney. Local trade law firm in Calabasas CA. CBP defense, tariff classification, customs audits. Port of LA access. (310) 744-1328.',
-    keywords: 'tariff lawyer calabasas, customs attorney calabasas, trade attorney calabasas, international trade lawyer calabasas, customs lawyer calabasas ca, tariff attorney california, calabasas import export lawyer, san fernando valley trade attorney',
+    title: 'Tariff Lawyer Calabasas CA | #1 Customs Attorney | Trembach Law',
+    description: 'Tariff lawyer Calabasas CA - Expert customs attorney serving Calabasas, San Fernando Valley & all California. CBP defense, Section 301, UFLPA, tariff classification. Free consultation (310) 744-1328.',
+    keywords: 'tariff lawyer calabasas, tariff lawyer calabasas ca, calabasas tariff lawyer, calabasas tariff attorney, customs attorney calabasas, customs attorney calabasas ca, calabasas customs attorney, calabasas customs lawyer, trade attorney calabasas, international trade lawyer calabasas, calabasas import export lawyer, tariff lawyer near calabasas, best tariff lawyer calabasas, top customs attorney calabasas, calabasas CBP attorney, calabasas section 301 attorney, calabasas UFLPA lawyer, calabasas customs audit attorney, san fernando valley tariff lawyer, west la customs attorney, ventura county tariff lawyer, 91301 tariff attorney, agoura road customs lawyer, calabasas international trade attorney, tariff classification attorney calabasas, customs penalty lawyer calabasas, import duty attorney calabasas',
     canonical: 'calabasas-customs-attorney',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-calabasas.jpg`,
@@ -79,9 +79,9 @@ const CalabasasCustomsAttorneyPage: React.FC = () => {
         <div className="hero-overlay" aria-hidden="true"></div>
 
         <div className="container">
-          <h1>Calabasas Tariff Lawyer<br />Customs Attorney California</h1>
+          <h1>Tariff Lawyer Calabasas CA<br />Expert Customs Attorney</h1>
           <p className="hero-subtitle">
-            Local Calabasas tariff lawyer and customs attorney serving California businesses. Expert CBP defense, tariff classification, and trade compliance from our San Fernando Valley headquarters.
+            Top-rated tariff lawyer in Calabasas, California serving businesses throughout the San Fernando Valley and all of California. As your trusted Calabasas customs attorney, we provide expert CBP defense, tariff classification, Section 301 strategies, and UFLPA compliance. Call your local tariff lawyer Calabasas today.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
@@ -95,11 +95,11 @@ const CalabasasCustomsAttorneyPage: React.FC = () => {
         <div className="max-w-[1200px] mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
-              Your Local Tariff & Customs Law Firm
+              Why Choose Our Tariff Lawyer Calabasas Office
             </h2>
             <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
             <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-              Located in the heart of Calabasas at <strong>27001 Agoura Road, Suite 350</strong>, Trembach Law provides expert tariff and customs legal services to California businesses. Skip the downtown LA traffic and get the same high-caliber representation in a convenient, accessible location.
+              Looking for a <strong>tariff lawyer in Calabasas</strong>? Our customs attorney office at <strong>27001 Agoura Road, Suite 350, Calabasas CA 91301</strong> provides expert tariff and customs legal services to California businesses. As the leading tariff lawyer Calabasas professionals trust, we offer convenient access without downtown LA traffic, plus the same high-caliber representation as large firms.
             </p>
           </div>
 
