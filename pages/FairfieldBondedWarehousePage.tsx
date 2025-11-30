@@ -48,7 +48,7 @@ const FairfieldBondedWarehousePage: React.FC = () => {
         },
         {
           question: 'What bonded warehouse compliance support do you provide?',
-          answer: 'Our Fairfield bonded warehouse attorney provides comprehensive compliance support including: preparation for annual CBP audits, inventory reconciliation and discrepancy resolution, recordkeeping system reviews under 19 CFR Part 19, shortage investigation defense, bond sufficiency assessments, proprietor liability mitigation, and representation in CBP enforcement proceedings. We help maintain your facility's good standing with CBP.',
+          answer: 'Our Fairfield bonded warehouse attorney provides comprehensive compliance support including: preparation for annual CBP audits, inventory reconciliation and discrepancy resolution, recordkeeping system reviews under 19 CFR Part 19, shortage investigation defense, bond sufficiency assessments, proprietor liability mitigation, and representation in CBP enforcement proceedings. We help maintain your facility good standing with CBP.',
         },
       ]),
     ],
