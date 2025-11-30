@@ -214,6 +214,37 @@ const SantaMariaExportControlPage = lazy(() => import('./pages/SantaMariaExportC
 const BerkeleyExportControlPage = lazy(() => import('./pages/BerkeleyExportControlPage'));
 const ElMonteExportControlPage = lazy(() => import('./pages/ElMonteExportControlPage'));
 const CarlsbadExportControlPage = lazy(() => import('./pages/CarlsbadExportControlPage'));
+// Batch 6 - More Specialized Agent Pages (25 new pages)
+// Penalty Mitigation Pages
+const RanchoCucamongaPenaltyMitigationPage = lazy(() => import('./pages/RanchoCucamongaPenaltyMitigationPage'));
+const OntarioPenaltyMitigationPage = lazy(() => import('./pages/OntarioPenaltyMitigationPage'));
+const FontanaPenaltyMitigationPage = lazy(() => import('./pages/FontanaPenaltyMitigationPage'));
+const MorenoValleyPenaltyMitigationPage = lazy(() => import('./pages/MorenoValleyPenaltyMitigationPage'));
+const SanBernardinoPenaltyMitigationPage = lazy(() => import('./pages/SanBernardinoPenaltyMitigationPage'));
+// Prior Disclosure Pages
+const WestCovinaPriorDisclosurePage = lazy(() => import('./pages/WestCovinaPriorDisclosurePage'));
+const NorwalkPriorDisclosurePage = lazy(() => import('./pages/NorwalkPriorDisclosurePage'));
+const BurbankPriorDisclosurePage = lazy(() => import('./pages/BurbankPriorDisclosurePage'));
+const ElCajonPriorDisclosurePage = lazy(() => import('./pages/ElCajonPriorDisclosurePage'));
+const RialtoPriorDisclosurePage = lazy(() => import('./pages/RialtoPriorDisclosurePage'));
+// Drawback Pages
+const DalyCityDrawbackPage = lazy(() => import('./pages/DalyCityDrawbackPage'));
+const SouthGateDrawbackPage = lazy(() => import('./pages/SouthGateDrawbackPage'));
+const MissionViejoDrawbackPage = lazy(() => import('./pages/MissionViejoDrawbackPage'));
+const CarsonDrawbackPage = lazy(() => import('./pages/CarsonDrawbackPage'));
+const SantaClaritaDrawbackPage = lazy(() => import('./pages/SantaClaritaDrawbackPage'));
+// Bonded Warehouse Pages
+const VacavilleBondedWarehousePage = lazy(() => import('./pages/VacavilleBondedWarehousePage'));
+const FairfieldBondedWarehousePage = lazy(() => import('./pages/FairfieldBondedWarehousePage'));
+const AntiochBondedWarehousePage = lazy(() => import('./pages/AntiochBondedWarehousePage'));
+const RichmondBondedWarehousePage = lazy(() => import('./pages/RichmondBondedWarehousePage'));
+const SanLeandroBondedWarehousePage = lazy(() => import('./pages/SanLeandroBondedWarehousePage'));
+// Customs Valuation Pages
+const RedwoodCityCustomsValuationPage = lazy(() => import('./pages/RedwoodCityCustomsValuationPage'));
+const LakeForestCustomsValuationPage = lazy(() => import('./pages/LakeForestCustomsValuationPage'));
+const NapaCustomsValuationPage = lazy(() => import('./pages/NapaCustomsValuationPage'));
+const MantecaCustomsValuationPage = lazy(() => import('./pages/MantecaCustomsValuationPage'));
+const ChinoCustomsValuationPage = lazy(() => import('./pages/ChinoCustomsValuationPage'));
 
 // Loading fallback component with explicit height to prevent CLS
 const PageLoader: React.FC = () => (
@@ -850,6 +881,87 @@ const App: React.FC = () => {
         break;
       case 'carlsbad-export-control':
         content = <CarlsbadExportControlPage />;
+        break;
+      // Batch 6 - More Specialized Agent Pages (25 new pages)
+      // Penalty Mitigation Pages
+      case 'rancho-cucamonga-penalty-mitigation':
+        content = <RanchoCucamongaPenaltyMitigationPage />;
+        break;
+      case 'ontario-penalty-mitigation':
+        content = <OntarioPenaltyMitigationPage />;
+        break;
+      case 'fontana-penalty-mitigation':
+        content = <FontanaPenaltyMitigationPage />;
+        break;
+      case 'moreno-valley-penalty-mitigation':
+        content = <MorenoValleyPenaltyMitigationPage />;
+        break;
+      case 'san-bernardino-penalty-mitigation':
+        content = <SanBernardinoPenaltyMitigationPage />;
+        break;
+      // Prior Disclosure Pages
+      case 'west-covina-prior-disclosure':
+        content = <WestCovinaPriorDisclosurePage />;
+        break;
+      case 'norwalk-prior-disclosure':
+        content = <NorwalkPriorDisclosurePage />;
+        break;
+      case 'burbank-prior-disclosure':
+        content = <BurbankPriorDisclosurePage />;
+        break;
+      case 'el-cajon-prior-disclosure':
+        content = <ElCajonPriorDisclosurePage />;
+        break;
+      case 'rialto-prior-disclosure':
+        content = <RialtoPriorDisclosurePage />;
+        break;
+      // Drawback Pages
+      case 'daly-city-drawback':
+        content = <DalyCityDrawbackPage />;
+        break;
+      case 'south-gate-drawback':
+        content = <SouthGateDrawbackPage />;
+        break;
+      case 'mission-viejo-drawback':
+        content = <MissionViejoDrawbackPage />;
+        break;
+      case 'carson-drawback':
+        content = <CarsonDrawbackPage />;
+        break;
+      case 'santa-clarita-drawback':
+        content = <SantaClaritaDrawbackPage />;
+        break;
+      // Bonded Warehouse Pages
+      case 'vacaville-bonded-warehouse':
+        content = <VacavilleBondedWarehousePage />;
+        break;
+      case 'fairfield-bonded-warehouse':
+        content = <FairfieldBondedWarehousePage />;
+        break;
+      case 'antioch-bonded-warehouse':
+        content = <AntiochBondedWarehousePage />;
+        break;
+      case 'richmond-bonded-warehouse':
+        content = <RichmondBondedWarehousePage />;
+        break;
+      case 'san-leandro-bonded-warehouse':
+        content = <SanLeandroBondedWarehousePage />;
+        break;
+      // Customs Valuation Pages
+      case 'redwood-city-customs-valuation':
+        content = <RedwoodCityCustomsValuationPage />;
+        break;
+      case 'lake-forest-customs-valuation':
+        content = <LakeForestCustomsValuationPage />;
+        break;
+      case 'napa-customs-valuation':
+        content = <NapaCustomsValuationPage />;
+        break;
+      case 'manteca-customs-valuation':
+        content = <MantecaCustomsValuationPage />;
+        break;
+      case 'chino-customs-valuation':
+        content = <ChinoCustomsValuationPage />;
         break;
       default:
         // Show 404 page for unknown routes
