@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
+
+// API endpoint for form submission
+const SUBMIT_API_ENDPOINT = '/.netlify/functions/submit-evaluation';
 
 const subjectOptions = {
     'Customs & Import Compliance': [
@@ -120,7 +123,9 @@ interface EvaluationFormProps {
 }
 
 const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
-    const [fieldErrors, setFieldErrors] = React.useState<Record<string, string>>({});
+    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
     const validateField = (name: string, value: string) => {
         let error = '';
@@ -154,21 +159,79 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
         });
     };
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        // Show success message in an accessible way
-        const form = event.currentTarget;
-        const successMessage = document.createElement('div');
-        successMessage.setAttribute('role', 'alert');
-        successMessage.setAttribute('aria-live', 'polite');
-        successMessage.className = 'fixed top-4 right-4 bg-secondary-teal text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-fadeIn';
-        successMessage.innerHTML = '<p class="font-semibold">Thank you for your submission!</p><p class="text-sm">We will get back to you shortly.</p>';
-        document.body.appendChild(successMessage);
+    const showNotification = (message: string, type: 'success' | 'error') => {
+        const colors = {
+            success: 'bg-secondary-teal',
+            error: 'bg-red-600'
+        };
+        const notification = document.createElement('div');
+        notification.setAttribute('role', 'alert');
+        notification.setAttribute('aria-live', 'polite');
+        notification.className = `fixed top-4 right-4 ${colors[type]} text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-fadeIn max-w-md`;
+        notification.innerHTML = `<p class="font-semibold">${message}</p>`;
+        document.body.appendChild(notification);
         setTimeout(() => {
-            successMessage.remove();
-        }, 5000);
-        form.reset();
-        setFieldErrors({});
+            notification.remove();
+        }, 6000);
+    };
+
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const formData = new FormData(form);
+
+        // Validate all fields before submission
+        const requiredFields = ['fullName', 'lastName', 'company', 'email', 'phone', 'subject', 'message'];
+        let hasErrors = false;
+
+        requiredFields.forEach(field => {
+            const value = formData.get(field) as string || '';
+            validateField(field, value);
+            if (!value.trim()) hasErrors = true;
+        });
+
+        if (hasErrors || Object.keys(fieldErrors).length > 0) {
+            showNotification('Please fill in all required fields correctly.', 'error');
+            return;
+        }
+
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+
+        try {
+            const response = await fetch(SUBMIT_API_ENDPOINT, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    firstName: formData.get('fullName'),
+                    lastName: formData.get('lastName'),
+                    company: formData.get('company'),
+                    email: formData.get('email'),
+                    phone: formData.get('phone'),
+                    subject: formData.get('subject'),
+                    message: formData.get('message'),
+                }),
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                setSubmitStatus('success');
+                showNotification('Thank you for your submission! We have received your case evaluation request and will contact you shortly. A confirmation has been sent to your email and phone.', 'success');
+                form.reset();
+                setFieldErrors({});
+            } else {
+                throw new Error(result.error || 'Submission failed');
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            setSubmitStatus('error');
+            showNotification('We apologize, but there was an error submitting your request. Please try again or call us directly at (310) 744-1328.', 'error');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const getThemeStyles = () => {
@@ -365,8 +428,14 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                             />
                         </div>
                         <div className="text-center pt-4">
-                            <Button type="submit" variant="solid" className="bg-secondary-forestGreen text-white hover:bg-secondary-teal transform transition-transform duration-200 hover:scale-[1.03] px-16 py-5 text-base font-bold" aria-label="Submit case evaluation request">
-                                SUBMIT FOR REVIEW
+                            <Button
+                                type="submit"
+                                variant="solid"
+                                className={`bg-secondary-forestGreen text-white hover:bg-secondary-teal transform transition-transform duration-200 hover:scale-[1.03] px-16 py-5 text-base font-bold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                aria-label="Submit case evaluation request"
+                                disabled={isSubmitting}
+                            >
+                                {isSubmitting ? 'SUBMITTING...' : 'SUBMIT FOR REVIEW'}
                             </Button>
                         </div>
                     </form>

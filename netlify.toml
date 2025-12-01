@@ -4,6 +4,12 @@
 [build]
   publish = "dist"
   command = "npm run build"
+  functions = "netlify/functions"
+
+# Functions configuration
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["netlify/functions/**"]
 
 # Asset caching - Hashed files get immutable caching
 [[headers]]

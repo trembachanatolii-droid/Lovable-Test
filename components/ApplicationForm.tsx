@@ -1,6 +1,8 @@
-
 import React, { useState, useEffect, ChangeEvent, FormEvent, useCallback } from 'react';
 import Button from './Button';
+
+// API endpoint for form submission
+const SUBMIT_API_ENDPOINT = '/.netlify/functions/submit-application';
 
 // Accessible notification helper
 const showNotification = (message: string, type: 'success' | 'error' | 'warning' = 'error') => {
@@ -17,7 +19,7 @@ const showNotification = (message: string, type: 'success' | 'error' | 'warning'
     document.body.appendChild(notification);
     setTimeout(() => {
         notification.remove();
-    }, 5000);
+    }, 6000);
 };
 
 type Category = 'attorney' | 'compliance' | 'paralegal' | 'students';
@@ -191,20 +193,64 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
         window.scrollTo(0, 0);
     };
 
-    const handleSubmit = (e: FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         if (!formData.verifyAuth) {
             showNotification('You must authorize verification of credentials to submit.', 'warning');
             return;
         }
         setIsSubmitting(true);
-        
-        // Simulate API call
-        setTimeout(() => {
+
+        try {
+            const response = await fetch(SUBMIT_API_ENDPOINT, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    category,
+                    office: formData.office,
+                    department: formData.department,
+                    position: formData.position,
+                    firstName: formData.firstName,
+                    lastName: formData.lastName,
+                    email: formData.email,
+                    phone: formData.phone,
+                    address: formData.address,
+                    barAdmissions: formData.barAdmissions,
+                    lawSchool: formData.lawSchool,
+                    gradYear: formData.gradYear,
+                    undergrad: formData.undergrad,
+                    undergradDegree: formData.undergradDegree,
+                    undergradYear: formData.undergradYear,
+                    yearsPractice: formData.yearsPractice,
+                    areasFocus: formData.areasFocus,
+                    federalCourtExp: formData.federalCourtExp,
+                    trialCases: category === 'attorney' ? formData.trialCases : undefined,
+                    workHistory: formData.workHistory,
+                    skills: formData.skills,
+                    whyTrembach: formData.whyTrembach,
+                    challengingScenario: formData.challengingScenario,
+                    salary: formData.salary,
+                    startDate: formData.startDate,
+                }),
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                showNotification('Your application has been submitted successfully! You will receive a confirmation email and text message shortly.', 'success');
+                setIsSuccess(true);
+                window.scrollTo(0, 0);
+            } else {
+                throw new Error(result.error || 'Submission failed');
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            showNotification('We apologize, but there was an error submitting your application. Please try again or contact us directly at (310) 744-1328.', 'error');
+        } finally {
             setIsSubmitting(false);
-            setIsSuccess(true);
-            window.scrollTo(0, 0);
-        }, 1500);
+        }
     };
 
     // --- Render Helpers ---
@@ -214,8 +260,11 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
             <div className="text-center py-20">
                 <div className="w-20 h-20 bg-secondary-teal text-white rounded-full flex items-center justify-center mx-auto mb-6 text-4xl">✓</div>
                 <h2 className="text-3xl font-garamond font-bold text-primary-navy mb-4">Application Submitted Successfully</h2>
-                <p className="text-lg text-text-secondary max-w-lg mx-auto mb-8">
-                    Thank you for applying to Trembach Law Firm. Your application has been received and is being reviewed by our partners. We will contact you directly if your qualifications match our current needs.
+                <p className="text-lg text-text-secondary max-w-lg mx-auto mb-4">
+                    Thank you for applying to Trembach Law Firm. Your application has been received and is being reviewed by our partners.
+                </p>
+                <p className="text-base text-text-secondary max-w-lg mx-auto mb-8">
+                    A confirmation has been sent to your email and phone number. We will contact you directly if your qualifications match our current needs.
                 </p>
                 <Button href="#" onClick={() => window.location.reload()} variant="outlined">Return to Home</Button>
             </div>
