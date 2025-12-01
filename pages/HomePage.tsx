@@ -13,6 +13,7 @@ import { generateWebPageSchema, generateFAQSchema, generateLocalBusinessSchema }
 import { siteConfig } from '../config/siteConfig';
 import { getArticlePreviews } from '../data/articlesLoader';
 import { articleMetadata } from '../data/articleMetadata';
+import heroGlobe from '../assets/hero-globe-flags.png';
 
 // Get the latest 5 articles by date (using lightweight previews)
 // This function is now called inside the component to avoid blocking module load
@@ -150,10 +151,10 @@ const HomePage: React.FC = () => {
           {/* Right Side - Globe Image */}
           <div className="hero-split-right">
             <img
-              src="/assets/hero-globe-flags.png"
+              src={heroGlobe}
               alt="Global international trade representation with country flags"
               width="800"
-              height="600"
+              height="800"
               loading="eager"
               decoding="async"
               className="hero-globe-image"
