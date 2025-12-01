@@ -67,46 +67,88 @@ async function sendEmail(
   }
 }
 
-// Send SMS via Twilio
-async function sendSMS(to: string, message: string): Promise<boolean> {
-  const TWILIO_ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID;
-  const TWILIO_AUTH_TOKEN = process.env.TWILIO_AUTH_TOKEN;
-  const TWILIO_PHONE_NUMBER = process.env.TWILIO_PHONE_NUMBER;
+// Get RingCentral access token using JWT
+async function getRingCentralToken(): Promise<string | null> {
+  const RC_CLIENT_ID = process.env.RINGCENTRAL_CLIENT_ID;
+  const RC_CLIENT_SECRET = process.env.RINGCENTRAL_CLIENT_SECRET;
+  const RC_JWT_TOKEN = process.env.RINGCENTRAL_JWT_TOKEN;
+  const RC_SERVER_URL = process.env.RINGCENTRAL_SERVER_URL || "https://platform.ringcentral.com";
 
-  if (!TWILIO_ACCOUNT_SID || !TWILIO_AUTH_TOKEN || !TWILIO_PHONE_NUMBER) {
-    console.error("Twilio credentials not configured");
+  if (!RC_CLIENT_ID || !RC_CLIENT_SECRET || !RC_JWT_TOKEN) {
+    console.error("RingCentral credentials not configured");
+    return null;
+  }
+
+  try {
+    const response = await fetch(`${RC_SERVER_URL}/restapi/oauth/token`, {
+      method: "POST",
+      headers: {
+        "Authorization": "Basic " + Buffer.from(`${RC_CLIENT_ID}:${RC_CLIENT_SECRET}`).toString("base64"),
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams({
+        grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
+        assertion: RC_JWT_TOKEN,
+      }),
+    });
+
+    if (!response.ok) {
+      const error = await response.text();
+      console.error("RingCentral auth error:", error);
+      return null;
+    }
+
+    const data = await response.json();
+    return data.access_token;
+  } catch (error) {
+    console.error("RingCentral token error:", error);
+    return null;
+  }
+}
+
+// Send SMS via RingCentral
+async function sendSMS(to: string, message: string): Promise<boolean> {
+  const RC_SERVER_URL = process.env.RINGCENTRAL_SERVER_URL || "https://platform.ringcentral.com";
+  const RC_PHONE_NUMBER = process.env.RINGCENTRAL_PHONE_NUMBER;
+
+  if (!RC_PHONE_NUMBER) {
+    console.error("RingCentral phone number not configured");
+    return false;
+  }
+
+  const accessToken = await getRingCentralToken();
+  if (!accessToken) {
     return false;
   }
 
   // Clean phone number - remove non-digits and add +1 if needed
   let cleanPhone = to.replace(/\D/g, "");
   if (cleanPhone.length === 10) {
-    cleanPhone = "1" + cleanPhone;
-  }
-  if (!cleanPhone.startsWith("+")) {
+    cleanPhone = "+1" + cleanPhone;
+  } else if (!cleanPhone.startsWith("+")) {
     cleanPhone = "+" + cleanPhone;
   }
 
   try {
     const response = await fetch(
-      `https://api.twilio.com/2010-04-01/Accounts/${TWILIO_ACCOUNT_SID}/Messages.json`,
+      `${RC_SERVER_URL}/restapi/v1.0/account/~/extension/~/sms`,
       {
         method: "POST",
         headers: {
-          "Authorization": "Basic " + Buffer.from(`${TWILIO_ACCOUNT_SID}:${TWILIO_AUTH_TOKEN}`).toString("base64"),
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Authorization": `Bearer ${accessToken}`,
+          "Content-Type": "application/json",
         },
-        body: new URLSearchParams({
-          To: cleanPhone,
-          From: TWILIO_PHONE_NUMBER,
-          Body: message,
+        body: JSON.stringify({
+          from: { phoneNumber: RC_PHONE_NUMBER },
+          to: [{ phoneNumber: cleanPhone }],
+          text: message,
         }),
       }
     );
 
     if (!response.ok) {
       const error = await response.text();
-      console.error("Twilio API error:", error);
+      console.error("RingCentral SMS error:", error);
       return false;
     }
 
