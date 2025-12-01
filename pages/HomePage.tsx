@@ -13,7 +13,6 @@ import { generateWebPageSchema, generateFAQSchema, generateLocalBusinessSchema }
 import { siteConfig } from '../config/siteConfig';
 import { getArticlePreviews } from '../data/articlesLoader';
 import { articleMetadata } from '../data/articleMetadata';
-import heroGlobe from '../assets/hero-globe-flags.png';
 
 // Get the latest 5 articles by date (using lightweight previews)
 // This function is now called inside the component to avoid blocking module load
@@ -134,31 +133,30 @@ const HomePage: React.FC = () => {
 
   return (
     <main>
-      {/* Hero Section with Split Layout - Text Left, Globe Right */}
-      <section className="hero hero-split" aria-label="Hero">
-        <div className="hero-split-container">
-          {/* Left Side - Text Content */}
-          <div className="hero-split-left">
-            <h1>California Trade and Customs Lawyer<br />Import | Export Attorney</h1>
-            <p className="hero-subtitle">
-              Premier California & USA international trade attorney. Multinational trade law expertise for import/export businesses nationwide. CBP defense, federal trade compliance, global trade strategy, customs audits & export controls. Protecting your business in complex international trade law.
-            </p>
-            <div className="hero-cta-group">
-              <a href="#schedule-consultation" className="hero-cta hero-cta-primary" aria-label="Get free consultation with California trade attorney">Get Free Consultation</a>
-              <a href="tel:+13107441328" className="hero-cta hero-cta-secondary" aria-label="Call us now">(310) 744-1328</a>
-            </div>
-          </div>
-          {/* Right Side - Globe Image */}
-          <div className="hero-split-right">
-            <img
-              src={heroGlobe}
-              alt="Global international trade representation with country flags"
-              width="800"
-              height="800"
-              loading="eager"
-              decoding="async"
-              className="hero-globe-image"
-            />
+      {/* Hero Section with Background Image */}
+      <section className="hero" aria-label="Hero">
+        <picture className="hero-bg">
+          <source type="image/webp" srcSet="/images/hero-port.webp" />
+          <img 
+            src="/images/hero-port.jpg" 
+            alt="" 
+            role="presentation" 
+            width="1920" 
+            height="1080" 
+            loading="eager" 
+            decoding="async" 
+            className="hero-bg-image" 
+          />
+        </picture>
+        <div className="hero-overlay" aria-hidden="true"></div>
+        <div className="container">
+          <h1>California Trade and Customs Lawyer<br />Import | Export Attorney</h1>
+          <p className="hero-subtitle">
+            Premier California & USA international trade attorney. Multinational trade law expertise for import/export businesses nationwide. CBP defense, federal trade compliance, global trade strategy, customs audits & export controls. Protecting your business in complex international trade law.
+          </p>
+          <div className="hero-cta-group">
+            <a href="#schedule-consultation" className="hero-cta hero-cta-primary" aria-label="Get free consultation with California trade attorney">Get Free Consultation</a>
+            <a href="tel:+13107441328" className="hero-cta hero-cta-secondary" aria-label="Call us now">(310) 744-1328</a>
           </div>
         </div>
       </section>

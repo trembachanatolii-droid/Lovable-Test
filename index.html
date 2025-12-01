@@ -42,7 +42,7 @@
 <link rel="mask-icon" href="/icons/favicon.svg" color="#012169" />
 
 <!-- Resource Hints: Preload LCP hero image for faster discovery -->
-<link rel="preload" href="/images/hero-main.webp" as="image" type="image/webp" fetchpriority="high">
+<link rel="preload" href="/images/hero-port.jpg" as="image" type="image/jpeg" fetchpriority="high">
 <!-- Preload non-critical CSS with async pattern for optimal loading -->
 <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/styles.css"></noscript>
@@ -550,8 +550,30 @@ html, body {
   outline-offset: 3px;
 }
 
-/* Hero CTA Secondary - Light Green (Inactive) */
-.hero-cta-secondary {
+/* Hero CTA Secondary - For background image hero: white text/border */
+.hero:not(.hero-split) .hero-cta-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 2px solid var(--white);
+}
+
+.hero:not(.hero-split) .hero-cta-secondary:hover {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--navy-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero CTA Secondary - For split hero: green text/border */
+.hero.hero-split .hero-cta-secondary {
   display: inline-block;
   background-color: transparent;
   color: var(--teal-forest);
@@ -564,7 +586,7 @@ html, body {
   border: 2px solid var(--teal-primary);
 }
 
-.hero-cta-secondary:hover {
+.hero.hero-split .hero-cta-secondary:hover {
   background-color: var(--teal-forest);
   border-color: var(--teal-forest);
   color: var(--white);
