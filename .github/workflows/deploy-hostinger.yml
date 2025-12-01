@@ -1,47 +1,11 @@
-name: Deploy to Hostinger
-
-on:
-  push:
-    branches: ["main"]
-
-concurrency:
-  group: deploy-hostinger
-  cancel-in-progress: true
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      # write a marker into the build output
-      - name: Write deploy marker
-        run: |
-          echo "Deployed via GitHub Actions on $(date -u +"%Y-%m-%dT%H:%M:%SZ")" > dist/deploy.txt
-          echo "Commit: $GITHUB_SHA" >> dist/deploy.txt
-
-      - name: Deploy to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.HOSTINGER_SERVER }}
-          username: ${{ secrets.HOSTINGER_USERNAME }}
-          password: ${{ secrets.HOSTINGER_PASSWORD }}
-          port: ${{ secrets.HOSTINGER_PORT }}
-          protocol: ftp
-          local-dir: dist/
-          # NOTE: use ./ here because your FTP login already lands in the public_html folder
-          server-dir: ./
-          dangerous-clean-slate: true
+- name: Deploy to Hostinger
+  uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+  with:
+    server: ${{ secrets.HOSTINGER_SERVER }}
+    username: ${{ secrets.HOSTINGER_USERNAME }}
+    password: ${{ secrets.HOSTINGER_PASSWORD }}
+    port: ${{ secrets.HOSTINGER_PORT }}
+    protocol: ftp
+    local-dir: dist/
+    server-dir: ./
+    dangerous-clean-slate: true
