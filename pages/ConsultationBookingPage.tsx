@@ -4,6 +4,9 @@ import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 
+// API endpoint for form submission
+const SUBMIT_API_ENDPOINT = '/.netlify/functions/submit-consultation';
+
 const practiceAreaOptions = {
     'Customs & Import Compliance': [
         'Customs Audits (Focused Assessments, Quick Response Audits, Surveys) & Audit Defense',
@@ -133,6 +136,24 @@ const ConsultationBookingPage: React.FC = () => {
         consultationType: '',
         timezone: 'America/Los_Angeles',
     });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+    const showNotification = (message: string, type: 'success' | 'error') => {
+        const colors = {
+            success: 'bg-secondary-teal',
+            error: 'bg-red-600'
+        };
+        const notification = document.createElement('div');
+        notification.setAttribute('role', 'alert');
+        notification.setAttribute('aria-live', 'polite');
+        notification.className = `fixed top-4 right-4 ${colors[type]} text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-fadeIn max-w-md`;
+        notification.innerHTML = `<p class="font-semibold">${message}</p>`;
+        document.body.appendChild(notification);
+        setTimeout(() => {
+            notification.remove();
+        }, 6000);
+    };
 
     useMeta({
         title: 'Schedule Free Consultation | California Trade Attorney',
@@ -157,19 +178,57 @@ const ConsultationBookingPage: React.FC = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        // Show accessible notification
-        const notification = document.createElement('div');
-        notification.setAttribute('role', 'alert');
-        notification.setAttribute('aria-live', 'polite');
-        notification.className = 'fixed top-4 right-4 bg-secondary-teal text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-fadeIn max-w-md';
-        notification.innerHTML = '<p class="font-semibold">Thank you for scheduling a consultation!</p><p class="text-sm mt-1">We will confirm your appointment shortly via email.</p>';
-        document.body.appendChild(notification);
-        setTimeout(() => {
-            notification.remove();
-        }, 5000);
-        event.currentTarget.reset();
+        const form = event.currentTarget;
+        const formDataObj = new FormData(form);
+
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+
+        try {
+            const response = await fetch(SUBMIT_API_ENDPOINT, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    firstName: formDataObj.get('firstName'),
+                    lastName: formDataObj.get('lastName'),
+                    company: formDataObj.get('company'),
+                    jobTitle: formDataObj.get('jobTitle'),
+                    email: formDataObj.get('email'),
+                    phone: formDataObj.get('phone'),
+                    practiceArea: formDataObj.get('practiceArea'),
+                    caseDescription: formDataObj.get('caseDescription'),
+                    consultationType: formDataObj.get('consultationType'),
+                    timezone: formDataObj.get('timezone'),
+                    preferredDate: formDataObj.get('preferredDate'),
+                    preferredTime: formDataObj.get('preferredTime'),
+                    alternateDate: formDataObj.get('alternateDate'),
+                    alternateTime: formDataObj.get('alternateTime'),
+                    referralSource: formDataObj.get('referralSource'),
+                    additionalNotes: formDataObj.get('additionalNotes'),
+                }),
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                setSubmitStatus('success');
+                showNotification('Thank you for scheduling a consultation! We have received your request and will confirm your appointment within 24 hours via email and text message.', 'success');
+                form.reset();
+                setFormData({ consultationType: '', timezone: 'America/Los_Angeles' });
+            } else {
+                throw new Error(result.error || 'Submission failed');
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            setSubmitStatus('error');
+            showNotification('We apologize, but there was an error submitting your request. Please try again or call us directly at (310) 744-1328.', 'error');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     // Get minimum date (tomorrow)
@@ -504,10 +563,11 @@ const ConsultationBookingPage: React.FC = () => {
                             <Button
                                 type="submit"
                                 variant="solid"
-                                className="bg-secondary-forestGreen text-white hover:bg-secondary-teal transform transition-transform duration-200 hover:scale-[1.03] px-16 py-5 text-base font-bold"
+                                className={`bg-secondary-forestGreen text-white hover:bg-secondary-teal transform transition-transform duration-200 hover:scale-[1.03] px-16 py-5 text-base font-bold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                                 aria-label="Submit consultation booking request"
+                                disabled={isSubmitting}
                             >
-                                REQUEST CONSULTATION
+                                {isSubmitting ? 'SUBMITTING...' : 'REQUEST CONSULTATION'}
                             </Button>
                         </div>
                     </form>
