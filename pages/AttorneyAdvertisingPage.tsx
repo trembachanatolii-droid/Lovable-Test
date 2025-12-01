@@ -36,7 +36,7 @@ const AttorneyAdvertisingPage: React.FC = () => {
             className="w-full h-full object-cover object-center"
             loading="eager"
             decoding="async"
-            fetchPriority="high"
+            fetchpriority="high"
             width="2069"
             height="1380"
           />

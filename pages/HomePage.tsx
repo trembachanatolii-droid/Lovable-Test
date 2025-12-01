@@ -133,31 +133,32 @@ const HomePage: React.FC = () => {
 
   return (
     <main>
-      {/* Hero Section with Background Image */}
+      {/* Hero Section with Port Harbor Background */}
       <section className="hero" aria-label="Hero">
+        {/* Port Harbor Background Image */}
         <picture className="hero-bg">
-          <source type="image/webp" srcSet="/images/hero-port.webp" />
-          <img 
-            src="/images/hero-port.jpg" 
-            alt="" 
-            role="presentation" 
-            width="1920" 
-            height="1080" 
-            loading="eager" 
-            decoding="async" 
-            className="hero-bg-image" 
+          <source type="image/webp" srcSet="/images/hero-main.webp" />
+          <img
+            src="/images/hero-main.jpg"
+            alt=""
+            role="presentation"
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            className="hero-bg-image"
           />
         </picture>
+        {/* Dark overlay for text contrast */}
         <div className="hero-overlay" aria-hidden="true"></div>
+
         <div className="container">
           <h1>California Trade and Customs Lawyer<br />Import | Export Attorney</h1>
           <p className="hero-subtitle">
             Premier California & USA international trade attorney. Multinational trade law expertise for import/export businesses nationwide. CBP defense, federal trade compliance, global trade strategy, customs audits & export controls. Protecting your business in complex international trade law.
           </p>
-          <div className="hero-cta-group">
-            <a href="#schedule-consultation" className="hero-cta hero-cta-primary" aria-label="Get free consultation with California trade attorney">Get Free Consultation</a>
-            <a href="tel:+13107441328" className="hero-cta hero-cta-secondary" aria-label="Call us now">(310) 744-1328</a>
-          </div>
+          <a href="#schedule-consultation" className="hero-cta" aria-label="Get free consultation with California trade attorney">Get Free Consultation</a>
         </div>
       </section>
 

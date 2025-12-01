@@ -203,7 +203,7 @@ const NewsPage: React.FC = () => {
               className="w-full h-full object-cover object-center"
               loading="eager"
               decoding="async"
-              fetchPriority="high"
+              fetchpriority="high"
               width="1920"
               height="1080"
             />
