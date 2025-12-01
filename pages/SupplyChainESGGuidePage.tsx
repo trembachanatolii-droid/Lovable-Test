@@ -219,7 +219,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
             </article>
 
             {/* Forced Labor Import Bans California */}
-            <article className="bg-white p-10 rounded-lg shadow-md">
+            <article id="forced-labor-import-bans" className="bg-white p-10 rounded-lg shadow-md">
               <h2 className="text-3xl font-bold text-primary-navy mb-4 font-garamond">Forced Labor Import Bans California: 19 USC § 1307 and CBP Enforcement</h2>
 
               <p className="text-text-secondary leading-relaxed mb-6">
