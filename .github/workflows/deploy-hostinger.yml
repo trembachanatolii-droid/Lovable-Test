@@ -3,7 +3,6 @@ name: Deploy to Hostinger
 on:
   push:
     branches: ["main"]
-  workflow_dispatch:
 
 concurrency:
   group: deploy-hostinger
@@ -12,7 +11,6 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,22 +21,19 @@ jobs:
           node-version: "20"
           cache: "npm"
 
-      - name: Install
+      - name: Install dependencies
         run: npm ci
 
       - name: Build
         run: npm run build
 
-      # ✅ This creates/overwrites dist/deploy.txt so it WILL be uploaded (because local-dir is ./dist/)
+      # write a marker into the build output
       - name: Write deploy marker
-        shell: bash
         run: |
-          echo "deploy_time_utc=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" > dist/deploy.txt
-          echo "commit=${GITHUB_SHA}" >> dist/deploy.txt
-          echo "run_id=${GITHUB_RUN_ID}" >> dist/deploy.txt
-          echo "run_number=${GITHUB_RUN_NUMBER}" >> dist/deploy.txt
+          echo "Deployed via GitHub Actions on $(date -u +"%Y-%m-%dT%H:%M:%SZ")" > dist/deploy.txt
+          echo "Commit: $GITHUB_SHA" >> dist/deploy.txt
 
-      - name: Deploy to Hostinger public_html
+      - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.HOSTINGER_SERVER }}
@@ -46,7 +41,7 @@ jobs:
           password: ${{ secrets.HOSTINGER_PASSWORD }}
           port: ${{ secrets.HOSTINGER_PORT }}
           protocol: ftp
-          local-dir: ./dist/
-          server-dir: public_html/
+          local-dir: dist/
+          # NOTE: use ./ here because your FTP login already lands in the public_html folder
+          server-dir: ./
           dangerous-clean-slate: true
-          log-level: verbose
