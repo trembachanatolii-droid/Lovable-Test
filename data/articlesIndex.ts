@@ -13,6 +13,33 @@ export interface ArticlePreview {
 
 export const articlePreviews: ArticlePreview[] = [
   {
+    "id": "section-232-copper-tariffs-50-percent-california-2025",
+    "title": "Section 232 Copper Tariffs: 50% Import Duties Impact California 2025",
+    "subheading": "California Importers Face New 50% Copper Tariffs Under Section 232 National Security Proclamation",
+    "intro": "On July 28, 2025, President Trump issued a proclamation imposing 50% tariffs on copper imports under Section 232 of the Trade Expansion Act of 1962, citing national security concerns. Effective August 1, 2025, these tariffs apply to copper content in semi-finished copper products and intensive copper derivative products entering the United States for consumption. California importers—particularly in electronics manufacturing, construction, and technology sectors—face significant compliance challenges and increased costs.",
+    "keywords": "Section 232 copper tariffs, 50% copper import duties, California copper imports, HTSUS 9903.78.01, CBP copper compliance, copper tariff penalties, Section 232 national security tariffs, California electronics manufacturers, copper import attorney, Trembach Law Firm, UFLPA copper sector, Port of Los Angeles copper, Silicon Valley copper imports, copper tariff defense",
+    "publishedDate": "2025-12-01",
+    "lastModified": "2025-12-01"
+  },
+  {
+    "id": "section-232-timber-lumber-tariffs-california-2025",
+    "title": "Section 232 Timber & Lumber Tariffs: California Import Compliance 2025",
+    "subheading": "Understanding New Federal Tariffs on Timber and Lumber Imports Through California Ports",
+    "intro": "Effective October 14, 2025, the United States imposed significant new tariffs on timber, lumber, and derivative wood products under Section 232 of the Trade Expansion Act of 1962. These tariffs, ranging from 10% to 25% depending on country of origin and product classification, represent a major shift in trade policy affecting California's construction, housing, and manufacturing sectors. As the nation's largest construction market and home to critical ports of entry including Los Angeles, Long Beach, and Oakland, California importers face immediate compliance obligations and cost implications.",
+    "keywords": "Section 232 tariffs, timber tariffs California, lumber import duties, customs compliance, California ports, CBP enforcement, Trade Expansion Act, construction tariffs, housing costs, import compliance attorney, tariff classification, duty mitigation, California importers, lumber duties 2025, customs law",
+    "publishedDate": "2025-12-01",
+    "lastModified": "2025-12-01"
+  },
+  {
+    "id": "transshipment-penalties-40-percent-california-2025",
+    "title": "Transshipment Penalties: 40% CBP Enforcement in California 2025",
+    "subheading": "Understanding New Customs Penalties and Defense Strategies for California Importers",
+    "intro": "In 2025, U.S. Customs and Border Protection (CBP) has significantly intensified enforcement against transshipment schemes, imposing an additional ad valorem duty rate of 40 percent on articles determined to have been transshipped to evade applicable duties. This aggressive enforcement posture represents a fundamental shift in how CBP addresses country of origin violations, moving beyond traditional penalties to create substantial financial consequences designed to deter evasion schemes. California importers face particularly acute risks given that California ports—including Los Angeles, Long Beach, and Oakland—serve as primary entry points for more than 40 percent of all U.S. containerized imports.",
+    "keywords": "transshipment penalties, CBP 40 percent duty, California customs enforcement, country of origin violations, 19 USC 1592, False Claims Act customs, California port compliance, transshipment defense attorney, customs duty evasion, CBP penalty mitigation, Los Angeles port customs, Long Beach customs law, import compliance California, customs fraud defense, supply chain compliance",
+    "publishedDate": "2025-12-01",
+    "lastModified": "2025-12-01"
+  },
+  {
     "id": "eu-us-trade-deal-california-importers-2025",
     "title": "EU-US Trade Deal 2025: $750 Billion Energy Commitment and 15% Tariff Framework",
     "subheading": "California Importers Navigate New Trade Relationship Between United States and European Union",

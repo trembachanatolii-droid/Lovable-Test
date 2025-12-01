@@ -2,8 +2,14 @@ import { ArticleData } from '../types';
 import { euUsTradeArticle } from './article-eu-us-trade-deal-november-2025';
 import { agriculturalExemptionArticle } from './article-agricultural-tariff-exemption-2025';
 import { section301ExtensionsArticle } from './article-section-301-exclusion-extensions-2025';
+import { section232CopperTariffsArticle } from './article-section-232-copper-tariffs-california-2025';
+import { section232TimberLumberArticle } from './article-section-232-timber-lumber-california-2025';
+import { transshipmentPenaltiesArticle } from './article-transshipment-penalties-california-2025';
 
 export const articles: ArticleData[] = [
+  section232CopperTariffsArticle,
+  section232TimberLumberArticle,
+  transshipmentPenaltiesArticle,
   euUsTradeArticle,
   agriculturalExemptionArticle,
   section301ExtensionsArticle,

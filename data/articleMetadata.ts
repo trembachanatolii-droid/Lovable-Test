@@ -10,6 +10,11 @@ export interface ArticleMetadataItem {
 }
 
 export const articleMetadata: Record<string, ArticleMetadataItem> = {
+  // December 1, 2025 (3 articles)
+  'section-232-copper-tariffs-50-percent-california-2025': { date: 'DECEMBER 1, 2025', isoDate: '2025-12-01', readTime: '8 MIN READ' },
+  'section-232-timber-lumber-tariffs-california-2025': { date: 'DECEMBER 1, 2025', isoDate: '2025-12-01', readTime: '8 MIN READ' },
+  'transshipment-penalties-40-percent-california-2025': { date: 'DECEMBER 1, 2025', isoDate: '2025-12-01', readTime: '8 MIN READ' },
+
   // November 30, 2025 (3 articles)
   'eu-us-trade-deal-california-importers-2025': { date: 'NOVEMBER 30, 2025', isoDate: '2025-11-30', readTime: '8 MIN READ' },
   'agricultural-products-tariff-exemption-california-2025': { date: 'NOVEMBER 30, 2025', isoDate: '2025-11-30', readTime: '8 MIN READ' },
@@ -168,6 +173,11 @@ export const formatDateForDisplay = (date: string): string => {
 // Get category based on article ID (simplified mapping)
 export const getArticleCategory = (articleId: string): string => {
   const categoryMap: Record<string, string> = {
+    // December 1, 2025 Articles
+    'section-232-copper-tariffs-50-percent-california-2025': 'TRADE POLICY',
+    'section-232-timber-lumber-tariffs-california-2025': 'TRADE POLICY',
+    'transshipment-penalties-40-percent-california-2025': 'CUSTOMS ENFORCEMENT',
+
     // November 27, 2025 Articles
     'ieepa-tariff-constitutional-challenge-california': 'CUSTOMS LITIGATION',
     'section-232-trucks-tariffs-california': 'TRADE POLICY',
