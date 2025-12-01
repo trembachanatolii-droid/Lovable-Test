@@ -146,7 +146,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
           <div className="flex flex-col space-y-12">
 
             {/* Ecommerce Import Rules California */}
-            <article className="bg-white p-10 rounded-lg shadow-md">
+            <article id="ecommerce-import-rules" className="bg-white p-10 rounded-lg shadow-md">
               <h2 className="text-3xl font-bold text-primary-navy mb-4 font-garamond">Ecommerce Import Rules California: Compliance for Online Sellers</h2>
 
               <p className="text-text-secondary leading-relaxed mb-6">

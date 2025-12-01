@@ -151,7 +151,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
           <div className="space-y-12">
 
             {/* HTS Classification California */}
-            <article className="bg-white p-10 rounded-lg shadow-md">
+            <article id="hts-classification" className="bg-white p-10 rounded-lg shadow-md">
               <h2 className="text-3xl font-bold text-primary-navy mb-4 font-garamond">HTS Classification California: The Foundation of Duty Assessment</h2>
 
               <p className="text-text-secondary leading-relaxed mb-6">
