@@ -8,14 +8,13 @@ const resourceHintsPlugin = () => {
   return {
     name: 'resource-hints-plugin',
     transformIndexHtml: {
-      // Use 'post' order to access generated bundle information
-      order: 'post',
-      handler(html: string, { bundle }) {
+      order: 'post' as const,
+      handler(html: string, ctx: { bundle?: any }) {
         // In post-build, we can access the actual chunk names with hashes
-        if (!bundle) return html;
+        if (!ctx.bundle) return html;
 
         // Find framer-motion chunk for prefetch hint
-        const chunks = Object.values(bundle).filter(
+        const chunks = Object.values(ctx.bundle).filter(
           (chunk: any) => chunk.type === 'chunk' && chunk.fileName.includes('framer-motion')
         );
 

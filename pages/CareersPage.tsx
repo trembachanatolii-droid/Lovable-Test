@@ -189,7 +189,7 @@ const CareersPage: React.FC = () => {
                             className="w-full h-full object-cover object-center"
                             loading="eager"
                             decoding="async"
-                            fetchpriority="high"
+                            fetchPriority="high"
                             width="1920"
                             height="1080"
                         />

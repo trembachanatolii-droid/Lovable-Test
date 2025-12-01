@@ -8,6 +8,8 @@ href?: string;
 className?: string;
 type?: 'button' | 'submit' | 'reset';
 onClick?: () => void;
+disabled?: boolean;
+'aria-label'?: string;
 };
 
 const Button: React.FC<ButtonProps> = ({
