@@ -391,4 +391,223 @@ const CoronaCountervailingPage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-primary-navy
+              <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">
+                Transparent Pricing
+              </h3>
+              <p className="text-text-secondary leading-relaxed mb-6">
+                <strong>Flat-fee pricing</strong> for scope rulings and many CVD services.
+                Transparent hourly rates for complex Commerce proceedings. Free consultation with
+                clear fee estimate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related City Pages */}
+      <RelatedCityPages currentCity="Corona" region="inland-empire" />
+
+      {/* Related Services & Resources */}
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Related CVD Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
+            {/* Legal Services */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">
+                CVD Defense Services
+              </h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#cvd-scope-rulings" className="service-link">
+                    <span className="service-link__title">CVD Scope Rulings</span>
+                    <p className="service-link__description">Commerce scope determinations</p>
+                    <div className="triangle-slide">
+                      <svg
+                        className="triangle-slide__icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#eapa-cvd-defense" className="service-link">
+                    <span className="service-link__title">EAPA CVD Defense</span>
+                    <p className="service-link__description">Evasion investigation defense</p>
+                    <div className="triangle-slide">
+                      <svg
+                        className="triangle-slide__icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#administrative-reviews" className="service-link">
+                    <span className="service-link__title">Administrative Reviews</span>
+                    <p className="service-link__description">CVD rate reduction</p>
+                    <div className="triangle-slide">
+                      <svg
+                        className="triangle-slide__icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Related Practice Areas */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">
+                Related Services
+              </h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#antidumping-defense" className="service-link">
+                    <span className="service-link__title">Antidumping Defense</span>
+                    <p className="service-link__description">AD duty defense</p>
+                    <div className="triangle-slide">
+                      <svg
+                        className="triangle-slide__icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#customs-defense" className="service-link">
+                    <span className="service-link__title">Customs Defense</span>
+                    <p className="service-link__description">CBP audit & penalty defense</p>
+                    <div className="triangle-slide">
+                      <svg
+                        className="triangle-slide__icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Resources */}
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">
+                CVD Resources
+              </h3>
+              <div className="space-y-0">
+                <div className="service-link-item">
+                  <a href="#resources/cvd-guide" className="service-link">
+                    <span className="service-link__title">Countervailing Duty Guide</span>
+                    <div className="triangle-slide">
+                      <svg
+                        className="triangle-slide__icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#resources/scope-ruling-strategies" className="service-link">
+                    <span className="service-link__title">CVD Scope Ruling Strategies</span>
+                    <div className="triangle-slide">
+                      <svg
+                        className="triangle-slide__icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div className="service-link-item">
+                  <a href="#trade-law-faq" className="service-link">
+                    <span className="service-link__title">FAQ Center</span>
+                    <div className="triangle-slide">
+                      <svg
+                        className="triangle-slide__icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-6 bg-primary-navy text-white" id="schedule-consultation">
+        <div className="max-w-[900px] mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
+            Avoid Massive Countervailing Duties
+          </h2>
+          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">
+            CVD rates can exceed 200%, destroying your profit margins. Our Corona countervailing duty
+            attorney helps you avoid or minimize these duties through scope rulings, subsidy
+            analysis, and Commerce Department defense. Free consultation.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <Button href="#schedule-consultation" variant="solid">
+              Schedule Free Consultation
+            </Button>
+            <Button href={siteConfig.phoneTel} variant="outline">
+              Call {siteConfig.phoneDisplay}
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Evaluation Form */}
+      <Suspense
+        fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}
+      >
+        <EvaluationForm theme="light" />
+      </Suspense>
+    </div>
+  );
+};
+
+export default CoronaCountervailingPage;
