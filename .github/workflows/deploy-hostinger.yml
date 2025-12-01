@@ -22,12 +22,13 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Write deploy marker into dist
+      # ✅ Deploy marker file (proves what folder is really being updated)
+      - name: Create deploy marker
         run: |
-          echo "DEPLOYED_FROM_GITHUB_ACTIONS" > dist/deploy.txt
-          echo "sha=$GITHUB_SHA" >> dist/deploy.txt
-          echo "run_id=$GITHUB_RUN_ID" >> dist/deploy.txt
-          date -u +"utc=%Y-%m-%dT%H:%M:%SZ" >> dist/deploy.txt
+          mkdir -p dist
+          echo "DEPLOYED BY GITHUB ACTIONS" > dist/deploy.txt
+          echo "SHA: $GITHUB_SHA" >> dist/deploy.txt
+          echo "TIME(UTC): $(date -u '+%Y-%m-%d %H:%M:%S')" >> dist/deploy.txt
 
       - name: Deploy to Hostinger public_html
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
