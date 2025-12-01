@@ -39,6 +39,7 @@ const ConsultationBookingPage = lazy(() => import('./pages/ConsultationBookingPa
 const Section301TariffsGuidePage = lazy(() => import('./pages/Section301TariffsGuidePage'));
 const UFLPAComplianceGuidePage = lazy(() => import('./pages/UFLPAComplianceGuidePage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const CaliforniaLocationsPage = lazy(() => import('./pages/CaliforniaLocationsPage'));
 
 // Location-specific pages - California cities and regions
 const AnaheimCustomsAttorneyPage = lazy(() => import('./pages/AnaheimCustomsAttorneyPage'));
@@ -380,6 +381,11 @@ const App: React.FC = () => {
       case 'careers':
         content = <CareersPage />;
         break;
+      case 'california-locations':
+      case 'california-offices':
+      case 'california-ports':
+        content = <CaliforniaLocationsPage />;
+        break;
       case 'los-angeles-port-customs-attorney':
         content = <LosAngelesPortPage />;
         break;
@@ -390,13 +396,47 @@ const App: React.FC = () => {
         content = <CalabasasCustomsAttorneyPage />;
         break;
       case 'customs-defense-litigation':
+      case 'customs-defense':
         content = <CustomsDefensePage />;
         break;
       case 'regulatory-compliance-advisory':
+      case 'regulatory-compliance':
         content = <RegulatoryCompliancePage />;
         break;
       case 'export-controls-sanctions':
+      case 'export-controls':
         content = <ExportControlsPage />;
+        break;
+      // Aliases for common practice area topics
+      case 'country-of-origin':
+      case 'prior-disclosure':
+      case 'prior-disclosure-filing':
+      case 'cbp-audit-defense':
+      case 'duty-drawback':
+      case 'duty-drawback-refunds':
+      case 'tariff-refund-protests':
+      case 'ftz-foreign-trade-zones':
+      case 'assists-royalties':
+      case 'transfer-pricing-customs':
+      case 'deemed-export-compliance':
+      case 'scope-rulings':
+      case 'cvd-scope-rulings':
+      case 'administrative-reviews':
+      case 'eapa-defense':
+      case 'internal-compliance-audits':
+        content = <PracticeAreasPage />;
+        break;
+      case 'customs-compliance':
+      case 'import-compliance':
+        content = <RegulatoryCompliancePage />;
+        break;
+      case 'customs-penalty-mitigation':
+      case 'customs-detention-defense':
+        content = <CustomsDefensePage />;
+        break;
+      case 'tariff-classification':
+      case 'tariff-engineering':
+        content = <TariffsClassificationGuidePage />;
         break;
       case 'tariffs-duties-classification-guide':
         content = <TariffsClassificationGuidePage />;
@@ -526,6 +566,7 @@ const App: React.FC = () => {
         content = <LosAngelesSection301Page />;
         break;
       case 'los-angeles-tariff-lawyer':
+      case 'los-angeles-customs-attorney':
         content = <LosAngelesTariffLawyerPage />;
         break;
       case 'los-angeles-usmca-certification':
@@ -553,6 +594,8 @@ const App: React.FC = () => {
         content = <OaklandMaritimeTradePage />;
         break;
       case 'oakland-port-operations':
+      case 'oakland-port-customs-attorney':
+      case 'oakland-port-operations-attorney':
         content = <OaklandPortOperationsPage />;
         break;
       case 'oakland-trade-attorney':
