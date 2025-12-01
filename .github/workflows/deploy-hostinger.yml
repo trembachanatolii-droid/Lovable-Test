@@ -3,6 +3,7 @@ name: Deploy to Hostinger
 on:
   push:
     branches: ["main"]
+  workflow_dispatch:
 
 concurrency:
   group: deploy-hostinger
@@ -11,24 +12,31 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "npm"
 
-      - run: npm ci
-      - run: npm run build
+      - name: Install
+        run: npm ci
 
-      # ✅ Deploy marker file (proves what folder is really being updated)
-      - name: Create deploy marker
+      - name: Build
+        run: npm run build
+
+      # ✅ This creates/overwrites dist/deploy.txt so it WILL be uploaded (because local-dir is ./dist/)
+      - name: Write deploy marker
+        shell: bash
         run: |
-          mkdir -p dist
-          echo "DEPLOYED BY GITHUB ACTIONS" > dist/deploy.txt
-          echo "SHA: $GITHUB_SHA" >> dist/deploy.txt
-          echo "TIME(UTC): $(date -u '+%Y-%m-%d %H:%M:%S')" >> dist/deploy.txt
+          echo "deploy_time_utc=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" > dist/deploy.txt
+          echo "commit=${GITHUB_SHA}" >> dist/deploy.txt
+          echo "run_id=${GITHUB_RUN_ID}" >> dist/deploy.txt
+          echo "run_number=${GITHUB_RUN_NUMBER}" >> dist/deploy.txt
 
       - name: Deploy to Hostinger public_html
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -37,6 +45,8 @@ jobs:
           username: ${{ secrets.HOSTINGER_USERNAME }}
           password: ${{ secrets.HOSTINGER_PASSWORD }}
           port: ${{ secrets.HOSTINGER_PORT }}
+          protocol: ftp
           local-dir: ./dist/
-          server-dir: /public_html/
+          server-dir: public_html/
           dangerous-clean-slate: true
+          log-level: verbose
