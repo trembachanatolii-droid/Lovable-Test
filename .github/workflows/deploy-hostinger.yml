@@ -35,16 +35,14 @@ jobs:
           echo "SHA=${GITHUB_SHA}" >> dist/deploy.txt
           echo "UTC=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> dist/deploy.txt
 
-      - name: Deploy to Hostinger
+      - name: Deploy to Hostinger (FTPS)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.HOSTINGER_SERVER }}
           username: ${{ secrets.HOSTINGER_USERNAME }}
           password: ${{ secrets.HOSTINGER_PASSWORD }}
-          port: ${{ secrets.HOSTINGER_PORT }}
-          protocol: ftp
+          port: ${{ secrets.HOSTINGER_PORT }}     # 21 for FTPS
+          protocol: ftps                          # Use FTPS
           local-dir: dist/
-          # NOTE: because your FTP account logs into public_html directly,
-          # upload into the current directory (./), not into /public_html/ again
           server-dir: ./
           dangerous-clean-slate: true
