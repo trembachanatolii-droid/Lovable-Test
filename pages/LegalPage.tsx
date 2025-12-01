@@ -163,7 +163,7 @@ const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
             className="w-full h-full object-cover object-center"
             loading="eager"
             decoding="async"
-            fetchpriority="high"
+            fetchPriority="high"
             width="2071"
             height="1380"
           />
