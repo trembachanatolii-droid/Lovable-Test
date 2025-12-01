@@ -12,6 +12,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -28,7 +29,6 @@ jobs:
       - name: Build site
         run: npm run build
 
-      # Writes a marker file so you can verify the upload
       - name: Write deploy marker
         run: |
           echo "Deployed via GitHub Actions" > dist/deploy.txt
@@ -44,7 +44,7 @@ jobs:
           port: ${{ secrets.HOSTINGER_PORT }}
           protocol: ftp
           local-dir: dist/
-          # Because your FTP account's home directory is already public_html,
-          # upload directly into the current directory:
+          # NOTE: because your FTP account logs into public_html directly,
+          # upload into the current directory (./), not into /public_html/ again
           server-dir: ./
           dangerous-clean-slate: true
