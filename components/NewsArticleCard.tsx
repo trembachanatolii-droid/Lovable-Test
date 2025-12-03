@@ -69,13 +69,13 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
             <span className="text-secondary-teal">•</span>
             <span>{article.readTime}</span>
         </div>
-        <h3 className="font-garamond text-2xl font-bold leading-tight text-primary-navy mb-3 group-hover:text-primary-darkBlue transition-colors">
+        <h3 className="font-garamond text-2xl font-bold leading-tight text-primary-navy mb-3 group-hover:text-primary-darkBlue group-focus-visible:text-primary-darkBlue transition-colors">
           {article.title}
         </h3>
         <p className="text-base leading-relaxed text-text-secondary mb-6">
           {article.description}
         </p>
-        <span aria-hidden="true" className="mt-auto inline-flex items-center gap-1.5 text-navy-medium text-[17px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal">
+        <span aria-hidden="true" className="mt-auto inline-flex items-center gap-1.5 text-navy-medium text-[17px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal group-focus-visible:gap-2.5 group-focus-visible:text-secondary-teal">
           Read Now &rarr;
         </span>
       </div>

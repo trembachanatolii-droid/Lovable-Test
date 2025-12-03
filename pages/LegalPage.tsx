@@ -23,7 +23,7 @@ const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
       default:
         return {
           title: `${pageTitle} - Trembach Law Firm`,
-          description: `${pageTitle} for Trembach Law Firm website`,
+          description: `${pageTitle} for Trembach Law Firm, APC. Legal information and policies governing the use of our California international trade and customs law services website.`,
           canonical: pageTitle.toLowerCase().replace(/\s+/g, '-'),
         };
     }

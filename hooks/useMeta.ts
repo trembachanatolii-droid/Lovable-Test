@@ -17,7 +17,7 @@ import {
  * useMeta({
  *   title: 'About Us | Trembach Law',
  *   description: 'Learn about our international trade law expertise',
- *   canonical: '#about',
+ *   canonical: 'about',
  *   ogImage: 'https://trembach.law/images/about-og.jpg',
  * });
  */
@@ -36,7 +36,7 @@ export function useMeta(config: MetaConfig): void {
     document.title = fullTitle;
 
     // Development-only validation warnings
-    if (process.env.NODE_ENV === 'development') {
+    if (import.meta.env.DEV) {
       // Validate title length (Google truncates at ~60 characters)
       if (config.title.length > 60) {
         console.warn(

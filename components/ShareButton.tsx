@@ -37,9 +37,9 @@ const ShareButton: React.FC<ShareButtonProps> = ({
       try {
         await navigator.share(shareData);
         showNotification('Shared successfully!');
-      } catch (error: any) {
+      } catch (error: unknown) {
         // User cancelled the share or error occurred
-        if (error.name !== 'AbortError') {
+        if (error instanceof Error && error.name !== 'AbortError') {
           if (import.meta.env.DEV) {
             console.error('Error sharing:', error);
           }

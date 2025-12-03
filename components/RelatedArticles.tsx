@@ -148,14 +148,14 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = memo(({ currentArticleId
             >
               <div className="p-6">
                 <div className="flex items-start justify-between mb-3">
-                  <div className="w-10 h-10 rounded-full bg-secondary-teal/10 flex items-center justify-center group-hover:bg-secondary-teal/20 transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-secondary-teal/10 flex items-center justify-center group-hover:bg-secondary-teal/20 group-focus-visible:bg-secondary-teal/20 transition-colors">
                     <svg className="w-5 h-5 text-secondary-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
                 </div>
 
-                <h3 className="text-lg font-bold text-primary-navy mb-2 font-garamond group-hover:text-secondary-teal transition-colors leading-tight">
+                <h3 className="text-lg font-bold text-primary-navy mb-2 font-garamond group-hover:text-secondary-teal group-focus-visible:text-secondary-teal transition-colors leading-tight">
                   {article!.title}
                 </h3>
 
@@ -163,9 +163,9 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = memo(({ currentArticleId
                   {article!.subheading}
                 </p>
 
-                <div className="mt-4 flex items-center text-secondary-teal text-sm font-semibold group-hover:gap-2 transition-all">
+                <div className="mt-4 flex items-center text-secondary-teal text-sm font-semibold group-hover:gap-2 group-focus-visible:gap-2 transition-all">
                   Read Article
-                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 group-focus-visible:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
