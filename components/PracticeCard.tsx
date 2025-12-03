@@ -83,7 +83,7 @@ return (
             target.src = placeholderSrc;
             target.srcset = `${imageUrlBase}${imageSlug}/400/300 400w, ${imageUrlBase}${imageSlug}/600/450 600w, ${imageUrlBase}${imageSlug}/800/600 800w`;
           }}
-          className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 group-focus-visible:scale-105"
         />
       </picture>
     </div>
@@ -104,7 +104,7 @@ return (
           </li>
         ))}
       </ul>
-      <span className="inline-flex items-center gap-1.5 text-navy-medium text-[17px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal">
+      <span className="inline-flex items-center gap-1.5 text-navy-medium text-[17px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal group-focus-visible:gap-2.5 group-focus-visible:text-secondary-teal">
         Learn more about {title} →
       </span>
     </div>

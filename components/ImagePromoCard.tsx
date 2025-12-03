@@ -20,11 +20,11 @@ It slides in from off-screen by animating the 'right' property.
 */}
 <div className="absolute top-0 w-0 h-0 border-solid border-t-[80px] border-l-[80px] border-t-secondary-teal border-l-transparent
 transition-[right] duration-300 ease-in-out
-right-[-80px] group-hover:right-0 z-10"
+right-[-80px] group-hover:right-0 group-focus-visible:right-0 z-10"
 />
 
 {/* Arrow icon positioned over the tab, appears on hover. */}
-        <div className="absolute top-3 right-3 text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-20">
+        <div className="absolute top-3 right-3 text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 z-20">
             <ArrowRightIcon className="h-6 w-6" aria-hidden="true"/>
         </div>
 

@@ -230,7 +230,9 @@ const ConsultationBookingPage: React.FC = () => {
                 throw new Error(result.error || 'Submission failed');
             }
         } catch (error) {
-            console.error('Form submission error:', error);
+            if (import.meta.env.DEV) {
+                console.error('Form submission error:', error);
+            }
             setSubmitStatus('error');
             showNotification('We apologize, but there was an error submitting your request. Please try again or call us directly at (310) 744-1328.', 'error');
         } finally {

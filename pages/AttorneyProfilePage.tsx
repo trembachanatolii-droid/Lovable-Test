@@ -19,7 +19,7 @@ const AttorneyProfilePage: React.FC = () => {
   useMeta({
     title: 'Anatolii Trembach | CA Trade & Customs Attorney',
     description: 'California international trade attorney. USC Law LL.M. Former law enforcement. Expert in CBP defense, customs audits, ITAR/EAR export controls.',
-    canonical: '#attorney-profile',
+    canonical: 'attorney-profile',
     ogType: 'profile',
     ogImage: `${siteConfig.siteUrl}/og-image-attorney.jpg`,
     ogImageAlt: 'Anatolii Trembach - California International Trade & Customs Attorney',

@@ -3,9 +3,10 @@
  * Allows only safe tags and attributes commonly used in article content
  */
 export function sanitizeHTML(html: string): string {
-  // Create a temporary div to parse HTML
-  const temp = document.createElement('div');
-  temp.innerHTML = html;
+  // Use DOMParser for safer HTML parsing (avoids innerHTML execution)
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
+  const temp = doc.body;
 
   // Define allowed tags
   const allowedTags = new Set([

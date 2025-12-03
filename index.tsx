@@ -105,7 +105,9 @@ if ('serviceWorker' in navigator) {
         });
       })
       .catch((error) => {
-        console.error('Service Worker registration failed:', error);
+        if (import.meta.env.DEV) {
+          console.error('Service Worker registration failed:', error);
+        }
       });
 
     // Handle service worker controller change
