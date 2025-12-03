@@ -13,29 +13,29 @@ export interface ArticlePreview {
 
 export const articlePreviews: ArticlePreview[] = [
   {
-    "id": "us-korea-strategic-trade-deal-california-2025",
-    "title": "US-Korea Strategic Trade and Investment Deal: 15% Tariff Framework and $350 Billion Investment Commitment",
-    "subheading": "California Importers Navigate New KORUS FTA Framework Following November 2025 Trade Agreement",
-    "intro": "In November 2025, President Trump announced a \"Full and Complete\" trade agreement with South Korea that fundamentally restructures bilateral commerce between the United States and one of California's most significant trading partners. The landmark deal reduces blanket tariffs from 25% to 15% on most Korean imports, lowers Section 232 sectoral tariffs on automobiles, auto parts, timber, lumber, and wood derivatives to a uniform 15% rate, and secures a South Korean commitment to invest $350 billion in U.S.-owned and controlled assets.",
-    "keywords": "US Korea trade deal attorney California, KORUS FTA lawyer, Korea trade agreement California, Korea 15% tariff compliance, Korea automotive tariff attorney, California Korea import lawyer, Section 232 Korea exemption, Korean investment compliance lawyer",
+    "id": "uk-us-pharmaceutical-zero-tariff-deal-california-2025",
+    "title": "UK-US Zero Tariff Pharmaceutical Agreement 2025: Exclusive 0% Rate Creates Competitive Advantage for California Importers",
+    "subheading": "California Biotech and Pharmaceutical Importers Navigate Historic UK-US Trade Deal Providing Three-Year Zero Tariff Access While EU Faces 15% Rate",
+    "intro": "On December 1, 2025, the United Kingdom secured an unprecedented pharmaceutical trade agreement with the United States, establishing zero percent tariffs on all UK pharmaceutical exports to the United States for a minimum three-year period beginning January 1, 2026. The landmark deal positions the UK as the only country globally with zero tariff access for pharmaceutical products to the U.S. market, providing substantial competitive advantages over European Union manufacturers who face 15% pharmaceutical tariffs.",
+    "keywords": "UK US pharmaceutical tariff attorney California, pharma import lawyer, zero tariff pharmaceutical California, UK drug imports attorney, biotech tariff compliance California, San Diego biotech import lawyer, pharmaceutical customs attorney, HTS Chapter 30 classification",
     "publishedDate": "2025-12-03",
     "lastModified": "2025-12-03"
   },
   {
-    "id": "us-china-agricultural-trade-truce-california-2025",
-    "title": "US-China Agricultural Trade Truce: Critical Legal Implications for California Exporters",
-    "subheading": "How the November 2025 Trade Agreement Affects Central Valley Farmers and Port of Oakland Agricultural Shipments",
-    "intro": "On November 10, 2025, the United States and China implemented a historic one-year agricultural trade truce following high-level negotiations between President Trump and President Xi Jinping. This agreement represents a significant de-escalation in the ongoing trade tensions between the world's two largest economies, with profound implications for California's agricultural sector. Under the terms of the truce, China committed to substantial purchases of US soybeans—12 million metric tons by the end of 2025 and 25 MMT annually through 2028.",
-    "keywords": "US-China trade truce, agricultural tariffs California, soybean exports China, Port of Oakland agricultural trade, IEEPA fentanyl tariff, agricultural export compliance, Central Valley farmers China trade, reciprocal tariff exemptions",
+    "id": "section-232-steel-aluminum-50-tariff-california-2025",
+    "title": "Section 232 Steel and Aluminum Tariffs Doubled to 50%: California Importers Face Historic Trade Duties Effective June 2025",
+    "subheading": "The June 4, 2025 implementation of 50% ad valorem duties on steel and aluminum imports under Section 232 represents the most significant tariff increase in decades for California importers.",
+    "intro": "On June 4, 2025, the United States implemented a dramatic escalation in Section 232 national security tariffs on steel and aluminum articles, doubling the duty rate from 25% to 50% ad valorem. This unprecedented increase, authorized under Section 232 of the Trade Expansion Act of 1962, has sent shockwaves through California's import-dependent industries, particularly construction, manufacturing, aerospace, and automotive sectors.",
+    "keywords": "Section 232 steel tariff attorney California, aluminum 50 percent tariff lawyer, steel import compliance California, aluminum duties attorney, Section 232 national security tariff, California customs lawyer steel aluminum, CBP steel tariff audit defense",
     "publishedDate": "2025-12-03",
     "lastModified": "2025-12-03"
   },
   {
-    "id": "oecd-global-trade-resilience-california-december-2025",
-    "title": "OECD Global Trade Resilience Report: Strategic Implications for California Importers in 2026",
-    "subheading": "Navigating the New Trade Landscape After Historic Tariff Shifts and Bilateral Agreement Surge",
-    "intro": "On December 2, 2025, the Organisation for Economic Co-operation and Development (OECD) released groundbreaking data demonstrating that the world economy has maintained remarkable resilience despite the most significant tariff restructuring in over a century. The OECD upgraded its global economic outlook, forecasting world economy growth at 3.2% for 2025, even as the United States implemented unprecedented tariff increases that saw average applied rates surge from 2.5% to an estimated 27% between January and April 2025.",
-    "keywords": "OECD trade report, California importers, tariff compliance, customs duties, trade resilience, supply chain strategy, bilateral trade agreements, import regulations, customs revenue, trade policy California",
+    "id": "tariff-revenue-surge-california-importers-december-2025",
+    "title": "$101.2 Billion Tariff Revenue Surge: Managing Unprecedented Import Costs for California Businesses",
+    "subheading": "Effective tariff rates reach 11.2%—highest since 1943—as California importers face $30+ billion monthly in customs duties and intensified CBP audit enforcement",
+    "intro": "Between January and August 2025, the United States collected $101.2 billion in tariff revenue, fundamentally transforming the cost structure of international trade for California businesses. By September 2025, monthly tariff collections exceeded $30 billion—a staggering 300% increase from the under $10 billion collected monthly throughout 2024. The average effective tariff rate surged from 2.5% to 11.2%, representing the highest customs duty burden American importers have faced since 1943.",
+    "keywords": "tariff revenue 2025 attorney California, customs duty compliance lawyer, import tariff optimization California, CBP audit defense attorney, tariff cost reduction California, HTS classification attorney California, duty minimization lawyer",
     "publishedDate": "2025-12-03",
     "lastModified": "2025-12-03"
   },
