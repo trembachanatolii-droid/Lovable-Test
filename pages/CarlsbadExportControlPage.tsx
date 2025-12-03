@@ -319,7 +319,7 @@ const CarlsbadExportControlPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Export Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#biotech-export-compliance" className="service-link">
+                  <Link to="/biotech-export-compliance" className="service-link">
                     <span className="service-link__title">Biotech Export Compliance</span>
                     <p className="service-link__description">Gene editing & synthetic biology</p>
                     <div className="triangle-slide">
@@ -327,10 +327,10 @@ const CarlsbadExportControlPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#medical-device-exports" className="service-link">
+                  <Link to="/medical-device-exports" className="service-link">
                     <span className="service-link__title">Medical Device Exports</span>
                     <p className="service-link__description">BIS & FDA compliance</p>
                     <div className="triangle-slide">
@@ -338,7 +338,7 @@ const CarlsbadExportControlPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/deemed-export-compliance" className="service-link">
@@ -370,7 +370,7 @@ const CarlsbadExportControlPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#oceanside-export-controls" className="service-link">
+                  <Link to="/oceanside-export-controls" className="service-link">
                     <span className="service-link__title">Oceanside Export Controls</span>
                     <p className="service-link__description">North County compliance</p>
                     <div className="triangle-slide">
@@ -378,7 +378,7 @@ const CarlsbadExportControlPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

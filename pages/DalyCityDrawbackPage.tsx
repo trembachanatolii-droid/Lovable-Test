@@ -249,7 +249,7 @@ const DalyCityDrawbackPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#san-francisco-duty-drawback" className="service-link">
+                  <Link to="/san-francisco-duty-drawback" className="service-link">
                     <span className="service-link__title">San Francisco Drawback</span>
                     <p className="service-link__description">Bay Area duty recovery</p>
                     <div className="triangle-slide">
@@ -257,7 +257,7 @@ const DalyCityDrawbackPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

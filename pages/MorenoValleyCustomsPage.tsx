@@ -386,7 +386,7 @@ const MorenoValleyCustomsPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#ecommerce-customs-compliance" className="service-link">
+                  <Link to="/ecommerce-customs-compliance" className="service-link">
                     <span className="service-link__title">E-Commerce Compliance</span>
                     <p className="service-link__description">Section 321 & marketplace sellers</p>
                     <div className="triangle-slide">
@@ -394,7 +394,7 @@ const MorenoValleyCustomsPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="/ftz-foreign-trade-zones" className="service-link">
@@ -426,7 +426,7 @@ const MorenoValleyCustomsPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#riverside-trade-attorney" className="service-link">
+                  <Link to="/riverside-trade-attorney" className="service-link">
                     <span className="service-link__title">Riverside Trade Attorney</span>
                     <p className="service-link__description">Riverside County logistics</p>
                     <div className="triangle-slide">
@@ -434,10 +434,10 @@ const MorenoValleyCustomsPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ontario-logistics-attorney" className="service-link">
+                  <Link to="/ontario-logistics-attorney" className="service-link">
                     <span className="service-link__title">Ontario Logistics Attorney</span>
                     <p className="service-link__description">Airport & distribution hub</p>
                     <div className="triangle-slide">
@@ -445,7 +445,7 @@ const MorenoValleyCustomsPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

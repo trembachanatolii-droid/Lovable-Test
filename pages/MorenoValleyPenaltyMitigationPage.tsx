@@ -243,7 +243,7 @@ const MorenoValleyPenaltyMitigationPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Inland Empire Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#riverside-penalty-mitigation" className="service-link">
+                  <Link to="/riverside-penalty-mitigation" className="service-link">
                     <span className="service-link__title">Riverside Penalty Mitigation</span>
                     <p className="service-link__description">Riverside CBP penalty defense</p>
                     <div className="triangle-slide">
@@ -251,7 +251,7 @@ const MorenoValleyPenaltyMitigationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/inland-empire-customs-attorney" className="service-link">

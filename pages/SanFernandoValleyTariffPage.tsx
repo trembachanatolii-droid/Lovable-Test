@@ -451,7 +451,7 @@ const SanFernandoValleyTariffPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#entertainment-trade-compliance" className="service-link">
+                  <Link to="/entertainment-trade-compliance" className="service-link">
                     <span className="service-link__title">Entertainment Trade Compliance</span>
                     <p className="service-link__description">Production gear & carnets</p>
                     <div className="triangle-slide">
@@ -459,10 +459,10 @@ const SanFernandoValleyTariffPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#aerospace-itar-compliance" className="service-link">
+                  <Link to="/aerospace-itar-compliance" className="service-link">
                     <span className="service-link__title">Aerospace ITAR/EAR</span>
                     <p className="service-link__description">Defense contractor compliance</p>
                     <div className="triangle-slide">
@@ -470,10 +470,10 @@ const SanFernandoValleyTariffPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#manufacturing-tariff-strategies" className="service-link">
+                  <Link to="/manufacturing-tariff-strategies" className="service-link">
                     <span className="service-link__title">Manufacturing Tariff Strategies</span>
                     <p className="service-link__description">Section 301/232 compliance</p>
                     <div className="triangle-slide">
@@ -481,7 +481,7 @@ const SanFernandoValleyTariffPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -520,14 +520,14 @@ const SanFernandoValleyTariffPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#ata-carnet-guide" className="service-link">
+                  <Link to="/ata-carnet-guide" className="service-link">
                     <span className="service-link__title">ATA Carnet Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="/export-controls" className="service-link">
@@ -540,14 +540,14 @@ const SanFernandoValleyTariffPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#section-301-tariffs-guide" className="service-link">
+                  <Link to="/section-301-tariffs-guide" className="service-link">
                     <span className="service-link__title">Section 301 Tariffs Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/trade-law-faq" className="service-link">

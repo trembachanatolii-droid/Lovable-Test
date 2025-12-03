@@ -374,7 +374,7 @@ const OaklandMaritimeTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Maritime Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#vessel-documentation" className="service-link">
+                  <Link to="/vessel-documentation" className="service-link">
                     <span className="service-link__title">Vessel Documentation</span>
                     <p className="service-link__description">USCG registration and compliance</p>
                     <div className="triangle-slide">
@@ -382,10 +382,10 @@ const OaklandMaritimeTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#maritime-insurance" className="service-link">
+                  <Link to="/maritime-insurance" className="service-link">
                     <span className="service-link__title">Maritime Insurance Claims</span>
                     <p className="service-link__description">Cargo loss and damage claims</p>
                     <div className="triangle-slide">
@@ -393,10 +393,10 @@ const OaklandMaritimeTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#fmc-licensing" className="service-link">
+                  <Link to="/fmc-licensing" className="service-link">
                     <span className="service-link__title">FMC Licensing</span>
                     <p className="service-link__description">NVOCC and OTI licenses</p>
                     <div className="triangle-slide">
@@ -404,7 +404,7 @@ const OaklandMaritimeTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -414,7 +414,7 @@ const OaklandMaritimeTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Ports</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#los-angeles-maritime" className="service-link">
+                  <Link to="/los-angeles-maritime" className="service-link">
                     <span className="service-link__title">Port of LA Maritime Law</span>
                     <p className="service-link__description">Southern California maritime</p>
                     <div className="triangle-slide">
@@ -422,10 +422,10 @@ const OaklandMaritimeTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#long-beach-maritime" className="service-link">
+                  <Link to="/long-beach-maritime" className="service-link">
                     <span className="service-link__title">Port of Long Beach Maritime</span>
                     <p className="service-link__description">Long Beach shipping law</p>
                     <div className="triangle-slide">
@@ -433,7 +433,7 @@ const OaklandMaritimeTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

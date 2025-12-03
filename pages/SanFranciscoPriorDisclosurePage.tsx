@@ -436,7 +436,7 @@ const SanFranciscoPriorDisclosurePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#oakland-customs-attorney" className="service-link">
+                  <Link to="/oakland-customs-attorney" className="service-link">
                     <span className="service-link__title">Oakland Port Attorney</span>
                     <p className="service-link__description">Port of Oakland expertise</p>
                     <div className="triangle-slide">
@@ -444,7 +444,7 @@ const SanFranciscoPriorDisclosurePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/los-angeles-customs-attorney" className="service-link">

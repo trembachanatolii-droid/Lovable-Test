@@ -375,7 +375,7 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Energy Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#petroleum-drawback" className="service-link">
+                  <Link to="/petroleum-drawback" className="service-link">
                     <span className="service-link__title">Petroleum Drawback Claims</span>
                     <p className="service-link__description">Refinery duty recovery</p>
                     <div className="triangle-slide">
@@ -383,10 +383,10 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ofac-energy-sanctions" className="service-link">
+                  <Link to="/ofac-energy-sanctions" className="service-link">
                     <span className="service-link__title">OFAC Energy Sanctions</span>
                     <p className="service-link__description">Russia/Iran/Venezuela compliance</p>
                     <div className="triangle-slide">
@@ -394,10 +394,10 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#section-232-steel" className="service-link">
+                  <Link to="/section-232-steel" className="service-link">
                     <span className="service-link__title">Section 232 Steel Tariffs</span>
                     <p className="service-link__description">Energy infrastructure compliance</p>
                     <div className="triangle-slide">
@@ -405,7 +405,7 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -415,7 +415,7 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other Energy Regions</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#houston-energy-trade" className="service-link">
+                  <Link to="/houston-energy-trade" className="service-link">
                     <span className="service-link__title">Houston Energy Trade</span>
                     <p className="service-link__description">Texas petroleum compliance</p>
                     <div className="triangle-slide">
@@ -423,10 +423,10 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#gulf-coast-petroleum" className="service-link">
+                  <Link to="/gulf-coast-petroleum" className="service-link">
                     <span className="service-link__title">Gulf Coast Petroleum Trade</span>
                     <p className="service-link__description">Refinery import/export</p>
                     <div className="triangle-slide">
@@ -434,7 +434,7 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

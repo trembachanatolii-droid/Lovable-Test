@@ -386,7 +386,7 @@ const HuntingtonBeachTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#apparel-textile-compliance" className="service-link">
+                  <Link to="/apparel-textile-compliance" className="service-link">
                     <span className="service-link__title">Apparel & Textile Compliance</span>
                     <p className="service-link__description">Fashion industry expertise</p>
                     <div className="triangle-slide">
@@ -394,7 +394,7 @@ const HuntingtonBeachTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/customs-defense-litigation" className="service-link">
@@ -426,7 +426,7 @@ const HuntingtonBeachTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#newport-beach-trade-attorney" className="service-link">
+                  <Link to="/newport-beach-trade-attorney" className="service-link">
                     <span className="service-link__title">Newport Beach Attorney</span>
                     <p className="service-link__description">Orange County coastal</p>
                     <div className="triangle-slide">
@@ -434,7 +434,7 @@ const HuntingtonBeachTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/los-angeles-port-customs-attorney" className="service-link">

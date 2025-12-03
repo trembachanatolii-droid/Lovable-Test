@@ -443,7 +443,7 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Ports</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#los-angeles-duty-drawback" className="service-link">
+                  <Link to="/los-angeles-duty-drawback" className="service-link">
                     <span className="service-link__title">Los Angeles Port Drawback</span>
                     <p className="service-link__description">Port of LA duty recovery</p>
                     <div className="triangle-slide">
@@ -451,7 +451,7 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="/duty-drawback" className="service-link">

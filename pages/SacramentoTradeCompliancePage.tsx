@@ -441,7 +441,7 @@ const SacramentoTradeCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Markets</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#san-francisco-compliance" className="service-link">
+                  <Link to="/san-francisco-compliance" className="service-link">
                     <span className="service-link__title">San Francisco Bay Area</span>
                     <p className="service-link__description">Silicon Valley compliance</p>
                     <div className="triangle-slide">
@@ -449,10 +449,10 @@ const SacramentoTradeCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#los-angeles-compliance" className="service-link">
+                  <Link to="/los-angeles-compliance" className="service-link">
                     <span className="service-link__title">Los Angeles Trade Compliance</span>
                     <p className="service-link__description">Southern California programs</p>
                     <div className="triangle-slide">
@@ -460,7 +460,7 @@ const SacramentoTradeCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

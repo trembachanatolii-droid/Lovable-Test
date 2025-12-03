@@ -420,14 +420,14 @@ const DowneyCustomsBrokerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Port Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#long-beach-port-operations-attorney" className="service-link">
+                  <Link to="/long-beach-port-operations-attorney" className="service-link">
                     <span className="service-link__title">Long Beach Port Operations</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

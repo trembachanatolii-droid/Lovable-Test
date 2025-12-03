@@ -145,7 +145,7 @@ const PasadenaCBPAuditPage: React.FC = () => {
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">San Gabriel Valley</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><a href="#glendale-customs-attorney" className="service-link"><span className="service-link__title">Glendale Office</span><p className="service-link__description">Nearby regional services</p><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
+                <div className="service-link-item"><Link to="/glendale-customs-attorney" className="service-link"><span className="service-link__title">Glendale Office</span><p className="service-link__description">Nearby regional services</p><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
                 <div className="service-link-item"><Link to="/los-angeles-cbp-audit" className="service-link"><span className="service-link__title">Los Angeles Office</span><p className="service-link__description">Metro LA coverage</p><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
               </div>
             </div>

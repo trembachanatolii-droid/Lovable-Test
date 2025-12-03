@@ -449,7 +449,7 @@ const OrangeCountyTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#medical-device-compliance" className="service-link">
+                  <Link to="/medical-device-compliance" className="service-link">
                     <span className="service-link__title">Medical Device Compliance</span>
                     <p className="service-link__description">FDA/CBP medical device imports</p>
                     <div className="triangle-slide">
@@ -457,10 +457,10 @@ const OrangeCountyTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#aerospace-itar-compliance" className="service-link">
+                  <Link to="/aerospace-itar-compliance" className="service-link">
                     <span className="service-link__title">Aerospace ITAR/EAR</span>
                     <p className="service-link__description">Defense trade controls</p>
                     <div className="triangle-slide">
@@ -468,10 +468,10 @@ const OrangeCountyTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#apparel-tariff-strategies" className="service-link">
+                  <Link to="/apparel-tariff-strategies" className="service-link">
                     <span className="service-link__title">Apparel Tariff Strategies</span>
                     <p className="service-link__description">Fashion industry compliance</p>
                     <div className="triangle-slide">
@@ -479,7 +479,7 @@ const OrangeCountyTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -518,14 +518,14 @@ const OrangeCountyTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#medical-device-import-guide" className="service-link">
+                  <Link to="/medical-device-import-guide" className="service-link">
                     <span className="service-link__title">Medical Device Import Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="/export-controls" className="service-link">
@@ -538,14 +538,14 @@ const OrangeCountyTariffLawyerPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#apparel-classification-guide" className="service-link">
+                  <Link to="/apparel-classification-guide" className="service-link">
                     <span className="service-link__title">Apparel Classification Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/trade-law-faq" className="service-link">

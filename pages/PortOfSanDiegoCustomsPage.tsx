@@ -388,7 +388,7 @@ const PortOfSanDiegoCustomsPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#maquiladora-compliance" className="service-link">
+                  <Link to="/maquiladora-compliance" className="service-link">
                     <span className="service-link__title">Maquiladora Operations</span>
                     <p className="service-link__description">Cross-border manufacturing</p>
                     <div className="triangle-slide">
@@ -396,10 +396,10 @@ const PortOfSanDiegoCustomsPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#cargo-detention-defense" className="service-link">
+                  <Link to="/cargo-detention-defense" className="service-link">
                     <span className="service-link__title">Cargo Detention Defense</span>
                     <p className="service-link__description">Port CBP holds</p>
                     <div className="triangle-slide">
@@ -407,7 +407,7 @@ const PortOfSanDiegoCustomsPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -446,34 +446,34 @@ const PortOfSanDiegoCustomsPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#usmca-guide" className="service-link">
+                  <Link to="/usmca-guide" className="service-link">
                     <span className="service-link__title">USMCA Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#cross-border-manufacturing-guide" className="service-link">
+                  <Link to="/cross-border-manufacturing-guide" className="service-link">
                     <span className="service-link__title">Cross-Border Manufacturing</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#duty-drawback-guide" className="service-link">
+                  <Link to="/duty-drawback-guide" className="service-link">
                     <span className="service-link__title">Duty Drawback Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/trade-law-faq" className="service-link">
