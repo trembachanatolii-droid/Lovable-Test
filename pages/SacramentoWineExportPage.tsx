@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const SacramentoWineExportPage: React.FC = () => {
             Expert wine export attorney serving Sacramento and California wine country. Specialized TTB compliance, export documentation, international wine trade regulations, and alcohol beverage law.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -399,14 +400,14 @@ const SacramentoWineExportPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Export Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#export-controls-sanctions" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Export Compliance</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="#fresno-agricultural-export-compliance" className="service-link">
@@ -425,14 +426,14 @@ const SacramentoWineExportPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Trade Compliance</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Trade Compliance Programs</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -441,14 +442,14 @@ const SacramentoWineExportPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Port Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#oakland-port-operations-attorney" className="service-link">
+                  <Link to="/oakland-port-operations-attorney" className="service-link">
                     <span className="service-link__title">Oakland Port Operations</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -466,7 +467,7 @@ const SacramentoWineExportPage: React.FC = () => {
             Contact our Sacramento wine export attorneys today. We'll review your export markets, assess documentation requirements, and develop a comprehensive international wine trade strategy.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

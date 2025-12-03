@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
             Expert Silicon Valley trade lawyer and customs attorney serving San Jose, Palo Alto, Sunnyvale, Fremont. Specialized technology import compliance, semiconductor tariff strategies, and EAR/ITAR export controls for tech companies.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -486,7 +487,7 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Regional Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#port-of-oakland-tariff" className="service-link">
+                  <Link to="/port-of-oakland-tariff" className="service-link">
                     <span className="service-link__title">Port of Oakland</span>
                     <p className="service-link__description">Bay Area port services</p>
                     <div className="triangle-slide">
@@ -494,10 +495,10 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#sacramento-valley-trade" className="service-link">
+                  <Link to="/sacramento-valley-trade" className="service-link">
                     <span className="service-link__title">Sacramento Valley</span>
                     <p className="service-link__description">Northern California trade</p>
                     <div className="triangle-slide">
@@ -505,7 +506,7 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -545,14 +546,14 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -570,7 +571,7 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
             Contact our Silicon Valley trade lawyer and customs attorney team today. We'll assess your technology import/export compliance needs and provide expert guidance for your tech business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

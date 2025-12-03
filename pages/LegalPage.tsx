@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';

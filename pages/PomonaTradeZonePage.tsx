@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
@@ -58,7 +59,7 @@ const PomonaTradeZonePage: React.FC = () => {
           <h1>Pomona Foreign Trade Zone Attorney<br />FTZ Lawyer Inland Empire</h1>
           <p className="hero-subtitle">Expert Foreign Trade Zone attorney serving Pomona and Inland Empire manufacturers and logistics operations. Defer duties, reduce costs, and maximize FTZ benefits with specialized legal guidance.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free FTZ Consultation</a>
+            <Link to="/contact" className="hero-cta">Free FTZ Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -163,23 +164,23 @@ const PomonaTradeZonePage: React.FC = () => {
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Trade Services</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><a href="#customs-defense-litigation" className="service-link"><span className="service-link__title">Customs Defense</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
-                <div className="service-link-item"><a href="#regulatory-compliance-advisory" className="service-link"><span className="service-link__title">Trade Compliance Programs</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
-                <div className="service-link-item"><a href="#tariffs-duties-classification-guide" className="service-link"><span className="service-link__title">Tariff Classification</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
+                <div className="service-link-item"><Link to="/customs-defense-litigation" className="service-link"><span className="service-link__title">Customs Defense</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
+                <div className="service-link-item"><Link to="/practice-areas" className="service-link"><span className="service-link__title">Trade Compliance Programs</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
+                <div className="service-link-item"><Link to="/resources/tariffs-duties-classification" className="service-link"><span className="service-link__title">Tariff Classification</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
               </div>
             </div>
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Inland Empire</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><a href="#ontario-trade-compliance" className="service-link"><span className="service-link__title">Ontario Trade Compliance</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
-                <div className="service-link-item"><a href="#rancho-cucamonga-tariff-lawyer" className="service-link"><span className="service-link__title">Rancho Cucamonga</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
+                <div className="service-link-item"><Link to="/ontario-trade-compliance" className="service-link"><span className="service-link__title">Ontario Trade Compliance</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
+                <div className="service-link-item"><Link to="/rancho-cucamonga-tariff-lawyer" className="service-link"><span className="service-link__title">Rancho Cucamonga</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
               </div>
             </div>
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Industry Focus</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><a href="#manufacturing-trade" className="service-link"><span className="service-link__title">Manufacturing Trade</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
-                <div className="service-link-item"><a href="#export-controls-sanctions" className="service-link"><span className="service-link__title">Export Controls</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
+                <div className="service-link-item"><a href="/practice-areas" className="service-link"><span className="service-link__title">Manufacturing Trade</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
+                <div className="service-link-item"><Link to="/practice-areas" className="service-link"><span className="service-link__title">Export Controls</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
               </div>
             </div>
           </div>
@@ -193,7 +194,7 @@ const PomonaTradeZonePage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Maximize Your FTZ Benefits</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Defer duties, reduce costs, and streamline operations. Our Pomona Foreign Trade Zone attorneys help Inland Empire manufacturers maximize zone benefits.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">Free FTZ Consultation</Button>
+            <Button href="/contact" variant="solid">Free FTZ Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

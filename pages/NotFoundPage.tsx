@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useMeta } from '../hooks/useMeta';
+import { Link } from 'react-router-dom';
 import { siteConfig } from '../config/siteConfig';
 
 const NotFoundPage: React.FC = () => {
@@ -36,18 +37,17 @@ const NotFoundPage: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="inline-block bg-secondary-teal text-white px-8 py-3 rounded-md font-semibold hover:bg-secondary-forestGreen transition-colors duration-300"
           >
             Return to Homepage
-          </a>
-          <a
-            href="#schedule-consultation"
+          </Link>
+          <Link to="/contact"
             className="inline-block bg-white text-primary-navy border-2 border-primary-navy px-8 py-3 rounded-md font-semibold hover:bg-primary-navy hover:text-white transition-colors duration-300"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
 
         <div className="bg-gray-light rounded-2xl p-8 text-left mb-8">
@@ -59,24 +59,24 @@ const NotFoundPage: React.FC = () => {
           </h3>
           <ul className="space-y-2 mb-6">
             <li>
-              <a href="#customs-defense-litigation" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/customs-defense-litigation" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Customs Defense &amp; Litigation - CBP penalty defense and enforcement actions
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#regulatory-compliance-advisory" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Regulatory Compliance &amp; Advisory - Import/export compliance programs
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#export-controls-sanctions" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Export Controls &amp; Sanctions - ITAR, EAR, and OFAC compliance
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#tariffs-duties-classification-guide" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/resources/tariffs-duties-classification" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Tariff Classification - HTS classification and duty optimization
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -85,19 +85,19 @@ const NotFoundPage: React.FC = () => {
           </h3>
           <ul className="space-y-2 mb-6">
             <li>
-              <a href="#technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Technology &amp; Electronics - Export controls and semiconductor compliance
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Apparel &amp; Textiles - UFLPA and Section 301 strategies
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Food &amp; Agriculture - FDA and USDA import compliance
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -106,24 +106,24 @@ const NotFoundPage: React.FC = () => {
           </h3>
           <ul className="space-y-2 mb-6">
             <li>
-              <a href="#los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/los-angeles-port-customs-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Los Angeles Port - Port of LA/LB customs expertise
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/bay-area-trade-law-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Bay Area Trade Law - San Francisco and Silicon Valley
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#resources" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/resources" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Resource Hub - Comprehensive trade law guides
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#trade-law-faq" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/trade-law-faq" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 FAQ Center - Common questions answered
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -132,24 +132,24 @@ const NotFoundPage: React.FC = () => {
           </h3>
           <ul className="space-y-2">
             <li>
-              <a href="#attorney-profile" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/attorney-profile" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Attorney Profile - Anatolii Trembach
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/about" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 About Trembach Law Firm
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#news" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/news" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 News &amp; Insights - Latest trade law developments
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/practice-areas" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Practice Areas - Comprehensive trade law services
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

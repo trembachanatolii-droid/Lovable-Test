@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
@@ -62,7 +63,7 @@ const FresnoCBPAuditPage: React.FC = () => {
           <h1>CBP Audit Defense Attorney<br />Fresno CA</h1>
           <p className="hero-subtitle">Expert CBP audit defense attorney serving Fresno businesses. As the agricultural capital of California, Fresno importers face unique audit challenges. Our customs audit lawyers provide aggressive defense, penalty mitigation, and compliance solutions.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Audit Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Audit Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -137,7 +138,7 @@ const FresnoCBPAuditPage: React.FC = () => {
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Defense Services</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><a href="#customs-defense-litigation" className="service-link"><span className="service-link__title">Customs Defense & Litigation</span><p className="service-link__description">Full defense representation</p><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
+                <div className="service-link-item"><Link to="/customs-defense-litigation" className="service-link"><span className="service-link__title">Customs Defense & Litigation</span><p className="service-link__description">Full defense representation</p><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
                 <div className="service-link-item"><a href="#fresno-tariff-lawyer" className="service-link"><span className="service-link__title">Fresno Tariff Lawyer</span><p className="service-link__description">Tariff classification services</p><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
               </div>
             </div>
@@ -151,8 +152,8 @@ const FresnoCBPAuditPage: React.FC = () => {
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Resources</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><a href="#trade-law-faq" className="service-link"><span className="service-link__title">CBP Audit FAQ</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
-                <div className="service-link-item"><a href="#resources" className="service-link"><span className="service-link__title">Resources Hub</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
+                <div className="service-link-item"><Link to="/trade-law-faq" className="service-link"><span className="service-link__title">CBP Audit FAQ</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
+                <div className="service-link-item"><Link to="/resources" className="service-link"><span className="service-link__title">Resources Hub</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
               </div>
             </div>
           </div>
@@ -166,7 +167,7 @@ const FresnoCBPAuditPage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Facing a CBP Audit in Fresno?</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Don't face a CBP audit alone. Our Fresno customs audit defense attorneys are ready to protect your business.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">Free Audit Consultation</Button>
+            <Button href="/contact" variant="solid">Free Audit Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

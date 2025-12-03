@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -201,7 +202,7 @@ const ResourcesHubPage: React.FC = () => {
                 <div className="text-sm text-text-secondary">
                   <span className="font-semibold">Reading Time:</span> 25 minutes
                 </div>
-                <Button href="#tariffs-duties-classification-guide" variant="solid">
+                <Button href="/resources/tariffs-duties-classification" variant="solid">
                   Read Full Guide →
                 </Button>
               </div>
@@ -274,7 +275,7 @@ const ResourcesHubPage: React.FC = () => {
                 <div className="text-sm text-text-secondary">
                   <span className="font-semibold">Reading Time:</span> 23 minutes
                 </div>
-                <Button href="#supply-chain-esg-compliance-guide" variant="solid">
+                <Button href="/supply-chain-esg-compliance-guide" variant="solid">
                   Read Full Guide →
                 </Button>
               </div>
@@ -347,7 +348,7 @@ const ResourcesHubPage: React.FC = () => {
                 <div className="text-sm text-text-secondary">
                   <span className="font-semibold">Reading Time:</span> 22 minutes
                 </div>
-                <Button href="#ecommerce-digital-trade-guide" variant="solid">
+                <Button href="/ecommerce-digital-trade-guide" variant="solid">
                   Read Full Guide →
                 </Button>
               </div>
@@ -421,7 +422,7 @@ const ResourcesHubPage: React.FC = () => {
             While our resources provide comprehensive information, every business faces unique compliance challenges. Contact our California international trade law team for tailored advice.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">
@@ -442,7 +443,7 @@ const ResourcesHubPage: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <a href="#news" className="card-link group relative overflow-hidden bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
+            <Link to="/news" className="card-link group relative overflow-hidden bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
               <h4 className="font-bold text-primary-navy mb-2">Latest News & Updates</h4>
               <p className="text-sm text-text-secondary">
                 Stay informed on breaking developments in international trade law and CBP enforcement.
@@ -452,9 +453,9 @@ const ResourcesHubPage: React.FC = () => {
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </div>
-            </a>
+            </Link>
 
-            <a href="#useful-links" className="card-link group relative overflow-hidden bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
+            <Link to="/useful-links" className="card-link group relative overflow-hidden bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
               <h4 className="font-bold text-primary-navy mb-2">Government Links</h4>
               <p className="text-sm text-text-secondary">
                 Direct access to CBP, Commerce, BIS, DDTC, and other federal agency resources.
@@ -464,9 +465,9 @@ const ResourcesHubPage: React.FC = () => {
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </div>
-            </a>
+            </Link>
 
-            <a href="#practice-areas" className="card-link group relative overflow-hidden bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
+            <Link to="/practice-areas" className="card-link group relative overflow-hidden bg-neutral-50 p-6 rounded-lg hover:shadow-md transition-shadow border-l-4 border-secondary-teal">
               <h4 className="font-bold text-primary-navy mb-2">Practice Areas</h4>
               <p className="text-sm text-text-secondary">
                 Explore our full range of legal services in international trade and customs law.
@@ -476,7 +477,7 @@ const ResourcesHubPage: React.FC = () => {
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

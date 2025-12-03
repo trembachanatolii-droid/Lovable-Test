@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const PasadenaTariffLawyerPage: React.FC = () => {
             Expert Pasadena tariff lawyer serving LA County businesses. Specialized in aerospace, biotech, technology, and manufacturing trade compliance with San Gabriel Valley expertise.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -407,7 +408,7 @@ const PasadenaTariffLawyerPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification</span>
                     <p className="service-link__description">HTS optimization</p>
                     <div className="triangle-slide">
@@ -415,7 +416,7 @@ const PasadenaTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -425,7 +426,7 @@ const PasadenaTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#glendale-tariff-attorney" className="service-link">
+                  <Link to="/glendale-tariff-attorney" className="service-link">
                     <span className="service-link__title">Glendale Tariff Attorney</span>
                     <p className="service-link__description">LA County services</p>
                     <div className="triangle-slide">
@@ -433,10 +434,10 @@ const PasadenaTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#los-angeles-port-customs-attorney" className="service-link">
+                  <Link to="/los-angeles-port-customs-attorney" className="service-link">
                     <span className="service-link__title">LA Port Attorney</span>
                     <p className="service-link__description">Port of LA/Long Beach</p>
                     <div className="triangle-slide">
@@ -444,7 +445,7 @@ const PasadenaTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -454,44 +455,44 @@ const PasadenaTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/itar-compliance-guide" className="service-link">
+                  <Link to="/resources/itar-compliance-guide" className="service-link">
                     <span className="service-link__title">ITAR Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/export-controls-guide" className="service-link">
+                  <Link to="/resources/export-controls-guide" className="service-link">
                     <span className="service-link__title">Export Controls Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -509,7 +510,7 @@ const PasadenaTariffLawyerPage: React.FC = () => {
             Contact our Pasadena tariff lawyer today. We'll assess your business customs needs and provide clear guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -16,7 +16,13 @@ const showNotification = (message: string, type: 'success' | 'error' | 'warning'
     notification.setAttribute('role', 'alert');
     notification.setAttribute('aria-live', 'assertive');
     notification.className = `fixed top-4 right-4 ${colors[type]} text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-fadeIn max-w-md`;
-    notification.innerHTML = `<p class="font-semibold">${message}</p>`;
+
+    // Create paragraph element safely using textContent to prevent XSS
+    const p = document.createElement('p');
+    p.className = 'font-semibold';
+    p.textContent = message;
+    notification.appendChild(p);
+
     document.body.appendChild(notification);
     setTimeout(() => {
         notification.remove();
@@ -40,21 +46,17 @@ interface ApplicationFormProps {
 }
 
 const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
-    const [currentStep, setCurrentStep] = useState(0);
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [isSuccess, setIsSuccess] = useState(false);
-    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
-
     // Initial State for Trial Cases
     const emptyTrialCase = { name: '', court: '', caseNumber: '', year: '', role: '', subject: '', outcome: '' };
     const initialTrialCases = Array(10).fill(null).map(() => ({ ...emptyTrialCase }));
 
-    const [formData, setFormData] = useState({
+    // Define initial form data as a constant for reusability
+    const initialFormData = {
         // App Info
         office: '',
         department: 'International Trade & Customs',
         position: '',
-        
+
         // Personal
         firstName: '',
         lastName: '',
@@ -62,34 +64,40 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
         phone: '',
         address: '',
         barAdmissions: '',
-        
+
         // Education
         lawSchool: '',
         gradYear: '',
         undergrad: '',
         undergradDegree: '',
         undergradYear: '',
-        
+
         // General Experience
         yearsPractice: '',
         areasFocus: [] as string[],
         federalCourtExp: '',
-        
+
         // Trial Experience (Attorney Only)
         trialCases: initialTrialCases as TrialCase[],
         trialConfirmation: false,
-        
+
         // Other Experience (Non-Attorney)
         workHistory: '',
         skills: '',
-        
+
         // Additional
         whyTrembach: '',
         challengingScenario: '',
         salary: '',
         startDate: '',
         verifyAuth: false
-    });
+    };
+
+    const [currentStep, setCurrentStep] = useState(0);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSuccess, setIsSuccess] = useState(false);
+    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
+    const [formData, setFormData] = useState(initialFormData);
 
     // Reset form when category changes
     useEffect(() => {
@@ -250,12 +258,29 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                 throw new Error(result.error || 'Submission failed');
             }
         } catch (error) {
-            console.error('Form submission error:', error);
+            if (import.meta.env.DEV) {
+                console.error('Form submission error:', error);
+            }
             triggerHaptic('error');
             showNotification('We apologize, but there was an error submitting your application. Please try again or contact us directly at (310) 744-1328.', 'error');
         } finally {
             setIsSubmitting(false);
         }
+    };
+
+    // Reset form to initial state - provides better UX than full page reload
+    const handleReset = () => {
+        // Recreate trial cases array with fresh empty objects
+        const freshTrialCases = Array(10).fill(null).map(() => ({ ...emptyTrialCase }));
+
+        setFormData({
+            ...initialFormData,
+            trialCases: freshTrialCases as TrialCase[]
+        });
+        setCurrentStep(0);
+        setIsSuccess(false);
+        setFieldErrors({});
+        window.scrollTo(0, 0);
     };
 
     // --- Render Helpers ---
@@ -271,7 +296,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                 <p className="text-base text-text-secondary max-w-lg mx-auto mb-8">
                     A confirmation has been sent to your email and phone number. We will contact you directly if your qualifications match our current needs.
                 </p>
-                <Button href="#" onClick={() => window.location.reload()} variant="outlined">Return to Home</Button>
+                <Button onClick={handleReset} variant="outlined">Submit Another Application</Button>
             </div>
         );
     }

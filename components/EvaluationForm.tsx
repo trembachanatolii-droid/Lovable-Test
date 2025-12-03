@@ -172,7 +172,13 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
         notification.setAttribute('role', 'alert');
         notification.setAttribute('aria-live', 'polite');
         notification.className = `fixed top-4 right-4 ${colors[type]} text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-fadeIn max-w-md`;
-        notification.innerHTML = `<p class="font-semibold">${message}</p>`;
+
+        // Create paragraph element safely using textContent to prevent XSS
+        const p = document.createElement('p');
+        p.className = 'font-semibold';
+        p.textContent = message;
+        notification.appendChild(p);
+
         document.body.appendChild(notification);
         setTimeout(() => {
             notification.remove();
@@ -232,7 +238,9 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                 throw new Error(result.error || 'Submission failed');
             }
         } catch (error) {
-            console.error('Form submission error:', error);
+            if (import.meta.env.DEV) {
+                console.error('Form submission error:', error);
+            }
             triggerHaptic('error');
             setSubmitStatus('error');
             showNotification('We apologize, but there was an error submitting your request. Please try again or call us directly at (310) 744-1328.', 'error');

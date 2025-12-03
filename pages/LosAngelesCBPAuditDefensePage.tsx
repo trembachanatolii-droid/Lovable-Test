@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
             Expert CBP Focused Assessment defense and customs audit representation in Los Angeles. Protect your business from costly penalties with proven audit defense strategies.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Audit Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Audit Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -408,7 +409,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Audit Defense Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#prior-disclosure-filing" className="service-link">
+                  <Link to="/prior-disclosure-filing" className="service-link">
                     <span className="service-link__title">Prior Disclosure Filing</span>
                     <p className="service-link__description">Strategic self-disclosure to cap penalties</p>
                     <div className="triangle-slide">
@@ -416,10 +417,10 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#customs-penalty-mitigation" className="service-link">
+                  <Link to="/customs-penalty-mitigation" className="service-link">
                     <span className="service-link__title">Penalty Mitigation</span>
                     <p className="service-link__description">Reduce or eliminate CBP penalties</p>
                     <div className="triangle-slide">
@@ -427,7 +428,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="#compliance-program-development" className="service-link">
@@ -448,7 +449,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#long-beach-cbp-audit" className="service-link">
+                  <Link to="/long-beach-cbp-audit" className="service-link">
                     <span className="service-link__title">Long Beach Port Audit Defense</span>
                     <p className="service-link__description">Port of Long Beach representation</p>
                     <div className="triangle-slide">
@@ -456,7 +457,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="#san-francisco-cbp-audit" className="service-link">
@@ -477,34 +478,34 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Audit Defense Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/cbp-audit-guide" className="service-link">
+                  <Link to="/resources/cbp-audit-guide" className="service-link">
                     <span className="service-link__title">CBP Audit Survival Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/prior-disclosure-guide" className="service-link">
+                  <Link to="/resources/prior-disclosure-guide" className="service-link">
                     <span className="service-link__title">Prior Disclosure Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/penalty-mitigation" className="service-link">
+                  <Link to="/resources/penalty-mitigation" className="service-link">
                     <span className="service-link__title">Penalty Mitigation Strategies</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -522,7 +523,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
             Don't face CBP alone. Our Los Angeles CBP audit defense attorneys will protect your rights, minimize penalties, and guide you through the entire process. Free confidential consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

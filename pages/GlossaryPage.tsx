@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
 
 import { useMeta } from '../hooks/useMeta';
+import { Link } from 'react-router-dom';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
 
 
@@ -620,7 +621,7 @@ const GlossaryPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToCategory(0)} className="hero-cta">Browse Terms</button>
-            <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
+            <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>
       </section>
@@ -703,8 +704,7 @@ const GlossaryPage: React.FC = () => {
                         <div className="px-5 pb-5 border-t border-gray-100">
                           <p className="text-gray-700 leading-relaxed pt-4 whitespace-pre-line">{item.definition}</p>
                           {item.relatedLink && (
-                            <a
-                              href={item.relatedLink.url}
+                            <a href={item.relatedLink.url}
                               className="inline-flex items-center mt-4 text-secondary-teal hover:text-primary-navy font-medium transition-colors"
                             >
                               {item.relatedLink.text}
@@ -734,12 +734,12 @@ const GlossaryPage: React.FC = () => {
             Understanding the terminology is just the first step. Our California international trade attorneys provide practical guidance on applying these concepts to your specific situation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">
+            <Link to="/contact" className="hero-cta">
               Schedule a Consultation
-            </a>
-            <a href="#resources" className="hero-cta-outline">
+            </Link>
+            <Link to="/resources" className="hero-cta-outline">
               Explore More Resources
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -751,8 +751,7 @@ const GlossaryPage: React.FC = () => {
             Related Resources & Guides
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <a
-              href="#tariffs-duties-classification-guide"
+            <Link to="/resources/tariffs-duties-classification"
               className="card-link group"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">Tariffs & Classification Guide</h3>
@@ -764,9 +763,9 @@ const GlossaryPage: React.FC = () => {
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </div>
-            </a>
+            </Link>
             <a
-              href="#supply-chain-esg-compliance-guide"
+              href="/supply-chain-esg-compliance-guide"
               className="card-link group"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">Supply Chain ESG Compliance</h3>
@@ -780,7 +779,7 @@ const GlossaryPage: React.FC = () => {
               </div>
             </a>
             <a
-              href="#ecommerce-digital-trade-guide"
+              href="/ecommerce-digital-trade-guide"
               className="card-link group"
             >
               <h3 className="text-xl font-bold text-primary-navy mb-2">E-Commerce & Digital Trade</h3>

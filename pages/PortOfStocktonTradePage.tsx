@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const PortOfStocktonTradePage: React.FC = () => {
             Expert Port of Stockton trade compliance attorney providing CBP detention defense, agricultural export services, and customs representation at California's inland deep-water port serving Central Valley.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -416,7 +417,7 @@ const PortOfStocktonTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Regional Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#central-valley-tariff-lawyer" className="service-link">
+                  <Link to="/central-valley-tariff-lawyer" className="service-link">
                     <span className="service-link__title">Central Valley</span>
                     <p className="service-link__description">Regional agricultural trade</p>
                     <div className="triangle-slide">
@@ -424,10 +425,10 @@ const PortOfStocktonTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#sacramento-valley-trade" className="service-link">
+                  <Link to="/sacramento-valley-trade" className="service-link">
                     <span className="service-link__title">Sacramento Valley</span>
                     <p className="service-link__description">Capital region trade law</p>
                     <div className="triangle-slide">
@@ -435,7 +436,7 @@ const PortOfStocktonTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -475,14 +476,14 @@ const PortOfStocktonTradePage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -500,7 +501,7 @@ const PortOfStocktonTradePage: React.FC = () => {
             Need customs assistance at Port of Stockton? Contact our trade compliance attorneys for expert agricultural export services, CBP detention defense, and port representation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
@@ -85,7 +86,7 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
             Expert anti-dumping and countervailing duty defense for Santa Clara tech importers. Scope rulings, EAPA investigations, and AD/CVD avoidance strategies.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free AD/CVD Analysis</a>
+            <Link to="/contact" className="hero-cta">Free AD/CVD Analysis</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -294,7 +295,7 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Defense Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#scope-rulings" className="service-link">
+                  <Link to="/scope-rulings" className="service-link">
                     <span className="service-link__title">Scope Ruling Requests</span>
                     <p className="service-link__description">Commerce scope determinations</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
@@ -302,10 +303,10 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#eapa-defense" className="service-link">
+                  <Link to="/eapa-defense" className="service-link">
                     <span className="service-link__title">EAPA Investigation Defense</span>
                     <p className="service-link__description">Evasion allegation defense</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
@@ -313,10 +314,10 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#country-of-origin" className="service-link">
+                  <Link to="/country-of-origin" className="service-link">
                     <span className="service-link__title">Country of Origin Planning</span>
                     <p className="service-link__description">Substantial transformation</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
@@ -324,7 +325,7 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -334,7 +335,7 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Bay Area Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#san-jose-customs-lawyer" className="service-link">
+                  <Link to="/san-jose-customs-lawyer" className="service-link">
                     <span className="service-link__title">San Jose AD/CVD Defense</span>
                     <p className="service-link__description">Silicon Valley tech defense</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
@@ -342,10 +343,10 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#oakland-trade-attorney" className="service-link">
+                  <Link to="/oakland-trade-attorney" className="service-link">
                     <span className="service-link__title">Oakland AD/CVD Defense</span>
                     <p className="service-link__description">Port of Oakland support</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
@@ -353,7 +354,7 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -363,24 +364,24 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">AD/CVD Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/antidumping-guide" className="service-link">
+                  <Link to="/resources/antidumping-guide" className="service-link">
                     <span className="service-link__title">Anti-Dumping Defense Guide</span>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/scope-ruling-strategies" className="service-link">
+                  <Link to="/resources/scope-ruling-strategies" className="service-link">
                     <span className="service-link__title">Scope Ruling Strategies</span>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -401,7 +402,7 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
             AD/CVD rates can exceed 200% on tech products, destroying your profit margins. Our Santa Clara anti-dumping duty attorney helps Silicon Valley companies avoid or minimize these duties through scope rulings, country of origin planning, and EAPA defense. Free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

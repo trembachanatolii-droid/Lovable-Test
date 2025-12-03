@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
@@ -83,7 +84,7 @@ const SimiValleyExportControlPage: React.FC = () => {
             Expert export control legal services for Simi Valley aerospace, defense, and technology companies. ITAR registration, EAR compliance, deemed exports, and BIS licensing.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Compliance Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Compliance Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -318,7 +319,7 @@ const SimiValleyExportControlPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Export Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#itar-registration" className="service-link">
+                  <a href="/export-controls" className="service-link">
                     <span className="service-link__title">ITAR Registration</span>
                     <p className="service-link__description">DDTC registration & renewals</p>
                     <div className="triangle-slide">
@@ -329,7 +330,7 @@ const SimiValleyExportControlPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#deemed-export-compliance" className="service-link">
+                  <Link to="/deemed-export-compliance" className="service-link">
                     <span className="service-link__title">Deemed Export Programs</span>
                     <p className="service-link__description">Technology Control Plans</p>
                     <div className="triangle-slide">
@@ -337,7 +338,7 @@ const SimiValleyExportControlPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="#export-licensing" className="service-link">
@@ -358,7 +359,7 @@ const SimiValleyExportControlPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Southern California</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#los-angeles-export-controls" className="service-link">
+                  <a href="/export-controls" className="service-link">
                     <span className="service-link__title">Los Angeles Export Controls</span>
                     <p className="service-link__description">Aerospace & defense compliance</p>
                     <div className="triangle-slide">
@@ -369,7 +370,7 @@ const SimiValleyExportControlPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#san-diego-export-controls" className="service-link">
+                  <a href="/export-controls" className="service-link">
                     <span className="service-link__title">San Diego Export Controls</span>
                     <p className="service-link__description">Defense contractor compliance</p>
                     <div className="triangle-slide">
@@ -387,34 +388,34 @@ const SimiValleyExportControlPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Export Controls Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/itar-compliance-guide" className="service-link">
+                  <Link to="/resources/itar-compliance-guide" className="service-link">
                     <span className="service-link__title">ITAR Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/ear-license-exceptions" className="service-link">
+                  <Link to="/resources/ear-license-exceptions" className="service-link">
                     <span className="service-link__title">EAR License Exceptions</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/deemed-export-faq" className="service-link">
+                  <Link to="/resources/deemed-export-faq" className="service-link">
                     <span className="service-link__title">Deemed Export FAQ</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -434,7 +435,7 @@ const SimiValleyExportControlPage: React.FC = () => {
             Don't risk massive penalties and export privilege denial. Our Simi Valley export control attorneys help aerospace and defense companies navigate ITAR and EAR compliance. Free confidential consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

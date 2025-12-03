@@ -48,22 +48,24 @@ function getRating(
  * Log metric to console with color coding
  */
 function logMetric(metric: WebVitalMetric): void {
-  const emoji = {
-    good: '✅',
-    'needs-improvement': '⚠️',
-    poor: '❌',
-  }[metric.rating];
+  if (import.meta.env.DEV) {
+    const emoji = {
+      good: '✅',
+      'needs-improvement': '⚠️',
+      poor: '❌',
+    }[metric.rating];
 
-  const color = {
-    good: 'color: green',
-    'needs-improvement': 'color: orange',
-    poor: 'color: red',
-  }[metric.rating];
+    const color = {
+      good: 'color: green',
+      'needs-improvement': 'color: orange',
+      poor: 'color: red',
+    }[metric.rating];
 
-  console.log(
-    `%c${emoji} ${metric.name}: ${metric.value.toFixed(2)}ms (${metric.rating})`,
-    color
-  );
+    console.log(
+      `%c${emoji} ${metric.name}: ${metric.value.toFixed(2)}ms (${metric.rating})`,
+      color
+    );
+  }
 }
 
 /**
@@ -125,7 +127,9 @@ function observeLCP(callback?: MetricCallback): void {
 
     observer.observe({ type: 'largest-contentful-paint', buffered: true });
   } catch (error) {
-    console.warn('LCP observation not supported:', error);
+    if (import.meta.env.DEV) {
+      console.warn('LCP observation not supported:', error);
+    }
   }
 }
 
@@ -154,7 +158,9 @@ function observeFID(callback?: MetricCallback): void {
 
     observer.observe({ type: 'first-input', buffered: true });
   } catch (error) {
-    console.warn('FID observation not supported:', error);
+    if (import.meta.env.DEV) {
+      console.warn('FID observation not supported:', error);
+    }
   }
 }
 
@@ -190,7 +196,9 @@ function observeINP(callback?: MetricCallback): void {
 
     observer.observe({ type: 'event', buffered: true, durationThreshold: 16 });
   } catch (error) {
-    console.warn('INP observation not supported:', error);
+    if (import.meta.env.DEV) {
+      console.warn('INP observation not supported:', error);
+    }
   }
 }
 
@@ -230,7 +238,9 @@ function observeCLS(callback?: MetricCallback): void {
 
     observer.observe({ type: 'layout-shift', buffered: true });
   } catch (error) {
-    console.warn('CLS observation not supported:', error);
+    if (import.meta.env.DEV) {
+      console.warn('CLS observation not supported:', error);
+    }
   }
 }
 
@@ -260,7 +270,9 @@ function observeFCP(callback?: MetricCallback): void {
 
     observer.observe({ type: 'paint', buffered: true });
   } catch (error) {
-    console.warn('FCP observation not supported:', error);
+    if (import.meta.env.DEV) {
+      console.warn('FCP observation not supported:', error);
+    }
   }
 }
 
@@ -291,7 +303,9 @@ function observeTTFB(callback?: MetricCallback): void {
 
     observer.observe({ type: 'navigation', buffered: true });
   } catch (error) {
-    console.warn('TTFB observation not supported:', error);
+    if (import.meta.env.DEV) {
+      console.warn('TTFB observation not supported:', error);
+    }
   }
 }
 
@@ -307,14 +321,16 @@ function reportOnVisibilityChange(): void {
       )[0] as PerformanceNavigationTiming;
 
       if (navTiming) {
-        console.log('📊 Page Load Summary:', {
-          'DNS Lookup': `${(navTiming.domainLookupEnd - navTiming.domainLookupStart).toFixed(2)}ms`,
-          'TCP Connection': `${(navTiming.connectEnd - navTiming.connectStart).toFixed(2)}ms`,
-          'Request Time': `${(navTiming.responseStart - navTiming.requestStart).toFixed(2)}ms`,
-          'Response Time': `${(navTiming.responseEnd - navTiming.responseStart).toFixed(2)}ms`,
-          'DOM Processing': `${(navTiming.domComplete - navTiming.domInteractive).toFixed(2)}ms`,
-          'Load Complete': `${(navTiming.loadEventEnd - navTiming.loadEventStart).toFixed(2)}ms`,
-        });
+        if (import.meta.env.DEV) {
+          console.log('📊 Page Load Summary:', {
+            'DNS Lookup': `${(navTiming.domainLookupEnd - navTiming.domainLookupStart).toFixed(2)}ms`,
+            'TCP Connection': `${(navTiming.connectEnd - navTiming.connectStart).toFixed(2)}ms`,
+            'Request Time': `${(navTiming.responseStart - navTiming.requestStart).toFixed(2)}ms`,
+            'Response Time': `${(navTiming.responseEnd - navTiming.responseStart).toFixed(2)}ms`,
+            'DOM Processing': `${(navTiming.domComplete - navTiming.domInteractive).toFixed(2)}ms`,
+            'Load Complete': `${(navTiming.loadEventEnd - navTiming.loadEventStart).toFixed(2)}ms`,
+          });
+        }
       }
     }
   };
@@ -329,11 +345,15 @@ function reportOnVisibilityChange(): void {
 export function initWebVitals(callback?: MetricCallback): void {
   // Check if Performance API is supported
   if (typeof window === 'undefined' || !('PerformanceObserver' in window)) {
-    console.warn('Web Vitals monitoring not supported in this browser');
+    if (import.meta.env.DEV) {
+      console.warn('Web Vitals monitoring not supported in this browser');
+    }
     return;
   }
 
-  console.log('🚀 Initializing Web Vitals monitoring...');
+  if (import.meta.env.DEV) {
+    console.log('🚀 Initializing Web Vitals monitoring...');
+  }
 
   // Observe all Core Web Vitals
   observeLCP(callback);
@@ -346,7 +366,9 @@ export function initWebVitals(callback?: MetricCallback): void {
   // Report summary on page unload
   reportOnVisibilityChange();
 
-  console.log('✅ Web Vitals monitoring initialized');
+  if (import.meta.env.DEV) {
+    console.log('✅ Web Vitals monitoring initialized');
+  }
 }
 
 /**

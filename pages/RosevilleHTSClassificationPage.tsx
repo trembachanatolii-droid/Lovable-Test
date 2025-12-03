@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
@@ -83,7 +84,7 @@ const RosevilleHTSClassificationPage: React.FC = () => {
             Expert HTS classification attorney serving Roseville and Greater Sacramento. Harmonized Tariff Schedule expertise for technology, electronics, and manufacturing importers accessing Port of Oakland.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Classification Review</a>
+            <Link to="/contact" className="hero-cta">Free Classification Review</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -229,7 +230,7 @@ const RosevilleHTSClassificationPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#roseville-customs-lawyer" className="service-link">
+                  <Link to="/roseville-customs-lawyer" className="service-link">
                     <span className="service-link__title">Roseville Customs Lawyer</span>
                     <p className="service-link__description">CBP audit & penalty defense</p>
                     <div className="triangle-slide">
@@ -237,10 +238,10 @@ const RosevilleHTSClassificationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Trade Compliance Programs</span>
                     <p className="service-link__description">Technology compliance</p>
                     <div className="triangle-slide">
@@ -248,10 +249,10 @@ const RosevilleHTSClassificationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#export-controls-sanctions" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Export Controls</span>
                     <p className="service-link__description">EAR compliance for tech</p>
                     <div className="triangle-slide">
@@ -259,7 +260,7 @@ const RosevilleHTSClassificationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -269,7 +270,7 @@ const RosevilleHTSClassificationPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#sacramento-tariff-attorney" className="service-link">
+                  <Link to="/sacramento-tariff-attorney" className="service-link">
                     <span className="service-link__title">Sacramento Tariff Attorney</span>
                     <p className="service-link__description">Greater Sacramento services</p>
                     <div className="triangle-slide">
@@ -277,10 +278,10 @@ const RosevilleHTSClassificationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#port-of-oakland-tariff" className="service-link">
+                  <Link to="/port-of-oakland-tariff" className="service-link">
                     <span className="service-link__title">Port of Oakland</span>
                     <p className="service-link__description">Northern CA port services</p>
                     <div className="triangle-slide">
@@ -288,7 +289,7 @@ const RosevilleHTSClassificationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -298,34 +299,34 @@ const RosevilleHTSClassificationPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">HTS Classification Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/section-301-tariffs-guide" className="service-link">
+                  <Link to="/resources/section-301-tariffs-guide" className="service-link">
                     <span className="service-link__title">Section 301 Tech Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -346,7 +347,7 @@ const RosevilleHTSClassificationPage: React.FC = () => {
             Contact our Roseville HTS classification attorney team today. We'll review your technology and electronics products, analyze classification opportunities, and provide a clear strategy to optimize duty costs and ensure compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
@@ -84,7 +85,7 @@ const InglewoodImportCompliancePage: React.FC = () => {
             Inglewood import compliance attorney serving Los Angeles area importers. Expert C-TPAT certification, ISA programs, CBP audit defense, and import compliance program development.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -269,7 +270,7 @@ const InglewoodImportCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="relative group">
-                  <a href="#customs-defense-litigation" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
+                  <Link to="/customs-defense-litigation" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
                     <span className="font-medium">Customs Defense & Litigation</span>
                     <p className="text-sm text-text-secondary mt-1">CBP audits, seizures, penalty defense</p>
                     <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
@@ -277,10 +278,10 @@ const InglewoodImportCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="relative group">
-                  <a href="#regulatory-compliance-advisory" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
+                  <Link to="/practice-areas" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
                     <span className="font-medium">Trade Compliance Programs</span>
                     <p className="text-sm text-text-secondary mt-1">Compliance development & training</p>
                     <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
@@ -288,10 +289,10 @@ const InglewoodImportCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="relative group">
-                  <a href="#tariffs-duties-classification-guide" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
+                  <Link to="/resources/tariffs-duties-classification" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
                     <span className="font-medium">Tariff Classification</span>
                     <p className="text-sm text-text-secondary mt-1">HTS code optimization</p>
                     <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
@@ -299,7 +300,7 @@ const InglewoodImportCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -309,7 +310,7 @@ const InglewoodImportCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other LA Area Locations</h3>
               <div className="space-y-0">
                 <div className="relative group">
-                  <a href="#los-angeles-tariff-lawyer" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
+                  <Link to="/los-angeles-tariff-lawyer" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
                     <span className="font-medium">Los Angeles</span>
                     <p className="text-sm text-text-secondary mt-1">Downtown LA customs attorney</p>
                     <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
@@ -317,10 +318,10 @@ const InglewoodImportCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="relative group">
-                  <a href="#torrance-trade-attorney" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
+                  <Link to="/torrance-trade-attorney" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
                     <span className="font-medium">Torrance</span>
                     <p className="text-sm text-text-secondary mt-1">South Bay trade lawyer</p>
                     <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
@@ -328,7 +329,7 @@ const InglewoodImportCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -338,34 +339,34 @@ const InglewoodImportCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="relative group">
-                  <a href="#resources/c-tpat-guide" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
+                  <Link to="/resources/c-tpat-guide" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
                     <span className="font-medium">C-TPAT Certification Guide</span>
                     <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
                       <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="relative group">
-                  <a href="#resources/isa-program-guide" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
+                  <Link to="/resources/isa-program-guide" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
                     <span className="font-medium">ISA Program Guide</span>
                     <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
                       <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="relative group">
-                  <a href="#trade-law-faq" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
+                  <Link to="/trade-law-faq" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
                     <span className="font-medium">FAQ Center</span>
                     <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
                       <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -386,7 +387,7 @@ const InglewoodImportCompliancePage: React.FC = () => {
             Contact our Inglewood import compliance attorney team today. We'll assess your compliance needs, explain your options, and provide a clear path forward.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

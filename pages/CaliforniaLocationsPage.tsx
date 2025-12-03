@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateLocalBusinessSchema } from '../utils/seo';
@@ -182,7 +183,7 @@ const CaliforniaLocationsPage: React.FC = () => {
             Expert customs, tariff, and international trade legal services throughout California. From the Ports of Los Angeles and Long Beach to the Bay Area and Central Valley.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -241,22 +242,22 @@ const CaliforniaLocationsPage: React.FC = () => {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <a href="#los-angeles-port-customs-attorney" className="bg-primary-navy text-white p-6 rounded-lg hover:bg-primary-navy/90 transition-colors text-center">
+            <Link to="/los-angeles-port-customs-attorney" className="bg-primary-navy text-white p-6 rounded-lg hover:bg-primary-navy/90 transition-colors text-center">
               <h3 className="text-xl font-bold mb-2">Port of Los Angeles</h3>
               <p className="text-neutral-200 text-sm">Largest port in the Western Hemisphere</p>
-            </a>
-            <a href="#long-beach-port-attorney" className="bg-primary-navy text-white p-6 rounded-lg hover:bg-primary-navy/90 transition-colors text-center">
+            </Link>
+            <Link to="/long-beach-port-attorney" className="bg-primary-navy text-white p-6 rounded-lg hover:bg-primary-navy/90 transition-colors text-center">
               <h3 className="text-xl font-bold mb-2">Port of Long Beach</h3>
               <p className="text-neutral-200 text-sm">Second busiest U.S. container port</p>
-            </a>
-            <a href="#port-of-oakland-tariff" className="bg-primary-navy text-white p-6 rounded-lg hover:bg-primary-navy/90 transition-colors text-center">
+            </Link>
+            <Link to="/port-of-oakland-tariff" className="bg-primary-navy text-white p-6 rounded-lg hover:bg-primary-navy/90 transition-colors text-center">
               <h3 className="text-xl font-bold mb-2">Port of Oakland</h3>
               <p className="text-neutral-200 text-sm">Northern California gateway</p>
-            </a>
-            <a href="#port-of-san-diego-customs" className="bg-primary-navy text-white p-6 rounded-lg hover:bg-primary-navy/90 transition-colors text-center">
+            </Link>
+            <Link to="/port-of-san-diego-customs" className="bg-primary-navy text-white p-6 rounded-lg hover:bg-primary-navy/90 transition-colors text-center">
               <h3 className="text-xl font-bold mb-2">Port of San Diego</h3>
               <p className="text-neutral-200 text-sm">US-Mexico border trade hub</p>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -310,7 +311,7 @@ const CaliforniaLocationsPage: React.FC = () => {
             Contact us for a free consultation. Our attorneys serve all 83+ California locations with expert customs, tariff, and international trade legal services.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

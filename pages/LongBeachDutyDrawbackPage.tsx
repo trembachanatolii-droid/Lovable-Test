@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
             Recover 99% of paid customs duties through expert duty drawback claims. Port of Long Beach tariff refund specialists helping California exporters maximize duty recovery.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Drawback Analysis</a>
+            <Link to="/contact" className="hero-cta">Free Drawback Analysis</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -402,7 +403,7 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Duty Recovery Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#tariff-refund-protests" className="service-link">
+                  <Link to="/tariff-refund-protests" className="service-link">
                     <span className="service-link__title">Tariff Refund Protests</span>
                     <p className="service-link__description">Protest incorrect duty assessments</p>
                     <div className="triangle-slide">
@@ -410,10 +411,10 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#tariff-engineering" className="service-link">
+                  <Link to="/tariff-engineering" className="service-link">
                     <span className="service-link__title">Tariff Engineering</span>
                     <p className="service-link__description">Minimize future duty payments</p>
                     <div className="triangle-slide">
@@ -421,10 +422,10 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ftz-foreign-trade-zones" className="service-link">
+                  <Link to="/ftz-foreign-trade-zones" className="service-link">
                     <span className="service-link__title">Foreign Trade Zones</span>
                     <p className="service-link__description">Defer or eliminate duties through FTZ</p>
                     <div className="triangle-slide">
@@ -432,7 +433,7 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -453,7 +454,7 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#oakland-duty-drawback" className="service-link">
+                  <a href="/duty-drawback" className="service-link">
                     <span className="service-link__title">Oakland Port Drawback</span>
                     <p className="service-link__description">Northern California duty recovery</p>
                     <div className="triangle-slide">
@@ -471,34 +472,34 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Drawback Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/duty-drawback-guide" className="service-link">
+                  <Link to="/resources/duty-drawback-guide" className="service-link">
                     <span className="service-link__title">Duty Drawback Complete Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/drawback-calculator" className="service-link">
+                  <Link to="/resources/drawback-calculator" className="service-link">
                     <span className="service-link__title">Drawback Savings Calculator</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/ace-drawback-filing" className="service-link">
+                  <Link to="/resources/ace-drawback-filing" className="service-link">
                     <span className="service-link__title">ACE Drawback Filing Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -516,7 +517,7 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
             Don't leave money on the table. Our Long Beach duty drawback lawyers will analyze your import/export activity and maximize your duty recovery. Free consultation and potential assessment.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

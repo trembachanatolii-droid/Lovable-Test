@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
             Expert customs penalty defense attorney serving Oakland and Port of Oakland importers. Reduce CBP penalties by 75%+. CF-29 response, prior disclosure, and penalty mitigation services.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -403,7 +404,7 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#prior-disclosure-filing" className="service-link">
+                  <Link to="/prior-disclosure-filing" className="service-link">
                     <span className="service-link__title">Prior Disclosure Filing</span>
                     <p className="service-link__description">Voluntary disclosure services</p>
                     <div className="triangle-slide">
@@ -411,10 +412,10 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#cbp-audit-defense" className="service-link">
+                  <Link to="/cbp-audit-defense" className="service-link">
                     <span className="service-link__title">CBP Audit Defense</span>
                     <p className="service-link__description">Focused Assessment defense</p>
                     <div className="triangle-slide">
@@ -422,10 +423,10 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#customs-compliance" className="service-link">
+                  <Link to="/customs-compliance" className="service-link">
                     <span className="service-link__title">Compliance Programs</span>
                     <p className="service-link__description">Prevent future violations</p>
                     <div className="triangle-slide">
@@ -433,7 +434,7 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -443,7 +444,7 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#san-francisco-customs-attorney" className="service-link">
+                  <Link to="/san-francisco-customs-attorney" className="service-link">
                     <span className="service-link__title">San Francisco Customs</span>
                     <p className="service-link__description">Bay Area expertise</p>
                     <div className="triangle-slide">
@@ -451,10 +452,10 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#los-angeles-customs-attorney" className="service-link">
+                  <Link to="/los-angeles-customs-attorney" className="service-link">
                     <span className="service-link__title">Los Angeles Port</span>
                     <p className="service-link__description">Port of LA/Long Beach</p>
                     <div className="triangle-slide">
@@ -462,7 +463,7 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -472,44 +473,44 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/cbp-penalty-defense-guide" className="service-link">
+                  <Link to="/resources/cbp-penalty-defense-guide" className="service-link">
                     <span className="service-link__title">CBP Penalty Defense Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/cf29-response-guide" className="service-link">
+                  <Link to="/resources/cf29-response-guide" className="service-link">
                     <span className="service-link__title">CF-29 Response Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/prior-disclosure-guide" className="service-link">
+                  <Link to="/resources/prior-disclosure-guide" className="service-link">
                     <span className="service-link__title">Prior Disclosure Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -527,7 +528,7 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
             If you've received a CBP penalty notice or discovered customs violations, contact our Oakland customs penalty defense attorneys immediately. We provide emergency response to protect your business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

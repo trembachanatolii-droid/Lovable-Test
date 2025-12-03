@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const SanJoseTechExportControlsPage: React.FC = () => {
             Expert export controls for Silicon Valley technology companies. Semiconductor, software, AI/ML export compliance. ITAR, EAR, deemed exports, and China restrictions.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Tech Export Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Tech Export Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -429,7 +430,7 @@ const SanJoseTechExportControlsPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Bay Area Tech Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#san-francisco-export-controls" className="service-link">
+                  <Link to="/san-francisco-export-controls" className="service-link">
                     <span className="service-link__title">San Francisco Export Controls</span>
                     <p className="service-link__description">Bay Area tech compliance</p>
                     <div className="triangle-slide">
@@ -437,7 +438,7 @@ const SanJoseTechExportControlsPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="#palo-alto-tech-export" className="service-link">
@@ -458,34 +459,34 @@ const SanJoseTechExportControlsPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Tech Export Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/semiconductor-export-controls" className="service-link">
+                  <Link to="/resources/semiconductor-export-controls" className="service-link">
                     <span className="service-link__title">Semiconductor Export Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/software-export-classification" className="service-link">
+                  <Link to="/resources/software-export-classification" className="service-link">
                     <span className="service-link__title">Software Export Classification</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/china-tech-restrictions" className="service-link">
+                  <Link to="/resources/china-tech-restrictions" className="service-link">
                     <span className="service-link__title">China Tech Restrictions</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -503,7 +504,7 @@ const SanJoseTechExportControlsPage: React.FC = () => {
             Silicon Valley technology companies face complex and rapidly evolving export controls. Our San Jose tech export controls attorneys provide specialized expertise for semiconductors, software, AI, and emerging technologies. Free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

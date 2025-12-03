@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -65,7 +66,7 @@ const ExportControlsPage: React.FC = () => {
             ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export regulations, dual use items compliance, deemed exports & restricted party screening. Expert guidance for California & USA tech companies, defense contractors & manufacturers.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Export Controls Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Export Controls Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -388,7 +389,7 @@ const ExportControlsPage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <a href="#regulatory-compliance-advisory" className="service-link">
+                    <Link to="/practice-areas" className="service-link">
                       <span className="service-link__title">Trade Compliance Programs</span>
                       <p className="service-link__description">Import/export compliance program design</p>
                       <div className="triangle-slide">
@@ -396,12 +397,12 @@ const ExportControlsPage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#customs-defense-litigation" className="service-link">
+                    <Link to="/customs-defense-litigation" className="service-link">
                       <span className="service-link__title">Customs Defense & Litigation</span>
                       <p className="service-link__description">CBP enforcement defense</p>
                       <div className="triangle-slide">
@@ -409,12 +410,12 @@ const ExportControlsPage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#practice-areas" className="service-link">
+                    <Link to="/practice-areas" className="service-link">
                       <span className="service-link__title">All Practice Areas</span>
                       <p className="service-link__description">Full range of international trade services</p>
                       <div className="triangle-slide">
@@ -422,7 +423,7 @@ const ExportControlsPage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -434,7 +435,7 @@ const ExportControlsPage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <a href="#bay-area-trade-law-attorney" className="service-link">
+                    <Link to="/bay-area-trade-law-attorney" className="service-link">
                       <span className="service-link__title">San Francisco & Bay Area</span>
                       <p className="service-link__description">Silicon Valley export controls expertise</p>
                       <div className="triangle-slide">
@@ -442,12 +443,12 @@ const ExportControlsPage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#los-angeles-port-customs-attorney" className="service-link">
+                    <Link to="/los-angeles-port-customs-attorney" className="service-link">
                       <span className="service-link__title">Los Angeles & Long Beach Port</span>
                       <p className="service-link__description">Defense/aerospace export compliance</p>
                       <div className="triangle-slide">
@@ -455,7 +456,7 @@ const ExportControlsPage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -467,7 +468,7 @@ const ExportControlsPage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <a href="#technology-electronics-trade-attorney" className="service-link">
+                    <Link to="/technology-electronics-trade-attorney" className="service-link">
                       <span className="service-link__title">Technology & Electronics</span>
                       <p className="service-link__description">Semiconductor & software export controls</p>
                       <div className="triangle-slide">
@@ -475,12 +476,12 @@ const ExportControlsPage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#apparel-textiles-trade-attorney" className="service-link">
+                    <Link to="/apparel-textiles-trade-attorney" className="service-link">
                       <span className="service-link__title">Apparel & Textiles</span>
                       <p className="service-link__description">Technical textile export controls</p>
                       <div className="triangle-slide">
@@ -488,12 +489,12 @@ const ExportControlsPage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/food-agriculture-trade-attorney" className="service-link">
                       <span className="service-link__title">Food & Agriculture</span>
                       <p className="service-link__description">Agricultural export compliance</p>
                       <div className="triangle-slide">
@@ -501,7 +502,7 @@ const ExportControlsPage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -539,7 +540,7 @@ const ExportControlsPage: React.FC = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#trade-law-faq" className="card-link">
+              <Link to="/trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Answers to export control questions</p>
                 <div className="triangle-slide">
@@ -547,7 +548,7 @@ const ExportControlsPage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -563,7 +564,7 @@ const ExportControlsPage: React.FC = () => {
             Don't let export controls slow your international growth. Contact our export controls California lawyer team for a free classification review and compliance strategy session.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

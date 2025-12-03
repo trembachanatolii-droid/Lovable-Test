@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -91,7 +92,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToSection('hts-classification')} className="hero-cta">Learn More</button>
-            <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
+            <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>
       </section>
@@ -577,7 +578,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Classification & Valuation Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Tariff Classification Defense</span>
                     <p className="service-link__description">HTS protests and binding ruling requests</p>
                     <div className="triangle-slide">
@@ -585,10 +586,10 @@ const TariffsClassificationGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Customs Valuation Audits</span>
                     <p className="service-link__description">Related-party pricing defense</p>
                     <div className="triangle-slide">
@@ -596,10 +597,10 @@ const TariffsClassificationGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#practice-areas" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">All Practice Areas</span>
                     <p className="service-link__description">Full range of trade law services</p>
                     <div className="triangle-slide">
@@ -607,7 +608,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -617,7 +618,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Trade Remedies & Tariffs</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">AD/CVD Defense</span>
                     <p className="service-link__description">Antidumping & countervailing duty matters</p>
                     <div className="triangle-slide">
@@ -625,10 +626,10 @@ const TariffsClassificationGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/section-301-tariffs-guide" className="service-link">
+                  <Link to="/resources/section-301-tariffs-guide" className="service-link">
                     <span className="service-link__title">Section 301 Mitigation</span>
                     <p className="service-link__description">China tariff reduction strategies</p>
                     <div className="triangle-slide">
@@ -636,10 +637,10 @@ const TariffsClassificationGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Section 232 Exclusions</span>
                     <p className="service-link__description">Steel & aluminum tariff relief</p>
                     <div className="triangle-slide">
@@ -647,7 +648,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -657,7 +658,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Compliance Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#supply-chain-esg-compliance-guide" className="service-link">
+                  <Link to="/supply-chain-esg-compliance-guide" className="service-link">
                     <span className="service-link__title">Supply Chain ESG Guide</span>
                     <p className="service-link__description">UFLPA & forced labor compliance</p>
                     <div className="triangle-slide">
@@ -665,10 +666,10 @@ const TariffsClassificationGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ecommerce-digital-trade-guide" className="service-link">
+                  <Link to="/ecommerce-digital-trade-guide" className="service-link">
                     <span className="service-link__title">E-Commerce Trade Guide</span>
                     <p className="service-link__description">Section 321 & online seller compliance</p>
                     <div className="triangle-slide">
@@ -676,7 +677,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -686,7 +687,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Resources for Importers</h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <a href="#resources/section-301-tariffs-guide" className="card-link">
+              <Link to="/resources/section-301-tariffs-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">China tariff mitigation strategies</p>
                 <div className="triangle-slide">
@@ -694,8 +695,8 @@ const TariffsClassificationGuidePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#resources/uflpa-compliance-guide" className="card-link">
+              </Link>
+              <Link to="/resources/uflpa-compliance-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Forced labor detention defense</p>
                 <div className="triangle-slide">
@@ -703,8 +704,8 @@ const TariffsClassificationGuidePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#customs-defense-litigation" className="card-link">
+              </Link>
+              <Link to="/customs-defense-litigation" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">CBP Audit Defense</h4>
                 <p className="text-sm text-text-secondary">Focused Assessment preparation</p>
                 <div className="triangle-slide">
@@ -712,8 +713,8 @@ const TariffsClassificationGuidePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#trade-law-faq" className="card-link">
+              </Link>
+              <Link to="/trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Common customs questions</p>
                 <div className="triangle-slide">
@@ -721,7 +722,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -737,7 +738,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
             California importers face complex tariff classifications, trade remedies, and valuation challenges. Our trade law practice helps you minimize duty costs, defend against government enforcement, and maintain compliance. Contact us for a free consultation on your tariff and classification issues.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

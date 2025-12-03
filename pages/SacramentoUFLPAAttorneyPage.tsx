@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
@@ -84,7 +85,7 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
             Expert UFLPA attorney serving Sacramento and the Central Valley. The Uyghur Forced Labor Prevention Act has detained over $2 billion in goods. Our forced labor compliance lawyers help Sacramento businesses navigate supply chain requirements, defend against detentions, and implement compliance programs.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free UFLPA Consultation</a>
+            <Link to="/contact" className="hero-cta">Free UFLPA Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -241,7 +242,7 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">UFLPA Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/uflpa-compliance-guide" className="service-link">
+                  <Link to="/resources/uflpa-compliance-guide" className="service-link">
                     <span className="service-link__title">UFLPA Compliance Guide</span>
                     <p className="service-link__description">Complete compliance framework</p>
                     <div className="triangle-slide">
@@ -249,10 +250,10 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#supply-chain-esg-compliance-guide" className="service-link">
+                  <Link to="/supply-chain-esg-compliance-guide" className="service-link">
                     <span className="service-link__title">Supply Chain ESG Guide</span>
                     <p className="service-link__description">ESG compliance strategies</p>
                     <div className="triangle-slide">
@@ -260,7 +261,7 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -269,7 +270,7 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Sacramento Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#sacramento-tariff-attorney" className="service-link">
+                  <Link to="/sacramento-tariff-attorney" className="service-link">
                     <span className="service-link__title">Sacramento Tariff Attorney</span>
                     <p className="service-link__description">Full tariff services</p>
                     <div className="triangle-slide">
@@ -277,10 +278,10 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#sacramento-trade-compliance" className="service-link">
+                  <Link to="/sacramento-trade-compliance" className="service-link">
                     <span className="service-link__title">Sacramento Trade Compliance</span>
                     <p className="service-link__description">Compliance consulting</p>
                     <div className="triangle-slide">
@@ -288,7 +289,7 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -297,24 +298,24 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Customs Defense</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">UFLPA FAQ</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -335,7 +336,7 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
             Don't wait for a detention notice. Our Sacramento UFLPA attorneys can help you assess risk, implement compliance programs, and defend against detentions. Contact us for a free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Free UFLPA Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

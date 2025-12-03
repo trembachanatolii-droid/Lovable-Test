@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const LosAngelesFashionTariffPage: React.FC = () => {
             Expert fashion and apparel tariff lawyer serving Los Angeles importers. Specialized HTS classification, Section 301 strategies, textile compliance, and CBP defense for the fashion industry.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -406,24 +407,24 @@ const LosAngelesFashionTariffPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Tariff Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">HTS Classification Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/section-301-tariffs-guide" className="service-link">
+                  <Link to="/resources/section-301-tariffs-guide" className="service-link">
                     <span className="service-link__title">Section 301 Tariffs</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -432,24 +433,24 @@ const LosAngelesFashionTariffPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Compliance Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/uflpa-compliance-guide" className="service-link">
+                  <Link to="/resources/uflpa-compliance-guide" className="service-link">
                     <span className="service-link__title">UFLPA Compliance</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">CBP Audit Defense</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -458,7 +459,7 @@ const LosAngelesFashionTariffPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#long-beach-maritime-tariff-attorney" className="service-link">
+                  <a href="/long-beach-maritime-tariff" className="service-link">
                     <span className="service-link__title">Long Beach Port Services</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -483,7 +484,7 @@ const LosAngelesFashionTariffPage: React.FC = () => {
             Contact our Los Angeles fashion tariff lawyers today. We'll analyze your product classifications, identify cost-saving opportunities, and develop a comprehensive tariff strategy for your fashion brand.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

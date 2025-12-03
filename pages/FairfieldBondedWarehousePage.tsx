@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
@@ -84,7 +85,7 @@ const FairfieldBondedWarehousePage: React.FC = () => {
             Expert bonded warehouse and Foreign Trade Zone legal services for Fairfield and Solano County. CBP facility licensing, duty deferral strategies, and Travis AFB customs compliance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -306,7 +307,7 @@ const FairfieldBondedWarehousePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Customs Compliance</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Customs Defense & Litigation</span>
                     <p className="service-link__description">CBP audits, seizures, penalty defense</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
@@ -314,10 +315,10 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Trade Compliance Programs</span>
                     <p className="service-link__description">Import compliance development</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
@@ -325,10 +326,10 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification</span>
                     <p className="service-link__description">HTS code optimization</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
@@ -336,7 +337,7 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -345,7 +346,7 @@ const FairfieldBondedWarehousePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Defense & Export</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#export-controls-sanctions" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Export Controls & ITAR</span>
                     <p className="service-link__description">Defense article compliance</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
@@ -353,10 +354,10 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#duty-drawback-refunds" className="service-link">
+                  <Link to="/duty-drawback-refunds" className="service-link">
                     <span className="service-link__title">Duty Drawback Programs</span>
                     <p className="service-link__description">Customs duty refund claims</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
@@ -364,7 +365,7 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -373,34 +374,34 @@ const FairfieldBondedWarehousePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/ftz-guide" className="service-link">
+                  <Link to="/resources/ftz-guide" className="service-link">
                     <span className="service-link__title">FTZ Establishment Guide</span>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/bonded-warehouse-guide" className="service-link">
+                  <Link to="/resources/bonded-warehouse-guide" className="service-link">
                     <span className="service-link__title">Bonded Warehouse Guide</span>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -421,7 +422,7 @@ const FairfieldBondedWarehousePage: React.FC = () => {
             Contact our Fairfield bonded warehouse attorney today for a free consultation. We'll evaluate your bonded warehouse or FTZ needs, explain CBP requirements, and provide a clear roadmap to establishing your Solano County customs facility.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

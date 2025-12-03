@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
@@ -148,7 +149,13 @@ const ConsultationBookingPage: React.FC = () => {
         notification.setAttribute('role', 'alert');
         notification.setAttribute('aria-live', 'polite');
         notification.className = `fixed top-4 right-4 ${colors[type]} text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-fadeIn max-w-md`;
-        notification.innerHTML = `<p class="font-semibold">${message}</p>`;
+
+        // Create paragraph element safely using textContent to prevent XSS
+        const p = document.createElement('p');
+        p.className = 'font-semibold';
+        p.textContent = message;
+        notification.appendChild(p);
+
         document.body.appendChild(notification);
         setTimeout(() => {
             notification.remove();

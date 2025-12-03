@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
@@ -84,7 +85,7 @@ const FremontSemiconductorTariffPage: React.FC = () => {
             Expert semiconductor tariff attorney serving Fremont and Silicon Valley's chip industry. From tariff classification to export controls, our tech trade lawyers help semiconductor companies navigate complex import/export regulations and minimize duty exposure.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -216,7 +217,7 @@ const FremontSemiconductorTariffPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Tech Trade Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#export-controls-sanctions" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Export Controls & Sanctions</span>
                     <p className="service-link__description">ITAR, EAR, OFAC compliance</p>
                     <div className="triangle-slide">
@@ -224,10 +225,10 @@ const FremontSemiconductorTariffPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#technology-electronics-trade-attorney" className="service-link">
+                  <Link to="/technology-electronics-trade-attorney" className="service-link">
                     <span className="service-link__title">Technology Trade Attorney</span>
                     <p className="service-link__description">Full tech industry services</p>
                     <div className="triangle-slide">
@@ -235,7 +236,7 @@ const FremontSemiconductorTariffPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -244,7 +245,7 @@ const FremontSemiconductorTariffPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Bay Area Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#fremont-customs-attorney" className="service-link">
+                  <Link to="/fremont-customs-attorney" className="service-link">
                     <span className="service-link__title">Fremont Customs Attorney</span>
                     <p className="service-link__description">Full customs services</p>
                     <div className="triangle-slide">
@@ -252,10 +253,10 @@ const FremontSemiconductorTariffPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#silicon-valley-trade-lawyer" className="service-link">
+                  <Link to="/silicon-valley-trade-lawyer" className="service-link">
                     <span className="service-link__title">Silicon Valley Trade Lawyer</span>
                     <p className="service-link__description">Tech trade expertise</p>
                     <div className="triangle-slide">
@@ -263,7 +264,7 @@ const FremontSemiconductorTariffPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -272,24 +273,24 @@ const FremontSemiconductorTariffPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">Tech Trade FAQ</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -310,7 +311,7 @@ const FremontSemiconductorTariffPage: React.FC = () => {
             From tariff classification to export controls, our Fremont semiconductor attorneys help tech companies stay compliant while minimizing duty costs. Contact us for expert guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

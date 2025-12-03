@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useMeta } from '../hooks/useMeta';
 import { generateBreadcrumbSchema } from '../utils/seo';
 
@@ -74,7 +75,7 @@ const TermsOfUsePage: React.FC = () => {
 
           <section className="bg-gray-light border-l-4 border-secondary-teal p-6 my-8">
             <p className="font-semibold text-lg">
-              <strong>IMPORTANT:</strong> Please read these Terms of Use carefully before using this website. By accessing or using <a href="https://www.trembachlaw.com" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.trembachlaw.com</a>, you agree to be bound by these Terms of Use and our <a href="#privacy-policy" className="text-secondary-teal hover:underline">Privacy Policy</a>. If you do not agree to these terms, please do not use this website.
+              <strong>IMPORTANT:</strong> Please read these Terms of Use carefully before using this website. By accessing or using <a href="https://www.trembachlaw.com" target="_blank" rel="noopener noreferrer" className="text-secondary-teal hover:underline">www.trembachlaw.com</a>, you agree to be bound by these Terms of Use and our <Link to="/privacy-policy" className="text-secondary-teal hover:underline">Privacy Policy</Link>. If you do not agree to these terms, please do not use this website.
             </p>
           </section>
 
@@ -452,7 +453,7 @@ const TermsOfUsePage: React.FC = () => {
           <section id="california-users" aria-labelledby="california-heading">
             <h2 id="california-heading" className="text-2xl md:text-3xl font-bold font-garamond text-primary-navy mb-4">20. SPECIAL PROVISIONS FOR CALIFORNIA USERS</h2>
             <p className="mb-4">
-              If you are a California resident, you may have additional rights under California law, including under the California Consumer Privacy Act (CCPA). Please see our <a href="#privacy-policy" className="text-secondary-teal hover:underline">Privacy Policy</a> for more information about your privacy rights.
+              If you are a California resident, you may have additional rights under California law, including under the California Consumer Privacy Act (CCPA). Please see our <Link to="/privacy-policy" className="text-secondary-teal hover:underline">Privacy Policy</Link> for more information about your privacy rights.
             </p>
             <p className="mb-4">
               Under California Civil Code Section 1789.3, California users are entitled to the following specific consumer rights notice: If you have a question or complaint regarding the Site, please send an email to <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:underline">infotrade@trembachlaw.com</a>. You may also contact us by writing to the address listed above or by calling (310) 744-1328. California residents may reach the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by mail at 1625 North Market Blvd., Suite N 112, Sacramento, CA 95834, or by telephone at (916) 445-1254 or (800) 952-5210.
