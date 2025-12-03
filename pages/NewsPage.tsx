@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { SearchIcon } from '../components/icons/SearchIcon';
 import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
 import { getArticlePreviews } from '../data/articlesLoader';
@@ -33,7 +34,7 @@ const newsItems: NewsItem[] = getArticlePreviews()
       date: metadata?.date || 'NOVEMBER 26, 2025',
       readTime: metadata?.readTime || '5 MIN READ',
       isoDate: metadata?.isoDate || '2025-11-26',
-      link: `#article/${preview.id}`
+      link: `/article/${preview.id}`
     };
   })
   .sort((a, b) => new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime());
@@ -43,14 +44,8 @@ const NewsArticleCard: React.FC<{ item: NewsItem }> = ({ item }) => {
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
-    <a
-      href={item.link}
-      onClick={(e) => {
-        if (item.link.startsWith('#')) {
-            e.preventDefault();
-            window.location.hash = item.link;
-        }
-      }}
+    <Link
+      to={item.link}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="group relative block overflow-hidden transition-all duration-300 bg-white"
@@ -130,7 +125,7 @@ const NewsArticleCard: React.FC<{ item: NewsItem }> = ({ item }) => {
             Source: {item.source}
          </div>
        </div>
-    </a>
+    </Link>
   );
 };
 
@@ -151,15 +146,15 @@ const NewsPage: React.FC = () => {
         '@type': 'CollectionPage',
         name: 'News and Insights',
         description: 'Expert analysis on international trade law, customs regulations, and compliance strategies.',
-        url: `${siteConfig.siteUrl}/#news`,
+        url: `${siteConfig.siteUrl}/news`,
         publisher: {
           '@type': 'Organization',
-          '@id': 'https://trembach.law/#organization',
+          '@id': 'https://trembach.law/organization',
         },
       },
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'News & Insights', url: `${siteConfig.siteUrl}/#news` }
+        { name: 'News & Insights', url: `${siteConfig.siteUrl}/news` }
       ])
     ],
   });

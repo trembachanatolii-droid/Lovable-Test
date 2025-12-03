@@ -1,5 +1,6 @@
 
 import React, { useEffect, lazy, Suspense } from 'react';
+import { Link } from 'react-router-dom';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 import { siteConfig } from '../config/siteConfig';
@@ -23,11 +24,11 @@ const AboutPage: React.FC = () => {
       generateWebPageSchema({
         title: 'About Trembach Law Firm',
         description: 'Trembach Law Firm, APC specializes in international trade and customs law, providing clients with highest quality legal representation.',
-        url: `${siteConfig.siteUrl}/#about`,
+        url: `${siteConfig.siteUrl}/about`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'About', url: `${siteConfig.siteUrl}/#about` }
+        { name: 'About', url: `${siteConfig.siteUrl}/about` }
       ])
     ],
   });
@@ -160,16 +161,12 @@ const AboutPage: React.FC = () => {
            <p className="text-xl text-white mb-10 max-w-2xl mx-auto leading-relaxed">
              With customs and international trade issues now receiving C-Suite level attention, the scope of our practice matches current needs for innovative solutions.
            </p>
-           <a 
-             href="#practice-areas" 
-             onClick={(e) => {
-                e.preventDefault();
-                window.location.hash = '#practice-areas';
-             }}
+           <Link
+             to="/practice-areas"
              className="inline-block bg-secondary-teal text-white font-bold py-4 px-10 rounded hover:bg-secondary-forestGreen transition-colors duration-300 shadow-lg transform hover:-translate-y-1"
            >
              Explore Our Practice Areas
-           </a>
+           </Link>
          </div>
       </section>
 

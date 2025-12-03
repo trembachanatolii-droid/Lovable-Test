@@ -22,12 +22,12 @@ const MorenoValleyPenaltyMitigationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Moreno Valley Customs Penalty Mitigation Attorney - CBP Penalty Defense Expert',
         description: 'Moreno Valley customs penalty mitigation attorney providing expert CBP penalty defense, CF-29 response, and prior disclosure services. Reduce customs penalties by 75% or more.',
-        url: `${siteConfig.siteUrl}/#moreno-valley-customs-penalty-mitigation`,
+        url: `${siteConfig.siteUrl}/moreno-valley-customs-penalty-mitigation`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Moreno Valley Customs Penalty Mitigation Attorney', url: `${siteConfig.siteUrl}/#moreno-valley-customs-penalty-mitigation` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Moreno Valley Customs Penalty Mitigation Attorney', url: `${siteConfig.siteUrl}/moreno-valley-customs-penalty-mitigation` }
       ]),
       generateFAQSchema([
         {

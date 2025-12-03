@@ -21,12 +21,12 @@ const MantecaCustomsValuationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Manteca Customs Valuation Attorney - Central Valley Trade Lawyer',
         description: 'Expert Manteca customs valuation attorney serving Central Valley importers. Transaction value, assists, royalties, and transfer pricing compliance.',
-        url: `${siteConfig.siteUrl}/#manteca-customs-valuation`,
+        url: `${siteConfig.siteUrl}/manteca-customs-valuation`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Manteca Customs Valuation', url: `${siteConfig.siteUrl}/#manteca-customs-valuation` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Manteca Customs Valuation', url: `${siteConfig.siteUrl}/manteca-customs-valuation` }
       ]),
       generateFAQSchema([
         {

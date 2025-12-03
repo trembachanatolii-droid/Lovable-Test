@@ -23,12 +23,12 @@ const StocktonTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Stockton Tariff Lawyer & Central Valley Customs Attorney - Agricultural Trade Law',
         description: 'Stockton tariff lawyer and Central Valley customs attorney providing expert legal representation for agricultural trade, tariff classification, CBP defense, and food import compliance.',
-        url: `${siteConfig.siteUrl}/#stockton-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/stockton-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Stockton Tariff Lawyer', url: `${siteConfig.siteUrl}/#stockton-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Stockton Tariff Lawyer', url: `${siteConfig.siteUrl}/stockton-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

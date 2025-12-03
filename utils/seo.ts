@@ -2,15 +2,15 @@ import type { MetaConfig, SiteConfig } from '../types/meta';
 import { siteConfig } from '../config/siteConfig';
 
 /**
- * Builds full canonical URL from hash-based route
- * Converts #about -> https://trembach.law/#about
+ * Builds full canonical URL from route path
+ * Converts #about -> https://trembach.law/about (removes hash for proper canonical URLs)
  */
 export function buildCanonicalUrl(path?: string): string {
   const { siteUrl } = siteConfig;
   if (!path) return siteUrl + '/';
 
-  // Handle hash-based routing
-  const cleanPath = path.startsWith('#') ? path : `#${path}`;
+  // Remove hash if present and clean the path
+  const cleanPath = path.startsWith('#') ? path.slice(1) : path;
   return `${siteUrl}/${cleanPath}`;
 }
 
@@ -125,11 +125,11 @@ export function generateArticleSchema(config: {
     author: {
       '@type': 'Person',
       name: config.authorName || 'Anatolii Trembach',
-      url: config.authorUrl || `${siteConfig.siteUrl}/#attorney-profile`,
+      url: config.authorUrl || `${siteConfig.siteUrl}/attorney-profile`,
     },
     publisher: {
       '@type': 'Organization',
-      '@id': 'https://trembach.law/#organization',
+      '@id': 'https://trembach.law/organization',
       name: siteConfig.siteName,
       url: siteConfig.siteUrl,
       logo: {
@@ -158,7 +158,7 @@ export function generateWebPageSchema(config: {
     url: config.url,
     publisher: {
       '@type': 'Organization',
-      '@id': 'https://trembach.law/#organization',
+      '@id': 'https://trembach.law/organization',
       name: siteConfig.siteName,
       url: siteConfig.siteUrl,
     },
@@ -217,7 +217,7 @@ export function getBreadcrumbs(hash: string): Array<{ name: string; url: string 
 
     const name = routeMap[part] || part.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
     const urlParts = parts.slice(0, index + 1);
-    const url = `${siteConfig.siteUrl}/#${urlParts.join('/')}`;
+    const url = `${siteConfig.siteUrl}/${urlParts.join('/')}`;
 
     breadcrumbs.push({ name, url });
   });
@@ -243,7 +243,7 @@ export function generateServiceSchema(config: {
     description: config.description,
     provider: {
       '@type': 'Organization',
-      '@id': 'https://trembach.law/#organization',
+      '@id': 'https://trembach.law/organization',
       name: siteConfig.siteName,
     },
     areaServed: {
@@ -257,6 +257,7 @@ export function generateServiceSchema(config: {
 /**
  * Generate FAQPage Schema.org JSON-LD
  * Used for frequently asked questions to enhance search visibility
+ * Includes speakable specification for voice search optimization
  */
 export function generateFAQSchema(questions: Array<{
   question: string;
@@ -273,6 +274,10 @@ export function generateFAQSchema(questions: Array<{
         text: q.answer,
       },
     })),
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.faq-question', '.faq-answer'],
+    },
   };
 }
 
@@ -300,7 +305,7 @@ export function generateJobPostingSchema(config: {
     employmentType: config.employmentType || 'FULL_TIME',
     hiringOrganization: {
       '@type': 'Organization',
-      '@id': 'https://trembach.law/#organization',
+      '@id': 'https://trembach.law/organization',
       name: siteConfig.siteName,
       url: siteConfig.siteUrl,
       logo: {
@@ -362,7 +367,7 @@ export function generateLocalBusinessSchema(): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': ['LegalService', 'LocalBusiness', 'ProfessionalService'],
-    '@id': 'https://trembach.law/#localbusiness',
+    '@id': 'https://trembach.law/localbusiness',
     name: siteConfig.siteName,
     legalName: 'Trembach Law Firm, APC',
     description: 'California international trade attorney and customs lawyer serving Los Angeles, Long Beach, San Francisco, Oakland, San Diego, and all California cities by appointment. Expert CBP defense, trade compliance, and import/export law.',
@@ -422,7 +427,7 @@ export function generateLocalBusinessSchema(): Record<string, unknown> {
       '@type': 'Person',
       name: 'Anatolii Trembach',
       jobTitle: 'International Trade & Customs Attorney',
-      url: `${siteConfig.siteUrl}/#attorney-profile`,
+      url: `${siteConfig.siteUrl}/attorney-profile`,
     },
     knowsAbout: [
       'International Trade Law',
@@ -435,6 +440,27 @@ export function generateLocalBusinessSchema(): Record<string, unknown> {
       'ITAR/EAR Export Controls',
     ],
     slogan: 'California International Trade Attorney - Serving All CA Cities by Appointment',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: siteConfig.phoneDisplay,
+      contactType: 'customer service',
+      areaServed: 'US',
+      availableLanguage: ['English', 'Ukrainian', 'Russian'],
+    },
+    potentialAction: [
+      {
+        '@type': 'ReserveAction',
+        name: 'Schedule Consultation',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${siteConfig.siteUrl}/contact`,
+          actionPlatform: [
+            'http://schema.org/DesktopWebPlatform',
+            'http://schema.org/MobileWebPlatform',
+          ],
+        },
+      },
+    ],
   };
 }
 
@@ -456,7 +482,7 @@ export function generatePortServiceSchema(config: {
     url: config.url,
     provider: {
       '@type': 'LegalService',
-      '@id': 'https://trembach.law/#localbusiness',
+      '@id': 'https://trembach.law/localbusiness',
       name: siteConfig.siteName,
       telephone: siteConfig.phoneDisplay,
     },

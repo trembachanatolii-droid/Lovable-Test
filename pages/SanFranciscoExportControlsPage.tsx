@@ -23,12 +23,12 @@ const SanFranciscoExportControlsPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Francisco Export Controls Attorney - ITAR, EAR & BIS Compliance Lawyer',
         description: 'Expert San Francisco export controls attorney providing ITAR, EAR, and OFAC compliance for Bay Area technology companies, defense contractors, and exporters.',
-        url: `${siteConfig.siteUrl}/#san-francisco-export-controls`,
+        url: `${siteConfig.siteUrl}/san-francisco-export-controls`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Francisco Export Controls', url: `${siteConfig.siteUrl}/#san-francisco-export-controls` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Francisco Export Controls', url: `${siteConfig.siteUrl}/san-francisco-export-controls` }
       ]),
       generateFAQSchema([
         {

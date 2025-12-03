@@ -21,12 +21,12 @@ const VisaliaHTSClassificationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'HTS Classification Attorney Visalia - Agricultural Tariff Expert Tulare County',
         description: 'Expert HTS classification attorney serving Visalia and Tulare County agricultural importers. Harmonized Tariff Schedule expertise for food processing, farm equipment, and agricultural trade.',
-        url: `${siteConfig.siteUrl}/#visalia-hts-classification`,
+        url: `${siteConfig.siteUrl}/visalia-hts-classification`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Visalia HTS Classification Attorney', url: `${siteConfig.siteUrl}/#visalia-hts-classification` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Visalia HTS Classification Attorney', url: `${siteConfig.siteUrl}/visalia-hts-classification` }
       ]),
       generateFAQSchema([
         {

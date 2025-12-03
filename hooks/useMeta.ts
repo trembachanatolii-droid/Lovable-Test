@@ -48,7 +48,7 @@ export function useMeta(config: MetaConfig): void {
     // 3. Canonical URL
     const canonicalUrl = config.canonical
       ? buildCanonicalUrl(config.canonical)
-      : buildCanonicalUrl(window.location.hash.slice(1));
+      : buildCanonicalUrl(window.location.pathname.slice(1));
     setLinkTag('canonical', canonicalUrl);
 
     // 4. Open Graph tags

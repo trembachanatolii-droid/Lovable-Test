@@ -23,12 +23,12 @@ const LancasterTradeAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Lancaster Trade Attorney & Customs Lawyer - Aerospace Industry Specialists',
         description: 'Lancaster trade attorney and customs lawyer specializing in Antelope Valley aerospace industry. Expert ITAR/EAR compliance, tariff classification, CBP defense, and export controls for aerospace manufacturers.',
-        url: `${siteConfig.siteUrl}/#lancaster-trade-attorney`,
+        url: `${siteConfig.siteUrl}/lancaster-trade-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Lancaster Trade Attorney', url: `${siteConfig.siteUrl}/#lancaster-trade-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Lancaster Trade Attorney', url: `${siteConfig.siteUrl}/lancaster-trade-attorney` }
       ]),
       generateFAQSchema([
         {

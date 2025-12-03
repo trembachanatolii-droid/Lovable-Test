@@ -21,12 +21,12 @@ const OaklandCBPAuditPage: React.FC = () => {
       generateWebPageSchema({
         title: 'CBP Audit Defense Attorney Oakland - Customs Audit Lawyer',
         description: 'Expert CBP audit defense attorney serving Oakland businesses with focused assessment defense, penalty mitigation, and prior disclosure services.',
-        url: `${siteConfig.siteUrl}/#oakland-cbp-audit`,
+        url: `${siteConfig.siteUrl}/oakland-cbp-audit`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'CBP Audit Defense Oakland', url: `${siteConfig.siteUrl}/#oakland-cbp-audit` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'CBP Audit Defense Oakland', url: `${siteConfig.siteUrl}/oakland-cbp-audit` }
       ]),
       generateFAQSchema([
         {

@@ -22,12 +22,12 @@ const MurrietaCountryOfOriginPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Murrieta Country of Origin Attorney - Product Origin Legal Counsel',
         description: 'Murrieta country of origin attorney providing comprehensive legal services for substantial transformation analysis, marking compliance, and trade agreement origin determinations.',
-        url: `${siteConfig.siteUrl}/#murrieta-country-of-origin-attorney`,
+        url: `${siteConfig.siteUrl}/murrieta-country-of-origin-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Murrieta Country of Origin Attorney', url: `${siteConfig.siteUrl}/#murrieta-country-of-origin-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Murrieta Country of Origin Attorney', url: `${siteConfig.siteUrl}/murrieta-country-of-origin-attorney` }
       ]),
       generateFAQSchema([
         {

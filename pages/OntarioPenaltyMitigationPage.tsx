@@ -22,12 +22,12 @@ const OntarioPenaltyMitigationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Ontario CA Customs Penalty Mitigation Attorney - CBP Penalty Defense Expert',
         description: 'Ontario CA customs penalty mitigation attorney providing expert CBP penalty defense, CF-29 response, and prior disclosure services. Reduce customs penalties by 75% or more.',
-        url: `${siteConfig.siteUrl}/#ontario-customs-penalty-mitigation`,
+        url: `${siteConfig.siteUrl}/ontario-customs-penalty-mitigation`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Ontario CA Customs Penalty Mitigation Attorney', url: `${siteConfig.siteUrl}/#ontario-customs-penalty-mitigation` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Ontario CA Customs Penalty Mitigation Attorney', url: `${siteConfig.siteUrl}/ontario-customs-penalty-mitigation` }
       ]),
       generateFAQSchema([
         {

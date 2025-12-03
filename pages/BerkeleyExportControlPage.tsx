@@ -21,12 +21,12 @@ const BerkeleyExportControlPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Berkeley Export Control Attorney - ITAR & EAR Compliance Lawyer',
         description: 'Expert Berkeley export control attorney serving East Bay university research, biotech, and technology companies with ITAR, EAR, and deemed export compliance.',
-        url: `${siteConfig.siteUrl}/#berkeley-export-control`,
+        url: `${siteConfig.siteUrl}/berkeley-export-control`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Berkeley Export Control', url: `${siteConfig.siteUrl}/#berkeley-export-control` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Berkeley Export Control', url: `${siteConfig.siteUrl}/berkeley-export-control` }
       ]),
       generateFAQSchema([
         {

@@ -23,12 +23,12 @@ const SanFranciscoCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Francisco Customs Attorney & Tariff Lawyer - Bay Area Trade Law Firm',
         description: 'San Francisco customs attorney and tariff lawyer providing expert legal representation for tariff classification, CBP defense, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#san-francisco-customs-attorney`,
+        url: `${siteConfig.siteUrl}/san-francisco-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Francisco Customs Attorney', url: `${siteConfig.siteUrl}/#san-francisco-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Francisco Customs Attorney', url: `${siteConfig.siteUrl}/san-francisco-customs-attorney` }
       ]),
       generateFAQSchema([
         {

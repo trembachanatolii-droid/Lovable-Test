@@ -1,15 +1,8 @@
-import React, { useState, useEffect, useCallback, useRef, memo, useTransition } from 'react';
+import React, { useState, useEffect, useCallback, useRef, memo, useTransition, useMemo } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { MenuIcon } from './icons/MenuIcon';
 import { CloseIcon } from './icons/CloseIcon';
 import { SearchIcon } from './icons/SearchIcon';
-
-const handleHashLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, onClick?: () => void) => {
-    if (href.startsWith('#')) {
-        e.preventDefault();
-        window.location.hash = href;
-    }
-    if (onClick) onClick();
-};
 
 interface NavLinkProps {
   href: string;
@@ -20,17 +13,16 @@ interface NavLinkProps {
 
 const NavLink: React.FC<NavLinkProps> = ({ href, children, isSecondary = false, currentRoute }) => {
   // Determine if this is the active page
-  const isActive = href === '#' + currentRoute || (href === '#' && currentRoute === '');
+  const isActive = href === currentRoute || (href === '/' && currentRoute === '/');
 
   return (
-    <a
-      href={href}
-      onClick={(e) => handleHashLinkClick(e, href)}
+    <Link
+      to={href}
       aria-current={isActive ? 'page' : undefined}
       className={`nav-link ${isSecondary ? 'text-sm text-neutral-darkGray hover:text-primary-navy' : 'text-base text-neutral-darkGray hover:text-primary-navy'}`}
     >
       <span>{children}</span>
-    </a>
+    </Link>
   );
 };
 
@@ -42,21 +34,34 @@ interface MobileNavLinkProps {
 }
 
 const MobileNavLink: React.FC<MobileNavLinkProps> = ({ href, children, onClick, currentRoute }) => {
-  const isActive = href === '#' + currentRoute || (href === '#' && currentRoute === '');
+  const isActive = href === currentRoute || (href === '/' && currentRoute === '/');
 
   return (
-    <a
-      href={href}
-      onClick={(e) => handleHashLinkClick(e, href, onClick)}
+    <Link
+      to={href}
+      onClick={onClick}
       aria-current={isActive ? 'page' : undefined}
       className="block py-4 text-2xl text-center text-white hover:text-secondary-teal transition-colors"
     >
       {children}
-    </a>
+    </Link>
   );
 };
 
+// Static navigation links - moved outside component to prevent recreation
+const PRIMARY_NAV_LINKS = [
+  { href: '/about', label: 'About the Firm' },
+  { href: '/attorney-profile', label: 'Attorney Profile' },
+  { href: '/practice-areas', label: 'Practice Areas' },
+  { href: '/resources', label: 'Resources' },
+  { href: '/news', label: 'News' },
+  { href: '/careers', label: 'Careers' },
+  { href: '/contact', label: 'Contact Us' },
+];
+
 const Header: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentRoute, setCurrentRoute] = useState<string>('');
@@ -65,15 +70,13 @@ const Header: React.FC = () => {
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
-  const primaryNavLinks = [
-    { href: '#about', label: 'About the Firm' },
-    { href: '#attorney-profile', label: 'Attorney Profile' },
-    { href: '#practice-areas', label: 'Practice Areas' },
-    { href: '#resources', label: 'Resources' },
-    { href: '#news', label: 'News' },
-    { href: '#careers', label: 'Careers' },
-    { href: '#contact', label: 'Contact Us' },
-  ];
+  // Update current route when location changes
+  useEffect(() => {
+    // Use startTransition for non-urgent route updates to prevent blocking
+    startTransition(() => {
+      setCurrentRoute(location.pathname);
+    });
+  }, [location.pathname, startTransition]);
 
   useEffect(() => {
     let ticking = false;
@@ -88,31 +91,23 @@ const Header: React.FC = () => {
       }
     };
 
-    const handleHashChange = () => {
-      const hash = window.location.hash.slice(1); // Remove the # character
-      // Use startTransition for non-urgent route updates to prevent blocking
-      startTransition(() => {
-        setCurrentRoute(hash);
-      });
-    };
-
-    // Set initial route
-    handleHashChange();
-
     // Use passive listener for scroll events to improve scrolling performance (FID optimization)
     // Passive listeners tell the browser we won't call preventDefault(), allowing better optimization
     window.addEventListener('scroll', handleScroll, { passive: true });
-    window.addEventListener('hashchange', handleHashChange);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('hashchange', handleHashChange);
     };
-  }, [startTransition]);
+  }, []);
 
   const toggleMenu = useCallback(() => {
     setIsMenuOpen(prev => !prev);
   }, []);
+
+  const handleLogoClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    navigate('/');
+  }, [navigate]);
 
   // Close menu on Escape key
   useEffect(() => {
@@ -169,12 +164,201 @@ const Header: React.FC = () => {
     return () => document.removeEventListener('keydown', handleTabKey);
   }, [isMenuOpen]);
 
-  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    window.location.hash = '';
-  };
+  // Memoized style objects to prevent recreation on every render
+  const desktopNavStyle = useMemo(() => ({
+    marginLeft: '1.5rem'
+  }), []);
 
-  const allMobileLinks = [...primaryNavLinks];
+  const searchLinkStyle = useMemo(() => ({
+    padding: '0.5rem',
+    color: 'var(--gray-dark)',
+    transition: 'color 0.3s',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }), []);
+
+  const searchIconStyle = useMemo(() => ({
+    height: '1.5rem',
+    width: '1.5rem'
+  }), []);
+
+  const desktopPhoneStyle = useMemo(() => ({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.375rem',
+    padding: '0.375rem 0.75rem',
+    backgroundColor: 'var(--navy-primary)',
+    color: 'white',
+    textDecoration: 'none',
+    fontSize: '0.8125rem',
+    fontWeight: 500,
+    borderRadius: '2rem',
+    transition: 'background-color 0.3s',
+    whiteSpace: 'nowrap'
+  }), []);
+
+  const desktopPhoneSvgStyle = useMemo(() => ({
+    width: '1rem',
+    height: '1rem'
+  }), []);
+
+  const desktopPhoneInnerDivStyle = useMemo(() => ({
+    display: 'flex',
+    flexDirection: 'column' as const,
+    lineHeight: 1.2
+  }), []);
+
+  const desktopPhoneLabelStyle = useMemo(() => ({
+    fontSize: '0.75rem',
+    textTransform: 'uppercase' as const,
+    letterSpacing: '0.03em'
+  }), []);
+
+  const desktopPhoneNumberStyle = useMemo(() => ({
+    fontWeight: 600,
+    fontSize: '0.8125rem'
+  }), []);
+
+  const mobileMenuBtnStyle = useMemo(() => ({
+    alignItems: 'center',
+    gap: '0.75rem'
+  }), []);
+
+  const mobilePhoneCtaStyle = useMemo(() => ({
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '0.625rem',
+    backgroundColor: 'var(--teal-primary)',
+    color: 'white',
+    borderRadius: '50%',
+    width: '2.75rem',
+    height: '2.75rem',
+    minWidth: '44px',
+    minHeight: '44px',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+  }), []);
+
+  const mobilePhoneCtaSvgStyle = useMemo(() => ({
+    width: '1.25rem',
+    height: '1.25rem'
+  }), []);
+
+  const mobileMenuButtonStyle = useMemo(() => ({
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '0.625rem',
+    backgroundColor: 'var(--navy-primary)',
+    color: 'white',
+    borderRadius: '0.375rem',
+    minWidth: '44px',
+    minHeight: '44px',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+  }), []);
+
+  const menuIconStyle = useMemo(() => ({
+    height: '1.5rem',
+    width: '1.5rem'
+  }), []);
+
+  const mobileMenuOverlayStyle = useMemo(() => ({
+    position: 'fixed' as const,
+    inset: 0,
+    backgroundColor: 'rgba(1, 33, 105, 0.95)',
+    backdropFilter: 'blur(8px)',
+    zIndex: 150,
+    transform: isMenuOpen ? 'translateX(0)' : 'translateX(100%)',
+    transition: 'transform 0.3s ease-in-out',
+    visibility: isMenuOpen ? 'visible' as const : 'hidden' as const
+  }), [isMenuOpen]);
+
+  const closeButtonContainerStyle = useMemo(() => ({
+    display: 'flex',
+    justifyContent: 'flex-end',
+    padding: '1.25rem',
+    paddingTop: 'max(1.25rem, env(safe-area-inset-top))',
+    paddingRight: 'max(1.25rem, env(safe-area-inset-right))'
+  }), []);
+
+  const closeButtonStyle = useMemo(() => ({
+    padding: '0.75rem',
+    color: 'var(--white)',
+    minHeight: '44px',
+    minWidth: '44px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }), []);
+
+  const closeIconStyle = useMemo(() => ({
+    height: '1.75rem',
+    width: '1.75rem'
+  }), []);
+
+  const mobileNavStyle = useMemo(() => ({
+    display: 'flex',
+    flexDirection: 'column' as const,
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100%',
+    marginTop: '-4rem'
+  }), []);
+
+  const mobilePhoneLinkStyle = useMemo(() => ({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    marginTop: '2rem',
+    padding: '1rem 2rem',
+    backgroundColor: 'var(--teal-primary)',
+    color: 'white',
+    textDecoration: 'none',
+    borderRadius: '0.5rem',
+    fontSize: '1.25rem',
+    fontWeight: 500,
+    transition: 'background-color 0.3s'
+  }), []);
+
+  const mobilePhoneLinkSvgStyle = useMemo(() => ({
+    width: '1.5rem',
+    height: '1.5rem'
+  }), []);
+
+  const mobilePhoneLinkInnerDivStyle = useMemo(() => ({
+    display: 'flex',
+    flexDirection: 'column' as const,
+    lineHeight: 1.3
+  }), []);
+
+  const mobilePhoneLinkLabelStyle = useMemo(() => ({
+    fontSize: '0.875rem',
+    textTransform: 'uppercase' as const,
+    letterSpacing: '0.1em'
+  }), []);
+
+  const mobilePhoneLinkNumberStyle = useMemo(() => ({
+    fontWeight: 600
+  }), []);
+
+  // Stable event handlers for hover effects
+  const handleDesktopPhoneMouseEnter = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.style.backgroundColor = 'var(--teal-primary)';
+  }, []);
+
+  const handleDesktopPhoneMouseLeave = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.style.backgroundColor = 'var(--navy-primary)';
+  }, []);
+
+  const handleMobilePhoneLinkMouseEnter = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.style.backgroundColor = '#2D8469';
+  }, []);
+
+  const handleMobilePhoneLinkMouseLeave = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.style.backgroundColor = 'var(--teal-primary)';
+  }, []);
 
   return (
     <>
@@ -192,10 +376,8 @@ const Header: React.FC = () => {
             </a>
 
             {/* Center: Primary Navigation */}
-            <nav aria-label="Main navigation" className="desktop-nav" style={{
-              marginLeft: '1.5rem'
-            }}>
-              {primaryNavLinks.map(link => (
+            <nav aria-label="Main navigation" className="desktop-nav" style={desktopNavStyle}>
+              {PRIMARY_NAV_LINKS.map(link => (
                 <NavLink key={link.label} href={link.href} currentRoute={currentRoute}>
                   {link.label}
                 </NavLink>
@@ -204,41 +386,19 @@ const Header: React.FC = () => {
 
             {/* Right: Search Icon & Phone Number */}
             <div className="desktop-search">
-              <a
-                href="#news"
-                onClick={(e) => handleHashLinkClick(e, '#news')}
+              <Link
+                to="/news"
                 aria-label="Search articles and news"
-                style={{
-                  padding: '0.5rem',
-                  color: 'var(--gray-dark)',
-                  transition: 'color 0.3s',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
-                }}
+                style={searchLinkStyle}
               >
-                <SearchIcon style={{ height: '1.5rem', width: '1.5rem' }} aria-hidden="true" />
-              </a>
+                <SearchIcon style={searchIconStyle} aria-hidden="true" />
+              </Link>
               <a
                 href="tel:+13107441328"
                 aria-label="Call us at (310) 744-1328 for free consultation"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.375rem',
-                  padding: '0.375rem 0.75rem',
-                  backgroundColor: 'var(--navy-primary)',
-                  color: 'white',
-                  textDecoration: 'none',
-                  fontSize: '0.8125rem',
-                  fontWeight: 500,
-                  borderRadius: '2rem',
-                  transition: 'background-color 0.3s',
-                  whiteSpace: 'nowrap'
-                }}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--teal-primary)'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--navy-primary)'}
+                style={desktopPhoneStyle}
+                onMouseEnter={handleDesktopPhoneMouseEnter}
+                onMouseLeave={handleDesktopPhoneMouseLeave}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -246,37 +406,24 @@ const Header: React.FC = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={2.5}
                   stroke="currentColor"
-                  style={{ width: '1rem', height: '1rem' }}
+                  style={desktopPhoneSvgStyle}
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
-                <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2 }}>
-                  <span style={{ fontSize: '0.6875rem', opacity: 0.9, textTransform: 'uppercase', letterSpacing: '0.03em' }}>Free Consultation</span>
-                  <span style={{ fontWeight: 600, fontSize: '0.8125rem' }}>(310) 744-1328</span>
+                <div style={desktopPhoneInnerDivStyle}>
+                  <span style={desktopPhoneLabelStyle}>Free Consultation</span>
+                  <span style={desktopPhoneNumberStyle}>(310) 744-1328</span>
                 </div>
               </a>
             </div>
 
             {/* Mobile Actions: Phone + Menu Button */}
-            <div className="mobile-menu-btn" style={{ alignItems: 'center', gap: '0.75rem' }}>
+            <div className="mobile-menu-btn" style={mobileMenuBtnStyle}>
               {/* Mobile Phone CTA */}
               <a
                 href="tel:+13107441328"
                 aria-label="Call us at (310) 744-1328"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  padding: '0.625rem',
-                  backgroundColor: 'var(--teal-primary)',
-                  color: 'white',
-                  borderRadius: '50%',
-                  width: '2.75rem',
-                  height: '2.75rem',
-                  minWidth: '44px',
-                  minHeight: '44px',
-                  boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-                }}
+                style={mobilePhoneCtaStyle}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -284,7 +431,7 @@ const Header: React.FC = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={2.5}
                   stroke="currentColor"
-                  style={{ width: '1.25rem', height: '1.25rem' }}
+                  style={mobilePhoneCtaSvgStyle}
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
@@ -297,20 +444,9 @@ const Header: React.FC = () => {
                 aria-expanded={isMenuOpen}
                 aria-controls="mobile-menu"
                 type="button"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  padding: '0.625rem',
-                  backgroundColor: 'var(--navy-primary)',
-                  color: 'white',
-                  borderRadius: '0.375rem',
-                  minWidth: '44px',
-                  minHeight: '44px',
-                  boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-                }}
+                style={mobileMenuButtonStyle}
               >
-                <MenuIcon style={{ height: '1.5rem', width: '1.5rem' }} aria-hidden="true" />
+                <MenuIcon style={menuIconStyle} aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -324,51 +460,21 @@ const Header: React.FC = () => {
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation menu"
-        style={{
-          position: 'fixed',
-          inset: 0,
-          backgroundColor: 'rgba(1, 33, 105, 0.95)',
-          backdropFilter: 'blur(8px)',
-          zIndex: 150,
-          transform: isMenuOpen ? 'translateX(0)' : 'translateX(100%)',
-          transition: 'transform 0.3s ease-in-out',
-          visibility: isMenuOpen ? 'visible' : 'hidden'
-        }}
+        style={mobileMenuOverlayStyle}
       >
-        <div style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          padding: '1.25rem',
-          paddingTop: 'max(1.25rem, env(safe-area-inset-top))',
-          paddingRight: 'max(1.25rem, env(safe-area-inset-right))'
-        }}>
+        <div style={closeButtonContainerStyle}>
           <button
             ref={closeButtonRef}
             onClick={toggleMenu}
             aria-label="Close menu"
             type="button"
-            style={{
-              padding: '0.75rem',
-              color: 'var(--white)',
-              minHeight: '44px',
-              minWidth: '44px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}
+            style={closeButtonStyle}
           >
-            <CloseIcon style={{ height: '1.75rem', width: '1.75rem' }} aria-hidden="true" />
+            <CloseIcon style={closeIconStyle} aria-hidden="true" />
           </button>
         </div>
-        <nav aria-label="Mobile navigation" style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '100%',
-          marginTop: '-4rem'
-        }}>
-          {allMobileLinks.map(link => (
+        <nav aria-label="Mobile navigation" style={mobileNavStyle}>
+          {PRIMARY_NAV_LINKS.map(link => (
             <MobileNavLink
               key={link.label}
               href={link.href}
@@ -381,22 +487,9 @@ const Header: React.FC = () => {
           <a
             href="tel:+13107441328"
             aria-label="Call us at (310) 744-1328 for free consultation"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.75rem',
-              marginTop: '2rem',
-              padding: '1rem 2rem',
-              backgroundColor: 'var(--teal-primary)',
-              color: 'white',
-              textDecoration: 'none',
-              borderRadius: '0.5rem',
-              fontSize: '1.25rem',
-              fontWeight: 500,
-              transition: 'background-color 0.3s'
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#2D8469'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--teal-primary)'}
+            style={mobilePhoneLinkStyle}
+            onMouseEnter={handleMobilePhoneLinkMouseEnter}
+            onMouseLeave={handleMobilePhoneLinkMouseLeave}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -404,13 +497,13 @@ const Header: React.FC = () => {
               viewBox="0 0 24 24"
               strokeWidth={2.5}
               stroke="currentColor"
-              style={{ width: '1.5rem', height: '1.5rem' }}
+              style={mobilePhoneLinkSvgStyle}
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
             </svg>
-            <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.3 }}>
-              <span style={{ fontSize: '0.75rem', opacity: 0.95, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Free Consultation</span>
-              <span style={{ fontWeight: 600 }}>(310) 744-1328</span>
+            <div style={mobilePhoneLinkInnerDivStyle}>
+              <span style={mobilePhoneLinkLabelStyle}>Free Consultation</span>
+              <span style={mobilePhoneLinkNumberStyle}>(310) 744-1328</span>
             </div>
           </a>
         </nav>

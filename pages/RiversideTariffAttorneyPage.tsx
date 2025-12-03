@@ -23,12 +23,12 @@ const RiversideTariffAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Riverside Tariff Attorney & Inland Empire Customs Lawyer - Distribution Hub Legal Services',
         description: 'Riverside tariff attorney and Inland Empire customs lawyer providing expert legal representation for tariff classification, CBP defense, customs audits, and trade compliance.',
-        url: `${siteConfig.siteUrl}/#riverside-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/riverside-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Riverside Tariff Attorney', url: `${siteConfig.siteUrl}/#riverside-tariff-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Riverside Tariff Attorney', url: `${siteConfig.siteUrl}/riverside-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

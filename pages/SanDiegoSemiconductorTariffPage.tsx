@@ -21,12 +21,12 @@ const SanDiegoSemiconductorTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Semiconductor Tariff Attorney San Diego - Chip Import Lawyer',
         description: 'Expert semiconductor tariff attorney serving San Diego tech companies with Section 301 strategies, IC classification, and chip import compliance.',
-        url: `${siteConfig.siteUrl}/#san-diego-semiconductor-tariff`,
+        url: `${siteConfig.siteUrl}/san-diego-semiconductor-tariff`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Semiconductor Tariff Attorney San Diego', url: `${siteConfig.siteUrl}/#san-diego-semiconductor-tariff` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Semiconductor Tariff Attorney San Diego', url: `${siteConfig.siteUrl}/san-diego-semiconductor-tariff` }
       ]),
       generateFAQSchema([
         {

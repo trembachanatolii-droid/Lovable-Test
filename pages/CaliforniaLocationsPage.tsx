@@ -144,11 +144,11 @@ const CaliforniaLocationsPage: React.FC = () => {
       generateWebPageSchema({
         title: 'California Customs & Trade Law Offices - 83+ Service Locations',
         description: 'Find expert customs and international trade legal services at 83+ California locations. Serving Los Angeles, San Francisco, San Diego, Sacramento, and all major California cities.',
-        url: `${siteConfig.siteUrl}/#california-locations`,
+        url: `${siteConfig.siteUrl}/california-locations`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Locations', url: `${siteConfig.siteUrl}/#california-locations` }
+        { name: 'California Locations', url: `${siteConfig.siteUrl}/california-locations` }
       ]),
     ],
   });

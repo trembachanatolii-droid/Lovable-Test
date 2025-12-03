@@ -21,12 +21,12 @@ const LongBeachCustomsSeizurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Customs Seizure Attorney Long Beach - Port Seizure Defense',
         description: 'Expert customs seizure attorney serving Port of Long Beach with seizure defense, detention release, and forfeiture prevention.',
-        url: `${siteConfig.siteUrl}/#long-beach-customs-seizure`,
+        url: `${siteConfig.siteUrl}/long-beach-customs-seizure`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Customs Seizure Attorney Long Beach', url: `${siteConfig.siteUrl}/#long-beach-customs-seizure` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Customs Seizure Attorney Long Beach', url: `${siteConfig.siteUrl}/long-beach-customs-seizure` }
       ]),
       generateFAQSchema([
         {

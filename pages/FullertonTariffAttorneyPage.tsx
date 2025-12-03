@@ -23,12 +23,12 @@ const FullertonTariffAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Fullerton Tariff Attorney & Customs Lawyer - Orange County Manufacturing Trade Law',
         description: 'Fullerton tariff attorney and customs lawyer specializing in Orange County manufacturing. CBP defense, tariff classification, customs audits, and international trade compliance for OC manufacturers.',
-        url: `${siteConfig.siteUrl}/#fullerton-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/fullerton-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Fullerton Tariff Attorney', url: `${siteConfig.siteUrl}/#fullerton-tariff-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Fullerton Tariff Attorney', url: `${siteConfig.siteUrl}/fullerton-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

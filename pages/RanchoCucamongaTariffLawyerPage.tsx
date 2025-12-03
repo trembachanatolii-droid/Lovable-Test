@@ -23,12 +23,12 @@ const RanchoCucamongaTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Rancho Cucamonga Tariff Lawyer & Inland Empire Customs Attorney - CA',
         description: 'Rancho Cucamonga tariff lawyer serving Inland Empire businesses near Ontario International Airport. Expert customs legal services for logistics, manufacturing, and air cargo operations.',
-        url: `${siteConfig.siteUrl}/#rancho-cucamonga-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/rancho-cucamonga-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Rancho Cucamonga Tariff Lawyer', url: `${siteConfig.siteUrl}/#rancho-cucamonga-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Rancho Cucamonga Tariff Lawyer', url: `${siteConfig.siteUrl}/rancho-cucamonga-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

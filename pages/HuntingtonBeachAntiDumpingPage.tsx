@@ -23,12 +23,12 @@ const HuntingtonBeachAntiDumpingPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Huntington Beach Anti-Dumping Duty Attorney - AD/CVD Defense for Marine & Sporting Goods',
         description: 'Expert Huntington Beach anti-dumping duty attorney providing scope rulings, EAPA investigation defense, and AD/CVD mitigation for Orange County marine, sporting goods, and manufacturing importers.',
-        url: `${siteConfig.siteUrl}/#huntington-beach-antidumping-attorney`,
+        url: `${siteConfig.siteUrl}/huntington-beach-antidumping-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Huntington Beach Anti-Dumping Attorney', url: `${siteConfig.siteUrl}/#huntington-beach-antidumping-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Huntington Beach Anti-Dumping Attorney', url: `${siteConfig.siteUrl}/huntington-beach-antidumping-attorney` }
       ]),
       generateFAQSchema([
         {

@@ -21,12 +21,12 @@ const TorranceUFLPAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'UFLPA Attorney Torrance CA - Forced Labor Compliance Lawyer South Bay',
         description: 'Expert UFLPA attorney serving Torrance and South Bay businesses with forced labor compliance, detention defense, and supply chain solutions.',
-        url: `${siteConfig.siteUrl}/#torrance-uflpa`,
+        url: `${siteConfig.siteUrl}/torrance-uflpa`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'UFLPA Attorney Torrance', url: `${siteConfig.siteUrl}/#torrance-uflpa` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'UFLPA Attorney Torrance', url: `${siteConfig.siteUrl}/torrance-uflpa` }
       ]),
       generateFAQSchema([
         {

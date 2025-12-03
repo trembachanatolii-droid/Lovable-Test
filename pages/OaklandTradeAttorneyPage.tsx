@@ -23,12 +23,12 @@ const OaklandTradeAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Oakland Trade Attorney & Port of Oakland Customs Lawyer - East Bay Legal Services',
         description: 'Oakland trade attorney and Port of Oakland customs lawyer providing expert legal representation for tariff classification, CBP defense, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#oakland-trade-attorney`,
+        url: `${siteConfig.siteUrl}/oakland-trade-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Oakland Trade Attorney', url: `${siteConfig.siteUrl}/#oakland-trade-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Oakland Trade Attorney', url: `${siteConfig.siteUrl}/oakland-trade-attorney` }
       ]),
       generateFAQSchema([
         {

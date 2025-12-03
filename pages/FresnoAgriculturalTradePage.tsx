@@ -23,12 +23,12 @@ const FresnoAgriculturalTradePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Fresno Agricultural Trade Compliance Attorney - Farm Export & Food Import Lawyer',
         description: 'Expert Fresno agricultural trade compliance attorney providing farm export, food import, USDA/FDA compliance, and agricultural tariff services for Central Valley agribusiness.',
-        url: `${siteConfig.siteUrl}/#fresno-agricultural-trade`,
+        url: `${siteConfig.siteUrl}/fresno-agricultural-trade`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Fresno Agricultural Trade', url: `${siteConfig.siteUrl}/#fresno-agricultural-trade` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Fresno Agricultural Trade', url: `${siteConfig.siteUrl}/fresno-agricultural-trade` }
       ]),
       generateFAQSchema([
         {

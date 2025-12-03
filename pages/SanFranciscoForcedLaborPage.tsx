@@ -23,12 +23,12 @@ const SanFranciscoForcedLaborPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Francisco Forced Labor Compliance Attorney - UFLPA & Supply Chain Due Diligence Lawyer',
         description: 'San Francisco forced labor compliance attorney specializing in UFLPA compliance, supply chain due diligence, forced labor detention defense, and ethical sourcing.',
-        url: `${siteConfig.siteUrl}/#san-francisco-forced-labor-compliance-attorney`,
+        url: `${siteConfig.siteUrl}/san-francisco-forced-labor-compliance-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Francisco Forced Labor Compliance Attorney', url: `${siteConfig.siteUrl}/#san-francisco-forced-labor-compliance-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Francisco Forced Labor Compliance Attorney', url: `${siteConfig.siteUrl}/san-francisco-forced-labor-compliance-attorney` }
       ]),
       generateFAQSchema([
         {

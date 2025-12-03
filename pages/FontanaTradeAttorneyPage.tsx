@@ -23,12 +23,12 @@ const FontanaTradeAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Fontana Trade Attorney & Manufacturing Customs Lawyer - Inland Empire CA',
         description: 'Fontana trade attorney specializing in manufacturing and logistics customs compliance. Expert legal services for Inland Empire warehouses, distribution centers, and manufacturers.',
-        url: `${siteConfig.siteUrl}/#fontana-trade-attorney`,
+        url: `${siteConfig.siteUrl}/fontana-trade-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Fontana Trade Attorney', url: `${siteConfig.siteUrl}/#fontana-trade-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Fontana Trade Attorney', url: `${siteConfig.siteUrl}/fontana-trade-attorney` }
       ]),
       generateFAQSchema([
         {

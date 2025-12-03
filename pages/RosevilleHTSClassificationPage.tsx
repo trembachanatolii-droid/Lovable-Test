@@ -21,12 +21,12 @@ const RosevilleHTSClassificationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'HTS Classification Attorney Roseville - Harmonized Tariff Schedule Expert Placer County',
         description: 'Expert HTS classification attorney serving Roseville and Placer County importers. Harmonized Tariff Schedule expertise, binding rulings, duty optimization for technology, manufacturing, and distribution businesses.',
-        url: `${siteConfig.siteUrl}/#roseville-hts-classification`,
+        url: `${siteConfig.siteUrl}/roseville-hts-classification`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Roseville HTS Classification Attorney', url: `${siteConfig.siteUrl}/#roseville-hts-classification` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Roseville HTS Classification Attorney', url: `${siteConfig.siteUrl}/roseville-hts-classification` }
       ]),
       generateFAQSchema([
         {

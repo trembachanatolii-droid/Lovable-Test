@@ -23,12 +23,12 @@ const ConcordTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Concord Tariff Lawyer & Customs Attorney - Contra Costa Trade Law Firm',
         description: 'Concord tariff lawyer and customs attorney providing expert legal representation for Contra Costa County businesses. CBP defense, tariff classification, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#concord-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/concord-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Concord Tariff Lawyer', url: `${siteConfig.siteUrl}/#concord-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Concord Tariff Lawyer', url: `${siteConfig.siteUrl}/concord-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

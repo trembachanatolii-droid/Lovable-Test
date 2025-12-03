@@ -23,12 +23,12 @@ const FremontCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Fremont Customs Attorney & Silicon Valley Tech Trade Lawyer - Bay Area CA',
         description: 'Fremont customs attorney serving Silicon Valley tech companies. Expert customs legal services for electronics, EV manufacturing, semiconductors, and technology trade compliance.',
-        url: `${siteConfig.siteUrl}/#fremont-customs-attorney`,
+        url: `${siteConfig.siteUrl}/fremont-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Fremont Customs Attorney', url: `${siteConfig.siteUrl}/#fremont-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Fremont Customs Attorney', url: `${siteConfig.siteUrl}/fremont-customs-attorney` }
       ]),
       generateFAQSchema([
         {

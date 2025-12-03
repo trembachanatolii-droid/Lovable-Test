@@ -21,12 +21,12 @@ const PomonaTradeZonePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Pomona Foreign Trade Zone Attorney - FTZ Lawyer Inland Empire',
         description: 'Expert Foreign Trade Zone attorney serving Pomona and Inland Empire manufacturers with FTZ establishment, compliance, and duty deferral strategies for logistics operations.',
-        url: `${siteConfig.siteUrl}/#pomona-foreign-trade-zone`,
+        url: `${siteConfig.siteUrl}/pomona-foreign-trade-zone`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Pomona Foreign Trade Zone', url: `${siteConfig.siteUrl}/#pomona-foreign-trade-zone` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Pomona Foreign Trade Zone', url: `${siteConfig.siteUrl}/pomona-foreign-trade-zone` }
       ]),
       generateFAQSchema([
         {

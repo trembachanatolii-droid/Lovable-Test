@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 
@@ -8,6 +9,8 @@ interface LegalPageProps {
 }
 
 const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
+  const navigate = useNavigate();
+
   const getMetaForTitle = (pageTitle: string) => {
     switch(pageTitle) {
       case "Disclaimers":
@@ -189,16 +192,12 @@ const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
              <p className="mb-6 text-text-secondary">
                If you have any questions about these policies, please contact us.
              </p>
-             <a
-              href="#schedule-consultation"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.hash = '#contact';
-              }}
-              className="inline-block px-8 py-3 bg-primary-navy text-white font-bold uppercase tracking-wider rounded hover:bg-primary-darkBlue transition-colors"
+             <button
+              onClick={() => navigate('/contact')}
+              className="inline-block px-8 py-3 bg-primary-navy text-white font-bold uppercase tracking-wider rounded hover:bg-primary-darkBlue transition-colors cursor-pointer"
             >
               Contact Us
-            </a>
+            </button>
           </div>
         </div>
       </div>

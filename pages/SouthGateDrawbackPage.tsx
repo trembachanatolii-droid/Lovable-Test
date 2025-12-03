@@ -23,12 +23,12 @@ const SouthGateDrawbackPage: React.FC = () => {
       generateWebPageSchema({
         title: 'South Gate Duty Drawback Lawyer - Tariff Refund & Customs Duty Recovery Attorney',
         description: 'Expert South Gate duty drawback lawyer helping California importers and exporters recover millions in paid customs duties through manufacturing, unused, and rejected merchandise drawback programs.',
-        url: `${siteConfig.siteUrl}/#south-gate-duty-drawback`,
+        url: `${siteConfig.siteUrl}/south-gate-duty-drawback`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'South Gate Duty Drawback', url: `${siteConfig.siteUrl}/#south-gate-duty-drawback` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'South Gate Duty Drawback', url: `${siteConfig.siteUrl}/south-gate-duty-drawback` }
       ]),
       generateFAQSchema([
         {

@@ -23,12 +23,12 @@ const ChicoCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Chico Customs Attorney & Trade Lawyer - Northern California Trade Law Firm',
         description: 'Chico customs attorney and trade lawyer providing expert legal representation for Northern California businesses. CBP defense, tariff classification, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#chico-customs-attorney`,
+        url: `${siteConfig.siteUrl}/chico-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Chico Customs Attorney', url: `${siteConfig.siteUrl}/#chico-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Chico Customs Attorney', url: `${siteConfig.siteUrl}/chico-customs-attorney` }
       ]),
       generateFAQSchema([
         {

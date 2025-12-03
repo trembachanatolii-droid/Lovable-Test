@@ -23,12 +23,12 @@ const SanDiegoUFLPACompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Diego UFLPA Compliance Attorney - Forced Labor Defense & Supply Chain Due Diligence',
         description: 'Expert San Diego UFLPA compliance attorney providing Uyghur Forced Labor Prevention Act defense, supply chain due diligence programs, and CBP detention defense for California importers.',
-        url: `${siteConfig.siteUrl}/#san-diego-uflpa-compliance`,
+        url: `${siteConfig.siteUrl}/san-diego-uflpa-compliance`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Diego UFLPA Compliance', url: `${siteConfig.siteUrl}/#san-diego-uflpa-compliance` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Diego UFLPA Compliance', url: `${siteConfig.siteUrl}/san-diego-uflpa-compliance` }
       ]),
       generateFAQSchema([
         {

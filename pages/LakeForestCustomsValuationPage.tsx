@@ -21,12 +21,12 @@ const LakeForestCustomsValuationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Lake Forest Customs Valuation Attorney - Orange County Trade Lawyer',
         description: 'Expert Lake Forest customs valuation attorney serving Orange County importers. Transaction value, assists, royalties, and transfer pricing compliance.',
-        url: `${siteConfig.siteUrl}/#lake-forest-customs-valuation`,
+        url: `${siteConfig.siteUrl}/lake-forest-customs-valuation`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Lake Forest Customs Valuation', url: `${siteConfig.siteUrl}/#lake-forest-customs-valuation` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Lake Forest Customs Valuation', url: `${siteConfig.siteUrl}/lake-forest-customs-valuation` }
       ]),
       generateFAQSchema([
         {

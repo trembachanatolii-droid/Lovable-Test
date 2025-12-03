@@ -23,12 +23,12 @@ const OxnardTariffAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Oxnard Tariff Attorney & Ventura County Customs Lawyer - California',
         description: 'Oxnard tariff attorney serving Ventura County businesses. Expert customs legal services for agricultural trade, Port of Hueneme operations, and manufacturing compliance.',
-        url: `${siteConfig.siteUrl}/#oxnard-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/oxnard-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Oxnard Tariff Attorney', url: `${siteConfig.siteUrl}/#oxnard-tariff-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Oxnard Tariff Attorney', url: `${siteConfig.siteUrl}/oxnard-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

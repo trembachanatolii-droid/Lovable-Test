@@ -50,32 +50,39 @@ useEffect(() => {
 
 return (
     <section className="group relative w-full h-[97vh] bg-primary-navy text-white overflow-hidden">
-        {/* Background Image & Gradient */}
-        {slides.map((slide, index) => (
-            <div
-                key={slide.id}
-                className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
-                style={{ visibility: index === currentIndex ? 'visible' : 'hidden' }}
-            >
-                <picture>
-                  <source
-                    type="image/webp"
-                    srcSet={slide.image.replace(/\.jpe?g$/i, '.webp')}
-                  />
-                  <img
-                      src={slide.image}
-                      alt={slide.title}
-                      className="w-full h-full object-cover"
-                      loading={index === 0 ? 'eager' : 'lazy'}
-                      decoding="async"
-                      fetchPriority={index === 0 ? 'high' : 'low'}
-                      width="1920"
-                      height="1080"
-                  />
-                </picture>
-                <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent"></div>
-            </div>
-        ))}
+        {/* Background Image & Gradient - Only render previous, current, and next slides */}
+        {slides
+            .map((slide, index) => ({ slide, index }))
+            .filter(({ index }) => {
+                const nextIndex = (currentIndex + 1) % slides.length;
+                const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+                return index === currentIndex || index === nextIndex || index === prevIndex;
+            })
+            .map(({ slide, index }) => (
+                <div
+                    key={slide.id}
+                    className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+                    style={{ visibility: index === currentIndex ? 'visible' : 'hidden' }}
+                >
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcSet={slide.image.replace(/\.jpe?g$/i, '.webp')}
+                      />
+                      <img
+                          src={slide.image}
+                          alt={slide.title}
+                          className="w-full h-full object-cover"
+                          loading="eager"
+                          decoding="async"
+                          fetchPriority={index === currentIndex ? 'high' : 'low'}
+                          width="1920"
+                          height="1080"
+                      />
+                    </picture>
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent"></div>
+                </div>
+            ))}
 
         {/* Left/Right Arrows */}
         <div className="absolute inset-0 z-30 flex items-center justify-between px-5 pointer-events-none">

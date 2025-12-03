@@ -21,12 +21,12 @@ const SantaMariaExportControlPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Santa Maria Export Control Attorney - ITAR & EAR Compliance Lawyer',
         description: 'Expert Santa Maria export control attorney serving Central Coast aerospace, defense, and technology companies with ITAR, EAR, and BIS compliance solutions.',
-        url: `${siteConfig.siteUrl}/#santa-maria-export-control`,
+        url: `${siteConfig.siteUrl}/santa-maria-export-control`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Santa Maria Export Control', url: `${siteConfig.siteUrl}/#santa-maria-export-control` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Santa Maria Export Control', url: `${siteConfig.siteUrl}/santa-maria-export-control` }
       ]),
       generateFAQSchema([
         {

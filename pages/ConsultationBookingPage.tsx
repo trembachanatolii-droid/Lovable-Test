@@ -165,11 +165,11 @@ const ConsultationBookingPage: React.FC = () => {
             generateWebPageSchema({
                 title: 'Schedule Free Consultation - Trembach Law Firm',
                 description: 'Book a free consultation with our California international trade attorney.',
-                url: `${siteConfig.siteUrl}/#schedule-consultation`,
+                url: `${siteConfig.siteUrl}/schedule-consultation`,
             }),
             generateBreadcrumbSchema([
                 { name: 'Home', url: `${siteConfig.siteUrl}/` },
-                { name: 'Schedule Consultation', url: `${siteConfig.siteUrl}/#schedule-consultation` }
+                { name: 'Schedule Consultation', url: `${siteConfig.siteUrl}/schedule-consultation` }
             ]),
         ],
     });

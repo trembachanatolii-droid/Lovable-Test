@@ -21,12 +21,12 @@ const EscondidoTradeZonePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Escondido Foreign Trade Zone Attorney - FTZ Lawyer San Diego County',
         description: 'Expert Foreign Trade Zone attorney serving Escondido and North County San Diego manufacturers with FTZ establishment, compliance, and duty deferral strategies.',
-        url: `${siteConfig.siteUrl}/#escondido-foreign-trade-zone`,
+        url: `${siteConfig.siteUrl}/escondido-foreign-trade-zone`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Escondido Foreign Trade Zone', url: `${siteConfig.siteUrl}/#escondido-foreign-trade-zone` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Escondido Foreign Trade Zone', url: `${siteConfig.siteUrl}/escondido-foreign-trade-zone` }
       ]),
       generateFAQSchema([
         {

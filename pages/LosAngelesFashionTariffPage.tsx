@@ -23,12 +23,12 @@ const LosAngelesFashionTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Los Angeles Fashion Tariff Lawyer - Apparel & Textile Import Attorney',
         description: 'Los Angeles fashion tariff lawyer specializing in apparel imports, textile HTS classification, Section 301 fashion tariffs, and clothing trade compliance.',
-        url: `${siteConfig.siteUrl}/#los-angeles-fashion-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/los-angeles-fashion-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Los Angeles Fashion Tariff Lawyer', url: `${siteConfig.siteUrl}/#los-angeles-fashion-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Los Angeles Fashion Tariff Lawyer', url: `${siteConfig.siteUrl}/los-angeles-fashion-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

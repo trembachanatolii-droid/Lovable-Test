@@ -274,6 +274,16 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
     return (
         <form onSubmit={handleSubmit} className="w-full" role="form" aria-label="Job application form">
 
+            {/* Accessible step announcement for screen readers */}
+            <div
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+                className="sr-only"
+            >
+                Step {currentStep + 1} of {steps.length}: {steps[currentStep]}
+            </div>
+
             {/* Progress Bar */}
             <nav aria-label="Application progress" className="flex justify-between mb-8 overflow-x-auto pb-2">
                 {steps.map((step, idx) => (
@@ -398,6 +408,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 onBlur={(e) => validateField('firstName', e.target.value)}
                                 className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy"
                                 required
+                                autoComplete="given-name"
                                 aria-required="true"
                                 aria-invalid={!!fieldErrors.firstName}
                                 aria-describedby={fieldErrors.firstName ? 'firstName-error' : undefined}
@@ -419,6 +430,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 onBlur={(e) => validateField('lastName', e.target.value)}
                                 className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy"
                                 required
+                                autoComplete="family-name"
                                 aria-required="true"
                                 aria-invalid={!!fieldErrors.lastName}
                                 aria-describedby={fieldErrors.lastName ? 'lastName-error' : undefined}
@@ -440,6 +452,8 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 onBlur={(e) => validateField('email', e.target.value)}
                                 className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy"
                                 required
+                                autoComplete="email"
+                                inputMode="email"
                                 aria-required="true"
                                 aria-invalid={!!fieldErrors.email}
                                 aria-describedby={fieldErrors.email ? 'email-error' : undefined}
@@ -461,6 +475,8 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 onBlur={(e) => validateField('phone', e.target.value)}
                                 className="w-full p-3 border border-neutral-300 rounded focus:border-primary-navy focus:ring-1 focus:ring-primary-navy"
                                 required
+                                autoComplete="tel"
+                                inputMode="tel"
                                 aria-required="true"
                                 aria-invalid={!!fieldErrors.phone}
                                 aria-describedby={fieldErrors.phone ? 'phone-error' : undefined}
@@ -488,7 +504,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                     placeholder="e.g. California (2018), CIT (2019), CAFC (2020)"
                                 />
                                 <div className="mt-2 flex items-center">
-                                    <input type="checkbox" id="goodStanding" className="mr-2" />
+                                    <input type="checkbox" id="goodStanding" name="goodStanding" className="mr-2" aria-required="false" />
                                     <label htmlFor="goodStanding" className="text-sm text-text-secondary">I confirm I am a member in good standing of the bars listed above.</label>
                                 </div>
                             </div>
@@ -510,7 +526,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 </div>
                                 <div>
                                     <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="gradYear">Graduation Year (or Expected)</label>
-                                    <input type="text" id="gradYear" name="gradYear" value={formData.gradYear} onChange={handleInputChange} className="w-full p-3 border border-neutral-300 rounded" />
+                                    <input type="text" id="gradYear" name="gradYear" value={formData.gradYear} onChange={handleInputChange} inputMode="numeric" className="w-full p-3 border border-neutral-300 rounded" />
                                 </div>
                             </>
                         )}
@@ -524,7 +540,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                         </div>
                         <div>
                              <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="undergradYear">Graduation Year</label>
-                             <input type="text" id="undergradYear" name="undergradYear" value={formData.undergradYear} onChange={handleInputChange} className="w-full p-3 border border-neutral-300 rounded" />
+                             <input type="text" id="undergradYear" name="undergradYear" value={formData.undergradYear} onChange={handleInputChange} inputMode="numeric" className="w-full p-3 border border-neutral-300 rounded" />
                         </div>
                     </div>
                 </div>
@@ -539,7 +555,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                     <div className="grid md:grid-cols-2 gap-6">
                          <div>
                             <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="yearsPractice">Total Years of Experience</label>
-                            <input type="number" id="yearsPractice" name="yearsPractice" value={formData.yearsPractice} onChange={handleInputChange} className="w-full p-3 border border-neutral-300 rounded" />
+                            <input type="number" id="yearsPractice" name="yearsPractice" value={formData.yearsPractice} onChange={handleInputChange} inputMode="numeric" className="w-full p-3 border border-neutral-300 rounded" />
                         </div>
                         <div>
                             <label className="block text-sm font-bold text-text-primary mb-2">Primary Areas of Focus</label>
@@ -604,7 +620,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                             </div>
                                             <div>
                                                  <label className="block text-xs font-bold text-neutral-500 mb-1" htmlFor={`trial_case_${index}_year`}>Year</label>
-                                                 <input type="text" id={`trial_case_${index}_year`} value={trial.year} onChange={(e) => handleTrialCaseChange(index, 'year', e.target.value)} className="w-full p-2 border border-neutral-300 rounded text-sm" placeholder="YYYY" required />
+                                                 <input type="text" id={`trial_case_${index}_year`} value={trial.year} onChange={(e) => handleTrialCaseChange(index, 'year', e.target.value)} inputMode="numeric" className="w-full p-2 border border-neutral-300 rounded text-sm" placeholder="YYYY" required />
                                             </div>
                                             <div className="md:col-span-2">
                                                  <label className="block text-xs font-bold text-neutral-500 mb-1" htmlFor={`trial_case_${index}_role`}>Role</label>
@@ -777,9 +793,10 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                             Next Step →
                         </button>
                     ) : (
-                        <button 
-                            type="submit" 
-                            disabled={isSubmitting} 
+                        <button
+                            type="submit"
+                            disabled={isSubmitting}
+                            aria-disabled={isSubmitting}
                             className={`px-10 py-3 bg-secondary-teal text-white font-bold rounded hover:bg-secondary-forestGreen transition-all shadow-lg transform hover:-translate-y-1 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                         >
                             {isSubmitting ? 'Submitting...' : 'Submit Application'}

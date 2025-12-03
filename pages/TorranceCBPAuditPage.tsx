@@ -21,12 +21,12 @@ const TorranceCBPAuditPage: React.FC = () => {
       generateWebPageSchema({
         title: 'CBP Audit Defense Attorney Torrance - Customs Audit Lawyer',
         description: 'Expert CBP audit defense attorney serving Torrance businesses with focused assessment defense, penalty mitigation, and prior disclosure services.',
-        url: `${siteConfig.siteUrl}/#torrance-cbp-audit`,
+        url: `${siteConfig.siteUrl}/torrance-cbp-audit`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'CBP Audit Defense Torrance', url: `${siteConfig.siteUrl}/#torrance-cbp-audit` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'CBP Audit Defense Torrance', url: `${siteConfig.siteUrl}/torrance-cbp-audit` }
       ]),
       generateFAQSchema([
         {

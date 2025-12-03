@@ -33,7 +33,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   height,
   loading = 'lazy',
   priority = false,
-  sizes = '100vw',
+  sizes = '(max-width: 320px) 320px, (max-width: 375px) 375px, (max-width: 414px) 414px, (max-width: 480px) 480px, (max-width: 600px) 600px, (max-width: 768px) 768px, 800px',
   onLoad,
   onError,
   role,
@@ -47,11 +47,11 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   const webpSrc = src.replace(/\.(jpg|jpeg|png)$/i, '.webp');
   const jpgSrc = src;
 
-  // Generate responsive srcset for multiple sizes
+  // Generate responsive srcset for multiple sizes (mobile-optimized)
   const generateSrcSet = (baseSrc: string) => {
     // Only generate srcset for local images
     if (!baseSrc.startsWith('/images/')) return undefined;
-    return `${baseSrc} 800w, ${baseSrc} 600w, ${baseSrc} 400w`;
+    return `${baseSrc} 320w, ${baseSrc} 375w, ${baseSrc} 414w, ${baseSrc} 480w, ${baseSrc} 600w, ${baseSrc} 768w, ${baseSrc} 800w`;
   };
 
   const handleLoad = () => {

@@ -23,12 +23,12 @@ const IrvineTradeCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Irvine Trade Compliance & Orange County Customs Lawyer - Tech & Manufacturing Legal Services',
         description: 'Irvine trade compliance and Orange County customs lawyer providing expert legal representation for tariff classification, CBP defense, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#irvine-trade-compliance`,
+        url: `${siteConfig.siteUrl}/irvine-trade-compliance`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Irvine Trade Compliance', url: `${siteConfig.siteUrl}/#irvine-trade-compliance` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Irvine Trade Compliance', url: `${siteConfig.siteUrl}/irvine-trade-compliance` }
       ]),
       generateFAQSchema([
         {

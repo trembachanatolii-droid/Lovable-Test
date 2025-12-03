@@ -21,12 +21,12 @@ const LongBeachCBPAuditPage: React.FC = () => {
       generateWebPageSchema({
         title: 'CBP Audit Defense Attorney Long Beach - Customs Audit Lawyer Port',
         description: 'Expert CBP audit defense attorney serving Long Beach and Port businesses with focused assessment defense, penalty mitigation, and prior disclosure services.',
-        url: `${siteConfig.siteUrl}/#long-beach-cbp-audit`,
+        url: `${siteConfig.siteUrl}/long-beach-cbp-audit`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'CBP Audit Defense Long Beach', url: `${siteConfig.siteUrl}/#long-beach-cbp-audit` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'CBP Audit Defense Long Beach', url: `${siteConfig.siteUrl}/long-beach-cbp-audit` }
       ]),
       generateFAQSchema([
         {

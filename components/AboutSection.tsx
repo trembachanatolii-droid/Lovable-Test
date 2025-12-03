@@ -1,5 +1,6 @@
 
 import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutSection: React.FC = () => {
     return (
@@ -19,16 +20,12 @@ const AboutSection: React.FC = () => {
                 <p className="text-[21px] text-text-secondary leading-relaxed mb-8">
                     Competitive fees with flexible arrangements.
                 </p>
-                <a 
-                    href="#practice-areas"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        window.location.hash = '#practice-areas';
-                    }}
+                <Link
+                    to="/practice-areas"
                     className="font-bold text-primary-darkBlue hover:text-secondary-teal transition-colors duration-200 text-[21px] scroll-smooth"
                 >
                     See our scope of practice here &rarr;
-                </a>
+                </Link>
             </div>
         </section>
     );

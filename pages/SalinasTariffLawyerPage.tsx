@@ -23,12 +23,12 @@ const SalinasTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Salinas Tariff Lawyer & Agricultural Trade Attorney - Monterey County CA',
         description: 'Salinas tariff lawyer serving Salinas Valley and Monterey County agricultural businesses. Expert customs legal services for produce, wine, and food trade compliance.',
-        url: `${siteConfig.siteUrl}/#salinas-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/salinas-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Salinas Tariff Lawyer', url: `${siteConfig.siteUrl}/#salinas-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Salinas Tariff Lawyer', url: `${siteConfig.siteUrl}/salinas-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

@@ -22,12 +22,12 @@ const SanDiegoSection301Page: React.FC = () => {
       generateWebPageSchema({
         title: 'Section 301 Tariff Attorney San Diego - China Tariff Lawyer',
         description: 'Expert Section 301 tariff attorney serving San Diego businesses. Comprehensive China tariff strategies including exclusions, tariff engineering, and compliance solutions.',
-        url: `${siteConfig.siteUrl}/#san-diego-section-301`,
+        url: `${siteConfig.siteUrl}/san-diego-section-301`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Section 301 Tariff Attorney San Diego', url: `${siteConfig.siteUrl}/#san-diego-section-301` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Section 301 Tariff Attorney San Diego', url: `${siteConfig.siteUrl}/san-diego-section-301` }
       ]),
       generateFAQSchema([
         {

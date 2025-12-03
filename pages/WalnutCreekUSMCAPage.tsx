@@ -22,12 +22,12 @@ const WalnutCreekUSMCAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Walnut Creek USMCA Attorney - Free Trade Agreement & NAFTA Replacement Lawyer',
         description: 'Walnut Creek USMCA attorney specializing in free trade agreement compliance, certificate of origin services, and duty-free qualification for Contra Costa businesses.',
-        url: `${siteConfig.siteUrl}/#walnut-creek-usmca-attorney`,
+        url: `${siteConfig.siteUrl}/walnut-creek-usmca-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Walnut Creek USMCA Attorney', url: `${siteConfig.siteUrl}/#walnut-creek-usmca-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Walnut Creek USMCA Attorney', url: `${siteConfig.siteUrl}/walnut-creek-usmca-attorney` }
       ]),
       generateFAQSchema([
         {

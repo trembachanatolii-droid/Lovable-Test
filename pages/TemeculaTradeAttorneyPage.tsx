@@ -23,12 +23,12 @@ const TemeculaTradeAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Temecula Trade Attorney & Customs Lawyer - Temecula Valley Wine & Business Law',
         description: 'Temecula trade attorney and customs lawyer specializing in Temecula Valley wine industry and businesses. Wine export compliance, tariff classification, CBP defense, and international trade law.',
-        url: `${siteConfig.siteUrl}/#temecula-trade-attorney`,
+        url: `${siteConfig.siteUrl}/temecula-trade-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Temecula Trade Attorney', url: `${siteConfig.siteUrl}/#temecula-trade-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Temecula Trade Attorney', url: `${siteConfig.siteUrl}/temecula-trade-attorney` }
       ]),
       generateFAQSchema([
         {

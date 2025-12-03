@@ -24,12 +24,12 @@ const CostaMesaCustomsBrokerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Costa Mesa Customs Broker Liability Attorney - Broker Defense & Professional Liability Lawyer',
         description: 'Costa Mesa customs broker liability attorney specializing in broker negligence defense, CBP broker violations, license defense, and professional liability.',
-        url: `${siteConfig.siteUrl}/#costa-mesa-customs-broker-liability-attorney`,
+        url: `${siteConfig.siteUrl}/costa-mesa-customs-broker-liability-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Costa Mesa Customs Broker Liability Attorney', url: `${siteConfig.siteUrl}/#costa-mesa-customs-broker-liability-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Costa Mesa Customs Broker Liability Attorney', url: `${siteConfig.siteUrl}/costa-mesa-customs-broker-liability-attorney` }
       ]),
       generateFAQSchema([
         {

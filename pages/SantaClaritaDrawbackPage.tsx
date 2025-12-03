@@ -23,12 +23,12 @@ const SantaClaritaDrawbackPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Santa Clarita Duty Drawback Lawyer - Tariff Refund & Customs Duty Recovery Attorney',
         description: 'Expert Santa Clarita duty drawback lawyer helping California importers and exporters recover millions in paid customs duties through manufacturing, unused, and rejected merchandise drawback programs.',
-        url: `${siteConfig.siteUrl}/#santa-clarita-duty-drawback`,
+        url: `${siteConfig.siteUrl}/santa-clarita-duty-drawback`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Santa Clarita Duty Drawback', url: `${siteConfig.siteUrl}/#santa-clarita-duty-drawback` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Santa Clarita Duty Drawback', url: `${siteConfig.siteUrl}/santa-clarita-duty-drawback` }
       ]),
       generateFAQSchema([
         {

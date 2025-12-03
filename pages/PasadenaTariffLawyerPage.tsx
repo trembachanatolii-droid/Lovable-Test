@@ -23,12 +23,12 @@ const PasadenaTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Pasadena Tariff Lawyer & Business Customs Attorney - Los Angeles County CA',
         description: 'Pasadena tariff lawyer serving LA County businesses. Expert customs legal services for technology, biotech, aerospace, and manufacturing trade compliance.',
-        url: `${siteConfig.siteUrl}/#pasadena-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/pasadena-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Pasadena Tariff Lawyer', url: `${siteConfig.siteUrl}/#pasadena-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Pasadena Tariff Lawyer', url: `${siteConfig.siteUrl}/pasadena-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

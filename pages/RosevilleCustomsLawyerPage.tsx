@@ -23,12 +23,12 @@ const RosevilleCustomsLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Roseville Customs Lawyer & Tariff Attorney - Sacramento Region Trade Law',
         description: 'Roseville customs lawyer and tariff attorney providing expert legal representation for Sacramento region businesses. CBP defense, tariff classification, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#roseville-customs-lawyer`,
+        url: `${siteConfig.siteUrl}/roseville-customs-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Roseville Customs Lawyer', url: `${siteConfig.siteUrl}/#roseville-customs-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Roseville Customs Lawyer', url: `${siteConfig.siteUrl}/roseville-customs-lawyer` }
       ]),
       generateFAQSchema([
         {

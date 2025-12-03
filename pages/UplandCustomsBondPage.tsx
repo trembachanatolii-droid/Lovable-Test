@@ -23,12 +23,12 @@ const UplandCustomsBondPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Upland Customs Bond Attorney - Import Bond Lawyer San Bernardino County CA',
         description: 'Upland customs bond attorney specializing in continuous bonds, single entry bonds, and bond sufficiency for Inland Empire importers and distribution businesses.',
-        url: `${siteConfig.siteUrl}/#upland-customs-bond-attorney`,
+        url: `${siteConfig.siteUrl}/upland-customs-bond-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Upland Customs Bond Attorney', url: `${siteConfig.siteUrl}/#upland-customs-bond-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Upland Customs Bond Attorney', url: `${siteConfig.siteUrl}/upland-customs-bond-attorney` }
       ]),
       generateFAQSchema([
         {

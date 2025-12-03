@@ -23,12 +23,12 @@ const HaywardCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Hayward Customs Attorney & Tariff Lawyer - East Bay Trade Law Firm',
         description: 'Hayward customs attorney and tariff lawyer providing expert legal representation for East Bay manufacturers and importers. CBP defense, tariff classification, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#hayward-customs-attorney`,
+        url: `${siteConfig.siteUrl}/hayward-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Hayward Customs Attorney', url: `${siteConfig.siteUrl}/#hayward-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Hayward Customs Attorney', url: `${siteConfig.siteUrl}/hayward-customs-attorney` }
       ]),
       generateFAQSchema([
         {

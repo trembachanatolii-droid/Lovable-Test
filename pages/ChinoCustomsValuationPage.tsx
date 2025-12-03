@@ -21,12 +21,12 @@ const ChinoCustomsValuationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Chino Customs Valuation Attorney - Inland Empire Trade Lawyer',
         description: 'Expert Chino customs valuation attorney serving Inland Empire importers. Transaction value, assists, royalties, and transfer pricing compliance.',
-        url: `${siteConfig.siteUrl}/#chino-customs-valuation`,
+        url: `${siteConfig.siteUrl}/chino-customs-valuation`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Chino Customs Valuation', url: `${siteConfig.siteUrl}/#chino-customs-valuation` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Chino Customs Valuation', url: `${siteConfig.siteUrl}/chino-customs-valuation` }
       ]),
       generateFAQSchema([
         {

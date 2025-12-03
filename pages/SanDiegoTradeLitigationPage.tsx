@@ -23,12 +23,12 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Diego Trade Litigation Attorney - Court of International Trade Expert',
         description: 'San Diego trade litigation attorney providing expert representation in Court of International Trade, tariff classification disputes, AD/CVD litigation, and customs enforcement actions.',
-        url: `${siteConfig.siteUrl}/#san-diego-trade-litigation-attorney`,
+        url: `${siteConfig.siteUrl}/san-diego-trade-litigation-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Diego Trade Litigation Attorney', url: `${siteConfig.siteUrl}/#san-diego-trade-litigation-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Diego Trade Litigation Attorney', url: `${siteConfig.siteUrl}/san-diego-trade-litigation-attorney` }
       ]),
       generateFAQSchema([
         {

@@ -22,12 +22,12 @@ const AntiochBondedWarehousePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Antioch Bonded Warehouse Attorney - East Contra Costa Customs Compliance',
         description: 'Antioch bonded warehouse attorney providing expert legal representation for establishing and operating CBP bonded warehouses, FTZ facilities, and duty deferral programs in East Contra Costa County.',
-        url: `${siteConfig.siteUrl}/#antioch-bonded-warehouse`,
+        url: `${siteConfig.siteUrl}/antioch-bonded-warehouse`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Antioch Bonded Warehouse Attorney', url: `${siteConfig.siteUrl}/#antioch-bonded-warehouse` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Antioch Bonded Warehouse Attorney', url: `${siteConfig.siteUrl}/antioch-bonded-warehouse` }
       ]),
       generateFAQSchema([
         {

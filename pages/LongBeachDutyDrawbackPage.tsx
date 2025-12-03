@@ -23,12 +23,12 @@ const LongBeachDutyDrawbackPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Long Beach Duty Drawback Lawyer - Tariff Refund & Customs Duty Recovery Attorney',
         description: 'Expert Long Beach duty drawback lawyer helping California importers and exporters recover millions in paid customs duties through manufacturing, unused, and rejected merchandise drawback programs.',
-        url: `${siteConfig.siteUrl}/#long-beach-duty-drawback`,
+        url: `${siteConfig.siteUrl}/long-beach-duty-drawback`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Long Beach Duty Drawback', url: `${siteConfig.siteUrl}/#long-beach-duty-drawback` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Long Beach Duty Drawback', url: `${siteConfig.siteUrl}/long-beach-duty-drawback` }
       ]),
       generateFAQSchema([
         {

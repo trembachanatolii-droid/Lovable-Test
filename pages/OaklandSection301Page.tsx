@@ -21,12 +21,12 @@ const OaklandSection301Page: React.FC = () => {
       generateWebPageSchema({
         title: 'Section 301 Tariff Attorney Oakland - China Tariff Lawyer Port of Oakland',
         description: 'Expert Section 301 tariff attorney serving Oakland and Port of Oakland importers with China tariff strategies and compliance solutions.',
-        url: `${siteConfig.siteUrl}/#oakland-section-301`,
+        url: `${siteConfig.siteUrl}/oakland-section-301`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Section 301 Attorney Oakland', url: `${siteConfig.siteUrl}/#oakland-section-301` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Section 301 Attorney Oakland', url: `${siteConfig.siteUrl}/oakland-section-301` }
       ]),
       generateFAQSchema([
         {

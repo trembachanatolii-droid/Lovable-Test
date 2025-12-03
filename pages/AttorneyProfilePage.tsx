@@ -29,7 +29,7 @@ const AttorneyProfilePage: React.FC = () => {
       generatePersonSchema(),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Attorney Profile', url: `${siteConfig.siteUrl}/#attorney-profile` }
+        { name: 'Attorney Profile', url: `${siteConfig.siteUrl}/attorney-profile` }
       ])
     ],
   });

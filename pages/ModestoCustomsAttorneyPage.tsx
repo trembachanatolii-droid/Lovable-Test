@@ -23,12 +23,12 @@ const ModestoCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Modesto Customs Attorney & Agricultural Trade Lawyer - Central Valley CA',
         description: 'Modesto customs attorney specializing in agricultural imports and food trade. Expert legal services for Central Valley agribusiness including tariff classification, USDA/FDA compliance, and CBP defense.',
-        url: `${siteConfig.siteUrl}/#modesto-customs-attorney`,
+        url: `${siteConfig.siteUrl}/modesto-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Modesto Customs Attorney', url: `${siteConfig.siteUrl}/#modesto-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Modesto Customs Attorney', url: `${siteConfig.siteUrl}/modesto-customs-attorney` }
       ]),
       generateFAQSchema([
         {

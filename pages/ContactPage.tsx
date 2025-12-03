@@ -24,15 +24,15 @@ const ContactPage: React.FC = () => {
         '@type': 'ContactPage',
         name: 'Contact Trembach Law Firm',
         description: 'Reach out to our team for expert legal counsel on international trade and customs matters.',
-        url: `${siteConfig.siteUrl}/#contact`,
+        url: `${siteConfig.siteUrl}/contact`,
         mainEntity: {
           '@type': 'Organization',
-          '@id': 'https://trembach.law/#organization',
+          '@id': 'https://trembach.law/organization',
         },
       },
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Contact', url: `${siteConfig.siteUrl}/#contact` }
+        { name: 'Contact', url: `${siteConfig.siteUrl}/contact` }
       ])
     ],
   });

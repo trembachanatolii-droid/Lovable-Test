@@ -20,18 +20,18 @@ const BayAreaTradeLawPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Francisco & Bay Area Trade Compliance Attorney - Oakland Port Customs Lawyer',
         description: 'Serving San Francisco, Oakland, San Jose, and Silicon Valley with expert trade compliance, export controls, and customs legal services for tech companies and startups.',
-        url: `${siteConfig.siteUrl}/#bay-area-trade-law-attorney`,
+        url: `${siteConfig.siteUrl}/bay-area-trade-law-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Local Offices', url: `${siteConfig.siteUrl}/#local-offices` },
-        { name: 'San Francisco & Bay Area', url: `${siteConfig.siteUrl}/#bay-area-trade-law-attorney` }
+        { name: 'Local Offices', url: `${siteConfig.siteUrl}/local-offices` },
+        { name: 'San Francisco & Bay Area', url: `${siteConfig.siteUrl}/bay-area-trade-law-attorney` }
       ]),
       generateServiceSchema({
         name: 'San Francisco & Bay Area Trade Compliance Legal Services',
         description: 'Comprehensive trade compliance, export controls, and customs legal representation for Bay Area tech companies, startups, and manufacturers. Expert San Francisco trade compliance attorney and Oakland port customs lawyer services including EAR/ITAR compliance, encryption export regulations, dual-use technology controls, OFAC sanctions screening, and trade law advice for startups California.',
         serviceType: 'Technology Trade Law',
-        url: `${siteConfig.siteUrl}/#bay-area-trade-law-attorney`,
+        url: `${siteConfig.siteUrl}/bay-area-trade-law-attorney`,
       }),
     ],
   });

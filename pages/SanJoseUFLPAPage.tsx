@@ -21,12 +21,12 @@ const SanJoseUFLPAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'UFLPA Attorney San Jose CA - Forced Labor Compliance Lawyer Silicon Valley',
         description: 'Expert UFLPA attorney serving San Jose and Silicon Valley businesses with forced labor compliance, detention defense, and supply chain solutions.',
-        url: `${siteConfig.siteUrl}/#san-jose-uflpa`,
+        url: `${siteConfig.siteUrl}/san-jose-uflpa`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'UFLPA Attorney San Jose', url: `${siteConfig.siteUrl}/#san-jose-uflpa` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'UFLPA Attorney San Jose', url: `${siteConfig.siteUrl}/san-jose-uflpa` }
       ]),
       generateFAQSchema([
         {

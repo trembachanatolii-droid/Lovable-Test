@@ -21,12 +21,12 @@ const FresnoCBPAuditPage: React.FC = () => {
       generateWebPageSchema({
         title: 'CBP Audit Defense Attorney Fresno - Customs Audit Lawyer',
         description: 'Expert CBP audit defense attorney serving Fresno businesses with focused assessment defense, penalty mitigation, and prior disclosure services.',
-        url: `${siteConfig.siteUrl}/#fresno-cbp-audit`,
+        url: `${siteConfig.siteUrl}/fresno-cbp-audit`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'CBP Audit Defense Fresno', url: `${siteConfig.siteUrl}/#fresno-cbp-audit` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'CBP Audit Defense Fresno', url: `${siteConfig.siteUrl}/fresno-cbp-audit` }
       ]),
       generateFAQSchema([
         {

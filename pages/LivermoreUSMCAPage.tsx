@@ -22,12 +22,12 @@ const LivermoreUSMCAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Livermore USMCA Attorney - Free Trade Agreement & NAFTA Replacement Lawyer',
         description: 'Livermore USMCA attorney specializing in free trade agreement compliance, certificate of origin preparation, and Regional Value Content for Bay Area manufacturers.',
-        url: `${siteConfig.siteUrl}/#livermore-usmca-attorney`,
+        url: `${siteConfig.siteUrl}/livermore-usmca-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Livermore USMCA Attorney', url: `${siteConfig.siteUrl}/#livermore-usmca-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Livermore USMCA Attorney', url: `${siteConfig.siteUrl}/livermore-usmca-attorney` }
       ]),
       generateFAQSchema([
         {

@@ -21,12 +21,12 @@ const LongBeachSection301Page: React.FC = () => {
       generateWebPageSchema({
         title: 'Section 301 Tariff Attorney Long Beach - China Tariff Lawyer Port of Long Beach',
         description: 'Expert Section 301 tariff attorney serving Long Beach and Port of Long Beach importers with China tariff strategies and compliance solutions.',
-        url: `${siteConfig.siteUrl}/#long-beach-section-301`,
+        url: `${siteConfig.siteUrl}/long-beach-section-301`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Section 301 Attorney Long Beach', url: `${siteConfig.siteUrl}/#long-beach-section-301` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Section 301 Attorney Long Beach', url: `${siteConfig.siteUrl}/long-beach-section-301` }
       ]),
       generateFAQSchema([
         {

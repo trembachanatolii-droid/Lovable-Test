@@ -24,12 +24,12 @@ const CalabasasCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Calabasas Tariff Lawyer & Customs Attorney - Local California Trade Law Firm',
         description: 'Local Calabasas tariff lawyer and customs attorney providing expert legal representation for tariff classification, CBP defense, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#calabasas-customs-attorney`,
+        url: `${siteConfig.siteUrl}/calabasas-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Calabasas Customs Attorney', url: `${siteConfig.siteUrl}/#calabasas-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Calabasas Customs Attorney', url: `${siteConfig.siteUrl}/calabasas-customs-attorney` }
       ]),
       generateFAQSchema([
         {

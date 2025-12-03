@@ -23,12 +23,12 @@ const CoronaTradeCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Corona Trade Compliance Attorney & Customs Lawyer - Inland Empire CA',
         description: 'Corona trade compliance attorney serving Inland Empire manufacturers and importers. Expert customs legal services for trade compliance, CBP audits, and tariff optimization.',
-        url: `${siteConfig.siteUrl}/#corona-trade-compliance`,
+        url: `${siteConfig.siteUrl}/corona-trade-compliance`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Corona Trade Compliance', url: `${siteConfig.siteUrl}/#corona-trade-compliance` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Corona Trade Compliance', url: `${siteConfig.siteUrl}/corona-trade-compliance` }
       ]),
       generateFAQSchema([
         {

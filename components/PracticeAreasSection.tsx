@@ -1,5 +1,6 @@
 
 import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
 import { PracticeArea } from '../types';
 import PracticeCard from './PracticeCard';
 
@@ -90,16 +91,12 @@ Expert counsel across the most critical areas of international trade compliance,
     </div>
 
     <div className="text-center">
-      <a
-        href="#practice-areas"
-        onClick={(e) => {
-           e.preventDefault();
-           window.location.hash = '#practice-areas';
-        }}
+      <Link
+        to="/practice-areas"
         className="inline-flex items-center gap-3 py-4 px-8 bg-gold-primary text-navy-primary text-[17px] font-semibold rounded-full no-underline transition-all duration-200 hover:bg-gold-bright hover:scale-[1.02] focus:outline focus:outline-3 focus:outline-navy-medium focus:outline-offset-4"
       >
         View All Practice Areas
-      </a>
+      </Link>
     </div>
   </div>
 </section>

@@ -23,12 +23,12 @@ const BurbankPriorDisclosurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Burbank Prior Disclosure Attorney - CBP Penalty Mitigation Expert',
         description: 'Burbank prior disclosure attorney providing expert voluntary disclosure filings and CBP penalty mitigation. Reduce customs penalties by 75% or more through strategic prior disclosure.',
-        url: `${siteConfig.siteUrl}/#burbank-prior-disclosure-attorney`,
+        url: `${siteConfig.siteUrl}/burbank-prior-disclosure-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Burbank Prior Disclosure Attorney', url: `${siteConfig.siteUrl}/#burbank-prior-disclosure-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Burbank Prior Disclosure Attorney', url: `${siteConfig.siteUrl}/burbank-prior-disclosure-attorney` }
       ]),
       generateFAQSchema([
         {

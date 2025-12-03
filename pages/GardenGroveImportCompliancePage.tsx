@@ -22,12 +22,12 @@ const GardenGroveImportCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Garden Grove Import Compliance Attorney - C-TPAT, ISA & CBP Audit Defense',
         description: 'Garden Grove import compliance attorney providing expert legal services for import programs, C-TPAT certification, ISA compliance, customs audits, and CBP regulatory matters for Orange County businesses.',
-        url: `${siteConfig.siteUrl}/#garden-grove-import-compliance`,
+        url: `${siteConfig.siteUrl}/garden-grove-import-compliance`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Garden Grove Import Compliance', url: `${siteConfig.siteUrl}/#garden-grove-import-compliance` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Garden Grove Import Compliance', url: `${siteConfig.siteUrl}/garden-grove-import-compliance` }
       ]),
       generateFAQSchema([
         {

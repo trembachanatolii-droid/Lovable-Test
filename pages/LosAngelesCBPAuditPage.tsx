@@ -21,12 +21,12 @@ const LosAngelesCBPAuditPage: React.FC = () => {
       generateWebPageSchema({
         title: 'CBP Audit Defense Attorney Los Angeles - Customs Audit Lawyer',
         description: 'Expert CBP audit defense attorney serving Los Angeles businesses with focused assessment defense, penalty mitigation, and prior disclosure services.',
-        url: `${siteConfig.siteUrl}/#los-angeles-cbp-audit`,
+        url: `${siteConfig.siteUrl}/los-angeles-cbp-audit`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'CBP Audit Defense Los Angeles', url: `${siteConfig.siteUrl}/#los-angeles-cbp-audit` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'CBP Audit Defense Los Angeles', url: `${siteConfig.siteUrl}/los-angeles-cbp-audit` }
       ]),
       generateFAQSchema([
         {

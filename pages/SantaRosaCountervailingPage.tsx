@@ -24,12 +24,12 @@ const SantaRosaCountervailingPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Santa Rosa Countervailing Duty Attorney - CVD Defense & Commerce Department Representation',
         description: 'Expert Santa Rosa countervailing duty attorney providing CVD defense, scope rulings, and subsidy investigation representation for North Bay wine and manufacturing industries.',
-        url: `${siteConfig.siteUrl}/#santa-rosa-countervailing-duty`,
+        url: `${siteConfig.siteUrl}/santa-rosa-countervailing-duty`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Santa Rosa Countervailing Duty Attorney', url: `${siteConfig.siteUrl}/#santa-rosa-countervailing-duty` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Santa Rosa Countervailing Duty Attorney', url: `${siteConfig.siteUrl}/santa-rosa-countervailing-duty` }
       ]),
       generateFAQSchema([
         {

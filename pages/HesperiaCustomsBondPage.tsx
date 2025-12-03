@@ -23,12 +23,12 @@ const HesperiaCustomsBondPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Hesperia Customs Bond Attorney - Import Bond Lawyer High Desert CA',
         description: 'Hesperia customs bond attorney specializing in continuous bonds, single entry bonds, and bond sufficiency for High Desert importers and logistics companies.',
-        url: `${siteConfig.siteUrl}/#hesperia-customs-bond-attorney`,
+        url: `${siteConfig.siteUrl}/hesperia-customs-bond-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Hesperia Customs Bond Attorney', url: `${siteConfig.siteUrl}/#hesperia-customs-bond-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Hesperia Customs Bond Attorney', url: `${siteConfig.siteUrl}/hesperia-customs-bond-attorney` }
       ]),
       generateFAQSchema([
         {

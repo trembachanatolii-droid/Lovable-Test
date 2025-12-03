@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
 
 interface CityPage {
   name: string;
@@ -103,11 +104,6 @@ const RelatedCityPages: React.FC<RelatedCityPagesProps> = memo(({ currentCity, r
   // Get one city from each other region for broader linking
   const otherRegionCities = otherRegions.map(r => cityPagesByRegion[r][0]).slice(0, 4);
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, route: string) => {
-    e.preventDefault();
-    window.location.hash = route;
-  };
-
   return (
     <section className="py-16 px-6 bg-white border-t border-neutral-200">
       <div className="max-w-[1200px] mx-auto">
@@ -124,9 +120,8 @@ const RelatedCityPages: React.FC<RelatedCityPagesProps> = memo(({ currentCity, r
             <ul className="space-y-3">
               {nearbyCities.map((city) => (
                 <li key={city.route}>
-                  <a
-                    href={city.route}
-                    onClick={(e) => handleLinkClick(e, city.route)}
+                  <Link
+                    to={city.route.replace('#', '/')}
                     className="group flex items-center text-text-secondary hover:text-primary-navy transition-colors duration-200"
                   >
                     <svg className="w-4 h-4 mr-2 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -134,7 +129,7 @@ const RelatedCityPages: React.FC<RelatedCityPagesProps> = memo(({ currentCity, r
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                     <span className="group-hover:underline">{city.name}</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -148,16 +143,15 @@ const RelatedCityPages: React.FC<RelatedCityPagesProps> = memo(({ currentCity, r
             <ul className="space-y-3">
               {otherRegionCities.map((city) => (
                 <li key={city.route}>
-                  <a
-                    href={city.route}
-                    onClick={(e) => handleLinkClick(e, city.route)}
+                  <Link
+                    to={city.route.replace('#', '/')}
                     className="group flex items-center text-text-secondary hover:text-primary-navy transition-colors duration-200"
                   >
                     <svg className="w-4 h-4 mr-2 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                     </svg>
                     <span className="group-hover:underline">{city.name}</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -171,16 +165,15 @@ const RelatedCityPages: React.FC<RelatedCityPagesProps> = memo(({ currentCity, r
             <ul className="space-y-3">
               {servicePages.map((service) => (
                 <li key={service.route}>
-                  <a
-                    href={service.route}
-                    onClick={(e) => handleLinkClick(e, service.route)}
+                  <Link
+                    to={service.route.replace('#', '/')}
                     className="group flex items-center text-text-secondary hover:text-primary-navy transition-colors duration-200"
                   >
                     <svg className="w-4 h-4 mr-2 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="group-hover:underline">{service.name}</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -192,16 +185,15 @@ const RelatedCityPages: React.FC<RelatedCityPagesProps> = memo(({ currentCity, r
           <p className="text-text-secondary mb-4">
             Serving all California cities with expert tariff and customs legal services.
           </p>
-          <a
-            href="#california-locations"
-            onClick={(e) => handleLinkClick(e, '#california-locations')}
+          <Link
+            to="/california-locations"
             className="inline-flex items-center text-secondary-teal hover:text-primary-navy font-medium transition-colors duration-200"
           >
             <span>View All 83+ California Locations</span>
             <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

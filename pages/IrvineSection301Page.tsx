@@ -21,12 +21,12 @@ const IrvineSection301Page: React.FC = () => {
       generateWebPageSchema({
         title: 'Section 301 Tariff Attorney Irvine - China Tariff Lawyer Orange County',
         description: 'Expert Section 301 tariff attorney serving Irvine and Orange County tech and medical device companies with China tariff strategies and compliance solutions.',
-        url: `${siteConfig.siteUrl}/#irvine-section-301`,
+        url: `${siteConfig.siteUrl}/irvine-section-301`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Section 301 Attorney Irvine', url: `${siteConfig.siteUrl}/#irvine-section-301` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Section 301 Attorney Irvine', url: `${siteConfig.siteUrl}/irvine-section-301` }
       ]),
       generateFAQSchema([
         {

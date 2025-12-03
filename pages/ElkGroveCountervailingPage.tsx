@@ -30,12 +30,12 @@ const ElkGroveCountervailingPage: React.FC = () => {
         title: 'Elk Grove Countervailing Duty Attorney - CVD Defense & Commerce Department Representation',
         description:
           'Expert Elk Grove countervailing duty attorney providing CVD defense, scope rulings, and subsidy investigation representation for Central Valley technology and manufacturing industries.',
-        url: `${siteConfig.siteUrl}/#elk-grove-countervailing-duty`,
+        url: `${siteConfig.siteUrl}/elk-grove-countervailing-duty`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Elk Grove Countervailing Duty Attorney', url: `${siteConfig.siteUrl}/#elk-grove-countervailing-duty` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Elk Grove Countervailing Duty Attorney', url: `${siteConfig.siteUrl}/elk-grove-countervailing-duty` }
       ]),
       generateFAQSchema([
         {

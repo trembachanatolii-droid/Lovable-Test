@@ -21,12 +21,12 @@ const SacramentoCustomsSeizurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Customs Seizure Attorney Sacramento CA - Cargo Detention Lawyer Northern California',
         description: 'Expert customs seizure attorney serving Sacramento and Northern California with seizure defense, detention release, and forfeiture prevention.',
-        url: `${siteConfig.siteUrl}/#sacramento-customs-seizure`,
+        url: `${siteConfig.siteUrl}/sacramento-customs-seizure`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Customs Seizure Attorney Sacramento', url: `${siteConfig.siteUrl}/#sacramento-customs-seizure` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Customs Seizure Attorney Sacramento', url: `${siteConfig.siteUrl}/sacramento-customs-seizure` }
       ]),
       generateFAQSchema([
         {

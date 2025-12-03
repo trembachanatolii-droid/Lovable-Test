@@ -23,12 +23,12 @@ const InlandEmpireCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Inland Empire Customs Attorney & Tariff Lawyer - Logistics Trade Law Firm',
         description: 'Inland Empire customs attorney and tariff lawyer serving Riverside, San Bernardino, Ontario. Expert logistics trade compliance, warehouse operations, CBP defense, and international trade law for the IE.',
-        url: `${siteConfig.siteUrl}/#inland-empire-customs-attorney`,
+        url: `${siteConfig.siteUrl}/inland-empire-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Inland Empire Customs Attorney', url: `${siteConfig.siteUrl}/#inland-empire-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Inland Empire Customs Attorney', url: `${siteConfig.siteUrl}/inland-empire-customs-attorney` }
       ]),
       generateFAQSchema([
         {

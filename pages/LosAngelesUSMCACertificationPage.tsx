@@ -23,12 +23,12 @@ const LosAngelesUSMCACertificationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Los Angeles USMCA Certification Attorney - NAFTA Replacement & Origin Compliance Lawyer',
         description: 'Los Angeles USMCA certification attorney specializing in USMCA origin compliance, certificates of origin, and trade agreement qualification.',
-        url: `${siteConfig.siteUrl}/#los-angeles-usmca-certification-attorney`,
+        url: `${siteConfig.siteUrl}/los-angeles-usmca-certification-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Los Angeles USMCA Certification Attorney', url: `${siteConfig.siteUrl}/#los-angeles-usmca-certification-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Los Angeles USMCA Certification Attorney', url: `${siteConfig.siteUrl}/los-angeles-usmca-certification-attorney` }
       ]),
       generateFAQSchema([
         {

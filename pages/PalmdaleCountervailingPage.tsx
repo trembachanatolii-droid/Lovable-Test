@@ -24,12 +24,12 @@ const PalmdaleCountervailingPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Palmdale Countervailing Duty Attorney - CVD Defense & Commerce Department Representation',
         description: 'Expert Palmdale countervailing duty attorney providing CVD defense, scope rulings, and subsidy investigation representation for Antelope Valley aerospace, defense, and manufacturing industries.',
-        url: `${siteConfig.siteUrl}/#palmdale-countervailing-duty`,
+        url: `${siteConfig.siteUrl}/palmdale-countervailing-duty`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Palmdale Countervailing Duty Attorney', url: `${siteConfig.siteUrl}/#palmdale-countervailing-duty` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Palmdale Countervailing Duty Attorney', url: `${siteConfig.siteUrl}/palmdale-countervailing-duty` }
       ]),
       generateFAQSchema([
         {

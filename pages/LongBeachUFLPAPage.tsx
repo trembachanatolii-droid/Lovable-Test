@@ -21,12 +21,12 @@ const LongBeachUFLPAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'UFLPA Attorney Long Beach - Forced Labor Port Compliance',
         description: 'Expert UFLPA attorney serving Port of Long Beach businesses with forced labor compliance, detention defense, and supply chain solutions.',
-        url: `${siteConfig.siteUrl}/#long-beach-uflpa`,
+        url: `${siteConfig.siteUrl}/long-beach-uflpa`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'UFLPA Attorney Long Beach', url: `${siteConfig.siteUrl}/#long-beach-uflpa` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'UFLPA Attorney Long Beach', url: `${siteConfig.siteUrl}/long-beach-uflpa` }
       ]),
       generateFAQSchema([
         {

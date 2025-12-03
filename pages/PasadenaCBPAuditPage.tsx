@@ -21,12 +21,12 @@ const PasadenaCBPAuditPage: React.FC = () => {
       generateWebPageSchema({
         title: 'CBP Audit Defense Attorney Pasadena - Customs Audit Lawyer',
         description: 'Expert CBP audit defense attorney serving Pasadena businesses with focused assessment defense, penalty mitigation, and prior disclosure services.',
-        url: `${siteConfig.siteUrl}/#pasadena-cbp-audit`,
+        url: `${siteConfig.siteUrl}/pasadena-cbp-audit`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'CBP Audit Defense Pasadena', url: `${siteConfig.siteUrl}/#pasadena-cbp-audit` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'CBP Audit Defense Pasadena', url: `${siteConfig.siteUrl}/pasadena-cbp-audit` }
       ]),
       generateFAQSchema([
         {

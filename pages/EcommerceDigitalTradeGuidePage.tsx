@@ -28,12 +28,12 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
       generateWebPageSchema({
         title: 'E-Commerce & Digital Trade Compliance Guide for California Online Sellers',
         description: 'Educational resource covering ecommerce import rules, online seller customs compliance, digital trade law, and data transfer export controls.',
-        url: `${siteConfig.siteUrl}/#ecommerce-digital-trade-guide`,
+        url: `${siteConfig.siteUrl}/ecommerce-digital-trade-guide`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Resources', url: `${siteConfig.siteUrl}/#resources` },
-        { name: 'E-Commerce & Digital Trade Guide', url: `${siteConfig.siteUrl}/#ecommerce-digital-trade-guide` }
+        { name: 'Resources', url: `${siteConfig.siteUrl}/resources` },
+        { name: 'E-Commerce & Digital Trade Guide', url: `${siteConfig.siteUrl}/ecommerce-digital-trade-guide` }
       ]),
       generateFAQSchema([
         {

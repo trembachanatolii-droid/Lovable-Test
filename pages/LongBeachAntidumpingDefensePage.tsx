@@ -23,12 +23,12 @@ const LongBeachAntidumpingDefensePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Long Beach Antidumping Defense Attorney - AD/CVD Scope Rulings & EAPA Defense',
         description: 'Expert Long Beach antidumping defense attorney providing scope rulings, EAPA investigation defense, and AD/CVD mitigation for California importers at Port of Long Beach.',
-        url: `${siteConfig.siteUrl}/#long-beach-antidumping-defense`,
+        url: `${siteConfig.siteUrl}/long-beach-antidumping-defense`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Long Beach Antidumping Defense', url: `${siteConfig.siteUrl}/#long-beach-antidumping-defense` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Long Beach Antidumping Defense', url: `${siteConfig.siteUrl}/long-beach-antidumping-defense` }
       ]),
       generateFAQSchema([
         {

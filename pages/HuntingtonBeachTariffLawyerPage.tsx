@@ -23,12 +23,12 @@ const HuntingtonBeachTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Huntington Beach Tariff Lawyer & Coastal Customs Attorney - Orange County CA',
         description: 'Huntington Beach tariff lawyer serving coastal businesses and Orange County importers. Expert customs legal services for marine trade, surfwear, and Port of Long Beach operations.',
-        url: `${siteConfig.siteUrl}/#huntington-beach-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/huntington-beach-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Huntington Beach Tariff Lawyer', url: `${siteConfig.siteUrl}/#huntington-beach-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Huntington Beach Tariff Lawyer', url: `${siteConfig.siteUrl}/huntington-beach-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

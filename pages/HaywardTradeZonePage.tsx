@@ -21,12 +21,12 @@ const HaywardTradeZonePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Hayward Foreign Trade Zone Attorney - FTZ Lawyer East Bay',
         description: 'Expert Foreign Trade Zone attorney serving Hayward and East Bay manufacturers with FTZ establishment, Port of Oakland coordination, and duty deferral strategies.',
-        url: `${siteConfig.siteUrl}/#hayward-foreign-trade-zone`,
+        url: `${siteConfig.siteUrl}/hayward-foreign-trade-zone`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Hayward Foreign Trade Zone', url: `${siteConfig.siteUrl}/#hayward-foreign-trade-zone` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Hayward Foreign Trade Zone', url: `${siteConfig.siteUrl}/hayward-foreign-trade-zone` }
       ]),
       generateFAQSchema([
         {

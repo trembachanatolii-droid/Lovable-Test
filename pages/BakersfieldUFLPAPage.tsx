@@ -21,12 +21,12 @@ const BakersfieldUFLPAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'UFLPA Attorney Bakersfield CA - Forced Labor Compliance Lawyer',
         description: 'Expert UFLPA attorney serving Bakersfield and Kern County businesses with forced labor compliance, detention defense, and supply chain solutions.',
-        url: `${siteConfig.siteUrl}/#bakersfield-uflpa`,
+        url: `${siteConfig.siteUrl}/bakersfield-uflpa`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'UFLPA Attorney Bakersfield', url: `${siteConfig.siteUrl}/#bakersfield-uflpa` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'UFLPA Attorney Bakersfield', url: `${siteConfig.siteUrl}/bakersfield-uflpa` }
       ]),
       generateFAQSchema([
         {

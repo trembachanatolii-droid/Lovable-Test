@@ -23,12 +23,12 @@ const MorenoValleyCustomsPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Moreno Valley Customs Lawyer & Inland Empire Trade Attorney - California',
         description: 'Moreno Valley customs lawyer serving Inland Empire logistics companies, warehouses, and distribution centers. Expert trade compliance and CBP defense services.',
-        url: `${siteConfig.siteUrl}/#moreno-valley-customs-lawyer`,
+        url: `${siteConfig.siteUrl}/moreno-valley-customs-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Moreno Valley Customs Lawyer', url: `${siteConfig.siteUrl}/#moreno-valley-customs-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Moreno Valley Customs Lawyer', url: `${siteConfig.siteUrl}/moreno-valley-customs-lawyer` }
       ]),
       generateFAQSchema([
         {

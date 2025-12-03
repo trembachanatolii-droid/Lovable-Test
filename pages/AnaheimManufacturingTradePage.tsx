@@ -23,12 +23,12 @@ const AnaheimManufacturingTradePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Anaheim Manufacturing Trade Attorney - Industrial Import & Machinery Lawyer',
         description: 'Anaheim manufacturing trade attorney specializing in industrial imports, machinery classification, manufacturing equipment tariffs, and trade compliance.',
-        url: `${siteConfig.siteUrl}/#anaheim-manufacturing-trade-attorney`,
+        url: `${siteConfig.siteUrl}/anaheim-manufacturing-trade-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Anaheim Manufacturing Trade Attorney', url: `${siteConfig.siteUrl}/#anaheim-manufacturing-trade-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Anaheim Manufacturing Trade Attorney', url: `${siteConfig.siteUrl}/anaheim-manufacturing-trade-attorney` }
       ]),
       generateFAQSchema([
         {

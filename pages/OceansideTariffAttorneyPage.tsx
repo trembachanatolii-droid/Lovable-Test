@@ -23,12 +23,12 @@ const OceansideTariffAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Oceanside Tariff Attorney & North County Customs Lawyer - San Diego CA',
         description: 'Oceanside tariff attorney serving North San Diego County businesses. Expert customs legal services for defense contractors, manufacturing, and cross-border trade.',
-        url: `${siteConfig.siteUrl}/#oceanside-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/oceanside-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Oceanside Tariff Attorney', url: `${siteConfig.siteUrl}/#oceanside-tariff-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Oceanside Tariff Attorney', url: `${siteConfig.siteUrl}/oceanside-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

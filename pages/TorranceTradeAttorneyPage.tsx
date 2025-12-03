@@ -23,12 +23,12 @@ const TorranceTradeAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Torrance Trade Attorney & Customs Lawyer - South Bay Business Hub',
         description: 'Torrance trade attorney and customs lawyer providing expert legal representation for South Bay businesses. CBP defense, tariff classification, customs audits, and international trade compliance for manufacturing and tech companies.',
-        url: `${siteConfig.siteUrl}/#torrance-trade-attorney`,
+        url: `${siteConfig.siteUrl}/torrance-trade-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Torrance Trade Attorney', url: `${siteConfig.siteUrl}/#torrance-trade-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Torrance Trade Attorney', url: `${siteConfig.siteUrl}/torrance-trade-attorney` }
       ]),
       generateFAQSchema([
         {

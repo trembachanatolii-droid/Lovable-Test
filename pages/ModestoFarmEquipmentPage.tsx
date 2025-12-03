@@ -23,12 +23,12 @@ const ModestoFarmEquipmentPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Modesto Farm Equipment Tariff Attorney - Agricultural Machinery Import Lawyer',
         description: 'Modesto farm equipment tariff attorney specializing in agricultural machinery imports, tractor classification, farm equipment tariffs, and ag trade law.',
-        url: `${siteConfig.siteUrl}/#modesto-farm-equipment-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/modesto-farm-equipment-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Modesto Farm Equipment Tariff Attorney', url: `${siteConfig.siteUrl}/#modesto-farm-equipment-tariff-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Modesto Farm Equipment Tariff Attorney', url: `${siteConfig.siteUrl}/modesto-farm-equipment-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

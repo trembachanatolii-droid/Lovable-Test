@@ -23,12 +23,12 @@ const StocktonAgTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Stockton Agricultural Tariff Lawyer - Farm Product Tariff Attorney',
         description: 'Stockton agricultural tariff lawyer specializing in farm product classification, agricultural equipment imports, and crop tariff compliance.',
-        url: `${siteConfig.siteUrl}/#stockton-agricultural-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/stockton-agricultural-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Stockton Agricultural Tariff Lawyer', url: `${siteConfig.siteUrl}/#stockton-agricultural-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Stockton Agricultural Tariff Lawyer', url: `${siteConfig.siteUrl}/stockton-agricultural-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

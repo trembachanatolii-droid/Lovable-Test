@@ -23,12 +23,12 @@ const BakersfieldTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Bakersfield Tariff Lawyer & Kern County Customs Attorney - Agricultural & Energy Trade Law',
         description: 'Bakersfield tariff lawyer and Kern County customs attorney providing expert legal representation for agricultural imports, energy equipment, tariff classification, and CBP defense.',
-        url: `${siteConfig.siteUrl}/#bakersfield-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/bakersfield-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Bakersfield Tariff Lawyer', url: `${siteConfig.siteUrl}/#bakersfield-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Bakersfield Tariff Lawyer', url: `${siteConfig.siteUrl}/bakersfield-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

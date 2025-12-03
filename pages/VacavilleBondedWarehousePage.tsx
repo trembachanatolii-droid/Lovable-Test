@@ -22,12 +22,12 @@ const VacavilleBondedWarehousePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Vacaville Bonded Warehouse Attorney - Solano County Customs Compliance',
         description: 'Vacaville bonded warehouse attorney providing expert legal representation for establishing and operating CBP bonded warehouses, FTZ facilities, and duty deferral programs in Solano County.',
-        url: `${siteConfig.siteUrl}/#vacaville-bonded-warehouse`,
+        url: `${siteConfig.siteUrl}/vacaville-bonded-warehouse`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Vacaville Bonded Warehouse Attorney', url: `${siteConfig.siteUrl}/#vacaville-bonded-warehouse` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Vacaville Bonded Warehouse Attorney', url: `${siteConfig.siteUrl}/vacaville-bonded-warehouse` }
       ]),
       generateFAQSchema([
         {

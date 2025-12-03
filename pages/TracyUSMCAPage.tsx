@@ -22,12 +22,12 @@ const TracyUSMCAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Tracy USMCA Attorney - Free Trade Agreement & Origin Compliance Lawyer',
         description: 'Tracy USMCA attorney providing expert free trade agreement services, certificate of origin preparation, and NAFTA replacement compliance for Central Valley businesses.',
-        url: `${siteConfig.siteUrl}/#tracy-usmca-attorney`,
+        url: `${siteConfig.siteUrl}/tracy-usmca-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Tracy USMCA Attorney', url: `${siteConfig.siteUrl}/#tracy-usmca-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Tracy USMCA Attorney', url: `${siteConfig.siteUrl}/tracy-usmca-attorney` }
       ]),
       generateFAQSchema([
         {

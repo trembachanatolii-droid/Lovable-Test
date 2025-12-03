@@ -21,12 +21,12 @@ const NapaCustomsValuationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Napa Customs Valuation Attorney - Wine Country Trade Lawyer',
         description: 'Expert Napa customs valuation attorney serving Wine Country importers. Transaction value, assists, royalties, and transfer pricing compliance.',
-        url: `${siteConfig.siteUrl}/#napa-customs-valuation`,
+        url: `${siteConfig.siteUrl}/napa-customs-valuation`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Napa Customs Valuation', url: `${siteConfig.siteUrl}/#napa-customs-valuation` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Napa Customs Valuation', url: `${siteConfig.siteUrl}/napa-customs-valuation` }
       ]),
       generateFAQSchema([
         {

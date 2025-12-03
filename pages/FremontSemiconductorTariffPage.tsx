@@ -22,12 +22,12 @@ const FremontSemiconductorTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Semiconductor Tariff Attorney Fremont CA - Chip Import Lawyer',
         description: 'Expert semiconductor tariff attorney serving Fremont and Silicon Valley. Comprehensive chip import services including tariff classification, export controls, and trade compliance.',
-        url: `${siteConfig.siteUrl}/#fremont-semiconductor-tariff`,
+        url: `${siteConfig.siteUrl}/fremont-semiconductor-tariff`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Semiconductor Tariff Attorney Fremont', url: `${siteConfig.siteUrl}/#fremont-semiconductor-tariff` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Semiconductor Tariff Attorney Fremont', url: `${siteConfig.siteUrl}/fremont-semiconductor-tariff` }
       ]),
       generateFAQSchema([
         {

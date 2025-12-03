@@ -22,12 +22,12 @@ const FontanaPenaltyMitigationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Fontana Customs Penalty Mitigation Attorney - CBP Penalty Defense Expert',
         description: 'Fontana customs penalty mitigation attorney providing expert CBP penalty defense, CF-29 response, and prior disclosure services. Reduce customs penalties by 75% or more.',
-        url: `${siteConfig.siteUrl}/#fontana-customs-penalty-mitigation`,
+        url: `${siteConfig.siteUrl}/fontana-customs-penalty-mitigation`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Fontana Customs Penalty Mitigation Attorney', url: `${siteConfig.siteUrl}/#fontana-customs-penalty-mitigation` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Fontana Customs Penalty Mitigation Attorney', url: `${siteConfig.siteUrl}/fontana-customs-penalty-mitigation` }
       ]),
       generateFAQSchema([
         {

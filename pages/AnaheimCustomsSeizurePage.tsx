@@ -21,12 +21,12 @@ const AnaheimCustomsSeizurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Customs Seizure Attorney Anaheim CA - Cargo Detention Lawyer Orange County',
         description: 'Expert customs seizure attorney serving Anaheim and Orange County with seizure defense, detention release, and forfeiture prevention.',
-        url: `${siteConfig.siteUrl}/#anaheim-customs-seizure`,
+        url: `${siteConfig.siteUrl}/anaheim-customs-seizure`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Customs Seizure Attorney Anaheim', url: `${siteConfig.siteUrl}/#anaheim-customs-seizure` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Customs Seizure Attorney Anaheim', url: `${siteConfig.siteUrl}/anaheim-customs-seizure` }
       ]),
       generateFAQSchema([
         {

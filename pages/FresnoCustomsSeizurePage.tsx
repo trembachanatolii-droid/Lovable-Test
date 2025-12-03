@@ -21,12 +21,12 @@ const FresnoCustomsSeizurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Customs Seizure Attorney Fresno CA - Cargo Detention Lawyer Central Valley',
         description: 'Expert customs seizure attorney serving Fresno and Central Valley with seizure defense, detention release, and forfeiture prevention.',
-        url: `${siteConfig.siteUrl}/#fresno-customs-seizure`,
+        url: `${siteConfig.siteUrl}/fresno-customs-seizure`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Customs Seizure Attorney Fresno', url: `${siteConfig.siteUrl}/#fresno-customs-seizure` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Customs Seizure Attorney Fresno', url: `${siteConfig.siteUrl}/fresno-customs-seizure` }
       ]),
       generateFAQSchema([
         {

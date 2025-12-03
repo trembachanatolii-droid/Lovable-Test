@@ -22,12 +22,12 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
       generateWebPageSchema({
         title: 'CBP Audit Defense Attorney Irvine CA - Customs Audit Lawyer Orange County',
         description: 'Expert CBP audit defense attorney in Irvine, California. Comprehensive customs audit defense services including focused assessment defense, penalty mitigation, and prior disclosure representation.',
-        url: `${siteConfig.siteUrl}/#irvine-cbp-audit-defense`,
+        url: `${siteConfig.siteUrl}/irvine-cbp-audit-defense`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'CBP Audit Defense Attorney Irvine', url: `${siteConfig.siteUrl}/#irvine-cbp-audit-defense` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'CBP Audit Defense Attorney Irvine', url: `${siteConfig.siteUrl}/irvine-cbp-audit-defense` }
       ]),
       generateFAQSchema([
         {

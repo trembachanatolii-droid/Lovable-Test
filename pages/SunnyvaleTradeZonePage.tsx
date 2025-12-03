@@ -21,12 +21,12 @@ const SunnyvaleTradeZonePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Sunnyvale Foreign Trade Zone Attorney - FTZ Lawyer Silicon Valley',
         description: 'Expert Foreign Trade Zone attorney serving Sunnyvale and Silicon Valley tech companies with FTZ establishment, compliance, and duty deferral strategies for electronics and innovation.',
-        url: `${siteConfig.siteUrl}/#sunnyvale-foreign-trade-zone`,
+        url: `${siteConfig.siteUrl}/sunnyvale-foreign-trade-zone`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Sunnyvale Foreign Trade Zone', url: `${siteConfig.siteUrl}/#sunnyvale-foreign-trade-zone` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Sunnyvale Foreign Trade Zone', url: `${siteConfig.siteUrl}/sunnyvale-foreign-trade-zone` }
       ]),
       generateFAQSchema([
         {

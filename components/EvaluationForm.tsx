@@ -67,6 +67,7 @@ interface FormFieldProps {
     isTextArea?: boolean;
     placeholder?: string;
     autoComplete?: string;
+    inputMode?: string;
     inputClassName?: string;
     labelColor?: string;
     error?: string;
@@ -81,6 +82,7 @@ const FormField: React.FC<FormFieldProps> = ({
     isTextArea = false,
     placeholder,
     autoComplete,
+    inputMode,
     inputClassName,
     labelColor = 'text-white',
     error,
@@ -92,6 +94,7 @@ const FormField: React.FC<FormFieldProps> = ({
         required,
         placeholder,
         autoComplete,
+        inputMode,
         onBlur,
         'aria-required': required,
         'aria-invalid': !!error,
@@ -110,7 +113,7 @@ const FormField: React.FC<FormFieldProps> = ({
                 <input type={type} {...commonProps} aria-label={label} />
             )}
             {error && (
-                <span id={`${id}-error`} className="text-red-500 text-sm mt-1 block" role="alert">
+                <span id={`${id}-error`} className="text-red-400 text-base mt-1 block font-medium" role="alert">
                     {error}
                 </span>
             )}
@@ -358,6 +361,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                                 required
                                 placeholder=""
                                 autoComplete="email"
+                                inputMode="email"
                                 inputClassName={styles.inputBg}
                                 labelColor={styles.labelColor}
                                 error={fieldErrors.email}
@@ -372,6 +376,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                                 required
                                 placeholder=""
                                 autoComplete="tel"
+                                inputMode="tel"
                                 inputClassName={styles.inputBg}
                                 labelColor={styles.labelColor}
                                 error={fieldErrors.phone}
@@ -408,7 +413,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                                     </div>
                                 </div>
                                 {fieldErrors.subject && (
-                                    <span id="subject-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                    <span id="subject-error" className="text-red-400 text-base mt-1 block font-medium" role="alert">
                                         {fieldErrors.subject}
                                     </span>
                                 )}
@@ -434,6 +439,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                                 className={`bg-secondary-forestGreen text-white hover:bg-secondary-teal transform transition-transform duration-200 hover:scale-[1.03] px-16 py-5 text-base font-bold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                                 aria-label="Submit case evaluation request"
                                 disabled={isSubmitting}
+                                aria-disabled={isSubmitting}
                             >
                                 {isSubmitting ? 'SUBMITTING...' : 'SUBMIT FOR REVIEW'}
                             </Button>

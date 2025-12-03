@@ -23,12 +23,12 @@ const MurrietaTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Murrieta Tariff Lawyer & Customs Attorney - Southwest Riverside County Trade Law',
         description: 'Murrieta tariff lawyer and customs attorney providing expert legal representation for Southwest Riverside County businesses. CBP defense, tariff classification, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#murrieta-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/murrieta-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Murrieta Tariff Lawyer', url: `${siteConfig.siteUrl}/#murrieta-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Murrieta Tariff Lawyer', url: `${siteConfig.siteUrl}/murrieta-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

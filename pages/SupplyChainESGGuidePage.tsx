@@ -28,12 +28,12 @@ const SupplyChainESGGuidePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Supply Chain Ethics & ESG Compliance Guide for California Importers',
         description: 'Educational resource on supply chain ESG compliance, forced labor import bans, UFLPA, green trade regulations, carbon border adjustment, and anti-corruption compliance.',
-        url: `${siteConfig.siteUrl}/#supply-chain-esg-compliance-guide`,
+        url: `${siteConfig.siteUrl}/supply-chain-esg-compliance-guide`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Resources', url: `${siteConfig.siteUrl}/#resources` },
-        { name: 'Supply Chain ESG Guide', url: `${siteConfig.siteUrl}/#supply-chain-esg-compliance-guide` }
+        { name: 'Resources', url: `${siteConfig.siteUrl}/resources` },
+        { name: 'Supply Chain ESG Guide', url: `${siteConfig.siteUrl}/supply-chain-esg-compliance-guide` }
       ]),
       generateFAQSchema([
         {

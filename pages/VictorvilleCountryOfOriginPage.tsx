@@ -22,12 +22,12 @@ const VictorvilleCountryOfOriginPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Victorville Country of Origin Attorney - High Desert Product Origin Legal Services',
         description: 'Victorville country of origin attorney providing comprehensive legal representation for manufacturers and importers navigating substantial transformation, marking requirements, and trade agreement compliance.',
-        url: `${siteConfig.siteUrl}/#victorville-country-of-origin-attorney`,
+        url: `${siteConfig.siteUrl}/victorville-country-of-origin-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Victorville Country of Origin Attorney', url: `${siteConfig.siteUrl}/#victorville-country-of-origin-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Victorville Country of Origin Attorney', url: `${siteConfig.siteUrl}/victorville-country-of-origin-attorney` }
       ]),
       generateFAQSchema([
         {

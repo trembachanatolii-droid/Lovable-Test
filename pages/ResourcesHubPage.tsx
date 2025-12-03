@@ -20,18 +20,18 @@ const ResourcesHubPage: React.FC = () => {
       generateWebPageSchema({
         title: 'California International Trade Law Resources & Knowledge Hub',
         description: 'Authoritative educational resources on international trade law, customs compliance, ESG, and digital trade for California businesses.',
-        url: `${siteConfig.siteUrl}/#resources`,
+        url: `${siteConfig.siteUrl}/resources`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Resources', url: `${siteConfig.siteUrl}/#resources` }
+        { name: 'Resources', url: `${siteConfig.siteUrl}/resources` }
       ]),
       {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         name: 'California International Trade Law Resources',
         description: 'Comprehensive knowledge hub for international trade compliance, customs regulations, and import/export legal guidance.',
-        url: `${siteConfig.siteUrl}/#resources`,
+        url: `${siteConfig.siteUrl}/resources`,
         about: {
           '@type': 'Thing',
           name: 'International Trade Law',
@@ -45,7 +45,7 @@ const ResourcesHubPage: React.FC = () => {
               item: {
                 '@type': 'Article',
                 name: 'Tariffs, Duties & HTS Classification Guide',
-                url: `${siteConfig.siteUrl}/#tariffs-duties-classification-guide`,
+                url: `${siteConfig.siteUrl}/tariffs-duties-classification-guide`,
                 description: 'Comprehensive guide to HTS classification, antidumping/countervailing duties, Section 301/232 tariffs, and customs valuation.',
               },
             },
@@ -55,7 +55,7 @@ const ResourcesHubPage: React.FC = () => {
               item: {
                 '@type': 'Article',
                 name: 'Supply Chain Ethics & ESG Compliance Guide',
-                url: `${siteConfig.siteUrl}/#supply-chain-esg-compliance-guide`,
+                url: `${siteConfig.siteUrl}/supply-chain-esg-compliance-guide`,
                 description: 'Complete resource on forced labor import bans, UFLPA compliance, green trade regulations, and FCPA anti-corruption.',
               },
             },
@@ -65,7 +65,7 @@ const ResourcesHubPage: React.FC = () => {
               item: {
                 '@type': 'Article',
                 name: 'E-Commerce & Digital Trade Compliance Guide',
-                url: `${siteConfig.siteUrl}/#ecommerce-digital-trade-guide`,
+                url: `${siteConfig.siteUrl}/ecommerce-digital-trade-guide`,
                 description: 'Essential guide for online sellers covering Section 321, Amazon FBA compliance, and data transfer export controls.',
               },
             },

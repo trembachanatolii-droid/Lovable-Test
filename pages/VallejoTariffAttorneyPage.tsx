@@ -23,12 +23,12 @@ const VallejoTariffAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Vallejo Tariff Attorney & Customs Lawyer - Solano County Trade Law Firm',
         description: 'Vallejo tariff attorney and customs lawyer providing expert legal representation for Solano County businesses. CBP defense, tariff classification, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#vallejo-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/vallejo-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Vallejo Tariff Attorney', url: `${siteConfig.siteUrl}/#vallejo-tariff-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Vallejo Tariff Attorney', url: `${siteConfig.siteUrl}/vallejo-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

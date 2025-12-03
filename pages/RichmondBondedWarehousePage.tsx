@@ -22,12 +22,12 @@ const RichmondBondedWarehousePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Richmond Bonded Warehouse Attorney - West Contra Costa Customs Compliance',
         description: 'Richmond bonded warehouse attorney providing expert legal services for CBP bonded warehouse establishment, Port of Richmond customs compliance, and duty deferral programs in West Contra Costa County.',
-        url: `${siteConfig.siteUrl}/#richmond-bonded-warehouse`,
+        url: `${siteConfig.siteUrl}/richmond-bonded-warehouse`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Richmond Bonded Warehouse Attorney', url: `${siteConfig.siteUrl}/#richmond-bonded-warehouse` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Richmond Bonded Warehouse Attorney', url: `${siteConfig.siteUrl}/richmond-bonded-warehouse` }
       ]),
       generateFAQSchema([
         {

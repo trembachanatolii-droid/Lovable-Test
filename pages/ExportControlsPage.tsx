@@ -20,18 +20,18 @@ const ExportControlsPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Export Controls & Sanctions - ITAR, EAR, OFAC Compliance California Lawyer',
         description: 'Comprehensive export controls California legal services for ITAR, EAR, OFAC compliance, export licensing, and trade sanctions defense.',
-        url: `${siteConfig.siteUrl}/#export-controls-sanctions`,
+        url: `${siteConfig.siteUrl}/export-controls-sanctions`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Practice Areas', url: `${siteConfig.siteUrl}/#practice-areas` },
-        { name: 'Export Controls & Sanctions', url: `${siteConfig.siteUrl}/#export-controls-sanctions` }
+        { name: 'Practice Areas', url: `${siteConfig.siteUrl}/practice-areas` },
+        { name: 'Export Controls & Sanctions', url: `${siteConfig.siteUrl}/export-controls-sanctions` }
       ]),
       generateServiceSchema({
         name: 'California Export Controls & Trade Sanctions Legal Services',
         description: 'Expert export controls California lawyer services including ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export regulations, dual use items compliance, deemed exports management, and restricted party screening for California tech companies, manufacturers, and defense contractors.',
         serviceType: 'Export Controls & Sanctions',
-        url: `${siteConfig.siteUrl}/#export-controls-sanctions`,
+        url: `${siteConfig.siteUrl}/export-controls-sanctions`,
       }),
     ],
   });

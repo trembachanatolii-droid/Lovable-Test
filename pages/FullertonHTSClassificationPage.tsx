@@ -21,12 +21,12 @@ const FullertonHTSClassificationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'HTS Classification Attorney Fullerton - Harmonized Tariff Schedule Expert Orange County',
         description: 'Expert HTS classification attorney serving Fullerton and Orange County importers. Harmonized Tariff Schedule expertise, binding rulings, duty optimization, and tariff engineering for OC manufacturers.',
-        url: `${siteConfig.siteUrl}/#fullerton-hts-classification`,
+        url: `${siteConfig.siteUrl}/fullerton-hts-classification`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Fullerton HTS Classification Attorney', url: `${siteConfig.siteUrl}/#fullerton-hts-classification` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Fullerton HTS Classification Attorney', url: `${siteConfig.siteUrl}/fullerton-hts-classification` }
       ]),
       generateFAQSchema([
         {
