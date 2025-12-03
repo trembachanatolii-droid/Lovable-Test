@@ -12,13 +12,20 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
   const isInternalLink = article.linkHref.startsWith('#');
   const Component = isInternalLink ? Link : 'a';
   const linkProps = isInternalLink
-    ? { to: article.linkHref.replace('#', '/') }
-    : { href: article.linkHref };
+    ? {
+        to: article.linkHref.replace('#', '/'),
+        'aria-label': `Read article: ${article.title}`
+      }
+    : {
+        href: article.linkHref,
+        target: '_blank',
+        rel: 'noopener noreferrer',
+        'aria-label': `Read article: ${article.title} (opens in new tab)`
+      };
 
   return (
     <Component
       {...linkProps}
-      aria-label={`Read article: ${article.title}`}
       className="block group relative bg-white overflow-hidden transition-all duration-300 shadow-sm hover:-translate-y-1 hover:shadow-xl will-change-transform border border-border-subtle rounded-2xl"
     >
       {/* Green Triangle with White Arrow */}

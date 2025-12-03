@@ -146,6 +146,11 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Permitted-Cross-Domain-Policies: none
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
 
 # Root HTML (index.html)
 /
@@ -155,6 +160,11 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Permitted-Cross-Domain-Policies: none
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
 
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
@@ -163,6 +173,11 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Permitted-Cross-Domain-Policies: none
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
 
 # Manifest and configuration files - Medium cache with revalidation
 /manifest.json

@@ -12,8 +12,8 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
 const LosAngelesSection301Page: React.FC = () => {
   useMeta({
-    title: 'Section 301 Tariff Attorney Los Angeles | China Tariff Lawyer CA',
-    description: 'Los Angeles Section 301 tariff attorney. Expert China tariff strategies, exclusion requests, tariff engineering, protests. Minimize Section 301 duties. (310) 744-1328.',
+    title: 'Section 301 Attorney Los Angeles | China Tariff Lawyer',
+    description: 'LA Section 301 tariff attorney. Expert China tariff strategies, exclusion requests, protests. Minimize Section 301 duties. (310) 744-1328.',
     keywords: 'section 301 attorney los angeles, china tariff lawyer los angeles, section 301 exclusion attorney california, tariff engineering lawyer la, china trade war attorney los angeles',
     canonical: 'los-angeles-section-301',
     ogType: 'website',
@@ -72,6 +72,7 @@ const LosAngelesSection301Page: React.FC = () => {
             width="1920"
             height="1080"
             loading="eager"
+            style={{ aspectRatio: '16 / 9' }}
             decoding="async"
             className="hero-bg-image"
           />

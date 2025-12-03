@@ -33,7 +33,9 @@ export interface MetaConfig {
   robots?: string;
 
   // Schema.org JSON-LD
-  schema?: any;
+  // Can be a single schema object or an array of schemas
+  // Arrays are automatically optimized using @graph structure for better SEO
+  schema?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
 export interface AddressConfig {

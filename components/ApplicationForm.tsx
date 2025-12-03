@@ -692,14 +692,14 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                     
                     <div className="bg-neutral-50 p-6 border-dashed border-2 border-neutral-300 rounded-lg text-center">
                         <label htmlFor="resume" className="block text-lg font-bold mb-2">Resume / CV <span className="text-red-500">*</span></label>
-                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" className="block w-full text-sm text-neutral-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-navy/10 file:text-primary-navy hover:file:bg-primary-navy/20 mb-2" required aria-required="true" />
-                        <span className="text-xs text-neutral-400">PDF, DOCX up to 5MB</span>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" className="block w-full text-sm text-neutral-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-navy/10 file:text-primary-navy hover:file:bg-primary-navy/20 mb-2" required aria-required="true" />
+                        <span className="text-xs text-neutral-400">PDF, DOCX, or image formats up to 5MB</span>
                     </div>
 
                     <div className="bg-neutral-50 p-6 border-dashed border-2 border-neutral-300 rounded-lg text-center">
                         <label htmlFor="coverLetter" className="block text-lg font-bold mb-2">Cover Letter</label>
-                        <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx" className="block w-full text-sm text-neutral-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-navy/10 file:text-primary-navy hover:file:bg-primary-navy/20 mb-2" />
-                         <span className="text-xs text-neutral-400">Optional but recommended</span>
+                        <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" className="block w-full text-sm text-neutral-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-navy/10 file:text-primary-navy hover:file:bg-primary-navy/20 mb-2" />
+                         <span className="text-xs text-neutral-400">Optional but recommended - PDF, DOCX, or image formats</span>
                     </div>
 
                     {(category === 'attorney' || category === 'students') && (

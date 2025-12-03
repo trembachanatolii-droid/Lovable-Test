@@ -77,6 +77,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
             width="1920"
             height="1080"
             loading="eager"
+            style={{ aspectRatio: '16 / 9' }}
             decoding="async"
             className="hero-bg-image"
           />

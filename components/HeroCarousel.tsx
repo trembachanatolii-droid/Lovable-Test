@@ -78,6 +78,7 @@ return (
                           fetchPriority={index === currentIndex ? 'high' : 'low'}
                           width="1920"
                           height="1080"
+                          style={{ aspectRatio: '16 / 9' }}
                       />
                     </picture>
                     <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent"></div>

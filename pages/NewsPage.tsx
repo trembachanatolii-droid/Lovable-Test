@@ -197,6 +197,7 @@ const NewsPage: React.FC = () => {
               alt="Professional business news analysis representing trade law insights and industry updates"
               className="w-full h-full object-cover object-center"
               loading="eager"
+            style={{ aspectRatio: '16 / 9' }}
               decoding="async"
               fetchpriority="high"
               width="1920"

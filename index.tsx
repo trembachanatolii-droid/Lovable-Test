@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import { initWebVitals } from './utils/webVitals';
 
 // Defer framer-motion loading until after initial render to reduce critical path
 const FramerMotionWrapper = lazy(() =>
@@ -109,4 +110,24 @@ if ('serviceWorker' in navigator) {
       window.location.reload();
     });
   });
+}
+
+// Initialize Web Vitals monitoring
+// Use requestIdleCallback to avoid blocking critical rendering path
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(() => {
+    initWebVitals((metric) => {
+      // Optional: Custom callback for each metric
+      // Can be used to send metrics to custom analytics endpoint
+      if (import.meta.env.PROD) {
+        // Example: Send to analytics service
+        // sendToAnalytics(metric);
+      }
+    });
+  });
+} else {
+  // Fallback for browsers without requestIdleCallback
+  setTimeout(() => {
+    initWebVitals();
+  }, 1000);
 }

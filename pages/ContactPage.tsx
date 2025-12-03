@@ -54,6 +54,7 @@ const ContactPage: React.FC = () => {
                alt="California international trade attorney office - Contact Trembach Law Firm for customs and import law consultations"
                className="w-full h-full object-cover object-center"
                loading="eager"
+            style={{ aspectRatio: '16 / 9' }}
                decoding="async"
                fetchpriority="high"
                width="1920"

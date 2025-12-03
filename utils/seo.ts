@@ -101,6 +101,68 @@ export function removeJsonLd(id: string): void {
 }
 
 /**
+ * Strips @context from a schema object
+ * Used when combining multiple schemas into a @graph structure
+ */
+function stripContext(schema: Record<string, unknown>): Record<string, unknown> {
+  const { '@context': _, ...rest } = schema;
+  return rest;
+}
+
+/**
+ * Wraps multiple schema objects in a single @graph structure
+ * This reduces payload size and follows schema.org best practices
+ *
+ * AUTOMATIC OPTIMIZATION: When using useMeta() hook, arrays of schemas are
+ * automatically wrapped with @graph - no manual wrapping needed!
+ *
+ * @param schemas - Array of schema objects (with or without @context)
+ * @returns Single schema object with @context and @graph containing all schemas
+ *
+ * @example Automatic (Recommended - no changes needed to existing code)
+ * useMeta({
+ *   title: 'My Page',
+ *   description: 'Description',
+ *   schema: [
+ *     generateWebPageSchema({...}),
+ *     generateArticleSchema({...}),
+ *     generateBreadcrumbSchema([...])
+ *   ]
+ * });
+ * // Output: {"@context": "...", "@graph": [{...}, {...}, {...}]}
+ *
+ * @example Manual (for direct setJsonLd usage)
+ * const schemas = [
+ *   generateWebPageSchema({...}),
+ *   generateArticleSchema({...})
+ * ];
+ * setJsonLd('schema-graph', wrapInGraph(schemas));
+ *
+ * @example Before optimization (inefficient - 3x @context)
+ * [
+ *   {"@context": "https://schema.org", "@type": "WebPage", ...},
+ *   {"@context": "https://schema.org", "@type": "Article", ...},
+ *   {"@context": "https://schema.org", "@type": "FAQPage", ...}
+ * ]
+ *
+ * @example After optimization (efficient - 1x @context)
+ * {
+ *   "@context": "https://schema.org",
+ *   "@graph": [
+ *     {"@type": "WebPage", ...},
+ *     {"@type": "Article", ...},
+ *     {"@type": "FAQPage", ...}
+ *   ]
+ * }
+ */
+export function wrapInGraph(schemas: Array<Record<string, unknown>>): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@graph': schemas.map(schema => stripContext(schema))
+  };
+}
+
+/**
  * Generate Article Schema.org JSON-LD
  */
 export function generateArticleSchema(config: {
