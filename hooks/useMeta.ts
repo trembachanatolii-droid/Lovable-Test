@@ -7,6 +7,7 @@ import {
   setLinkTag,
   setJsonLd,
   removeJsonLd,
+  wrapInGraph,
 } from '../utils/seo';
 
 /**
@@ -33,6 +34,36 @@ export function useMeta(config: MetaConfig): void {
       ? config.title
       : `${config.title} | ${siteConfig.siteName}`;
     document.title = fullTitle;
+
+    // Development-only validation warnings
+    if (process.env.NODE_ENV === 'development') {
+      // Validate title length (Google truncates at ~60 characters)
+      if (config.title.length > 60) {
+        console.warn(
+          `[SEO Warning] Title tag is too long (${config.title.length} chars). Google truncates at ~60 characters.\nTitle: "${config.title}"`
+        );
+      }
+
+      // Validate description length (Google truncates at ~155-160 characters)
+      if (config.description.length > 160) {
+        console.warn(
+          `[SEO Warning] Meta description is too long (${config.description.length} chars). Google truncates at ~155-160 characters.\nDescription: "${config.description}"`
+        );
+      }
+
+      // Warn if title or description are too short
+      if (config.title.length < 30) {
+        console.warn(
+          `[SEO Warning] Title tag is too short (${config.title.length} chars). Recommended minimum is 30 characters.\nTitle: "${config.title}"`
+        );
+      }
+
+      if (config.description.length < 120) {
+        console.warn(
+          `[SEO Warning] Meta description is too short (${config.description.length} chars). Recommended minimum is 120 characters.\nDescription: "${config.description}"`
+        );
+      }
+    }
 
     // 2. Basic meta tags
     setMetaTag('name', 'description', config.description);
@@ -110,8 +141,12 @@ export function useMeta(config: MetaConfig): void {
     }
 
     // 7. Schema.org JSON-LD
+    // Automatically optimize arrays of schemas using @graph structure
     if (config.schema) {
-      setJsonLd(schemaId, config.schema);
+      const optimizedSchema = Array.isArray(config.schema)
+        ? wrapInGraph(config.schema)
+        : config.schema;
+      setJsonLd(schemaId, optimizedSchema);
     }
 
     // Cleanup function

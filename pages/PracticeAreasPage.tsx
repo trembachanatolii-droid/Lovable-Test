@@ -476,6 +476,7 @@ const PracticeAreasPage: React.FC = () => {
                alt="California international trade and customs law practice areas - comprehensive legal services from import compliance to export controls"
                className="w-full h-full object-cover object-center"
                loading="eager"
+            style={{ aspectRatio: '16 / 9' }}
                decoding="async"
                fetchpriority="high"
                width="1920"

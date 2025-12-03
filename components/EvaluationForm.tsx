@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from './Button';
+import { triggerHaptic } from '../utils/haptics';
 
 // API endpoint for form submission
 const SUBMIT_API_ENDPOINT = '/.netlify/functions/submit-evaluation';
@@ -194,6 +195,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
         });
 
         if (hasErrors || Object.keys(fieldErrors).length > 0) {
+            triggerHaptic('error');
             showNotification('Please fill in all required fields correctly.', 'error');
             return;
         }
@@ -221,6 +223,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
             const result = await response.json();
 
             if (response.ok && result.success) {
+                triggerHaptic('success');
                 setSubmitStatus('success');
                 showNotification('Thank you for your submission! We have received your case evaluation request and will contact you shortly. A confirmation has been sent to your email and phone.', 'success');
                 form.reset();
@@ -230,6 +233,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
             }
         } catch (error) {
             console.error('Form submission error:', error);
+            triggerHaptic('error');
             setSubmitStatus('error');
             showNotification('We apologize, but there was an error submitting your request. Please try again or call us directly at (310) 744-1328.', 'error');
         } finally {

@@ -188,6 +188,7 @@ const CareersPage: React.FC = () => {
                             alt="International trade attorney careers at California law firm - professional legal workplace for customs and trade law specialists"
                             className="w-full h-full object-cover object-center"
                             loading="eager"
+            style={{ aspectRatio: '16 / 9' }}
                             decoding="async"
                             fetchpriority="high"
                             width="1920"

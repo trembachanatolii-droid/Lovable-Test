@@ -93,6 +93,7 @@ const ResourcesHubPage: React.FC = () => {
               alt="Legal reference library with international trade law resources and knowledge hub"
               className="w-full h-full object-cover object-center"
               loading="eager"
+            style={{ aspectRatio: '16 / 9' }}
               decoding="async"
               fetchpriority="high"
               width="1920"

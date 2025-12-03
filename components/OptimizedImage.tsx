@@ -15,6 +15,10 @@ interface OptimizedImageProps {
   fallbackSrc?: string;
 }
 
+// Default dimensions to prevent CLS when not specified
+const DEFAULT_WIDTH = 800;
+const DEFAULT_HEIGHT = 600;
+
 /**
  * OptimizedImage Component
  *
@@ -29,8 +33,8 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   src,
   alt,
   className = '',
-  width,
-  height,
+  width = DEFAULT_WIDTH,
+  height = DEFAULT_HEIGHT,
   loading = 'lazy',
   priority = false,
   sizes = '(max-width: 320px) 320px, (max-width: 375px) 375px, (max-width: 414px) 414px, (max-width: 480px) 480px, (max-width: 600px) 600px, (max-width: 768px) 768px, 800px',
@@ -75,6 +79,10 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   const loadingAttr = priority ? 'eager' : loading;
   const fetchPriority = priority ? 'high' : 'auto';
 
+  // Calculate aspect ratio for CLS prevention
+  const aspectRatio = width && height ? `${width} / ${height}` : undefined;
+  const imgStyle = aspectRatio ? { aspectRatio } : undefined;
+
   if (hasError) {
     return (
       <img
@@ -83,6 +91,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
         className={className}
         width={width}
         height={height}
+        style={imgStyle}
         loading={loadingAttr}
         decoding="async"
         role={role}
@@ -112,6 +121,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
         className={`${className} ${isLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}
         width={width}
         height={height}
+        style={imgStyle}
         loading={loadingAttr}
         decoding="async"
         fetchPriority={fetchPriority as 'high' | 'low' | 'auto'}

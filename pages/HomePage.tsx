@@ -1,12 +1,13 @@
-import React, { lazy, Suspense, useMemo, useTransition } from 'react';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import StatsSection from '../components/StatsSection';
-import AboutSection from '../components/AboutSection';
 import NewsArticleCard from '../components/NewsArticleCard';
 import PracticeAreasSection from '../components/PracticeAreasSection';
 import Button from '../components/Button';
-import JusticePillars from '../components/JusticePillars';
+import LoadingSpinner from '../components/LoadingSpinner';
 // Lazy load below-the-fold components to reduce initial bundle
+const JusticePillars = lazy(() => import('../components/JusticePillars'));
+const StatsSection = lazy(() => import('../components/StatsSection'));
+const AboutSection = lazy(() => import('../components/AboutSection'));
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 import type { NewsArticle } from '../types';
 import { useMeta } from '../hooks/useMeta';
@@ -71,56 +72,72 @@ const practiceAreasPreviewData = [
 ];
 
 const HomePage: React.FC = () => {
-  // Memoize article processing to avoid recalculating on every render
-  // This defers the calculation until the component actually renders
-  const newsArticlesData = useMemo(() => getLatestArticles(), []);
+  // Defer article processing to avoid blocking initial render
+  // Start with empty array, populate after first paint using requestIdleCallback
+  const [newsArticlesData, setNewsArticlesData] = useState<NewsArticle[]>([]);
 
-  // Memoize heavy schema generation to avoid recalculating
-  // This helps reduce initial render blocking time
-  const schemaData = useMemo(() => [
-    generateLocalBusinessSchema(),
-    generateWebPageSchema({
-      title: 'Trembach Law Firm | California International Trade Attorney',
-      description: 'Premier California international trade attorney and customs lawyer providing expert legal counsel for import/export compliance, CBP defense, and global trade strategy.',
-      url: `${siteConfig.siteUrl}/`,
-    }),
-    generateFAQSchema([
-      {
-        question: 'What is a California international trade attorney?',
-        answer: 'A California international trade attorney is a lawyer specializing in federal and international laws governing import/export activities, customs compliance, trade regulations, and cross-border transactions. They handle CBP defense, customs audits, ITAR/EAR compliance, OFAC sanctions, tariff classification, and trade litigation for California businesses engaged in international commerce.',
-      },
-      {
-        question: 'When do I need a customs attorney in California?',
-        answer: 'You need a California customs attorney when facing CBP audits (Focused Assessments), customs investigations, penalty assessments, import seizures or detentions, classification or valuation disputes, prior disclosure filing, False Claims Act allegations, or when establishing import/export compliance programs for your California business.',
-      },
-      {
-        question: 'What does CBP investigation defense involve?',
-        answer: 'CBP investigation defense involves representing importers/exporters during U.S. Customs and Border Protection investigations, responding to CF-28/CF-29 notices, defending against penalty assessments, mitigating liquidated damages, handling customs fraud allegations, and protecting your rights during CBP audits and enforcement actions.',
-      },
-      {
-        question: 'What are ITAR and EAR compliance requirements?',
-        answer: 'ITAR (International Traffic in Arms Regulations) governs defense articles and services exports, while EAR (Export Administration Regulations) covers dual-use items and commercial products. California companies exporting controlled technology, software, or equipment must obtain proper export licenses, classify items correctly, screen restricted parties, and maintain detailed compliance records.',
-      },
-      {
-        question: 'How can trade compliance programs help my California business?',
-        answer: 'Trade compliance programs establish policies, procedures, and internal controls to ensure your California business complies with customs and export regulations. They include import/export compliance protocols, record-keeping systems, employee training, risk assessments, and audit readiness - minimizing penalty exposure and facilitating smooth international trade operations.',
-      },
-    ]),
-    // Speakable schema for voice search optimization
-    {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      speakable: {
-        '@type': 'SpeakableSpecification',
-        cssSelector: ['.hero h1', '.hero-subtitle', '#services-heading'],
-      },
-    },
-  ], []);
+  // Defer schema generation to avoid blocking initial render
+  // Start with empty array, populate after first paint using requestIdleCallback
+  const [schemaData, setSchemaData] = useState<object[]>([]);
+
+  // Defer expensive article processing until after first paint
+  useEffect(() => {
+    const timer = requestIdleCallback(() => {
+      setNewsArticlesData(getLatestArticles());
+    });
+    return () => cancelIdleCallback(timer);
+  }, []);
+
+  // Defer expensive schema generation until after first paint
+  useEffect(() => {
+    const timer = requestIdleCallback(() => {
+      setSchemaData([
+        generateLocalBusinessSchema(),
+        generateWebPageSchema({
+          title: 'Trembach Law Firm | California International Trade Attorney',
+          description: 'Premier California international trade attorney and customs lawyer providing expert legal counsel for import/export compliance, CBP defense, and global trade strategy.',
+          url: `${siteConfig.siteUrl}/`,
+        }),
+        generateFAQSchema([
+          {
+            question: 'What is a California international trade attorney?',
+            answer: 'A California international trade attorney is a lawyer specializing in federal and international laws governing import/export activities, customs compliance, trade regulations, and cross-border transactions. They handle CBP defense, customs audits, ITAR/EAR compliance, OFAC sanctions, tariff classification, and trade litigation for California businesses engaged in international commerce.',
+          },
+          {
+            question: 'When do I need a customs attorney in California?',
+            answer: 'You need a California customs attorney when facing CBP audits (Focused Assessments), customs investigations, penalty assessments, import seizures or detentions, classification or valuation disputes, prior disclosure filing, False Claims Act allegations, or when establishing import/export compliance programs for your California business.',
+          },
+          {
+            question: 'What does CBP investigation defense involve?',
+            answer: 'CBP investigation defense involves representing importers/exporters during U.S. Customs and Border Protection investigations, responding to CF-28/CF-29 notices, defending against penalty assessments, mitigating liquidated damages, handling customs fraud allegations, and protecting your rights during CBP audits and enforcement actions.',
+          },
+          {
+            question: 'What are ITAR and EAR compliance requirements?',
+            answer: 'ITAR (International Traffic in Arms Regulations) governs defense articles and services exports, while EAR (Export Administration Regulations) covers dual-use items and commercial products. California companies exporting controlled technology, software, or equipment must obtain proper export licenses, classify items correctly, screen restricted parties, and maintain detailed compliance records.',
+          },
+          {
+            question: 'How can trade compliance programs help my California business?',
+            answer: 'Trade compliance programs establish policies, procedures, and internal controls to ensure your California business complies with customs and export regulations. They include import/export compliance protocols, record-keeping systems, employee training, risk assessments, and audit readiness - minimizing penalty exposure and facilitating smooth international trade operations.',
+          },
+        ]),
+        // Speakable schema for voice search optimization
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.hero h1', '.hero-subtitle', '#services-heading'],
+          },
+        },
+      ]);
+    });
+    return () => cancelIdleCallback(timer);
+  }, []);
 
   // SEO Meta Tags and Open Graph - Optimized for Main Hub Keywords
   useMeta({
     title: 'California Tariff Lawyer | Customs Attorney Calabasas',
-    description: 'California tariff lawyer & customs attorney based in Calabasas. CBP defense, tariff classification, customs audits, trade compliance. Serving LA, SF & all CA cities. (310) 744-1328.',
+    description: 'California tariff lawyer & customs attorney. CBP defense, tariff classification, customs audits, trade compliance. Serving CA. (310) 744-1328.',
     keywords: 'tariff lawyer california, customs attorney calabasas, international trade attorney, tariff classification attorney, CBP defense lawyer, customs audit attorney, import export lawyer california, trade compliance attorney, calabasas trade lawyer',
     canonical: '',
     ogType: 'website',
@@ -149,6 +166,7 @@ const HomePage: React.FC = () => {
             decoding="async"
             fetchpriority="high"
             className="hero-bg-image"
+            style={{ aspectRatio: '16 / 9' }}
           />
         </picture>
         {/* Dark overlay for text contrast */}
@@ -223,14 +241,20 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Other Sections */}
-      {/* JusticePillars - framer-motion deferred via DeferredMotionProvider in index.tsx */}
-      <JusticePillars />
-      <StatsSection />
-      <AboutSection />
-      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading practice areas section" />}>
+      {/* Lazy loaded below-the-fold sections for better performance */}
+      <Suspense fallback={<LoadingSpinner minHeight="400px" />}>
+        <JusticePillars />
+      </Suspense>
+      <Suspense fallback={<LoadingSpinner minHeight="300px" />}>
+        <StatsSection />
+      </Suspense>
+      <Suspense fallback={<LoadingSpinner minHeight="400px" />}>
+        <AboutSection />
+      </Suspense>
+      <Suspense fallback={<LoadingSpinner minHeight="600px" />}>
         <PracticeAreasSection />
       </Suspense>
-      <Suspense fallback={<div style={{ minHeight: '500px', background: 'transparent' }} aria-label="Loading evaluation form section" />}>
+      <Suspense fallback={<LoadingSpinner minHeight="500px" />}>
         <EvaluationForm />
       </Suspense>
 

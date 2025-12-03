@@ -535,11 +535,6 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
       ),
     ]);
 
-    // Log results
-    console.log("Firm email:", firmEmailResult);
-    console.log("Applicant email:", applicantEmailResult);
-    console.log("SMS:", smsResult);
-
     return {
       statusCode: 200,
       headers,

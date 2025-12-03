@@ -12,8 +12,8 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
 const SanDiegoCustomsLawyerPage: React.FC = () => {
   useMeta({
-    title: 'San Diego Customs Lawyer | Tariff Attorney Port of San Diego',
-    description: 'San Diego customs lawyer & tariff attorney. Port of San Diego trade law firm. CBP defense, tariff classification, customs audits. Mexico border expertise. (310) 744-1328.',
+    title: 'San Diego Customs Lawyer | Tariff Attorney Port SD',
+    description: 'San Diego customs lawyer & tariff attorney. CBP defense, tariff classification, customs audits. Mexico border expertise. Call (310) 744-1328.',
     keywords: 'customs lawyer san diego, tariff attorney san diego, trade attorney san diego ca, port of san diego lawyer, international trade lawyer san diego, cbp defense attorney san diego, mexico border customs lawyer, san diego import export attorney',
     canonical: 'san-diego-customs-lawyer',
     ogType: 'website',
@@ -72,6 +72,7 @@ const SanDiegoCustomsLawyerPage: React.FC = () => {
             width="1920"
             height="1080"
             loading="eager"
+            style={{ aspectRatio: '16 / 9' }}
             decoding="async"
             className="hero-bg-image"
           />

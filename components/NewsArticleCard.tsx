@@ -12,13 +12,20 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
   const isInternalLink = article.linkHref.startsWith('#');
   const Component = isInternalLink ? Link : 'a';
   const linkProps = isInternalLink
-    ? { to: article.linkHref.replace('#', '/') }
-    : { href: article.linkHref };
+    ? {
+        to: article.linkHref.replace('#', '/'),
+        'aria-label': `Read article: ${article.title}`
+      }
+    : {
+        href: article.linkHref,
+        target: '_blank',
+        rel: 'noopener noreferrer',
+        'aria-label': `Read article: ${article.title} (opens in new tab)`
+      };
 
   return (
     <Component
       {...linkProps}
-      aria-label={`Read article: ${article.title}`}
       className="block group relative bg-white overflow-hidden transition-all duration-300 shadow-sm hover:-translate-y-1 hover:shadow-xl will-change-transform border border-border-subtle rounded-2xl"
     >
       {/* Green Triangle with White Arrow */}
@@ -68,7 +75,7 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
         <p className="text-base leading-relaxed text-text-secondary mb-6">
           {article.description}
         </p>
-        <span className="mt-auto inline-flex items-center gap-1.5 text-navy-medium text-[17px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal">
+        <span aria-hidden="true" className="mt-auto inline-flex items-center gap-1.5 text-navy-medium text-[17px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal">
           Read Now &rarr;
         </span>
       </div>
