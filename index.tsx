@@ -74,7 +74,9 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker
       .register('/sw.js')
       .then((registration) => {
-        console.log('Service Worker registered successfully:', registration.scope);
+        if (import.meta.env.DEV) {
+          console.log('Service Worker registered successfully:', registration.scope);
+        }
 
         // Check for updates periodically
         setInterval(() => {
@@ -88,7 +90,9 @@ if ('serviceWorker' in navigator) {
             newWorker.addEventListener('statechange', () => {
               if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
                 // New service worker available, show update notification
-                console.log('New service worker available! Refresh to update.');
+                if (import.meta.env.DEV) {
+                  console.log('New service worker available! Refresh to update.');
+                }
 
                 // Optionally auto-update after user confirmation
                 if (confirm('A new version is available! Refresh to update?')) {
@@ -106,7 +110,9 @@ if ('serviceWorker' in navigator) {
 
     // Handle service worker controller change
     navigator.serviceWorker.addEventListener('controllerchange', () => {
-      console.log('Service Worker controller changed, reloading page...');
+      if (import.meta.env.DEV) {
+        console.log('Service Worker controller changed, reloading page...');
+      }
       window.location.reload();
     });
   });

@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
             Expert trade litigation attorney serving San Diego importers and exporters. Court of International Trade representation, tariff classification disputes, AD/CVD litigation, and customs enforcement defense.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -414,7 +415,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#tariff-classification" className="service-link">
+                  <Link to="/tariff-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification</span>
                     <p className="service-link__description">HTS analysis & rulings</p>
                     <div className="triangle-slide">
@@ -422,7 +423,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="#antidumping-cvd-defense" className="service-link">
@@ -443,7 +444,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#los-angeles-customs-attorney" className="service-link">
+                  <Link to="/los-angeles-customs-attorney" className="service-link">
                     <span className="service-link__title">Los Angeles Port</span>
                     <p className="service-link__description">Port of LA/Long Beach</p>
                     <div className="triangle-slide">
@@ -451,10 +452,10 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#san-francisco-customs-attorney" className="service-link">
+                  <Link to="/san-francisco-customs-attorney" className="service-link">
                     <span className="service-link__title">San Francisco Bay Area</span>
                     <p className="service-link__description">Bay Area trade law</p>
                     <div className="triangle-slide">
@@ -462,7 +463,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -472,44 +473,44 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/cit-litigation-guide" className="service-link">
+                  <Link to="/resources/cit-litigation-guide" className="service-link">
                     <span className="service-link__title">CIT Litigation Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/customs-protest-guide" className="service-link">
+                  <Link to="/resources/customs-protest-guide" className="service-link">
                     <span className="service-link__title">Customs Protest Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/adcvd-litigation" className="service-link">
+                  <Link to="/resources/adcvd-litigation" className="service-link">
                     <span className="service-link__title">AD/CVD Litigation</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -527,7 +528,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
             If CBP has denied your protest or significant duties are at stake, contact our San Diego trade litigation attorneys to evaluate whether Court of International Trade litigation is right for your case.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

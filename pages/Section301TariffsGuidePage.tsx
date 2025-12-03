@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 
 import { useMeta } from '../hooks/useMeta';
+import { Link } from 'react-router-dom';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
 import Button from '../components/Button';
 import { siteConfig } from '../config/siteConfig';
@@ -65,7 +66,7 @@ const Section301TariffsGuidePage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToSection('overview')} className="hero-cta">Learn More</button>
-            <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
+            <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>
       </section>
@@ -953,7 +954,7 @@ const Section301TariffsGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Section 301 Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">CBP Audit Defense</span>
                     <p className="service-link__description">Section 301 compliance audits</p>
                     <div className="triangle-slide">
@@ -961,10 +962,10 @@ const Section301TariffsGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Tariff Classification</span>
                     <p className="service-link__description">HTS optimization strategies</p>
                     <div className="triangle-slide">
@@ -972,10 +973,10 @@ const Section301TariffsGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Trade Litigation</span>
                     <p className="service-link__description">Court of International Trade</p>
                     <div className="triangle-slide">
@@ -983,7 +984,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -993,7 +994,7 @@ const Section301TariffsGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/uflpa-compliance-guide" className="service-link">
+                  <Link to="/resources/uflpa-compliance-guide" className="service-link">
                     <span className="service-link__title">UFLPA Compliance Guide</span>
                     <p className="service-link__description">Forced labor regulations</p>
                     <div className="triangle-slide">
@@ -1001,10 +1002,10 @@ const Section301TariffsGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">HTS Classification Guide</span>
                     <p className="service-link__description">Tariff classification strategies</p>
                     <div className="triangle-slide">
@@ -1012,10 +1013,10 @@ const Section301TariffsGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">Trade Law FAQ</span>
                     <p className="service-link__description">Common customs questions</p>
                     <div className="triangle-slide">
@@ -1023,7 +1024,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -1033,7 +1034,7 @@ const Section301TariffsGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">California Service Areas</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#los-angeles-port-customs-attorney" className="service-link">
+                  <Link to="/los-angeles-port-customs-attorney" className="service-link">
                     <span className="service-link__title">LA/Long Beach Port</span>
                     <p className="service-link__description">Major port customs services</p>
                     <div className="triangle-slide">
@@ -1041,10 +1042,10 @@ const Section301TariffsGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#bay-area-trade-law-attorney" className="service-link">
+                  <Link to="/bay-area-trade-law-attorney" className="service-link">
                     <span className="service-link__title">San Francisco Bay Area</span>
                     <p className="service-link__description">Port of Oakland services</p>
                     <div className="triangle-slide">
@@ -1052,10 +1053,10 @@ const Section301TariffsGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#practice-areas" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">All Practice Areas</span>
                     <p className="service-link__description">Full trade law services</p>
                     <div className="triangle-slide">
@@ -1063,7 +1064,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -1081,7 +1082,7 @@ const Section301TariffsGuidePage: React.FC = () => {
             Trembach Law Firm provides comprehensive Section 301 services for California importers, from strategic mitigation planning to compliance implementation and CBP audit defense. Reduce duty costs by 30-70% with proven strategies.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Section 301 Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -86,7 +87,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToSection('ecommerce-import-rules')} className="hero-cta">Learn More</button>
-            <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
+            <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>
       </section>
@@ -505,7 +506,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">E-Commerce Compliance Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Amazon FBA Compliance</span>
                     <p className="service-link__description">Import compliance for online sellers</p>
                     <div className="triangle-slide">
@@ -513,10 +514,10 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Section 321 Defense</span>
                     <p className="service-link__description">De minimis entry compliance</p>
                     <div className="triangle-slide">
@@ -524,10 +525,10 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Product Safety Compliance</span>
                     <p className="service-link__description">CPSC, FDA, FCC standards</p>
                     <div className="triangle-slide">
@@ -535,7 +536,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -545,7 +546,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Tech Export Control Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#export-controls-sanctions" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Software Export Controls</span>
                     <p className="service-link__description">EAR encryption compliance</p>
                     <div className="triangle-slide">
@@ -553,10 +554,10 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#export-controls-sanctions" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Deemed Export Controls</span>
                     <p className="service-link__description">Foreign national access controls</p>
                     <div className="triangle-slide">
@@ -564,10 +565,10 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#practice-areas" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">All Practice Areas</span>
                     <p className="service-link__description">Full range of trade law services</p>
                     <div className="triangle-slide">
@@ -575,7 +576,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -585,7 +586,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Compliance Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariffs & Classification Guide</span>
                     <p className="service-link__description">HTS classification & Section 301</p>
                     <div className="triangle-slide">
@@ -593,10 +594,10 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#supply-chain-esg-compliance-guide" className="service-link">
+                  <Link to="/supply-chain-esg-compliance-guide" className="service-link">
                     <span className="service-link__title">Supply Chain ESG Guide</span>
                     <p className="service-link__description">UFLPA & forced labor compliance</p>
                     <div className="triangle-slide">
@@ -604,7 +605,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -632,7 +633,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#regulatory-compliance-advisory" className="card-link">
+              <Link to="/practice-areas" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Regulatory Compliance</h4>
                 <p className="text-sm text-text-secondary">Cross-border data compliance</p>
                 <div className="triangle-slide">
@@ -640,8 +641,8 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#trade-law-faq" className="card-link">
+              </Link>
+              <Link to="/trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Common e-commerce questions</p>
                 <div className="triangle-slide">
@@ -649,7 +650,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -665,7 +666,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
             California online sellers and tech companies face evolving customs and export control requirements. Our trade law practice helps you comply with ecommerce import rules, Section 321 regulations, digital trade laws, and data transfer export controls. Contact us for expert guidance on e-commerce and digital trade compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

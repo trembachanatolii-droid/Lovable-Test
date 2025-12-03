@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const SacramentoTradeCompliancePage: React.FC = () => {
             Expert trade compliance program development and implementation. Protect your Sacramento business with comprehensive import/export compliance, CBP regulations, and reasonable care programs.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Compliance Assessment</a>
+            <Link to="/contact" className="hero-cta">Free Compliance Assessment</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -400,7 +401,7 @@ const SacramentoTradeCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Compliance Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#cbp-audit-defense" className="service-link">
+                  <Link to="/cbp-audit-defense" className="service-link">
                     <span className="service-link__title">CBP Audit Defense</span>
                     <p className="service-link__description">Focused Assessment representation</p>
                     <div className="triangle-slide">
@@ -408,10 +409,10 @@ const SacramentoTradeCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#prior-disclosure" className="service-link">
+                  <Link to="/prior-disclosure" className="service-link">
                     <span className="service-link__title">Prior Disclosure Filing</span>
                     <p className="service-link__description">Voluntary self-disclosure</p>
                     <div className="triangle-slide">
@@ -419,10 +420,10 @@ const SacramentoTradeCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#export-controls" className="service-link">
+                  <Link to="/export-controls" className="service-link">
                     <span className="service-link__title">Export Controls Compliance</span>
                     <p className="service-link__description">ITAR, EAR, OFAC programs</p>
                     <div className="triangle-slide">
@@ -430,7 +431,7 @@ const SacramentoTradeCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -469,34 +470,34 @@ const SacramentoTradeCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Compliance Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/reasonable-care-checklist" className="service-link">
+                  <Link to="/resources/reasonable-care-checklist" className="service-link">
                     <span className="service-link__title">Reasonable Care Checklist</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/compliance-program-template" className="service-link">
+                  <Link to="/resources/compliance-program-template" className="service-link">
                     <span className="service-link__title">Compliance Program Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/internal-audit-guide" className="service-link">
+                  <Link to="/resources/internal-audit-guide" className="service-link">
                     <span className="service-link__title">Internal Audit Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -514,7 +515,7 @@ const SacramentoTradeCompliancePage: React.FC = () => {
             Protect your Sacramento business from CBP audits and penalties. Our trade compliance attorneys develop practical, effective compliance programs tailored to your operations. Free assessment.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

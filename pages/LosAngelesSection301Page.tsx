@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const LosAngelesSection301Page: React.FC = () => {
             Expert Section 301 China tariff strategies for Los Angeles importers. Exclusion requests, tariff engineering, protests, and duty minimization for Chinese imports.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Section 301 Analysis</a>
+            <Link to="/contact" className="hero-cta">Free Section 301 Analysis</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -391,7 +392,7 @@ const LosAngelesSection301Page: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Tariff Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#tariff-classification" className="service-link">
+                  <Link to="/tariff-classification" className="service-link">
                     <span className="service-link__title">HTS Classification Review</span>
                     <p className="service-link__description">Optimize tariff classification</p>
                     <div className="triangle-slide">
@@ -399,10 +400,10 @@ const LosAngelesSection301Page: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#country-of-origin" className="service-link">
+                  <Link to="/country-of-origin" className="service-link">
                     <span className="service-link__title">Country of Origin Planning</span>
                     <p className="service-link__description">Substantial transformation analysis</p>
                     <div className="triangle-slide">
@@ -410,7 +411,7 @@ const LosAngelesSection301Page: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="#customs-protests" className="service-link">
@@ -431,7 +432,7 @@ const LosAngelesSection301Page: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Ports</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#long-beach-section-301" className="service-link">
+                  <Link to="/long-beach-section-301" className="service-link">
                     <span className="service-link__title">Long Beach Section 301</span>
                     <p className="service-link__description">Port of Long Beach tariffs</p>
                     <div className="triangle-slide">
@@ -439,10 +440,10 @@ const LosAngelesSection301Page: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#oakland-section-301" className="service-link">
+                  <Link to="/oakland-section-301" className="service-link">
                     <span className="service-link__title">Oakland Section 301</span>
                     <p className="service-link__description">Northern California China tariffs</p>
                     <div className="triangle-slide">
@@ -450,7 +451,7 @@ const LosAngelesSection301Page: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -460,34 +461,34 @@ const LosAngelesSection301Page: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Section 301 Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/section-301-guide" className="service-link">
+                  <Link to="/resources/section-301-guide" className="service-link">
                     <span className="service-link__title">Section 301 Complete Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/exclusion-strategies" className="service-link">
+                  <Link to="/resources/exclusion-strategies" className="service-link">
                     <span className="service-link__title">Exclusion Request Strategies</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/tariff-engineering" className="service-link">
+                  <Link to="/resources/tariff-engineering" className="service-link">
                     <span className="service-link__title">Tariff Engineering Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -505,7 +506,7 @@ const LosAngelesSection301Page: React.FC = () => {
             Don't overpay Section 301 duties. Our Los Angeles Section 301 tariff attorney develops legal strategies to minimize China tariffs through exclusions, protests, and tariff engineering. Free consultation and Section 301 analysis.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

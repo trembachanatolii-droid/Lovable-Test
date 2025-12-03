@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -65,7 +66,7 @@ const CustomsDefensePage: React.FC = () => {
             Expert customs audits defense, CBP penalty mitigation, customs seizures, import detention release & customs litigation. Aggressive defense against False Claims Act, whistleblower trade cases & export violations. Protecting California & USA businesses when stakes are highest.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Defense Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Defense Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -265,7 +266,7 @@ const CustomsDefensePage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Export Violations Defense California - BIS & DDTC Enforcement</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                Exporting controlled goods or technology without proper authorization violates the <strong><a href="#article/ear-compliance" className="text-secondary-teal hover:text-primary-navy font-semibold">Export Administration Regulations (EAR)</a></strong> and <strong><a href="#article/itar-compliance" className="text-secondary-teal hover:text-primary-navy font-semibold">International Traffic in Arms Regulations (ITAR)</a></strong>. BIS and DDTC can impose <strong>$300,000+ fines per violation, denial of export privileges, and criminal prosecution</strong>. We provide <strong>export violations defense California</strong> services. Learn more about our <a href="#export-controls-sanctions" className="text-secondary-teal hover:text-primary-navy font-semibold">Export Controls & Sanctions practice</a>.
+                Exporting controlled goods or technology without proper authorization violates the <strong><a href="#article/ear-compliance" className="text-secondary-teal hover:text-primary-navy font-semibold">Export Administration Regulations (EAR)</a></strong> and <strong><a href="#article/itar-compliance" className="text-secondary-teal hover:text-primary-navy font-semibold">International Traffic in Arms Regulations (ITAR)</a></strong>. BIS and DDTC can impose <strong>$300,000+ fines per violation, denial of export privileges, and criminal prosecution</strong>. We provide <strong>export violations defense California</strong> services. Learn more about our <Link to="/practice-areas" className="text-secondary-teal hover:text-primary-navy font-semibold">Export Controls & Sanctions practice</Link>.
               </p>
               <ul className="list-disc list-inside space-y-2 text-text-secondary pl-4">
                 <li><strong><a href="#article/voluntary-self-disclosure-export-violations-california" className="text-secondary-teal hover:text-primary-navy">Voluntary Self-Disclosure (VSD)</a>:</strong> Come forward before BIS discovers the violation</li>
@@ -332,7 +333,7 @@ const CustomsDefensePage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <a href="#regulatory-compliance-advisory" className="service-link">
+                    <Link to="/practice-areas" className="service-link">
                       <span className="service-link__title">Trade Compliance Programs</span>
                       <p className="service-link__description">Prevent issues before they become enforcement actions</p>
                       <div className="triangle-slide">
@@ -340,12 +341,12 @@ const CustomsDefensePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#export-controls-sanctions" className="service-link">
+                    <Link to="/practice-areas" className="service-link">
                       <span className="service-link__title">Export Controls & Sanctions</span>
                       <p className="service-link__description">ITAR/EAR compliance and BIS enforcement defense</p>
                       <div className="triangle-slide">
@@ -353,12 +354,12 @@ const CustomsDefensePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#practice-areas" className="service-link">
+                    <Link to="/practice-areas" className="service-link">
                       <span className="service-link__title">All Practice Areas</span>
                       <p className="service-link__description">Full range of international trade services</p>
                       <div className="triangle-slide">
@@ -366,7 +367,7 @@ const CustomsDefensePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -378,7 +379,7 @@ const CustomsDefensePage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <a href="#los-angeles-port-customs-attorney" className="service-link">
+                    <Link to="/los-angeles-port-customs-attorney" className="service-link">
                       <span className="service-link__title">Los Angeles & Long Beach Port</span>
                       <p className="service-link__description">CBP defense for LA/LB port importers</p>
                       <div className="triangle-slide">
@@ -386,12 +387,12 @@ const CustomsDefensePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#bay-area-trade-law-attorney" className="service-link">
+                    <Link to="/bay-area-trade-law-attorney" className="service-link">
                       <span className="service-link__title">San Francisco & Bay Area</span>
                       <p className="service-link__description">Oakland port and tech company defense</p>
                       <div className="triangle-slide">
@@ -399,7 +400,7 @@ const CustomsDefensePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -411,7 +412,7 @@ const CustomsDefensePage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <a href="#technology-electronics-trade-attorney" className="service-link">
+                    <Link to="/technology-electronics-trade-attorney" className="service-link">
                       <span className="service-link__title">Technology & Electronics</span>
                       <p className="service-link__description">Section 301 and classification disputes</p>
                       <div className="triangle-slide">
@@ -419,12 +420,12 @@ const CustomsDefensePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#apparel-textiles-trade-attorney" className="service-link">
+                    <Link to="/apparel-textiles-trade-attorney" className="service-link">
                       <span className="service-link__title">Apparel & Textiles</span>
                       <p className="service-link__description">UFLPA and forced labor defense</p>
                       <div className="triangle-slide">
@@ -432,12 +433,12 @@ const CustomsDefensePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/food-agriculture-trade-attorney" className="service-link">
                       <span className="service-link__title">Food & Agriculture</span>
                       <p className="service-link__description">FDA/USDA detention release</p>
                       <div className="triangle-slide">
@@ -445,7 +446,7 @@ const CustomsDefensePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -465,7 +466,7 @@ const CustomsDefensePage: React.FC = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#resources/section-301-tariffs-guide" className="card-link">
+              <Link to="/resources/section-301-tariffs-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">Navigate China tariffs and exclusion strategies</p>
                 <div className="triangle-slide">
@@ -473,8 +474,8 @@ const CustomsDefensePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#resources/uflpa-compliance-guide" className="card-link">
+              </Link>
+              <Link to="/resources/uflpa-compliance-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Forced labor detention defense strategies</p>
                 <div className="triangle-slide">
@@ -482,8 +483,8 @@ const CustomsDefensePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#trade-law-faq" className="card-link">
+              </Link>
+              <Link to="/trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Answers to common customs defense questions</p>
                 <div className="triangle-slide">
@@ -491,7 +492,7 @@ const CustomsDefensePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -507,7 +508,7 @@ const CustomsDefensePage: React.FC = () => {
             When CBP targets your business with investigations, audits, penalties, or seizures, you need a customs defense attorney California who knows how to fight back. Contact us for aggressive representation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Defense Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

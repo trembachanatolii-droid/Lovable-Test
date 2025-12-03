@@ -99,7 +99,7 @@ const ArticleCTA: React.FC<ArticleCTAProps> = ({ topic = 'this matter', variant 
 
         {/* CTA Buttons */}
         <div className="flex flex-col md:flex-row gap-4 items-center">
-          <Button href="#schedule-consultation" variant="solid" className="w-full md:w-auto">
+          <Button href="/contact" variant="solid" className="w-full md:w-auto">
             Schedule Free Consultation
           </Button>
 

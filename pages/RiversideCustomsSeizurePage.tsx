@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
@@ -84,7 +85,7 @@ const RiversideCustomsSeizurePage: React.FC = () => {
             Expert customs seizure attorney serving Riverside and the Inland Empire. When CBP seizes your cargo, every day counts. Our seizure defense lawyers help Riverside businesses recover detained goods, challenge wrongful seizures, and minimize penalties.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Emergency Seizure Help</a>
+            <Link to="/contact" className="hero-cta">Emergency Seizure Help</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -216,7 +217,7 @@ const RiversideCustomsSeizurePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Defense Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Customs Defense & Litigation</span>
                     <p className="service-link__description">Full defense representation</p>
                     <div className="triangle-slide">
@@ -224,10 +225,10 @@ const RiversideCustomsSeizurePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/uflpa-compliance-guide" className="service-link">
+                  <Link to="/resources/uflpa-compliance-guide" className="service-link">
                     <span className="service-link__title">UFLPA Defense Guide</span>
                     <p className="service-link__description">Forced labor detention help</p>
                     <div className="triangle-slide">
@@ -235,7 +236,7 @@ const RiversideCustomsSeizurePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -244,7 +245,7 @@ const RiversideCustomsSeizurePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Inland Empire Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#riverside-tariff-attorney" className="service-link">
+                  <Link to="/riverside-tariff-attorney" className="service-link">
                     <span className="service-link__title">Riverside Tariff Attorney</span>
                     <p className="service-link__description">Full tariff services</p>
                     <div className="triangle-slide">
@@ -252,10 +253,10 @@ const RiversideCustomsSeizurePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#inland-empire-customs-attorney" className="service-link">
+                  <Link to="/inland-empire-customs-attorney" className="service-link">
                     <span className="service-link__title">Inland Empire Customs</span>
                     <p className="service-link__description">Regional customs expertise</p>
                     <div className="triangle-slide">
@@ -263,7 +264,7 @@ const RiversideCustomsSeizurePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -272,24 +273,24 @@ const RiversideCustomsSeizurePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">Seizure FAQ</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources" className="service-link">
+                  <Link to="/resources" className="service-link">
                     <span className="service-link__title">Resources Hub</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -310,7 +311,7 @@ const RiversideCustomsSeizurePage: React.FC = () => {
             Time is critical when CBP seizes your cargo. Our Riverside customs seizure attorneys are ready to fight for the release of your goods. Contact us immediately for emergency assistance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Emergency Seizure Help
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

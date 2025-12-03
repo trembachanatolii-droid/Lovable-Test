@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
@@ -83,7 +84,7 @@ const NapaCustomsValuationPage: React.FC = () => {
             Expert customs valuation attorney serving Napa Valley and Wine Country importers. Transaction value, assists, royalties, transfer pricing, and related-party compliance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Valuation Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Valuation Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -285,7 +286,7 @@ const NapaCustomsValuationPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Valuation Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#transfer-pricing-customs" className="service-link">
+                  <Link to="/transfer-pricing-customs" className="service-link">
                     <span className="service-link__title">Transfer Pricing</span>
                     <p className="service-link__description">Tax & customs reconciliation</p>
                     <div className="triangle-slide">
@@ -293,10 +294,10 @@ const NapaCustomsValuationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#assists-royalties" className="service-link">
+                  <Link to="/assists-royalties" className="service-link">
                     <span className="service-link__title">Assists & Royalties</span>
                     <p className="service-link__description">Dutiability analysis</p>
                     <div className="triangle-slide">
@@ -304,10 +305,10 @@ const NapaCustomsValuationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification</span>
                     <p className="service-link__description">HTS & duty optimization</p>
                     <div className="triangle-slide">
@@ -315,7 +316,7 @@ const NapaCustomsValuationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -325,7 +326,7 @@ const NapaCustomsValuationPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Northern CA Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#sacramento-wine-export" className="service-link">
+                  <Link to="/sacramento-wine-export" className="service-link">
                     <span className="service-link__title">Sacramento Wine Export</span>
                     <p className="service-link__description">Capital region customs</p>
                     <div className="triangle-slide">
@@ -333,10 +334,10 @@ const NapaCustomsValuationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#san-francisco-customs-attorney" className="service-link">
+                  <Link to="/san-francisco-customs-attorney" className="service-link">
                     <span className="service-link__title">San Francisco Customs</span>
                     <p className="service-link__description">Bay Area customs law</p>
                     <div className="triangle-slide">
@@ -344,7 +345,7 @@ const NapaCustomsValuationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -354,34 +355,34 @@ const NapaCustomsValuationPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Valuation Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/customs-valuation-guide" className="service-link">
+                  <Link to="/resources/customs-valuation-guide" className="service-link">
                     <span className="service-link__title">Customs Valuation Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/transfer-pricing-guide" className="service-link">
+                  <Link to="/resources/transfer-pricing-guide" className="service-link">
                     <span className="service-link__title">Transfer Pricing Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -401,7 +402,7 @@ const NapaCustomsValuationPage: React.FC = () => {
             Don't overpay duties or risk CBP penalties. Our Napa customs valuation attorney helps Wine Country importers minimize costs while maintaining full compliance. Free confidential consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

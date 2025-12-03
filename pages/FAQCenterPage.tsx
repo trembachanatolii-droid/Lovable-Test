@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
 
 import { useMeta } from '../hooks/useMeta';
+import { Link } from 'react-router-dom';
 import { generateWebPageSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
 
 
@@ -341,7 +342,7 @@ const FAQCenterPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToCategory(0)} className="hero-cta">Browse FAQs</button>
-            <a href="#schedule-consultation" className="hero-cta-outline">Ask a Question</a>
+            <Link to="/contact" className="hero-cta-outline">Ask a Question</Link>
           </div>
         </div>
       </section>
@@ -486,8 +487,7 @@ const FAQCenterPage: React.FC = () => {
                         <div className="px-5 pb-5 border-t border-gray-100">
                           <p className="faq-answer text-gray-700 leading-relaxed pt-4 whitespace-pre-line">{faq.answer}</p>
                           {faq.link && (
-                            <a
-                              href={faq.link.url}
+                            <a href={faq.link.url}
                               className="inline-flex items-center mt-4 text-secondary-teal hover:text-primary-navy font-medium transition-colors"
                             >
                               {faq.link.text}
@@ -517,12 +517,12 @@ const FAQCenterPage: React.FC = () => {
             Every international trade situation is unique. Our California trade law attorneys provide personalized guidance tailored to your specific compliance challenges.
           </p>
           <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-            <a href="#schedule-consultation" className="hero-cta text-base py-3 px-4">
+            <Link to="/contact" className="hero-cta text-base py-3 px-4">
               Get in Touch
-            </a>
-            <a href="#resources" className="hero-cta-outline text-base py-3 px-4">
+            </Link>
+            <Link to="/resources" className="hero-cta-outline text-base py-3 px-4">
               View Resources
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -539,7 +539,7 @@ const FAQCenterPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#trade-law-glossary" className="service-link">
+                  <Link to="/trade-law-glossary" className="service-link">
                     <span className="service-link__title">Trade Law Glossary</span>
                     <p className="service-link__description">200+ definitions of essential terms</p>
                     <div className="triangle-slide">
@@ -547,10 +547,10 @@ const FAQCenterPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources" className="service-link">
+                  <Link to="/resources" className="service-link">
                     <span className="service-link__title">Resource Guides</span>
                     <p className="service-link__description">Tariffs, UFLPA, ESG compliance</p>
                     <div className="triangle-slide">
@@ -558,7 +558,7 @@ const FAQCenterPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -567,7 +567,7 @@ const FAQCenterPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Practice Areas</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#practice-areas" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">All Practice Areas</span>
                     <p className="service-link__description">Complete trade law services</p>
                     <div className="triangle-slide">
@@ -575,10 +575,10 @@ const FAQCenterPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Customs Defense</span>
                     <p className="service-link__description">CBP audit and penalty defense</p>
                     <div className="triangle-slide">
@@ -586,7 +586,7 @@ const FAQCenterPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -595,7 +595,7 @@ const FAQCenterPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Get Started</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#schedule-consultation" className="service-link">
+                  <Link to="/contact" className="service-link">
                     <span className="service-link__title">Schedule Consultation</span>
                     <p className="service-link__description">Free initial consultation</p>
                     <div className="triangle-slide">
@@ -603,10 +603,10 @@ const FAQCenterPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#contact" className="service-link">
+                  <Link to="/contact" className="service-link">
                     <span className="service-link__title">Contact Us</span>
                     <p className="service-link__description">Reach our team directly</p>
                     <div className="triangle-slide">
@@ -614,7 +614,7 @@ const FAQCenterPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

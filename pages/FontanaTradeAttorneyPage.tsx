@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
             Expert Fontana trade attorney serving Inland Empire manufacturers, warehouses, and distribution centers. Specialized in FTZ compliance, duty drawback, and high-volume customs operations.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -385,7 +386,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#ftz-compliance-services" className="service-link">
+                  <a href="/ftz-foreign-trade-zones" className="service-link">
                     <span className="service-link__title">Foreign Trade Zone Compliance</span>
                     <p className="service-link__description">FTZ activation & management</p>
                     <div className="triangle-slide">
@@ -396,7 +397,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#duty-drawback-services" className="service-link">
+                  <a href="/duty-drawback" className="service-link">
                     <span className="service-link__title">Duty Drawback Claims</span>
                     <p className="service-link__description">Recover 99% of paid duties</p>
                     <div className="triangle-slide">
@@ -407,7 +408,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification</span>
                     <p className="service-link__description">Bulk SKU classification</p>
                     <div className="triangle-slide">
@@ -415,7 +416,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -436,7 +437,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#los-angeles-port-customs-attorney" className="service-link">
+                  <Link to="/los-angeles-port-customs-attorney" className="service-link">
                     <span className="service-link__title">LA Port Customs Attorney</span>
                     <p className="service-link__description">Port of LA/Long Beach</p>
                     <div className="triangle-slide">
@@ -444,7 +445,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -454,44 +455,44 @@ const FontanaTradeAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/ftz-compliance-guide" className="service-link">
+                  <Link to="/resources/ftz-compliance-guide" className="service-link">
                     <span className="service-link__title">FTZ Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/duty-drawback-guide" className="service-link">
+                  <Link to="/resources/duty-drawback-guide" className="service-link">
                     <span className="service-link__title">Duty Drawback Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -509,7 +510,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
             Contact our Fontana trade attorney team today. We'll assess your manufacturing and logistics customs needs and provide clear guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

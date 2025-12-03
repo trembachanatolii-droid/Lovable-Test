@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
@@ -84,7 +85,7 @@ const Trump2025TariffAttorneyPage: React.FC = () => {
             California businesses face unprecedented tariff challenges in 2025. As your expert Trump tariff attorney, we help navigate reciprocal tariffs, IEEPA emergency duties, and new tariffs on China, Mexico, and Canada. Protect your supply chain with strategic tariff mitigation.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Tariff Analysis</a>
+            <Link to="/contact" className="hero-cta">Free Tariff Analysis</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -228,9 +229,9 @@ const Trump2025TariffAttorneyPage: React.FC = () => {
               <p className="text-text-secondary leading-relaxed mb-4">
                 Semiconductors, computers, smartphones, and tech components face cumulative tariffs exceeding 50% from China. Our <strong>tech tariff attorneys</strong> help Silicon Valley and California tech companies navigate these duties.
               </p>
-              <a href="#san-jose-tech-export-controls" className="text-secondary-teal hover:underline font-medium">
+              <Link to="/san-jose-tech-export-controls" className="text-secondary-teal hover:underline font-medium">
                 Tech Industry Tariff Solutions →
-              </a>
+              </Link>
             </div>
 
             <div className="bg-neutral-50 p-8 rounded-lg">
@@ -238,9 +239,9 @@ const Trump2025TariffAttorneyPage: React.FC = () => {
               <p className="text-text-secondary leading-relaxed mb-4">
                 Auto parts from Mexico face 25% tariffs unless USMCA-qualified. Electric vehicle batteries and components from China face even higher rates. Our <strong>automotive tariff lawyers</strong> ensure compliance.
               </p>
-              <a href="#los-angeles-tariff-lawyer" className="text-secondary-teal hover:underline font-medium">
+              <Link to="/los-angeles-tariff-lawyer" className="text-secondary-teal hover:underline font-medium">
                 Automotive Tariff Help →
-              </a>
+              </Link>
             </div>
 
             <div className="bg-neutral-50 p-8 rounded-lg">
@@ -248,9 +249,9 @@ const Trump2025TariffAttorneyPage: React.FC = () => {
               <p className="text-text-secondary leading-relaxed mb-4">
                 Apparel, footwear, furniture, and household goods from China face substantial tariff increases. E-commerce sellers and retailers need strategic sourcing advice from our <strong>consumer goods tariff attorneys</strong>.
               </p>
-              <a href="#los-angeles-fashion-tariff" className="text-secondary-teal hover:underline font-medium">
+              <Link to="/los-angeles-fashion-tariff" className="text-secondary-teal hover:underline font-medium">
                 Consumer Goods Solutions →
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -269,7 +270,7 @@ const Trump2025TariffAttorneyPage: React.FC = () => {
             Contact our 2025 Trump tariff attorneys today for a complimentary analysis of your tariff exposure. We'll identify savings opportunities and develop a strategic mitigation plan.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Free Tariff Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

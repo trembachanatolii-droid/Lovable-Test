@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
 
 import { SearchIcon } from '../components/icons/SearchIcon';

@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import ApplicationForm from '../components/ApplicationForm';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '../utils/seo';
@@ -8,6 +10,7 @@ import { siteConfig } from '../config/siteConfig';
 type Category = 'attorney' | 'compliance' | 'paralegal' | 'students';
 
 const GeneralApplicationPage: React.FC = () => {
+    const [searchParams, setSearchParams] = useSearchParams();
     const [activeCategory, setActiveCategory] = useState<Category>('attorney');
 
     useMeta({
@@ -32,24 +35,18 @@ const GeneralApplicationPage: React.FC = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        
-        // Extract category from hash query string (e.g. #careers/apply?category=compliance)
-        const hash = window.location.hash;
-        const queryPart = hash.split('?')[1];
-        if (queryPart) {
-            const params = new URLSearchParams(queryPart);
-            const categoryParam = params.get('category');
-            if (categoryParam && ['attorney', 'compliance', 'paralegal', 'students'].includes(categoryParam)) {
-                setActiveCategory(categoryParam as Category);
-            }
+
+        // Extract category from URL search parameters (e.g. /careers/apply?category=compliance)
+        const categoryParam = searchParams.get('category');
+        if (categoryParam && ['attorney', 'compliance', 'paralegal', 'students'].includes(categoryParam)) {
+            setActiveCategory(categoryParam as Category);
         }
-    }, []);
+    }, [searchParams]);
 
     const handleTabClick = (category: Category) => {
         setActiveCategory(category);
         // Update URL without reloading to reflect state
-        const newHash = `#careers/apply?category=${category}`;
-        window.history.replaceState(null, '', newHash);
+        setSearchParams({ category });
     };
 
     return (

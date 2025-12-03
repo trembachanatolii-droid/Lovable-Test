@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const SanFernandoValleyTariffPage: React.FC = () => {
             Expert San Fernando Valley tariff attorney and customs lawyer serving Calabasas, Burbank, Glendale, Van Nuys. Specialized entertainment industry, aerospace, and manufacturing trade compliance for Valley businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -490,7 +491,7 @@ const SanFernandoValleyTariffPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Regional Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#southern-california-tariff-lawyer" className="service-link">
+                  <Link to="/southern-california-tariff-lawyer" className="service-link">
                     <span className="service-link__title">Southern California</span>
                     <p className="service-link__description">Regional SoCal coverage</p>
                     <div className="triangle-slide">
@@ -498,10 +499,10 @@ const SanFernandoValleyTariffPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#calabasas-customs-attorney" className="service-link">
+                  <Link to="/calabasas-customs-attorney" className="service-link">
                     <span className="service-link__title">Calabasas</span>
                     <p className="service-link__description">Our headquarters location</p>
                     <div className="triangle-slide">
@@ -509,7 +510,7 @@ const SanFernandoValleyTariffPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -529,7 +530,7 @@ const SanFernandoValleyTariffPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#itar-compliance-guide" className="service-link">
+                  <a href="/export-controls" className="service-link">
                     <span className="service-link__title">ITAR Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -549,14 +550,14 @@ const SanFernandoValleyTariffPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -574,7 +575,7 @@ const SanFernandoValleyTariffPage: React.FC = () => {
             Contact our San Fernando Valley tariff attorney and customs lawyer team today. Visit our Calabasas office or schedule a consultation at your Valley location. Expert trade law services for all Valley businesses.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

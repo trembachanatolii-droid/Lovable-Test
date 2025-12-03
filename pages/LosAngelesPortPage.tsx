@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -67,7 +68,7 @@ const LosAngelesPortPage: React.FC = () => {
             Expert California port customs lawyer serving the LA/Long Beach port complex — the nation's busiest gateway for international trade.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -393,7 +394,7 @@ const LosAngelesPortPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services for Port Importers</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Customs Defense & Litigation</span>
                     <p className="service-link__description">CBP audits, seizures, penalty defense</p>
                     <div className="triangle-slide">
@@ -401,10 +402,10 @@ const LosAngelesPortPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Trade Compliance Programs</span>
                     <p className="service-link__description">Import compliance for high-volume importers</p>
                     <div className="triangle-slide">
@@ -412,10 +413,10 @@ const LosAngelesPortPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#export-controls-sanctions" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Export Controls & Sanctions</span>
                     <p className="service-link__description">Re-export compliance through LA/LB</p>
                     <div className="triangle-slide">
@@ -423,10 +424,10 @@ const LosAngelesPortPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#practice-areas" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">All Practice Areas</span>
                     <p className="service-link__description">Full range of trade law services</p>
                     <div className="triangle-slide">
@@ -434,7 +435,7 @@ const LosAngelesPortPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -444,7 +445,7 @@ const LosAngelesPortPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">LA/LB Port Industry Focus</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#technology-electronics-trade-attorney" className="service-link">
+                  <Link to="/technology-electronics-trade-attorney" className="service-link">
                     <span className="service-link__title">Technology & Electronics</span>
                     <p className="service-link__description">Major LA/LB import sector</p>
                     <div className="triangle-slide">
@@ -452,10 +453,10 @@ const LosAngelesPortPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#apparel-textiles-trade-attorney" className="service-link">
+                  <Link to="/apparel-textiles-trade-attorney" className="service-link">
                     <span className="service-link__title">Apparel & Textiles</span>
                     <p className="service-link__description">LA Fashion District importers</p>
                     <div className="triangle-slide">
@@ -463,10 +464,10 @@ const LosAngelesPortPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#food-agriculture-trade-attorney" className="service-link">
+                  <Link to="/food-agriculture-trade-attorney" className="service-link">
                     <span className="service-link__title">Food & Agriculture</span>
                     <p className="service-link__description">Perishable cargo specialists</p>
                     <div className="triangle-slide">
@@ -474,7 +475,7 @@ const LosAngelesPortPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -484,7 +485,7 @@ const LosAngelesPortPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#bay-area-trade-law-attorney" className="service-link">
+                  <Link to="/bay-area-trade-law-attorney" className="service-link">
                     <span className="service-link__title">San Francisco & Bay Area</span>
                     <p className="service-link__description">Port of Oakland, Silicon Valley tech</p>
                     <div className="triangle-slide">
@@ -492,10 +493,10 @@ const LosAngelesPortPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#schedule-consultation" className="service-link">
+                  <Link to="/contact" className="service-link">
                     <span className="service-link__title">Calabasas HQ Office</span>
                     <p className="service-link__description">27001 Agoura Road, Suite 350</p>
                     <div className="triangle-slide">
@@ -503,7 +504,7 @@ const LosAngelesPortPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -513,7 +514,7 @@ const LosAngelesPortPage: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides for LA/LB Importers</h3>
             <div className="grid md:grid-cols-4 gap-6 justify-center">
-              <a href="#resources/section-301-tariffs-guide" className="card-link">
+              <Link to="/resources/section-301-tariffs-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">China tariff mitigation strategies</p>
                 <div className="triangle-slide">
@@ -521,8 +522,8 @@ const LosAngelesPortPage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#resources/uflpa-compliance-guide" className="card-link">
+              </Link>
+              <Link to="/resources/uflpa-compliance-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Forced labor detention defense</p>
                 <div className="triangle-slide">
@@ -530,8 +531,8 @@ const LosAngelesPortPage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#tariffs-duties-classification-guide" className="card-link">
+              </Link>
+              <Link to="/resources/tariffs-duties-classification" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
                 <p className="text-sm text-text-secondary">HTS classification best practices</p>
                 <div className="triangle-slide">
@@ -539,8 +540,8 @@ const LosAngelesPortPage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#trade-law-faq" className="card-link">
+              </Link>
+              <Link to="/trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Common port customs questions</p>
                 <div className="triangle-slide">
@@ -548,7 +549,7 @@ const LosAngelesPortPage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -564,7 +565,7 @@ const LosAngelesPortPage: React.FC = () => {
             Don't let CBP audits, detentions, or penalties disrupt your business. Contact our Los Angeles customs attorney and Long Beach port trade lawyer team for a free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

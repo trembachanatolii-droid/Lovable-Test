@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useParams, Link } from 'react-router-dom';
 
 import { loadArticle } from '../data/articlesLoader';

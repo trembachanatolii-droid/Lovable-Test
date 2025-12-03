@@ -40,7 +40,9 @@ const ShareButton: React.FC<ShareButtonProps> = ({
       } catch (error: any) {
         // User cancelled the share or error occurred
         if (error.name !== 'AbortError') {
-          console.error('Error sharing:', error);
+          if (import.meta.env.DEV) {
+            console.error('Error sharing:', error);
+          }
           // Fall back to copy on error
           copyToClipboard();
         }
@@ -56,7 +58,9 @@ const ShareButton: React.FC<ShareButtonProps> = ({
       await navigator.clipboard.writeText(url);
       showNotification('Link copied to clipboard!');
     } catch (error) {
-      console.error('Failed to copy:', error);
+      if (import.meta.env.DEV) {
+        console.error('Failed to copy:', error);
+      }
       // Fallback for older browsers
       fallbackCopyToClipboard();
     }
@@ -75,7 +79,9 @@ const ShareButton: React.FC<ShareButtonProps> = ({
       document.execCommand('copy');
       showNotification('Link copied to clipboard!');
     } catch (error) {
-      console.error('Fallback: Failed to copy', error);
+      if (import.meta.env.DEV) {
+        console.error('Fallback: Failed to copy', error);
+      }
       showNotification('Failed to copy link');
     }
 

@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
 import { useMeta } from '../hooks/useMeta';
@@ -83,7 +84,7 @@ const CarlsbadExportControlPage: React.FC = () => {
             Expert export control legal services for North San Diego County biotech, medical device, and defense companies. ITAR, EAR, deemed exports, and BIS licensing.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Compliance Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Compliance Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -340,7 +341,7 @@ const CarlsbadExportControlPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#deemed-export-compliance" className="service-link">
+                  <Link to="/deemed-export-compliance" className="service-link">
                     <span className="service-link__title">Deemed Export Programs</span>
                     <p className="service-link__description">Technology Control Plans</p>
                     <div className="triangle-slide">
@@ -348,7 +349,7 @@ const CarlsbadExportControlPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -358,7 +359,7 @@ const CarlsbadExportControlPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">San Diego County</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#san-diego-export-controls" className="service-link">
+                  <a href="/export-controls" className="service-link">
                     <span className="service-link__title">San Diego Export Controls</span>
                     <p className="service-link__description">Defense & biotech compliance</p>
                     <div className="triangle-slide">
@@ -387,34 +388,34 @@ const CarlsbadExportControlPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Export Controls Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/biotech-export-controls" className="service-link">
+                  <Link to="/resources/biotech-export-controls" className="service-link">
                     <span className="service-link__title">Biotech Export Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/medical-device-export-guide" className="service-link">
+                  <Link to="/resources/medical-device-export-guide" className="service-link">
                     <span className="service-link__title">Medical Device Export Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/ear-compliance-guide" className="service-link">
+                  <Link to="/resources/ear-compliance-guide" className="service-link">
                     <span className="service-link__title">EAR Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -434,7 +435,7 @@ const CarlsbadExportControlPage: React.FC = () => {
             Don't risk massive penalties and enforcement actions. Our Carlsbad export control attorneys help biotech and medical device companies navigate EAR and ITAR compliance. Free confidential consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

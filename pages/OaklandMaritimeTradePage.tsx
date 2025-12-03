@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const OaklandMaritimeTradePage: React.FC = () => {
             Expert maritime trade law and Port of Oakland customs compliance. Vessel clearance, Jones Act, maritime cargo claims, and shipping law services for Bay Area maritime industry.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Maritime Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Maritime Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -442,34 +443,34 @@ const OaklandMaritimeTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Maritime Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/jones-act-guide" className="service-link">
+                  <Link to="/resources/jones-act-guide" className="service-link">
                     <span className="service-link__title">Jones Act Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/isf-compliance" className="service-link">
+                  <Link to="/resources/isf-compliance" className="service-link">
                     <span className="service-link__title">ISF 10+2 Requirements</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/cogsa-claims" className="service-link">
+                  <Link to="/resources/cogsa-claims" className="service-link">
                     <span className="service-link__title">COGSA Cargo Claims Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -487,7 +488,7 @@ const OaklandMaritimeTradePage: React.FC = () => {
             Port of Oakland maritime operations require specialized legal expertise. Our Oakland maritime trade attorneys provide comprehensive representation for vessel operations, cargo claims, and shipping compliance. Free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

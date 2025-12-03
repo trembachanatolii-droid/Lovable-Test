@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const LongBeachFTZCompliancePage: React.FC = () => {
             Expert FTZ compliance attorney serving Long Beach and Southern California. Specialized foreign trade zone activation, manufacturing authority, zone operations, and FTZ compliance programs.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -399,7 +400,7 @@ const LongBeachFTZCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Port Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#long-beach-maritime-tariff-attorney" className="service-link">
+                  <a href="/long-beach-maritime-tariff" className="service-link">
                     <span className="service-link__title">Maritime Tariff Attorney</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -431,14 +432,14 @@ const LongBeachFTZCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Trade Compliance</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Compliance Programs</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -456,7 +457,7 @@ const LongBeachFTZCompliancePage: React.FC = () => {
             Contact our Long Beach FTZ compliance attorneys today. We'll analyze your import volumes, calculate potential FTZ savings, and develop a comprehensive zone activation strategy.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

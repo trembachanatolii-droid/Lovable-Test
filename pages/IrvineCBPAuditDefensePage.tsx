@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
@@ -84,7 +85,7 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
             Expert CBP audit defense attorney serving Irvine and Orange County businesses. When CBP targets your imports for audit, you need experienced customs audit lawyers who understand focused assessments, penalty mitigation, and prior disclosure strategies. Protect your business with proven audit defense.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Audit Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Audit Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -241,7 +242,7 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Audit Defense Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Customs Defense & Litigation</span>
                     <p className="service-link__description">Full customs defense representation</p>
                     <div className="triangle-slide">
@@ -249,10 +250,10 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Trade Compliance Programs</span>
                     <p className="service-link__description">Prevent future audit issues</p>
                     <div className="triangle-slide">
@@ -260,7 +261,7 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -269,7 +270,7 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Orange County Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#orange-county-tariff-lawyer" className="service-link">
+                  <Link to="/orange-county-tariff-lawyer" className="service-link">
                     <span className="service-link__title">Orange County Tariff Lawyer</span>
                     <p className="service-link__description">Regional tariff services</p>
                     <div className="triangle-slide">
@@ -277,10 +278,10 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#irvine-trade-compliance" className="service-link">
+                  <Link to="/irvine-trade-compliance" className="service-link">
                     <span className="service-link__title">Irvine Trade Compliance</span>
                     <p className="service-link__description">Local compliance expertise</p>
                     <div className="triangle-slide">
@@ -288,7 +289,7 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -297,24 +298,24 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">CBP Audit FAQ</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources" className="service-link">
+                  <Link to="/resources" className="service-link">
                     <span className="service-link__title">Customs Resources Hub</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -335,7 +336,7 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
             Don't face a CBP audit alone. Our Irvine customs audit defense attorneys are ready to protect your business. Contact us for an immediate consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Free Audit Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

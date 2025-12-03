@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -90,7 +91,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToSection('forced-labor-import-bans')} className="hero-cta">Learn More</button>
-            <a href="#schedule-consultation" className="hero-cta-outline">Get Expert Help</a>
+            <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>
       </section>
@@ -551,7 +552,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Forced Labor Compliance Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">UFLPA Detention Defense</span>
                     <p className="service-link__description">Release detained Xinjiang-related goods</p>
                     <div className="triangle-slide">
@@ -559,10 +560,10 @@ const SupplyChainESGGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">WRO Response Services</span>
                     <p className="service-link__description">Withhold Release Order admissibility packages</p>
                     <div className="triangle-slide">
@@ -570,10 +571,10 @@ const SupplyChainESGGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Supply Chain Due Diligence</span>
                     <p className="service-link__description">Supplier audits and ESG compliance programs</p>
                     <div className="triangle-slide">
@@ -581,7 +582,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -591,7 +592,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Environmental & FCPA Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Green Trade Compliance</span>
                     <p className="service-link__description">California climate disclosure & CBAM</p>
                     <div className="triangle-slide">
@@ -599,10 +600,10 @@ const SupplyChainESGGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#regulatory-compliance-advisory" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">FCPA Compliance Programs</span>
                     <p className="service-link__description">Anti-corruption controls for trade</p>
                     <div className="triangle-slide">
@@ -610,10 +611,10 @@ const SupplyChainESGGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#practice-areas" className="service-link">
+                  <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">All Practice Areas</span>
                     <p className="service-link__description">Full range of trade law services</p>
                     <div className="triangle-slide">
@@ -621,7 +622,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -631,7 +632,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Compliance Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariffs & Classification Guide</span>
                     <p className="service-link__description">HTS classification & trade remedies</p>
                     <div className="triangle-slide">
@@ -639,10 +640,10 @@ const SupplyChainESGGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ecommerce-digital-trade-guide" className="service-link">
+                  <Link to="/ecommerce-digital-trade-guide" className="service-link">
                     <span className="service-link__title">E-Commerce Trade Guide</span>
                     <p className="service-link__description">Section 321 & online seller compliance</p>
                     <div className="triangle-slide">
@@ -650,7 +651,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -660,7 +661,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful ESG Compliance Resources</h3>
             <div className="grid md:grid-cols-4 gap-6 justify-center">
-              <a href="#resources/uflpa-compliance-guide" className="card-link">
+              <Link to="/resources/uflpa-compliance-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Forced labor detention defense strategies</p>
                 <div className="triangle-slide">
@@ -668,7 +669,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </Link>
               <a href="#article/wro-defense-strategies-california" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">WRO Defense Toolkit</h4>
                 <p className="text-sm text-text-secondary">Withhold Release Order response guide</p>
@@ -678,7 +679,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#regulatory-compliance-advisory" className="card-link">
+              <Link to="/practice-areas" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Regulatory Compliance</h4>
                 <p className="text-sm text-text-secondary">Anti-corruption best practices</p>
                 <div className="triangle-slide">
@@ -686,8 +687,8 @@ const SupplyChainESGGuidePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#trade-law-faq" className="card-link">
+              </Link>
+              <Link to="/trade-law-faq" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">FAQ Center</h4>
                 <p className="text-sm text-text-secondary">Common ESG compliance questions</p>
                 <div className="triangle-slide">
@@ -695,7 +696,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -711,7 +712,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
             California importers face increasing ESG scrutiny from CBP, DOJ, and other enforcement agencies. Our trade law practice helps you implement forced labor compliance programs, navigate UFLPA requirements, and build anti-corruption controls. Contact us for expert guidance on supply chain ethics and ESG compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

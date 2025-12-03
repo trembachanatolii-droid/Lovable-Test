@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -85,7 +86,7 @@ const SanFranciscoExportControlsPage: React.FC = () => {
             Expert export controls legal services for Silicon Valley and Bay Area technology companies. ITAR, EAR, deemed exports, and OFAC sanctions compliance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Compliance Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Compliance Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -418,7 +419,7 @@ const SanFranciscoExportControlsPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Export Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#encryption-export-controls" className="service-link">
+                  <a href="/export-controls" className="service-link">
                     <span className="service-link__title">Encryption Export Controls</span>
                     <p className="service-link__description">CCATS filing and compliance</p>
                     <div className="triangle-slide">
@@ -429,7 +430,7 @@ const SanFranciscoExportControlsPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#deemed-export-compliance" className="service-link">
+                  <Link to="/deemed-export-compliance" className="service-link">
                     <span className="service-link__title">Deemed Export Programs</span>
                     <p className="service-link__description">Technology Control Plans</p>
                     <div className="triangle-slide">
@@ -437,10 +438,10 @@ const SanFranciscoExportControlsPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#voluntary-self-disclosure" className="service-link">
+                  <a href="/export-controls" className="service-link">
                     <span className="service-link__title">Voluntary Self-Disclosure</span>
                     <p className="service-link__description">BIS and DDTC VSD filing</p>
                     <div className="triangle-slide">
@@ -458,7 +459,7 @@ const SanFranciscoExportControlsPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Tech Hub Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#san-jose-export-controls" className="service-link">
+                  <a href="/san-jose-tech-export-controls" className="service-link">
                     <span className="service-link__title">San Jose Tech Export Controls</span>
                     <p className="service-link__description">Silicon Valley compliance</p>
                     <div className="triangle-slide">
@@ -469,7 +470,7 @@ const SanFranciscoExportControlsPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#los-angeles-export-controls" className="service-link">
+                  <a href="/export-controls" className="service-link">
                     <span className="service-link__title">Los Angeles Export Controls</span>
                     <p className="service-link__description">Southern California tech</p>
                     <div className="triangle-slide">
@@ -487,34 +488,34 @@ const SanFranciscoExportControlsPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Export Controls Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/itar-compliance-guide" className="service-link">
+                  <Link to="/resources/itar-compliance-guide" className="service-link">
                     <span className="service-link__title">ITAR Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/ear-license-exceptions" className="service-link">
+                  <Link to="/resources/ear-license-exceptions" className="service-link">
                     <span className="service-link__title">EAR License Exceptions</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/ofac-sanctions" className="service-link">
+                  <Link to="/resources/ofac-sanctions" className="service-link">
                     <span className="service-link__title">OFAC Sanctions Overview</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -532,7 +533,7 @@ const SanFranciscoExportControlsPage: React.FC = () => {
             Don't risk massive penalties and criminal prosecution. Our San Francisco export controls attorneys help you navigate ITAR, EAR, and OFAC compliance. Free confidential consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

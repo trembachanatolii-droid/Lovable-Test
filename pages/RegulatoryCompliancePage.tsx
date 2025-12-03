@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
@@ -65,7 +66,7 @@ const RegulatoryCompliancePage: React.FC = () => {
             Federal trade compliance attorney. Import compliance programs, export compliance programs, trade compliance audits, prior disclosure customs, voluntary self disclosure export, customs record keeping, customs ruling requests & trade compliance for manufacturers. Proactive protection for California & USA businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free Compliance Consultation</a>
+            <Link to="/contact" className="hero-cta">Free Compliance Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -335,7 +336,7 @@ const RegulatoryCompliancePage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <a href="#customs-defense-litigation" className="service-link">
+                    <Link to="/customs-defense-litigation" className="service-link">
                       <span className="service-link__title">Customs Defense & Litigation</span>
                       <p className="service-link__description">When compliance fails, we defend you</p>
                       <div className="triangle-slide">
@@ -343,12 +344,12 @@ const RegulatoryCompliancePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#export-controls-sanctions" className="service-link">
+                    <Link to="/practice-areas" className="service-link">
                       <span className="service-link__title">Export Controls & Sanctions</span>
                       <p className="service-link__description">ITAR/EAR/OFAC compliance programs</p>
                       <div className="triangle-slide">
@@ -356,12 +357,12 @@ const RegulatoryCompliancePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#practice-areas" className="service-link">
+                    <Link to="/practice-areas" className="service-link">
                       <span className="service-link__title">All Practice Areas</span>
                       <p className="service-link__description">Full range of international trade services</p>
                       <div className="triangle-slide">
@@ -369,7 +370,7 @@ const RegulatoryCompliancePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -381,7 +382,7 @@ const RegulatoryCompliancePage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <a href="#los-angeles-port-customs-attorney" className="service-link">
+                    <Link to="/los-angeles-port-customs-attorney" className="service-link">
                       <span className="service-link__title">Los Angeles & Long Beach Port</span>
                       <p className="service-link__description">Compliance programs for LA/LB importers</p>
                       <div className="triangle-slide">
@@ -389,12 +390,12 @@ const RegulatoryCompliancePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#bay-area-trade-law-attorney" className="service-link">
+                    <Link to="/bay-area-trade-law-attorney" className="service-link">
                       <span className="service-link__title">San Francisco & Bay Area</span>
                       <p className="service-link__description">Tech company compliance programs</p>
                       <div className="triangle-slide">
@@ -402,7 +403,7 @@ const RegulatoryCompliancePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -414,7 +415,7 @@ const RegulatoryCompliancePage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <a href="#technology-electronics-trade-attorney" className="service-link">
+                    <Link to="/technology-electronics-trade-attorney" className="service-link">
                       <span className="service-link__title">Technology & Electronics</span>
                       <p className="service-link__description">Export compliance for tech companies</p>
                       <div className="triangle-slide">
@@ -422,12 +423,12 @@ const RegulatoryCompliancePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#apparel-textiles-trade-attorney" className="service-link">
+                    <Link to="/apparel-textiles-trade-attorney" className="service-link">
                       <span className="service-link__title">Apparel & Textiles</span>
                       <p className="service-link__description">UFLPA supply chain compliance</p>
                       <div className="triangle-slide">
@@ -435,12 +436,12 @@ const RegulatoryCompliancePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <a href="#food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/food-agriculture-trade-attorney" className="service-link">
                       <span className="service-link__title">Food & Agriculture</span>
                       <p className="service-link__description">FDA/USDA import compliance</p>
                       <div className="triangle-slide">
@@ -448,7 +449,7 @@ const RegulatoryCompliancePage: React.FC = () => {
                           <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -459,7 +460,7 @@ const RegulatoryCompliancePage: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md overflow-hidden">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides & Resources</h3>
             <div className="grid md:grid-cols-4 gap-6 justify-center">
-              <a href="#tariffs-duties-classification-guide" className="card-link">
+              <Link to="/resources/tariffs-duties-classification" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Tariff Classification Guide</h4>
                 <p className="text-sm text-text-secondary">Master HTS classification best practices</p>
                 <div className="triangle-slide">
@@ -467,8 +468,8 @@ const RegulatoryCompliancePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#resources/section-301-tariffs-guide" className="card-link">
+              </Link>
+              <Link to="/resources/section-301-tariffs-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">Strategies for China tariff mitigation</p>
                 <div className="triangle-slide">
@@ -476,8 +477,8 @@ const RegulatoryCompliancePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#resources/uflpa-compliance-guide" className="card-link">
+              </Link>
+              <Link to="/resources/uflpa-compliance-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">UFLPA Compliance Guide</h4>
                 <p className="text-sm text-text-secondary">Build UFLPA-compliant supply chains</p>
                 <div className="triangle-slide">
@@ -485,8 +486,8 @@ const RegulatoryCompliancePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
-              <a href="#trade-law-glossary" className="card-link">
+              </Link>
+              <Link to="/trade-law-glossary" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Trade Law Glossary</h4>
                 <p className="text-sm text-text-secondary">Definitions of key compliance terms</p>
                 <div className="triangle-slide">
@@ -494,7 +495,7 @@ const RegulatoryCompliancePage: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -510,7 +511,7 @@ const RegulatoryCompliancePage: React.FC = () => {
             Don't wait for a CBP audit to implement compliance controls. Contact our trade compliance California team for a free risk assessment and program design consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import RelatedCityPages from '../components/RelatedCityPages';
@@ -86,7 +87,7 @@ const LancasterCountervailingPage: React.FC = () => {
             Expert countervailing duty defense for Lancaster and Antelope Valley. CVD scope rulings, Commerce Department representation, and aerospace trade law.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#schedule-consultation" className="hero-cta">Free CVD Analysis</a>
+            <Link to="/contact" className="hero-cta">Free CVD Analysis</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -331,7 +332,7 @@ const LancasterCountervailingPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">CVD Defense Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#cvd-scope-rulings" className="service-link">
+                  <Link to="/cvd-scope-rulings" className="service-link">
                     <span className="service-link__title">CVD Scope Rulings</span>
                     <p className="service-link__description">Commerce scope determinations</p>
                     <div className="triangle-slide">
@@ -339,7 +340,7 @@ const LancasterCountervailingPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="#aerospace-cvd-compliance" className="service-link">
@@ -353,7 +354,7 @@ const LancasterCountervailingPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#administrative-reviews" className="service-link">
+                  <Link to="/administrative-reviews" className="service-link">
                     <span className="service-link__title">Administrative Reviews</span>
                     <p className="service-link__description">CVD rate reduction</p>
                     <div className="triangle-slide">
@@ -361,7 +362,7 @@ const LancasterCountervailingPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -371,7 +372,7 @@ const LancasterCountervailingPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#export-controls-itar" className="service-link">
+                  <a href="/export-controls" className="service-link">
                     <span className="service-link__title">Export Controls (ITAR/EAR)</span>
                     <p className="service-link__description">Aerospace export compliance</p>
                     <div className="triangle-slide">
@@ -382,7 +383,7 @@ const LancasterCountervailingPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#customs-defense" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">Customs Defense</span>
                     <p className="service-link__description">CBP audit & penalty defense</p>
                     <div className="triangle-slide">
@@ -390,7 +391,7 @@ const LancasterCountervailingPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -400,34 +401,34 @@ const LancasterCountervailingPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">CVD Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/cvd-guide" className="service-link">
+                  <Link to="/resources/cvd-guide" className="service-link">
                     <span className="service-link__title">Countervailing Duty Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/aerospace-trade-compliance" className="service-link">
+                  <Link to="/resources/aerospace-trade-compliance" className="service-link">
                     <span className="service-link__title">Aerospace Trade Compliance</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -445,7 +446,7 @@ const LancasterCountervailingPage: React.FC = () => {
             CVD rates can exceed 200% on aerospace materials, impacting government contracts and profitability. Our Lancaster countervailing duty attorney helps you avoid or minimize these duties through scope rulings, subsidy analysis, and Commerce Department defense. Free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="#schedule-consultation" variant="solid">
+            <Button href="/contact" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">
