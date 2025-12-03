@@ -5,8 +5,14 @@ import { section301ExtensionsArticle } from './article-section-301-exclusion-ext
 import { section232CopperTariffsArticle } from './article-section-232-copper-tariffs-california-2025';
 import { section232TimberLumberArticle } from './article-section-232-timber-lumber-california-2025';
 import { transshipmentPenaltiesArticle } from './article-transshipment-penalties-california-2025';
+import { usKoreaStrategicTradeArticle } from './article-us-korea-strategic-trade-deal-2025';
+import { usChinaAgriculturalTradeArticle } from './article-us-china-agricultural-trade-truce-2025';
+import { oecdGlobalTradeResilienceArticle } from './article-oecd-global-trade-resilience-2025';
 
 export const articles: ArticleData[] = [
+  usKoreaStrategicTradeArticle,
+  usChinaAgriculturalTradeArticle,
+  oecdGlobalTradeResilienceArticle,
   section232CopperTariffsArticle,
   section232TimberLumberArticle,
   transshipmentPenaltiesArticle,
