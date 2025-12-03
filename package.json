@@ -12,7 +12,8 @@
     "framer-motion": "^12.23.24",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-error-boundary": "^6.0.0"
+    "react-error-boundary": "^6.0.0",
+    "react-router-dom": "^7.10.0"
   },
   "devDependencies": {
     "@netlify/functions": "^2.8.2",

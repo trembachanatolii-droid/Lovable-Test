@@ -22,12 +22,12 @@ const HemetCountryOfOriginPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Hemet Country of Origin Attorney - Product Origin Determination Legal Services',
         description: 'Hemet country of origin attorney providing expert legal representation for businesses navigating substantial transformation, marking requirements, and origin determination compliance.',
-        url: `${siteConfig.siteUrl}/#hemet-country-of-origin-attorney`,
+        url: `${siteConfig.siteUrl}/hemet-country-of-origin-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Hemet Country of Origin Attorney', url: `${siteConfig.siteUrl}/#hemet-country-of-origin-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Hemet Country of Origin Attorney', url: `${siteConfig.siteUrl}/hemet-country-of-origin-attorney` }
       ]),
       generateFAQSchema([
         {

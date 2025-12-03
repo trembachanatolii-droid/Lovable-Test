@@ -23,12 +23,12 @@ const SanJoseTechExportControlsPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Jose Tech Export Controls Attorney - Silicon Valley Technology Export Compliance',
         description: 'Expert San Jose tech export controls attorney specializing in Silicon Valley semiconductor, software, AI/ML, and emerging technology export controls, ITAR, EAR, and deemed export compliance.',
-        url: `${siteConfig.siteUrl}/#san-jose-tech-export-controls`,
+        url: `${siteConfig.siteUrl}/san-jose-tech-export-controls`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Jose Tech Export Controls', url: `${siteConfig.siteUrl}/#san-jose-tech-export-controls` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Jose Tech Export Controls', url: `${siteConfig.siteUrl}/san-jose-tech-export-controls` }
       ]),
       generateFAQSchema([
         {

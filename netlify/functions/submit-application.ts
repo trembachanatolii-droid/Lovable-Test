@@ -464,7 +464,7 @@ function generateApplicantSMS(firstName: string, position: string): string {
 const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
   // CORS headers
   const headers = {
-    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Origin": "https://trembach.law",
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Content-Type": "application/json",

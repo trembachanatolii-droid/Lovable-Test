@@ -21,12 +21,12 @@ const CarlsbadExportControlPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Carlsbad Export Control Attorney - ITAR & EAR Compliance Lawyer',
         description: 'Expert Carlsbad export control attorney serving North San Diego County biotech, medical device, and defense companies with ITAR, EAR, and BIS compliance.',
-        url: `${siteConfig.siteUrl}/#carlsbad-export-control`,
+        url: `${siteConfig.siteUrl}/carlsbad-export-control`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Carlsbad Export Control', url: `${siteConfig.siteUrl}/#carlsbad-export-control` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Carlsbad Export Control', url: `${siteConfig.siteUrl}/carlsbad-export-control` }
       ]),
       generateFAQSchema([
         {

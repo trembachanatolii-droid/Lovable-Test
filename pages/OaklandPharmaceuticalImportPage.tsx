@@ -21,12 +21,12 @@ const OaklandPharmaceuticalImportPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Pharmaceutical Import Attorney Oakland - Pharma Customs Lawyer',
         description: 'Expert pharmaceutical import attorney serving Oakland Bay Area pharma companies with FDA compliance, drug classification, and API import strategies.',
-        url: `${siteConfig.siteUrl}/#oakland-pharmaceutical-import`,
+        url: `${siteConfig.siteUrl}/oakland-pharmaceutical-import`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Pharmaceutical Import Attorney Oakland', url: `${siteConfig.siteUrl}/#oakland-pharmaceutical-import` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Pharmaceutical Import Attorney Oakland', url: `${siteConfig.siteUrl}/oakland-pharmaceutical-import` }
       ]),
       generateFAQSchema([
         {

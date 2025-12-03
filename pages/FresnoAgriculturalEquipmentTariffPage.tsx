@@ -21,12 +21,12 @@ const FresnoAgriculturalEquipmentTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Agricultural Equipment Tariff Attorney Fresno - Farm Machinery Import Lawyer',
         description: 'Expert agricultural equipment tariff attorney serving Fresno Central Valley farms with Section 301 strategies, farm equipment classification, and import compliance.',
-        url: `${siteConfig.siteUrl}/#fresno-agricultural-equipment-tariff`,
+        url: `${siteConfig.siteUrl}/fresno-agricultural-equipment-tariff`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Agricultural Equipment Tariff Attorney Fresno', url: `${siteConfig.siteUrl}/#fresno-agricultural-equipment-tariff` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Agricultural Equipment Tariff Attorney Fresno', url: `${siteConfig.siteUrl}/fresno-agricultural-equipment-tariff` }
       ]),
       generateFAQSchema([
         {

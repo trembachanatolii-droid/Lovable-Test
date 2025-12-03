@@ -23,12 +23,12 @@ const OntarioTradeCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Ontario Trade Compliance & Inland Empire Customs Lawyer - Distribution Hub Legal Services',
         description: 'Ontario trade compliance and Inland Empire customs lawyer providing expert legal representation for warehouse operations, tariff classification, CBP defense, and distribution compliance.',
-        url: `${siteConfig.siteUrl}/#ontario-trade-compliance`,
+        url: `${siteConfig.siteUrl}/ontario-trade-compliance`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Ontario Trade Compliance', url: `${siteConfig.siteUrl}/#ontario-trade-compliance` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Ontario Trade Compliance', url: `${siteConfig.siteUrl}/ontario-trade-compliance` }
       ]),
       generateFAQSchema([
         {

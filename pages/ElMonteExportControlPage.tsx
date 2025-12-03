@@ -21,12 +21,12 @@ const ElMonteExportControlPage: React.FC = () => {
       generateWebPageSchema({
         title: 'El Monte Export Control Attorney - ITAR & EAR Compliance Lawyer',
         description: 'Expert El Monte export control attorney serving San Gabriel Valley electronics manufacturers and defense suppliers with ITAR, EAR, and BIS compliance.',
-        url: `${siteConfig.siteUrl}/#el-monte-export-control`,
+        url: `${siteConfig.siteUrl}/el-monte-export-control`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'El Monte Export Control', url: `${siteConfig.siteUrl}/#el-monte-export-control` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'El Monte Export Control', url: `${siteConfig.siteUrl}/el-monte-export-control` }
       ]),
       generateFAQSchema([
         {

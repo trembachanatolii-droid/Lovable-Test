@@ -21,12 +21,12 @@ const FresnoUFLPAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'UFLPA Attorney Fresno CA - Forced Labor Compliance Lawyer Central Valley',
         description: 'Expert UFLPA attorney serving Fresno and Central Valley businesses with forced labor compliance, detention defense, and supply chain solutions.',
-        url: `${siteConfig.siteUrl}/#fresno-uflpa`,
+        url: `${siteConfig.siteUrl}/fresno-uflpa`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'UFLPA Attorney Fresno', url: `${siteConfig.siteUrl}/#fresno-uflpa` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'UFLPA Attorney Fresno', url: `${siteConfig.siteUrl}/fresno-uflpa` }
       ]),
       generateFAQSchema([
         {

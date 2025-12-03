@@ -23,12 +23,12 @@ const SantaAnaTradeAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Santa Ana Trade Attorney & Orange County Customs Lawyer - OC County Seat Legal Services',
         description: 'Santa Ana trade attorney and Orange County customs lawyer providing expert legal representation for tariff classification, CBP defense, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#santa-ana-trade-attorney`,
+        url: `${siteConfig.siteUrl}/santa-ana-trade-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Santa Ana Trade Attorney', url: `${siteConfig.siteUrl}/#santa-ana-trade-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Santa Ana Trade Attorney', url: `${siteConfig.siteUrl}/santa-ana-trade-attorney` }
       ]),
       generateFAQSchema([
         {

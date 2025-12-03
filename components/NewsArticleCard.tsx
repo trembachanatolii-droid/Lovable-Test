@@ -1,5 +1,6 @@
 
 import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
 import type { NewsArticle } from '../types';
 
 interface NewsArticleCardProps {
@@ -7,9 +8,16 @@ interface NewsArticleCardProps {
 }
 
 const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
+  // Use Link for internal hash routes, anchor for external links
+  const isInternalLink = article.linkHref.startsWith('#');
+  const Component = isInternalLink ? Link : 'a';
+  const linkProps = isInternalLink
+    ? { to: article.linkHref.replace('#', '/') }
+    : { href: article.linkHref };
+
   return (
-    <a
-      href={article.linkHref}
+    <Component
+      {...linkProps}
       aria-label={`Read article: ${article.title}`}
       className="block group relative bg-white overflow-hidden transition-all duration-300 shadow-sm hover:-translate-y-1 hover:shadow-xl will-change-transform border border-border-subtle rounded-2xl"
     >
@@ -64,7 +72,7 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
           Read Now &rarr;
         </span>
       </div>
-    </a>
+    </Component>
   );
 });
 

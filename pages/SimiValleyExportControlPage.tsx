@@ -21,12 +21,12 @@ const SimiValleyExportControlPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Simi Valley Export Control Attorney - ITAR & EAR Compliance Lawyer',
         description: 'Expert Simi Valley export control attorney serving aerospace, defense, and technology companies with ITAR, EAR, and BIS compliance solutions.',
-        url: `${siteConfig.siteUrl}/#simi-valley-export-control`,
+        url: `${siteConfig.siteUrl}/simi-valley-export-control`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Simi Valley Export Control', url: `${siteConfig.siteUrl}/#simi-valley-export-control` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Simi Valley Export Control', url: `${siteConfig.siteUrl}/simi-valley-export-control` }
       ]),
       generateFAQSchema([
         {

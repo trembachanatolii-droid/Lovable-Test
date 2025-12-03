@@ -21,12 +21,12 @@ const SanFranciscoChinaTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'China Tariff Attorney San Francisco - Section 301 Lawyer SF',
         description: 'Expert China tariff attorney serving San Francisco businesses with Section 301 strategies, tariff mitigation, and compliance solutions.',
-        url: `${siteConfig.siteUrl}/#san-francisco-china-tariff`,
+        url: `${siteConfig.siteUrl}/san-francisco-china-tariff`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'China Tariff Attorney San Francisco', url: `${siteConfig.siteUrl}/#san-francisco-china-tariff` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'China Tariff Attorney San Francisco', url: `${siteConfig.siteUrl}/san-francisco-china-tariff` }
       ]),
       generateFAQSchema([
         {

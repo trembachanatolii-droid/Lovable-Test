@@ -23,12 +23,12 @@ const LomaLindaCustomsBondPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Loma Linda Customs Bond Attorney - Import Bond Lawyer San Bernardino CA',
         description: 'Loma Linda customs bond attorney specializing in continuous bonds, single entry bonds, and bond sufficiency for San Bernardino County importers and medical device companies.',
-        url: `${siteConfig.siteUrl}/#loma-linda-customs-bond-attorney`,
+        url: `${siteConfig.siteUrl}/loma-linda-customs-bond-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Loma Linda Customs Bond Attorney', url: `${siteConfig.siteUrl}/#loma-linda-customs-bond-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Loma Linda Customs Bond Attorney', url: `${siteConfig.siteUrl}/loma-linda-customs-bond-attorney` }
       ]),
       generateFAQSchema([
         {

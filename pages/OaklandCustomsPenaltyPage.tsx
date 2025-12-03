@@ -23,12 +23,12 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Oakland Customs Penalty Defense Attorney - CBP Penalty Mitigation Expert',
         description: 'Oakland customs penalty defense attorney providing expert CBP penalty mitigation, CF-29 response, and prior disclosure services. Reduce customs penalties by 75% or more.',
-        url: `${siteConfig.siteUrl}/#oakland-customs-penalty-defense-attorney`,
+        url: `${siteConfig.siteUrl}/oakland-customs-penalty-defense-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Oakland Customs Penalty Defense Attorney', url: `${siteConfig.siteUrl}/#oakland-customs-penalty-defense-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Oakland Customs Penalty Defense Attorney', url: `${siteConfig.siteUrl}/oakland-customs-penalty-defense-attorney` }
       ]),
       generateFAQSchema([
         {

@@ -333,11 +333,11 @@ const UsefulLinksPage: React.FC = () => {
       generateWebPageSchema({
         title: 'International Trade Law Resources & Compliance Tools Directory - California',
         description: 'Comprehensive directory of CBP, ITAR, OFAC, HTS, and international trade law resources curated by California customs attorneys.',
-        url: `${siteConfig.siteUrl}/#useful-links`,
+        url: `${siteConfig.siteUrl}/useful-links`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Useful Links', url: `${siteConfig.siteUrl}/#useful-links` }
+        { name: 'Useful Links', url: `${siteConfig.siteUrl}/useful-links` }
       ])
     ],
   });

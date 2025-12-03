@@ -21,12 +21,12 @@ const SanDiegoCustomsSeizurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Customs Seizure Attorney San Diego - Border Detention Lawyer',
         description: 'Expert customs seizure attorney serving San Diego with border seizure defense, detention release, and forfeiture prevention.',
-        url: `${siteConfig.siteUrl}/#san-diego-customs-seizure`,
+        url: `${siteConfig.siteUrl}/san-diego-customs-seizure`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Customs Seizure Attorney San Diego', url: `${siteConfig.siteUrl}/#san-diego-customs-seizure` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Customs Seizure Attorney San Diego', url: `${siteConfig.siteUrl}/san-diego-customs-seizure` }
       ]),
       generateFAQSchema([
         {

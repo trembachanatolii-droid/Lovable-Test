@@ -21,12 +21,12 @@ const OaklandUFLPAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'UFLPA Attorney Oakland CA - Forced Labor Compliance Lawyer Bay Area',
         description: 'Expert UFLPA attorney serving Oakland and Bay Area businesses with forced labor compliance, detention defense, and supply chain solutions.',
-        url: `${siteConfig.siteUrl}/#oakland-uflpa`,
+        url: `${siteConfig.siteUrl}/oakland-uflpa`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'UFLPA Attorney Oakland', url: `${siteConfig.siteUrl}/#oakland-uflpa` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'UFLPA Attorney Oakland', url: `${siteConfig.siteUrl}/oakland-uflpa` }
       ]),
       generateFAQSchema([
         {

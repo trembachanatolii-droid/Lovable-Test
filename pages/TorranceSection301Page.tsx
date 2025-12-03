@@ -21,12 +21,12 @@ const TorranceSection301Page: React.FC = () => {
       generateWebPageSchema({
         title: 'Section 301 Tariff Attorney Torrance - China Tariff Lawyer South Bay',
         description: 'Expert Section 301 tariff attorney serving Torrance and South Bay manufacturers and importers with China tariff strategies and compliance solutions.',
-        url: `${siteConfig.siteUrl}/#torrance-section-301`,
+        url: `${siteConfig.siteUrl}/torrance-section-301`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Section 301 Attorney Torrance', url: `${siteConfig.siteUrl}/#torrance-section-301` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Section 301 Attorney Torrance', url: `${siteConfig.siteUrl}/torrance-section-301` }
       ]),
       generateFAQSchema([
         {

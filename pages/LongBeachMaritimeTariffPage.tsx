@@ -23,12 +23,12 @@ const LongBeachMaritimeTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Long Beach Maritime Tariff Attorney - Port Customs & Shipping Lawyer',
         description: 'Long Beach maritime tariff attorney specializing in ocean cargo compliance, vessel entries, port customs, and maritime import regulations.',
-        url: `${siteConfig.siteUrl}/#long-beach-maritime-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/long-beach-maritime-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Long Beach Maritime Tariff Attorney', url: `${siteConfig.siteUrl}/#long-beach-maritime-tariff-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Long Beach Maritime Tariff Attorney', url: `${siteConfig.siteUrl}/long-beach-maritime-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

@@ -23,12 +23,12 @@ const SanJoseCustomsLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Jose Customs Lawyer & Silicon Valley Tariff Attorney - Tech Trade Legal Services',
         description: 'San Jose customs lawyer and Silicon Valley tariff attorney providing expert legal representation for tech exports, tariff classification, CBP defense, and trade compliance.',
-        url: `${siteConfig.siteUrl}/#san-jose-customs-lawyer`,
+        url: `${siteConfig.siteUrl}/san-jose-customs-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Jose Customs Lawyer', url: `${siteConfig.siteUrl}/#san-jose-customs-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Jose Customs Lawyer', url: `${siteConfig.siteUrl}/san-jose-customs-lawyer` }
       ]),
       generateFAQSchema([
         {

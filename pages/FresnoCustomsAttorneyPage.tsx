@@ -23,12 +23,12 @@ const FresnoCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Fresno Customs Attorney & Central Valley Tariff Lawyer - Agricultural Trade Law',
         description: 'Fresno customs attorney and Central Valley tariff lawyer providing expert legal representation for agricultural imports, tariff classification, CBP defense, and food trade compliance.',
-        url: `${siteConfig.siteUrl}/#fresno-customs-attorney`,
+        url: `${siteConfig.siteUrl}/fresno-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Fresno Customs Attorney', url: `${siteConfig.siteUrl}/#fresno-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Fresno Customs Attorney', url: `${siteConfig.siteUrl}/fresno-customs-attorney` }
       ]),
       generateFAQSchema([
         {

@@ -23,12 +23,12 @@ const SanDiegoEcommerceTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Diego Ecommerce Tariff Attorney - Online Seller & FBA Import Lawyer',
         description: 'San Diego ecommerce tariff attorney specializing in online seller compliance, Amazon FBA imports, Section 321 de minimis, and dropshipping customs law.',
-        url: `${siteConfig.siteUrl}/#san-diego-ecommerce-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/san-diego-ecommerce-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Diego Ecommerce Tariff Attorney', url: `${siteConfig.siteUrl}/#san-diego-ecommerce-tariff-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Diego Ecommerce Tariff Attorney', url: `${siteConfig.siteUrl}/san-diego-ecommerce-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

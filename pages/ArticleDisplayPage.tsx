@@ -1,10 +1,12 @@
 
 import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
 
 import { loadArticle } from '../data/articlesLoader';
 import { articleMetadata, getArticleCategory, formatDateForDisplay } from '../data/articleMetadata';
 import RelatedArticles from '../components/RelatedArticles';
 import ArticleCTA from '../components/ArticleCTA';
+import ShareButton from '../components/ShareButton';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateBreadcrumbSchema } from '../utils/seo';
@@ -14,17 +16,20 @@ import type { ArticleData } from '../types';
 
 // Lazy load EvaluationForm (below-the-fold component)
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
-interface ArticleDisplayPageProps {
-  articleId: string;
-}
 
-const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) => {
+const ArticleDisplayPage: React.FC = () => {
+  const { articleId } = useParams<{ articleId: string }>();
   const [article, setArticle] = useState<ArticleData | undefined>(undefined);
   const [isLoading, setIsLoading] = useState(true);
   const metadata = article ? articleMetadata[article.id] : undefined;
 
   // Lazy load the article when component mounts or articleId changes
   useEffect(() => {
+    if (!articleId) {
+      setIsLoading(false);
+      return;
+    }
+
     let isMounted = true;
     setIsLoading(true);
 
@@ -46,6 +51,10 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
   const readTime = metadata?.readTime?.toLowerCase().replace(' min read', ' min read') || '5 min read';
   const category = article ? getArticleCategory(article.id) : 'Trade Law';
 
+  // Get ISO 8601 formatted dates from article data for meta tags
+  const articlePublishedTime = article?.publishedDate ? `${article.publishedDate}T00:00:00Z` : undefined;
+  const articleModifiedTime = article?.lastModified ? `${article.lastModified}T00:00:00Z` : undefined;
+
   useMeta({
     title: article ? `${article.title} | Trembach Law Firm` : 'Article Not Found',
     description: article ? `${article.subheading}. Expert analysis from California international trade and customs law attorneys. ${article.intro}` : 'Article not found',
@@ -56,8 +65,8 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
     ogImageWidth: 1200,
     ogImageHeight: 630,
     twitterImageAlt: article ? `${article.title} - California International Trade Law Guide` : undefined,
-    articlePublishedTime: article ? publishedDate : undefined,
-    articleModifiedTime: article ? publishedDate : undefined,
+    articlePublishedTime: articlePublishedTime,
+    articleModifiedTime: articleModifiedTime,
     schema: article ? [
       {
         '@context': 'https://schema.org',
@@ -67,12 +76,12 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
         image: `${siteConfig.siteUrl}/og-image-article-${article.id}.jpg`,
         author: {
           '@type': 'Person',
-          '@id': 'https://trembach.law/#anatolii-trembach',
+          '@id': 'https://trembach.law/anatolii-trembach',
           name: 'Anatolii Trembach',
         },
         publisher: {
           '@type': 'Organization',
-          '@id': 'https://trembach.law/#organization',
+          '@id': 'https://trembach.law/organization',
           name: 'Trembach Law Firm',
           logo: {
             '@type': 'ImageObject',
@@ -81,19 +90,19 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
             height: 60,
           },
         },
-        datePublished: publishedDate,
-        dateModified: publishedDate,
+        datePublished: article.publishedDate,
+        dateModified: article.lastModified,
         mainEntityOfPage: {
           '@type': 'WebPage',
-          '@id': `${siteConfig.siteUrl}/#article/${article.id}`,
+          '@id': `${siteConfig.siteUrl}/article/${article.id}`,
         },
         articleSection: 'International Trade Law',
         keywords: article.keywords || 'international trade law, customs regulations, legal analysis',
       },
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'News & Insights', url: `${siteConfig.siteUrl}/#news` },
-        { name: article.title, url: `${siteConfig.siteUrl}/#article/${article.id}` }
+        { name: 'News & Insights', url: `${siteConfig.siteUrl}/news` },
+        { name: article.title, url: `${siteConfig.siteUrl}/article/${article.id}` }
       ])
     ] : undefined,
   });
@@ -118,7 +127,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
     return (
       <div className="pt-32 pb-20 text-center min-h-[60vh]">
         <h1 className="text-2xl font-garamond text-primary-navy">Article not found</h1>
-        <a href="#news" className="text-secondary-teal underline mt-4 block">Return to News</a>
+        <Link to="/news" className="text-secondary-teal underline mt-4 block">Return to News</Link>
       </div>
     );
   }
@@ -128,8 +137,8 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
       <article className="bg-white min-h-screen pt-40 pb-20">
         {/* Back Navigation */}
         <div className="max-w-[800px] mx-auto px-6 mb-12">
-          <a
-            href="#news"
+          <Link
+            to="/news"
             className="group inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider transition-colors duration-300"
             style={{ color: '#9CA3AF' }}
             onMouseEnter={(e) => e.currentTarget.style.color = '#3FBB94'}
@@ -141,7 +150,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
               </svg>
             </span>
             Back to News
-          </a>
+          </Link>
         </div>
 
         {/* Article Header */}
@@ -192,6 +201,14 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
                 {displayDate}
               </span>
             </div>
+
+            <div className="hidden md:block w-px h-10" style={{ backgroundColor: '#E5E7EB' }}></div>
+
+            <ShareButton
+              title={article.title}
+              text={article.subheading}
+              url={`${siteConfig.siteUrl}/article/${article.id}`}
+            />
 
           </div>
         </header>
@@ -308,7 +325,7 @@ const ArticleDisplayPage: React.FC<ArticleDisplayPageProps> = ({ articleId }) =>
       </article>
 
       {/* Related Articles Section */}
-      <RelatedArticles currentArticleId={articleId} maxArticles={4} />
+      <RelatedArticles currentArticleId={articleId || ''} maxArticles={4} />
 
       {/* White space separator between related articles and form */}
       <div className="bg-white py-11"></div>

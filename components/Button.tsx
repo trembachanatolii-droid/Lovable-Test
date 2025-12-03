@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 type ButtonProps = {
 children: React.ReactNode;
@@ -30,18 +31,26 @@ const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${className}`
 const buttonStyle = { minHeight: '44px' };
 
 if (href) {
+    // Use Link for internal hash routes, anchor for external links
+    if (href.startsWith('#')) {
+        return (
+            <Link
+                to={href.substring(1)} // Remove # and keep /
+                className={combinedClasses}
+                style={buttonStyle}
+                onClick={props.onClick}
+            >
+                {children}
+            </Link>
+        );
+    }
+
     return (
         <a
             href={href}
             className={combinedClasses}
             style={buttonStyle}
-            onClick={(e) => {
-                if (href.startsWith('#')) {
-                    e.preventDefault();
-                    window.location.hash = href;
-                }
-                if (props.onClick) props.onClick();
-            }}
+            onClick={props.onClick}
         >
             {children}
         </a>

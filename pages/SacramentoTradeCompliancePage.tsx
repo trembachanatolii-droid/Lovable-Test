@@ -23,12 +23,12 @@ const SacramentoTradeCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Sacramento Trade Compliance Attorney - Import/Export Compliance Program Development',
         description: 'Expert Sacramento trade compliance attorney providing import/export compliance program development, CBP audits, reasonable care assessments, and regulatory compliance for California businesses.',
-        url: `${siteConfig.siteUrl}/#sacramento-trade-compliance`,
+        url: `${siteConfig.siteUrl}/sacramento-trade-compliance`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Sacramento Trade Compliance', url: `${siteConfig.siteUrl}/#sacramento-trade-compliance` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Sacramento Trade Compliance', url: `${siteConfig.siteUrl}/sacramento-trade-compliance` }
       ]),
       generateFAQSchema([
         {

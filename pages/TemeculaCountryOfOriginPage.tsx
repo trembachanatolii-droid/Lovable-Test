@@ -22,12 +22,12 @@ const TemeculaCountryOfOriginPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Temecula Country of Origin Attorney - Product Origin Legal Services',
         description: 'Temecula country of origin attorney providing expert legal counsel for substantial transformation analysis, marking compliance, and trade agreement origin determinations for Temecula Valley businesses.',
-        url: `${siteConfig.siteUrl}/#temecula-country-of-origin-attorney`,
+        url: `${siteConfig.siteUrl}/temecula-country-of-origin-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Temecula Country of Origin Attorney', url: `${siteConfig.siteUrl}/#temecula-country-of-origin-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Temecula Country of Origin Attorney', url: `${siteConfig.siteUrl}/temecula-country-of-origin-attorney` }
       ]),
       generateFAQSchema([
         {

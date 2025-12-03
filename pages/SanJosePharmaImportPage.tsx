@@ -21,12 +21,12 @@ const SanJosePharmaImportPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Pharmaceutical Import Attorney San Jose - FDA Compliance Lawyer',
         description: 'Expert pharmaceutical import attorney serving San Jose biotech and pharma companies with FDA compliance, drug import regulations, and medical device import services.',
-        url: `${siteConfig.siteUrl}/#san-jose-pharma-import`,
+        url: `${siteConfig.siteUrl}/san-jose-pharma-import`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Pharmaceutical Import Attorney San Jose', url: `${siteConfig.siteUrl}/#san-jose-pharma-import` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Pharmaceutical Import Attorney San Jose', url: `${siteConfig.siteUrl}/san-jose-pharma-import` }
       ]),
       generateFAQSchema([
         {

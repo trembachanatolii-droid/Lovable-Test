@@ -23,12 +23,12 @@ const OaklandCustomsBrokerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Oakland Customs Broker Liability Attorney - Broker Defense & Professional Liability Lawyer',
         description: 'Oakland customs broker liability attorney specializing in broker negligence defense, CBP broker violations, license defense, and professional liability.',
-        url: `${siteConfig.siteUrl}/#oakland-customs-broker-liability-attorney`,
+        url: `${siteConfig.siteUrl}/oakland-customs-broker-liability-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Oakland Customs Broker Liability Attorney', url: `${siteConfig.siteUrl}/#oakland-customs-broker-liability-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Oakland Customs Broker Liability Attorney', url: `${siteConfig.siteUrl}/oakland-customs-broker-liability-attorney` }
       ]),
       generateFAQSchema([
         {

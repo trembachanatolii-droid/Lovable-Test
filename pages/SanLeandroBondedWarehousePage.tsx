@@ -22,12 +22,12 @@ const SanLeandroBondedWarehousePage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Leandro Bonded Warehouse Attorney - Alameda County Customs Compliance',
         description: 'San Leandro bonded warehouse attorney providing expert legal services for CBP bonded warehouse establishment, Port of Oakland customs compliance, and duty deferral programs in Alameda County.',
-        url: `${siteConfig.siteUrl}/#san-leandro-bonded-warehouse`,
+        url: `${siteConfig.siteUrl}/san-leandro-bonded-warehouse`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Leandro Bonded Warehouse Attorney', url: `${siteConfig.siteUrl}/#san-leandro-bonded-warehouse` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Leandro Bonded Warehouse Attorney', url: `${siteConfig.siteUrl}/san-leandro-bonded-warehouse` }
       ]),
       generateFAQSchema([
         {

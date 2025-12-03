@@ -23,12 +23,12 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Bakersfield Oil & Energy Trade Lawyer - Petroleum Import/Export Attorney',
         description: 'Expert Bakersfield oil and energy trade lawyer providing petroleum import/export compliance, energy equipment tariffs, and customs law services for Kern County energy sector.',
-        url: `${siteConfig.siteUrl}/#bakersfield-oil-energy-trade`,
+        url: `${siteConfig.siteUrl}/bakersfield-oil-energy-trade`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Bakersfield Oil & Energy Trade', url: `${siteConfig.siteUrl}/#bakersfield-oil-energy-trade` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Bakersfield Oil & Energy Trade', url: `${siteConfig.siteUrl}/bakersfield-oil-energy-trade` }
       ]),
       generateFAQSchema([
         {

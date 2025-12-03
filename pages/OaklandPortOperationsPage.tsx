@@ -23,12 +23,12 @@ const OaklandPortOperationsPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Oakland Port Operations Attorney - Port of Oakland Customs & Maritime Lawyer',
         description: 'Oakland port operations attorney specializing in Port of Oakland compliance, maritime customs, cargo operations, and shipping regulations.',
-        url: `${siteConfig.siteUrl}/#oakland-port-operations-attorney`,
+        url: `${siteConfig.siteUrl}/oakland-port-operations-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Oakland Port Operations Attorney', url: `${siteConfig.siteUrl}/#oakland-port-operations-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Oakland Port Operations Attorney', url: `${siteConfig.siteUrl}/oakland-port-operations-attorney` }
       ]),
       generateFAQSchema([
         {

@@ -21,12 +21,12 @@ const LosAngelesAutomotiveTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Automotive Tariff Attorney Los Angeles - Auto Import Lawyer',
         description: 'Expert automotive tariff attorney serving Los Angeles auto manufacturers with Section 301 strategies, USMCA compliance, and parts classification.',
-        url: `${siteConfig.siteUrl}/#los-angeles-automotive-tariff`,
+        url: `${siteConfig.siteUrl}/los-angeles-automotive-tariff`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Automotive Tariff Attorney Los Angeles', url: `${siteConfig.siteUrl}/#los-angeles-automotive-tariff` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Automotive Tariff Attorney Los Angeles', url: `${siteConfig.siteUrl}/los-angeles-automotive-tariff` }
       ]),
       generateFAQSchema([
         {

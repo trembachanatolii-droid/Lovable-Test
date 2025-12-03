@@ -77,11 +77,11 @@ const CareersPage: React.FC = () => {
         generateWebPageSchema({
           title: 'Careers at Trembach Law Firm - International Trade Attorney Jobs California',
           description: 'Join California\'s premier international trade and customs law firm. Attorney, compliance, and paralegal positions available.',
-          url: `${siteConfig.siteUrl}/#careers`,
+          url: `${siteConfig.siteUrl}/careers`,
         }),
         generateBreadcrumbSchema([
           { name: 'Home', url: `${siteConfig.siteUrl}/` },
-          { name: 'Careers', url: `${siteConfig.siteUrl}/#careers` }
+          { name: 'Careers', url: `${siteConfig.siteUrl}/careers` }
         ]),
         // JobPosting Schemas for Google for Jobs
         generateJobPostingSchema({

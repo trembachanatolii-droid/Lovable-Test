@@ -23,12 +23,12 @@ const SacramentoValleyTradePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Sacramento Valley Trade Attorney & Tariff Lawyer - California Capital Region',
         description: 'Sacramento Valley trade attorney and tariff lawyer serving Sacramento, Roseville, Stockton, Davis. Expert government contractor compliance, agricultural trade, and CBP defense for the California capital region.',
-        url: `${siteConfig.siteUrl}/#sacramento-valley-trade-attorney`,
+        url: `${siteConfig.siteUrl}/sacramento-valley-trade-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Sacramento Valley Trade Attorney', url: `${siteConfig.siteUrl}/#sacramento-valley-trade-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Sacramento Valley Trade Attorney', url: `${siteConfig.siteUrl}/sacramento-valley-trade-attorney` }
       ]),
       generateFAQSchema([
         {

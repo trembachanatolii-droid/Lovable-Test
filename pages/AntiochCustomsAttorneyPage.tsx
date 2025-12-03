@@ -23,12 +23,12 @@ const AntiochCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Antioch Customs Attorney & Trade Lawyer - East Contra Costa County Trade Law',
         description: 'Antioch customs attorney and trade lawyer providing expert legal representation for East Contra Costa County businesses. CBP defense, tariff classification, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#antioch-customs-attorney`,
+        url: `${siteConfig.siteUrl}/antioch-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Antioch Customs Attorney', url: `${siteConfig.siteUrl}/#antioch-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Antioch Customs Attorney', url: `${siteConfig.siteUrl}/antioch-customs-attorney` }
       ]),
       generateFAQSchema([
         {

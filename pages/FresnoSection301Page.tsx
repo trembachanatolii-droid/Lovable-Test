@@ -21,12 +21,12 @@ const FresnoSection301Page: React.FC = () => {
       generateWebPageSchema({
         title: 'Section 301 Tariff Attorney Fresno - China Tariff Lawyer Agriculture',
         description: 'Expert Section 301 tariff attorney serving Fresno agricultural businesses with China tariff strategies and compliance solutions.',
-        url: `${siteConfig.siteUrl}/#fresno-section-301`,
+        url: `${siteConfig.siteUrl}/fresno-section-301`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Section 301 Attorney Fresno', url: `${siteConfig.siteUrl}/#fresno-section-301` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Section 301 Attorney Fresno', url: `${siteConfig.siteUrl}/fresno-section-301` }
       ]),
       generateFAQSchema([
         {

@@ -23,12 +23,12 @@ const OaklandMaritimeTradePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Oakland Maritime Trade Lawyer - Port of Oakland Customs & Shipping Attorney',
         description: 'Expert Oakland maritime trade lawyer providing Port of Oakland customs compliance, vessel clearance, Jones Act compliance, and maritime cargo legal services for Bay Area shipping companies.',
-        url: `${siteConfig.siteUrl}/#oakland-maritime-trade`,
+        url: `${siteConfig.siteUrl}/oakland-maritime-trade`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Oakland Maritime Trade', url: `${siteConfig.siteUrl}/#oakland-maritime-trade` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Oakland Maritime Trade', url: `${siteConfig.siteUrl}/oakland-maritime-trade` }
       ]),
       generateFAQSchema([
         {

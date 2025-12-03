@@ -20,18 +20,18 @@ const RegulatoryCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Regulatory Compliance & Advisory - Trade Compliance California Attorney',
         description: 'Comprehensive trade compliance California legal services for import/export compliance programs, federal trade compliance, and proactive regulatory advisory.',
-        url: `${siteConfig.siteUrl}/#regulatory-compliance-advisory`,
+        url: `${siteConfig.siteUrl}/regulatory-compliance-advisory`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Practice Areas', url: `${siteConfig.siteUrl}/#practice-areas` },
-        { name: 'Regulatory Compliance & Advisory', url: `${siteConfig.siteUrl}/#regulatory-compliance-advisory` }
+        { name: 'Practice Areas', url: `${siteConfig.siteUrl}/practice-areas` },
+        { name: 'Regulatory Compliance & Advisory', url: `${siteConfig.siteUrl}/regulatory-compliance-advisory` }
       ]),
       generateServiceSchema({
         name: 'California Trade Compliance & Regulatory Advisory Services',
         description: 'Proactive trade compliance California services including import compliance program design, export compliance program development, federal trade compliance advisory, trade compliance audits, prior disclosure customs filings, voluntary self disclosure export submissions, customs record keeping systems, customs ruling requests, and trade compliance for manufacturers across California.',
         serviceType: 'Regulatory Compliance & Advisory',
-        url: `${siteConfig.siteUrl}/#regulatory-compliance-advisory`,
+        url: `${siteConfig.siteUrl}/regulatory-compliance-advisory`,
       }),
     ],
   });

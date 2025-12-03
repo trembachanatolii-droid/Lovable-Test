@@ -23,12 +23,12 @@ const SantaRosaCustomsLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Santa Rosa Customs Lawyer & Export Attorney - Wine Country Trade Law Firm',
         description: 'Santa Rosa customs lawyer and export attorney specializing in Sonoma County wine industry. Expert wine export compliance, tariff classification, CBP defense, and FDA/TTB regulations for wine exporters.',
-        url: `${siteConfig.siteUrl}/#santa-rosa-customs-lawyer`,
+        url: `${siteConfig.siteUrl}/santa-rosa-customs-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Santa Rosa Customs Lawyer', url: `${siteConfig.siteUrl}/#santa-rosa-customs-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Santa Rosa Customs Lawyer', url: `${siteConfig.siteUrl}/santa-rosa-customs-lawyer` }
       ]),
       generateFAQSchema([
         {

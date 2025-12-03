@@ -23,12 +23,12 @@ const GlendaleAntiDumpingPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Glendale Anti-Dumping Duty Attorney - AD/CVD Defense for Furniture & Apparel Imports',
         description: 'Expert Glendale anti-dumping duty attorney providing scope rulings, EAPA investigation defense, and AD/CVD mitigation for Los Angeles County furniture, textile, and manufacturing importers.',
-        url: `${siteConfig.siteUrl}/#glendale-antidumping-attorney`,
+        url: `${siteConfig.siteUrl}/glendale-antidumping-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Glendale Anti-Dumping Attorney', url: `${siteConfig.siteUrl}/#glendale-antidumping-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Glendale Anti-Dumping Attorney', url: `${siteConfig.siteUrl}/glendale-antidumping-attorney` }
       ]),
       generateFAQSchema([
         {

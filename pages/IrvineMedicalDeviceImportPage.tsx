@@ -21,12 +21,12 @@ const IrvineMedicalDeviceImportPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Medical Device Import Attorney Irvine - FDA Device Customs Lawyer',
         description: 'Expert medical device import attorney serving Irvine Orange County medical device companies with FDA compliance, device classification, and import strategies.',
-        url: `${siteConfig.siteUrl}/#irvine-medical-device-import`,
+        url: `${siteConfig.siteUrl}/irvine-medical-device-import`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Medical Device Import Attorney Irvine', url: `${siteConfig.siteUrl}/#irvine-medical-device-import` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Medical Device Import Attorney Irvine', url: `${siteConfig.siteUrl}/irvine-medical-device-import` }
       ]),
       generateFAQSchema([
         {

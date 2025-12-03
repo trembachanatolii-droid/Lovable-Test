@@ -1,5 +1,6 @@
 
 import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 import { SearchIcon } from '../components/icons/SearchIcon';
 import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
@@ -338,15 +339,15 @@ const PracticeAreasPage: React.FC = () => {
         '@type': 'CollectionPage',
         name: 'Practice Areas',
         description: 'Trembach Law Firm offers creative strategies that allow clients to stay competitive in the global marketplace.',
-        url: `${siteConfig.siteUrl}/#practice-areas`,
+        url: `${siteConfig.siteUrl}/practice-areas`,
         publisher: {
           '@type': 'Organization',
-          '@id': 'https://trembach.law/#organization',
+          '@id': 'https://trembach.law/organization',
         },
       },
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Practice Areas', url: `${siteConfig.siteUrl}/#practice-areas` }
+        { name: 'Practice Areas', url: `${siteConfig.siteUrl}/practice-areas` }
       ]),
       // Key Service Schemas for top practice areas - Keyword Optimized
       generateServiceSchema({
@@ -417,28 +418,15 @@ const PracticeAreasPage: React.FC = () => {
     ],
   });
 
+  const [searchParams] = useSearchParams();
   const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    // Check if there's a specific practice area to open from the URL
-    const hash = window.location.hash;
-    let targetSlug: string | null = null;
-
-    // Extract slug from query parameter format: #practice-areas?slug=customs-valuation
-    if (hash.includes('?slug=')) {
-      const urlParams = new URLSearchParams(hash.split('?')[1]);
-      targetSlug = urlParams.get('slug');
-    }
-    // Also support old format: #practice-areas/customs-valuation
-    else if (hash.includes('practice-areas/')) {
-      const slugMatch = hash.match(/practice-areas\/(\w+-?\w*)/);
-      if (slugMatch && slugMatch[1]) {
-        targetSlug = slugMatch[1];
-      }
-    }
+    // Check if there's a specific practice area to open from the URL query parameter
+    const targetSlug = searchParams.get('slug');
 
     if (targetSlug) {
       // Find the item with this slug
@@ -466,7 +454,7 @@ const PracticeAreasPage: React.FC = () => {
         });
       });
     }
-  }, []);
+  }, [searchParams]);
 
   const toggleItem = (key: string) => {
     setOpenItems((prev) => ({

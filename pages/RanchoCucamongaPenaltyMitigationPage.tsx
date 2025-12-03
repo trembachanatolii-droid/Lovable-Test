@@ -22,12 +22,12 @@ const RanchoCucamongaPenaltyMitigationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Rancho Cucamonga Customs Penalty Mitigation Attorney - CBP Penalty Defense Expert',
         description: 'Rancho Cucamonga customs penalty mitigation attorney providing expert CBP penalty defense, CF-29 response, and prior disclosure services. Reduce customs penalties by 75% or more.',
-        url: `${siteConfig.siteUrl}/#rancho-cucamonga-customs-penalty-mitigation`,
+        url: `${siteConfig.siteUrl}/rancho-cucamonga-customs-penalty-mitigation`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Rancho Cucamonga Customs Penalty Mitigation Attorney', url: `${siteConfig.siteUrl}/#rancho-cucamonga-customs-penalty-mitigation` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Rancho Cucamonga Customs Penalty Mitigation Attorney', url: `${siteConfig.siteUrl}/rancho-cucamonga-customs-penalty-mitigation` }
       ]),
       generateFAQSchema([
         {

@@ -23,12 +23,12 @@ const AppleValleyCustomsBondPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Apple Valley Customs Bond Attorney - Import Bond Lawyer Victor Valley CA',
         description: 'Apple Valley customs bond attorney specializing in continuous bonds, single entry bonds, and bond sufficiency for Victor Valley importers and distribution businesses.',
-        url: `${siteConfig.siteUrl}/#apple-valley-customs-bond-attorney`,
+        url: `${siteConfig.siteUrl}/apple-valley-customs-bond-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Apple Valley Customs Bond Attorney', url: `${siteConfig.siteUrl}/#apple-valley-customs-bond-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Apple Valley Customs Bond Attorney', url: `${siteConfig.siteUrl}/apple-valley-customs-bond-attorney` }
       ]),
       generateFAQSchema([
         {

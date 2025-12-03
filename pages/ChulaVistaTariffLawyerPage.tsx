@@ -23,12 +23,12 @@ const ChulaVistaTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Chula Vista Tariff Lawyer & Border Trade Attorney - California Customs Law',
         description: 'Chula Vista tariff lawyer specializing in cross-border trade between US and Mexico. Expert CBP defense, tariff classification, and border customs compliance near Otay Mesa and San Ysidro.',
-        url: `${siteConfig.siteUrl}/#chula-vista-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/chula-vista-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Chula Vista Tariff Lawyer', url: `${siteConfig.siteUrl}/#chula-vista-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Chula Vista Tariff Lawyer', url: `${siteConfig.siteUrl}/chula-vista-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

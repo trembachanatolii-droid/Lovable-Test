@@ -23,12 +23,12 @@ const SunnyvaleTechTradePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Sunnyvale Tech Trade Attorney & Silicon Valley Customs Lawyer - CA',
         description: 'Sunnyvale tech trade attorney serving Silicon Valley tech manufacturers. Expert customs legal services for semiconductor exports, electronics manufacturing, and tech compliance.',
-        url: `${siteConfig.siteUrl}/#sunnyvale-tech-trade`,
+        url: `${siteConfig.siteUrl}/sunnyvale-tech-trade`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Sunnyvale Tech Trade', url: `${siteConfig.siteUrl}/#sunnyvale-tech-trade` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Sunnyvale Tech Trade', url: `${siteConfig.siteUrl}/sunnyvale-tech-trade` }
       ]),
       generateFAQSchema([
         {

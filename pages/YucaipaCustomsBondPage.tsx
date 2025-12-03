@@ -23,12 +23,12 @@ const YucaipaCustomsBondPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Yucaipa Customs Bond Attorney - Import Bond Lawyer San Bernardino County CA',
         description: 'Yucaipa customs bond attorney specializing in continuous bonds, single entry bonds, and bond sufficiency for Inland Empire importers and manufacturers.',
-        url: `${siteConfig.siteUrl}/#yucaipa-customs-bond-attorney`,
+        url: `${siteConfig.siteUrl}/yucaipa-customs-bond-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Yucaipa Customs Bond Attorney', url: `${siteConfig.siteUrl}/#yucaipa-customs-bond-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Yucaipa Customs Bond Attorney', url: `${siteConfig.siteUrl}/yucaipa-customs-bond-attorney` }
       ]),
       generateFAQSchema([
         {

@@ -24,12 +24,12 @@ const DowneyCustomsBrokerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Downey Customs Broker Liability Attorney - Broker Defense & Professional Liability Lawyer',
         description: 'Downey customs broker liability attorney specializing in broker negligence defense, CBP broker violations, license defense, and professional liability.',
-        url: `${siteConfig.siteUrl}/#downey-customs-broker-liability-attorney`,
+        url: `${siteConfig.siteUrl}/downey-customs-broker-liability-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Downey Customs Broker Liability Attorney', url: `${siteConfig.siteUrl}/#downey-customs-broker-liability-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Downey Customs Broker Liability Attorney', url: `${siteConfig.siteUrl}/downey-customs-broker-liability-attorney` }
       ]),
       generateFAQSchema([
         {

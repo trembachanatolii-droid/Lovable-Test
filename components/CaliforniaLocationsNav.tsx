@@ -1,4 +1,5 @@
 import React, { memo, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface LocationLink {
   name: string;
@@ -133,11 +134,6 @@ const CaliforniaLocationsNav: React.FC<CaliforniaLocationsNavProps> = memo(({
 }) => {
   const [expandedRegion, setExpandedRegion] = useState<string | null>(null);
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, route: string) => {
-    e.preventDefault();
-    window.location.hash = route;
-  };
-
   if (variant === 'compact') {
     // Compact version showing only major cities
     const majorCities = californiaLocations.filter(loc =>
@@ -151,10 +147,9 @@ const CaliforniaLocationsNav: React.FC<CaliforniaLocationsNavProps> = memo(({
         </h3>
         <div className="flex flex-wrap justify-center gap-3">
           {majorCities.map((loc) => (
-            <a
+            <Link
               key={loc.route}
-              href={loc.route}
-              onClick={(e) => handleLinkClick(e, loc.route)}
+              to={loc.route.replace('#', '/')}
               className={`px-4 py-2 text-sm rounded-full transition-all duration-300 ${
                 currentRoute === loc.route.replace('#', '')
                   ? 'bg-secondary-teal text-white'
@@ -162,13 +157,13 @@ const CaliforniaLocationsNav: React.FC<CaliforniaLocationsNavProps> = memo(({
               }`}
             >
               {loc.name}
-            </a>
+            </Link>
           ))}
         </div>
         <p className="text-center text-sm text-text-secondary mt-4">
-          <a href="#california-locations" className="text-secondary-teal hover:underline">
+          <Link to="/california-locations" className="text-secondary-teal hover:underline">
             View all 83+ California locations →
-          </a>
+          </Link>
         </p>
       </nav>
     );
@@ -188,13 +183,12 @@ const CaliforniaLocationsNav: React.FC<CaliforniaLocationsNavProps> = memo(({
               <ul className="space-y-1">
                 {locationsByRegion[region].slice(0, 4).map((loc) => (
                   <li key={loc.route}>
-                    <a
-                      href={loc.route}
-                      onClick={(e) => handleLinkClick(e, loc.route)}
+                    <Link
+                      to={loc.route.replace('#', '/')}
                       className="text-neutral-300 text-xs hover:text-white transition-colors duration-200"
                     >
                       {loc.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
                 {locationsByRegion[region].length > 4 && (
@@ -258,10 +252,9 @@ const CaliforniaLocationsNav: React.FC<CaliforniaLocationsNavProps> = memo(({
               >
                 <div className="p-4 grid grid-cols-2 gap-2">
                   {locationsByRegion[region].map((loc) => (
-                    <a
+                    <Link
                       key={loc.route}
-                      href={loc.route}
-                      onClick={(e) => handleLinkClick(e, loc.route)}
+                      to={loc.route.replace('#', '/')}
                       className={`px-3 py-2 text-sm rounded transition-all duration-200 ${
                         currentRoute === loc.route.replace('#', '')
                           ? 'bg-secondary-teal text-white font-medium'
@@ -269,7 +262,7 @@ const CaliforniaLocationsNav: React.FC<CaliforniaLocationsNavProps> = memo(({
                       }`}
                     >
                       {loc.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -284,10 +277,9 @@ const CaliforniaLocationsNav: React.FC<CaliforniaLocationsNavProps> = memo(({
           </h3>
           <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-${maxColumns} gap-x-4 gap-y-2`}>
             {californiaLocations.map((loc) => (
-              <a
+              <Link
                 key={loc.route}
-                href={loc.route}
-                onClick={(e) => handleLinkClick(e, loc.route)}
+                to={loc.route.replace('#', '/')}
                 className={`text-sm py-1 transition-colors duration-200 ${
                   currentRoute === loc.route.replace('#', '')
                     ? 'text-secondary-teal font-medium'
@@ -295,7 +287,7 @@ const CaliforniaLocationsNav: React.FC<CaliforniaLocationsNavProps> = memo(({
                 }`}
               >
                 {loc.name} Tariff Lawyer
-              </a>
+              </Link>
             ))}
           </div>
         </div>

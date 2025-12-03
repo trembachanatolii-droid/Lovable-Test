@@ -21,12 +21,12 @@ const AnaheimSection301Page: React.FC = () => {
       generateWebPageSchema({
         title: 'Section 301 Tariff Attorney Anaheim - China Tariff Lawyer Orange County',
         description: 'Expert Section 301 tariff attorney serving Anaheim and Orange County manufacturers and importers with China tariff strategies and compliance solutions.',
-        url: `${siteConfig.siteUrl}/#anaheim-section-301`,
+        url: `${siteConfig.siteUrl}/anaheim-section-301`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Section 301 Attorney Anaheim', url: `${siteConfig.siteUrl}/#anaheim-section-301` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Section 301 Attorney Anaheim', url: `${siteConfig.siteUrl}/anaheim-section-301` }
       ]),
       generateFAQSchema([
         {

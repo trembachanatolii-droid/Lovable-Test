@@ -21,12 +21,12 @@ const RedwoodCityCustomsValuationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Redwood City Customs Valuation Attorney - Bay Area Trade Lawyer',
         description: 'Expert Redwood City customs valuation attorney serving Bay Area tech importers. Transaction value, assists, royalties, and transfer pricing compliance.',
-        url: `${siteConfig.siteUrl}/#redwood-city-customs-valuation`,
+        url: `${siteConfig.siteUrl}/redwood-city-customs-valuation`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Redwood City Customs Valuation', url: `${siteConfig.siteUrl}/#redwood-city-customs-valuation` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Redwood City Customs Valuation', url: `${siteConfig.siteUrl}/redwood-city-customs-valuation` }
       ]),
       generateFAQSchema([
         {

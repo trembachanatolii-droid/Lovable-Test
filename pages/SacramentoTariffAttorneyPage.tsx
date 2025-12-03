@@ -23,12 +23,12 @@ const SacramentoTariffAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Sacramento Tariff Attorney & Northern California Customs Lawyer - State Capital Trade Law',
         description: 'Sacramento tariff attorney and Northern California customs lawyer providing expert legal representation for tariff classification, CBP defense, customs audits, and agricultural trade compliance.',
-        url: `${siteConfig.siteUrl}/#sacramento-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/sacramento-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Sacramento Tariff Attorney', url: `${siteConfig.siteUrl}/#sacramento-tariff-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Sacramento Tariff Attorney', url: `${siteConfig.siteUrl}/sacramento-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

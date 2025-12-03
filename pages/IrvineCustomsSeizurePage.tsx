@@ -21,12 +21,12 @@ const IrvineCustomsSeizurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Customs Seizure Attorney Irvine CA - Cargo Detention Lawyer Orange County',
         description: 'Expert customs seizure attorney serving Irvine and Orange County with seizure defense, detention release, and forfeiture prevention.',
-        url: `${siteConfig.siteUrl}/#irvine-customs-seizure`,
+        url: `${siteConfig.siteUrl}/irvine-customs-seizure`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Customs Seizure Attorney Irvine', url: `${siteConfig.siteUrl}/#irvine-customs-seizure` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Customs Seizure Attorney Irvine', url: `${siteConfig.siteUrl}/irvine-customs-seizure` }
       ]),
       generateFAQSchema([
         {

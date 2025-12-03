@@ -23,12 +23,12 @@ const PalmdaleCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Palmdale Customs Attorney & Aerospace Trade Lawyer - Defense Contractor Specialists',
         description: 'Palmdale customs attorney and aerospace trade lawyer specializing in Antelope Valley defense contractors. Expert ITAR/EAR compliance, tariff classification, CBP defense, and export controls for aerospace manufacturers.',
-        url: `${siteConfig.siteUrl}/#palmdale-customs-attorney`,
+        url: `${siteConfig.siteUrl}/palmdale-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Palmdale Customs Attorney', url: `${siteConfig.siteUrl}/#palmdale-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Palmdale Customs Attorney', url: `${siteConfig.siteUrl}/palmdale-customs-attorney` }
       ]),
       generateFAQSchema([
         {

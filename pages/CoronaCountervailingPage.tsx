@@ -31,14 +31,14 @@ const CoronaCountervailingPage: React.FC = () => {
           'Corona Countervailing Duty Attorney - CVD Defense & Commerce Department Representation',
         description:
           'Expert Corona countervailing duty attorney providing CVD defense, scope rulings, and subsidy investigation representation for Inland Empire manufacturing and distribution industries.',
-        url: `${siteConfig.siteUrl}/#corona-countervailing-duty`,
+        url: `${siteConfig.siteUrl}/corona-countervailing-duty`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
         {
           name: 'Corona Countervailing Duty Attorney',
-          url: `${siteConfig.siteUrl}/#corona-countervailing-duty`,
+          url: `${siteConfig.siteUrl}/corona-countervailing-duty`,
         },
       ]),
       generateFAQSchema([

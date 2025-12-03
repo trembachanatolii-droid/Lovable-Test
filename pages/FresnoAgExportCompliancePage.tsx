@@ -23,12 +23,12 @@ const FresnoAgExportCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Fresno Agricultural Export Compliance Attorney - Farm Product Export Lawyer',
         description: 'Fresno agricultural export compliance attorney specializing in farm product exports, USDA/FDA regulations, phytosanitary certificates, and ag trade compliance.',
-        url: `${siteConfig.siteUrl}/#fresno-agricultural-export-compliance`,
+        url: `${siteConfig.siteUrl}/fresno-agricultural-export-compliance`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Fresno Agricultural Export Compliance', url: `${siteConfig.siteUrl}/#fresno-agricultural-export-compliance` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Fresno Agricultural Export Compliance', url: `${siteConfig.siteUrl}/fresno-agricultural-export-compliance` }
       ]),
       generateFAQSchema([
         {

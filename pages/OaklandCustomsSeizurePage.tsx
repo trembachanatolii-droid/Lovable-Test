@@ -21,12 +21,12 @@ const OaklandCustomsSeizurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Customs Seizure Attorney Oakland CA - Cargo Detention Lawyer Port of Oakland',
         description: 'Expert customs seizure attorney serving Oakland with seizure defense, detention release, and forfeiture prevention at the Port of Oakland.',
-        url: `${siteConfig.siteUrl}/#oakland-customs-seizure`,
+        url: `${siteConfig.siteUrl}/oakland-customs-seizure`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Customs Seizure Attorney Oakland', url: `${siteConfig.siteUrl}/#oakland-customs-seizure` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Customs Seizure Attorney Oakland', url: `${siteConfig.siteUrl}/oakland-customs-seizure` }
       ]),
       generateFAQSchema([
         {

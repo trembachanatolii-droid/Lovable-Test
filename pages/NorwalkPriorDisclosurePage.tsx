@@ -23,12 +23,12 @@ const NorwalkPriorDisclosurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Norwalk Prior Disclosure Attorney - CBP Penalty Mitigation Expert',
         description: 'Norwalk prior disclosure attorney providing expert voluntary disclosure filings and CBP penalty mitigation. Reduce customs penalties by 75% or more through strategic prior disclosure.',
-        url: `${siteConfig.siteUrl}/#norwalk-prior-disclosure-attorney`,
+        url: `${siteConfig.siteUrl}/norwalk-prior-disclosure-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Norwalk Prior Disclosure Attorney', url: `${siteConfig.siteUrl}/#norwalk-prior-disclosure-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Norwalk Prior Disclosure Attorney', url: `${siteConfig.siteUrl}/norwalk-prior-disclosure-attorney` }
       ]),
       generateFAQSchema([
         {

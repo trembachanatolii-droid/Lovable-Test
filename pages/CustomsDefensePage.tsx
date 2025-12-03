@@ -20,18 +20,18 @@ const CustomsDefensePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Customs Defense & Litigation Attorney California - CBP Investigation Defense',
         description: 'Aggressive customs defense representation for California businesses facing CBP investigations, audits, penalties, seizures, and trade litigation.',
-        url: `${siteConfig.siteUrl}/#customs-defense-litigation`,
+        url: `${siteConfig.siteUrl}/customs-defense-litigation`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Practice Areas', url: `${siteConfig.siteUrl}/#practice-areas` },
-        { name: 'Customs Defense & Litigation', url: `${siteConfig.siteUrl}/#customs-defense-litigation` }
+        { name: 'Practice Areas', url: `${siteConfig.siteUrl}/practice-areas` },
+        { name: 'Customs Defense & Litigation', url: `${siteConfig.siteUrl}/customs-defense-litigation` }
       ]),
       generateServiceSchema({
         name: 'California Customs Defense & CBP Investigation Legal Services',
         description: 'Comprehensive customs defense attorney California services including CBP investigation defense, customs audits defense, CBP penalty mitigation, customs seizures defense, import detention release, California customs litigation, customs fraud defense, False Claims Act defense, whistleblower trade cases defense, and export violations defense for California importers and exporters.',
         serviceType: 'Customs Defense & Litigation',
-        url: `${siteConfig.siteUrl}/#customs-defense-litigation`,
+        url: `${siteConfig.siteUrl}/customs-defense-litigation`,
       }),
     ],
   });

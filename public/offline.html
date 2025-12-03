@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a1a1a">
+  <title>Offline - Trade News Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    .offline-container {
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .offline-icon {
+      font-size: 80px;
+      margin-bottom: 20px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+      }
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .retry-button {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #667eea;
+      background: #ffffff;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.3);
+    }
+
+    .retry-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px 0 rgba(255, 255, 255, 0.4);
+    }
+
+    .retry-button:active {
+      transform: translateY(0);
+    }
+
+    .tips {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .tips h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .tips-list {
+      list-style: none;
+      text-align: left;
+    }
+
+    .tips-list li {
+      padding: 8px 0;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 14px;
+    }
+
+    .tips-list li:before {
+      content: "✓ ";
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .network-status {
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .online-indicator {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ff6b6b;
+      margin-right: 8px;
+      animation: blink 1.5s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.3;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .offline-container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .offline-icon {
+        font-size: 60px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .retry-button {
+        padding: 12px 28px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-container">
+    <div class="offline-icon">📡</div>
+    <h1>You're Offline</h1>
+    <p>
+      It looks like you've lost your internet connection.
+      Please check your network settings and try again.
+    </p>
+
+    <button class="retry-button" onclick="window.location.reload()">
+      Try Again
+    </button>
+
+    <div class="network-status">
+      <span class="online-indicator"></span>
+      <span id="status-text">Offline</span>
+    </div>
+
+    <div class="tips">
+      <h2>While You're Offline</h2>
+      <ul class="tips-list">
+        <li>Previously viewed pages may still be accessible</li>
+        <li>Your data is safe and will sync when back online</li>
+        <li>Check your WiFi or mobile data connection</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Monitor online/offline status
+    function updateOnlineStatus() {
+      const indicator = document.querySelector('.online-indicator');
+      const statusText = document.getElementById('status-text');
+
+      if (navigator.onLine) {
+        indicator.style.background = '#51cf66';
+        indicator.style.animation = 'none';
+        statusText.textContent = 'Back Online!';
+
+        // Auto-reload after a brief delay when back online
+        setTimeout(() => {
+          window.location.reload();
+        }, 1000);
+      } else {
+        indicator.style.background = '#ff6b6b';
+        indicator.style.animation = 'blink 1.5s ease-in-out infinite';
+        statusText.textContent = 'Offline';
+      }
+    }
+
+    // Listen for online/offline events
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+
+    // Check initial status
+    updateOnlineStatus();
+
+    // Periodic check (fallback)
+    setInterval(updateOnlineStatus, 5000);
+  </script>
+</body>
+</html>

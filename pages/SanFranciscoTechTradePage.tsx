@@ -23,12 +23,12 @@ const SanFranciscoTechTradePage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Francisco Tech Trade Attorney - Technology & Electronics Import Lawyer',
         description: 'San Francisco tech trade attorney specializing in technology imports, electronics HTS classification, semiconductor tariffs, and tech export controls.',
-        url: `${siteConfig.siteUrl}/#san-francisco-tech-trade-attorney`,
+        url: `${siteConfig.siteUrl}/san-francisco-tech-trade-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Francisco Tech Trade Attorney', url: `${siteConfig.siteUrl}/#san-francisco-tech-trade-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Francisco Tech Trade Attorney', url: `${siteConfig.siteUrl}/san-francisco-tech-trade-attorney` }
       ]),
       generateFAQSchema([
         {

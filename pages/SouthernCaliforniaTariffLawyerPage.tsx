@@ -23,12 +23,12 @@ const SouthernCaliforniaTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Southern California Tariff Lawyer & Customs Attorney - Regional Trade Law Firm',
         description: 'Southern California tariff lawyer and customs attorney serving LA, Orange County, San Diego. Expert legal representation for tariff classification, CBP defense, and international trade compliance across SoCal.',
-        url: `${siteConfig.siteUrl}/#southern-california-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/southern-california-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Southern California Tariff Lawyer', url: `${siteConfig.siteUrl}/#southern-california-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Southern California Tariff Lawyer', url: `${siteConfig.siteUrl}/southern-california-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

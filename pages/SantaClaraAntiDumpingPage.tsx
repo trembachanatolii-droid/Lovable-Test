@@ -23,12 +23,12 @@ const SantaClaraAntiDumpingPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Santa Clara Anti-Dumping Duty Attorney - AD/CVD Defense for Tech & Electronics',
         description: 'Expert Santa Clara anti-dumping duty attorney providing scope rulings, EAPA investigation defense, and AD/CVD mitigation for Silicon Valley tech importers.',
-        url: `${siteConfig.siteUrl}/#santa-clara-antidumping-attorney`,
+        url: `${siteConfig.siteUrl}/santa-clara-antidumping-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Santa Clara Anti-Dumping Attorney', url: `${siteConfig.siteUrl}/#santa-clara-antidumping-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Santa Clara Anti-Dumping Attorney', url: `${siteConfig.siteUrl}/santa-clara-antidumping-attorney` }
       ]),
       generateFAQSchema([
         {

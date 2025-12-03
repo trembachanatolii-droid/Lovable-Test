@@ -23,12 +23,12 @@ const LosAngelesSection301Page: React.FC = () => {
       generateWebPageSchema({
         title: 'Los Angeles Section 301 Tariff Attorney - China Tariff Defense & Exclusion Lawyer',
         description: 'Expert Los Angeles Section 301 tariff attorney providing China tariff minimization strategies, exclusion requests, tariff engineering, and protest filing for California importers.',
-        url: `${siteConfig.siteUrl}/#los-angeles-section-301`,
+        url: `${siteConfig.siteUrl}/los-angeles-section-301`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Los Angeles Section 301', url: `${siteConfig.siteUrl}/#los-angeles-section-301` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Los Angeles Section 301', url: `${siteConfig.siteUrl}/los-angeles-section-301` }
       ]),
       generateFAQSchema([
         {

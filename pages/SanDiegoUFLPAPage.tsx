@@ -21,12 +21,12 @@ const SanDiegoUFLPAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'UFLPA Attorney San Diego CA - Forced Labor Compliance Lawyer',
         description: 'Expert UFLPA attorney serving San Diego businesses with forced labor compliance, detention defense, and supply chain solutions.',
-        url: `${siteConfig.siteUrl}/#san-diego-uflpa`,
+        url: `${siteConfig.siteUrl}/san-diego-uflpa`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'UFLPA Attorney San Diego', url: `${siteConfig.siteUrl}/#san-diego-uflpa` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'UFLPA Attorney San Diego', url: `${siteConfig.siteUrl}/san-diego-uflpa` }
       ]),
       generateFAQSchema([
         {

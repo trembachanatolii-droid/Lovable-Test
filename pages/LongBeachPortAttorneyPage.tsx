@@ -23,12 +23,12 @@ const LongBeachPortAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Long Beach Port Attorney & Port of Long Beach Customs Lawyer - Port Legal Services',
         description: 'Long Beach port attorney and Port of Long Beach customs lawyer providing expert legal representation for cargo detentions, tariff classification, CBP defense, and port customs compliance.',
-        url: `${siteConfig.siteUrl}/#long-beach-port-attorney`,
+        url: `${siteConfig.siteUrl}/long-beach-port-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Long Beach Port Attorney', url: `${siteConfig.siteUrl}/#long-beach-port-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Long Beach Port Attorney', url: `${siteConfig.siteUrl}/long-beach-port-attorney` }
       ]),
       generateFAQSchema([
         {

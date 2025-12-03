@@ -22,12 +22,12 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'UFLPA Attorney Sacramento CA - Forced Labor Compliance Lawyer',
         description: 'Expert UFLPA attorney serving Sacramento and Central Valley businesses. Comprehensive forced labor compliance services including detention defense, supply chain audits, and compliance programs.',
-        url: `${siteConfig.siteUrl}/#sacramento-uflpa-attorney`,
+        url: `${siteConfig.siteUrl}/sacramento-uflpa-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'UFLPA Attorney Sacramento', url: `${siteConfig.siteUrl}/#sacramento-uflpa-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'UFLPA Attorney Sacramento', url: `${siteConfig.siteUrl}/sacramento-uflpa-attorney` }
       ]),
       generateFAQSchema([
         {

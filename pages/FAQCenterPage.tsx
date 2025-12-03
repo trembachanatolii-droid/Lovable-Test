@@ -465,7 +465,7 @@ const FAQCenterPage: React.FC = () => {
                         className="w-full text-left p-5 flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-teal focus:ring-inset"
                         aria-expanded={isOpen}
                       >
-                        <h3 className={`text-lg font-semibold pr-4 transition-colors ${isOpen ? 'text-secondary-teal' : 'text-primary-navy'}`}>
+                        <h3 className={`faq-question text-lg font-semibold pr-4 transition-colors ${isOpen ? 'text-secondary-teal' : 'text-primary-navy'}`}>
                           {faq.question}
                         </h3>
                         <div
@@ -483,7 +483,7 @@ const FAQCenterPage: React.FC = () => {
                         }}
                       >
                         <div className="px-5 pb-5 border-t border-gray-100">
-                          <p className="text-gray-700 leading-relaxed pt-4 whitespace-pre-line">{faq.answer}</p>
+                          <p className="faq-answer text-gray-700 leading-relaxed pt-4 whitespace-pre-line">{faq.answer}</p>
                           {faq.link && (
                             <a
                               href={faq.link.url}

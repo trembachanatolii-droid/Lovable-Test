@@ -1,9 +1,12 @@
 
-import React, { useState, useEffect, lazy, Suspense, useTransition } from 'react';
+import React, { lazy, Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import StickyPhoneButton from './components/StickyPhoneButton';
 import ErrorBoundary from './components/ErrorBoundary';
+import ScrollToTop from './components/ScrollToTop';
+import ConnectionStatus from './components/ConnectionStatus';
 
 // Lazy load all page components for code splitting
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -298,835 +301,9 @@ const PageLoader: React.FC = () => (
 );
 
 const App: React.FC = () => {
-  const [currentRoute, setCurrentRoute] = useState<string>('');
-  const [isPending, startTransition] = useTransition();
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash;
-      // Normalize hash: remove '#' and trailing slash if any
-      // Note: We keep query parameters for logic below
-      let route = hash.replace(/^#\/?/, '');
-
-      // If route is empty, default to home
-      if (!route) route = '';
-
-      // Scroll to top of page when route changes
-      window.scrollTo(0, 0);
-
-      // Use startTransition to mark route updates as non-urgent
-      // This allows React to keep the UI responsive during route changes
-      startTransition(() => {
-        setCurrentRoute(route);
-      });
-    };
-
-    // Initial check
-    handleHashChange();
-
-    // Listen for hash changes
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, [startTransition]);
-
-  let content;
-
-  // Dynamic route matching
-  if (currentRoute.startsWith('article/')) {
-    const articleId = currentRoute.split('/')[1];
-    content = <ArticleDisplayPage articleId={articleId} />;
-  } else if (currentRoute.startsWith('careers/apply')) {
-    content = <GeneralApplicationPage />;
-  } else {
-    // Basic route matching (ignoring query params for these basic pages if any accidentally existed)
-    const cleanRoute = currentRoute.split('?')[0].replace(/\/$/, '');
-
-    switch (cleanRoute) {
-      case '':
-        content = <HomePage />;
-        break;
-      case 'privacy-policy':
-        content = <PrivacyPolicyPage />;
-        break;
-      case 'terms':
-        content = <TermsOfUsePage />;
-        break;
-      case 'disclaimers':
-        content = <LegalPage title="Disclaimers" />;
-        break;
-      case 'attorney-advertising':
-        content = <AttorneyAdvertisingPage />;
-        break;
-      case 'contact':
-        content = <ContactPage />;
-        break;
-      case 'about':
-        content = <AboutPage />;
-        break;
-      case 'practice-areas':
-        content = <PracticeAreasPage />;
-        break;
-      case 'attorney-profile':
-        content = <AttorneyProfilePage />;
-        break;
-      case 'useful-links':
-        content = <UsefulLinksPage />;
-        break;
-      case 'resources':
-        content = <ResourcesHubPage />;
-        break;
-      case 'news':
-        content = <NewsPage />;
-        break;
-      case 'careers':
-        content = <CareersPage />;
-        break;
-      case 'california-locations':
-      case 'california-offices':
-      case 'california-ports':
-        content = <CaliforniaLocationsPage />;
-        break;
-      case 'los-angeles-port-customs-attorney':
-        content = <LosAngelesPortPage />;
-        break;
-      case 'bay-area-trade-law-attorney':
-        content = <BayAreaTradeLawPage />;
-        break;
-      case 'calabasas-customs-attorney':
-        content = <CalabasasCustomsAttorneyPage />;
-        break;
-      case 'customs-defense-litigation':
-      case 'customs-defense':
-        content = <CustomsDefensePage />;
-        break;
-      case 'regulatory-compliance-advisory':
-      case 'regulatory-compliance':
-        content = <RegulatoryCompliancePage />;
-        break;
-      case 'export-controls-sanctions':
-      case 'export-controls':
-        content = <ExportControlsPage />;
-        break;
-      // Aliases for common practice area topics
-      case 'country-of-origin':
-      case 'prior-disclosure':
-      case 'prior-disclosure-filing':
-      case 'cbp-audit-defense':
-      case 'duty-drawback':
-      case 'duty-drawback-refunds':
-      case 'tariff-refund-protests':
-      case 'ftz-foreign-trade-zones':
-      case 'assists-royalties':
-      case 'transfer-pricing-customs':
-      case 'deemed-export-compliance':
-      case 'scope-rulings':
-      case 'cvd-scope-rulings':
-      case 'administrative-reviews':
-      case 'eapa-defense':
-      case 'internal-compliance-audits':
-        content = <PracticeAreasPage />;
-        break;
-      case 'customs-compliance':
-      case 'import-compliance':
-        content = <RegulatoryCompliancePage />;
-        break;
-      case 'customs-penalty-mitigation':
-      case 'customs-detention-defense':
-        content = <CustomsDefensePage />;
-        break;
-      case 'tariff-classification':
-      case 'tariff-engineering':
-        content = <TariffsClassificationGuidePage />;
-        break;
-      case 'tariffs-duties-classification-guide':
-        content = <TariffsClassificationGuidePage />;
-        break;
-      case 'supply-chain-esg-compliance-guide':
-        content = <SupplyChainESGGuidePage />;
-        break;
-      case 'ecommerce-digital-trade-guide':
-        content = <EcommerceDigitalTradeGuidePage />;
-        break;
-      case 'trade-law-glossary':
-        content = <GlossaryPage />;
-        break;
-      case 'technology-electronics-trade-attorney':
-        content = <TechnologyElectronicsIndustryPage />;
-        break;
-      case 'apparel-textiles-trade-attorney':
-        content = <ApparelTextilesIndustryPage />;
-        break;
-      case 'food-agriculture-trade-attorney':
-        content = <FoodAgricultureIndustryPage />;
-        break;
-      case 'trade-law-faq':
-        content = <FAQCenterPage />;
-        break;
-      case 'schedule-consultation':
-        content = <ConsultationBookingPage />;
-        break;
-      case 'resources/section-301-tariffs-guide':
-        content = <Section301TariffsGuidePage />;
-        break;
-      case 'resources/uflpa-compliance-guide':
-        content = <UFLPAComplianceGuidePage />;
-        break;
-      // Location-specific pages - California cities and regions
-      case 'anaheim-customs-attorney':
-        content = <AnaheimCustomsAttorneyPage />;
-        break;
-      case 'anaheim-manufacturing-trade':
-        content = <AnaheimManufacturingTradePage />;
-        break;
-      case 'antioch-customs-attorney':
-        content = <AntiochCustomsAttorneyPage />;
-        break;
-      case 'bakersfield-oil-energy-trade':
-        content = <BakersfieldOilEnergyTradePage />;
-        break;
-      case 'bakersfield-tariff-lawyer':
-        content = <BakersfieldTariffLawyerPage />;
-        break;
-      case 'central-valley-tariff-lawyer':
-        content = <CentralValleyTariffLawyerPage />;
-        break;
-      case 'chico-customs-attorney':
-        content = <ChicoCustomsAttorneyPage />;
-        break;
-      case 'chula-vista-tariff-lawyer':
-        content = <ChulaVistaTariffLawyerPage />;
-        break;
-      case 'concord-tariff-lawyer':
-        content = <ConcordTariffLawyerPage />;
-        break;
-      case 'corona-trade-compliance':
-        content = <CoronaTradeCompliancePage />;
-        break;
-      case 'daly-city-customs-attorney':
-        content = <DalyCityCustomsAttorneyPage />;
-        break;
-      case 'fontana-trade-attorney':
-        content = <FontanaTradeAttorneyPage />;
-        break;
-      case 'fremont-customs-attorney':
-        content = <FremontCustomsAttorneyPage />;
-        break;
-      case 'fresno-ag-export-compliance':
-        content = <FresnoAgExportCompliancePage />;
-        break;
-      case 'fresno-agricultural-trade':
-        content = <FresnoAgriculturalTradePage />;
-        break;
-      case 'fresno-customs-attorney':
-        content = <FresnoCustomsAttorneyPage />;
-        break;
-      case 'fullerton-tariff-attorney':
-        content = <FullertonTariffAttorneyPage />;
-        break;
-      case 'glendale-tariff-attorney':
-        content = <GlendaleTariffAttorneyPage />;
-        break;
-      case 'hayward-customs-attorney':
-        content = <HaywardCustomsAttorneyPage />;
-        break;
-      case 'huntington-beach-tariff-lawyer':
-        content = <HuntingtonBeachTariffLawyerPage />;
-        break;
-      case 'inland-empire-customs-attorney':
-        content = <InlandEmpireCustomsAttorneyPage />;
-        break;
-      case 'irvine-trade-compliance':
-        content = <IrvineTradeCompliancePage />;
-        break;
-      case 'lancaster-trade-attorney':
-        content = <LancasterTradeAttorneyPage />;
-        break;
-      case 'long-beach-antidumping-defense':
-        content = <LongBeachAntidumpingDefensePage />;
-        break;
-      case 'long-beach-duty-drawback':
-        content = <LongBeachDutyDrawbackPage />;
-        break;
-      case 'long-beach-ftz-compliance':
-        content = <LongBeachFTZCompliancePage />;
-        break;
-      case 'long-beach-maritime-tariff':
-        content = <LongBeachMaritimeTariffPage />;
-        break;
-      case 'long-beach-port-attorney':
-        content = <LongBeachPortAttorneyPage />;
-        break;
-      case 'los-angeles-cbp-audit-defense':
-        content = <LosAngelesCBPAuditDefensePage />;
-        break;
-      case 'los-angeles-fashion-tariff':
-        content = <LosAngelesFashionTariffPage />;
-        break;
-      case 'los-angeles-section-301':
-        content = <LosAngelesSection301Page />;
-        break;
-      case 'los-angeles-tariff-lawyer':
-      case 'los-angeles-customs-attorney':
-        content = <LosAngelesTariffLawyerPage />;
-        break;
-      case 'los-angeles-usmca-certification':
-        content = <LosAngelesUSMCACertificationPage />;
-        break;
-      case 'modesto-customs-attorney':
-        content = <ModestoCustomsAttorneyPage />;
-        break;
-      case 'modesto-farm-equipment':
-        content = <ModestoFarmEquipmentPage />;
-        break;
-      case 'moreno-valley-customs':
-        content = <MorenoValleyCustomsPage />;
-        break;
-      case 'murrieta-tariff-lawyer':
-        content = <MurrietaTariffLawyerPage />;
-        break;
-      case 'oakland-customs-broker':
-        content = <OaklandCustomsBrokerPage />;
-        break;
-      case 'oakland-customs-penalty':
-        content = <OaklandCustomsPenaltyPage />;
-        break;
-      case 'oakland-maritime-trade':
-        content = <OaklandMaritimeTradePage />;
-        break;
-      case 'oakland-port-operations':
-      case 'oakland-port-customs-attorney':
-      case 'oakland-port-operations-attorney':
-        content = <OaklandPortOperationsPage />;
-        break;
-      case 'oakland-trade-attorney':
-        content = <OaklandTradeAttorneyPage />;
-        break;
-      case 'oceanside-tariff-attorney':
-        content = <OceansideTariffAttorneyPage />;
-        break;
-      case 'ontario-trade-compliance':
-        content = <OntarioTradeCompliancePage />;
-        break;
-      case 'orange-county-tariff-lawyer':
-        content = <OrangeCountyTariffLawyerPage />;
-        break;
-      case 'oxnard-tariff-attorney':
-        content = <OxnardTariffAttorneyPage />;
-        break;
-      case 'palmdale-customs-attorney':
-        content = <PalmdaleCustomsAttorneyPage />;
-        break;
-      case 'pasadena-tariff-lawyer':
-        content = <PasadenaTariffLawyerPage />;
-        break;
-      case 'port-of-oakland-tariff':
-        content = <PortOfOaklandTariffPage />;
-        break;
-      case 'port-of-san-diego-customs':
-        content = <PortOfSanDiegoCustomsPage />;
-        break;
-      case 'port-of-stockton-trade':
-        content = <PortOfStocktonTradePage />;
-        break;
-      case 'rancho-cucamonga-tariff-lawyer':
-        content = <RanchoCucamongaTariffLawyerPage />;
-        break;
-      case 'riverside-tariff-attorney':
-        content = <RiversideTariffAttorneyPage />;
-        break;
-      case 'roseville-customs-lawyer':
-        content = <RosevilleCustomsLawyerPage />;
-        break;
-      case 'sacramento-tariff-attorney':
-        content = <SacramentoTariffAttorneyPage />;
-        break;
-      case 'sacramento-trade-compliance':
-        content = <SacramentoTradeCompliancePage />;
-        break;
-      case 'sacramento-valley-trade':
-        content = <SacramentoValleyTradePage />;
-        break;
-      case 'sacramento-wine-export':
-        content = <SacramentoWineExportPage />;
-        break;
-      case 'salinas-tariff-lawyer':
-        content = <SalinasTariffLawyerPage />;
-        break;
-      case 'san-diego-customs-lawyer':
-        content = <SanDiegoCustomsLawyerPage />;
-        break;
-      case 'san-diego-ecommerce-tariff':
-        content = <SanDiegoEcommerceTariffPage />;
-        break;
-      case 'san-diego-pharma-import':
-        content = <SanDiegoPharmaImportPage />;
-        break;
-      case 'san-diego-trade-litigation':
-        content = <SanDiegoTradeLitigationPage />;
-        break;
-      case 'san-diego-uflpa-compliance':
-        content = <SanDiegoUFLPACompliancePage />;
-        break;
-      case 'san-fernando-valley-tariff':
-        content = <SanFernandoValleyTariffPage />;
-        break;
-      case 'san-francisco-customs-attorney':
-        content = <SanFranciscoCustomsAttorneyPage />;
-        break;
-      case 'san-francisco-export-controls':
-        content = <SanFranciscoExportControlsPage />;
-        break;
-      case 'san-francisco-forced-labor':
-        content = <SanFranciscoForcedLaborPage />;
-        break;
-      case 'san-francisco-prior-disclosure':
-        content = <SanFranciscoPriorDisclosurePage />;
-        break;
-      case 'san-francisco-tech-trade':
-        content = <SanFranciscoTechTradePage />;
-        break;
-      case 'san-jose-customs-lawyer':
-        content = <SanJoseCustomsLawyerPage />;
-        break;
-      case 'san-jose-tech-export-controls':
-        content = <SanJoseTechExportControlsPage />;
-        break;
-      case 'santa-ana-trade-attorney':
-        content = <SantaAnaTradeAttorneyPage />;
-        break;
-      case 'santa-clarita-customs-lawyer':
-        content = <SantaClaritaCustomsLawyerPage />;
-        break;
-      case 'santa-rosa-customs-lawyer':
-        content = <SantaRosaCustomsLawyerPage />;
-        break;
-      case 'silicon-valley-trade-lawyer':
-        content = <SiliconValleyTradeLawyerPage />;
-        break;
-      case 'southern-california-tariff-lawyer':
-        content = <SouthernCaliforniaTariffLawyerPage />;
-        break;
-      case 'stockton-ag-tariff-lawyer':
-        content = <StocktonAgTariffLawyerPage />;
-        break;
-      case 'stockton-tariff-lawyer':
-        content = <StocktonTariffLawyerPage />;
-        break;
-      case 'sunnyvale-tech-trade':
-        content = <SunnyvaleTechTradePage />;
-        break;
-      case 'temecula-trade-attorney':
-        content = <TemeculaTradeAttorneyPage />;
-        break;
-      case 'torrance-trade-attorney':
-        content = <TorranceTradeAttorneyPage />;
-        break;
-      case 'vallejo-tariff-attorney':
-        content = <VallejoTariffAttorneyPage />;
-        break;
-      case 'visalia-tariff-lawyer':
-        content = <VisaliaTariffLawyerPage />;
-        break;
-      // Trending 2025 Tariff Pages
-      case 'trump-2025-tariff-attorney':
-        content = <Trump2025TariffAttorneyPage />;
-        break;
-      // NEW: Keyword-City Expansion Pages (1000+ keywords)
-      case 'irvine-cbp-audit-defense':
-        content = <IrvineCBPAuditDefensePage />;
-        break;
-      case 'san-diego-section-301':
-        content = <SanDiegoSection301Page />;
-        break;
-      case 'sacramento-uflpa-attorney':
-        content = <SacramentoUFLPAAttorneyPage />;
-        break;
-      case 'riverside-customs-seizure':
-        content = <RiversideCustomsSeizurePage />;
-        break;
-      case 'fremont-semiconductor-tariff':
-        content = <FremontSemiconductorTariffPage />;
-        break;
-      // Batch 2 - Additional City-Keyword Pages
-      case 'los-angeles-cbp-audit':
-        content = <LosAngelesCBPAuditPage />;
-        break;
-      case 'san-jose-section-301':
-        content = <SanJoseSection301Page />;
-        break;
-      case 'oakland-uflpa':
-        content = <OaklandUFLPAPage />;
-        break;
-      case 'anaheim-customs-seizure':
-        content = <AnaheimCustomsSeizurePage />;
-        break;
-      case 'san-francisco-china-tariff':
-        content = <SanFranciscoChinaTariffPage />;
-        break;
-      // Batch 3 - More City-Keyword Pages
-      case 'long-beach-cbp-audit':
-        content = <LongBeachCBPAuditPage />;
-        break;
-      case 'san-diego-cbp-audit':
-        content = <SanDiegoCBPAuditPage />;
-        break;
-      case 'sacramento-section-301':
-        content = <SacramentoSection301Page />;
-        break;
-      case 'fresno-section-301':
-        content = <FresnoSection301Page />;
-        break;
-      case 'bakersfield-uflpa':
-        content = <BakersfieldUFLPAPage />;
-        break;
-      case 'long-beach-uflpa':
-        content = <LongBeachUFLPAPage />;
-        break;
-      case 'san-diego-customs-seizure':
-        content = <SanDiegoCustomsSeizurePage />;
-        break;
-      case 'long-beach-customs-seizure':
-        content = <LongBeachCustomsSeizurePage />;
-        break;
-      case 'san-jose-pharma-import':
-        content = <SanJosePharmaImportPage />;
-        break;
-      case 'fremont-automotive-tariff':
-        content = <FremontAutomotiveTariffPage />;
-        break;
-      // Batch 4 - Specialized Agent Created Pages (25 new pages)
-      // CBP Audit Pages
-      case 'oakland-cbp-audit':
-        content = <OaklandCBPAuditPage />;
-        break;
-      case 'fresno-cbp-audit':
-        content = <FresnoCBPAuditPage />;
-        break;
-      case 'santa-ana-cbp-audit':
-        content = <SantaAnaCBPAuditPage />;
-        break;
-      case 'pasadena-cbp-audit':
-        content = <PasadenaCBPAuditPage />;
-        break;
-      case 'torrance-cbp-audit':
-        content = <TorranceCBPAuditPage />;
-        break;
-      // Section 301 Pages
-      case 'long-beach-section-301':
-        content = <LongBeachSection301Page />;
-        break;
-      case 'irvine-section-301':
-        content = <IrvineSection301Page />;
-        break;
-      case 'oakland-section-301':
-        content = <OaklandSection301Page />;
-        break;
-      case 'anaheim-section-301':
-        content = <AnaheimSection301Page />;
-        break;
-      case 'torrance-section-301':
-        content = <TorranceSection301Page />;
-        break;
-      // UFLPA Pages
-      case 'san-diego-uflpa':
-        content = <SanDiegoUFLPAPage />;
-        break;
-      case 'fresno-uflpa':
-        content = <FresnoUFLPAPage />;
-        break;
-      case 'irvine-uflpa':
-        content = <IrvineUFLPAPage />;
-        break;
-      case 'san-jose-uflpa':
-        content = <SanJoseUFLPAPage />;
-        break;
-      case 'torrance-uflpa':
-        content = <TorranceUFLPAPage />;
-        break;
-      // Customs Seizure Pages
-      case 'los-angeles-customs-seizure':
-        content = <LosAngelesCustomsSeizurePage />;
-        break;
-      case 'oakland-customs-seizure':
-        content = <OaklandCustomsSeizurePage />;
-        break;
-      case 'fresno-customs-seizure':
-        content = <FresnoCustomsSeizurePage />;
-        break;
-      case 'sacramento-customs-seizure':
-        content = <SacramentoCustomsSeizurePage />;
-        break;
-      case 'irvine-customs-seizure':
-        content = <IrvineCustomsSeizurePage />;
-        break;
-      // Industry-Specific Pages
-      case 'los-angeles-automotive-tariff':
-        content = <LosAngelesAutomotiveTariffPage />;
-        break;
-      case 'san-diego-semiconductor-tariff':
-        content = <SanDiegoSemiconductorTariffPage />;
-        break;
-      case 'oakland-pharmaceutical-import':
-        content = <OaklandPharmaceuticalImportPage />;
-        break;
-      case 'fresno-agricultural-equipment-tariff':
-        content = <FresnoAgriculturalEquipmentTariffPage />;
-        break;
-      case 'irvine-medical-device-import':
-        content = <IrvineMedicalDeviceImportPage />;
-        break;
-      // Batch 5 - More Specialized Agent Pages (25 new pages)
-      // Anti-Dumping Pages
-      case 'santa-clara-anti-dumping':
-        content = <SantaClaraAntiDumpingPage />;
-        break;
-      case 'stockton-anti-dumping':
-        content = <StocktonAntiDumpingPage />;
-        break;
-      case 'modesto-anti-dumping':
-        content = <ModestoAntiDumpingPage />;
-        break;
-      case 'glendale-anti-dumping':
-        content = <GlendaleAntiDumpingPage />;
-        break;
-      case 'huntington-beach-anti-dumping':
-        content = <HuntingtonBeachAntiDumpingPage />;
-        break;
-      // Countervailing Duty Pages
-      case 'santa-rosa-countervailing':
-        content = <SantaRosaCountervailingPage />;
-        break;
-      case 'elk-grove-countervailing':
-        content = <ElkGroveCountervailingPage />;
-        break;
-      case 'corona-countervailing':
-        content = <CoronaCountervailingPage />;
-        break;
-      case 'lancaster-countervailing':
-        content = <LancasterCountervailingPage />;
-        break;
-      case 'palmdale-countervailing':
-        content = <PalmdaleCountervailingPage />;
-        break;
-      // Foreign Trade Zone Pages
-      case 'salinas-trade-zone':
-        content = <SalinasTradeZonePage />;
-        break;
-      case 'pomona-trade-zone':
-        content = <PomonaTradeZonePage />;
-        break;
-      case 'hayward-trade-zone':
-        content = <HaywardTradeZonePage />;
-        break;
-      case 'escondido-trade-zone':
-        content = <EscondidoTradeZonePage />;
-        break;
-      case 'sunnyvale-trade-zone':
-        content = <SunnyvaleTradeZonePage />;
-        break;
-      // HTS Classification Pages
-      case 'fullerton-hts-classification':
-        content = <FullertonHTSClassificationPage />;
-        break;
-      case 'thousand-oaks-hts-classification':
-        content = <ThousandOaksHTSClassificationPage />;
-        break;
-      case 'visalia-hts-classification':
-        content = <VisaliaHTSClassificationPage />;
-        break;
-      case 'roseville-hts-classification':
-        content = <RosevilleHTSClassificationPage />;
-        break;
-      case 'concord-hts-classification':
-        content = <ConcordHTSClassificationPage />;
-        break;
-      // Export Control Pages
-      case 'simi-valley-export-control':
-        content = <SimiValleyExportControlPage />;
-        break;
-      case 'santa-maria-export-control':
-        content = <SantaMariaExportControlPage />;
-        break;
-      case 'berkeley-export-control':
-        content = <BerkeleyExportControlPage />;
-        break;
-      case 'el-monte-export-control':
-        content = <ElMonteExportControlPage />;
-        break;
-      case 'carlsbad-export-control':
-        content = <CarlsbadExportControlPage />;
-        break;
-      // Batch 6 - More Specialized Agent Pages (25 new pages)
-      // Penalty Mitigation Pages
-      case 'rancho-cucamonga-penalty-mitigation':
-        content = <RanchoCucamongaPenaltyMitigationPage />;
-        break;
-      case 'ontario-penalty-mitigation':
-        content = <OntarioPenaltyMitigationPage />;
-        break;
-      case 'fontana-penalty-mitigation':
-        content = <FontanaPenaltyMitigationPage />;
-        break;
-      case 'moreno-valley-penalty-mitigation':
-        content = <MorenoValleyPenaltyMitigationPage />;
-        break;
-      case 'san-bernardino-penalty-mitigation':
-        content = <SanBernardinoPenaltyMitigationPage />;
-        break;
-      // Prior Disclosure Pages
-      case 'west-covina-prior-disclosure':
-        content = <WestCovinaPriorDisclosurePage />;
-        break;
-      case 'norwalk-prior-disclosure':
-        content = <NorwalkPriorDisclosurePage />;
-        break;
-      case 'burbank-prior-disclosure':
-        content = <BurbankPriorDisclosurePage />;
-        break;
-      case 'el-cajon-prior-disclosure':
-        content = <ElCajonPriorDisclosurePage />;
-        break;
-      case 'rialto-prior-disclosure':
-        content = <RialtoPriorDisclosurePage />;
-        break;
-      // Drawback Pages
-      case 'daly-city-drawback':
-        content = <DalyCityDrawbackPage />;
-        break;
-      case 'south-gate-drawback':
-        content = <SouthGateDrawbackPage />;
-        break;
-      case 'mission-viejo-drawback':
-        content = <MissionViejoDrawbackPage />;
-        break;
-      case 'carson-drawback':
-        content = <CarsonDrawbackPage />;
-        break;
-      case 'santa-clarita-drawback':
-        content = <SantaClaritaDrawbackPage />;
-        break;
-      // Bonded Warehouse Pages
-      case 'vacaville-bonded-warehouse':
-        content = <VacavilleBondedWarehousePage />;
-        break;
-      case 'fairfield-bonded-warehouse':
-        content = <FairfieldBondedWarehousePage />;
-        break;
-      case 'antioch-bonded-warehouse':
-        content = <AntiochBondedWarehousePage />;
-        break;
-      case 'richmond-bonded-warehouse':
-        content = <RichmondBondedWarehousePage />;
-        break;
-      case 'san-leandro-bonded-warehouse':
-        content = <SanLeandroBondedWarehousePage />;
-        break;
-      // Customs Valuation Pages
-      case 'redwood-city-customs-valuation':
-        content = <RedwoodCityCustomsValuationPage />;
-        break;
-      case 'lake-forest-customs-valuation':
-        content = <LakeForestCustomsValuationPage />;
-        break;
-      case 'napa-customs-valuation':
-        content = <NapaCustomsValuationPage />;
-        break;
-      case 'manteca-customs-valuation':
-        content = <MantecaCustomsValuationPage />;
-        break;
-      case 'chino-customs-valuation':
-        content = <ChinoCustomsValuationPage />;
-        break;
-      // Batch 7 - More Specialized Agent Pages (25 new pages)
-      // Import Compliance Pages
-      case 'inglewood-import-compliance':
-        content = <InglewoodImportCompliancePage />;
-        break;
-      case 'ventura-import-compliance':
-        content = <VenturaImportCompliancePage />;
-        break;
-      case 'santa-barbara-import-compliance':
-        content = <SantaBarbaraImportCompliancePage />;
-        break;
-      case 'oceanside-import-compliance':
-        content = <OceansideImportCompliancePage />;
-        break;
-      case 'garden-grove-import-compliance':
-        content = <GardenGroveImportCompliancePage />;
-        break;
-      // Customs Broker Pages
-      case 'chula-vista-customs-broker':
-        content = <ChulaVistaCustomsBrokerPage />;
-        break;
-      case 'downey-customs-broker':
-        content = <DowneyCustomsBrokerPage />;
-        break;
-      case 'costa-mesa-customs-broker':
-        content = <CostaMesaCustomsBrokerPage />;
-        break;
-      case 'san-mateo-customs-broker':
-        content = <SanMateoCustomsBrokerPage />;
-        break;
-      case 'clovis-customs-broker':
-        content = <ClovisCustomsBrokerPage />;
-        break;
-      // USMCA Pages
-      case 'tracy-usmca':
-        content = <TracyUSMCAPage />;
-        break;
-      case 'livermore-usmca':
-        content = <LivermoreUSMCAPage />;
-        break;
-      case 'pleasanton-usmca':
-        content = <PleasantonUSMCAPage />;
-        break;
-      case 'walnut-creek-usmca':
-        content = <WalnutCreekUSMCAPage />;
-        break;
-      case 'menifee-usmca':
-        content = <MenifeeUSMCAPage />;
-        break;
-      // Country of Origin Pages
-      case 'hemet-country-of-origin':
-        content = <HemetCountryOfOriginPage />;
-        break;
-      case 'lake-elsinore-country-of-origin':
-        content = <LakeElsinoreCountryOfOriginPage />;
-        break;
-      case 'murrieta-country-of-origin':
-        content = <MurrietaCountryOfOriginPage />;
-        break;
-      case 'temecula-country-of-origin':
-        content = <TemeculaCountryOfOriginPage />;
-        break;
-      case 'victorville-country-of-origin':
-        content = <VictorvilleCountryOfOriginPage />;
-        break;
-      // Customs Bond Pages
-      case 'hesperia-customs-bond':
-        content = <HesperiaCustomsBondPage />;
-        break;
-      case 'apple-valley-customs-bond':
-        content = <AppleValleyCustomsBondPage />;
-        break;
-      case 'yucaipa-customs-bond':
-        content = <YucaipaCustomsBondPage />;
-        break;
-      case 'loma-linda-customs-bond':
-        content = <LomaLindaCustomsBondPage />;
-        break;
-      case 'upland-customs-bond':
-        content = <UplandCustomsBondPage />;
-        break;
-      default:
-        // Show 404 page for unknown routes
-        content = <NotFoundPage />;
-        break;
-    }
-  }
-
   return (
     <ErrorBoundary>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         {/* Skip Navigation Link for Accessibility */}
         <a
@@ -1139,13 +316,320 @@ const App: React.FC = () => {
         <main id="main-content" role="main" className="flex-grow" tabIndex={-1}>
           <ErrorBoundary>
             <Suspense fallback={<PageLoader />}>
-              {content}
+              <Routes>
+                {/* Home Route */}
+                <Route path="/" element={<HomePage />} />
+
+                {/* Core Pages */}
+                <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+                <Route path="/terms" element={<TermsOfUsePage />} />
+                <Route path="/disclaimers" element={<LegalPage title="Disclaimers" />} />
+                <Route path="/attorney-advertising" element={<AttorneyAdvertisingPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/practice-areas" element={<PracticeAreasPage />} />
+                <Route path="/attorney-profile" element={<AttorneyProfilePage />} />
+                <Route path="/useful-links" element={<UsefulLinksPage />} />
+                <Route path="/resources" element={<ResourcesHubPage />} />
+                <Route path="/news" element={<NewsPage />} />
+                <Route path="/careers" element={<CareersPage />} />
+                <Route path="/careers/apply" element={<GeneralApplicationPage />} />
+
+                {/* Dynamic Article Route */}
+                <Route path="/article/:articleId" element={<ArticleDisplayPage />} />
+
+                {/* California Locations - Multiple aliases */}
+                <Route path="/california-locations" element={<CaliforniaLocationsPage />} />
+                <Route path="/california-offices" element={<CaliforniaLocationsPage />} />
+                <Route path="/california-ports" element={<CaliforniaLocationsPage />} />
+
+                {/* Main Practice Area Pages */}
+                <Route path="/los-angeles-port-customs-attorney" element={<LosAngelesPortPage />} />
+                <Route path="/bay-area-trade-law-attorney" element={<BayAreaTradeLawPage />} />
+                <Route path="/calabasas-customs-attorney" element={<CalabasasCustomsAttorneyPage />} />
+                <Route path="/customs-defense-litigation" element={<CustomsDefensePage />} />
+                <Route path="/customs-defense" element={<CustomsDefensePage />} />
+                <Route path="/regulatory-compliance-advisory" element={<RegulatoryCompliancePage />} />
+                <Route path="/regulatory-compliance" element={<RegulatoryCompliancePage />} />
+                <Route path="/export-controls-sanctions" element={<ExportControlsPage />} />
+                <Route path="/export-controls" element={<ExportControlsPage />} />
+
+                {/* Practice Area Aliases */}
+                <Route path="/country-of-origin" element={<PracticeAreasPage />} />
+                <Route path="/prior-disclosure" element={<PracticeAreasPage />} />
+                <Route path="/prior-disclosure-filing" element={<PracticeAreasPage />} />
+                <Route path="/cbp-audit-defense" element={<PracticeAreasPage />} />
+                <Route path="/duty-drawback" element={<PracticeAreasPage />} />
+                <Route path="/duty-drawback-refunds" element={<PracticeAreasPage />} />
+                <Route path="/tariff-refund-protests" element={<PracticeAreasPage />} />
+                <Route path="/ftz-foreign-trade-zones" element={<PracticeAreasPage />} />
+                <Route path="/assists-royalties" element={<PracticeAreasPage />} />
+                <Route path="/transfer-pricing-customs" element={<PracticeAreasPage />} />
+                <Route path="/deemed-export-compliance" element={<PracticeAreasPage />} />
+                <Route path="/scope-rulings" element={<PracticeAreasPage />} />
+                <Route path="/cvd-scope-rulings" element={<PracticeAreasPage />} />
+                <Route path="/administrative-reviews" element={<PracticeAreasPage />} />
+                <Route path="/eapa-defense" element={<PracticeAreasPage />} />
+                <Route path="/internal-compliance-audits" element={<PracticeAreasPage />} />
+                <Route path="/customs-compliance" element={<RegulatoryCompliancePage />} />
+                <Route path="/import-compliance" element={<RegulatoryCompliancePage />} />
+                <Route path="/customs-penalty-mitigation" element={<CustomsDefensePage />} />
+                <Route path="/customs-detention-defense" element={<CustomsDefensePage />} />
+                <Route path="/tariff-classification" element={<TariffsClassificationGuidePage />} />
+                <Route path="/tariff-engineering" element={<TariffsClassificationGuidePage />} />
+
+                {/* Resource Pages */}
+                <Route path="/tariffs-duties-classification-guide" element={<TariffsClassificationGuidePage />} />
+                <Route path="/supply-chain-esg-compliance-guide" element={<SupplyChainESGGuidePage />} />
+                <Route path="/ecommerce-digital-trade-guide" element={<EcommerceDigitalTradeGuidePage />} />
+                <Route path="/trade-law-glossary" element={<GlossaryPage />} />
+                <Route path="/trade-law-faq" element={<FAQCenterPage />} />
+                <Route path="/schedule-consultation" element={<ConsultationBookingPage />} />
+                <Route path="/resources/section-301-tariffs-guide" element={<Section301TariffsGuidePage />} />
+                <Route path="/resources/uflpa-compliance-guide" element={<UFLPAComplianceGuidePage />} />
+
+                {/* Industry Pages */}
+                <Route path="/technology-electronics-trade-attorney" element={<TechnologyElectronicsIndustryPage />} />
+                <Route path="/apparel-textiles-trade-attorney" element={<ApparelTextilesIndustryPage />} />
+                <Route path="/food-agriculture-trade-attorney" element={<FoodAgricultureIndustryPage />} />
+
+                {/* Location-Specific Pages - California Cities */}
+                <Route path="/anaheim-customs-attorney" element={<AnaheimCustomsAttorneyPage />} />
+                <Route path="/anaheim-manufacturing-trade" element={<AnaheimManufacturingTradePage />} />
+                <Route path="/antioch-customs-attorney" element={<AntiochCustomsAttorneyPage />} />
+                <Route path="/bakersfield-oil-energy-trade" element={<BakersfieldOilEnergyTradePage />} />
+                <Route path="/bakersfield-tariff-lawyer" element={<BakersfieldTariffLawyerPage />} />
+                <Route path="/central-valley-tariff-lawyer" element={<CentralValleyTariffLawyerPage />} />
+                <Route path="/chico-customs-attorney" element={<ChicoCustomsAttorneyPage />} />
+                <Route path="/chula-vista-tariff-lawyer" element={<ChulaVistaTariffLawyerPage />} />
+                <Route path="/concord-tariff-lawyer" element={<ConcordTariffLawyerPage />} />
+                <Route path="/corona-trade-compliance" element={<CoronaTradeCompliancePage />} />
+                <Route path="/daly-city-customs-attorney" element={<DalyCityCustomsAttorneyPage />} />
+                <Route path="/fontana-trade-attorney" element={<FontanaTradeAttorneyPage />} />
+                <Route path="/fremont-customs-attorney" element={<FremontCustomsAttorneyPage />} />
+                <Route path="/fresno-ag-export-compliance" element={<FresnoAgExportCompliancePage />} />
+                <Route path="/fresno-agricultural-trade" element={<FresnoAgriculturalTradePage />} />
+                <Route path="/fresno-customs-attorney" element={<FresnoCustomsAttorneyPage />} />
+                <Route path="/fullerton-tariff-attorney" element={<FullertonTariffAttorneyPage />} />
+                <Route path="/glendale-tariff-attorney" element={<GlendaleTariffAttorneyPage />} />
+                <Route path="/hayward-customs-attorney" element={<HaywardCustomsAttorneyPage />} />
+                <Route path="/huntington-beach-tariff-lawyer" element={<HuntingtonBeachTariffLawyerPage />} />
+                <Route path="/inland-empire-customs-attorney" element={<InlandEmpireCustomsAttorneyPage />} />
+                <Route path="/irvine-trade-compliance" element={<IrvineTradeCompliancePage />} />
+                <Route path="/lancaster-trade-attorney" element={<LancasterTradeAttorneyPage />} />
+                <Route path="/long-beach-antidumping-defense" element={<LongBeachAntidumpingDefensePage />} />
+                <Route path="/long-beach-duty-drawback" element={<LongBeachDutyDrawbackPage />} />
+                <Route path="/long-beach-ftz-compliance" element={<LongBeachFTZCompliancePage />} />
+                <Route path="/long-beach-maritime-tariff" element={<LongBeachMaritimeTariffPage />} />
+                <Route path="/long-beach-port-attorney" element={<LongBeachPortAttorneyPage />} />
+                <Route path="/los-angeles-cbp-audit-defense" element={<LosAngelesCBPAuditDefensePage />} />
+                <Route path="/los-angeles-fashion-tariff" element={<LosAngelesFashionTariffPage />} />
+                <Route path="/los-angeles-section-301" element={<LosAngelesSection301Page />} />
+                <Route path="/los-angeles-tariff-lawyer" element={<LosAngelesTariffLawyerPage />} />
+                <Route path="/los-angeles-customs-attorney" element={<LosAngelesTariffLawyerPage />} />
+                <Route path="/los-angeles-usmca-certification" element={<LosAngelesUSMCACertificationPage />} />
+                <Route path="/modesto-customs-attorney" element={<ModestoCustomsAttorneyPage />} />
+                <Route path="/modesto-farm-equipment" element={<ModestoFarmEquipmentPage />} />
+                <Route path="/moreno-valley-customs" element={<MorenoValleyCustomsPage />} />
+                <Route path="/murrieta-tariff-lawyer" element={<MurrietaTariffLawyerPage />} />
+                <Route path="/oakland-customs-broker" element={<OaklandCustomsBrokerPage />} />
+                <Route path="/oakland-customs-penalty" element={<OaklandCustomsPenaltyPage />} />
+                <Route path="/oakland-maritime-trade" element={<OaklandMaritimeTradePage />} />
+                <Route path="/oakland-port-operations" element={<OaklandPortOperationsPage />} />
+                <Route path="/oakland-port-customs-attorney" element={<OaklandPortOperationsPage />} />
+                <Route path="/oakland-port-operations-attorney" element={<OaklandPortOperationsPage />} />
+                <Route path="/oakland-trade-attorney" element={<OaklandTradeAttorneyPage />} />
+                <Route path="/oceanside-tariff-attorney" element={<OceansideTariffAttorneyPage />} />
+                <Route path="/ontario-trade-compliance" element={<OntarioTradeCompliancePage />} />
+                <Route path="/orange-county-tariff-lawyer" element={<OrangeCountyTariffLawyerPage />} />
+                <Route path="/oxnard-tariff-attorney" element={<OxnardTariffAttorneyPage />} />
+                <Route path="/palmdale-customs-attorney" element={<PalmdaleCustomsAttorneyPage />} />
+                <Route path="/pasadena-tariff-lawyer" element={<PasadenaTariffLawyerPage />} />
+                <Route path="/port-of-oakland-tariff" element={<PortOfOaklandTariffPage />} />
+                <Route path="/port-of-san-diego-customs" element={<PortOfSanDiegoCustomsPage />} />
+                <Route path="/port-of-stockton-trade" element={<PortOfStocktonTradePage />} />
+                <Route path="/rancho-cucamonga-tariff-lawyer" element={<RanchoCucamongaTariffLawyerPage />} />
+                <Route path="/riverside-tariff-attorney" element={<RiversideTariffAttorneyPage />} />
+                <Route path="/roseville-customs-lawyer" element={<RosevilleCustomsLawyerPage />} />
+                <Route path="/sacramento-tariff-attorney" element={<SacramentoTariffAttorneyPage />} />
+                <Route path="/sacramento-trade-compliance" element={<SacramentoTradeCompliancePage />} />
+                <Route path="/sacramento-valley-trade" element={<SacramentoValleyTradePage />} />
+                <Route path="/sacramento-wine-export" element={<SacramentoWineExportPage />} />
+                <Route path="/salinas-tariff-lawyer" element={<SalinasTariffLawyerPage />} />
+                <Route path="/san-diego-customs-lawyer" element={<SanDiegoCustomsLawyerPage />} />
+                <Route path="/san-diego-ecommerce-tariff" element={<SanDiegoEcommerceTariffPage />} />
+                <Route path="/san-diego-pharma-import" element={<SanDiegoPharmaImportPage />} />
+                <Route path="/san-diego-trade-litigation" element={<SanDiegoTradeLitigationPage />} />
+                <Route path="/san-diego-uflpa-compliance" element={<SanDiegoUFLPACompliancePage />} />
+                <Route path="/san-fernando-valley-tariff" element={<SanFernandoValleyTariffPage />} />
+                <Route path="/san-francisco-customs-attorney" element={<SanFranciscoCustomsAttorneyPage />} />
+                <Route path="/san-francisco-export-controls" element={<SanFranciscoExportControlsPage />} />
+                <Route path="/san-francisco-forced-labor" element={<SanFranciscoForcedLaborPage />} />
+                <Route path="/san-francisco-prior-disclosure" element={<SanFranciscoPriorDisclosurePage />} />
+                <Route path="/san-francisco-tech-trade" element={<SanFranciscoTechTradePage />} />
+                <Route path="/san-jose-customs-lawyer" element={<SanJoseCustomsLawyerPage />} />
+                <Route path="/san-jose-tech-export-controls" element={<SanJoseTechExportControlsPage />} />
+                <Route path="/santa-ana-trade-attorney" element={<SantaAnaTradeAttorneyPage />} />
+                <Route path="/santa-clarita-customs-lawyer" element={<SantaClaritaCustomsLawyerPage />} />
+                <Route path="/santa-rosa-customs-lawyer" element={<SantaRosaCustomsLawyerPage />} />
+                <Route path="/silicon-valley-trade-lawyer" element={<SiliconValleyTradeLawyerPage />} />
+                <Route path="/southern-california-tariff-lawyer" element={<SouthernCaliforniaTariffLawyerPage />} />
+                <Route path="/stockton-ag-tariff-lawyer" element={<StocktonAgTariffLawyerPage />} />
+                <Route path="/stockton-tariff-lawyer" element={<StocktonTariffLawyerPage />} />
+                <Route path="/sunnyvale-tech-trade" element={<SunnyvaleTechTradePage />} />
+                <Route path="/temecula-trade-attorney" element={<TemeculaTradeAttorneyPage />} />
+                <Route path="/torrance-trade-attorney" element={<TorranceTradeAttorneyPage />} />
+                <Route path="/vallejo-tariff-attorney" element={<VallejoTariffAttorneyPage />} />
+                <Route path="/visalia-tariff-lawyer" element={<VisaliaTariffLawyerPage />} />
+
+                {/* Trending 2025 Tariff Pages */}
+                <Route path="/trump-2025-tariff-attorney" element={<Trump2025TariffAttorneyPage />} />
+
+                {/* Keyword-City Expansion Pages (Batch 1) */}
+                <Route path="/irvine-cbp-audit-defense" element={<IrvineCBPAuditDefensePage />} />
+                <Route path="/san-diego-section-301" element={<SanDiegoSection301Page />} />
+                <Route path="/sacramento-uflpa-attorney" element={<SacramentoUFLPAAttorneyPage />} />
+                <Route path="/riverside-customs-seizure" element={<RiversideCustomsSeizurePage />} />
+                <Route path="/fremont-semiconductor-tariff" element={<FremontSemiconductorTariffPage />} />
+
+                {/* Batch 2 - Additional City-Keyword Pages */}
+                <Route path="/los-angeles-cbp-audit" element={<LosAngelesCBPAuditPage />} />
+                <Route path="/san-jose-section-301" element={<SanJoseSection301Page />} />
+                <Route path="/oakland-uflpa" element={<OaklandUFLPAPage />} />
+                <Route path="/anaheim-customs-seizure" element={<AnaheimCustomsSeizurePage />} />
+                <Route path="/san-francisco-china-tariff" element={<SanFranciscoChinaTariffPage />} />
+
+                {/* Batch 3 - More City-Keyword Pages */}
+                <Route path="/long-beach-cbp-audit" element={<LongBeachCBPAuditPage />} />
+                <Route path="/san-diego-cbp-audit" element={<SanDiegoCBPAuditPage />} />
+                <Route path="/sacramento-section-301" element={<SacramentoSection301Page />} />
+                <Route path="/fresno-section-301" element={<FresnoSection301Page />} />
+                <Route path="/bakersfield-uflpa" element={<BakersfieldUFLPAPage />} />
+                <Route path="/long-beach-uflpa" element={<LongBeachUFLPAPage />} />
+                <Route path="/san-diego-customs-seizure" element={<SanDiegoCustomsSeizurePage />} />
+                <Route path="/long-beach-customs-seizure" element={<LongBeachCustomsSeizurePage />} />
+                <Route path="/san-jose-pharma-import" element={<SanJosePharmaImportPage />} />
+                <Route path="/fremont-automotive-tariff" element={<FremontAutomotiveTariffPage />} />
+
+                {/* Batch 4 - Specialized Agent Created Pages */}
+                <Route path="/oakland-cbp-audit" element={<OaklandCBPAuditPage />} />
+                <Route path="/fresno-cbp-audit" element={<FresnoCBPAuditPage />} />
+                <Route path="/santa-ana-cbp-audit" element={<SantaAnaCBPAuditPage />} />
+                <Route path="/pasadena-cbp-audit" element={<PasadenaCBPAuditPage />} />
+                <Route path="/torrance-cbp-audit" element={<TorranceCBPAuditPage />} />
+                <Route path="/long-beach-section-301" element={<LongBeachSection301Page />} />
+                <Route path="/irvine-section-301" element={<IrvineSection301Page />} />
+                <Route path="/oakland-section-301" element={<OaklandSection301Page />} />
+                <Route path="/anaheim-section-301" element={<AnaheimSection301Page />} />
+                <Route path="/torrance-section-301" element={<TorranceSection301Page />} />
+                <Route path="/san-diego-uflpa" element={<SanDiegoUFLPAPage />} />
+                <Route path="/fresno-uflpa" element={<FresnoUFLPAPage />} />
+                <Route path="/irvine-uflpa" element={<IrvineUFLPAPage />} />
+                <Route path="/san-jose-uflpa" element={<SanJoseUFLPAPage />} />
+                <Route path="/torrance-uflpa" element={<TorranceUFLPAPage />} />
+                <Route path="/los-angeles-customs-seizure" element={<LosAngelesCustomsSeizurePage />} />
+                <Route path="/oakland-customs-seizure" element={<OaklandCustomsSeizurePage />} />
+                <Route path="/fresno-customs-seizure" element={<FresnoCustomsSeizurePage />} />
+                <Route path="/sacramento-customs-seizure" element={<SacramentoCustomsSeizurePage />} />
+                <Route path="/irvine-customs-seizure" element={<IrvineCustomsSeizurePage />} />
+                <Route path="/los-angeles-automotive-tariff" element={<LosAngelesAutomotiveTariffPage />} />
+                <Route path="/san-diego-semiconductor-tariff" element={<SanDiegoSemiconductorTariffPage />} />
+                <Route path="/oakland-pharmaceutical-import" element={<OaklandPharmaceuticalImportPage />} />
+                <Route path="/fresno-agricultural-equipment-tariff" element={<FresnoAgriculturalEquipmentTariffPage />} />
+                <Route path="/irvine-medical-device-import" element={<IrvineMedicalDeviceImportPage />} />
+
+                {/* Batch 5 - More Specialized Agent Pages */}
+                <Route path="/santa-clara-anti-dumping" element={<SantaClaraAntiDumpingPage />} />
+                <Route path="/stockton-anti-dumping" element={<StocktonAntiDumpingPage />} />
+                <Route path="/modesto-anti-dumping" element={<ModestoAntiDumpingPage />} />
+                <Route path="/glendale-anti-dumping" element={<GlendaleAntiDumpingPage />} />
+                <Route path="/huntington-beach-anti-dumping" element={<HuntingtonBeachAntiDumpingPage />} />
+                <Route path="/santa-rosa-countervailing" element={<SantaRosaCountervailingPage />} />
+                <Route path="/elk-grove-countervailing" element={<ElkGroveCountervailingPage />} />
+                <Route path="/corona-countervailing" element={<CoronaCountervailingPage />} />
+                <Route path="/lancaster-countervailing" element={<LancasterCountervailingPage />} />
+                <Route path="/palmdale-countervailing" element={<PalmdaleCountervailingPage />} />
+                <Route path="/salinas-trade-zone" element={<SalinasTradeZonePage />} />
+                <Route path="/pomona-trade-zone" element={<PomonaTradeZonePage />} />
+                <Route path="/hayward-trade-zone" element={<HaywardTradeZonePage />} />
+                <Route path="/escondido-trade-zone" element={<EscondidoTradeZonePage />} />
+                <Route path="/sunnyvale-trade-zone" element={<SunnyvaleTradeZonePage />} />
+                <Route path="/fullerton-hts-classification" element={<FullertonHTSClassificationPage />} />
+                <Route path="/thousand-oaks-hts-classification" element={<ThousandOaksHTSClassificationPage />} />
+                <Route path="/visalia-hts-classification" element={<VisaliaHTSClassificationPage />} />
+                <Route path="/roseville-hts-classification" element={<RosevilleHTSClassificationPage />} />
+                <Route path="/concord-hts-classification" element={<ConcordHTSClassificationPage />} />
+                <Route path="/simi-valley-export-control" element={<SimiValleyExportControlPage />} />
+                <Route path="/santa-maria-export-control" element={<SantaMariaExportControlPage />} />
+                <Route path="/berkeley-export-control" element={<BerkeleyExportControlPage />} />
+                <Route path="/el-monte-export-control" element={<ElMonteExportControlPage />} />
+                <Route path="/carlsbad-export-control" element={<CarlsbadExportControlPage />} />
+
+                {/* Batch 6 - More Specialized Agent Pages */}
+                <Route path="/rancho-cucamonga-penalty-mitigation" element={<RanchoCucamongaPenaltyMitigationPage />} />
+                <Route path="/ontario-penalty-mitigation" element={<OntarioPenaltyMitigationPage />} />
+                <Route path="/fontana-penalty-mitigation" element={<FontanaPenaltyMitigationPage />} />
+                <Route path="/moreno-valley-penalty-mitigation" element={<MorenoValleyPenaltyMitigationPage />} />
+                <Route path="/san-bernardino-penalty-mitigation" element={<SanBernardinoPenaltyMitigationPage />} />
+                <Route path="/west-covina-prior-disclosure" element={<WestCovinaPriorDisclosurePage />} />
+                <Route path="/norwalk-prior-disclosure" element={<NorwalkPriorDisclosurePage />} />
+                <Route path="/burbank-prior-disclosure" element={<BurbankPriorDisclosurePage />} />
+                <Route path="/el-cajon-prior-disclosure" element={<ElCajonPriorDisclosurePage />} />
+                <Route path="/rialto-prior-disclosure" element={<RialtoPriorDisclosurePage />} />
+                <Route path="/daly-city-drawback" element={<DalyCityDrawbackPage />} />
+                <Route path="/south-gate-drawback" element={<SouthGateDrawbackPage />} />
+                <Route path="/mission-viejo-drawback" element={<MissionViejoDrawbackPage />} />
+                <Route path="/carson-drawback" element={<CarsonDrawbackPage />} />
+                <Route path="/santa-clarita-drawback" element={<SantaClaritaDrawbackPage />} />
+                <Route path="/vacaville-bonded-warehouse" element={<VacavilleBondedWarehousePage />} />
+                <Route path="/fairfield-bonded-warehouse" element={<FairfieldBondedWarehousePage />} />
+                <Route path="/antioch-bonded-warehouse" element={<AntiochBondedWarehousePage />} />
+                <Route path="/richmond-bonded-warehouse" element={<RichmondBondedWarehousePage />} />
+                <Route path="/san-leandro-bonded-warehouse" element={<SanLeandroBondedWarehousePage />} />
+                <Route path="/redwood-city-customs-valuation" element={<RedwoodCityCustomsValuationPage />} />
+                <Route path="/lake-forest-customs-valuation" element={<LakeForestCustomsValuationPage />} />
+                <Route path="/napa-customs-valuation" element={<NapaCustomsValuationPage />} />
+                <Route path="/manteca-customs-valuation" element={<MantecaCustomsValuationPage />} />
+                <Route path="/chino-customs-valuation" element={<ChinoCustomsValuationPage />} />
+
+                {/* Batch 7 - More Specialized Agent Pages */}
+                <Route path="/inglewood-import-compliance" element={<InglewoodImportCompliancePage />} />
+                <Route path="/ventura-import-compliance" element={<VenturaImportCompliancePage />} />
+                <Route path="/santa-barbara-import-compliance" element={<SantaBarbaraImportCompliancePage />} />
+                <Route path="/oceanside-import-compliance" element={<OceansideImportCompliancePage />} />
+                <Route path="/garden-grove-import-compliance" element={<GardenGroveImportCompliancePage />} />
+                <Route path="/chula-vista-customs-broker" element={<ChulaVistaCustomsBrokerPage />} />
+                <Route path="/downey-customs-broker" element={<DowneyCustomsBrokerPage />} />
+                <Route path="/costa-mesa-customs-broker" element={<CostaMesaCustomsBrokerPage />} />
+                <Route path="/san-mateo-customs-broker" element={<SanMateoCustomsBrokerPage />} />
+                <Route path="/clovis-customs-broker" element={<ClovisCustomsBrokerPage />} />
+                <Route path="/tracy-usmca" element={<TracyUSMCAPage />} />
+                <Route path="/livermore-usmca" element={<LivermoreUSMCAPage />} />
+                <Route path="/pleasanton-usmca" element={<PleasantonUSMCAPage />} />
+                <Route path="/walnut-creek-usmca" element={<WalnutCreekUSMCAPage />} />
+                <Route path="/menifee-usmca" element={<MenifeeUSMCAPage />} />
+                <Route path="/hemet-country-of-origin" element={<HemetCountryOfOriginPage />} />
+                <Route path="/lake-elsinore-country-of-origin" element={<LakeElsinoreCountryOfOriginPage />} />
+                <Route path="/murrieta-country-of-origin" element={<MurrietaCountryOfOriginPage />} />
+                <Route path="/temecula-country-of-origin" element={<TemeculaCountryOfOriginPage />} />
+                <Route path="/victorville-country-of-origin" element={<VictorvilleCountryOfOriginPage />} />
+                <Route path="/hesperia-customs-bond" element={<HesperiaCustomsBondPage />} />
+                <Route path="/apple-valley-customs-bond" element={<AppleValleyCustomsBondPage />} />
+                <Route path="/yucaipa-customs-bond" element={<YucaipaCustomsBondPage />} />
+                <Route path="/loma-linda-customs-bond" element={<LomaLindaCustomsBondPage />} />
+                <Route path="/upland-customs-bond" element={<UplandCustomsBondPage />} />
+
+                {/* 404 - Must be last */}
+                <Route path="*" element={<NotFoundPage />} />
+              </Routes>
             </Suspense>
           </ErrorBoundary>
         </main>
         <Footer />
         {/* Sticky Phone Button - Mobile Only */}
         <StickyPhoneButton showOnMobileOnly={true} />
+        {/* Connection Status Monitor - PWA Offline Support */}
+        <ConnectionStatus />
       </div>
     </ErrorBoundary>
   );

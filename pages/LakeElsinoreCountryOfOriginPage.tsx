@@ -22,12 +22,12 @@ const LakeElsinoreCountryOfOriginPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Lake Elsinore Country of Origin Attorney - Product Origin Legal Services',
         description: 'Lake Elsinore country of origin attorney providing expert legal representation for manufacturers and importers navigating substantial transformation, marking requirements, and origin compliance.',
-        url: `${siteConfig.siteUrl}/#lake-elsinore-country-of-origin-attorney`,
+        url: `${siteConfig.siteUrl}/lake-elsinore-country-of-origin-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Lake Elsinore Country of Origin Attorney', url: `${siteConfig.siteUrl}/#lake-elsinore-country-of-origin-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Lake Elsinore Country of Origin Attorney', url: `${siteConfig.siteUrl}/lake-elsinore-country-of-origin-attorney` }
       ]),
       generateFAQSchema([
         {

@@ -23,12 +23,12 @@ const StocktonAntiDumpingPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Stockton Anti-Dumping Duty Attorney - AD/CVD Defense for Agricultural & Industrial Imports',
         description: 'Expert Stockton anti-dumping duty attorney providing scope rulings, EAPA investigation defense, and AD/CVD mitigation for Port of Stockton importers.',
-        url: `${siteConfig.siteUrl}/#stockton-antidumping-attorney`,
+        url: `${siteConfig.siteUrl}/stockton-antidumping-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Stockton Anti-Dumping Attorney', url: `${siteConfig.siteUrl}/#stockton-antidumping-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Stockton Anti-Dumping Attorney', url: `${siteConfig.siteUrl}/stockton-antidumping-attorney` }
       ]),
       generateFAQSchema([
         {

@@ -23,12 +23,12 @@ const PortOfStocktonTradePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Port of Stockton Trade Compliance Attorney - Inland Port Specialists',
         description: 'Port of Stockton trade compliance attorney providing expert CBP detention defense, agricultural cargo services, and customs representation at California\'s inland deep-water port.',
-        url: `${siteConfig.siteUrl}/#port-of-stockton-trade`,
+        url: `${siteConfig.siteUrl}/port-of-stockton-trade`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Ports', url: `${siteConfig.siteUrl}/#california-ports` },
-        { name: 'Port of Stockton', url: `${siteConfig.siteUrl}/#port-of-stockton-trade` }
+        { name: 'California Ports', url: `${siteConfig.siteUrl}/california-ports` },
+        { name: 'Port of Stockton', url: `${siteConfig.siteUrl}/port-of-stockton-trade` }
       ]),
       generateFAQSchema([
         {

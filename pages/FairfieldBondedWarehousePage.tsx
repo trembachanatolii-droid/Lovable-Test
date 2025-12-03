@@ -22,12 +22,12 @@ const FairfieldBondedWarehousePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Fairfield Bonded Warehouse Attorney - Solano County FTZ & Customs Compliance',
         description: 'Fairfield bonded warehouse attorney providing expert legal services for CBP bonded warehouse establishment, Foreign Trade Zone applications, and customs facility compliance in Solano County.',
-        url: `${siteConfig.siteUrl}/#fairfield-bonded-warehouse`,
+        url: `${siteConfig.siteUrl}/fairfield-bonded-warehouse`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Fairfield Bonded Warehouse Attorney', url: `${siteConfig.siteUrl}/#fairfield-bonded-warehouse` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Fairfield Bonded Warehouse Attorney', url: `${siteConfig.siteUrl}/fairfield-bonded-warehouse` }
       ]),
       generateFAQSchema([
         {

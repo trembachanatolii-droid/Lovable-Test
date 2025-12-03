@@ -23,12 +23,12 @@ const SanFranciscoPriorDisclosurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Francisco Prior Disclosure Attorney - CBP Penalty Mitigation Expert',
         description: 'San Francisco prior disclosure attorney providing expert voluntary disclosure filings and CBP penalty mitigation. Reduce customs penalties by 75% or more through strategic prior disclosure.',
-        url: `${siteConfig.siteUrl}/#san-francisco-prior-disclosure-attorney`,
+        url: `${siteConfig.siteUrl}/san-francisco-prior-disclosure-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Francisco Prior Disclosure Attorney', url: `${siteConfig.siteUrl}/#san-francisco-prior-disclosure-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Francisco Prior Disclosure Attorney', url: `${siteConfig.siteUrl}/san-francisco-prior-disclosure-attorney` }
       ]),
       generateFAQSchema([
         {

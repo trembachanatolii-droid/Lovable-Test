@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useMemo, useTransition } from 'react';
+import { Link } from 'react-router-dom';
 import StatsSection from '../components/StatsSection';
 import AboutSection from '../components/AboutSection';
 import NewsArticleCard from '../components/NewsArticleCard';
@@ -41,7 +42,7 @@ const getLatestArticles = (): NewsArticle[] => {
     ).join(' '), // Convert "NOVEMBER 26, 2025" to "November 26, 2025"
     title: item.preview.title,
     description: item.preview.intro,
-    linkHref: `#article/${item.preview.id}`,
+    linkHref: `/article/${item.preview.id}`,
     readTime: item.metadata.readTime.toLowerCase().replace(' min', ' min'),
   }));
 };
@@ -158,7 +159,7 @@ const HomePage: React.FC = () => {
           <p className="hero-subtitle">
             Premier California & USA international trade attorney. Multinational trade law expertise for import/export businesses nationwide. CBP defense, federal trade compliance, global trade strategy, customs audits & export controls. Protecting your business in complex international trade law.
           </p>
-          <a href="#schedule-consultation" className="hero-cta" aria-label="Get free consultation with California trade attorney">Get Free Consultation</a>
+          <Link to="/contact" className="hero-cta" aria-label="Get free consultation with California trade attorney">Get Free Consultation</Link>
         </div>
       </section>
 
@@ -191,8 +192,8 @@ const HomePage: React.FC = () => {
               <div className="practice-areas-preview__list">
                 {practiceAreasPreviewData.map((area) => (
                   <div key={area.slug} className="practice-areas-preview__item">
-                    <a
-                      href={`#practice-areas?slug=${area.slug}`}
+                    <Link
+                      to={`/practice-areas?slug=${area.slug}`}
                       className="practice-areas-preview__link group"
                       aria-label={`Learn more about ${area.title}`}
                     >
@@ -212,7 +213,7 @@ const HomePage: React.FC = () => {
                       <h3 className="practice-areas-preview__item-title">
                         {area.title}
                       </h3>
-                    </a>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -247,7 +248,7 @@ const HomePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#calabasas-customs-attorney" className="service-link">
+                  <Link to="/locations/calabasas" className="service-link">
                     <span className="service-link__title">Calabasas Office (HQ)</span>
                     <p className="service-link__description">Tariff lawyer & customs attorney</p>
                     <div className="triangle-slide">
@@ -255,10 +256,10 @@ const HomePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#los-angeles-port-customs-attorney" className="service-link">
+                  <Link to="/locations/los-angeles" className="service-link">
                     <span className="service-link__title">Los Angeles & Long Beach Port</span>
                     <p className="service-link__description">Nation's busiest port complex</p>
                     <div className="triangle-slide">
@@ -266,10 +267,10 @@ const HomePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#bay-area-trade-law-attorney" className="service-link">
+                  <Link to="/locations/bay-area" className="service-link">
                     <span className="service-link__title">San Francisco & Bay Area</span>
                     <p className="service-link__description">Port of Oakland, Silicon Valley</p>
                     <div className="triangle-slide">
@@ -277,7 +278,7 @@ const HomePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <p className="text-sm text-text-secondary mt-4 italic">
@@ -290,7 +291,7 @@ const HomePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Industry Expertise</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#technology-electronics-trade-attorney" className="service-link">
+                  <Link to="/industries/technology-electronics" className="service-link">
                     <span className="service-link__title">Technology & Electronics</span>
                     <p className="service-link__description">Export controls, Section 301</p>
                     <div className="triangle-slide">
@@ -298,10 +299,10 @@ const HomePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#apparel-textiles-trade-attorney" className="service-link">
+                  <Link to="/industries/apparel-textiles" className="service-link">
                     <span className="service-link__title">Apparel & Textiles</span>
                     <p className="service-link__description">UFLPA, origin compliance</p>
                     <div className="triangle-slide">
@@ -309,10 +310,10 @@ const HomePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#food-agriculture-trade-attorney" className="service-link">
+                  <Link to="/industries/food-agriculture" className="service-link">
                     <span className="service-link__title">Food & Agriculture</span>
                     <p className="service-link__description">FDA/USDA import compliance</p>
                     <div className="triangle-slide">
@@ -320,7 +321,7 @@ const HomePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -330,54 +331,54 @@ const HomePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#resources/section-301-tariffs-guide" className="service-link">
+                  <Link to="/resources/section-301-tariffs-guide" className="service-link">
                     <span className="service-link__title">Section 301 Tariffs Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#resources/uflpa-compliance-guide" className="service-link">
+                  <Link to="/resources/uflpa-compliance-guide" className="service-link">
                     <span className="service-link__title">UFLPA Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#tariffs-duties-classification-guide" className="service-link">
+                  <Link to="/resources/tariff-classification-guide" className="service-link">
                     <span className="service-link__title">Tariff Classification Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-faq" className="service-link">
+                  <Link to="/resources/faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#trade-law-glossary" className="service-link">
+                  <Link to="/resources/glossary" className="service-link">
                     <span className="service-link__title">Trade Law Glossary</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -408,7 +409,7 @@ const HomePage: React.FC = () => {
             ))}
           </div>
           <div style={{ textAlign: 'center' }}>
-            <Button variant="outlined" href="#news">View All News</Button>
+            <Button variant="outlined" href="/news">View All News</Button>
           </div>
         </div>
       </section>

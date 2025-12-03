@@ -23,12 +23,12 @@ const OrangeCountyTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Orange County Tariff Lawyer & Customs Attorney - OC Trade Law Firm',
         description: 'Orange County tariff lawyer and customs attorney serving Irvine, Anaheim, Santa Ana, Newport Beach. Expert medical device, aerospace, and apparel trade compliance for OC businesses.',
-        url: `${siteConfig.siteUrl}/#orange-county-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/orange-county-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Orange County Tariff Lawyer', url: `${siteConfig.siteUrl}/#orange-county-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Orange County Tariff Lawyer', url: `${siteConfig.siteUrl}/orange-county-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

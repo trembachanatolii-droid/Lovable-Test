@@ -23,12 +23,12 @@ const SacramentoWineExportPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Sacramento Wine Export Attorney - Wine & Alcohol Export Compliance Lawyer',
         description: 'Sacramento wine export attorney specializing in TTB compliance, wine export documentation, international wine trade regulations, and alcohol export law.',
-        url: `${siteConfig.siteUrl}/#sacramento-wine-export-attorney`,
+        url: `${siteConfig.siteUrl}/sacramento-wine-export-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Sacramento Wine Export Attorney', url: `${siteConfig.siteUrl}/#sacramento-wine-export-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Sacramento Wine Export Attorney', url: `${siteConfig.siteUrl}/sacramento-wine-export-attorney` }
       ]),
       generateFAQSchema([
         {

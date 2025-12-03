@@ -21,12 +21,12 @@ const LosAngelesCustomsSeizurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Customs Seizure Attorney Los Angeles CA - Cargo Detention Lawyer LA',
         description: 'Expert customs seizure attorney serving Los Angeles with seizure defense, detention release, and forfeiture prevention at LA/Long Beach ports.',
-        url: `${siteConfig.siteUrl}/#los-angeles-customs-seizure`,
+        url: `${siteConfig.siteUrl}/los-angeles-customs-seizure`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Customs Seizure Attorney Los Angeles', url: `${siteConfig.siteUrl}/#los-angeles-customs-seizure` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Customs Seizure Attorney Los Angeles', url: `${siteConfig.siteUrl}/los-angeles-customs-seizure` }
       ]),
       generateFAQSchema([
         {

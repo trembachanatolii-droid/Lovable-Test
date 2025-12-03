@@ -21,12 +21,12 @@ const IrvineUFLPAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'UFLPA Attorney Irvine CA - Forced Labor Compliance Lawyer Orange County',
         description: 'Expert UFLPA attorney serving Irvine and Orange County businesses with forced labor compliance, detention defense, and supply chain solutions.',
-        url: `${siteConfig.siteUrl}/#irvine-uflpa`,
+        url: `${siteConfig.siteUrl}/irvine-uflpa`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'UFLPA Attorney Irvine', url: `${siteConfig.siteUrl}/#irvine-uflpa` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'UFLPA Attorney Irvine', url: `${siteConfig.siteUrl}/irvine-uflpa` }
       ]),
       generateFAQSchema([
         {

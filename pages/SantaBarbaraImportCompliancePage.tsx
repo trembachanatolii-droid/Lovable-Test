@@ -22,12 +22,12 @@ const SantaBarbaraImportCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Santa Barbara Import Compliance Attorney - C-TPAT, ISA & CBP Audit Defense',
         description: 'Santa Barbara import compliance attorney providing expert legal services for import programs, C-TPAT certification, ISA compliance, customs audits, and CBP regulatory matters for Central Coast businesses.',
-        url: `${siteConfig.siteUrl}/#santa-barbara-import-compliance`,
+        url: `${siteConfig.siteUrl}/santa-barbara-import-compliance`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Santa Barbara Import Compliance', url: `${siteConfig.siteUrl}/#santa-barbara-import-compliance` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Santa Barbara Import Compliance', url: `${siteConfig.siteUrl}/santa-barbara-import-compliance` }
       ]),
       generateFAQSchema([
         {

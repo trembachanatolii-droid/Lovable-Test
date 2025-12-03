@@ -23,12 +23,12 @@ const MissionViejoDrawbackPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Mission Viejo Duty Drawback Lawyer - Tariff Refund & Customs Duty Recovery Attorney',
         description: 'Expert Mission Viejo duty drawback lawyer helping California importers and exporters recover millions in paid customs duties through manufacturing, unused, and rejected merchandise drawback programs.',
-        url: `${siteConfig.siteUrl}/#mission-viejo-duty-drawback`,
+        url: `${siteConfig.siteUrl}/mission-viejo-duty-drawback`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Mission Viejo Duty Drawback', url: `${siteConfig.siteUrl}/#mission-viejo-duty-drawback` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Mission Viejo Duty Drawback', url: `${siteConfig.siteUrl}/mission-viejo-duty-drawback` }
       ]),
       generateFAQSchema([
         {

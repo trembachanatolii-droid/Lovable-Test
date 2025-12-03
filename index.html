@@ -8,7 +8,7 @@
 <meta http-equiv="X-Content-Type-Options" content="nosniff" />
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-hashes' 'sha256-1jAmyYXcRq6zFldLe/GCgIDJBiOONdXjTLgEFMDnDSM='; style-src 'self' 'sha256-NCSVwlgGhk9c7bq/2Yxrjc46ruEp3nUQq6VULdl+bfA='; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self';">
 <!-- Mobile App Meta Tags -->
 <meta name="theme-color" content="#012169" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -41,10 +41,20 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180x180.png" />
 <link rel="mask-icon" href="/icons/favicon.svg" color="#012169" />
 
+<!-- iOS Splash Screens -->
+<link rel="apple-touch-startup-image" href="/images/splash/launch-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+<link rel="apple-touch-startup-image" href="/images/splash/launch-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)">
+<link rel="apple-touch-startup-image" href="/images/splash/launch-1242x2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)">
+<link rel="apple-touch-startup-image" href="/images/splash/launch-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)">
+<link rel="apple-touch-startup-image" href="/images/splash/launch-1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)">
+<link rel="apple-touch-startup-image" href="/images/splash/launch-1284x2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)">
+
 <!-- Resource Hints: Preload LCP hero image for faster discovery -->
 <link rel="preload" href="/images/hero-main.webp" as="image" type="image/webp" fetchpriority="high">
 <!-- Preload non-critical CSS with async pattern for optimal loading -->
-<link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="/styles.css" as="style">
+<!-- Async CSS loading without inline handlers (CSP-compliant) -->
+<link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'; this.onload=null;">
 <noscript><link rel="stylesheet" href="/styles.css"></noscript>
 
 <!-- Critical Request Chain Optimization -->
@@ -574,7 +584,8 @@ html, body {
 }
 
 /* Practice Areas Green Triangle + Arrow Animation */
-.group:hover .triangle-slide {
+.group:hover .triangle-slide,
+.group:focus-visible .triangle-slide {
   right: 0 !important;
 }
 </style>
@@ -582,7 +593,7 @@ html, body {
 {
   "@context": "https://schema.org",
   "@type": ["LegalService", "Organization", "LocalBusiness"],
-  "@id": "https://trembach.law/#organization",
+  "@id": "https://trembach.law/organization",
   "name": "Trembach Law Firm",
   "alternateName": "Trembach Law Firm, APC",
   "legalName": "Trembach Law Firm, APC",
@@ -681,7 +692,7 @@ html, body {
   ],
   "founder": {
     "@type": "Person",
-    "@id": "https://trembach.law/#anatolii-trembach",
+    "@id": "https://trembach.law/anatolii-trembach",
     "name": "Anatolii Trembach",
     "jobTitle": "International Trade & Customs Lawyer. Tariffs. Import. Export.",
     "alumniOf": [
@@ -714,6 +725,27 @@ html, body {
   },
   "knowsLanguage": ["en", "uk", "ru"],
   "slogan": "California's Premier International Trade & Customs Law Firm",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-310-744-1328",
+    "contactType": "customer service",
+    "areaServed": "US",
+    "availableLanguage": ["English", "Ukrainian", "Russian"]
+  },
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "name": "Schedule Consultation",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://trembach.law/contact",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "International Trade & Customs Law Services",

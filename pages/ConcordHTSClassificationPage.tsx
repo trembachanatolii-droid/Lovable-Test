@@ -21,12 +21,12 @@ const ConcordHTSClassificationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'HTS Classification Attorney Concord - Harmonized Tariff Schedule Expert Contra Costa County',
         description: 'Expert HTS classification attorney serving Concord and Contra Costa County importers. Harmonized Tariff Schedule expertise, binding rulings, duty optimization for Bay Area businesses accessing Port of Oakland.',
-        url: `${siteConfig.siteUrl}/#concord-hts-classification`,
+        url: `${siteConfig.siteUrl}/concord-hts-classification`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Concord HTS Classification Attorney', url: `${siteConfig.siteUrl}/#concord-hts-classification` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Concord HTS Classification Attorney', url: `${siteConfig.siteUrl}/concord-hts-classification` }
       ]),
       generateFAQSchema([
         {

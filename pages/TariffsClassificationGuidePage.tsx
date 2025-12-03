@@ -28,12 +28,12 @@ const TariffsClassificationGuidePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Complete Guide to Tariffs, Duties & HTS Classification for California Importers',
         description: 'Educational resource covering HTS classification, antidumping/countervailing duties, Section 301/232 tariffs, trade remedies, and customs valuation for California businesses.',
-        url: `${siteConfig.siteUrl}/#tariffs-duties-classification-guide`,
+        url: `${siteConfig.siteUrl}/tariffs-duties-classification-guide`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Resources', url: `${siteConfig.siteUrl}/#resources` },
-        { name: 'Tariffs & Classification Guide', url: `${siteConfig.siteUrl}/#tariffs-duties-classification-guide` }
+        { name: 'Resources', url: `${siteConfig.siteUrl}/resources` },
+        { name: 'Tariffs & Classification Guide', url: `${siteConfig.siteUrl}/tariffs-duties-classification-guide` }
       ]),
       generateFAQSchema([
         {

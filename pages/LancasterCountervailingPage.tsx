@@ -24,12 +24,12 @@ const LancasterCountervailingPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Lancaster Countervailing Duty Attorney - CVD Defense & Commerce Department Representation',
         description: 'Expert Lancaster countervailing duty attorney providing CVD defense, scope rulings, and subsidy investigation representation for Antelope Valley aerospace and manufacturing industries.',
-        url: `${siteConfig.siteUrl}/#lancaster-countervailing-duty`,
+        url: `${siteConfig.siteUrl}/lancaster-countervailing-duty`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Lancaster Countervailing Duty Attorney', url: `${siteConfig.siteUrl}/#lancaster-countervailing-duty` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Lancaster Countervailing Duty Attorney', url: `${siteConfig.siteUrl}/lancaster-countervailing-duty` }
       ]),
       generateFAQSchema([
         {

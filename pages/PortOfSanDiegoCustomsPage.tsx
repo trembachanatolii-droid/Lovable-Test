@@ -23,12 +23,12 @@ const PortOfSanDiegoCustomsPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Port of San Diego Customs Attorney - Cross-Border Trade Specialists',
         description: 'Port of San Diego customs attorney providing expert cross-border trade compliance, CBP detention defense, and cargo release services. Specialized San Diego-Tijuana border trade representation.',
-        url: `${siteConfig.siteUrl}/#port-of-san-diego-customs`,
+        url: `${siteConfig.siteUrl}/port-of-san-diego-customs`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Ports', url: `${siteConfig.siteUrl}/#california-ports` },
-        { name: 'Port of San Diego', url: `${siteConfig.siteUrl}/#port-of-san-diego-customs` }
+        { name: 'California Ports', url: `${siteConfig.siteUrl}/california-ports` },
+        { name: 'Port of San Diego', url: `${siteConfig.siteUrl}/port-of-san-diego-customs` }
       ]),
       generateFAQSchema([
         {

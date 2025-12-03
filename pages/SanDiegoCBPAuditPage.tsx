@@ -21,12 +21,12 @@ const SanDiegoCBPAuditPage: React.FC = () => {
       generateWebPageSchema({
         title: 'CBP Audit Defense Attorney San Diego - Customs Audit Lawyer',
         description: 'Expert CBP audit defense attorney serving San Diego businesses with focused assessment defense, penalty mitigation, and prior disclosure services.',
-        url: `${siteConfig.siteUrl}/#san-diego-cbp-audit`,
+        url: `${siteConfig.siteUrl}/san-diego-cbp-audit`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'CBP Audit Defense San Diego', url: `${siteConfig.siteUrl}/#san-diego-cbp-audit` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'CBP Audit Defense San Diego', url: `${siteConfig.siteUrl}/san-diego-cbp-audit` }
       ]),
       generateFAQSchema([
         {

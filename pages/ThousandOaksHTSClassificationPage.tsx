@@ -21,12 +21,12 @@ const ThousandOaksHTSClassificationPage: React.FC = () => {
       generateWebPageSchema({
         title: 'HTS Classification Attorney Thousand Oaks - Harmonized Tariff Schedule Expert Ventura County',
         description: 'Expert HTS classification attorney serving Thousand Oaks and Ventura County importers. Harmonized Tariff Schedule expertise, binding rulings, duty optimization for biotech, medical, and technology companies.',
-        url: `${siteConfig.siteUrl}/#thousand-oaks-hts-classification`,
+        url: `${siteConfig.siteUrl}/thousand-oaks-hts-classification`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Thousand Oaks HTS Classification Attorney', url: `${siteConfig.siteUrl}/#thousand-oaks-hts-classification` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Thousand Oaks HTS Classification Attorney', url: `${siteConfig.siteUrl}/thousand-oaks-hts-classification` }
       ]),
       generateFAQSchema([
         {

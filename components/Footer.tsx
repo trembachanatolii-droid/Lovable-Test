@@ -1,5 +1,6 @@
 
 import React, { memo, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface FooterLink {
     label: string;
@@ -10,18 +11,18 @@ interface FooterLink {
 // Static footer links defined outside component to prevent re-creation
 const FOOTER_LINKS: Record<string, FooterLink[]> = {
     'Firm': [
-        { label: 'About Us', href: '#about' },
-        { label: 'Practice Areas', href: '#practice-areas' },
-        { label: 'Careers', href: '#careers' },
+        { label: 'About Us', href: '/about' },
+        { label: 'Practice Areas', href: '/practice-areas' },
+        { label: 'Careers', href: '/careers' },
     ],
     'Legal': [
-        { label: 'Privacy Policy', href: '#privacy-policy' },
-        { label: 'Terms of Use', href: '#terms' },
-        { label: 'Disclaimers', href: '#disclaimers' },
-        { label: 'Attorney Advertising', href: '#attorney-advertising' },
+        { label: 'Privacy Policy', href: '/privacy-policy' },
+        { label: 'Terms of Use', href: '/terms' },
+        { label: 'Disclaimers', href: '/disclaimers' },
+        { label: 'Attorney Advertising', href: '/attorney-advertising' },
     ],
     'Connect': [
-        { label: 'Contact Us', href: '#contact' },
+        { label: 'Contact Us', href: '/contact' },
         { label: '27001 Agoura Road', href: '#', isAddress: true },
         { label: 'Suite 350', href: '#', isAddress: true },
         { label: 'Calabasas, CA, 91301', href: '#', isAddress: true },
@@ -33,23 +34,19 @@ const FOOTER_LINKS: Record<string, FooterLink[]> = {
 
 const Footer: React.FC = () => {
     const [subscribed, setSubscribed] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleNewsletterSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         const form = e.target as HTMLFormElement;
         const email = (form.elements.namedItem('email') as HTMLInputElement)?.value;
         if (email) {
+            setIsSubmitting(true);
             setSubscribed(true);
-            setTimeout(() => setSubscribed(false), 3000);
-        }
-    };
-
-    const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-        if (href.startsWith('#') && href !== '#') {
-            e.preventDefault();
-            window.location.hash = href;
-        } else if (href === '#') {
-            e.preventDefault();
+            setTimeout(() => {
+                setSubscribed(false);
+                setIsSubmitting(false);
+            }, 3000);
         }
     };
 
@@ -59,7 +56,7 @@ const Footer: React.FC = () => {
             className="bg-primary-navy border-t footer-stable"
             style={{
                 borderTopColor: 'rgba(255, 255, 255, 0.2)',
-                color: 'rgba(255, 255, 255, 0.85)'
+                color: 'rgba(255, 255, 255, 0.95)'
             }}
         >
             <div className="max-w-[1376px] mx-auto px-5 py-12">
@@ -107,13 +104,16 @@ const Footer: React.FC = () => {
                                     placeholder="Enter your email"
                                     aria-label="Email address for newsletter subscription"
                                     required
+                                    inputMode="email"
                                     className="bg-primary-darkBlue text-white placeholder-neutral-gray px-4 py-3 flex-grow focus:outline-none focus:ring-2 focus:ring-secondary-teal text-base"
                                 />
                                 <button
                                     type="submit"
-                                    className="bg-transparent text-white px-7 py-3 font-roboto font-bold uppercase tracking-wider hover:bg-secondary-teal transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm border-2 border-white"
+                                    disabled={isSubmitting}
+                                    aria-disabled={isSubmitting}
+                                    className={`bg-transparent text-white px-7 py-3 font-roboto font-bold uppercase tracking-wider hover:bg-secondary-teal transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm border-2 border-white ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                                 >
-                                    SUBSCRIBE
+                                    {isSubmitting ? 'SUBSCRIBING...' : 'SUBSCRIBE'}
                                 </button>
                             </form>
                             <div className="h-7" aria-live="polite">
@@ -156,22 +156,37 @@ const Footer: React.FC = () => {
                             <div key={title}>
                                 <div className="font-bold text-white mb-4 uppercase tracking-wider text-sm">{title}</div>
                                 <ul className="list-none flex flex-col gap-0.5">
-                                    {links.map((link: FooterLink) => (
-                                        <li key={link.label} className={link.isAddress ? 'leading-relaxed' : ''}>
-                                            <a
-                                                href={link.href}
-                                                onClick={(e) => handleLinkClick(e, link.href)}
-                                                className={`transition-colors duration-200 text-sm block ${
-                                                    link.isAddress
-                                                        ? 'cursor-default leading-relaxed pointer-events-none'
-                                                        : 'hover:text-secondary-teal'
-                                                }`}
-                                                style={link.href.startsWith('mailto:') ? { wordBreak: 'break-word', overflowWrap: 'anywhere' } : undefined}
-                                            >
-                                                {link.label}
-                                            </a>
-                                        </li>
-                                    ))}
+                                    {links.map((link: FooterLink) => {
+                                        const isInternalRoute = link.href.startsWith('/');
+                                        const isExternalLink = link.href.startsWith('mailto:') || link.href.startsWith('tel:') || link.href.startsWith('https://') || link.href.startsWith('http://');
+                                        const isAddress = link.isAddress;
+
+                                        return (
+                                            <li key={link.label} className={link.isAddress ? 'leading-relaxed' : ''}>
+                                                {isInternalRoute ? (
+                                                    <Link
+                                                        to={link.href}
+                                                        className="transition-colors duration-200 text-sm block hover:text-secondary-teal"
+                                                    >
+                                                        {link.label}
+                                                    </Link>
+                                                ) : isAddress ? (
+                                                    <span className="text-sm block leading-relaxed">
+                                                        {link.label}
+                                                    </span>
+                                                ) : (
+                                                    <a
+                                                        href={link.href}
+                                                        className="transition-colors duration-200 text-sm block hover:text-secondary-teal"
+                                                        style={link.href.startsWith('mailto:') ? { wordBreak: 'break-word', overflowWrap: 'anywhere' } : undefined}
+                                                        {...(isExternalLink && !link.href.startsWith('mailto:') && !link.href.startsWith('tel:') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                                                    >
+                                                        {link.label}
+                                                    </a>
+                                                )}
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         ))}

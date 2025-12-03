@@ -23,12 +23,12 @@ const AnaheimCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Anaheim Customs Attorney & Orange County Tariff Lawyer - OC Trade Law Firm',
         description: 'Anaheim customs attorney and Orange County tariff lawyer providing expert legal representation for tariff classification, CBP defense, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#anaheim-customs-attorney`,
+        url: `${siteConfig.siteUrl}/anaheim-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Anaheim Customs Attorney', url: `${siteConfig.siteUrl}/#anaheim-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Anaheim Customs Attorney', url: `${siteConfig.siteUrl}/anaheim-customs-attorney` }
       ]),
       generateFAQSchema([
         {

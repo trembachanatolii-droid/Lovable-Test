@@ -23,12 +23,12 @@ const WestCovinaPriorDisclosurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'West Covina Prior Disclosure Attorney - CBP Penalty Mitigation Expert',
         description: 'West Covina prior disclosure attorney providing expert voluntary disclosure filings and CBP penalty mitigation. Reduce customs penalties by 75% or more through strategic prior disclosure.',
-        url: `${siteConfig.siteUrl}/#west-covina-prior-disclosure-attorney`,
+        url: `${siteConfig.siteUrl}/west-covina-prior-disclosure-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'West Covina Prior Disclosure Attorney', url: `${siteConfig.siteUrl}/#west-covina-prior-disclosure-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'West Covina Prior Disclosure Attorney', url: `${siteConfig.siteUrl}/west-covina-prior-disclosure-attorney` }
       ]),
       generateFAQSchema([
         {

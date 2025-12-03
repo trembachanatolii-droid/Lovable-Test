@@ -21,12 +21,12 @@ const SantaAnaCBPAuditPage: React.FC = () => {
       generateWebPageSchema({
         title: 'CBP Audit Defense Attorney Santa Ana - Customs Audit Lawyer',
         description: 'Expert CBP audit defense attorney serving Santa Ana businesses with focused assessment defense, penalty mitigation, and prior disclosure services.',
-        url: `${siteConfig.siteUrl}/#santa-ana-cbp-audit`,
+        url: `${siteConfig.siteUrl}/santa-ana-cbp-audit`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'CBP Audit Defense Santa Ana', url: `${siteConfig.siteUrl}/#santa-ana-cbp-audit` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'CBP Audit Defense Santa Ana', url: `${siteConfig.siteUrl}/santa-ana-cbp-audit` }
       ]),
       generateFAQSchema([
         {

@@ -23,12 +23,12 @@ const CentralValleyTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Central Valley Tariff Lawyer & Customs Attorney - Agricultural Trade Specialists',
         description: 'Central Valley tariff lawyer and customs attorney serving Fresno, Bakersfield, Modesto, Stockton. Expert agricultural trade compliance, CBP defense, and tariff classification for California\'s agricultural heartland.',
-        url: `${siteConfig.siteUrl}/#central-valley-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/central-valley-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Central Valley Tariff Lawyer', url: `${siteConfig.siteUrl}/#central-valley-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Central Valley Tariff Lawyer', url: `${siteConfig.siteUrl}/central-valley-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

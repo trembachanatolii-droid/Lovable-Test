@@ -22,12 +22,12 @@ const VenturaImportCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Ventura Import Compliance Attorney - C-TPAT, ISA & CBP Audit Defense',
         description: 'Ventura import compliance attorney providing expert legal services for import programs, C-TPAT certification, ISA compliance, customs audits, and CBP regulatory matters for Ventura County businesses.',
-        url: `${siteConfig.siteUrl}/#ventura-import-compliance`,
+        url: `${siteConfig.siteUrl}/ventura-import-compliance`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Ventura Import Compliance', url: `${siteConfig.siteUrl}/#ventura-import-compliance` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Ventura Import Compliance', url: `${siteConfig.siteUrl}/ventura-import-compliance` }
       ]),
       generateFAQSchema([
         {

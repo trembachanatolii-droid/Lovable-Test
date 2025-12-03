@@ -21,12 +21,12 @@ const SalinasTradeZonePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Salinas Foreign Trade Zone Attorney - FTZ Lawyer Monterey County',
         description: 'Expert Foreign Trade Zone attorney serving Salinas and Monterey County agricultural exporters with FTZ establishment, compliance, and duty deferral strategies.',
-        url: `${siteConfig.siteUrl}/#salinas-foreign-trade-zone`,
+        url: `${siteConfig.siteUrl}/salinas-foreign-trade-zone`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Salinas Foreign Trade Zone', url: `${siteConfig.siteUrl}/#salinas-foreign-trade-zone` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Salinas Foreign Trade Zone', url: `${siteConfig.siteUrl}/salinas-foreign-trade-zone` }
       ]),
       generateFAQSchema([
         {

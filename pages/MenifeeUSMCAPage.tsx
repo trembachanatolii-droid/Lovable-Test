@@ -22,12 +22,12 @@ const MenifeeUSMCAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Menifee USMCA Attorney - Free Trade Agreement & Certificate of Origin Lawyer',
         description: 'Menifee USMCA attorney providing expert free trade agreement services, certificate of origin compliance, and duty-free qualification for Inland Empire businesses.',
-        url: `${siteConfig.siteUrl}/#menifee-usmca-attorney`,
+        url: `${siteConfig.siteUrl}/menifee-usmca-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Menifee USMCA Attorney', url: `${siteConfig.siteUrl}/#menifee-usmca-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Menifee USMCA Attorney', url: `${siteConfig.siteUrl}/menifee-usmca-attorney` }
       ]),
       generateFAQSchema([
         {

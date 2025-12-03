@@ -23,12 +23,12 @@ const SanDiegoCustomsLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Diego Customs Lawyer & Tariff Attorney - Port of San Diego Trade Law Firm',
         description: 'San Diego customs lawyer and tariff attorney providing expert legal representation for tariff classification, CBP defense, customs audits, and cross-border trade compliance.',
-        url: `${siteConfig.siteUrl}/#san-diego-customs-lawyer`,
+        url: `${siteConfig.siteUrl}/san-diego-customs-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Diego Customs Lawyer', url: `${siteConfig.siteUrl}/#san-diego-customs-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Diego Customs Lawyer', url: `${siteConfig.siteUrl}/san-diego-customs-lawyer` }
       ]),
       generateFAQSchema([
         {

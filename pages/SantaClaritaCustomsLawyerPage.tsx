@@ -23,12 +23,12 @@ const SantaClaritaCustomsLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Santa Clarita Customs Lawyer & SCV Trade Attorney - California',
         description: 'Santa Clarita customs lawyer serving Santa Clarita Valley businesses. Expert tariff and trade compliance services for manufacturing, entertainment, and tech companies.',
-        url: `${siteConfig.siteUrl}/#santa-clarita-customs-lawyer`,
+        url: `${siteConfig.siteUrl}/santa-clarita-customs-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Santa Clarita Customs Lawyer', url: `${siteConfig.siteUrl}/#santa-clarita-customs-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Santa Clarita Customs Lawyer', url: `${siteConfig.siteUrl}/santa-clarita-customs-lawyer` }
       ]),
       generateFAQSchema([
         {

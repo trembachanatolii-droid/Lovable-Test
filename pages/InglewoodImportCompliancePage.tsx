@@ -22,12 +22,12 @@ const InglewoodImportCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Inglewood Import Compliance Attorney - C-TPAT, ISA & CBP Audit Defense',
         description: 'Inglewood import compliance attorney providing expert legal services for import programs, C-TPAT certification, ISA compliance, customs audits, and CBP regulatory matters.',
-        url: `${siteConfig.siteUrl}/#inglewood-import-compliance`,
+        url: `${siteConfig.siteUrl}/inglewood-import-compliance`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Inglewood Import Compliance', url: `${siteConfig.siteUrl}/#inglewood-import-compliance` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Inglewood Import Compliance', url: `${siteConfig.siteUrl}/inglewood-import-compliance` }
       ]),
       generateFAQSchema([
         {

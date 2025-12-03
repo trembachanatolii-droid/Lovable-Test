@@ -23,12 +23,12 @@ const GlendaleTariffAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Glendale Tariff Attorney & Customs Lawyer - Los Angeles County CA',
         description: 'Glendale tariff attorney serving Los Angeles County businesses. Expert customs legal services for entertainment, tech, manufacturing, and general imports.',
-        url: `${siteConfig.siteUrl}/#glendale-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/glendale-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Glendale Tariff Attorney', url: `${siteConfig.siteUrl}/#glendale-tariff-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Glendale Tariff Attorney', url: `${siteConfig.siteUrl}/glendale-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

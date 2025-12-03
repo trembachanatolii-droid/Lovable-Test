@@ -23,12 +23,12 @@ const PortOfOaklandTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Port of Oakland Tariff Lawyer & Customs Attorney - Bay Area Port Specialists',
         description: 'Port of Oakland tariff lawyer and customs attorney providing expert CBP detention defense, cargo release, and port compliance services. Rapid response to Oakland port customs issues.',
-        url: `${siteConfig.siteUrl}/#port-of-oakland-tariff`,
+        url: `${siteConfig.siteUrl}/port-of-oakland-tariff`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Ports', url: `${siteConfig.siteUrl}/#california-ports` },
-        { name: 'Port of Oakland', url: `${siteConfig.siteUrl}/#port-of-oakland-tariff` }
+        { name: 'California Ports', url: `${siteConfig.siteUrl}/california-ports` },
+        { name: 'Port of Oakland', url: `${siteConfig.siteUrl}/port-of-oakland-tariff` }
       ]),
       generateFAQSchema([
         {

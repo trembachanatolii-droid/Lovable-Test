@@ -23,12 +23,12 @@ const SanFernandoValleyTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Fernando Valley Tariff Attorney - Entertainment & Aerospace Trade Law',
         description: 'San Fernando Valley tariff attorney and customs lawyer serving Calabasas, Burbank, Glendale, Van Nuys. Expert entertainment industry, aerospace, and manufacturing trade compliance for Valley businesses.',
-        url: `${siteConfig.siteUrl}/#san-fernando-valley-tariff`,
+        url: `${siteConfig.siteUrl}/san-fernando-valley-tariff`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Fernando Valley', url: `${siteConfig.siteUrl}/#san-fernando-valley-tariff` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Fernando Valley', url: `${siteConfig.siteUrl}/san-fernando-valley-tariff` }
       ]),
       generateFAQSchema([
         {

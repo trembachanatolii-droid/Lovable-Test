@@ -21,12 +21,12 @@ const SacramentoSection301Page: React.FC = () => {
       generateWebPageSchema({
         title: 'Section 301 Tariff Attorney Sacramento - China Tariff Lawyer',
         description: 'Expert Section 301 tariff attorney serving Sacramento and Central Valley businesses with China tariff strategies and compliance solutions.',
-        url: `${siteConfig.siteUrl}/#sacramento-section-301`,
+        url: `${siteConfig.siteUrl}/sacramento-section-301`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Section 301 Attorney Sacramento', url: `${siteConfig.siteUrl}/#sacramento-section-301` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Section 301 Attorney Sacramento', url: `${siteConfig.siteUrl}/sacramento-section-301` }
       ]),
       generateFAQSchema([
         {

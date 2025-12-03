@@ -23,12 +23,12 @@ const VisaliaTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Visalia Tariff Lawyer & Agriculture Attorney - Central Valley Export Specialists',
         description: 'Visalia tariff lawyer and agriculture attorney specializing in Central Valley food and ag exports. Expert FDA/USDA compliance, tariff classification, export documentation, and CBP defense for agricultural exporters.',
-        url: `${siteConfig.siteUrl}/#visalia-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/visalia-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Visalia Tariff Lawyer', url: `${siteConfig.siteUrl}/#visalia-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Visalia Tariff Lawyer', url: `${siteConfig.siteUrl}/visalia-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

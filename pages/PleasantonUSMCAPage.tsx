@@ -22,12 +22,12 @@ const PleasantonUSMCAPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Pleasanton USMCA Attorney - Free Trade Agreement & Certificate of Origin Lawyer',
         description: 'Pleasanton USMCA attorney providing expert free trade agreement services, certificate of origin compliance, and duty-free qualification for Tri-Valley businesses.',
-        url: `${siteConfig.siteUrl}/#pleasanton-usmca-attorney`,
+        url: `${siteConfig.siteUrl}/pleasanton-usmca-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Pleasanton USMCA Attorney', url: `${siteConfig.siteUrl}/#pleasanton-usmca-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Pleasanton USMCA Attorney', url: `${siteConfig.siteUrl}/pleasanton-usmca-attorney` }
       ]),
       generateFAQSchema([
         {

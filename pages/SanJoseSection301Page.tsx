@@ -21,12 +21,12 @@ const SanJoseSection301Page: React.FC = () => {
       generateWebPageSchema({
         title: 'Section 301 Tariff Attorney San Jose - China Tariff Lawyer Silicon Valley',
         description: 'Expert Section 301 tariff attorney serving San Jose and Silicon Valley tech companies with China tariff strategies and compliance solutions.',
-        url: `${siteConfig.siteUrl}/#san-jose-section-301`,
+        url: `${siteConfig.siteUrl}/san-jose-section-301`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Section 301 Attorney San Jose', url: `${siteConfig.siteUrl}/#san-jose-section-301` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Section 301 Attorney San Jose', url: `${siteConfig.siteUrl}/san-jose-section-301` }
       ]),
       generateFAQSchema([
         {

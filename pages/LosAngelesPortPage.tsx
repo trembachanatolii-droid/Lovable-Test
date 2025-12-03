@@ -21,18 +21,18 @@ const LosAngelesPortPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Los Angeles & Long Beach Port Customs Attorney - California Port Trade Lawyer',
         description: 'Serving the LA/Long Beach port complex with expert customs defense, trade compliance, and import/export legal services.',
-        url: `${siteConfig.siteUrl}/#los-angeles-port-customs-attorney`,
+        url: `${siteConfig.siteUrl}/los-angeles-port-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Los Angeles & Long Beach Port', url: `${siteConfig.siteUrl}/#los-angeles-port-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Los Angeles & Long Beach Port', url: `${siteConfig.siteUrl}/los-angeles-port-customs-attorney` }
       ]),
       generatePortServiceSchema({
         portName: 'Port of Los Angeles & Port of Long Beach',
         cityName: 'Los Angeles',
         description: 'Comprehensive customs defense, trade compliance, and import/export legal representation for businesses operating through the Port of Los Angeles and Port of Long Beach. Expert Los Angeles customs attorney and Long Beach port trade lawyer services including CBP audits defense, customs seizures, tariff classification, USMCA compliance, and trade litigation.',
-        url: `${siteConfig.siteUrl}/#los-angeles-port-customs-attorney`,
+        url: `${siteConfig.siteUrl}/los-angeles-port-customs-attorney`,
       }),
     ],
   });

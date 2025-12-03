@@ -23,12 +23,12 @@ const DalyCityCustomsAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Daly City Customs Attorney & Trade Lawyer - San Mateo County Trade Law',
         description: 'Daly City customs attorney and trade lawyer providing expert legal representation for San Mateo County and Peninsula businesses. CBP defense, tariff classification, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#daly-city-customs-attorney`,
+        url: `${siteConfig.siteUrl}/daly-city-customs-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Daly City Customs Attorney', url: `${siteConfig.siteUrl}/#daly-city-customs-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Daly City Customs Attorney', url: `${siteConfig.siteUrl}/daly-city-customs-attorney` }
       ]),
       generateFAQSchema([
         {

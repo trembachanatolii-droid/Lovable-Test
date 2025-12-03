@@ -23,12 +23,12 @@ const SanDiegoPharmaImportPage: React.FC = () => {
       generateWebPageSchema({
         title: 'San Diego Pharmaceutical Import Attorney - Drug & Medical Device Import Lawyer',
         description: 'San Diego pharmaceutical import attorney specializing in drug importation, FDA compliance, medical device customs, and biotech trade law.',
-        url: `${siteConfig.siteUrl}/#san-diego-pharmaceutical-import-attorney`,
+        url: `${siteConfig.siteUrl}/san-diego-pharmaceutical-import-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'San Diego Pharmaceutical Import Attorney', url: `${siteConfig.siteUrl}/#san-diego-pharmaceutical-import-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'San Diego Pharmaceutical Import Attorney', url: `${siteConfig.siteUrl}/san-diego-pharmaceutical-import-attorney` }
       ]),
       generateFAQSchema([
         {

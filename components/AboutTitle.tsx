@@ -1,4 +1,5 @@
 import React, { useRef, useMemo, useEffect, useState } from "react";
+import { useMotion, prefersReducedMotion } from "./MotionContext";
 
 interface TitleConfig {
   offset: [string, string];
@@ -54,56 +55,32 @@ const TITLE_CONFIG: Record<string, TitleConfig> = {
   },
 };
 
-// Check for reduced motion preference once at module level
-const prefersReducedMotion = typeof window !== 'undefined' &&
-  window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-
 interface AboutTitleProps {
   name: string;
 }
 
-// Optimized component that defers animation loading
+// Optimized component that uses shared motion context
 function AboutTitle({ name }: AboutTitleProps) {
   const config = useMemo(() => TITLE_CONFIG[name] || TITLE_CONFIG["Compliance"], [name]);
   const ref = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
-  const [motionModule, setMotionModule] = useState<typeof import("framer-motion") | null>(null);
 
-  // Only load framer-motion when element is in viewport and user doesn't prefer reduced motion
+  // Use shared motion context instead of individual lazy loading
+  const { motionModule, observeElement } = useMotion();
+
+  // Register element with shared IntersectionObserver
   useEffect(() => {
-    if (prefersReducedMotion) return;
+    if (prefersReducedMotion || !ref.current) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsInView(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: '100px', threshold: 0 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  // Lazy load framer-motion only when in view
-  useEffect(() => {
-    if (!isInView || prefersReducedMotion) return;
-
-    let mounted = true;
-    import("framer-motion").then((mod) => {
-      if (mounted) setMotionModule(mod);
+    const cleanup = observeElement(ref.current, () => {
+      setIsInView(true);
     });
 
-    return () => { mounted = false; };
-  }, [isInView]);
+    return cleanup;
+  }, [observeElement]);
 
   // Static render for reduced motion or before animation loads
-  if (prefersReducedMotion || !motionModule) {
+  if (prefersReducedMotion || !motionModule || !isInView) {
     return (
       <div ref={ref} className="about-title">
         {name}
@@ -111,7 +88,7 @@ function AboutTitle({ name }: AboutTitleProps) {
     );
   }
 
-  // Animated version - only renders after framer-motion is loaded
+  // Animated version - only renders after framer-motion is loaded and element is in view
   return <AnimatedTitle motionModule={motionModule} config={config} name={name} />;
 }
 

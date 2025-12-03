@@ -23,12 +23,12 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Los Angeles Tariff Lawyer & Customs Attorney - Downtown LA Trade Law Firm',
         description: 'Los Angeles tariff lawyer and customs attorney providing expert legal representation for tariff classification, CBP defense, customs audits, and international trade compliance.',
-        url: `${siteConfig.siteUrl}/#los-angeles-tariff-lawyer`,
+        url: `${siteConfig.siteUrl}/los-angeles-tariff-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Los Angeles Tariff Lawyer', url: `${siteConfig.siteUrl}/#los-angeles-tariff-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Los Angeles Tariff Lawyer', url: `${siteConfig.siteUrl}/los-angeles-tariff-lawyer` }
       ]),
       generateFAQSchema([
         {

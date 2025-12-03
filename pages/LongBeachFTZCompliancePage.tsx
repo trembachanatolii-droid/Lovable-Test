@@ -23,12 +23,12 @@ const LongBeachFTZCompliancePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Long Beach FTZ Compliance Attorney - Foreign Trade Zone Lawyer California',
         description: 'Long Beach FTZ compliance attorney specializing in foreign trade zone operations, zone activation, manufacturing authority, and FTZ compliance programs.',
-        url: `${siteConfig.siteUrl}/#long-beach-ftz-compliance-attorney`,
+        url: `${siteConfig.siteUrl}/long-beach-ftz-compliance-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Long Beach FTZ Compliance Attorney', url: `${siteConfig.siteUrl}/#long-beach-ftz-compliance-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Long Beach FTZ Compliance Attorney', url: `${siteConfig.siteUrl}/long-beach-ftz-compliance-attorney` }
       ]),
       generateFAQSchema([
         {

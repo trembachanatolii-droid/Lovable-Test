@@ -21,12 +21,12 @@ const FremontAutomotiveTariffPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Automotive Tariff Attorney Fremont - Auto Parts Import Lawyer',
         description: 'Expert automotive tariff attorney serving Fremont EV and automotive manufacturers with Section 301 strategies, USMCA compliance, and parts classification.',
-        url: `${siteConfig.siteUrl}/#fremont-automotive-tariff`,
+        url: `${siteConfig.siteUrl}/fremont-automotive-tariff`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Automotive Tariff Attorney Fremont', url: `${siteConfig.siteUrl}/#fremont-automotive-tariff` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Automotive Tariff Attorney Fremont', url: `${siteConfig.siteUrl}/fremont-automotive-tariff` }
       ]),
       generateFAQSchema([
         {

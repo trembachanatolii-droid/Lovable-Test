@@ -23,12 +23,12 @@ const ModestoAntiDumpingPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Modesto Anti-Dumping Duty Attorney - AD/CVD Defense for Agricultural Trade',
         description: 'Expert Modesto anti-dumping duty attorney providing scope rulings, EAPA investigation defense, and AD/CVD mitigation for Central Valley agricultural and food processing importers.',
-        url: `${siteConfig.siteUrl}/#modesto-antidumping-attorney`,
+        url: `${siteConfig.siteUrl}/modesto-antidumping-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Modesto Anti-Dumping Attorney', url: `${siteConfig.siteUrl}/#modesto-antidumping-attorney` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Modesto Anti-Dumping Attorney', url: `${siteConfig.siteUrl}/modesto-antidumping-attorney` }
       ]),
       generateFAQSchema([
         {

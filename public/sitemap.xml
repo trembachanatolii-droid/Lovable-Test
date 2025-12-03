@@ -12,7 +12,7 @@
 
   <!-- Practice Areas - High Priority Service Page -->
   <url>
-    <loc>https://trembach.law/#practice-areas</loc>
+    <loc>https://trembach.law/practice-areas</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -20,7 +20,7 @@
 
   <!-- Contact Page - High Conversion Priority -->
   <url>
-    <loc>https://trembach.law/#contact</loc>
+    <loc>https://trembach.law/contact</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -28,7 +28,7 @@
 
   <!-- Attorney Profile - Personal Brand Page -->
   <url>
-    <loc>https://trembach.law/#attorney-profile</loc>
+    <loc>https://trembach.law/attorney-profile</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -36,7 +36,7 @@
 
   <!-- About Page -->
   <url>
-    <loc>https://trembach.law/#about</loc>
+    <loc>https://trembach.law/about</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -44,7 +44,7 @@
 
   <!-- News Page -->
   <url>
-    <loc>https://trembach.law/#news</loc>
+    <loc>https://trembach.law/news</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -52,7 +52,7 @@
 
   <!-- Careers Page -->
   <url>
-    <loc>https://trembach.law/#careers</loc>
+    <loc>https://trembach.law/careers</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -60,7 +60,7 @@
 
   <!-- Useful Links -->
   <url>
-    <loc>https://trembach.law/#useful-links</loc>
+    <loc>https://trembach.law/useful-links</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -68,7 +68,7 @@
 
   <!-- Resources Hub - Knowledge Center -->
   <url>
-    <loc>https://trembach.law/#resources</loc>
+    <loc>https://trembach.law/resources</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -76,28 +76,28 @@
 
   <!-- Legal Pages -->
   <url>
-    <loc>https://trembach.law/#privacy-policy</loc>
+    <loc>https://trembach.law/privacy-policy</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#terms</loc>
+    <loc>https://trembach.law/terms</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#disclaimers</loc>
+    <loc>https://trembach.law/disclaimers</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#attorney-advertising</loc>
+    <loc>https://trembach.law/attorney-advertising</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -105,511 +105,511 @@
 
   <!-- News Articles - All 73 Articles with Content Freshness Dates -->
   <url>
-    <loc>https://trembach.law/#article/tariff-classification</loc>
+    <loc>https://trembach.law/article/tariff-classification</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/cbp-focused-assessments</loc>
+    <loc>https://trembach.law/article/cbp-focused-assessments</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/usmca-rules-of-origin</loc>
+    <loc>https://trembach.law/article/usmca-rules-of-origin</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/section-301-tariffs</loc>
+    <loc>https://trembach.law/article/section-301-tariffs</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/customs-penalties-1592</loc>
+    <loc>https://trembach.law/article/customs-penalties-1592</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/customs-valuation</loc>
+    <loc>https://trembach.law/article/customs-valuation</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/c-tpat-certification</loc>
+    <loc>https://trembach.law/article/c-tpat-certification</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/itar-compliance</loc>
-    <lastmod>2025-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://trembach.law/#article/ofac-sanctions</loc>
+    <loc>https://trembach.law/article/itar-compliance</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/antidumping-cvd</loc>
+    <loc>https://trembach.law/article/ofac-sanctions</loc>
+    <lastmod>2025-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/article/antidumping-cvd</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/isf-compliance</loc>
+    <loc>https://trembach.law/article/isf-compliance</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/foreign-trade-zones</loc>
+    <loc>https://trembach.law/article/foreign-trade-zones</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/customs-broker-liability</loc>
+    <loc>https://trembach.law/article/customs-broker-liability</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/free-trade-agreements</loc>
+    <loc>https://trembach.law/article/free-trade-agreements</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/us-cit-litigation</loc>
+    <loc>https://trembach.law/article/us-cit-litigation</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/forced-labor-compliance</loc>
+    <loc>https://trembach.law/article/forced-labor-compliance</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/ear-compliance</loc>
+    <loc>https://trembach.law/article/ear-compliance</loc>
     <lastmod>2025-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/liquidated-damages</loc>
+    <loc>https://trembach.law/article/liquidated-damages</loc>
     <lastmod>2025-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/drawback-claims</loc>
+    <loc>https://trembach.law/article/drawback-claims</loc>
     <lastmod>2025-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/post-entry-compliance</loc>
+    <loc>https://trembach.law/article/post-entry-compliance</loc>
     <lastmod>2025-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/uflpa-compliance-california</loc>
-    <lastmod>2025-11-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://trembach.law/#article/section-321-reform-california</loc>
+    <loc>https://trembach.law/article/uflpa-compliance-california</loc>
     <lastmod>2025-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/cbp-seizure-forfeiture-defense</loc>
+    <loc>https://trembach.law/article/section-321-reform-california</loc>
+    <lastmod>2025-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://trembach.law/article/cbp-seizure-forfeiture-defense</loc>
     <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/deemed-export-compliance-california</loc>
+    <loc>https://trembach.law/article/deemed-export-compliance-california</loc>
     <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/hts-classification-california-technology-imports</loc>
+    <loc>https://trembach.law/article/hts-classification-california-technology-imports</loc>
     <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/customs-valuation-transfer-pricing-defense</loc>
+    <loc>https://trembach.law/article/customs-valuation-transfer-pricing-defense</loc>
     <lastmod>2025-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/country-of-origin-marking-requirements-california</loc>
+    <loc>https://trembach.law/article/country-of-origin-marking-requirements-california</loc>
     <lastmod>2025-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/first-sale-valuation-california-importers</loc>
+    <loc>https://trembach.law/article/first-sale-valuation-california-importers</loc>
     <lastmod>2025-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/cbp-informed-compliance-letters-california</loc>
+    <loc>https://trembach.law/article/cbp-informed-compliance-letters-california</loc>
     <lastmod>2025-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/royalty-license-fee-treatment-customs-valuation</loc>
+    <loc>https://trembach.law/article/royalty-license-fee-treatment-customs-valuation</loc>
     <lastmod>2025-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/assists-tooling-charges-california-customs-valuation</loc>
+    <loc>https://trembach.law/article/assists-tooling-charges-california-customs-valuation</loc>
     <lastmod>2025-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/customs-broker-liability-vs-importer-liability-california</loc>
+    <loc>https://trembach.law/article/customs-broker-liability-vs-importer-liability-california</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/cbp-reconciliation-procedures-california</loc>
+    <loc>https://trembach.law/article/cbp-reconciliation-procedures-california</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/entry-type-selection-strategy-california</loc>
+    <loc>https://trembach.law/article/entry-type-selection-strategy-california</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/section-1592-penalties-california-defense</loc>
+    <loc>https://trembach.law/article/section-1592-penalties-california-defense</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/cbp-focused-assessment-survival-guide-california</loc>
+    <loc>https://trembach.law/article/cbp-focused-assessment-survival-guide-california</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/prior-disclosure-timing-strategies-california</loc>
+    <loc>https://trembach.law/article/prior-disclosure-timing-strategies-california</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/reasonable-care-standard-california-importers</loc>
+    <loc>https://trembach.law/article/reasonable-care-standard-california-importers</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/liquidated-damages-defense-california</loc>
+    <loc>https://trembach.law/article/liquidated-damages-defense-california</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/cbp-seizure-forfeiture-defense-california</loc>
+    <loc>https://trembach.law/article/cbp-seizure-forfeiture-defense-california</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/false-claims-act-whistleblower-defense-california</loc>
+    <loc>https://trembach.law/article/false-claims-act-whistleblower-defense-california</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/cbp-targeting-exams-california-ports</loc>
+    <loc>https://trembach.law/article/cbp-targeting-exams-california-ports</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/customs-bond-requirements-california-importers</loc>
+    <loc>https://trembach.law/article/customs-bond-requirements-california-importers</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/cbp-isf-violations-penalties-california</loc>
+    <loc>https://trembach.law/article/cbp-isf-violations-penalties-california</loc>
     <lastmod>2025-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/usmca-rules-origin-california-manufacturers</loc>
+    <loc>https://trembach.law/article/usmca-rules-origin-california-manufacturers</loc>
     <lastmod>2025-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/usmca-certification-self-certification-california</loc>
+    <loc>https://trembach.law/article/usmca-certification-self-certification-california</loc>
     <lastmod>2025-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/usmca-automotive-rules-california-manufacturers</loc>
+    <loc>https://trembach.law/article/usmca-automotive-rules-california-manufacturers</loc>
     <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/korus-fta-qualification-california-importers</loc>
+    <loc>https://trembach.law/article/korus-fta-qualification-california-importers</loc>
     <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/textiles-cafta-dr-compliance-california</loc>
+    <loc>https://trembach.law/article/textiles-cafta-dr-compliance-california</loc>
     <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/chile-fta-california-wine-exports</loc>
+    <loc>https://trembach.law/article/chile-fta-california-wine-exports</loc>
     <lastmod>2025-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/fta-verification-defense-california</loc>
+    <loc>https://trembach.law/article/fta-verification-defense-california</loc>
     <lastmod>2025-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/gsp-revocation-impact-california</loc>
+    <loc>https://trembach.law/article/gsp-revocation-impact-california</loc>
     <lastmod>2025-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/itar-registration-requirements-california</loc>
+    <loc>https://trembach.law/article/itar-registration-requirements-california</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/ear-export-licensing-california-tech</loc>
+    <loc>https://trembach.law/article/ear-export-licensing-california-tech</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/ofac-sanctions-screening-procedures-california</loc>
+    <loc>https://trembach.law/article/ofac-sanctions-screening-procedures-california</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/encryption-export-controls-california</loc>
+    <loc>https://trembach.law/article/encryption-export-controls-california</loc>
     <lastmod>2025-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/dual-use-export-classification-california</loc>
+    <loc>https://trembach.law/article/dual-use-export-classification-california</loc>
     <lastmod>2025-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/voluntary-self-disclosure-export-violations-california</loc>
+    <loc>https://trembach.law/article/voluntary-self-disclosure-export-violations-california</loc>
     <lastmod>2025-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/export-controls-semiconductors-california</loc>
+    <loc>https://trembach.law/article/export-controls-semiconductors-california</loc>
     <lastmod>2025-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/uflpa-detention-response-california-apparel</loc>
+    <loc>https://trembach.law/article/uflpa-detention-response-california-apparel</loc>
     <lastmod>2025-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/uflpa-entity-list-monitoring-california</loc>
+    <loc>https://trembach.law/article/uflpa-entity-list-monitoring-california</loc>
     <lastmod>2025-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/uflpa-solar-panel-imports-california</loc>
+    <loc>https://trembach.law/article/uflpa-solar-panel-imports-california</loc>
     <lastmod>2025-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/uflpa-electronics-imports-california</loc>
+    <loc>https://trembach.law/article/uflpa-electronics-imports-california</loc>
     <lastmod>2025-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/wro-defense-strategies-california</loc>
+    <loc>https://trembach.law/article/wro-defense-strategies-california</loc>
     <lastmod>2025-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/forced-labor-due-diligence-programs-california</loc>
+    <loc>https://trembach.law/article/forced-labor-due-diligence-programs-california</loc>
     <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/ad-cvd-order-compliance-california</loc>
+    <loc>https://trembach.law/article/ad-cvd-order-compliance-california</loc>
     <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/eapa-investigations-defense-california</loc>
+    <loc>https://trembach.law/article/eapa-investigations-defense-california</loc>
     <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/section-201-safeguard-tariffs-california</loc>
+    <loc>https://trembach.law/article/section-201-safeguard-tariffs-california</loc>
     <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/circumvention-allegations-defense-california</loc>
+    <loc>https://trembach.law/article/circumvention-allegations-defense-california</loc>
     <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/california-food-import-fda-usda-compliance</loc>
+    <loc>https://trembach.law/article/california-food-import-fda-usda-compliance</loc>
     <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/e-commerce-section-321-california</loc>
+    <loc>https://trembach.law/article/e-commerce-section-321-california</loc>
     <lastmod>2025-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/california-wine-export-compliance</loc>
+    <loc>https://trembach.law/article/california-wine-export-compliance</loc>
     <lastmod>2025-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#article/pharmaceutical-import-compliance-california</loc>
+    <loc>https://trembach.law/article/pharmaceutical-import-compliance-california</loc>
     <lastmod>2025-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -617,7 +617,7 @@
 
   <!-- Career Application -->
   <url>
-    <loc>https://trembach.law/#careers/apply</loc>
+    <loc>https://trembach.law/careers/apply</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -625,21 +625,21 @@
 
   <!-- Core Local SEO Landing Pages - Geographic Targeting -->
   <url>
-    <loc>https://trembach.law/#los-angeles-port-customs-attorney</loc>
+    <loc>https://trembach.law/los-angeles-port-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#bay-area-trade-law-attorney</loc>
+    <loc>https://trembach.law/bay-area-trade-law-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#calabasas-customs-attorney</loc>
+    <loc>https://trembach.law/calabasas-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -647,21 +647,21 @@
 
   <!-- Core Service Pages - High-Value Practice Areas -->
   <url>
-    <loc>https://trembach.law/#customs-defense-litigation</loc>
+    <loc>https://trembach.law/customs-defense-litigation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#regulatory-compliance-advisory</loc>
+    <loc>https://trembach.law/regulatory-compliance-advisory</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#export-controls-sanctions</loc>
+    <loc>https://trembach.law/export-controls-sanctions</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -669,35 +669,35 @@
 
   <!-- Knowledge Hub / Resource Center - Informational Content -->
   <url>
-    <loc>https://trembach.law/#tariffs-duties-classification-guide</loc>
+    <loc>https://trembach.law/tariffs-duties-classification-guide</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#supply-chain-esg-compliance-guide</loc>
+    <loc>https://trembach.law/supply-chain-esg-compliance-guide</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#ecommerce-digital-trade-guide</loc>
+    <loc>https://trembach.law/ecommerce-digital-trade-guide</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#resources/section-301-tariffs-guide</loc>
+    <loc>https://trembach.law/resources/section-301-tariffs-guide</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#resources/uflpa-compliance-guide</loc>
+    <loc>https://trembach.law/resources/uflpa-compliance-guide</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -705,7 +705,7 @@
 
   <!-- Trade Law Glossary - Educational Resource -->
   <url>
-    <loc>https://trembach.law/#trade-law-glossary</loc>
+    <loc>https://trembach.law/trade-law-glossary</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>quarterly</changefreq>
     <priority>0.75</priority>
@@ -713,21 +713,21 @@
 
   <!-- Industry-Specific Landing Pages -->
   <url>
-    <loc>https://trembach.law/#technology-electronics-trade-attorney</loc>
+    <loc>https://trembach.law/technology-electronics-trade-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#apparel-textiles-trade-attorney</loc>
+    <loc>https://trembach.law/apparel-textiles-trade-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#food-agriculture-trade-attorney</loc>
+    <loc>https://trembach.law/food-agriculture-trade-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -735,7 +735,7 @@
 
   <!-- FAQ Center - Question-Based Content -->
   <url>
-    <loc>https://trembach.law/#trade-law-faq</loc>
+    <loc>https://trembach.law/trade-law-faq</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -748,14 +748,14 @@
 
   <!-- Anaheim Area -->
   <url>
-    <loc>https://trembach.law/#anaheim-customs-attorney</loc>
+    <loc>https://trembach.law/anaheim-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#anaheim-manufacturing-trade</loc>
+    <loc>https://trembach.law/anaheim-manufacturing-trade</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -763,7 +763,7 @@
 
   <!-- Antioch -->
   <url>
-    <loc>https://trembach.law/#antioch-customs-attorney</loc>
+    <loc>https://trembach.law/antioch-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -771,14 +771,14 @@
 
   <!-- Bakersfield Area -->
   <url>
-    <loc>https://trembach.law/#bakersfield-oil-energy-trade</loc>
+    <loc>https://trembach.law/bakersfield-oil-energy-trade</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#bakersfield-tariff-lawyer</loc>
+    <loc>https://trembach.law/bakersfield-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -786,7 +786,7 @@
 
   <!-- Central Valley -->
   <url>
-    <loc>https://trembach.law/#central-valley-tariff-lawyer</loc>
+    <loc>https://trembach.law/central-valley-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -794,7 +794,7 @@
 
   <!-- Chico -->
   <url>
-    <loc>https://trembach.law/#chico-customs-attorney</loc>
+    <loc>https://trembach.law/chico-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -802,7 +802,7 @@
 
   <!-- Chula Vista -->
   <url>
-    <loc>https://trembach.law/#chula-vista-tariff-lawyer</loc>
+    <loc>https://trembach.law/chula-vista-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -810,7 +810,7 @@
 
   <!-- Concord -->
   <url>
-    <loc>https://trembach.law/#concord-tariff-lawyer</loc>
+    <loc>https://trembach.law/concord-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -818,7 +818,7 @@
 
   <!-- Corona -->
   <url>
-    <loc>https://trembach.law/#corona-trade-compliance</loc>
+    <loc>https://trembach.law/corona-trade-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -826,7 +826,7 @@
 
   <!-- Daly City -->
   <url>
-    <loc>https://trembach.law/#daly-city-customs-attorney</loc>
+    <loc>https://trembach.law/daly-city-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -834,7 +834,7 @@
 
   <!-- Fontana -->
   <url>
-    <loc>https://trembach.law/#fontana-trade-attorney</loc>
+    <loc>https://trembach.law/fontana-trade-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -842,7 +842,7 @@
 
   <!-- Fremont -->
   <url>
-    <loc>https://trembach.law/#fremont-customs-attorney</loc>
+    <loc>https://trembach.law/fremont-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -850,21 +850,21 @@
 
   <!-- Fresno Area -->
   <url>
-    <loc>https://trembach.law/#fresno-ag-export-compliance</loc>
+    <loc>https://trembach.law/fresno-ag-export-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#fresno-agricultural-trade</loc>
+    <loc>https://trembach.law/fresno-agricultural-trade</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#fresno-customs-attorney</loc>
+    <loc>https://trembach.law/fresno-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -872,7 +872,7 @@
 
   <!-- Fullerton -->
   <url>
-    <loc>https://trembach.law/#fullerton-tariff-attorney</loc>
+    <loc>https://trembach.law/fullerton-tariff-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -880,7 +880,7 @@
 
   <!-- Glendale -->
   <url>
-    <loc>https://trembach.law/#glendale-tariff-attorney</loc>
+    <loc>https://trembach.law/glendale-tariff-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -888,7 +888,7 @@
 
   <!-- Hayward -->
   <url>
-    <loc>https://trembach.law/#hayward-customs-attorney</loc>
+    <loc>https://trembach.law/hayward-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -896,7 +896,7 @@
 
   <!-- Huntington Beach -->
   <url>
-    <loc>https://trembach.law/#huntington-beach-tariff-lawyer</loc>
+    <loc>https://trembach.law/huntington-beach-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -904,7 +904,7 @@
 
   <!-- Inland Empire -->
   <url>
-    <loc>https://trembach.law/#inland-empire-customs-attorney</loc>
+    <loc>https://trembach.law/inland-empire-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -912,7 +912,7 @@
 
   <!-- Irvine -->
   <url>
-    <loc>https://trembach.law/#irvine-trade-compliance</loc>
+    <loc>https://trembach.law/irvine-trade-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -920,7 +920,7 @@
 
   <!-- Lancaster -->
   <url>
-    <loc>https://trembach.law/#lancaster-trade-attorney</loc>
+    <loc>https://trembach.law/lancaster-trade-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -928,35 +928,35 @@
 
   <!-- Long Beach Area - Major Port City -->
   <url>
-    <loc>https://trembach.law/#long-beach-antidumping-defense</loc>
+    <loc>https://trembach.law/long-beach-antidumping-defense</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#long-beach-duty-drawback</loc>
+    <loc>https://trembach.law/long-beach-duty-drawback</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#long-beach-ftz-compliance</loc>
+    <loc>https://trembach.law/long-beach-ftz-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#long-beach-maritime-tariff</loc>
+    <loc>https://trembach.law/long-beach-maritime-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#long-beach-port-attorney</loc>
+    <loc>https://trembach.law/long-beach-port-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -964,35 +964,35 @@
 
   <!-- Los Angeles Area - Major Market -->
   <url>
-    <loc>https://trembach.law/#los-angeles-cbp-audit-defense</loc>
+    <loc>https://trembach.law/los-angeles-cbp-audit-defense</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#los-angeles-fashion-tariff</loc>
+    <loc>https://trembach.law/los-angeles-fashion-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#los-angeles-section-301</loc>
+    <loc>https://trembach.law/los-angeles-section-301</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#los-angeles-tariff-lawyer</loc>
+    <loc>https://trembach.law/los-angeles-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#los-angeles-usmca-certification</loc>
+    <loc>https://trembach.law/los-angeles-usmca-certification</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -1000,14 +1000,14 @@
 
   <!-- Modesto Area -->
   <url>
-    <loc>https://trembach.law/#modesto-customs-attorney</loc>
+    <loc>https://trembach.law/modesto-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#modesto-farm-equipment</loc>
+    <loc>https://trembach.law/modesto-farm-equipment</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1015,7 +1015,7 @@
 
   <!-- Moreno Valley -->
   <url>
-    <loc>https://trembach.law/#moreno-valley-customs</loc>
+    <loc>https://trembach.law/moreno-valley-customs</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1023,7 +1023,7 @@
 
   <!-- Murrieta -->
   <url>
-    <loc>https://trembach.law/#murrieta-tariff-lawyer</loc>
+    <loc>https://trembach.law/murrieta-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1031,35 +1031,35 @@
 
   <!-- Oakland Area - Major Port City -->
   <url>
-    <loc>https://trembach.law/#oakland-customs-broker</loc>
+    <loc>https://trembach.law/oakland-customs-broker</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#oakland-customs-penalty</loc>
+    <loc>https://trembach.law/oakland-customs-penalty</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#oakland-maritime-trade</loc>
+    <loc>https://trembach.law/oakland-maritime-trade</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#oakland-port-operations</loc>
+    <loc>https://trembach.law/oakland-port-operations</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#oakland-trade-attorney</loc>
+    <loc>https://trembach.law/oakland-trade-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -1067,7 +1067,7 @@
 
   <!-- Oceanside -->
   <url>
-    <loc>https://trembach.law/#oceanside-tariff-attorney</loc>
+    <loc>https://trembach.law/oceanside-tariff-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1075,7 +1075,7 @@
 
   <!-- Ontario -->
   <url>
-    <loc>https://trembach.law/#ontario-trade-compliance</loc>
+    <loc>https://trembach.law/ontario-trade-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1083,7 +1083,7 @@
 
   <!-- Orange County -->
   <url>
-    <loc>https://trembach.law/#orange-county-tariff-lawyer</loc>
+    <loc>https://trembach.law/orange-county-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -1091,7 +1091,7 @@
 
   <!-- Oxnard -->
   <url>
-    <loc>https://trembach.law/#oxnard-tariff-attorney</loc>
+    <loc>https://trembach.law/oxnard-tariff-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1099,7 +1099,7 @@
 
   <!-- Palmdale -->
   <url>
-    <loc>https://trembach.law/#palmdale-customs-attorney</loc>
+    <loc>https://trembach.law/palmdale-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1107,7 +1107,7 @@
 
   <!-- Pasadena -->
   <url>
-    <loc>https://trembach.law/#pasadena-tariff-lawyer</loc>
+    <loc>https://trembach.law/pasadena-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1115,21 +1115,21 @@
 
   <!-- Port-Specific Pages -->
   <url>
-    <loc>https://trembach.law/#port-of-oakland-tariff</loc>
+    <loc>https://trembach.law/port-of-oakland-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#port-of-san-diego-customs</loc>
+    <loc>https://trembach.law/port-of-san-diego-customs</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#port-of-stockton-trade</loc>
+    <loc>https://trembach.law/port-of-stockton-trade</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1137,7 +1137,7 @@
 
   <!-- Rancho Cucamonga -->
   <url>
-    <loc>https://trembach.law/#rancho-cucamonga-tariff-lawyer</loc>
+    <loc>https://trembach.law/rancho-cucamonga-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1145,7 +1145,7 @@
 
   <!-- Riverside -->
   <url>
-    <loc>https://trembach.law/#riverside-tariff-attorney</loc>
+    <loc>https://trembach.law/riverside-tariff-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1153,7 +1153,7 @@
 
   <!-- Roseville -->
   <url>
-    <loc>https://trembach.law/#roseville-customs-lawyer</loc>
+    <loc>https://trembach.law/roseville-customs-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1161,28 +1161,28 @@
 
   <!-- Sacramento Area -->
   <url>
-    <loc>https://trembach.law/#sacramento-tariff-attorney</loc>
+    <loc>https://trembach.law/sacramento-tariff-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#sacramento-trade-compliance</loc>
+    <loc>https://trembach.law/sacramento-trade-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#sacramento-valley-trade</loc>
+    <loc>https://trembach.law/sacramento-valley-trade</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#sacramento-wine-export</loc>
+    <loc>https://trembach.law/sacramento-wine-export</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1190,7 +1190,7 @@
 
   <!-- Salinas -->
   <url>
-    <loc>https://trembach.law/#salinas-tariff-lawyer</loc>
+    <loc>https://trembach.law/salinas-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1198,35 +1198,35 @@
 
   <!-- San Diego Area - Major Port City -->
   <url>
-    <loc>https://trembach.law/#san-diego-customs-lawyer</loc>
+    <loc>https://trembach.law/san-diego-customs-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-diego-ecommerce-tariff</loc>
+    <loc>https://trembach.law/san-diego-ecommerce-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-diego-pharma-import</loc>
+    <loc>https://trembach.law/san-diego-pharma-import</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-diego-trade-litigation</loc>
+    <loc>https://trembach.law/san-diego-trade-litigation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-diego-uflpa-compliance</loc>
+    <loc>https://trembach.law/san-diego-uflpa-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1234,7 +1234,7 @@
 
   <!-- San Fernando Valley -->
   <url>
-    <loc>https://trembach.law/#san-fernando-valley-tariff</loc>
+    <loc>https://trembach.law/san-fernando-valley-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1242,35 +1242,35 @@
 
   <!-- San Francisco Area - Major Market -->
   <url>
-    <loc>https://trembach.law/#san-francisco-customs-attorney</loc>
+    <loc>https://trembach.law/san-francisco-customs-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-francisco-export-controls</loc>
+    <loc>https://trembach.law/san-francisco-export-controls</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-francisco-forced-labor</loc>
+    <loc>https://trembach.law/san-francisco-forced-labor</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-francisco-prior-disclosure</loc>
+    <loc>https://trembach.law/san-francisco-prior-disclosure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-francisco-tech-trade</loc>
+    <loc>https://trembach.law/san-francisco-tech-trade</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -1278,14 +1278,14 @@
 
   <!-- San Jose Area -->
   <url>
-    <loc>https://trembach.law/#san-jose-customs-lawyer</loc>
+    <loc>https://trembach.law/san-jose-customs-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-jose-tech-export-controls</loc>
+    <loc>https://trembach.law/san-jose-tech-export-controls</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -1293,7 +1293,7 @@
 
   <!-- Santa Ana -->
   <url>
-    <loc>https://trembach.law/#santa-ana-trade-attorney</loc>
+    <loc>https://trembach.law/santa-ana-trade-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1301,7 +1301,7 @@
 
   <!-- Santa Clarita -->
   <url>
-    <loc>https://trembach.law/#santa-clarita-customs-lawyer</loc>
+    <loc>https://trembach.law/santa-clarita-customs-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1309,7 +1309,7 @@
 
   <!-- Santa Rosa -->
   <url>
-    <loc>https://trembach.law/#santa-rosa-customs-lawyer</loc>
+    <loc>https://trembach.law/santa-rosa-customs-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1317,7 +1317,7 @@
 
   <!-- Silicon Valley -->
   <url>
-    <loc>https://trembach.law/#silicon-valley-trade-lawyer</loc>
+    <loc>https://trembach.law/silicon-valley-trade-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -1325,7 +1325,7 @@
 
   <!-- Southern California Regional -->
   <url>
-    <loc>https://trembach.law/#southern-california-tariff-lawyer</loc>
+    <loc>https://trembach.law/southern-california-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -1333,14 +1333,14 @@
 
   <!-- Stockton Area -->
   <url>
-    <loc>https://trembach.law/#stockton-ag-tariff-lawyer</loc>
+    <loc>https://trembach.law/stockton-ag-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#stockton-tariff-lawyer</loc>
+    <loc>https://trembach.law/stockton-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1348,7 +1348,7 @@
 
   <!-- Sunnyvale -->
   <url>
-    <loc>https://trembach.law/#sunnyvale-tech-trade</loc>
+    <loc>https://trembach.law/sunnyvale-tech-trade</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1356,7 +1356,7 @@
 
   <!-- Temecula -->
   <url>
-    <loc>https://trembach.law/#temecula-trade-attorney</loc>
+    <loc>https://trembach.law/temecula-trade-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1364,7 +1364,7 @@
 
   <!-- Torrance -->
   <url>
-    <loc>https://trembach.law/#torrance-trade-attorney</loc>
+    <loc>https://trembach.law/torrance-trade-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1372,7 +1372,7 @@
 
   <!-- Vallejo -->
   <url>
-    <loc>https://trembach.law/#vallejo-tariff-attorney</loc>
+    <loc>https://trembach.law/vallejo-tariff-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1380,7 +1380,7 @@
 
   <!-- Visalia -->
   <url>
-    <loc>https://trembach.law/#visalia-tariff-lawyer</loc>
+    <loc>https://trembach.law/visalia-tariff-lawyer</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1392,7 +1392,7 @@
 
   <!-- 2025 Trump Tariff Attorney -->
   <url>
-    <loc>https://trembach.law/#trump-2025-tariff-attorney</loc>
+    <loc>https://trembach.law/trump-2025-tariff-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -1402,7 +1402,7 @@
 
   <!-- Irvine CBP Audit Defense -->
   <url>
-    <loc>https://trembach.law/#irvine-cbp-audit-defense</loc>
+    <loc>https://trembach.law/irvine-cbp-audit-defense</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1410,7 +1410,7 @@
 
   <!-- San Diego Section 301 Tariff Attorney -->
   <url>
-    <loc>https://trembach.law/#san-diego-section-301</loc>
+    <loc>https://trembach.law/san-diego-section-301</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1418,7 +1418,7 @@
 
   <!-- Sacramento UFLPA Attorney -->
   <url>
-    <loc>https://trembach.law/#sacramento-uflpa-attorney</loc>
+    <loc>https://trembach.law/sacramento-uflpa-attorney</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1426,7 +1426,7 @@
 
   <!-- Riverside Customs Seizure Attorney -->
   <url>
-    <loc>https://trembach.law/#riverside-customs-seizure</loc>
+    <loc>https://trembach.law/riverside-customs-seizure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1434,7 +1434,7 @@
 
   <!-- Fremont Semiconductor Tariff Attorney -->
   <url>
-    <loc>https://trembach.law/#fremont-semiconductor-tariff</loc>
+    <loc>https://trembach.law/fremont-semiconductor-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1444,7 +1444,7 @@
 
   <!-- Los Angeles CBP Audit Defense -->
   <url>
-    <loc>https://trembach.law/#los-angeles-cbp-audit</loc>
+    <loc>https://trembach.law/los-angeles-cbp-audit</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1452,7 +1452,7 @@
 
   <!-- San Jose Section 301 Tariff Attorney -->
   <url>
-    <loc>https://trembach.law/#san-jose-section-301</loc>
+    <loc>https://trembach.law/san-jose-section-301</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1460,7 +1460,7 @@
 
   <!-- Oakland UFLPA Attorney -->
   <url>
-    <loc>https://trembach.law/#oakland-uflpa</loc>
+    <loc>https://trembach.law/oakland-uflpa</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1468,7 +1468,7 @@
 
   <!-- Anaheim Customs Seizure Attorney -->
   <url>
-    <loc>https://trembach.law/#anaheim-customs-seizure</loc>
+    <loc>https://trembach.law/anaheim-customs-seizure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1476,7 +1476,7 @@
 
   <!-- San Francisco China Tariff Attorney -->
   <url>
-    <loc>https://trembach.law/#san-francisco-china-tariff</loc>
+    <loc>https://trembach.law/san-francisco-china-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1486,7 +1486,7 @@
 
   <!-- Long Beach CBP Audit Defense -->
   <url>
-    <loc>https://trembach.law/#long-beach-cbp-audit</loc>
+    <loc>https://trembach.law/long-beach-cbp-audit</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1494,7 +1494,7 @@
 
   <!-- San Diego CBP Audit Defense -->
   <url>
-    <loc>https://trembach.law/#san-diego-cbp-audit</loc>
+    <loc>https://trembach.law/san-diego-cbp-audit</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1502,7 +1502,7 @@
 
   <!-- Sacramento Section 301 Attorney -->
   <url>
-    <loc>https://trembach.law/#sacramento-section-301</loc>
+    <loc>https://trembach.law/sacramento-section-301</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1510,7 +1510,7 @@
 
   <!-- Fresno Section 301 Attorney -->
   <url>
-    <loc>https://trembach.law/#fresno-section-301</loc>
+    <loc>https://trembach.law/fresno-section-301</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1518,7 +1518,7 @@
 
   <!-- Bakersfield UFLPA Attorney -->
   <url>
-    <loc>https://trembach.law/#bakersfield-uflpa</loc>
+    <loc>https://trembach.law/bakersfield-uflpa</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1526,7 +1526,7 @@
 
   <!-- Long Beach UFLPA Attorney -->
   <url>
-    <loc>https://trembach.law/#long-beach-uflpa</loc>
+    <loc>https://trembach.law/long-beach-uflpa</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1534,7 +1534,7 @@
 
   <!-- San Diego Customs Seizure Attorney -->
   <url>
-    <loc>https://trembach.law/#san-diego-customs-seizure</loc>
+    <loc>https://trembach.law/san-diego-customs-seizure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1542,7 +1542,7 @@
 
   <!-- Long Beach Customs Seizure Attorney -->
   <url>
-    <loc>https://trembach.law/#long-beach-customs-seizure</loc>
+    <loc>https://trembach.law/long-beach-customs-seizure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1550,7 +1550,7 @@
 
   <!-- San Jose Pharmaceutical Import Attorney -->
   <url>
-    <loc>https://trembach.law/#san-jose-pharma-import</loc>
+    <loc>https://trembach.law/san-jose-pharma-import</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1558,7 +1558,7 @@
 
   <!-- Fremont Automotive Tariff Attorney -->
   <url>
-    <loc>https://trembach.law/#fremont-automotive-tariff</loc>
+    <loc>https://trembach.law/fremont-automotive-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1568,35 +1568,35 @@
 
   <!-- CBP Audit Pages -->
   <url>
-    <loc>https://trembach.law/#oakland-cbp-audit</loc>
+    <loc>https://trembach.law/oakland-cbp-audit</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#fresno-cbp-audit</loc>
+    <loc>https://trembach.law/fresno-cbp-audit</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#santa-ana-cbp-audit</loc>
+    <loc>https://trembach.law/santa-ana-cbp-audit</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#pasadena-cbp-audit</loc>
+    <loc>https://trembach.law/pasadena-cbp-audit</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#torrance-cbp-audit</loc>
+    <loc>https://trembach.law/torrance-cbp-audit</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1604,35 +1604,35 @@
 
   <!-- Section 301 Pages -->
   <url>
-    <loc>https://trembach.law/#long-beach-section-301</loc>
+    <loc>https://trembach.law/long-beach-section-301</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#irvine-section-301</loc>
+    <loc>https://trembach.law/irvine-section-301</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#oakland-section-301</loc>
+    <loc>https://trembach.law/oakland-section-301</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#anaheim-section-301</loc>
+    <loc>https://trembach.law/anaheim-section-301</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#torrance-section-301</loc>
+    <loc>https://trembach.law/torrance-section-301</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1640,35 +1640,35 @@
 
   <!-- UFLPA Pages -->
   <url>
-    <loc>https://trembach.law/#san-diego-uflpa</loc>
+    <loc>https://trembach.law/san-diego-uflpa</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#fresno-uflpa</loc>
+    <loc>https://trembach.law/fresno-uflpa</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#irvine-uflpa</loc>
+    <loc>https://trembach.law/irvine-uflpa</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-jose-uflpa</loc>
+    <loc>https://trembach.law/san-jose-uflpa</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#torrance-uflpa</loc>
+    <loc>https://trembach.law/torrance-uflpa</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1676,35 +1676,35 @@
 
   <!-- Customs Seizure Pages -->
   <url>
-    <loc>https://trembach.law/#los-angeles-customs-seizure</loc>
+    <loc>https://trembach.law/los-angeles-customs-seizure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#oakland-customs-seizure</loc>
+    <loc>https://trembach.law/oakland-customs-seizure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#fresno-customs-seizure</loc>
+    <loc>https://trembach.law/fresno-customs-seizure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#sacramento-customs-seizure</loc>
+    <loc>https://trembach.law/sacramento-customs-seizure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#irvine-customs-seizure</loc>
+    <loc>https://trembach.law/irvine-customs-seizure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1712,35 +1712,35 @@
 
   <!-- Industry-Specific Pages -->
   <url>
-    <loc>https://trembach.law/#los-angeles-automotive-tariff</loc>
+    <loc>https://trembach.law/los-angeles-automotive-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-diego-semiconductor-tariff</loc>
+    <loc>https://trembach.law/san-diego-semiconductor-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#oakland-pharmaceutical-import</loc>
+    <loc>https://trembach.law/oakland-pharmaceutical-import</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#fresno-agricultural-equipment-tariff</loc>
+    <loc>https://trembach.law/fresno-agricultural-equipment-tariff</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#irvine-medical-device-import</loc>
+    <loc>https://trembach.law/irvine-medical-device-import</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1750,35 +1750,35 @@
 
   <!-- Anti-Dumping Pages -->
   <url>
-    <loc>https://trembach.law/#santa-clara-anti-dumping</loc>
+    <loc>https://trembach.law/santa-clara-anti-dumping</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#stockton-anti-dumping</loc>
+    <loc>https://trembach.law/stockton-anti-dumping</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#modesto-anti-dumping</loc>
+    <loc>https://trembach.law/modesto-anti-dumping</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#glendale-anti-dumping</loc>
+    <loc>https://trembach.law/glendale-anti-dumping</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#huntington-beach-anti-dumping</loc>
+    <loc>https://trembach.law/huntington-beach-anti-dumping</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1786,35 +1786,35 @@
 
   <!-- Countervailing Duty Pages -->
   <url>
-    <loc>https://trembach.law/#santa-rosa-countervailing</loc>
+    <loc>https://trembach.law/santa-rosa-countervailing</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#elk-grove-countervailing</loc>
+    <loc>https://trembach.law/elk-grove-countervailing</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#corona-countervailing</loc>
+    <loc>https://trembach.law/corona-countervailing</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#lancaster-countervailing</loc>
+    <loc>https://trembach.law/lancaster-countervailing</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#palmdale-countervailing</loc>
+    <loc>https://trembach.law/palmdale-countervailing</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1822,35 +1822,35 @@
 
   <!-- Foreign Trade Zone Pages -->
   <url>
-    <loc>https://trembach.law/#salinas-trade-zone</loc>
+    <loc>https://trembach.law/salinas-trade-zone</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#pomona-trade-zone</loc>
+    <loc>https://trembach.law/pomona-trade-zone</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#hayward-trade-zone</loc>
+    <loc>https://trembach.law/hayward-trade-zone</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#escondido-trade-zone</loc>
+    <loc>https://trembach.law/escondido-trade-zone</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#sunnyvale-trade-zone</loc>
+    <loc>https://trembach.law/sunnyvale-trade-zone</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1858,35 +1858,35 @@
 
   <!-- HTS Classification Pages -->
   <url>
-    <loc>https://trembach.law/#fullerton-hts-classification</loc>
+    <loc>https://trembach.law/fullerton-hts-classification</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#thousand-oaks-hts-classification</loc>
+    <loc>https://trembach.law/thousand-oaks-hts-classification</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#visalia-hts-classification</loc>
+    <loc>https://trembach.law/visalia-hts-classification</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#roseville-hts-classification</loc>
+    <loc>https://trembach.law/roseville-hts-classification</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#concord-hts-classification</loc>
+    <loc>https://trembach.law/concord-hts-classification</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1894,35 +1894,35 @@
 
   <!-- Export Control Pages -->
   <url>
-    <loc>https://trembach.law/#simi-valley-export-control</loc>
+    <loc>https://trembach.law/simi-valley-export-control</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#santa-maria-export-control</loc>
+    <loc>https://trembach.law/santa-maria-export-control</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#berkeley-export-control</loc>
+    <loc>https://trembach.law/berkeley-export-control</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#el-monte-export-control</loc>
+    <loc>https://trembach.law/el-monte-export-control</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#carlsbad-export-control</loc>
+    <loc>https://trembach.law/carlsbad-export-control</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1932,35 +1932,35 @@
 
   <!-- Penalty Mitigation Pages -->
   <url>
-    <loc>https://trembach.law/#rancho-cucamonga-penalty-mitigation</loc>
+    <loc>https://trembach.law/rancho-cucamonga-penalty-mitigation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#ontario-penalty-mitigation</loc>
+    <loc>https://trembach.law/ontario-penalty-mitigation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#fontana-penalty-mitigation</loc>
+    <loc>https://trembach.law/fontana-penalty-mitigation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#moreno-valley-penalty-mitigation</loc>
+    <loc>https://trembach.law/moreno-valley-penalty-mitigation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-bernardino-penalty-mitigation</loc>
+    <loc>https://trembach.law/san-bernardino-penalty-mitigation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1968,35 +1968,35 @@
 
   <!-- Prior Disclosure Pages -->
   <url>
-    <loc>https://trembach.law/#west-covina-prior-disclosure</loc>
+    <loc>https://trembach.law/west-covina-prior-disclosure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#norwalk-prior-disclosure</loc>
+    <loc>https://trembach.law/norwalk-prior-disclosure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#burbank-prior-disclosure</loc>
+    <loc>https://trembach.law/burbank-prior-disclosure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#el-cajon-prior-disclosure</loc>
+    <loc>https://trembach.law/el-cajon-prior-disclosure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#rialto-prior-disclosure</loc>
+    <loc>https://trembach.law/rialto-prior-disclosure</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -2004,35 +2004,35 @@
 
   <!-- Drawback Pages -->
   <url>
-    <loc>https://trembach.law/#daly-city-drawback</loc>
+    <loc>https://trembach.law/daly-city-drawback</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#south-gate-drawback</loc>
+    <loc>https://trembach.law/south-gate-drawback</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#mission-viejo-drawback</loc>
+    <loc>https://trembach.law/mission-viejo-drawback</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#carson-drawback</loc>
+    <loc>https://trembach.law/carson-drawback</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#santa-clarita-drawback</loc>
+    <loc>https://trembach.law/santa-clarita-drawback</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -2040,35 +2040,35 @@
 
   <!-- Bonded Warehouse Pages -->
   <url>
-    <loc>https://trembach.law/#vacaville-bonded-warehouse</loc>
+    <loc>https://trembach.law/vacaville-bonded-warehouse</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#fairfield-bonded-warehouse</loc>
+    <loc>https://trembach.law/fairfield-bonded-warehouse</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#antioch-bonded-warehouse</loc>
+    <loc>https://trembach.law/antioch-bonded-warehouse</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#richmond-bonded-warehouse</loc>
+    <loc>https://trembach.law/richmond-bonded-warehouse</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-leandro-bonded-warehouse</loc>
+    <loc>https://trembach.law/san-leandro-bonded-warehouse</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -2076,35 +2076,35 @@
 
   <!-- Customs Valuation Pages -->
   <url>
-    <loc>https://trembach.law/#redwood-city-customs-valuation</loc>
+    <loc>https://trembach.law/redwood-city-customs-valuation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#lake-forest-customs-valuation</loc>
+    <loc>https://trembach.law/lake-forest-customs-valuation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#napa-customs-valuation</loc>
+    <loc>https://trembach.law/napa-customs-valuation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#manteca-customs-valuation</loc>
+    <loc>https://trembach.law/manteca-customs-valuation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#chino-customs-valuation</loc>
+    <loc>https://trembach.law/chino-customs-valuation</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -2114,35 +2114,35 @@
 
   <!-- Import Compliance Pages -->
   <url>
-    <loc>https://trembach.law/#inglewood-import-compliance</loc>
+    <loc>https://trembach.law/inglewood-import-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#ventura-import-compliance</loc>
+    <loc>https://trembach.law/ventura-import-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#santa-barbara-import-compliance</loc>
+    <loc>https://trembach.law/santa-barbara-import-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#oceanside-import-compliance</loc>
+    <loc>https://trembach.law/oceanside-import-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#garden-grove-import-compliance</loc>
+    <loc>https://trembach.law/garden-grove-import-compliance</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -2150,35 +2150,35 @@
 
   <!-- Customs Broker Pages -->
   <url>
-    <loc>https://trembach.law/#chula-vista-customs-broker</loc>
+    <loc>https://trembach.law/chula-vista-customs-broker</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#downey-customs-broker</loc>
+    <loc>https://trembach.law/downey-customs-broker</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#costa-mesa-customs-broker</loc>
+    <loc>https://trembach.law/costa-mesa-customs-broker</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#san-mateo-customs-broker</loc>
+    <loc>https://trembach.law/san-mateo-customs-broker</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#clovis-customs-broker</loc>
+    <loc>https://trembach.law/clovis-customs-broker</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -2186,35 +2186,35 @@
 
   <!-- USMCA Pages -->
   <url>
-    <loc>https://trembach.law/#tracy-usmca</loc>
+    <loc>https://trembach.law/tracy-usmca</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#livermore-usmca</loc>
+    <loc>https://trembach.law/livermore-usmca</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#pleasanton-usmca</loc>
+    <loc>https://trembach.law/pleasanton-usmca</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#walnut-creek-usmca</loc>
+    <loc>https://trembach.law/walnut-creek-usmca</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#menifee-usmca</loc>
+    <loc>https://trembach.law/menifee-usmca</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -2222,35 +2222,35 @@
 
   <!-- Country of Origin Pages -->
   <url>
-    <loc>https://trembach.law/#hemet-country-of-origin</loc>
+    <loc>https://trembach.law/hemet-country-of-origin</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#lake-elsinore-country-of-origin</loc>
+    <loc>https://trembach.law/lake-elsinore-country-of-origin</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#murrieta-country-of-origin</loc>
+    <loc>https://trembach.law/murrieta-country-of-origin</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#temecula-country-of-origin</loc>
+    <loc>https://trembach.law/temecula-country-of-origin</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#victorville-country-of-origin</loc>
+    <loc>https://trembach.law/victorville-country-of-origin</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -2258,35 +2258,35 @@
 
   <!-- Customs Bond Pages -->
   <url>
-    <loc>https://trembach.law/#hesperia-customs-bond</loc>
+    <loc>https://trembach.law/hesperia-customs-bond</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#apple-valley-customs-bond</loc>
+    <loc>https://trembach.law/apple-valley-customs-bond</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#yucaipa-customs-bond</loc>
+    <loc>https://trembach.law/yucaipa-customs-bond</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#loma-linda-customs-bond</loc>
+    <loc>https://trembach.law/loma-linda-customs-bond</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://trembach.law/#upland-customs-bond</loc>
+    <loc>https://trembach.law/upland-customs-bond</loc>
     <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

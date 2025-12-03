@@ -22,12 +22,12 @@ const RiversideCustomsSeizurePage: React.FC = () => {
       generateWebPageSchema({
         title: 'Customs Seizure Attorney Riverside CA - Cargo Detention Lawyer',
         description: 'Expert customs seizure attorney serving Riverside and the Inland Empire. Comprehensive seizure defense including detention release, petition filing, and forfeiture prevention.',
-        url: `${siteConfig.siteUrl}/#riverside-customs-seizure`,
+        url: `${siteConfig.siteUrl}/riverside-customs-seizure`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Customs Seizure Attorney Riverside', url: `${siteConfig.siteUrl}/#riverside-customs-seizure` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Customs Seizure Attorney Riverside', url: `${siteConfig.siteUrl}/riverside-customs-seizure` }
       ]),
       generateFAQSchema([
         {

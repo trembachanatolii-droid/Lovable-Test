@@ -23,12 +23,12 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
       generateWebPageSchema({
         title: 'Silicon Valley Trade Lawyer - Technology Import & Export Control Specialists',
         description: 'Silicon Valley trade lawyer and customs attorney serving San Jose, Palo Alto, Sunnyvale, Fremont. Expert technology import compliance, semiconductor tariff strategies, and EAR/ITAR export controls for tech companies.',
-        url: `${siteConfig.siteUrl}/#silicon-valley-trade-lawyer`,
+        url: `${siteConfig.siteUrl}/silicon-valley-trade-lawyer`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/#california-offices` },
-        { name: 'Silicon Valley Trade Lawyer', url: `${siteConfig.siteUrl}/#silicon-valley-trade-lawyer` }
+        { name: 'California Service Areas', url: `${siteConfig.siteUrl}/california-offices` },
+        { name: 'Silicon Valley Trade Lawyer', url: `${siteConfig.siteUrl}/silicon-valley-trade-lawyer` }
       ]),
       generateFAQSchema([
         {

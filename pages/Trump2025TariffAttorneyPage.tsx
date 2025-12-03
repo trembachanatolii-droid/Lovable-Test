@@ -22,12 +22,12 @@ const Trump2025TariffAttorneyPage: React.FC = () => {
       generateWebPageSchema({
         title: '2025 Trump Tariff Attorney California - Reciprocal Tariff Defense',
         description: 'Expert California tariff attorney helping businesses navigate 2025 Trump tariffs including reciprocal tariffs, IEEPA emergency tariffs, and new duties on China, Mexico, and Canada.',
-        url: `${siteConfig.siteUrl}/#trump-2025-tariff-attorney`,
+        url: `${siteConfig.siteUrl}/trump-2025-tariff-attorney`,
       }),
       generateBreadcrumbSchema([
         { name: 'Home', url: `${siteConfig.siteUrl}/` },
-        { name: 'Resources', url: `${siteConfig.siteUrl}/#resources` },
-        { name: '2025 Trump Tariff Attorney', url: `${siteConfig.siteUrl}/#trump-2025-tariff-attorney` }
+        { name: 'Resources', url: `${siteConfig.siteUrl}/resources` },
+        { name: '2025 Trump Tariff Attorney', url: `${siteConfig.siteUrl}/trump-2025-tariff-attorney` }
       ]),
       generateFAQSchema([
         {

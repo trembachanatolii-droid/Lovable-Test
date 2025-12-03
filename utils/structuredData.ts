@@ -12,11 +12,11 @@ export function generatePersonSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    '@id': 'https://trembach.law/#anatolii-trembach',
+    '@id': 'https://trembach.law/anatolii-trembach',
     name: 'Anatolii Trembach',
     givenName: 'Anatolii',
     familyName: 'Trembach',
-    url: 'https://trembach.law/#attorney-profile',
+    url: 'https://trembach.law/attorney-profile',
     image: 'https://trembach.law/images/attorney-anatolii-trembach.jpg',
     jobTitle: 'International Trade & Customs Attorney',
     description: 'International trade and customs attorney specializing in CBP enforcement defense, tariff classification disputes, and trade compliance. Former criminal detective and special agent with Ukraine\'s Security Service (SBU).',
@@ -61,7 +61,7 @@ export function generatePersonSchema() {
     award: '2026 Rising Star by Super Lawyers',
     worksFor: {
       '@type': 'Organization',
-      '@id': 'https://trembach.law/#organization',
+      '@id': 'https://trembach.law/organization',
     },
     address: {
       '@type': 'PostalAddress',
@@ -109,7 +109,7 @@ export function generateServiceSchema(serviceData: {
     url: serviceData.url,
     provider: {
       '@type': 'Organization',
-      '@id': 'https://trembach.law/#organization',
+      '@id': 'https://trembach.law/organization',
     },
     areaServed: {
       '@type': 'Country',
@@ -129,18 +129,18 @@ export function generateWebSiteSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://trembach.law/#website',
+    '@id': 'https://trembach.law/website',
     url: 'https://trembach.law/',
     name: 'Trembach Law Firm',
     description: 'Expert international trade and customs law counsel',
     publisher: {
-      '@id': 'https://trembach.law/#organization',
+      '@id': 'https://trembach.law/organization',
     },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://trembach.law/#news?q={search_term_string}',
+        urlTemplate: 'https://trembach.law/news?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },
