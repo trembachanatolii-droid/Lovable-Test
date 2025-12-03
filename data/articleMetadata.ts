@@ -10,6 +10,11 @@ export interface ArticleMetadataItem {
 }
 
 export const articleMetadata: Record<string, ArticleMetadataItem> = {
+  // December 3, 2025 (3 articles)
+  'us-korea-strategic-trade-deal-california-2025': { date: 'DECEMBER 3, 2025', isoDate: '2025-12-03', readTime: '8 MIN READ' },
+  'us-china-agricultural-trade-truce-california-2025': { date: 'DECEMBER 3, 2025', isoDate: '2025-12-03', readTime: '7 MIN READ' },
+  'oecd-global-trade-resilience-california-december-2025': { date: 'DECEMBER 3, 2025', isoDate: '2025-12-03', readTime: '7 MIN READ' },
+
   // December 1, 2025 (3 articles)
   'section-232-copper-tariffs-50-percent-california-2025': { date: 'DECEMBER 1, 2025', isoDate: '2025-12-01', readTime: '8 MIN READ' },
   'section-232-timber-lumber-tariffs-california-2025': { date: 'DECEMBER 1, 2025', isoDate: '2025-12-01', readTime: '8 MIN READ' },
@@ -173,6 +178,11 @@ export const formatDateForDisplay = (date: string): string => {
 // Get category based on article ID (simplified mapping)
 export const getArticleCategory = (articleId: string): string => {
   const categoryMap: Record<string, string> = {
+    // December 3, 2025 Articles
+    'us-korea-strategic-trade-deal-california-2025': 'TRADE AGREEMENTS',
+    'us-china-agricultural-trade-truce-california-2025': 'TRADE POLICY',
+    'oecd-global-trade-resilience-california-december-2025': 'TRADE POLICY',
+
     // December 1, 2025 Articles
     'section-232-copper-tariffs-50-percent-california-2025': 'TRADE POLICY',
     'section-232-timber-lumber-tariffs-california-2025': 'TRADE POLICY',

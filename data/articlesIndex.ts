@@ -13,6 +13,33 @@ export interface ArticlePreview {
 
 export const articlePreviews: ArticlePreview[] = [
   {
+    "id": "us-korea-strategic-trade-deal-california-2025",
+    "title": "US-Korea Strategic Trade and Investment Deal: 15% Tariff Framework and $350 Billion Investment Commitment",
+    "subheading": "California Importers Navigate New KORUS FTA Framework Following November 2025 Trade Agreement",
+    "intro": "In November 2025, President Trump announced a \"Full and Complete\" trade agreement with South Korea that fundamentally restructures bilateral commerce between the United States and one of California's most significant trading partners. The landmark deal reduces blanket tariffs from 25% to 15% on most Korean imports, lowers Section 232 sectoral tariffs on automobiles, auto parts, timber, lumber, and wood derivatives to a uniform 15% rate, and secures a South Korean commitment to invest $350 billion in U.S.-owned and controlled assets.",
+    "keywords": "US Korea trade deal attorney California, KORUS FTA lawyer, Korea trade agreement California, Korea 15% tariff compliance, Korea automotive tariff attorney, California Korea import lawyer, Section 232 Korea exemption, Korean investment compliance lawyer",
+    "publishedDate": "2025-12-03",
+    "lastModified": "2025-12-03"
+  },
+  {
+    "id": "us-china-agricultural-trade-truce-california-2025",
+    "title": "US-China Agricultural Trade Truce: Critical Legal Implications for California Exporters",
+    "subheading": "How the November 2025 Trade Agreement Affects Central Valley Farmers and Port of Oakland Agricultural Shipments",
+    "intro": "On November 10, 2025, the United States and China implemented a historic one-year agricultural trade truce following high-level negotiations between President Trump and President Xi Jinping. This agreement represents a significant de-escalation in the ongoing trade tensions between the world's two largest economies, with profound implications for California's agricultural sector. Under the terms of the truce, China committed to substantial purchases of US soybeans—12 million metric tons by the end of 2025 and 25 MMT annually through 2028.",
+    "keywords": "US-China trade truce, agricultural tariffs California, soybean exports China, Port of Oakland agricultural trade, IEEPA fentanyl tariff, agricultural export compliance, Central Valley farmers China trade, reciprocal tariff exemptions",
+    "publishedDate": "2025-12-03",
+    "lastModified": "2025-12-03"
+  },
+  {
+    "id": "oecd-global-trade-resilience-california-december-2025",
+    "title": "OECD Global Trade Resilience Report: Strategic Implications for California Importers in 2026",
+    "subheading": "Navigating the New Trade Landscape After Historic Tariff Shifts and Bilateral Agreement Surge",
+    "intro": "On December 2, 2025, the Organisation for Economic Co-operation and Development (OECD) released groundbreaking data demonstrating that the world economy has maintained remarkable resilience despite the most significant tariff restructuring in over a century. The OECD upgraded its global economic outlook, forecasting world economy growth at 3.2% for 2025, even as the United States implemented unprecedented tariff increases that saw average applied rates surge from 2.5% to an estimated 27% between January and April 2025.",
+    "keywords": "OECD trade report, California importers, tariff compliance, customs duties, trade resilience, supply chain strategy, bilateral trade agreements, import regulations, customs revenue, trade policy California",
+    "publishedDate": "2025-12-03",
+    "lastModified": "2025-12-03"
+  },
+  {
     "id": "section-232-copper-tariffs-50-percent-california-2025",
     "title": "Section 232 Copper Tariffs: 50% Import Duties Impact California 2025",
     "subheading": "California Importers Face New 50% Copper Tariffs Under Section 232 National Security Proclamation",
