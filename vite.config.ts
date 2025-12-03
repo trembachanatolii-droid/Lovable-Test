@@ -99,8 +99,12 @@ export default defineConfig(({ mode }) => {
         },
         // CSS code splitting
         cssCodeSplit: true,
-        // Optimize chunk size
-        chunkSizeWarningLimit: 500,
+        // Optimize chunk size - warn at 200KB to catch bundle bloat early
+        // To analyze bundle size:
+        // npm install -D rollup-plugin-visualizer
+        // Then add: import { visualizer } from 'rollup-plugin-visualizer';
+        // And add to plugins: visualizer({ filename: 'stats.html', open: false })
+        chunkSizeWarningLimit: 200,
         // Module preload polyfill for better performance
         modulePreload: {
           polyfill: false, // Disable polyfill to reduce bundle size for modern browsers

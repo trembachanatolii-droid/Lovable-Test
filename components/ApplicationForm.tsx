@@ -1,5 +1,6 @@
 import React, { useState, useEffect, ChangeEvent, FormEvent, useCallback } from 'react';
 import Button from './Button';
+import { triggerHaptic } from '../utils/haptics';
 
 // API endpoint for form submission
 const SUBMIT_API_ENDPOINT = '/.netlify/functions/submit-application';
@@ -184,6 +185,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
             setCurrentStep(prev => Math.min(prev + 1, steps.length - 1));
             window.scrollTo(0, 0);
         } else {
+            triggerHaptic('error');
             showNotification('Please fill in all required fields for this step.', 'warning');
         }
     };
@@ -196,6 +198,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         if (!formData.verifyAuth) {
+            triggerHaptic('error');
             showNotification('You must authorize verification of credentials to submit.', 'warning');
             return;
         }
@@ -239,6 +242,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
             const result = await response.json();
 
             if (response.ok && result.success) {
+                triggerHaptic('success');
                 showNotification('Your application has been submitted successfully! You will receive a confirmation email and text message shortly.', 'success');
                 setIsSuccess(true);
                 window.scrollTo(0, 0);
@@ -247,6 +251,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
             }
         } catch (error) {
             console.error('Form submission error:', error);
+            triggerHaptic('error');
             showNotification('We apologize, but there was an error submitting your application. Please try again or contact us directly at (310) 744-1328.', 'error');
         } finally {
             setIsSubmitting(false);

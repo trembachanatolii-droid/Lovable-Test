@@ -4,11 +4,13 @@
   "description": "Expert California international trade attorney & customs lawyer. Specialized in CBP defense, customs audits, trade compliance, and import/export law.",
   "start_url": "/",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "browser"],
   "background_color": "#FFFFFF",
   "theme_color": "#012169",
   "orientation": "any",
   "scope": "/",
   "lang": "en-US",
+  "handle_links": "preferred",
   "categories": ["business", "legal", "services"],
   "icons": [
     {
@@ -91,6 +93,9 @@
       "form_factor": "narrow"
     }
   ],
+  "edge_side_panel": {
+    "preferred_width": 480
+  },
   "related_applications": [],
   "prefer_related_applications": false
 }

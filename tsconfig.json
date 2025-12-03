@@ -32,6 +32,16 @@
     "strictBindCallApply": true,
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
-    "alwaysStrict": true
+    "alwaysStrict": true,
+
+    /* Additional strict checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+
+    /* TODO: Enable these stricter options after resolving potential issues */
+    // "noUncheckedIndexedAccess": true,
+    // "exactOptionalPropertyTypes": true
   }
 }

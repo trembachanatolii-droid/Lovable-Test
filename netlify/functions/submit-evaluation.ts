@@ -370,11 +370,6 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
       sendSMS(data.phone, generateClientSMS(data.firstName)),
     ]);
 
-    // Log results
-    console.log("Firm email:", firmEmailResult);
-    console.log("Client email:", clientEmailResult);
-    console.log("SMS:", smsResult);
-
     // Check if at least the firm email was sent
     const firmEmailSent = firmEmailResult.status === "fulfilled" && firmEmailResult.value;
 

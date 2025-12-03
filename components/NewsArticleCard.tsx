@@ -75,7 +75,7 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
         <p className="text-base leading-relaxed text-text-secondary mb-6">
           {article.description}
         </p>
-        <span className="mt-auto inline-flex items-center gap-1.5 text-navy-medium text-[17px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal">
+        <span aria-hidden="true" className="mt-auto inline-flex items-center gap-1.5 text-navy-medium text-[17px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal">
           Read Now &rarr;
         </span>
       </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import NewsArticleCard from '../components/NewsArticleCard';
 import PracticeAreasSection from '../components/PracticeAreasSection';
 import Button from '../components/Button';
+import LoadingSpinner from '../components/LoadingSpinner';
 // Lazy load below-the-fold components to reduce initial bundle
 const JusticePillars = lazy(() => import('../components/JusticePillars'));
 const StatsSection = lazy(() => import('../components/StatsSection'));
@@ -241,19 +242,19 @@ const HomePage: React.FC = () => {
 
       {/* Other Sections */}
       {/* Lazy loaded below-the-fold sections for better performance */}
-      <Suspense fallback={<div style={{ minHeight: '400px', background: 'transparent' }} aria-label="Loading justice pillars section" />}>
+      <Suspense fallback={<LoadingSpinner minHeight="400px" />}>
         <JusticePillars />
       </Suspense>
-      <Suspense fallback={<div style={{ minHeight: '300px', background: 'transparent' }} aria-label="Loading stats section" />}>
+      <Suspense fallback={<LoadingSpinner minHeight="300px" />}>
         <StatsSection />
       </Suspense>
-      <Suspense fallback={<div style={{ minHeight: '400px', background: 'transparent' }} aria-label="Loading about section" />}>
+      <Suspense fallback={<LoadingSpinner minHeight="400px" />}>
         <AboutSection />
       </Suspense>
-      <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading practice areas section" />}>
+      <Suspense fallback={<LoadingSpinner minHeight="600px" />}>
         <PracticeAreasSection />
       </Suspense>
-      <Suspense fallback={<div style={{ minHeight: '500px', background: 'transparent' }} aria-label="Loading evaluation form section" />}>
+      <Suspense fallback={<LoadingSpinner minHeight="500px" />}>
         <EvaluationForm />
       </Suspense>
 

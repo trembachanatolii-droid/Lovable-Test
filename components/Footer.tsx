@@ -1,6 +1,7 @@
 
 import React, { memo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { triggerHaptic } from '../utils/haptics';
 
 interface FooterLink {
     label: string;
@@ -42,6 +43,7 @@ const Footer: React.FC = () => {
         const email = (form.elements.namedItem('email') as HTMLInputElement)?.value;
         if (email) {
             setIsSubmitting(true);
+            triggerHaptic('success');
             setSubscribed(true);
             setTimeout(() => {
                 setSubscribed(false);

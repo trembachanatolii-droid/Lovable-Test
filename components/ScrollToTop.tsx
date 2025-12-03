@@ -1,17 +1,23 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigationType } from 'react-router-dom';
 
 /**
- * ScrollToTop component ensures the page scrolls to the top on route changes
- * This replaces the window.scrollTo(0, 0) logic from the hash-based routing
+ * ScrollToTop component manages scroll behavior on navigation
+ * - Scrolls to top on new page navigation (clicking links)
+ * - Preserves scroll position on back/forward button navigation
+ * This provides better UX by respecting browser history navigation patterns
  */
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
+  const navigationType = useNavigationType();
 
   useEffect(() => {
-    // Scroll to top of page when route changes
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    // Only scroll to top on PUSH navigation (new page)
+    // Don't scroll on POP (back/forward buttons)
+    if (navigationType === 'PUSH') {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, navigationType]);
 
   return null;
 };
