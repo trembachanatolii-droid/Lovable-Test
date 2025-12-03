@@ -447,7 +447,7 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#technology-classification" className="service-link">
+                  <Link to="/technology-classification" className="service-link">
                     <span className="service-link__title">Technology Classification</span>
                     <p className="service-link__description">Semiconductors, electronics, IT</p>
                     <div className="triangle-slide">
@@ -455,10 +455,10 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#export-controls-ear-itar" className="service-link">
+                  <Link to="/export-controls-ear-itar" className="service-link">
                     <span className="service-link__title">Export Controls (EAR/ITAR)</span>
                     <p className="service-link__description">Dual-use technology licensing</p>
                     <div className="triangle-slide">
@@ -466,10 +466,10 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#section-301-tech-strategies" className="service-link">
+                  <Link to="/section-301-tech-strategies" className="service-link">
                     <span className="service-link__title">Section 301 Tech Strategies</span>
                     <p className="service-link__description">China tariff mitigation</p>
                     <div className="triangle-slide">
@@ -477,7 +477,7 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -516,34 +516,34 @@ const SiliconValleyTradeLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#technology-classification-guide" className="service-link">
+                  <Link to="/technology-classification-guide" className="service-link">
                     <span className="service-link__title">Technology Classification Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ear-compliance-guide" className="service-link">
+                  <Link to="/ear-compliance-guide" className="service-link">
                     <span className="service-link__title">EAR Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#section-301-tech-guide" className="service-link">
+                  <Link to="/section-301-tech-guide" className="service-link">
                     <span className="service-link__title">Section 301 for Tech Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/trade-law-faq" className="service-link">

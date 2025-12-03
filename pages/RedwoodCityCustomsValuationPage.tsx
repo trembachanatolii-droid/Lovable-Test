@@ -337,7 +337,7 @@ const RedwoodCityCustomsValuationPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#oakland-port-attorney" className="service-link">
+                  <Link to="/oakland-port-attorney" className="service-link">
                     <span className="service-link__title">Oakland Port Attorney</span>
                     <p className="service-link__description">Port of Oakland imports</p>
                     <div className="triangle-slide">
@@ -345,7 +345,7 @@ const RedwoodCityCustomsValuationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

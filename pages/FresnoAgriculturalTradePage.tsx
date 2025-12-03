@@ -406,7 +406,7 @@ const FresnoAgriculturalTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Ag Trade Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#fsma-compliance" className="service-link">
+                  <Link to="/fsma-compliance" className="service-link">
                     <span className="service-link__title">FSMA Compliance Programs</span>
                     <p className="service-link__description">FDA food safety compliance</p>
                     <div className="triangle-slide">
@@ -414,10 +414,10 @@ const FresnoAgriculturalTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#usda-permits" className="service-link">
+                  <Link to="/usda-permits" className="service-link">
                     <span className="service-link__title">USDA Export Permits</span>
                     <p className="service-link__description">Phytosanitary certificates</p>
                     <div className="triangle-slide">
@@ -425,10 +425,10 @@ const FresnoAgriculturalTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#agricultural-drawback" className="service-link">
+                  <Link to="/agricultural-drawback" className="service-link">
                     <span className="service-link__title">Agricultural Duty Drawback</span>
                     <p className="service-link__description">Export duty refunds</p>
                     <div className="triangle-slide">
@@ -436,7 +436,7 @@ const FresnoAgriculturalTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -446,7 +446,7 @@ const FresnoAgriculturalTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other Ag Regions</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#salinas-agricultural-trade" className="service-link">
+                  <Link to="/salinas-agricultural-trade" className="service-link">
                     <span className="service-link__title">Salinas Valley Ag Trade</span>
                     <p className="service-link__description">Monterey produce compliance</p>
                     <div className="triangle-slide">
@@ -454,10 +454,10 @@ const FresnoAgriculturalTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#napa-wine-compliance" className="service-link">
+                  <Link to="/napa-wine-compliance" className="service-link">
                     <span className="service-link__title">Napa Wine Trade Compliance</span>
                     <p className="service-link__description">Wine export specialists</p>
                     <div className="triangle-slide">
@@ -465,7 +465,7 @@ const FresnoAgriculturalTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

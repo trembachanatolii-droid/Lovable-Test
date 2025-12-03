@@ -283,7 +283,7 @@ const LomaLindaCustomsBondPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#yucaipa-customs-bond-attorney" className="service-link">
+                  <Link to="/yucaipa-customs-bond-attorney" className="service-link">
                     <span className="service-link__title">Yucaipa Customs Bond</span>
                     <p className="service-link__description">Neighboring bond services</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: 0, bottom: 0, width: '96px', background: 'linear-gradient(135deg, #3FBB94 0%, #2a8a6b 100%)', clipPath: 'polygon(100% 0, 0% 50%, 100% 100%)', transition: 'right 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -291,7 +291,7 @@ const LomaLindaCustomsBondPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

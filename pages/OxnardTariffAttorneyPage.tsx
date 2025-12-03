@@ -386,7 +386,7 @@ const OxnardTariffAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#port-hueneme-customs" className="service-link">
+                  <Link to="/port-hueneme-customs" className="service-link">
                     <span className="service-link__title">Port Hueneme Customs</span>
                     <p className="service-link__description">Port operations & compliance</p>
                     <div className="triangle-slide">
@@ -394,10 +394,10 @@ const OxnardTariffAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#automotive-import-compliance" className="service-link">
+                  <Link to="/automotive-import-compliance" className="service-link">
                     <span className="service-link__title">Automotive Import Compliance</span>
                     <p className="service-link__description">Vehicle EPA/DOT certification</p>
                     <div className="triangle-slide">
@@ -405,10 +405,10 @@ const OxnardTariffAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#agricultural-trade-compliance" className="service-link">
+                  <Link to="/agricultural-trade-compliance" className="service-link">
                     <span className="service-link__title">Agricultural Trade</span>
                     <p className="service-link__description">USDA/FDA compliance</p>
                     <div className="triangle-slide">
@@ -416,7 +416,7 @@ const OxnardTariffAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -426,7 +426,7 @@ const OxnardTariffAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#ventura-trade-attorney" className="service-link">
+                  <Link to="/ventura-trade-attorney" className="service-link">
                     <span className="service-link__title">Ventura Trade Attorney</span>
                     <p className="service-link__description">Ventura County services</p>
                     <div className="triangle-slide">
@@ -434,7 +434,7 @@ const OxnardTariffAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/calabasas-customs-attorney" className="service-link">

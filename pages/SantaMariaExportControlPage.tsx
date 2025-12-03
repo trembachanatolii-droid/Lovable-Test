@@ -319,7 +319,7 @@ const SantaMariaExportControlPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Export Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#satellite-export-licensing" className="service-link">
+                  <Link to="/satellite-export-licensing" className="service-link">
                     <span className="service-link__title">Satellite Export Licensing</span>
                     <p className="service-link__description">USML Category XV compliance</p>
                     <div className="triangle-slide">
@@ -327,7 +327,7 @@ const SantaMariaExportControlPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="/export-controls" className="service-link">

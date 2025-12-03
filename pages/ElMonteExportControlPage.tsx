@@ -319,7 +319,7 @@ const ElMonteExportControlPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Export Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#electronics-export-classification" className="service-link">
+                  <Link to="/electronics-export-classification" className="service-link">
                     <span className="service-link__title">Electronics Classification</span>
                     <p className="service-link__description">ECCN determination</p>
                     <div className="triangle-slide">
@@ -327,7 +327,7 @@ const ElMonteExportControlPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="/export-controls" className="service-link">
@@ -341,7 +341,7 @@ const ElMonteExportControlPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#bis-export-licensing" className="service-link">
+                  <Link to="/bis-export-licensing" className="service-link">
                     <span className="service-link__title">BIS Export Licensing</span>
                     <p className="service-link__description">License applications</p>
                     <div className="triangle-slide">
@@ -349,7 +349,7 @@ const ElMonteExportControlPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -370,7 +370,7 @@ const SanDiegoUFLPACompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Compliance Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#supply-chain-audits" className="service-link">
+                  <Link to="/supply-chain-audits" className="service-link">
                     <span className="service-link__title">Supply Chain Audits</span>
                     <p className="service-link__description">Due diligence and mapping</p>
                     <div className="triangle-slide">
@@ -378,7 +378,7 @@ const SanDiegoUFLPACompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/customs-detention-defense" className="service-link">
@@ -410,7 +410,7 @@ const SanDiegoUFLPACompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Ports</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#los-angeles-uflpa" className="service-link">
+                  <Link to="/los-angeles-uflpa" className="service-link">
                     <span className="service-link__title">Los Angeles UFLPA Defense</span>
                     <p className="service-link__description">Port of LA detention response</p>
                     <div className="triangle-slide">
@@ -418,7 +418,7 @@ const SanDiegoUFLPACompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/long-beach-uflpa" className="service-link">

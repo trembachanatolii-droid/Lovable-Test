@@ -404,7 +404,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#customs-protest-filing" className="service-link">
+                  <Link to="/customs-protest-filing" className="service-link">
                     <span className="service-link__title">Customs Protest Filing</span>
                     <p className="service-link__description">19 USC § 1514 protests</p>
                     <div className="triangle-slide">
@@ -412,7 +412,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/tariff-classification" className="service-link">
@@ -426,7 +426,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#antidumping-cvd-defense" className="service-link">
+                  <Link to="/antidumping-cvd-defense" className="service-link">
                     <span className="service-link__title">AD/CVD Defense</span>
                     <p className="service-link__description">Scope & EAPA matters</p>
                     <div className="triangle-slide">
@@ -434,7 +434,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

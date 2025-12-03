@@ -341,7 +341,7 @@ const SimiValleyExportControlPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#export-licensing" className="service-link">
+                  <Link to="/export-licensing" className="service-link">
                     <span className="service-link__title">Export License Applications</span>
                     <p className="service-link__description">DSP-5, DSP-73, BIS licenses</p>
                     <div className="triangle-slide">
@@ -349,7 +349,7 @@ const SimiValleyExportControlPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

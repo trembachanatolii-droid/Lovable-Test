@@ -173,13 +173,13 @@ const SalinasTradeZonePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Monterey County</h3>
               <div className="space-y-0">
                 <div className="service-link-item"><Link to="/salinas-tariff-lawyer" className="service-link"><span className="service-link__title">Salinas Tariff Lawyer</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
-                <div className="service-link-item"><a href="#monterey-customs-attorney" className="service-link"><span className="service-link__title">Monterey Customs Attorney</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
+                <div className="service-link-item"><Link to="/monterey-customs-attorney" className="service-link"><span className="service-link__title">Monterey Customs Attorney</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
               </div>
             </div>
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Industry Focus</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><a href="#food-agriculture-trade" className="service-link"><span className="service-link__title">Agricultural Trade</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a></div>
+                <div className="service-link-item"><Link to="/food-agriculture-trade" className="service-link"><span className="service-link__title">Agricultural Trade</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
                 <div className="service-link-item"><Link to="/practice-areas" className="service-link"><span className="service-link__title">Export Controls</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
               </div>
             </div>

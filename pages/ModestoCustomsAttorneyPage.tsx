@@ -386,7 +386,7 @@ const ModestoCustomsAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#fda-food-import-compliance" className="service-link">
+                  <Link to="/fda-food-import-compliance" className="service-link">
                     <span className="service-link__title">FDA Food Import Compliance</span>
                     <p className="service-link__description">Food safety & labeling</p>
                     <div className="triangle-slide">
@@ -394,10 +394,10 @@ const ModestoCustomsAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#usda-agricultural-compliance" className="service-link">
+                  <Link to="/usda-agricultural-compliance" className="service-link">
                     <span className="service-link__title">USDA Agricultural Compliance</span>
                     <p className="service-link__description">APHIS permits & certification</p>
                     <div className="triangle-slide">
@@ -405,7 +405,7 @@ const ModestoCustomsAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/resources/tariffs-duties-classification" className="service-link">
@@ -426,7 +426,7 @@ const ModestoCustomsAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#fresno-agricultural-trade-attorney" className="service-link">
+                  <Link to="/fresno-agricultural-trade-attorney" className="service-link">
                     <span className="service-link__title">Fresno Trade Attorney</span>
                     <p className="service-link__description">Central Valley South</p>
                     <div className="triangle-slide">
@@ -434,7 +434,7 @@ const ModestoCustomsAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/bay-area-trade-law-attorney" className="service-link">

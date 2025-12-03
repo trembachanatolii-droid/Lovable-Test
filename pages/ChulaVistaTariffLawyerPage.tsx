@@ -426,7 +426,7 @@ const ChulaVistaTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#san-diego-border-attorney" className="service-link">
+                  <Link to="/san-diego-border-attorney" className="service-link">
                     <span className="service-link__title">San Diego Trade Attorney</span>
                     <p className="service-link__description">Border customs expertise</p>
                     <div className="triangle-slide">
@@ -434,7 +434,7 @@ const ChulaVistaTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/los-angeles-port-customs-attorney" className="service-link">

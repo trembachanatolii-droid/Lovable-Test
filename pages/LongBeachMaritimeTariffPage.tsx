@@ -420,14 +420,14 @@ const LongBeachMaritimeTariffPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#long-beach-ftz-compliance-attorney" className="service-link">
+                  <Link to="/long-beach-ftz-compliance-attorney" className="service-link">
                     <span className="service-link__title">FTZ Compliance</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

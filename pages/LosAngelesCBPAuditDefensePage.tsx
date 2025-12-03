@@ -431,7 +431,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#compliance-program-development" className="service-link">
+                  <Link to="/compliance-program-development" className="service-link">
                     <span className="service-link__title">Compliance Programs</span>
                     <p className="service-link__description">Post-audit compliance implementation</p>
                     <div className="triangle-slide">
@@ -439,7 +439,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -460,7 +460,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#san-francisco-cbp-audit" className="service-link">
+                  <Link to="/san-francisco-cbp-audit" className="service-link">
                     <span className="service-link__title">San Francisco Bay Area</span>
                     <p className="service-link__description">Oakland & SF audit defense</p>
                     <div className="triangle-slide">
@@ -468,7 +468,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

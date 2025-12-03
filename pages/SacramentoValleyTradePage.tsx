@@ -447,7 +447,7 @@ const SacramentoValleyTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#government-contractor-compliance" className="service-link">
+                  <Link to="/government-contractor-compliance" className="service-link">
                     <span className="service-link__title">Government Contractor TAA/BAA</span>
                     <p className="service-link__description">Federal procurement compliance</p>
                     <div className="triangle-slide">
@@ -455,10 +455,10 @@ const SacramentoValleyTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#agricultural-export-compliance" className="service-link">
+                  <Link to="/agricultural-export-compliance" className="service-link">
                     <span className="service-link__title">Agricultural Exports</span>
                     <p className="service-link__description">USDA/export compliance</p>
                     <div className="triangle-slide">
@@ -466,10 +466,10 @@ const SacramentoValleyTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#dfars-itar-compliance" className="service-link">
+                  <Link to="/dfars-itar-compliance" className="service-link">
                     <span className="service-link__title">DFARS/ITAR Compliance</span>
                     <p className="service-link__description">Defense contractor trade law</p>
                     <div className="triangle-slide">
@@ -477,7 +477,7 @@ const SacramentoValleyTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -516,34 +516,34 @@ const SacramentoValleyTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#taa-compliance-guide" className="service-link">
+                  <Link to="/taa-compliance-guide" className="service-link">
                     <span className="service-link__title">TAA Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#buy-american-act-guide" className="service-link">
+                  <Link to="/buy-american-act-guide" className="service-link">
                     <span className="service-link__title">Buy American Act Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#dfars-compliance-guide" className="service-link">
+                  <Link to="/dfars-compliance-guide" className="service-link">
                     <span className="service-link__title">DFARS Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/trade-law-faq" className="service-link">

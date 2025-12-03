@@ -406,24 +406,24 @@ const StocktonAgTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Agricultural Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#fresno-agricultural-export-compliance" className="service-link">
+                  <Link to="/fresno-agricultural-export-compliance" className="service-link">
                     <span className="service-link__title">Ag Export Compliance</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#modesto-farm-equipment-tariff-attorney" className="service-link">
+                  <Link to="/modesto-farm-equipment-tariff-attorney" className="service-link">
                     <span className="service-link__title">Farm Equipment Tariffs</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -448,14 +448,14 @@ const StocktonAgTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Food & Wine</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#sacramento-wine-export-attorney" className="service-link">
+                  <Link to="/sacramento-wine-export-attorney" className="service-link">
                     <span className="service-link__title">Wine Export Attorney</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

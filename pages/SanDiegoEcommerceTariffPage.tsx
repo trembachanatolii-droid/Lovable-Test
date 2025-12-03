@@ -429,14 +429,14 @@ const SanDiegoEcommerceTariffPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Fashion & Retail</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#los-angeles-fashion-tariff-lawyer" className="service-link">
+                  <Link to="/los-angeles-fashion-tariff-lawyer" className="service-link">
                     <span className="service-link__title">Fashion Tariff Lawyer</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

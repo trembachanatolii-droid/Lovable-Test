@@ -424,9 +424,9 @@ const AttorneyAdvertisingPage: React.FC = () => {
             <h2 id="additional-heading" className="text-2xl md:text-3xl font-bold font-garamond text-primary-navy mb-4">14. ADDITIONAL DISCLAIMERS</h2>
             <p className="mb-2">For additional important information about using this website and contacting our firm, please review:</p>
             <ul className="list-disc ml-6 mb-4 space-y-2">
-              <li><a href="#privacy-policy" className="text-secondary-teal hover:underline">Privacy Policy</a>: Information about how we collect and use personal information</li>
-              <li><a href="#terms" className="text-secondary-teal hover:underline">Terms of Use</a>: Legal terms governing use of this website</li>
-              <li><a href="#disclaimers" className="text-secondary-teal hover:underline">Disclaimers</a>: Important limitations and notices about website content</li>
+              <li><Link to="/privacy-policy" className="text-secondary-teal hover:underline">Privacy Policy</Link>: Information about how we collect and use personal information</li>
+              <li><Link to="/terms" className="text-secondary-teal hover:underline">Terms of Use</Link>: Legal terms governing use of this website</li>
+              <li><Link to="/disclaimers" className="text-secondary-teal hover:underline">Disclaimers</Link>: Important limitations and notices about website content</li>
             </ul>
           </section>
 

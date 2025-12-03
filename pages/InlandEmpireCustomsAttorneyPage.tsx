@@ -457,7 +457,7 @@ const InlandEmpireCustomsAttorneyPage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ctpat-certification" className="service-link">
+                  <Link to="/ctpat-certification" className="service-link">
                     <span className="service-link__title">CTPAT Certification</span>
                     <p className="service-link__description">Security validation support</p>
                     <div className="triangle-slide">
@@ -465,10 +465,10 @@ const InlandEmpireCustomsAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ecommerce-compliance" className="service-link">
+                  <Link to="/ecommerce-compliance" className="service-link">
                     <span className="service-link__title">E-Commerce Compliance</span>
                     <p className="service-link__description">Amazon FBA & marketplace sellers</p>
                     <div className="triangle-slide">
@@ -476,7 +476,7 @@ const InlandEmpireCustomsAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -515,34 +515,34 @@ const InlandEmpireCustomsAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#ftz-guide" className="service-link">
+                  <Link to="/ftz-guide" className="service-link">
                     <span className="service-link__title">Foreign-Trade Zone Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ctpat-guide" className="service-link">
+                  <Link to="/ctpat-guide" className="service-link">
                     <span className="service-link__title">CTPAT Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ecommerce-import-guide" className="service-link">
+                  <Link to="/ecommerce-import-guide" className="service-link">
                     <span className="service-link__title">E-Commerce Import Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/trade-law-faq" className="service-link">

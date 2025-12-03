@@ -343,7 +343,7 @@ const PalmdaleCountervailingPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#defense-contractor-cvd" className="service-link">
+                  <Link to="/defense-contractor-cvd" className="service-link">
                     <span className="service-link__title">Defense Contractor CVD</span>
                     <p className="service-link__description">Government contract compliance</p>
                     <div className="triangle-slide">
@@ -351,7 +351,7 @@ const PalmdaleCountervailingPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/administrative-reviews" className="service-link">

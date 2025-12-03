@@ -386,7 +386,7 @@ const CoronaTradeCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#compliance-program-development" className="service-link">
+                  <Link to="/compliance-program-development" className="service-link">
                     <span className="service-link__title">Compliance Programs</span>
                     <p className="service-link__description">Import program design</p>
                     <div className="triangle-slide">
@@ -394,10 +394,10 @@ const CoronaTradeCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#cbp-focused-assessment-defense" className="service-link">
+                  <Link to="/cbp-focused-assessment-defense" className="service-link">
                     <span className="service-link__title">Focused Assessment Defense</span>
                     <p className="service-link__description">CBP audit representation</p>
                     <div className="triangle-slide">
@@ -405,10 +405,10 @@ const CoronaTradeCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#prior-disclosure-services" className="service-link">
+                  <Link to="/prior-disclosure-services" className="service-link">
                     <span className="service-link__title">Prior Disclosure</span>
                     <p className="service-link__description">Penalty minimization</p>
                     <div className="triangle-slide">
@@ -416,7 +416,7 @@ const CoronaTradeCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -426,7 +426,7 @@ const CoronaTradeCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#riverside-trade-attorney" className="service-link">
+                  <Link to="/riverside-trade-attorney" className="service-link">
                     <span className="service-link__title">Riverside Trade Attorney</span>
                     <p className="service-link__description">Riverside County services</p>
                     <div className="triangle-slide">
@@ -434,10 +434,10 @@ const CoronaTradeCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#anaheim-trade-attorney" className="service-link">
+                  <Link to="/anaheim-trade-attorney" className="service-link">
                     <span className="service-link__title">Anaheim Trade Attorney</span>
                     <p className="service-link__description">Orange County services</p>
                     <div className="triangle-slide">
@@ -445,7 +445,7 @@ const CoronaTradeCompliancePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

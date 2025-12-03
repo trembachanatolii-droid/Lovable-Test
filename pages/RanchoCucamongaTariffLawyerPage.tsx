@@ -386,7 +386,7 @@ const RanchoCucamongaTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#air-cargo-compliance" className="service-link">
+                  <Link to="/air-cargo-compliance" className="service-link">
                     <span className="service-link__title">Air Cargo Compliance</span>
                     <p className="service-link__description">ONT airport customs</p>
                     <div className="triangle-slide">
@@ -394,7 +394,7 @@ const RanchoCucamongaTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="/practice-areas" className="service-link">
@@ -426,7 +426,7 @@ const RanchoCucamongaTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#ontario-trade-attorney" className="service-link">
+                  <Link to="/ontario-trade-attorney" className="service-link">
                     <span className="service-link__title">Ontario Trade Attorney</span>
                     <p className="service-link__description">Airport & logistics hub</p>
                     <div className="triangle-slide">
@@ -434,7 +434,7 @@ const RanchoCucamongaTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/fontana-trade-attorney" className="service-link">

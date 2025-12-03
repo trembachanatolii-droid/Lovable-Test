@@ -377,7 +377,7 @@ const PortOfStocktonTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Port Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#agricultural-exports" className="service-link">
+                  <Link to="/agricultural-exports" className="service-link">
                     <span className="service-link__title">Agricultural Exports</span>
                     <p className="service-link__description">USDA certificates & compliance</p>
                     <div className="triangle-slide">
@@ -385,10 +385,10 @@ const PortOfStocktonTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#bulk-commodity-compliance" className="service-link">
+                  <Link to="/bulk-commodity-compliance" className="service-link">
                     <span className="service-link__title">Bulk Commodity Compliance</span>
                     <p className="service-link__description">Fertilizers, cement, steel</p>
                     <div className="triangle-slide">
@@ -396,10 +396,10 @@ const PortOfStocktonTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#ftz-operations" className="service-link">
+                  <Link to="/ftz-operations" className="service-link">
                     <span className="service-link__title">FTZ Operations</span>
                     <p className="service-link__description">Foreign-trade zone services</p>
                     <div className="triangle-slide">
@@ -407,7 +407,7 @@ const PortOfStocktonTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -446,34 +446,34 @@ const PortOfStocktonTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#agricultural-export-guide" className="service-link">
+                  <Link to="/agricultural-export-guide" className="service-link">
                     <span className="service-link__title">Agricultural Export Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#usda-compliance-guide" className="service-link">
+                  <Link to="/usda-compliance-guide" className="service-link">
                     <span className="service-link__title">USDA Compliance Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#section-232-steel-guide" className="service-link">
+                  <Link to="/section-232-steel-guide" className="service-link">
                     <span className="service-link__title">Section 232 Steel Guide</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/trade-law-faq" className="service-link">

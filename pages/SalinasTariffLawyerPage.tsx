@@ -386,7 +386,7 @@ const SalinasTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#fda-food-compliance" className="service-link">
+                  <Link to="/fda-food-compliance" className="service-link">
                     <span className="service-link__title">FDA Food Compliance</span>
                     <p className="service-link__description">Food safety & labeling</p>
                     <div className="triangle-slide">
@@ -394,10 +394,10 @@ const SalinasTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#usda-phytosanitary" className="service-link">
+                  <Link to="/usda-phytosanitary" className="service-link">
                     <span className="service-link__title">USDA Phytosanitary</span>
                     <p className="service-link__description">APHIS permits & certification</p>
                     <div className="triangle-slide">
@@ -405,7 +405,7 @@ const SalinasTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="/practice-areas" className="service-link">
@@ -426,7 +426,7 @@ const SalinasTariffLawyerPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#watsonville-agricultural-attorney" className="service-link">
+                  <Link to="/watsonville-agricultural-attorney" className="service-link">
                     <span className="service-link__title">Watsonville Ag Attorney</span>
                     <p className="service-link__description">Strawberry capital</p>
                     <div className="triangle-slide">
@@ -434,10 +434,10 @@ const SalinasTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#bay-area-trade-attorney" className="service-link">
+                  <Link to="/bay-area-trade-attorney" className="service-link">
                     <span className="service-link__title">Bay Area Trade Attorney</span>
                     <p className="service-link__description">Oakland & Silicon Valley</p>
                     <div className="triangle-slide">
@@ -445,7 +445,7 @@ const SalinasTariffLawyerPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

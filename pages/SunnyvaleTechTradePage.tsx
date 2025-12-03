@@ -397,7 +397,7 @@ const SunnyvaleTechTradePage: React.FC = () => {
                   </a>
                 </div>
                 <div className="service-link-item">
-                  <a href="#semiconductor-trade" className="service-link">
+                  <Link to="/semiconductor-trade" className="service-link">
                     <span className="service-link__title">Semiconductor Trade</span>
                     <p className="service-link__description">Chip manufacturing exports</p>
                     <div className="triangle-slide">
@@ -405,10 +405,10 @@ const SunnyvaleTechTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#software-export-compliance" className="service-link">
+                  <Link to="/software-export-compliance" className="service-link">
                     <span className="service-link__title">Software Export Compliance</span>
                     <p className="service-link__description">Encryption & digital products</p>
                     <div className="triangle-slide">
@@ -416,7 +416,7 @@ const SunnyvaleTechTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -426,7 +426,7 @@ const SunnyvaleTechTradePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#santa-clara-tech-attorney" className="service-link">
+                  <Link to="/santa-clara-tech-attorney" className="service-link">
                     <span className="service-link__title">Santa Clara Tech Attorney</span>
                     <p className="service-link__description">Silicon Valley heart</p>
                     <div className="triangle-slide">
@@ -434,10 +434,10 @@ const SunnyvaleTechTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#san-jose-tech-trade-attorney" className="service-link">
+                  <Link to="/san-jose-tech-trade-attorney" className="service-link">
                     <span className="service-link__title">San Jose Trade Attorney</span>
                     <p className="service-link__description">Silicon Valley capital</p>
                     <div className="triangle-slide">
@@ -445,7 +445,7 @@ const SunnyvaleTechTradePage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

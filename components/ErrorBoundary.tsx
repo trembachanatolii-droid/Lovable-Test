@@ -41,7 +41,8 @@ export default function ErrorBoundary({ children, fallback }: Props) {
     <ReactErrorBoundary
       FallbackComponent={fallback ? () => <>{fallback}</> : ErrorFallback}
       onReset={() => {
-        // Reset application state here if needed
+        // Reset application state by reloading the page for a fresh start
+        window.location.reload();
       }}
     >
       {children}

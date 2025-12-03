@@ -386,7 +386,7 @@ const OceansideTariffAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#itar-export-controls" className="service-link">
+                  <Link to="/itar-export-controls" className="service-link">
                     <span className="service-link__title">ITAR Export Controls</span>
                     <p className="service-link__description">Defense trade compliance</p>
                     <div className="triangle-slide">
@@ -394,7 +394,7 @@ const OceansideTariffAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <a href="/practice-areas" className="service-link">
@@ -426,7 +426,7 @@ const OceansideTariffAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="#san-diego-border-attorney" className="service-link">
+                  <Link to="/san-diego-border-attorney" className="service-link">
                     <span className="service-link__title">San Diego Trade Attorney</span>
                     <p className="service-link__description">Border customs expertise</p>
                     <div className="triangle-slide">
@@ -434,10 +434,10 @@ const OceansideTariffAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
-                  <a href="#carlsbad-trade-attorney" className="service-link">
+                  <Link to="/carlsbad-trade-attorney" className="service-link">
                     <span className="service-link__title">Carlsbad Trade Attorney</span>
                     <p className="service-link__description">North County coastal</p>
                     <div className="triangle-slide">
@@ -445,7 +445,7 @@ const OceansideTariffAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
