@@ -199,8 +199,8 @@ const RanchoCucamongaPenaltyMitigationPage: React.FC = () => {
             Related Services & Resources
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
-            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
@@ -239,7 +239,7 @@ const RanchoCucamongaPenaltyMitigationPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Inland Empire Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
@@ -267,7 +267,7 @@ const RanchoCucamongaPenaltyMitigationPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">

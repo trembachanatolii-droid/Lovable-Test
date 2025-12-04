@@ -226,7 +226,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
             Service Areas from Fontana
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12 justify-center">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Inland Empire - West */}
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Inland Empire - West</h3>
@@ -307,7 +307,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
             Why Fontana Businesses Choose Trembach Law
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 justify-center">
+          <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">High-Volume Operations Expertise</h3>
               <p className="text-text-secondary leading-relaxed mb-6">
@@ -345,7 +345,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
           <h2 className="text-3xl font-bold font-garamond text-primary-navy mb-8 text-center">
             Serving Fontana & Inland Empire
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center justify-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-primary-navy mb-4">Trembach Law Firm</h3>
               <address className="not-italic text-text-secondary leading-relaxed mb-4">
@@ -380,7 +380,7 @@ const FontanaTradeAttorneyPage: React.FC = () => {
             Related Services & Resources
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Legal Services */}
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
