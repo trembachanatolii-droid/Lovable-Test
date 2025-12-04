@@ -372,7 +372,7 @@ const LancasterCountervailingPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Related Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="/export-controls" className="service-link">
+                  <Link to="/export-controls" className="service-link">
                     <span className="service-link__title">Export Controls (ITAR/EAR)</span>
                     <p className="service-link__description">Aerospace export compliance</p>
                     <div className="triangle-slide">
@@ -380,7 +380,7 @@ const LancasterCountervailingPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/customs-defense" className="service-link">

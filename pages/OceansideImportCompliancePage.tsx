@@ -269,34 +269,34 @@ const OceansideImportCompliancePage: React.FC = () => {
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
-                <div className="relative group">
-                  <Link to="/customs-defense-litigation" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
-                    <span className="font-medium">Customs Defense & Litigation</span>
-                    <p className="text-sm text-text-secondary mt-1">CBP audits, seizures, penalty defense</p>
-                    <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
-                      <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="service-link-item">
+                  <Link to="/customs-defense-litigation" className="service-link">
+                    <span className="service-link__title">Customs Defense & Litigation</span>
+                    <p className="service-link__description">CBP audits, seizures, penalty defense</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
                   </Link>
                 </div>
-                <div className="relative group">
-                  <Link to="/practice-areas" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
-                    <span className="font-medium">Trade Compliance Programs</span>
-                    <p className="text-sm text-text-secondary mt-1">Compliance development & training</p>
-                    <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
-                      <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="service-link-item">
+                  <Link to="/practice-areas" className="service-link">
+                    <span className="service-link__title">Trade Compliance Programs</span>
+                    <p className="service-link__description">Compliance development & training</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
                   </Link>
                 </div>
-                <div className="relative group">
-                  <Link to="/resources/tariffs-duties-classification" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
-                    <span className="font-medium">Tariff Classification</span>
-                    <p className="text-sm text-text-secondary mt-1">HTS code optimization</p>
-                    <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
-                      <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="service-link-item">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
+                    <span className="service-link__title">Tariff Classification</span>
+                    <p className="service-link__description">HTS code optimization</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -309,23 +309,23 @@ const OceansideImportCompliancePage: React.FC = () => {
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other San Diego Locations</h3>
               <div className="space-y-0">
-                <div className="relative group">
-                  <Link to="/san-diego-customs-lawyer" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
-                    <span className="font-medium">San Diego</span>
-                    <p className="text-sm text-text-secondary mt-1">Downtown San Diego customs</p>
-                    <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
-                      <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="service-link-item">
+                  <Link to="/san-diego-customs-lawyer" className="service-link">
+                    <span className="service-link__title">San Diego</span>
+                    <p className="service-link__description">Downtown San Diego customs</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
                   </Link>
                 </div>
-                <div className="relative group">
-                  <Link to="/chula-vista-tariff-lawyer" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
-                    <span className="font-medium">Chula Vista</span>
-                    <p className="text-sm text-text-secondary mt-1">South Bay border compliance</p>
-                    <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
-                      <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="service-link-item">
+                  <Link to="/chula-vista-tariff-lawyer" className="service-link">
+                    <span className="service-link__title">Chula Vista</span>
+                    <p className="service-link__description">South Bay border compliance</p>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -338,31 +338,31 @@ const OceansideImportCompliancePage: React.FC = () => {
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
-                <div className="relative group">
-                  <Link to="/resources/c-tpat-guide" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
-                    <span className="font-medium">C-TPAT Certification Guide</span>
-                    <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
-                      <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="service-link-item">
+                  <Link to="/resources/c-tpat-guide" className="service-link">
+                    <span className="service-link__title">C-TPAT Certification Guide</span>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
                   </Link>
                 </div>
-                <div className="relative group">
-                  <Link to="/resources/usmca-compliance-guide" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
-                    <span className="font-medium">USMCA Compliance Guide</span>
-                    <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
-                      <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="service-link-item">
+                  <Link to="/resources/usmca-compliance-guide" className="service-link">
+                    <span className="service-link__title">USMCA Compliance Guide</span>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
                   </Link>
                 </div>
-                <div className="relative group">
-                  <Link to="/trade-law-faq" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
-                    <span className="font-medium">FAQ Center</span>
-                    <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>
-                      <svg className="absolute top-5 right-5 w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="service-link-item">
+                  <Link to="/trade-law-faq" className="service-link">
+                    <span className="service-link__title">FAQ Center</span>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>

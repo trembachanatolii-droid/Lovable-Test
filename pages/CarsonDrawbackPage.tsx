@@ -192,7 +192,7 @@ const CarsonDrawbackPage: React.FC = () => {
             Related Duty Recovery Services
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Legal Services */}
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Duty Recovery Services</h3>

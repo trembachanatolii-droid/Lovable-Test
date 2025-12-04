@@ -105,21 +105,21 @@ const TracyUSMCAPage: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal" style={{ borderColor: '#3FBB94' }}>
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Free Trade Specialization</h3>
               <p className="text-text-secondary leading-relaxed">
                 We focus exclusively on <strong>USMCA and free trade agreements</strong>. Deep expertise in origin qualification, certification requirements, and CBP compliance.
               </p>
             </div>
 
-            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal" style={{ borderColor: '#3FBB94' }}>
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Duty Elimination</h3>
               <p className="text-text-secondary leading-relaxed">
                 USMCA provides <strong>0% duty rates</strong> for qualifying goods. Proper qualification eliminates thousands to millions in annual duty costs for Tracy companies.
               </p>
             </div>
 
-            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal" style={{ borderColor: '#3FBB94' }}>
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">CBP Defense</h3>
               <p className="text-text-secondary leading-relaxed">
                 Expert defense of <strong>CBP origin verifications</strong>. We help Tracy businesses substantiate USMCA claims and avoid retroactive duty assessments.
@@ -132,13 +132,13 @@ const TracyUSMCAPage: React.FC = () => {
       {/* USMCA Services */}
       <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center" style={{ color: '#012169' }}>
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             USMCA Services for Tracy Businesses
           </h2>
 
           <div className="space-y-6">
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond" style={{ color: '#012169' }}>USMCA Benefits & Qualification</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">USMCA Benefits & Qualification</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 USMCA provides <strong>duty-free treatment for qualifying goods</strong> traded between the US, Mexico, and Canada. We help Tracy businesses determine qualification and implement compliant certification programs.
               </p>
@@ -152,7 +152,7 @@ const TracyUSMCAPage: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond" style={{ color: '#012169' }}>Rules of Origin Compliance</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Rules of Origin Compliance</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 USMCA origin rules determine whether products qualify for <strong>duty-free treatment</strong>. We analyze product-specific rules in USMCA Annex 4-B and structure compliance.
               </p>
@@ -166,7 +166,7 @@ const TracyUSMCAPage: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond" style={{ color: '#012169' }}>Certificate of Origin Preparation</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Certificate of Origin Preparation</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 USMCA requires a <strong>certification of origin</strong> to claim duty-free treatment. Unlike NAFTA, there is no specific form - but certifications must contain required data elements.
               </p>
@@ -180,7 +180,7 @@ const TracyUSMCAPage: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond" style={{ color: '#012169' }}>Duty-Free Qualification Strategies</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Duty-Free Qualification Strategies</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 Maximizing USMCA qualification requires <strong>strategic supply chain planning</strong>. We help Tracy businesses restructure operations to meet origin requirements.
               </p>
@@ -194,7 +194,7 @@ const TracyUSMCAPage: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond" style={{ color: '#012169' }}>CBP Verification Defense</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">CBP Verification Defense</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 US Customs actively verifies USMCA claims. <strong>Failure to substantiate results in duty assessments and penalties</strong>. We defend Tracy businesses in verification proceedings.
               </p>
@@ -213,19 +213,19 @@ const TracyUSMCAPage: React.FC = () => {
       {/* Related Services */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center" style={{ color: '#012169' }}>
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             Related Trade Services
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond" style={{ color: '#012169' }}>Trade Compliance</h3>
+            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Trade Compliance</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
                   <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Compliance Programs</span>
-                    <div className="triangle-slide" style={{ position: 'relative', right: '-96px', transition: 'right 0.3s ease' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="#3FBB94" strokeWidth="2">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -234,8 +234,8 @@ const TracyUSMCAPage: React.FC = () => {
                 <div className="service-link-item">
                   <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">HTS Classification</span>
-                    <div className="triangle-slide" style={{ position: 'relative', right: '-96px', transition: 'right 0.3s ease' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="#3FBB94" strokeWidth="2">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -244,14 +244,14 @@ const TracyUSMCAPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond" style={{ color: '#012169' }}>Customs Defense</h3>
+            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Customs Defense</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
                   <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">CBP Audit Defense</span>
-                    <div className="triangle-slide" style={{ position: 'relative', right: '-96px', transition: 'right 0.3s ease' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="#3FBB94" strokeWidth="2">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -260,14 +260,14 @@ const TracyUSMCAPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond" style={{ color: '#012169' }}>Central Valley</h3>
+            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Central Valley</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
                   <Link to="/central-valley-tariff-lawyer" className="service-link">
                     <span className="service-link__title">Central Valley Trade</span>
-                    <div className="triangle-slide" style={{ position: 'relative', right: '-96px', transition: 'right 0.3s ease' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="#3FBB94" strokeWidth="2">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -283,7 +283,7 @@ const TracyUSMCAPage: React.FC = () => {
       <RelatedCityPages currentCity="Tracy" region="central-valley" />
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-primary-navy text-white" style={{ backgroundColor: '#012169' }}>
+      <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Schedule Your Free USMCA Consultation

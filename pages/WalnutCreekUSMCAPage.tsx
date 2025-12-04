@@ -105,21 +105,21 @@ const WalnutCreekUSMCAPage: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal" style={{ borderColor: '#3FBB94' }}>
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">USMCA Concentration</h3>
               <p className="text-text-secondary leading-relaxed">
                 We focus exclusively on <strong>USMCA and free trade agreements</strong>. Extensive expertise in origin rules, certification requirements, and compliance frameworks.
               </p>
             </div>
 
-            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal" style={{ borderColor: '#3FBB94' }}>
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Duty-Free Advantages</h3>
               <p className="text-text-secondary leading-relaxed">
                 USMCA enables <strong>complete duty elimination</strong> for qualifying goods. Proper compliance saves Walnut Creek businesses thousands to millions in annual duty expenses.
               </p>
             </div>
 
-            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal" style={{ borderColor: '#3FBB94' }}>
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Verification Expertise</h3>
               <p className="text-text-secondary leading-relaxed">
                 Proven track record defending <strong>CBP USMCA verifications</strong>. We help substantiate origin claims and prevent duty assessments and penalties.
@@ -132,13 +132,13 @@ const WalnutCreekUSMCAPage: React.FC = () => {
       {/* USMCA Services */}
       <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center" style={{ color: '#012169' }}>
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             USMCA Services for Walnut Creek Companies
           </h2>
 
           <div className="space-y-6">
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond" style={{ color: '#012169' }}>USMCA Benefits Analysis</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">USMCA Benefits Analysis</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 USMCA provides <strong>duty-free access to the $28 trillion North American market</strong>. We help Walnut Creek businesses evaluate qualification opportunities and maximize trade agreement benefits.
               </p>
@@ -152,7 +152,7 @@ const WalnutCreekUSMCAPage: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond" style={{ color: '#012169' }}>Rules of Origin Compliance</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Rules of Origin Compliance</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 USMCA origin rules are <strong>complex and product-specific</strong>. We analyze requirements in Annex 4-B and develop compliant sourcing and production strategies.
               </p>
@@ -166,7 +166,7 @@ const WalnutCreekUSMCAPage: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond" style={{ color: '#012169' }}>Certificate of Origin Services</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Certificate of Origin Services</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 USMCA requires <strong>certifications of origin</strong> but allows flexible formats. We prepare legally compliant certifications with all mandatory data elements.
               </p>
@@ -180,7 +180,7 @@ const WalnutCreekUSMCAPage: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond" style={{ color: '#012169' }}>Duty-Free Qualification Strategies</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">Duty-Free Qualification Strategies</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 Achieving USMCA qualification requires <strong>strategic supply chain planning</strong>. We help Walnut Creek businesses restructure operations to meet origin requirements.
               </p>
@@ -194,7 +194,7 @@ const WalnutCreekUSMCAPage: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond" style={{ color: '#012169' }}>CBP Verification Defense</h3>
+              <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">CBP Verification Defense</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 CBP actively verifies USMCA origin claims. <strong>Unsubstantiated claims result in duty liabilities</strong>. We represent Walnut Creek businesses in verification proceedings.
               </p>
@@ -213,19 +213,19 @@ const WalnutCreekUSMCAPage: React.FC = () => {
       {/* Related Services */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center" style={{ color: '#012169' }}>
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             Related Trade Agreement Services
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond" style={{ color: '#012169' }}>Trade Compliance</h3>
+            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Trade Compliance</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
                   <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Import Compliance</span>
-                    <div className="triangle-slide" style={{ position: 'relative', right: '-96px', transition: 'right 0.3s ease' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="#3FBB94" strokeWidth="2">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -234,8 +234,8 @@ const WalnutCreekUSMCAPage: React.FC = () => {
                 <div className="service-link-item">
                   <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification</span>
-                    <div className="triangle-slide" style={{ position: 'relative', right: '-96px', transition: 'right 0.3s ease' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="#3FBB94" strokeWidth="2">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -244,14 +244,14 @@ const WalnutCreekUSMCAPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond" style={{ color: '#012169' }}>CBP Defense</h3>
+            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">CBP Defense</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
                   <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Customs Defense</span>
-                    <div className="triangle-slide" style={{ position: 'relative', right: '-96px', transition: 'right 0.3s ease' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="#3FBB94" strokeWidth="2">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -260,14 +260,14 @@ const WalnutCreekUSMCAPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond" style={{ color: '#012169' }}>Bay Area</h3>
+            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+              <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Bay Area</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
                   <Link to="/oakland-trade-attorney" className="service-link">
                     <span className="service-link__title">Oakland Port Trade</span>
-                    <div className="triangle-slide" style={{ position: 'relative', right: '-96px', transition: 'right 0.3s ease' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="#3FBB94" strokeWidth="2">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -283,7 +283,7 @@ const WalnutCreekUSMCAPage: React.FC = () => {
       <RelatedCityPages currentCity="Walnut Creek" region="bay-area" />
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-primary-navy text-white" style={{ backgroundColor: '#012169' }}>
+      <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
             Schedule Your Free USMCA Consultation
