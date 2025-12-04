@@ -12,7 +12,7 @@ const StaticHero: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: 'url(/images/hero-port-background.jpg)',
+          backgroundImage: 'url(/images/hero-port-background.jpg?v=2)',
           backgroundPosition: 'center bottom',
         }}
       >
