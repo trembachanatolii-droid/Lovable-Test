@@ -4,18 +4,18 @@ import { Link } from 'react-router-dom';
 const StaticHero: React.FC = () => {
   return (
     <section
-      className="relative w-full h-screen overflow-hidden"
+      className="relative w-full h-[83vh] overflow-hidden"
       aria-label="Hero"
     >
-      {/* Background Image - Full Screen */}
+      {/* Background Image - 83% viewport height like Tesla */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/hero-port-background.jpg)',
         }}
       >
-        {/* Subtle Dark Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-navy/80 via-primary-navy/50 to-transparent" />
+        {/* Dark Overlay for WCAG AAA text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
       </div>
 
       {/* Content - Centered vertically */}
@@ -26,15 +26,15 @@ const StaticHero: React.FC = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-garamond text-white leading-tight mb-6">
               California Trade and Customs Lawyer
               <br />
-              <span className="text-secondary-teal">Import | Export Attorney</span>
+              <span className="text-[#5CE1E6]">Import | Export Attorney</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-xl">
+            <p className="text-xl md:text-2xl text-white mb-10 max-w-xl">
               Expert legal counsel for international trade compliance, CBP defense, and customs matters.
             </p>
             <div>
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-10 py-5 text-lg font-semibold text-white bg-secondary-teal hover:bg-secondary-forestGreen rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center px-10 py-5 text-lg font-semibold text-primary-navy bg-white hover:bg-gray-100 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 aria-label="Get free consultation with California trade attorney"
               >
                 Get Free Consultation
