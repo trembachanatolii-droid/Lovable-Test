@@ -88,9 +88,13 @@ const ContactPage: React.FC = () => {
                       <p className="text-lg text-neutral-darkGray mb-2"><strong>Trembach Law Firm, APC</strong></p>
                       <p className="text-lg text-neutral-darkGray mb-2">27001 Agoura Road, Suite 350</p>
                       <p className="text-lg text-neutral-darkGray mb-6">Calabasas, California 91301</p>
-                      <p className="text-lg text-neutral-darkGray mb-2"><strong>Phone:</strong> (310) 744-1328</p>
+                      <p className="text-lg text-neutral-darkGray mb-2">
+                          <strong>Phone:</strong> <a href="tel:+13107441328" className="text-secondary-teal hover:text-secondary-forestGreen transition-colors" style={{cursor: 'pointer'}}>(310) 744-1328</a>
+                      </p>
                       <p className="text-lg text-neutral-darkGray mb-2"><strong>Fax:</strong> (310) 744-1219</p>
-                      <p className="text-lg text-neutral-darkGray mb-6"><strong>Email:</strong> infotrade@trembachlaw.com</p>
+                      <p className="text-lg text-neutral-darkGray mb-6">
+                          <strong>Email:</strong> <a href="mailto:infotrade@trembachlaw.com" className="text-secondary-teal hover:text-secondary-forestGreen transition-colors" style={{cursor: 'pointer'}}>infotrade@trembachlaw.com</a>
+                      </p>
                       <div className="mt-6 pt-6 border-t border-gray-200">
                           <h4 className="font-bold text-primary-navy mb-3">Service Areas</h4>
                           <p className="text-gray-700">

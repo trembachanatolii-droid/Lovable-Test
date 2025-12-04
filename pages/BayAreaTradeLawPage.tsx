@@ -209,8 +209,7 @@ const BayAreaTradeLawPage: React.FC = () => {
             Why Startups & Tech Companies Trust Us
           </h2>
 
-          <div className="flex justify-center">
-            <div className="w-full grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 justify-center">
             <div>
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">We Speak Tech & Law</h3>
               <p className="text-text-secondary leading-relaxed mb-6">
@@ -237,7 +236,6 @@ const BayAreaTradeLawPage: React.FC = () => {
               <p className="text-text-secondary leading-relaxed mb-6">
                 Investors and acquirers conduct <strong>export compliance due diligence</strong>. We prepare your compliance documentation, remediate historical issues, and represent you in negotiations. Don't let trade compliance kill your deal.
               </p>
-            </div>
             </div>
           </div>
         </div>
@@ -304,8 +302,7 @@ const BayAreaTradeLawPage: React.FC = () => {
             Our attorneys understand Bay Area port logistics, Silicon Valley business culture, and California export compliance requirements. We serve clients by appointment throughout the Bay Area region.
           </p>
 
-          <div className="flex justify-center">
-            <div className="w-full grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-12 justify-center">
             {/* Port of Oakland Routes */}
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Port of Oakland Truck Routes & Corridors</h3>
@@ -361,11 +358,9 @@ const BayAreaTradeLawPage: React.FC = () => {
                 </li>
               </ul>
             </div>
-            </div>
           </div>
 
-          <div className="flex justify-center">
-            <div className="w-full grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-12 justify-center">
             {/* Port Terminals & CBP Sites */}
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Port of Oakland Terminals & CBP Facilities</h3>
@@ -428,7 +423,6 @@ const BayAreaTradeLawPage: React.FC = () => {
                 <strong>Phone:</strong> <a href="tel:+13107441328" className="text-secondary-teal hover:underline">(310) 744-1328</a>
               </p>
             </div>
-            </div>
           </div>
         </div>
       </section>
@@ -442,7 +436,7 @@ const BayAreaTradeLawPage: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Legal Services */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services for Tech Companies</h3>
               <ul className="space-y-3 overflow-hidden">
                 <li>
@@ -501,7 +495,7 @@ const BayAreaTradeLawPage: React.FC = () => {
             </div>
 
             {/* Industry Focus */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Bay Area Industry Focus</h3>
               <ul className="space-y-3 overflow-hidden">
                 <li>
@@ -547,7 +541,7 @@ const BayAreaTradeLawPage: React.FC = () => {
             </div>
 
             {/* Other Locations */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <ul className="space-y-3 overflow-hidden">
                 <li>
