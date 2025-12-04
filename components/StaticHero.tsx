@@ -13,7 +13,7 @@ const StaticHero: React.FC = () => {
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/hero-port-background.jpg)',
-          backgroundPosition: 'center 70%',
+          backgroundPosition: 'center bottom',
         }}
       >
         {/* Dark Overlay for WCAG AAA text contrast */}
