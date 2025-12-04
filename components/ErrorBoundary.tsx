@@ -6,7 +6,7 @@ interface ErrorFallbackProps {
   resetErrorBoundary: () => void;
 }
 
-function ErrorFallback({ error, resetErrorBoundary }: ErrorFallbackProps) {
+function ErrorFallback({ error: _error, resetErrorBoundary }: ErrorFallbackProps) {
   return (
     <div
       role="alert"

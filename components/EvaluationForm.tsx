@@ -60,6 +60,8 @@ const subjectOptions = {
     ],
 };
 
+type InputModeType = 'none' | 'text' | 'decimal' | 'numeric' | 'tel' | 'search' | 'email' | 'url';
+
 interface FormFieldProps {
     id: string;
     label: string;
@@ -68,7 +70,7 @@ interface FormFieldProps {
     isTextArea?: boolean;
     placeholder?: string;
     autoComplete?: string;
-    inputMode?: string;
+    inputMode?: InputModeType;
     inputClassName?: string;
     labelColor?: string;
     error?: string;
@@ -129,7 +131,7 @@ interface EvaluationFormProps {
 const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
     const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [_submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
     const validateField = (name: string, value: string) => {
         let error = '';

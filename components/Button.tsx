@@ -9,6 +9,8 @@ href?: string;
 className?: string;
 type?: 'button' | 'submit' | 'reset';
 onClick?: () => void;
+disabled?: boolean;
+'aria-disabled'?: boolean;
 };
 
 const Button: React.FC<ButtonProps> = ({

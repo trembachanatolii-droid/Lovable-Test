@@ -124,7 +124,7 @@ if ('serviceWorker' in navigator) {
 // Use requestIdleCallback to avoid blocking critical rendering path
 if ('requestIdleCallback' in window) {
   requestIdleCallback(() => {
-    initWebVitals((metric) => {
+    initWebVitals((_metric) => {
       // Optional: Custom callback for each metric
       // Can be used to send metrics to custom analytics endpoint
       if (import.meta.env.PROD) {

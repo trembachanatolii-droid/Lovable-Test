@@ -79,7 +79,7 @@ const HomePage: React.FC = () => {
 
   // Defer schema generation to avoid blocking initial render
   // Start with empty array, populate after first paint using requestIdleCallback
-  const [schemaData, setSchemaData] = useState<object[]>([]);
+  const [schemaData, setSchemaData] = useState<Record<string, unknown>[]>([]);
 
   // Defer expensive article processing until after first paint
   useEffect(() => {

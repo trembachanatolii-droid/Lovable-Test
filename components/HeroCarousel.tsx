@@ -46,6 +46,7 @@ useEffect(() => {
         const timer = setInterval(handleNext, 5000);
         return () => clearInterval(timer);
     }
+    return undefined;
 }, [currentIndex, isPlaying, handleNext]);
 
 return (

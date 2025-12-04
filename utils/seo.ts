@@ -1,4 +1,4 @@
-import type { MetaConfig, SiteConfig } from '../types/meta';
+// Types imported from config
 import { siteConfig } from '../config/siteConfig';
 
 /**

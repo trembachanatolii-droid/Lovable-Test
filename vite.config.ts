@@ -4,38 +4,35 @@ import react from '@vitejs/plugin-react';
 import compression from 'vite-plugin-compression';
 
 // Custom plugin to optimize resource hints and reduce critical request chain
-const resourceHintsPlugin = () => {
+const resourceHintsPlugin = (): { name: string; transformIndexHtml: (html: string, ctx: { bundle?: Record<string, unknown> }) => string } => {
   return {
     name: 'resource-hints-plugin',
-    transformIndexHtml: {
-      // Use 'post' order to access generated bundle information
-      order: 'post',
-      handler(html: string, { bundle }) {
-        // In post-build, we can access the actual chunk names with hashes
-        if (!bundle) return html;
+    transformIndexHtml: (html: string, ctx: { bundle?: Record<string, unknown> }) => {
+      // In post-build, we can access the actual chunk names with hashes
+      const bundle = ctx.bundle;
+      if (!bundle) return html;
 
-        // Find framer-motion chunk for prefetch hint
-        const chunks = Object.values(bundle).filter(
-          (chunk: any) => chunk.type === 'chunk' && chunk.fileName.includes('framer-motion')
-        );
+      // Find framer-motion chunk for prefetch hint
+      const chunks = Object.values(bundle).filter(
+        (chunk: unknown) => (chunk as { type?: string; fileName?: string }).type === 'chunk' && (chunk as { fileName?: string }).fileName?.includes('framer-motion')
+      );
 
-        if (chunks.length > 0) {
-          const framerChunk = chunks[0] as any;
-          const prefetchHint = `
+      if (chunks.length > 0) {
+        const framerChunk = chunks[0] as { fileName: string };
+        const prefetchHint = `
     <!-- Prefetch framer-motion for near-immediate loading after initial render -->
     <link rel="prefetch" href="/${framerChunk.fileName}" as="script" crossorigin>`;
 
-          return html.replace('</head>', `${prefetchHint}\n</head>`);
-        }
+        return html.replace('</head>', `${prefetchHint}\n</head>`);
+      }
 
-        return html;
-      },
+      return html;
     },
   };
 };
 
 export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, '.', '');
+    loadEnv(mode, '.', '');
 
     return {
       server: {
@@ -214,6 +211,7 @@ export default defineConfig(({ mode }) => {
                   id.includes('/pages/AttorneyAdvertisingPage.tsx')) {
                 return 'pages-legal';
               }
+              return undefined;
             },
             // Optimize chunk naming for long-term caching
             chunkFileNames: 'assets/[name]-[hash].js',

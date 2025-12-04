@@ -1,7 +1,6 @@
 
 import React, { lazy, Suspense, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useParams, Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { loadArticle } from '../data/articlesLoader';
 import { articleMetadata, getArticleCategory, formatDateForDisplay } from '../data/articleMetadata';
@@ -47,7 +46,6 @@ const ArticleDisplayPage: React.FC = () => {
   }, [articleId]);
 
   // Get dates from metadata or use fallbacks
-  const publishedDate = metadata?.isoDate || '2025-11-26';
   const displayDate = metadata ? formatDateForDisplay(metadata.date) : 'November 26, 2025';
   const readTime = metadata?.readTime?.toLowerCase().replace(' min read', ' min read') || '5 min read';
   const category = article ? getArticleCategory(article.id) : 'Trade Law';
