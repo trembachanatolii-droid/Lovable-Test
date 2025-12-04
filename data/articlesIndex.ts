@@ -13,6 +13,33 @@ export interface ArticlePreview {
 
 export const articlePreviews: ArticlePreview[] = [
   {
+    "id": "usmca-joint-review-2026-california-importers-december-2025",
+    "title": "USMCA Joint Review 2026: Critical Changes Ahead for California Importers and Cross-Border Trade Operations",
+    "subheading": "As the July 2026 joint review approaches, California businesses face potential modifications to North America's largest trade agreement affecting billions in cross-border commerce",
+    "intro": "The United States-Mexico-Canada Agreement faces its first mandatory joint review on July 1, 2026, marking the sixth anniversary of the agreement's entry into force under 19 U.S.C. § 4111. This comprehensive review presents opportunities for the three member nations to modify, extend, or potentially terminate the agreement that governs over $1.3 trillion in annual trilateral trade. For California businesses, the stakes are particularly high: Mexico remains the state's largest trading partner, with bilateral trade exceeding $90 billion annually, while Canada represents another $30 billion in cross-border commerce. The review process has already begun in earnest, with United States Trade Representative Jamieson Greer required to submit a comprehensive report to Congress by early January 2026.",
+    "keywords": "USMCA joint review 2026, California importers, USMCA modifications, Mexico trade California, Canada trade agreement, automotive rules of origin, USMCA compliance, customs law California, international trade attorney, San Diego border trade, Los Angeles port USMCA",
+    "publishedDate": "2025-12-04",
+    "lastModified": "2025-12-04"
+  },
+  {
+    "id": "cbp-audit-enforcement-surge-california-december-2025",
+    "title": "CBP Audit Enforcement Surge: California Importers Face Record $134 Million in Collections Through April 2025",
+    "subheading": "U.S. Customs intensifies compliance reviews using AI analytics, targeting California ports handling 40% of containerized imports amid unprecedented tariff enforcement",
+    "intro": "U.S. Customs and Border Protection has launched an unprecedented audit enforcement campaign in 2025, with auditors completing nearly 200 compliance reviews and collecting $134 million in previously uncollected duties by April alone. This enforcement surge represents a dramatic escalation from fiscal year 2024, when CBP collected $117.67 million from 417 audits across the entire year. In March 2025 alone, CBP completed 71 audits identifying $310 million in lapsed duties, with an additional $49 million identified from previous fiscal years. California importers face particularly heightened scrutiny as the state's major ports in Los Angeles, Long Beach, and Oakland handle more than 40 percent of all containerized imports entering the United States.",
+    "keywords": "CBP audit, customs audit California, CBP enforcement 2025, import compliance, Focused Assessment, customs penalties, prior disclosure, reasonable care standard, California importers, customs recordkeeping, CBP fines, import audit defense",
+    "publishedDate": "2025-12-04",
+    "lastModified": "2025-12-04"
+  },
+  {
+    "id": "section-232-derivative-products-expansion-california-2025",
+    "title": "Section 232 Derivative Products Expansion: Critical Compliance Updates for California Importers in 2025",
+    "subheading": "Bureau of Industry and Security adds 407 HTSUS codes affecting California construction, manufacturing, and food industries with new 50% tariffs on steel and aluminum content",
+    "intro": "On August 19, 2025, the Bureau of Industry and Security (BIS) implemented one of the most significant expansions of Section 232 tariffs since their inception, adding 407 new Harmonized Tariff Schedule of the United States (HTSUS) codes to the derivative products list. This expansion, effective for goods entered on or after August 18, 2025, imposes a 50% tariff on the steel and aluminum content of products previously exempt from Section 232 duties under the Trade Expansion Act of 1962 (19 U.S.C. § 1862). California importers face particularly acute challenges, as the state's diverse manufacturing base, robust construction industry, and major ports at Los Angeles and Long Beach handle billions of dollars in affected merchandise annually.",
+    "keywords": "Section 232 tariffs California, derivative products expansion 2025, steel aluminum tariffs, HTSUS code changes, BIS tariff expansion, California importers compliance, Section 232 exemptions, Los Angeles port tariffs, trade law California, international trade attorney",
+    "publishedDate": "2025-12-04",
+    "lastModified": "2025-12-04"
+  },
+  {
     "id": "uk-us-pharmaceutical-zero-tariff-deal-california-2025",
     "title": "UK-US Zero Tariff Pharmaceutical Agreement 2025: Exclusive 0% Rate Creates Competitive Advantage for California Importers",
     "subheading": "California Biotech and Pharmaceutical Importers Navigate Historic UK-US Trade Deal Providing Three-Year Zero Tariff Access While EU Faces 15% Rate",

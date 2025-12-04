@@ -8,8 +8,14 @@ import { transshipmentPenaltiesArticle } from './article-transshipment-penalties
 import { ukUsPharmaDealArticle } from './article-uk-us-pharmaceutical-deal-2025';
 import { steelAluminumTariff50Article } from './article-section-232-steel-aluminum-50-2025';
 import { tariffRevenueSurge2025Article } from './article-tariff-revenue-surge-2025';
+import { usmcaJointReview2026Article } from './article-usmca-joint-review-2026';
+import { cbpAuditEnforcementSurgeArticle } from './article-cbp-audit-enforcement-surge-2025';
+import { section232DerivativeProductsArticle } from './article-section-232-derivative-products-2025';
 
 export const articles: ArticleData[] = [
+  usmcaJointReview2026Article,
+  cbpAuditEnforcementSurgeArticle,
+  section232DerivativeProductsArticle,
   ukUsPharmaDealArticle,
   steelAluminumTariff50Article,
   tariffRevenueSurge2025Article,
