@@ -1,21 +1,22 @@
 import React, { lazy, Suspense, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import NewsArticleCard from '../components/NewsArticleCard';
-import PracticeAreasSection from '../components/PracticeAreasSection';
-import Button from '../components/Button';
-import LoadingSpinner from '../components/LoadingSpinner';
-import StaticHero from '../components/StaticHero';
-// Lazy load below-the-fold components to reduce initial bundle
-const JusticePillars = lazy(() => import('../components/JusticePillars'));
-const StatsSection = lazy(() => import('../components/StatsSection'));
-const AboutSection = lazy(() => import('../components/AboutSection'));
-const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 import type { NewsArticle } from '../types';
 import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateFAQSchema, generateLocalBusinessSchema } from '../utils/seo';
 import { siteConfig } from '../config/siteConfig';
 import { getArticlePreviews } from '../data/articlesLoader';
 import { articleMetadata } from '../data/articleMetadata';
+import NewsArticleCard from '../components/NewsArticleCard';
+import PracticeAreasSection from '../components/PracticeAreasSection';
+import Button from '../components/Button';
+import LoadingSpinner from '../components/LoadingSpinner';
+import StaticHero from '../components/StaticHero';
+
+// Lazy load below-the-fold components to reduce initial bundle
+const JusticePillars = lazy(() => import('../components/JusticePillars'));
+const StatsSection = lazy(() => import('../components/StatsSection'));
+const AboutSection = lazy(() => import('../components/AboutSection'));
+const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
 // Get the latest 5 articles by date (using lightweight previews)
 // This function is now called inside the component to avoid blocking module load
@@ -83,15 +84,23 @@ const HomePage: React.FC = () => {
 
   // Defer expensive article processing until after first paint
   useEffect(() => {
-    const timer = requestIdleCallback(() => {
-      setNewsArticlesData(getLatestArticles());
-    });
-    return () => cancelIdleCallback(timer);
+    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+      const timer = requestIdleCallback(() => {
+        setNewsArticlesData(getLatestArticles());
+      });
+      return () => cancelIdleCallback(timer);
+    } else {
+      // Fallback for environments without requestIdleCallback
+      const timer = setTimeout(() => {
+        setNewsArticlesData(getLatestArticles());
+      }, 0);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   // Defer expensive schema generation until after first paint
   useEffect(() => {
-    const timer = requestIdleCallback(() => {
+    const generateSchemas = () => {
       setSchemaData([
         generateLocalBusinessSchema(),
         generateWebPageSchema({
@@ -131,8 +140,16 @@ const HomePage: React.FC = () => {
           },
         },
       ]);
-    });
-    return () => cancelIdleCallback(timer);
+    };
+
+    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+      const timer = requestIdleCallback(generateSchemas);
+      return () => cancelIdleCallback(timer);
+    } else {
+      // Fallback for environments without requestIdleCallback
+      const timer = setTimeout(generateSchemas, 0);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   // SEO Meta Tags and Open Graph - Optimized for Main Hub Keywords
