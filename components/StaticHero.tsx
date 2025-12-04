@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const StaticHero: React.FC = () => {
   return (
     <section
-      className="relative w-full h-[83vh] overflow-hidden"
+      className="relative w-full h-[92vh] overflow-hidden"
       aria-label="Hero"
     >
       {/* Background Image - 83% viewport height like Tesla */}
