@@ -1,5 +1,5 @@
 // Article metadata with publication dates and reading times
-// Dates range from November 1, 2025 to November 28, 2025
+// Dates range from November 1, 2025 to December 4, 2025
 // 3-6 articles per day for optimal content freshness
 // Reading times calculated based on actual article word count (225 words/minute)
 
@@ -10,6 +10,11 @@ export interface ArticleMetadataItem {
 }
 
 export const articleMetadata: Record<string, ArticleMetadataItem> = {
+  // December 4, 2025 (3 articles)
+  'usmca-joint-review-2026-california-importers-december-2025': { date: 'DECEMBER 4, 2025', isoDate: '2025-12-04', readTime: '10 MIN READ' },
+  'cbp-audit-enforcement-surge-california-december-2025': { date: 'DECEMBER 4, 2025', isoDate: '2025-12-04', readTime: '9 MIN READ' },
+  'section-232-derivative-products-expansion-california-2025': { date: 'DECEMBER 4, 2025', isoDate: '2025-12-04', readTime: '9 MIN READ' },
+
   // December 3, 2025 (3 articles)
   'uk-us-pharmaceutical-zero-tariff-deal-california-2025': { date: 'DECEMBER 3, 2025', isoDate: '2025-12-03', readTime: '9 MIN READ' },
   'section-232-steel-aluminum-50-tariff-california-2025': { date: 'DECEMBER 3, 2025', isoDate: '2025-12-03', readTime: '10 MIN READ' },
@@ -178,6 +183,11 @@ export const formatDateForDisplay = (date: string): string => {
 // Get category based on article ID (simplified mapping)
 export const getArticleCategory = (articleId: string): string => {
   const categoryMap: Record<string, string> = {
+    // December 4, 2025 Articles
+    'usmca-joint-review-2026-california-importers-december-2025': 'TRADE AGREEMENTS',
+    'cbp-audit-enforcement-surge-california-december-2025': 'COMPLIANCE AUDITS',
+    'section-232-derivative-products-expansion-california-2025': 'TRADE POLICY',
+
     // December 3, 2025 Articles
     'uk-us-pharmaceutical-zero-tariff-deal-california-2025': 'TRADE AGREEMENTS',
     'section-232-steel-aluminum-50-tariff-california-2025': 'TRADE POLICY',
