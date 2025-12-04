@@ -6,16 +6,15 @@ const StaticHero: React.FC = () => {
     <section
       className="relative w-full h-screen overflow-hidden"
       aria-label="Hero"
-      style={{ marginBottom: '-80px', backgroundColor: '#87CEEB' }}
+      style={{ marginBottom: '-80px' }}
     >
-      {/* Background Image - Full view, no crop */}
+      {/* Background Image */}
       <div
         className="absolute inset-0"
         style={{
           backgroundImage: 'url(/images/hero-port-background.jpg?v=6)',
-          backgroundPosition: 'right center',
-          backgroundSize: 'contain',
-          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
         }}
       />
 
