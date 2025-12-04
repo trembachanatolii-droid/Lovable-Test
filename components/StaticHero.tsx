@@ -1,22 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heroGlobe from '@/src/assets/hero-globe.png';
 
 const StaticHero: React.FC = () => {
   return (
     <section
-      className="relative w-full min-h-[90vh] bg-[#f5f5f7] overflow-hidden"
+      className="relative w-full min-h-[90vh] overflow-hidden"
       aria-label="Hero"
     >
-      <div className="container mx-auto px-6 md:px-12 lg:px-20 h-full min-h-[90vh] flex items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
-          {/* Left Side - Text and CTA */}
-          <div className="flex flex-col justify-center order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-garamond text-primary-navy leading-tight mb-8">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/images/hero-port-background.jpg)',
+        }}
+      >
+        {/* Dark Overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-navy/90 via-primary-navy/70 to-primary-navy/40" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 h-full min-h-[90vh] flex items-center">
+        <div className="max-w-2xl">
+          {/* Text and CTA */}
+          <div className="flex flex-col justify-center text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-garamond text-white leading-tight mb-6">
               California Trade and Customs Lawyer
               <br />
               <span className="text-secondary-teal">Import | Export Attorney</span>
             </h1>
+            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl">
+              Expert legal counsel for international trade compliance, CBP defense, and customs matters.
+            </p>
             <div>
               <Link
                 to="/contact"
@@ -26,19 +40,6 @@ const StaticHero: React.FC = () => {
                 Get Free Consultation
               </Link>
             </div>
-          </div>
-
-          {/* Right Side - Globe Image */}
-          <div className="flex items-center justify-center order-1 lg:order-2">
-            <img
-              src={heroGlobe}
-              alt="Global trade - international flags on globe representing worldwide customs and trade law services"
-              className="w-full max-w-[500px] md:max-w-[550px] lg:max-w-[600px] xl:max-w-[700px] h-auto object-contain"
-              loading="eager"
-              decoding="async"
-              width="700"
-              height="700"
-            />
           </div>
         </div>
       </div>
