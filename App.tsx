@@ -388,6 +388,16 @@ const App: React.FC = () => {
                 <Route path="/resources/section-301-tariffs-guide" element={<Section301TariffsGuidePage />} />
                 <Route path="/resources/uflpa-compliance-guide" element={<UFLPAComplianceGuidePage />} />
 
+                {/* Location Redirects - Map /locations/* URLs to actual pages */}
+                <Route path="/locations/calabasas" element={<Navigate to="/calabasas-customs-attorney" replace />} />
+                <Route path="/locations/los-angeles" element={<Navigate to="/los-angeles-port-customs-attorney" replace />} />
+                <Route path="/locations/bay-area" element={<Navigate to="/bay-area-trade-law-attorney" replace />} />
+
+                {/* Industry Redirects - Map /industries/* URLs to actual pages */}
+                <Route path="/industries/technology-electronics" element={<Navigate to="/technology-electronics-trade-attorney" replace />} />
+                <Route path="/industries/apparel-textiles" element={<Navigate to="/apparel-textiles-trade-attorney" replace />} />
+                <Route path="/industries/food-agriculture" element={<Navigate to="/food-agriculture-trade-attorney" replace />} />
+
                 {/* Resource Redirects - Map old/broken URLs to correct pages */}
                 <Route path="/resources/faq" element={<Navigate to="/trade-law-faq" replace />} />
                 <Route path="/resources/glossary" element={<Navigate to="/trade-law-glossary" replace />} />
