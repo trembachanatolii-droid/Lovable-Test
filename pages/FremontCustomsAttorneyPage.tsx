@@ -386,7 +386,7 @@ const FremontCustomsAttorneyPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <a href="/export-controls" className="service-link">
+                  <Link to="/export-controls" className="service-link">
                     <span className="service-link__title">Export Controls (EAR)</span>
                     <p className="service-link__description">Technology export compliance</p>
                     <div className="triangle-slide">
@@ -394,7 +394,7 @@ const FremontCustomsAttorneyPage: React.FC = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="service-link-item">
                   <Link to="/electronics-compliance" className="service-link">

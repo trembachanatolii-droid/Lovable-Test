@@ -106,21 +106,21 @@ const HesperiaCustomsBondPage: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-neutral-50 p-8 rounded-lg border-l-4" style={{ borderColor: '#3FBB94' }}>
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Bond Specialists</h3>
               <p className="text-text-secondary leading-relaxed">
                 Deep expertise in <strong>continuous bonds, single entry bonds, and bond sufficiency</strong>. We ensure proper coverage and compliance with CBP regulations.
               </p>
             </div>
 
-            <div className="bg-neutral-50 p-8 rounded-lg border-l-4" style={{ borderColor: '#3FBB94' }}>
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">High Desert Focus</h3>
               <p className="text-text-secondary leading-relaxed">
                 Serving <strong>Hesperia, Apple Valley, Victorville, and the Victor Valley</strong> logistics community with regional customs expertise.
               </p>
             </div>
 
-            <div className="bg-neutral-50 p-8 rounded-lg border-l-4" style={{ borderColor: '#3FBB94' }}>
+            <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Bond Defense</h3>
               <p className="text-text-secondary leading-relaxed">
                 <strong>Expert defense against CBP bond claims</strong> and penalty assessments. We protect your financial interests and import privileges.
@@ -228,15 +228,15 @@ const HesperiaCustomsBondPage: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Legal Services */}
-            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden border border-neutral-200">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
                   <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Customs Defense</span>
                     <p className="service-link__description">CBP audits & penalty defense</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: 0, bottom: 0, width: '96px', background: 'linear-gradient(135deg, #3FBB94 0%, #2a8a6b 100%)', clipPath: 'polygon(100% 0, 0% 50%, 100% 100%)', transition: 'right 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: 'white', width: '20px', height: '20px' }}>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -246,8 +246,8 @@ const HesperiaCustomsBondPage: React.FC = () => {
                   <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Trade Compliance</span>
                     <p className="service-link__description">Import compliance programs</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: 0, bottom: 0, width: '96px', background: 'linear-gradient(135deg, #3FBB94 0%, #2a8a6b 100%)', clipPath: 'polygon(100% 0, 0% 50%, 100% 100%)', transition: 'right 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: 'white', width: '20px', height: '20px' }}>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -257,8 +257,8 @@ const HesperiaCustomsBondPage: React.FC = () => {
                   <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification</span>
                     <p className="service-link__description">HTS code optimization</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: 0, bottom: 0, width: '96px', background: 'linear-gradient(135deg, #3FBB94 0%, #2a8a6b 100%)', clipPath: 'polygon(100% 0, 0% 50%, 100% 100%)', transition: 'right 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: 'white', width: '20px', height: '20px' }}>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -268,15 +268,15 @@ const HesperiaCustomsBondPage: React.FC = () => {
             </div>
 
             {/* Other Locations */}
-            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden border border-neutral-200">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Nearby Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
                   <Link to="/inland-empire-customs-attorney" className="service-link">
                     <span className="service-link__title">Inland Empire Customs</span>
                     <p className="service-link__description">Regional trade law coverage</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: 0, bottom: 0, width: '96px', background: 'linear-gradient(135deg, #3FBB94 0%, #2a8a6b 100%)', clipPath: 'polygon(100% 0, 0% 50%, 100% 100%)', transition: 'right 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: 'white', width: '20px', height: '20px' }}>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -286,8 +286,8 @@ const HesperiaCustomsBondPage: React.FC = () => {
                   <Link to="/ontario-trade-compliance" className="service-link">
                     <span className="service-link__title">Ontario Trade Attorney</span>
                     <p className="service-link__description">Airport logistics hub</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: 0, bottom: 0, width: '96px', background: 'linear-gradient(135deg, #3FBB94 0%, #2a8a6b 100%)', clipPath: 'polygon(100% 0, 0% 50%, 100% 100%)', transition: 'right 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: 'white', width: '20px', height: '20px' }}>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -297,14 +297,14 @@ const HesperiaCustomsBondPage: React.FC = () => {
             </div>
 
             {/* Helpful Guides */}
-            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden border border-neutral-200">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
                   <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">Customs Bond FAQ</span>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: 0, bottom: 0, width: '96px', background: 'linear-gradient(135deg, #3FBB94 0%, #2a8a6b 100%)', clipPath: 'polygon(100% 0, 0% 50%, 100% 100%)', transition: 'right 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: 'white', width: '20px', height: '20px' }}>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -313,8 +313,8 @@ const HesperiaCustomsBondPage: React.FC = () => {
                 <div className="service-link-item">
                   <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Import Compliance Guide</span>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: 0, bottom: 0, width: '96px', background: 'linear-gradient(135deg, #3FBB94 0%, #2a8a6b 100%)', clipPath: 'polygon(100% 0, 0% 50%, 100% 100%)', transition: 'right 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: 'white', width: '20px', height: '20px' }}>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -323,8 +323,8 @@ const HesperiaCustomsBondPage: React.FC = () => {
                 <div className="service-link-item">
                   <Link to="/resources/cbp-audit-defense" className="service-link">
                     <span className="service-link__title">CBP Audit Defense</span>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: 0, bottom: 0, width: '96px', background: 'linear-gradient(135deg, #3FBB94 0%, #2a8a6b 100%)', clipPath: 'polygon(100% 0, 0% 50%, 100% 100%)', transition: 'right 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: 'white', width: '20px', height: '20px' }}>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>

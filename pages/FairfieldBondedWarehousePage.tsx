@@ -310,8 +310,8 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                   <Link to="/customs-defense-litigation" className="service-link">
                     <span className="service-link__title">Customs Defense & Litigation</span>
                     <p className="service-link__description">CBP audits, seizures, penalty defense</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -321,8 +321,8 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                   <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Trade Compliance Programs</span>
                     <p className="service-link__description">Import compliance development</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -332,8 +332,8 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                   <Link to="/resources/tariffs-duties-classification" className="service-link">
                     <span className="service-link__title">Tariff Classification</span>
                     <p className="service-link__description">HTS code optimization</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -349,8 +349,8 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                   <Link to="/practice-areas" className="service-link">
                     <span className="service-link__title">Export Controls & ITAR</span>
                     <p className="service-link__description">Defense article compliance</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -360,8 +360,8 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                   <Link to="/duty-drawback-refunds" className="service-link">
                     <span className="service-link__title">Duty Drawback Programs</span>
                     <p className="service-link__description">Customs duty refund claims</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -376,8 +376,8 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                 <div className="service-link-item">
                   <Link to="/resources/ftz-guide" className="service-link">
                     <span className="service-link__title">FTZ Establishment Guide</span>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -386,8 +386,8 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                 <div className="service-link-item">
                   <Link to="/resources/bonded-warehouse-guide" className="service-link">
                     <span className="service-link__title">Bonded Warehouse Guide</span>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -396,8 +396,8 @@ const FairfieldBondedWarehousePage: React.FC = () => {
                 <div className="service-link-item">
                   <Link to="/trade-law-faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
