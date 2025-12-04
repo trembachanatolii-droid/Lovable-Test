@@ -1,6 +1,6 @@
 
 import React, { lazy, Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import StickyPhoneButton from './components/StickyPhoneButton';
@@ -387,6 +387,37 @@ const App: React.FC = () => {
                 <Route path="/schedule-consultation" element={<ConsultationBookingPage />} />
                 <Route path="/resources/section-301-tariffs-guide" element={<Section301TariffsGuidePage />} />
                 <Route path="/resources/uflpa-compliance-guide" element={<UFLPAComplianceGuidePage />} />
+
+                {/* Resource Redirects - Map old/broken URLs to correct pages */}
+                <Route path="/resources/faq" element={<Navigate to="/trade-law-faq" replace />} />
+                <Route path="/resources/glossary" element={<Navigate to="/trade-law-glossary" replace />} />
+                <Route path="/resources/tariffs-duties-classification" element={<Navigate to="/tariffs-duties-classification-guide" replace />} />
+                <Route path="/resources/tariff-classification-guide" element={<Navigate to="/tariffs-duties-classification-guide" replace />} />
+                <Route path="/resources/section-301-guide" element={<Navigate to="/resources/section-301-tariffs-guide" replace />} />
+                <Route path="/resources/export-controls-guide" element={<Navigate to="/export-controls-sanctions" replace />} />
+                <Route path="/resources/cbp-audit-defense" element={<Navigate to="/cbp-audit-defense" replace />} />
+                <Route path="/resources/cbp-audit-guide" element={<Navigate to="/cbp-audit-defense" replace />} />
+                <Route path="/resources/cbp-audit-defense-guide" element={<Navigate to="/cbp-audit-defense" replace />} />
+                <Route path="/resources/prior-disclosure-guide" element={<Navigate to="/prior-disclosure" replace />} />
+                <Route path="/resources/cbp-penalty-mitigation" element={<Navigate to="/customs-penalty-mitigation" replace />} />
+                <Route path="/resources/cbp-penalty-defense-guide" element={<Navigate to="/customs-penalty-mitigation" replace />} />
+                <Route path="/resources/customs-audit-defense" element={<Navigate to="/cbp-audit-defense" replace />} />
+                <Route path="/resources/penalty-mitigation" element={<Navigate to="/customs-penalty-mitigation" replace />} />
+                <Route path="/resources/duty-drawback-guide" element={<Navigate to="/duty-drawback" replace />} />
+                <Route path="/resources/ftz-guide" element={<Navigate to="/ftz-foreign-trade-zones" replace />} />
+                <Route path="/resources/ftz-compliance-guide" element={<Navigate to="/ftz-foreign-trade-zones" replace />} />
+                <Route path="/resources/eapa-defense" element={<Navigate to="/eapa-defense" replace />} />
+                <Route path="/resources/itar-compliance-guide" element={<Navigate to="/export-controls-sanctions" replace />} />
+                <Route path="/resources/ear-compliance-guide" element={<Navigate to="/export-controls-sanctions" replace />} />
+                <Route path="/resources/ear-export-controls-guide" element={<Navigate to="/export-controls-sanctions" replace />} />
+                <Route path="/resources/ofac-sanctions" element={<Navigate to="/export-controls-sanctions" replace />} />
+                <Route path="/resources/antidumping-guide" element={<Navigate to="/practice-areas" replace />} />
+                <Route path="/resources/cvd-guide" element={<Navigate to="/practice-areas" replace />} />
+                <Route path="/resources/usmca-guide" element={<Navigate to="/practice-areas" replace />} />
+                <Route path="/resources/usmca-compliance-guide" element={<Navigate to="/practice-areas" replace />} />
+                <Route path="/resources/supply-chain-due-diligence" element={<Navigate to="/supply-chain-esg-compliance-guide" replace />} />
+                {/* Catch-all for any other /resources/* routes */}
+                <Route path="/resources/*" element={<Navigate to="/resources" replace />} />
 
                 {/* Industry Pages */}
                 <Route path="/technology-electronics-trade-attorney" element={<TechnologyElectronicsIndustryPage />} />
