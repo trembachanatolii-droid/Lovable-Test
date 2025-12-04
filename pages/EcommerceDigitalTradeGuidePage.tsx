@@ -275,7 +275,6 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
                   <h4 className="font-bold text-red-900 mb-2">Section 301 Evasion</h4>
                   <p className="text-text-secondary text-sm">Using Section 321 to avoid Section 301 tariffs on Chinese goods (Section 301 still applies to low-value shipments, but enforcement is difficult).</p>
                 </div>
-                </div>
               </div>
 
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond mt-8">Legislative Changes to Section 321</h3>
