@@ -50,11 +50,10 @@
 
 <!-- Resource Hints: Preload LCP hero image for faster discovery -->
 <link rel="preload" href="/images/hero-main.webp" as="image" type="image/webp" fetchpriority="high">
-<!-- Preload non-critical CSS with async pattern for optimal loading -->
+<!-- Preload CSS for faster discovery -->
 <link rel="preload" href="/styles.css" as="style">
-<!-- Async CSS loading without inline handlers (CSP-compliant) -->
-<link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'; this.onload=null;">
-<noscript><link rel="stylesheet" href="/styles.css"></noscript>
+<!-- Load styles normally - async pattern was causing CSP issues -->
+<link rel="stylesheet" href="/styles.css">
 
 <!-- Critical Request Chain Optimization -->
 <!-- Vite automatically injects <link rel="modulepreload"> tags during build -->
