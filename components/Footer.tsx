@@ -113,7 +113,16 @@ const Footer: React.FC = () => {
                                     type="submit"
                                     disabled={isSubmitting}
                                     aria-disabled={isSubmitting}
-                                    className={`bg-transparent text-white px-7 py-3 font-roboto font-bold uppercase tracking-wider hover:bg-secondary-teal transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm border-2 border-white ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                    className={`font-roboto font-bold uppercase tracking-wider hover:bg-secondary-teal transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                    style={{
+                                        backgroundColor: 'transparent',
+                                        color: 'white',
+                                        border: '2px solid white',
+                                        paddingLeft: '1.75rem',
+                                        paddingRight: '1.75rem',
+                                        paddingTop: '0.75rem',
+                                        paddingBottom: '0.75rem'
+                                    }}
                                 >
                                     {isSubmitting ? 'SUBSCRIBING...' : 'SUBSCRIBE'}
                                 </button>
