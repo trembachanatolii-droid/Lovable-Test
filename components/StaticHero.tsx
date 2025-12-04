@@ -8,36 +8,41 @@ const StaticHero: React.FC = () => {
       aria-label="Hero"
       style={{ marginBottom: '-80px' }}
     >
-      {/* Background Image */}
+      {/* Background Image - Right Side */}
       <div
         className="absolute inset-0 bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/hero-port-background.jpg?v=2)',
-          backgroundPosition: 'center center',
-          backgroundSize: '100% 100%',
+          backgroundPosition: 'right center',
+          backgroundSize: 'cover',
         }}
-      >
-        {/* Dark Overlay for WCAG AAA text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
-      </div>
+      />
 
-      {/* Content - Centered vertically */}
+      {/* White Panel - Left Side */}
+      <div
+        className="absolute left-0 top-0 bottom-0 w-full md:w-[55%] lg:w-[50%]"
+        style={{
+          background: 'linear-gradient(to right, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.95) 70%, rgba(255,255,255,0) 100%)',
+        }}
+      />
+
+      {/* Content */}
       <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 h-full flex items-center">
-        <div className="max-w-2xl">
+        <div className="max-w-xl">
           {/* Text and CTA */}
           <div className="flex flex-col justify-center text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-garamond text-white leading-tight mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-garamond text-primary-navy leading-tight mb-6">
               California Trade and Customs Lawyer
               <br />
-              <span className="text-[#5CE1E6]">Import | Export Attorney</span>
+              <span className="text-primary-navy">Import | Export Attorney</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white mb-10 max-w-xl">
-              Expert legal counsel for international trade compliance, CBP defense, and customs matters.
+            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-lg leading-relaxed">
+              Expert legal counsel for international trade compliance, CBP defense, and customs matters. We step in quickly to protect your shipments and your business.
             </p>
             <div>
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-10 py-5 text-lg font-semibold text-primary-navy bg-white hover:bg-gray-100 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#E07C3E] hover:bg-[#c96a2f] transition-all duration-300"
                 aria-label="Get free consultation with California trade attorney"
               >
                 Get Free Consultation
