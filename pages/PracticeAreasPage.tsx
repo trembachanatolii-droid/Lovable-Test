@@ -243,7 +243,8 @@ const PracticeAccordionItem: React.FC<{
           paddingRight: '1rem',
           paddingTop: '1rem',
           paddingBottom: '1rem',
-          boxSizing: 'border-box'
+          boxSizing: 'border-box',
+          cursor: 'pointer'
         }}
         aria-expanded={isOpen}
         aria-label={`${isOpen ? 'Collapse' : 'Expand'} ${title}`}
@@ -324,6 +325,8 @@ const PracticeAccordionItem: React.FC<{
 };
 
 const PracticeAreasPage: React.FC = () => {
+  const [isHoveringSearch, setIsHoveringSearch] = useState(false);
+
   useMeta({
     title: 'CA Trade Law | Customs Defense & Export Services',
     description: 'California trade law services: customs defense, CBP investigations, export controls ITAR/EAR, trade finance, maritime law. Expert CA/USA representation.',
@@ -538,16 +541,19 @@ const PracticeAreasPage: React.FC = () => {
             </div>
             <button
               onClick={() => {/* Search functionality */}}
-              className="px-8 py-3 font-bold text-white transition-colors"
+              onMouseEnter={() => setIsHoveringSearch(true)}
+              onMouseLeave={() => setIsHoveringSearch(false)}
+              className="px-8 py-3 font-bold text-white transition-all duration-200"
               style={{
-                backgroundColor: '#012169',
+                backgroundColor: isHoveringSearch ? '#3FBB94' : '#012169',
                 fontSize: '14px',
                 letterSpacing: '0.05em',
                 whiteSpace: 'nowrap',
                 minHeight: '44px',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                cursor: 'pointer'
               }}
               aria-label="Search practice areas"
             >

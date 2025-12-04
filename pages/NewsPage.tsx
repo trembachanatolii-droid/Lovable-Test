@@ -41,32 +41,28 @@ const newsItems: NewsItem[] = getArticlePreviews()
 
 // --- News Article Card Component ---
 const NewsArticleCard: React.FC<{ item: NewsItem }> = ({ item }) => {
-  const [isHovered, setIsHovered] = React.useState(false);
-
   return (
     <Link
       to={item.link}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      className="group relative block overflow-hidden transition-all duration-300 bg-white"
+      className="group relative block overflow-hidden transition-all duration-300 bg-white hover:-translate-y-1 hover:shadow-xl border border-border-subtle rounded-2xl"
       style={{
-        boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08)',
-        borderRadius: '8px',
         padding: '40px',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        cursor: 'pointer'
       }}
     >
        {/* Teal Triangle Slide Animation */}
        <div
+           className="triangle-slide"
            style={{
                position: 'absolute',
                top: '0',
-               right: isHovered ? '0' : '-100px',
-               width: '100px',
-               height: '100px',
+               right: '-120px',
+               width: '120px',
+               height: '120px',
                background: '#3FBB94',
                clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
-               transition: 'right 300ms cubic-bezier(0.4, 0, 0.2, 1)',
+               transition: 'right 300ms ease-in-out',
                zIndex: 10,
                pointerEvents: 'none'
            }}
@@ -76,14 +72,15 @@ const NewsArticleCard: React.FC<{ item: NewsItem }> = ({ item }) => {
                xmlns="http://www.w3.org/2000/svg"
                fill="none"
                viewBox="0 0 24 24"
-               strokeWidth={2.5}
+               strokeWidth={3}
                stroke="white"
+               aria-hidden="true"
                style={{
                    width: '24px',
                    height: '24px',
                    position: 'absolute',
-                   top: '22px',
-                   right: '22px'
+                   top: '28px',
+                   right: '28px'
                }}
            >
                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -108,7 +105,7 @@ const NewsArticleCard: React.FC<{ item: NewsItem }> = ({ item }) => {
          </div>
 
          {/* Title */}
-         <h3 className="font-garamond font-bold mb-4 group-hover:text-primary-navy transition-colors" style={{
+         <h3 className="font-garamond font-bold mb-4 group-hover:text-primary-darkBlue transition-colors" style={{
            fontSize: '28px',
            lineHeight: '1.25',
            color: '#012169'
