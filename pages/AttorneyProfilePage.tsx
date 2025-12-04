@@ -1,6 +1,5 @@
 
 import React, { lazy, Suspense, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 import { useMeta } from '../hooks/useMeta';
 import { generatePersonSchema } from '../utils/structuredData';

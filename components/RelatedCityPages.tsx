@@ -9,7 +9,7 @@ interface CityPage {
 
 interface RelatedCityPagesProps {
   currentCity: string;
-  region: 'los-angeles' | 'orange-county' | 'inland-empire' | 'san-diego' | 'bay-area' | 'central-valley' | 'ventura';
+  region: 'los-angeles' | 'orange-county' | 'inland-empire' | 'san-diego' | 'bay-area' | 'central-valley' | 'ventura' | 'southern-california' | 'california' | 'central-california' | 'northern-california' | 'central-coast' | 'south-bay';
 }
 
 // City pages organized by region with descriptions for better SEO

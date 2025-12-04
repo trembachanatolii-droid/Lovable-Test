@@ -68,6 +68,7 @@ const countUp = (now: number) => {
   frame = requestAnimationFrame(countUp);
   return () => cancelAnimationFrame(frame);
 }
+return undefined;
 }, [inView, target]);
 
 const displayValue = isSpecial ? `${currentValue}${suffix}` : `${currentValue}${suffix}`;

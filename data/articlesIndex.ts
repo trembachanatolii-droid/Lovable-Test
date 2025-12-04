@@ -1,4 +1,4 @@
-import type { ArticleData } from '../types';
+import type { ArticleData as _ArticleData } from '../types';
 
 // Lightweight article preview for lists (no full content)
 export interface ArticlePreview {

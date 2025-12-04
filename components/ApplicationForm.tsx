@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent, FormEvent, useCallback } from 'react';
+import React, { useState, useEffect, ChangeEvent, FormEvent } from 'react';
 import Button from './Button';
 import { triggerHaptic } from '../utils/haptics';
 

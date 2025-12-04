@@ -72,7 +72,7 @@ function logMetric(metric: WebVitalMetric): void {
  * Send metric to analytics endpoint
  * In production, replace this with your analytics service (Google Analytics, etc.)
  */
-function sendToAnalytics(metric: WebVitalMetric): void {
+function sendToAnalytics(_metric: WebVitalMetric): void {
   if (import.meta.env.PROD) {
     // Example: Send to Google Analytics 4
     // if (window.gtag) {
@@ -194,7 +194,7 @@ function observeINP(callback?: MetricCallback): void {
       });
     });
 
-    observer.observe({ type: 'event', buffered: true, durationThreshold: 16 });
+    observer.observe({ type: 'event', buffered: true } as PerformanceObserverInit);
   } catch (error) {
     if (import.meta.env.DEV) {
       console.warn('INP observation not supported:', error);

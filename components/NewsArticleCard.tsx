@@ -8,27 +8,10 @@ interface NewsArticleCardProps {
 }
 
 const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
-  // Use Link for internal hash routes, anchor for external links
-  const isInternalLink = article.linkHref.startsWith('#');
-  const Component = isInternalLink ? Link : 'a';
-  const linkProps = isInternalLink
-    ? {
-        to: article.linkHref.replace('#', '/'),
-        'aria-label': `Read article: ${article.title}`
-      }
-    : {
-        href: article.linkHref,
-        target: '_blank',
-        rel: 'noopener noreferrer',
-        'aria-label': `Read article: ${article.title} (opens in new tab)`
-      };
-
-  return (
-    <Component
-      {...linkProps}
-      className="block group relative bg-white overflow-hidden transition-all duration-300 shadow-sm hover:-translate-y-1 hover:shadow-xl will-change-transform border border-border-subtle rounded-2xl"
-      style={{ cursor: 'pointer' }}
-    >
+  const isInternalLink = article.linkHref.startsWith('#') || article.linkHref.startsWith('/');
+  
+  const cardContent = (
+    <>
       {/* Green Triangle with White Arrow */}
       <div
         className="triangle-slide"
@@ -80,7 +63,37 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
           Read Now &rarr;
         </span>
       </div>
-    </Component>
+    </>
+  );
+
+  const cardClassName = "block group relative bg-white overflow-hidden transition-all duration-300 shadow-sm hover:-translate-y-1 hover:shadow-xl will-change-transform border border-border-subtle rounded-2xl";
+  const cardStyle = { cursor: 'pointer' as const };
+
+  if (isInternalLink) {
+    const to = article.linkHref.startsWith('#') ? article.linkHref.replace('#', '/') : article.linkHref;
+    return (
+      <Link
+        to={to}
+        aria-label={`Read article: ${article.title}`}
+        className={cardClassName}
+        style={cardStyle}
+      >
+        {cardContent}
+      </Link>
+    );
+  }
+
+  return (
+    <a
+      href={article.linkHref}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Read article: ${article.title} (opens in new tab)`}
+      className={cardClassName}
+      style={cardStyle}
+    >
+      {cardContent}
+    </a>
   );
 });
 

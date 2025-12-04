@@ -1,8 +1,8 @@
 
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useMeta } from '../hooks/useMeta';
 import { generateBreadcrumbSchema } from '../utils/seo';
-
 const AttorneyAdvertisingPage: React.FC = () => {
   useMeta({
     title: 'Attorney Advertising - Trembach Law Firm',
@@ -36,7 +36,7 @@ const AttorneyAdvertisingPage: React.FC = () => {
             className="w-full h-full object-cover object-center"
             loading="eager"
             decoding="async"
-            fetchpriority="high"
+            fetchPriority="high"
             width="2069"
             height="1380"
           />

@@ -192,7 +192,7 @@ const CareersPage: React.FC = () => {
                             loading="eager"
             style={{ aspectRatio: '16 / 9' }}
                             decoding="async"
-                            fetchpriority="high"
+                            fetchPriority="high"
                             width="1920"
                             height="1080"
                         />

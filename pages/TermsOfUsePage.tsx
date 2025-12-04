@@ -37,7 +37,7 @@ const TermsOfUsePage: React.FC = () => {
             className="w-full h-full object-cover object-center"
             loading="eager"
             decoding="async"
-            fetchpriority="high"
+            fetchPriority="high"
             width="2070"
             height="1380"
           />

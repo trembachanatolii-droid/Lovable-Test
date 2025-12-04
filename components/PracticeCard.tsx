@@ -1,7 +1,6 @@
 
 import React, { memo } from 'react';
 import { PracticeArea } from '../types';
-import { ArrowRightIcon } from './icons/ArrowRightIcon';
 
 interface PracticeCardProps {
 practiceArea: PracticeArea;
@@ -14,13 +13,12 @@ const localImagePath = `/images/${imageSlug}.jpg`;
 const imageUrlBase = 'https://picsum.photos/seed/';
 const imageSrc = imageUrl || localImagePath;
 const placeholderSrc = `${imageUrlBase}${imageSlug}/800/600`;
-const srcSet = imageUrl || `${localImagePath}`;
 
 return (
 <article className="bg-white rounded-2xl overflow-hidden border border-border-subtle transition-all duration-300 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:border-transparent will-change-transform" style={{ cursor: 'pointer' }}>
 <a
     href={`#practice-areas?slug=${slug}`}
-    onClick={(e) => {
+    onClick={(_e) => {
         // Allow default hash behavior to propagate to App router
     }}
     aria-label={`Learn more about ${title} legal services`}
