@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 const StaticHero: React.FC = () => {
   return (
     <section
-      className="relative w-full min-h-[calc(100vh-120px)] overflow-hidden"
+      className="relative w-full h-screen overflow-hidden"
       aria-label="Hero"
+      style={{ marginBottom: '-80px' }}
     >
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/hero-port-background.jpg)',
         }}
@@ -18,8 +19,8 @@ const StaticHero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
       </div>
 
-      {/* Content - Centered vertically with header offset */}
-      <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 h-full min-h-[calc(100vh-120px)] flex items-center pt-8">
+      {/* Content - Centered vertically */}
+      <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 h-full flex items-center">
         <div className="max-w-2xl">
           {/* Text and CTA */}
           <div className="flex flex-col justify-center text-left">
