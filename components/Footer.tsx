@@ -36,6 +36,7 @@ const FOOTER_LINKS: Record<string, FooterLink[]> = {
 const Footer: React.FC = () => {
     const [subscribed, setSubscribed] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isHoveringSubscribe, setIsHoveringSubscribe] = useState(false);
 
     const handleNewsletterSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -113,15 +114,18 @@ const Footer: React.FC = () => {
                                     type="submit"
                                     disabled={isSubmitting}
                                     aria-disabled={isSubmitting}
-                                    className={`font-roboto font-bold uppercase tracking-wider hover:bg-secondary-teal transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                    onMouseEnter={() => setIsHoveringSubscribe(true)}
+                                    onMouseLeave={() => setIsHoveringSubscribe(false)}
+                                    className={`font-roboto font-bold uppercase tracking-wider transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                                     style={{
-                                        backgroundColor: 'transparent',
+                                        backgroundColor: isHoveringSubscribe && !isSubmitting ? '#2DD4BF' : 'transparent',
                                         color: 'white',
                                         border: '2px solid white',
                                         paddingLeft: '1.75rem',
                                         paddingRight: '1.75rem',
                                         paddingTop: '0.75rem',
-                                        paddingBottom: '0.75rem'
+                                        paddingBottom: '0.75rem',
+                                        cursor: isSubmitting ? 'not-allowed' : 'pointer'
                                     }}
                                 >
                                     {isSubmitting ? 'SUBSCRIBING...' : 'SUBSCRIBE'}

@@ -12,6 +12,7 @@ return (
   href={card.linkHref}
   aria-label={`${card.title}: ${card.description.substring(0, 100)}...`}
   className="block group relative bg-neutral-lightGray overflow-hidden transition-shadow duration-300 hover:shadow-xl h-full"
+  style={{ cursor: 'pointer' }}
 >
 {/*
 Triangular tab implemented with CSS borders as per JSON specification.
