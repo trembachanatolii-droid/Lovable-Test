@@ -298,11 +298,11 @@ function generateClientConfirmationEmail(data: EvaluationFormData): string {
 }
 
 // Generate SMS confirmation message
-function generateClientSMS(firstName: string): string {
+function generateClientSMS(_firstName: string): string {
   return `Thank you for contacting Trembach Law Firm. We have received your case evaluation request and will contact you within 24 hours. For urgent matters, call us at ${FIRM_PHONE}. - Trembach Law`;
 }
 
-const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
+const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) => {
   // CORS headers
   const headers = {
     "Access-Control-Allow-Origin": "https://trembach.law",
@@ -371,7 +371,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     ]);
 
     // Check if at least the firm email was sent
-    const firmEmailSent = firmEmailResult.status === "fulfilled" && firmEmailResult.value;
+    // Check firm email result for logging
 
     return {
       statusCode: 200,

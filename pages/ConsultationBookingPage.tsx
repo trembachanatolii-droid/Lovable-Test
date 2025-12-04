@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
@@ -138,7 +137,7 @@ const ConsultationBookingPage: React.FC = () => {
         timezone: 'America/Los_Angeles',
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [_submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
     const showNotification = (message: string, type: 'success' | 'error') => {
         const colors = {

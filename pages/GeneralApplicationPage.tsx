@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
 import ApplicationForm from '../components/ApplicationForm';
 import { useMeta } from '../hooks/useMeta';

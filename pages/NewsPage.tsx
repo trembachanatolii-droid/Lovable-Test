@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SearchIcon } from '../components/icons/SearchIcon';
-import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
 import { getArticlePreviews } from '../data/articlesLoader';
 import { articleMetadata, getArticleCategory } from '../data/articleMetadata';
 import { useMeta } from '../hooks/useMeta';

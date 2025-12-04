@@ -1,10 +1,8 @@
 
 import React, { lazy, Suspense, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
 
 import { SearchIcon } from '../components/icons/SearchIcon';
-import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateBreadcrumbSchema, generateServiceSchema, generateFAQSchema } from '../utils/seo';
