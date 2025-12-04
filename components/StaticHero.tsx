@@ -26,9 +26,10 @@ const StaticHero: React.FC = () => {
         <div className="max-w-2xl">
           {/* Text and CTA */}
           <div className="flex flex-col justify-center text-left">
-            <h1 className="font-bold font-garamond text-white leading-tight mb-6">
-              <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl whitespace-nowrap">California Trade and Customs Lawyer</span>
-              <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#FFDE59] mt-2">Import | Export Attorney</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-garamond text-white leading-tight mb-6">
+              California Trade and Customs Lawyer
+              <br />
+              <span className="text-[#5CE1E6]">Import | Export Attorney</span>
             </h1>
             <p className="text-xl md:text-2xl text-white mb-10 max-w-xl">
               Expert legal counsel for international trade compliance, CBP defense, and customs matters.
