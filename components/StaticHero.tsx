@@ -8,42 +8,44 @@ const StaticHero: React.FC = () => {
       aria-label="Hero"
       style={{ marginBottom: '-80px' }}
     >
-      {/* Background Image - Right Side */}
+      {/* Background Image - Full width, no zoom */}
       <div
-        className="absolute inset-0 bg-no-repeat"
+        className="absolute inset-0"
         style={{
-          backgroundImage: 'url(/images/hero-port-background.jpg?v=2)',
-          backgroundPosition: 'right center',
-          backgroundSize: 'cover',
+          backgroundImage: 'url(/images/hero-port-background.jpg?v=3)',
+          backgroundPosition: 'center center',
+          backgroundSize: '100% 100%',
+          backgroundRepeat: 'no-repeat',
         }}
       />
 
-      {/* White Panel - Left Side */}
+      {/* Semi-transparent white overlay - Left Side (like Holland & Knight) */}
       <div
-        className="absolute left-0 top-0 bottom-0 w-full md:w-[55%] lg:w-[50%]"
+        className="absolute left-0 top-0 bottom-0 w-[65%] md:w-[55%]"
         style={{
-          background: 'linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.98) 60%, rgba(255,255,255,0) 100%)',
+          background: 'linear-gradient(to right, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0) 100%)',
         }}
       />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 h-full flex items-center">
-        <div className="max-w-xl">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-garamond text-primary-navy leading-tight mb-6">
+      <div className="relative z-10 h-full flex items-center">
+        <div className="ml-6 md:ml-12 lg:ml-20 max-w-lg">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-garamond text-primary-navy leading-tight mb-5">
             California Trade and Customs Lawyer
             <br />
-            <span className="text-primary-navy">Import | Export Attorney</span>
+            Import | Export Attorney
           </h1>
-          <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-lg leading-relaxed">
+          <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
             Expert legal counsel for international trade compliance, CBP defense, and customs matters. We step in quickly to protect your shipments and your business.
           </p>
-          <Link
-            to="/contact"
-            className="inline-block px-8 py-4 text-base font-semibold text-white bg-[#0C7B7D] hover:bg-[#096668] transition-all duration-300"
-            aria-label="Get free consultation with California trade attorney"
-          >
-            Get Free Consultation
-          </Link>
+          <div className="mt-6">
+            <Link
+              to="/contact"
+              className="inline-block px-6 py-3 text-sm md:text-base font-semibold text-white bg-[#0C7B7D] hover:bg-[#096668] transition-colors duration-200"
+            >
+              Get Free Consultation
+            </Link>
+          </div>
         </div>
       </div>
     </section>
