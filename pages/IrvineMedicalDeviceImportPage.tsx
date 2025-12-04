@@ -52,7 +52,17 @@ const IrvineMedicalDeviceImportPage: React.FC = () => {
     <div className="font-montserrat text-neutral-darkGray bg-white min-h-screen">
       <section className="hero" aria-label="Medical Device Import Attorney Irvine Hero">
         <picture className="hero-bg">
-          <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=1920&auto=format&fit=crop" alt="" role="presentation" width="1920" height="1080" loading="eager" decoding="async" className="hero-bg-image" />
+          <img
+            src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=1920&auto=format&fit=crop"
+            alt=""
+            role="presentation"
+            width="1920"
+            height="1080"
+            loading="eager"
+            style={{ aspectRatio: '16 / 9' }}
+            decoding="async"
+            className="hero-bg-image"
+          />
         </picture>
         <div className="hero-overlay" aria-hidden="true"></div>
         <div className="container">

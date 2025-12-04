@@ -226,7 +226,7 @@ const OntarioTradeCompliancePage: React.FC = () => {
             Service Areas from Our Ontario Office
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12 justify-center">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Inland Empire */}
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Inland Empire Communities</h3>
@@ -307,7 +307,7 @@ const OntarioTradeCompliancePage: React.FC = () => {
             Why Ontario Businesses Choose Trembach Law
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 justify-center">
+          <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Inland Empire Logistics Expertise</h3>
               <p className="text-text-secondary leading-relaxed mb-6">
@@ -346,9 +346,9 @@ const OntarioTradeCompliancePage: React.FC = () => {
             Related Services & Resources
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Legal Services */}
-            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
@@ -388,7 +388,7 @@ const OntarioTradeCompliancePage: React.FC = () => {
             </div>
 
             {/* Other Locations */}
-            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
@@ -417,7 +417,7 @@ const OntarioTradeCompliancePage: React.FC = () => {
             </div>
 
             {/* Helpful Guides */}
-            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">

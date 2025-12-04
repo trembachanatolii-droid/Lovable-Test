@@ -26,7 +26,7 @@ const TermsOfUsePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="pt-20 bg-white min-h-screen font-montserrat text-neutral-darkGray">
       {/* Hero Section */}
       <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[50vh]">
         {/* Background Image - LCP element */}
@@ -55,7 +55,7 @@ const TermsOfUsePage: React.FC = () => {
       </section>
 
       {/* Main Content */}
-      <article className="max-w-4xl mx-auto font-montserrat text-neutral-darkGray pb-20 px-6 pt-16">
+      <article className="max-w-4xl mx-auto pb-20 px-6 pt-16">
 
         <div className="space-y-8 leading-relaxed">
           <section aria-labelledby="effective-date">

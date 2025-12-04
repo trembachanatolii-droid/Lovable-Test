@@ -50,14 +50,28 @@ const SacramentoSection301Page: React.FC = () => {
 
   return (
     <div className="font-montserrat text-neutral-darkGray bg-white min-h-screen">
+      {/* Hero Section */}
       <section className="hero" aria-label="Section 301 Attorney Sacramento Hero">
         <picture className="hero-bg">
-          <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3c6c?q=80&w=1920&auto=format&fit=crop" alt="" role="presentation" width="1920" height="1080" loading="eager" decoding="async" className="hero-bg-image" />
+          <img
+            src="https://images.unsplash.com/photo-1500937386664-56d1dfef3c6c?q=80&w=1920&auto=format&fit=crop"
+            alt=""
+            role="presentation"
+            width="1920"
+            height="1080"
+            loading="eager"
+            style={{ aspectRatio: '16 / 9' }}
+            decoding="async"
+            className="hero-bg-image"
+          />
         </picture>
         <div className="hero-overlay" aria-hidden="true"></div>
+
         <div className="container">
           <h1>Section 301 Tariff Attorney<br />Sacramento CA</h1>
-          <p className="hero-subtitle">Expert Section 301 tariff attorney serving Sacramento and Central Valley businesses. China tariffs add 7.5%-25% to import costs. Our China tariff lawyers help agricultural and industrial businesses minimize duty exposure through legal strategies.</p>
+          <p className="hero-subtitle">
+            Expert Section 301 tariff attorney serving Sacramento and Central Valley businesses. China tariffs add 7.5%-25% to import costs. Our China tariff lawyers help agricultural and industrial businesses minimize duty exposure through legal strategies.
+          </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link to="/contact" className="hero-cta">Free Tariff Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
@@ -65,6 +79,7 @@ const SacramentoSection301Page: React.FC = () => {
         </div>
       </section>
 
+      {/* Why Choose Section */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1200px] mx-auto">
           <div className="text-center mb-16">
@@ -89,6 +104,7 @@ const SacramentoSection301Page: React.FC = () => {
         </div>
       </section>
 
+      {/* Services Section */}
       <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">Section 301 Services for Sacramento</h2>
@@ -127,48 +143,119 @@ const SacramentoSection301Page: React.FC = () => {
         </div>
       </section>
 
+      {/* Related Services & Resources */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">Related Services</h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Related Services & Resources
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Tariff Services</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><Link to="/resources/tariffs-duties-classification" className="service-link"><span className="service-link__title">Tariff Classification Guide</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
-                <div className="service-link-item"><Link to="/resources/section-301-tariffs-guide" className="service-link"><span className="service-link__title">Section 301 Guide</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
+                <div className="service-link-item">
+                  <Link to="/resources/tariffs-duties-classification" className="service-link">
+                    <span className="service-link__title">Tariff Classification Guide</span>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </Link>
+                </div>
+                <div className="service-link-item">
+                  <Link to="/resources/section-301-tariffs-guide" className="service-link">
+                    <span className="service-link__title">Section 301 Guide</span>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
+
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Sacramento Services</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><Link to="/sacramento-tariff-attorney" className="service-link"><span className="service-link__title">Sacramento Tariff Attorney</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
-                <div className="service-link-item"><Link to="/sacramento-uflpa-attorney" className="service-link"><span className="service-link__title">Sacramento UFLPA</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
+                <div className="service-link-item">
+                  <Link to="/sacramento-tariff-attorney" className="service-link">
+                    <span className="service-link__title">Sacramento Tariff Attorney</span>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </Link>
+                </div>
+                <div className="service-link-item">
+                  <Link to="/sacramento-uflpa-attorney" className="service-link">
+                    <span className="service-link__title">Sacramento UFLPA</span>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
+
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Resources</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><Link to="/trump-2025-tariff-attorney" className="service-link"><span className="service-link__title">2025 Tariff Updates</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
-                <div className="service-link-item"><Link to="/trade-law-faq" className="service-link"><span className="service-link__title">Tariff FAQ</span><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
+                <div className="service-link-item">
+                  <Link to="/trump-2025-tariff-attorney" className="service-link">
+                    <span className="service-link__title">2025 Tariff Updates</span>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </Link>
+                </div>
+                <div className="service-link-item">
+                  <Link to="/trade-law-faq" className="service-link">
+                    <span className="service-link__title">Tariff FAQ</span>
+                    <div className="triangle-slide">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Related City Pages */}
       <RelatedCityPages currentCity="Sacramento" region="central-valley" />
 
+      {/* CTA Section */}
       <section className="py-20 px-6 bg-primary-navy text-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Reduce Your Section 301 Tariff Burden</h2>
-          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Don't overpay on China tariffs. Our Sacramento Section 301 attorneys help businesses minimize duty exposure legally.</p>
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">
+            Reduce Your Section 301 Tariff Burden
+          </h2>
+          <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">
+            Don't overpay on China tariffs. Our Sacramento Section 301 attorneys help businesses minimize duty exposure legally.
+          </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Free Tariff Consultation</Button>
-            <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
+            <Button href="/contact" variant="solid">
+              Free Tariff Consultation
+            </Button>
+            <Button href={siteConfig.phoneTel} variant="outline">
+              Call {siteConfig.phoneDisplay}
+            </Button>
           </div>
         </div>
       </section>
 
+      {/* Evaluation Form */}
       <Suspense fallback={<div style={{ minHeight: '600px', background: 'transparent' }} aria-label="Loading form" />}>
         <EvaluationForm theme="light" />
       </Suspense>

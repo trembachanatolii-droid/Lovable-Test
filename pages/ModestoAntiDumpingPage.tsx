@@ -298,7 +298,7 @@ const ModestoAntiDumpingPage: React.FC = () => {
                   <Link to="/scope-rulings" className="service-link">
                     <span className="service-link__title">Scope Ruling Requests</span>
                     <p className="service-link__description">Commerce scope determinations</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
+                    <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
@@ -309,7 +309,7 @@ const ModestoAntiDumpingPage: React.FC = () => {
                   <Link to="/eapa-defense" className="service-link">
                     <span className="service-link__title">EAPA Investigation Defense</span>
                     <p className="service-link__description">Evasion allegation defense</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
+                    <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
@@ -320,7 +320,7 @@ const ModestoAntiDumpingPage: React.FC = () => {
                   <Link to="/country-of-origin" className="service-link">
                     <span className="service-link__title">Country of Origin Planning</span>
                     <p className="service-link__description">Substantial transformation</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
+                    <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
@@ -338,7 +338,7 @@ const ModestoAntiDumpingPage: React.FC = () => {
                   <Link to="/stockton-tariff-lawyer" className="service-link">
                     <span className="service-link__title">Stockton AD/CVD Defense</span>
                     <p className="service-link__description">Port of Stockton support</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
+                    <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
@@ -349,7 +349,7 @@ const ModestoAntiDumpingPage: React.FC = () => {
                   <Link to="/fresno-customs-attorney" className="service-link">
                     <span className="service-link__title">Fresno AD/CVD Defense</span>
                     <p className="service-link__description">Agricultural trade defense</p>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
+                    <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
@@ -366,7 +366,7 @@ const ModestoAntiDumpingPage: React.FC = () => {
                 <div className="service-link-item">
                   <Link to="/resources/antidumping-guide" className="service-link">
                     <span className="service-link__title">Anti-Dumping Defense Guide</span>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
+                    <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
@@ -376,7 +376,7 @@ const ModestoAntiDumpingPage: React.FC = () => {
                 <div className="service-link-item">
                   <Link to="/resources/agricultural-trade" className="service-link">
                     <span className="service-link__title">Agricultural Trade Guide</span>
-                    <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', transition: 'right 0.3s ease' }}>
+                    <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
