@@ -4,6 +4,7 @@ import NewsArticleCard from '../components/NewsArticleCard';
 import PracticeAreasSection from '../components/PracticeAreasSection';
 import Button from '../components/Button';
 import LoadingSpinner from '../components/LoadingSpinner';
+import StaticHero from '../components/StaticHero';
 // Lazy load below-the-fold components to reduce initial bundle
 const JusticePillars = lazy(() => import('../components/JusticePillars'));
 const StatsSection = lazy(() => import('../components/StatsSection'));
@@ -151,35 +152,8 @@ const HomePage: React.FC = () => {
 
   return (
     <main>
-      {/* Hero Section with Port Harbor Background */}
-      <section className="hero" aria-label="Hero">
-        {/* Port Harbor Background Image */}
-        <picture className="hero-bg">
-          <source type="image/webp" srcSet="/images/hero-main.webp" />
-          <img
-            src="/images/hero-main.jpg"
-            alt=""
-            role="presentation"
-            width="1920"
-            height="1080"
-            loading="eager"
-            decoding="async"
-            fetchpriority="high"
-            className="hero-bg-image"
-            style={{ aspectRatio: '16 / 9' }}
-          />
-        </picture>
-        {/* Dark overlay for text contrast */}
-        <div className="hero-overlay" aria-hidden="true"></div>
-
-        <div className="container">
-          <h1>California Trade and Customs Lawyer<br />Import | Export Attorney</h1>
-          <p className="hero-subtitle">
-            Premier California & USA international trade attorney. Multinational trade law expertise for import/export businesses nationwide. CBP defense, federal trade compliance, global trade strategy, customs audits & export controls. Protecting your business in complex international trade law.
-          </p>
-          <Link to="/contact" className="hero-cta" aria-label="Get free consultation with California trade attorney">Get Free Consultation</Link>
-        </div>
-      </section>
+      {/* Hero Section with Globe */}
+      <StaticHero />
 
       {/* Our Practice Areas Section - Responsive Design */}
       <section
