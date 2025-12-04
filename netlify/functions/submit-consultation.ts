@@ -413,7 +413,7 @@ function generateClientSMS(firstName: string, date: string, time: string): strin
   return `Hi ${firstName}, your consultation request with Trembach Law Firm for ${formatDate(date)} at ${time} has been received. We will confirm within 24 hours. Call ${FIRM_PHONE} for urgent matters. - Trembach Law`;
 }
 
-const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
+const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) => {
   // CORS headers
   const headers = {
     "Access-Control-Allow-Origin": "https://trembach.law",

@@ -461,7 +461,7 @@ function generateApplicantSMS(firstName: string, position: string): string {
   return `Hi ${firstName}, thank you for applying to Trembach Law Firm for the ${position} position. Your application has been received and is being reviewed. We will contact you if selected for an interview. - Trembach Law`;
 }
 
-const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
+const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) => {
   // CORS headers
   const headers = {
     "Access-Control-Allow-Origin": "https://trembach.law",

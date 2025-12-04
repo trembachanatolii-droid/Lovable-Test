@@ -1,6 +1,5 @@
 
 import React, { useEffect, lazy, Suspense } from 'react';
-import { Link } from 'react-router-dom';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
 import { generateBreadcrumbSchema } from '../utils/seo';

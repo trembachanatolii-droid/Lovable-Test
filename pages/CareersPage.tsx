@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
