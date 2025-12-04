@@ -6,46 +6,44 @@ const StaticHero: React.FC = () => {
     <section
       className="relative w-full h-screen overflow-hidden"
       aria-label="Hero"
-      style={{ marginBottom: '-80px' }}
+      style={{ marginBottom: '-80px', backgroundColor: '#87CEEB' }}
     >
-      {/* Background Image - Aerial port view */}
+      {/* Background Image - Full view, no crop */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'url(/images/hero-port-background.jpg?v=4)',
-          backgroundPosition: 'center center',
-          backgroundSize: 'cover',
+          backgroundImage: 'url(/images/hero-port-background.jpg?v=5)',
+          backgroundPosition: 'right center',
+          backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
         }}
       />
 
-      {/* Semi-transparent white overlay - Left Side (like Holland & Knight) */}
+      {/* Semi-transparent overlay for text readability */}
       <div
-        className="absolute left-0 top-0 bottom-0 w-[65%] md:w-[55%]"
+        className="absolute left-0 top-0 bottom-0 w-[50%] md:w-[45%] lg:w-[40%]"
         style={{
-          background: 'linear-gradient(to right, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0) 100%)',
+          background: 'linear-gradient(to right, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 60%, rgba(255,255,255,0) 100%)',
         }}
       />
 
-      {/* Content */}
+      {/* Content - Positioned for best visibility */}
       <div className="relative z-10 h-full flex items-center">
-        <div className="ml-6 md:ml-12 lg:ml-20 max-w-lg">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-garamond text-primary-navy leading-tight mb-5">
+        <div className="ml-8 md:ml-16 lg:ml-24 max-w-md">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-garamond text-primary-navy leading-tight mb-4">
             California Trade and Customs Lawyer
             <br />
             Import | Export Attorney
           </h1>
-          <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+          <p className="text-sm md:text-base text-gray-700 mb-5 leading-relaxed">
             Expert legal counsel for international trade compliance, CBP defense, and customs matters. We step in quickly to protect your shipments and your business.
           </p>
-          <div className="mt-6">
-            <Link
-              to="/contact"
-              className="inline-block px-6 py-3 text-sm md:text-base font-semibold text-white bg-[#0C7B7D] hover:bg-[#096668] transition-colors duration-200"
-            >
-              Get Free Consultation
-            </Link>
-          </div>
+          <Link
+            to="/contact"
+            className="inline-block px-8 py-3 text-sm md:text-base font-semibold text-white bg-[#0C7B7D] hover:bg-[#096668] transition-colors duration-200 shadow-lg"
+          >
+            Get Free Consultation
+          </Link>
         </div>
       </div>
     </section>
