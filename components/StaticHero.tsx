@@ -14,7 +14,9 @@ const StaticHero: React.FC = () => {
         style={{
           backgroundImage: 'url(/images/hero-port-background.jpg?v=6)',
           backgroundPosition: 'center',
-          backgroundSize: 'cover',
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#f5f5f5',
         }}
       />
 
