@@ -27,6 +27,7 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
     <Component
       {...linkProps}
       className="block group relative bg-white overflow-hidden transition-all duration-300 shadow-sm hover:-translate-y-1 hover:shadow-xl will-change-transform border border-border-subtle rounded-2xl"
+      style={{ cursor: 'pointer' }}
     >
       {/* Green Triangle with White Arrow */}
       <div

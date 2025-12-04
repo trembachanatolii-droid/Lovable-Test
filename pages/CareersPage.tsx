@@ -17,7 +17,7 @@ interface JobCategoryProps {
 
 const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, qualifications, applyLink, isOpen, onToggle }) => {
     return (
-        <div style={{ borderBottom: '1px solid #E5E7EB' }}>
+        <div style={{ borderBottom: '1px solid #E5E7EB', borderLeft: '4px solid #D4AF37', paddingLeft: '1.5rem' }}>
             <button
                 onClick={onToggle}
                 className="w-full flex justify-between items-center text-left group focus:outline-none"
@@ -25,7 +25,8 @@ const JobCategoryAccordion: React.FC<JobCategoryProps> = ({ title, description, 
                     paddingTop: '24px',
                     paddingBottom: '24px',
                     paddingLeft: '0',
-                    paddingRight: '0'
+                    paddingRight: '0',
+                    cursor: 'pointer'
                 }}
                 aria-expanded={isOpen}
             >

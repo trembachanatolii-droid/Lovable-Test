@@ -17,7 +17,7 @@ const placeholderSrc = `${imageUrlBase}${imageSlug}/800/600`;
 const srcSet = imageUrl || `${localImagePath}`;
 
 return (
-<article className="bg-white rounded-2xl overflow-hidden border border-border-subtle transition-all duration-300 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:border-transparent will-change-transform">
+<article className="bg-white rounded-2xl overflow-hidden border border-border-subtle transition-all duration-300 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:border-transparent will-change-transform" style={{ cursor: 'pointer' }}>
 <a
     href={`#practice-areas?slug=${slug}`}
     onClick={(e) => {
@@ -25,6 +25,7 @@ return (
     }}
     aria-label={`Learn more about ${title} legal services`}
     className="group relative block text-inherit no-underline focus:outline focus:outline-3 focus:outline-navy-medium focus:outline-offset-4 rounded-2xl"
+    style={{ cursor: 'pointer' }}
 >
 
 <div

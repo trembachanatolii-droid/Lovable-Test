@@ -28,7 +28,7 @@ const variantClasses = {
 };
 
 const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${className}`;
-const buttonStyle = { minHeight: '44px' };
+const buttonStyle = { minHeight: '44px', cursor: 'pointer' };
 
 if (href) {
     // Use Link for internal hash routes, anchor for external links

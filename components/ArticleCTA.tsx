@@ -107,6 +107,7 @@ const ArticleCTA: React.FC<ArticleCTAProps> = ({ topic = 'this matter', variant 
             href="tel:+13107441328"
             className="group flex items-center justify-center gap-3 w-full md:w-auto px-6 py-3 border-2 border-primary-navy text-primary-navy rounded hover:bg-primary-navy hover:text-white transition-all duration-200 font-bold"
             aria-label={`Call for ${content.phoneLabel}: (310) 744-1328`}
+            style={{ cursor: 'pointer' }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -105,6 +105,7 @@ const ShareButton: React.FC<ShareButtonProps> = ({
           backgroundColor: '#E6F7F2',
           color: '#3FBB94',
           border: '2px solid transparent',
+          cursor: 'pointer',
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.backgroundColor = '#3FBB94';
