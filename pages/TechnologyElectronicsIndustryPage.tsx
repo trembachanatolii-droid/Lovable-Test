@@ -290,8 +290,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             Why Technology Companies Choose Trembach Law
           </h2>
 
-          <div className="flex justify-center">
-            <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-navy mb-3">Technology Industry Expertise</h3>
               <p className="text-gray-700">
@@ -318,7 +317,6 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
               <p className="text-gray-700">
                 Experience integrating compliance processes with ERP systems (SAP, Oracle), PLM systems, and e-commerce platforms for scalable automation.
               </p>
-            </div>
             </div>
           </div>
         </div>
@@ -565,8 +563,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex justify-center">
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Silicon Valley Tech Corridors */}
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-xl font-bold text-primary-navy mb-4">Silicon Valley & Bay Area Tech Corridors</h3>
@@ -627,7 +624,6 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
                   </div>
                 </li>
               </ul>
-            </div>
             </div>
           </div>
 

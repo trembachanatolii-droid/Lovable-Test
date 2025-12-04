@@ -125,7 +125,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 justify-center">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-neutral-50 p-8 rounded-lg border-l-4 border-secondary-teal">
               <h3 className="text-2xl font-bold text-primary-navy mb-4 font-garamond">Complex Classification Rules</h3>
               <p className="text-text-secondary leading-relaxed">
@@ -382,7 +382,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             Related Services & Resources
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Legal Services */}
             <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4">Legal Services</h3>
@@ -616,7 +616,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12 justify-center">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* LA Fashion District */}
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-xl font-bold text-primary-navy mb-4">Los Angeles Fashion & Garment District</h3>
