@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heroGlobe from '@/assets/hero-globe.png';
+import heroGlobe from '@/src/assets/hero-globe.png';
 
 const StaticHero: React.FC = () => {
   return (
