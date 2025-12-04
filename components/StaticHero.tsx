@@ -8,13 +8,13 @@ const StaticHero: React.FC = () => {
       aria-label="Hero"
       style={{ marginBottom: '-80px' }}
     >
-      {/* Background Image - Full width, no zoom */}
+      {/* Background Image - Aerial port view */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'url(/images/hero-port-background.jpg?v=3)',
+          backgroundImage: 'url(/images/hero-port-background.jpg?v=4)',
           backgroundPosition: 'center center',
-          backgroundSize: '100% 100%',
+          backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
       />
