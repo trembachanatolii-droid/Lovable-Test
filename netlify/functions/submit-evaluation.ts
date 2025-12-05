@@ -11,7 +11,6 @@ interface EvaluationFormData {
   company: string;
   email: string;
   phone: string;
-  subject: string;
   message: string;
 }
 
@@ -196,10 +195,6 @@ function generateFirmNotificationEmail(data: EvaluationFormData): string {
         <h2 style="color: #012169; font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid #e5e5e5; padding-bottom: 10px;">Case Details</h2>
         <table width="100%" cellpadding="8" cellspacing="0" style="margin-bottom: 25px;">
           <tr>
-            <td style="color: #666; width: 140px; vertical-align: top;"><strong>Subject Area:</strong></td>
-            <td style="color: #333;">${data.subject}</td>
-          </tr>
-          <tr>
             <td style="color: #666; vertical-align: top;"><strong>Case Description:</strong></td>
             <td style="color: #333; white-space: pre-wrap;">${data.message}</td>
           </tr>
@@ -259,10 +254,6 @@ function generateClientConfirmationEmail(data: EvaluationFormData): string {
 
         <h3 style="color: #012169; font-size: 16px; margin: 25px 0 15px 0;">Your Submission Summary:</h3>
         <table width="100%" cellpadding="10" cellspacing="0" style="background-color: #f9fafb; border-radius: 8px;">
-          <tr>
-            <td style="color: #666; width: 120px; border-bottom: 1px solid #e5e5e5;"><strong>Subject:</strong></td>
-            <td style="color: #333; border-bottom: 1px solid #e5e5e5;">${data.subject}</td>
-          </tr>
           <tr>
             <td style="color: #666;"><strong>Submitted:</strong></td>
             <td style="color: #333;">${new Date().toLocaleDateString("en-US", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</td>
@@ -330,7 +321,7 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
     const data: EvaluationFormData = JSON.parse(event.body || "{}");
 
     // Validate required fields
-    const requiredFields = ["firstName", "lastName", "company", "email", "phone", "subject", "message"];
+    const requiredFields = ["firstName", "lastName", "company", "email", "phone", "message"];
     for (const field of requiredFields) {
       if (!data[field as keyof EvaluationFormData]) {
         return {
@@ -356,7 +347,7 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
       // Send email to firm
       sendEmail(
         FIRM_EMAIL,
-        `New Case Evaluation: ${data.subject}`,
+        `New Case Evaluation Request from ${data.firstName} ${data.lastName}`,
         generateFirmNotificationEmail(data),
         data.email
       ),
