@@ -603,6 +603,16 @@ const App: React.FC = () => {
                 <Route path="/port-hueneme-customs" element={<Navigate to="/oxnard-tariff-attorney" replace />} />
                 <Route path="/port-of-san-diego-tariff" element={<Navigate to="/port-of-san-diego-customs" replace />} />
 
+                {/* City Variant Redirects */}
+                <Route path="/san-diego-customs-attorney" element={<Navigate to="/san-diego-customs-lawyer" replace />} />
+                <Route path="/san-diego-trade-attorney" element={<Navigate to="/san-diego-customs-lawyer" replace />} />
+                <Route path="/sacramento-customs-attorney" element={<Navigate to="/sacramento-tariff-attorney" replace />} />
+                <Route path="/sacramento-tariff-lawyer" element={<Navigate to="/sacramento-tariff-attorney" replace />} />
+                <Route path="/san-jose-customs-attorney" element={<Navigate to="/san-jose-customs-lawyer" replace />} />
+                <Route path="/san-jose-trade-attorney" element={<Navigate to="/san-jose-customs-lawyer" replace />} />
+                <Route path="/torrance-customs-lawyer" element={<Navigate to="/torrance-trade-attorney" replace />} />
+                <Route path="/torrance-tariff-lawyer" element={<Navigate to="/torrance-trade-attorney" replace />} />
+
                 {/* Service-Specific Redirects */}
                 <Route path="/aerospace-cvd-compliance" element={<Navigate to="/practice-areas" replace />} />
                 <Route path="/aerospace-itar-compliance" element={<Navigate to="/export-controls-sanctions" replace />} />
@@ -645,6 +655,8 @@ const App: React.FC = () => {
                 <Route path="/food-agriculture-trade" element={<Navigate to="/food-agriculture-trade-attorney" replace />} />
                 <Route path="/fsma-compliance" element={<Navigate to="/food-agriculture-trade-attorney" replace />} />
                 <Route path="/ftz-operations" element={<Navigate to="/ftz-foreign-trade-zones" replace />} />
+                <Route path="/ftz-guide" element={<Navigate to="/ftz-foreign-trade-zones" replace />} />
+                <Route path="/duty-drawback-guide" element={<Navigate to="/duty-drawback" replace />} />
                 <Route path="/government-contractor-compliance" element={<Navigate to="/practice-areas" replace />} />
                 <Route path="/isf-compliance-guide" element={<Navigate to="/practice-areas" replace />} />
                 <Route path="/itar-aerospace-compliance" element={<Navigate to="/export-controls-sanctions" replace />} />

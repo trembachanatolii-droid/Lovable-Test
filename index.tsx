@@ -94,11 +94,73 @@ if ('serviceWorker' in navigator) {
                   console.log('New service worker available! Refresh to update.');
                 }
 
-                // Optionally auto-update after user confirmation
-                if (confirm('A new version is available! Refresh to update?')) {
+                // Show non-intrusive update banner instead of confirm dialog
+                const updateBanner = document.createElement('div');
+                updateBanner.id = 'sw-update-banner';
+                updateBanner.style.cssText = `
+                  position: fixed;
+                  bottom: 20px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  background: linear-gradient(135deg, #012169 0%, #1E40AF 100%);
+                  color: white;
+                  padding: 16px 24px;
+                  border-radius: 12px;
+                  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+                  z-index: 10000;
+                  display: flex;
+                  align-items: center;
+                  gap: 16px;
+                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                  max-width: 90%;
+                  animation: slideUp 0.3s ease-out;
+                `;
+                updateBanner.innerHTML = `
+                  <style>
+                    @keyframes slideUp {
+                      from { transform: translateX(-50%) translateY(100px); opacity: 0; }
+                      to { transform: translateX(-50%) translateY(0); opacity: 1; }
+                    }
+                    #sw-update-banner button {
+                      padding: 8px 20px;
+                      border-radius: 6px;
+                      font-weight: 600;
+                      cursor: pointer;
+                      transition: all 0.2s;
+                      border: none;
+                      font-size: 14px;
+                    }
+                    #sw-update-btn {
+                      background: #2A9D7C;
+                      color: white;
+                    }
+                    #sw-update-btn:hover {
+                      background: #237A62;
+                    }
+                    #sw-dismiss-btn {
+                      background: transparent;
+                      color: rgba(255,255,255,0.8);
+                      border: 1px solid rgba(255,255,255,0.3) !important;
+                    }
+                    #sw-dismiss-btn:hover {
+                      background: rgba(255,255,255,0.1);
+                      color: white;
+                    }
+                  </style>
+                  <span style="font-size: 15px;">A new version is available!</span>
+                  <button id="sw-update-btn">Update Now</button>
+                  <button id="sw-dismiss-btn">Later</button>
+                `;
+                document.body.appendChild(updateBanner);
+
+                document.getElementById('sw-update-btn')?.addEventListener('click', () => {
                   newWorker.postMessage({ type: 'SKIP_WAITING' });
                   window.location.reload();
-                }
+                });
+
+                document.getElementById('sw-dismiss-btn')?.addEventListener('click', () => {
+                  updateBanner.remove();
+                });
               }
             });
           }
