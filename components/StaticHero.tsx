@@ -29,7 +29,8 @@ const StaticHero: React.FC = () => {
         className="relative z-10 h-full flex items-start"
         style={{ paddingTop: 'calc(80px + 15vh)' }}
       >
-        <div className="ml-6 md:ml-12 lg:ml-20 xl:ml-28 max-w-xl lg:max-w-2xl">
+        <div className="w-full max-w-7xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="max-w-xl lg:max-w-2xl">
           <h1
             className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 md:mb-6"
             style={{
@@ -73,6 +74,7 @@ const StaticHero: React.FC = () => {
           >
             Get Free Consultation
           </Link>
+          </div>
         </div>
       </div>
     </section>
