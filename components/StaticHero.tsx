@@ -24,15 +24,18 @@ const StaticHero: React.FC = () => {
         aria-label="California port and shipping containers representing international trade"
       />
 
-      {/* Content - Positioned below fixed header (5rem = 80px) with additional spacing */}
-      <div className="relative z-10 h-full flex items-start pt-[140px] md:pt-[160px] lg:pt-[180px]">
+      {/* Content - Positioned to match reference: ~25-30% from top */}
+      <div
+        className="relative z-10 h-full flex items-start"
+        style={{ paddingTop: 'calc(80px + 15vh)' }}
+      >
         <div className="ml-6 md:ml-12 lg:ml-20 xl:ml-28 max-w-xl lg:max-w-2xl">
           <h1
-            className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 md:mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 md:mb-6"
             style={{
               fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
               color: '#FFFFFF',
-              letterSpacing: '-0.01em',
+              letterSpacing: '-0.02em',
               textShadow: '0 2px 4px rgba(0,0,0,0.3)',
             }}
           >
@@ -41,7 +44,7 @@ const StaticHero: React.FC = () => {
             Import | Export Attorney
           </h1>
           <p
-            className="text-sm md:text-base lg:text-lg mb-6 md:mb-8 leading-relaxed max-w-md lg:max-w-lg"
+            className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 leading-relaxed max-w-md lg:max-w-lg"
             style={{
               fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
               color: 'rgba(255,255,255,0.9)',
@@ -52,11 +55,12 @@ const StaticHero: React.FC = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-block px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold transition-all duration-200"
+            className="inline-block px-8 md:px-10 py-3 md:py-4 text-base md:text-lg font-semibold transition-all duration-200"
             style={{
               backgroundColor: '#FFFFFF',
               color: 'var(--navy-primary)',
               fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+              borderRadius: '9999px',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.9)';
