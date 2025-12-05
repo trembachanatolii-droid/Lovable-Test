@@ -10,7 +10,7 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 // Lazy load EvaluationForm (below-the-fold component)
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
-const Union CityTradeAttorneyPage: React.FC = () => {
+const UnionCityTradeAttorneyPage: React.FC = () => {
   useMeta({
     title: 'Union City Trade Attorney | Silicon Valley Distribution & Logistics CA',
     description: 'Union City trade attorney for distribution centers and tech importers. Customs compliance, I-880 logistics, semiconductor imports. Bay Area. (310) 744-1328.',

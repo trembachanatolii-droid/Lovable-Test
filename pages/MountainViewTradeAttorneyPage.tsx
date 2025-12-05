@@ -10,7 +10,7 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 // Lazy load EvaluationForm (below-the-fold component)
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
-const Mountain ViewTradeAttorneyPage: React.FC = () => {
+const MountainViewTradeAttorneyPage: React.FC = () => {
   useMeta({
     title: 'Mountain View Trade Attorney | Silicon Valley Tech Export Controls',
     description: 'Mountain View trade attorney for tech companies. Export controls, EAR/ITAR compliance, encryption regulations. Apple supply chain expertise. (310) 744-1328.',

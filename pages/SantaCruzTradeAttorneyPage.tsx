@@ -10,7 +10,7 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 // Lazy load EvaluationForm (below-the-fold component)
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
-const Santa CruzTradeAttorneyPage: React.FC = () => {
+const SantaCruzTradeAttorneyPage: React.FC = () => {
   useMeta({
     title: 'Santa Cruz Trade Attorney | Agriculture Export & Seafood Trade CA',
     description: 'Santa Cruz trade attorney for agriculture exporters and seafood traders. Santa Cruz County produce, USDA compliance, maritime trade. Central Coast. (310) 744-1328.',

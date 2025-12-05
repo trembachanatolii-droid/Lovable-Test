@@ -10,7 +10,7 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 // Lazy load EvaluationForm (below-the-fold component)
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
-const San RafaelTradeAttorneyPage: React.FC = () => {
+const SanRafaelTradeAttorneyPage: React.FC = () => {
   useMeta({
     title: 'San Rafael Trade Attorney | Port Customs Lawyer CA',
     description: 'San Rafael trade attorney serving Bay Area port importers. Export controls, customs compliance, biotech trade law. Oakland port access. (310) 744-1328.',

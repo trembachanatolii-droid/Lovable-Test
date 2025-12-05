@@ -10,7 +10,7 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 // Lazy load EvaluationForm (below-the-fold component)
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
-const Palo AltoTradeAttorneyPage: React.FC = () => {
+const PaloAltoTradeAttorneyPage: React.FC = () => {
   useMeta({
     title: 'Palo Alto Trade Attorney | Silicon Valley Tech Export Controls',
     description: 'Palo Alto trade attorney for tech companies. Export controls, EAR/ITAR compliance, encryption regulations. Apple supply chain expertise. (310) 744-1328.',
