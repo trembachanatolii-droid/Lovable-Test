@@ -10,7 +10,7 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 // Lazy load EvaluationForm (below-the-fold component)
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
-const Newport BeachTradeAttorneyPage: React.FC = () => {
+const NewportBeachTradeAttorneyPage: React.FC = () => {
   useMeta({
     title: 'Newport Beach Trade Attorney | Port Customs Lawyer CA',
     description: 'Newport Beach trade attorney serving Orange County importers. Export controls, customs compliance, maritime trade law. Oakland port access. (310) 744-1328.',
