@@ -44,7 +44,7 @@ const LosGatosTradeAttorneyPage: React.FC = () => {
       <section className="hero" aria-label="Los Gatos Trade Law Hero">
         <picture className="hero-bg">
           <img
-            src="/images/hero-port-background.jpg"
+            src="/images/hero-port-background-2.jpg"
             alt=""
             role="presentation"
             width="1920"

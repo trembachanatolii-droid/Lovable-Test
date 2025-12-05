@@ -67,7 +67,7 @@ const CoronaTradeCompliancePage: React.FC = () => {
       <section className="hero" aria-label="Corona Trade Compliance Hero">
         <picture className="hero-bg">
           <img
-            src="/images/hero-port-background.jpg"
+            src="/images/hero-port-background-2.jpg"
             alt=""
             role="presentation"
             width="1920"
