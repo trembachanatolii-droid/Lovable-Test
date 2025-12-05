@@ -197,7 +197,7 @@ const CerritosTradeAttorneyPage = lazy(() => import('./pages/CerritosTradeAttorn
 const ArtesiaTradeAttorneyPage = lazy(() => import('./pages/ArtesiaTradeAttorneyPage'));
 const LaMiradaTradeAttorneyPage = lazy(() => import('./pages/LaMiradaTradeAttorneyPage'));
 const NorwalkTradeAttorneyPage = lazy(() => import('./pages/NorwalkTradeAttorneyPage'));
-const SantaFeSpring sTradeAttorneyPage = lazy(() => import('./pages/SantaFeSpring sTradeAttorneyPage'));
+const SantaFeSpringsTradeAttorneyPage = lazy(() => import('./pages/SantaFeSpringsTradeAttorneyPage'));
 const LaHabraTradeAttorneyPage = lazy(() => import('./pages/LaHabraTradeAttorneyPage'));
 const BreaTradeAttorneyPage = lazy(() => import('./pages/BreaTradeAttorneyPage'));
 const YorbaLindaTradeAttorneyPage = lazy(() => import('./pages/YorbaLindaTradeAttorneyPage'));
@@ -824,7 +824,7 @@ const App: React.FC = () => {
                 <Route path="/artesia-trade-attorney" element={<ArtesiaTradeAttorneyPage />} />
                 <Route path="/la-mirada-trade-attorney" element={<LaMiradaTradeAttorneyPage />} />
                 <Route path="/norwalk-trade-attorney" element={<NorwalkTradeAttorneyPage />} />
-                <Route path="/santa-fe-springs-trade-attorney" element={<SantaFeSpring sTradeAttorneyPage />} />
+                <Route path="/santa-fe-springs-trade-attorney" element={<SantaFeSpringsTradeAttorneyPage />} />
                 <Route path="/la-habra-trade-attorney" element={<LaHabraTradeAttorneyPage />} />
                 <Route path="/brea-trade-attorney" element={<BreaTradeAttorneyPage />} />
                 <Route path="/yorba-linda-trade-attorney" element={<YorbaLindaTradeAttorneyPage />} />

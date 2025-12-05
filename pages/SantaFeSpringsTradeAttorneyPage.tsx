@@ -10,7 +10,7 @@ import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema 
 
 // Lazy load EvaluationForm (below-the-fold component)
 const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
-const SantaFeSpring sTradeAttorneyPage: React.FC = () => {
+const SantaFeSpringsTradeAttorneyPage: React.FC = () => {
   useMeta({
     title: 'Santa Fe Springs Trade Attorney | Warehouse Distribution Lawyer CA',
     description: 'Santa Fe Springs trade attorney for warehousing & distribution companies. Customs compliance, FTZ services, logistics law. I-5/I-605. (310) 744-1328.',
@@ -397,4 +397,4 @@ const SantaFeSpring sTradeAttorneyPage: React.FC = () => {
   );
 };
 
-export default SantaFeSpring sTradeAttorneyPage;
+export default SantaFeSpringsTradeAttorneyPage;
