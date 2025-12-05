@@ -16,23 +16,23 @@ const MontereyTradeAttorneyPage: React.FC = () => {
     description: 'Monterey trade attorney for agriculture exporters and seafood traders. Salinas Valley produce, USDA compliance, maritime trade. Central Coast. (310) 744-1328.',
     canonical: 'monterey-trade-attorney',
     ogType: 'website',
-    ogImage: \`\${siteConfig.siteUrl}/og-image-monterey.jpg\`,
+    ogImage: `${siteConfig.siteUrl}/og-image-monterey.jpg`,
     schema: [
       generateWebPageSchema({
         title: 'Monterey Trade Attorney - Agriculture & Seafood Trade Compliance Lawyer',
         description: 'Serving Monterey with expert agriculture export, seafood trade compliance, and maritime trade legal services for Central Coast businesses.',
-        url: \`\${siteConfig.siteUrl}/monterey-trade-attorney\`,
+        url: `${siteConfig.siteUrl}/monterey-trade-attorney`,
       }),
       generateBreadcrumbSchema([
-        { name: 'Home', url: \`\${siteConfig.siteUrl}/\` },
-        { name: 'Local Offices', url: \`\${siteConfig.siteUrl}/local-offices\` },
-        { name: 'Monterey', url: \`\${siteConfig.siteUrl}/monterey-trade-attorney\` }
+        { name: 'Home', url: `${siteConfig.siteUrl}/` },
+        { name: 'Local Offices', url: `${siteConfig.siteUrl}/local-offices` },
+        { name: 'Monterey', url: `${siteConfig.siteUrl}/monterey-trade-attorney` }
       ]),
       generateServiceSchema({
         name: 'Monterey Trade Compliance Legal Services',
         description: 'Comprehensive agriculture export and seafood trade legal representation for Monterey businesses. Expert services including Salinas Valley produce exports, USDA phytosanitary certification, NOAA seafood compliance, FDA food safety, organic certification, and maritime trade law for California Central Coast.',
         serviceType: 'Agriculture & Maritime Trade Law',
-        url: \`\${siteConfig.siteUrl}/monterey-trade-attorney\`,
+        url: `${siteConfig.siteUrl}/monterey-trade-attorney`,
       }),
     ],
   });
