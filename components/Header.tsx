@@ -16,10 +16,13 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children, isSecondary = false, 
   // Determine if this is the active page
   const isActive = href === currentRoute || (href === '/' && currentRoute === '/');
 
+  // isScrolled here actually means "use dark text" (passed from parent)
+  const useDarkText = isScrolled;
+
   const linkStyle: React.CSSProperties = {
     position: 'relative',
     fontWeight: 500,
-    color: isScrolled ? 'var(--gray-dark)' : 'rgba(255,255,255,0.95)',
+    color: useDarkText ? 'var(--gray-dark)' : 'rgba(255,255,255,0.95)',
     padding: '0.35rem 0',
     transition: 'color 0.3s',
     whiteSpace: 'nowrap',
@@ -80,11 +83,16 @@ const Header: React.FC = () => {
   const [currentRoute, setCurrentRoute] = useState<string>('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<string[]>([]);
+  const [showSearchPopup, setShowSearchPopup] = useState(false);
   const [_isPending, startTransition] = useTransition();
   const menuRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
+
+  // Check if we're on the home page
+  const isHomePage = location.pathname === '/';
 
   // Update current route when location changes
   useEffect(() => {
@@ -135,11 +143,19 @@ const Header: React.FC = () => {
   const handleSearchSubmit = useCallback((e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      navigate(`/news?search=${encodeURIComponent(searchQuery)}`);
+      // Split search query into words and show in popup
+      const words = searchQuery.trim().split(/\s+/).filter(word => word.length > 0);
+      setSearchResults(words);
+      setShowSearchPopup(true);
       setIsSearchOpen(false);
-      setSearchQuery('');
     }
-  }, [searchQuery, navigate]);
+  }, [searchQuery]);
+
+  const closeSearchPopup = useCallback(() => {
+    setShowSearchPopup(false);
+    setSearchResults([]);
+    setSearchQuery('');
+  }, []);
 
   // Close menu on Escape key
   useEffect(() => {
@@ -203,7 +219,7 @@ const Header: React.FC = () => {
 
   const searchLinkStyle = useMemo(() => ({
     padding: '0.35rem',
-    color: isScrolled ? 'var(--gray-dark)' : 'rgba(255,255,255,0.9)',
+    color: useLightText ? 'rgba(255,255,255,0.9)' : 'var(--gray-dark)',
     transition: 'color 0.3s',
     cursor: 'pointer',
     display: 'flex',
@@ -211,7 +227,7 @@ const Header: React.FC = () => {
     justifyContent: 'center',
     background: 'transparent',
     border: 'none'
-  }), [isScrolled]);
+  }), [useLightText]);
 
   const searchIconStyle = useMemo(() => ({
     height: '1.05rem',
@@ -227,11 +243,11 @@ const Header: React.FC = () => {
     opacity: isSearchOpen ? 1 : 0,
     overflow: 'hidden',
     transition: 'width 0.3s ease, opacity 0.3s ease',
-    backgroundColor: isScrolled ? 'var(--white)' : 'rgba(255,255,255,0.95)',
+    backgroundColor: 'var(--white)',
     borderRadius: '0.375rem',
     boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
     zIndex: 200
-  }), [isSearchOpen, isScrolled]);
+  }), [isSearchOpen]);
 
   const searchInputStyle = useMemo(() => ({
     width: '100%',
@@ -253,7 +269,7 @@ const Header: React.FC = () => {
     alignItems: 'center',
     gap: '0.26rem',
     padding: '0.26rem 0.53rem',
-    backgroundColor: isScrolled ? 'var(--navy-primary)' : 'rgba(255,255,255,0.15)',
+    backgroundColor: useLightText ? 'rgba(255,255,255,0.15)' : 'var(--navy-primary)',
     color: 'white',
     textDecoration: 'none',
     fontSize: '0.57rem',
@@ -261,8 +277,8 @@ const Header: React.FC = () => {
     borderRadius: '2rem',
     transition: 'background-color 0.3s',
     whiteSpace: 'nowrap',
-    border: isScrolled ? 'none' : '1px solid rgba(255,255,255,0.3)'
-  }), [isScrolled]);
+    border: useLightText ? '1px solid rgba(255,255,255,0.3)' : 'none'
+  }), [useLightText]);
 
   const desktopPhoneSvgStyle = useMemo(() => ({
     width: '0.7rem',
@@ -296,16 +312,16 @@ const Header: React.FC = () => {
     alignItems: 'center',
     justifyContent: 'center',
     padding: '0.625rem',
-    backgroundColor: isScrolled ? 'var(--teal-primary)' : 'rgba(255,255,255,0.2)',
+    backgroundColor: useLightText ? 'rgba(255,255,255,0.2)' : 'var(--teal-primary)',
     color: 'white',
     borderRadius: '50%',
     width: '2.75rem',
     height: '2.75rem',
     minWidth: '44px',
     minHeight: '44px',
-    boxShadow: isScrolled ? '0 2px 4px rgba(0,0,0,0.1)' : 'none',
-    border: isScrolled ? 'none' : '1px solid rgba(255,255,255,0.3)'
-  }), [isScrolled]);
+    boxShadow: useLightText ? 'none' : '0 2px 4px rgba(0,0,0,0.1)',
+    border: useLightText ? '1px solid rgba(255,255,255,0.3)' : 'none'
+  }), [useLightText]);
 
   const mobilePhoneCtaSvgStyle = useMemo(() => ({
     width: '1.25rem',
@@ -317,14 +333,14 @@ const Header: React.FC = () => {
     alignItems: 'center',
     justifyContent: 'center',
     padding: '0.625rem',
-    backgroundColor: isScrolled ? 'var(--navy-primary)' : 'rgba(255,255,255,0.2)',
+    backgroundColor: useLightText ? 'rgba(255,255,255,0.2)' : 'var(--navy-primary)',
     color: 'white',
     borderRadius: '0.375rem',
     minWidth: '44px',
     minHeight: '44px',
-    boxShadow: isScrolled ? '0 2px 4px rgba(0,0,0,0.1)' : 'none',
-    border: isScrolled ? 'none' : '1px solid rgba(255,255,255,0.3)'
-  }), [isScrolled]);
+    boxShadow: useLightText ? 'none' : '0 2px 4px rgba(0,0,0,0.1)',
+    border: useLightText ? '1px solid rgba(255,255,255,0.3)' : 'none'
+  }), [useLightText]);
 
   const menuIconStyle = useMemo(() => ({
     height: '1.5rem',
@@ -412,12 +428,12 @@ const Header: React.FC = () => {
 
   // Stable event handlers for hover effects
   const handleDesktopPhoneMouseEnter = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.style.backgroundColor = isScrolled ? 'var(--teal-primary)' : 'rgba(255,255,255,0.25)';
-  }, [isScrolled]);
+    e.currentTarget.style.backgroundColor = useLightText ? 'rgba(255,255,255,0.25)' : 'var(--teal-primary)';
+  }, [useLightText]);
 
   const handleDesktopPhoneMouseLeave = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.style.backgroundColor = isScrolled ? 'var(--navy-primary)' : 'rgba(255,255,255,0.15)';
-  }, [isScrolled]);
+    e.currentTarget.style.backgroundColor = useLightText ? 'rgba(255,255,255,0.15)' : 'var(--navy-primary)';
+  }, [useLightText]);
 
   const handleMobilePhoneLinkMouseEnter = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
     e.currentTarget.style.backgroundColor = 'var(--teal-forest)';
@@ -428,16 +444,44 @@ const Header: React.FC = () => {
   }, []);
 
   // Header wrapper style with explicit background control
+  // On home page: transparent when not scrolled, white when scrolled
+  // On other pages: always navy background
   const headerWrapperStyle = useMemo((): React.CSSProperties => ({
     position: 'fixed',
     top: 0,
     left: 0,
     right: 0,
     zIndex: 100,
-    backgroundColor: isScrolled ? 'var(--white)' : 'transparent',
-    boxShadow: isScrolled ? '0 2px 8px rgba(0,0,0,0.1)' : 'none',
+    backgroundColor: isHomePage
+      ? (isScrolled ? 'var(--white)' : 'transparent')
+      : 'var(--navy-primary)',
+    boxShadow: isScrolled || !isHomePage ? '0 2px 8px rgba(0,0,0,0.1)' : 'none',
     transition: 'background-color 0.3s, box-shadow 0.3s',
-  }), [isScrolled]);
+  }), [isScrolled, isHomePage]);
+
+  // Determine if we should use light text (white) or dark text
+  // Light text: on home page when not scrolled, or on non-home pages
+  const useLightText = !isHomePage || !isScrolled;
+
+  // Search popup style
+  const searchPopupOverlayStyle = useMemo((): React.CSSProperties => ({
+    position: 'fixed',
+    inset: 0,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    zIndex: 250,
+    display: showSearchPopup ? 'flex' : 'none',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }), [showSearchPopup]);
+
+  const searchPopupStyle = useMemo((): React.CSSProperties => ({
+    backgroundColor: 'var(--white)',
+    borderRadius: '0.5rem',
+    padding: '2rem',
+    maxWidth: '500px',
+    width: '90%',
+    boxShadow: '0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1)',
+  }), []);
 
   return (
     <>
@@ -448,13 +492,13 @@ const Header: React.FC = () => {
             <a href="#" onClick={handleLogoClick} className="logo" aria-label="Trembach Law Firm - Home">
               <span
                 className="logo-title"
-                style={{ color: isScrolled ? 'var(--navy-primary)' : '#FFFFFF' }}
+                style={{ color: useLightText ? '#FFFFFF' : 'var(--navy-primary)' }}
               >
                 Trembach Law Firm
               </span>
               <span
                 className="logo-subtitle"
-                style={{ color: isScrolled ? 'var(--gray-dark)' : 'rgba(255,255,255,0.85)' }}
+                style={{ color: useLightText ? 'rgba(255,255,255,0.85)' : 'var(--gray-dark)' }}
               >
                 International Trade & Customs Law
               </span>
@@ -463,7 +507,7 @@ const Header: React.FC = () => {
             {/* Center: Primary Navigation */}
             <nav aria-label="Main navigation" className="desktop-nav" style={desktopNavStyle}>
               {PRIMARY_NAV_LINKS.map(link => (
-                <NavLink key={link.label} href={link.href} currentRoute={currentRoute} isScrolled={isScrolled}>
+                <NavLink key={link.label} href={link.href} currentRoute={currentRoute} isScrolled={!useLightText}>
                   {link.label}
                 </NavLink>
               ))}
@@ -608,6 +652,54 @@ const Header: React.FC = () => {
             </div>
           </a>
         </nav>
+      </div>
+
+      {/* Search Results Popup */}
+      <div style={searchPopupOverlayStyle} onClick={closeSearchPopup}>
+        <div style={searchPopupStyle} onClick={(e) => e.stopPropagation()}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--navy-primary)', margin: 0 }}>
+              Search Results
+            </h3>
+            <button
+              onClick={closeSearchPopup}
+              style={{
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                padding: '0.5rem',
+                color: 'var(--gray-dark)'
+              }}
+              aria-label="Close search popup"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+          <p style={{ fontSize: '0.875rem', color: 'var(--gray-dark)', marginBottom: '1rem' }}>
+            You searched for:
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+            {searchResults.map((word, index) => (
+              <span
+                key={index}
+                style={{
+                  display: 'inline-block',
+                  padding: '0.5rem 1rem',
+                  backgroundColor: 'var(--navy-primary)',
+                  color: 'white',
+                  borderRadius: '9999px',
+                  fontSize: '0.875rem',
+                  fontWeight: 500
+                }}
+              >
+                {word}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
