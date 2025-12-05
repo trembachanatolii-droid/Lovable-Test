@@ -8,16 +8,15 @@ const StaticHero: React.FC = () => {
       aria-label="Hero"
       style={{ marginBottom: '-80px' }}
     >
-      {/* Background Image - Original sizing restored */}
+      {/* Background Image - Full image, no zoom, no crop */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'url(/images/hero-port-background.jpg?v=7)',
-          backgroundPosition: 'center top',
-          backgroundSize: '120% auto',
+          backgroundImage: 'url(/images/hero-port-background.jpg?v=8)',
+          backgroundPosition: 'center center',
+          backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'scroll',
-          backgroundColor: '#87CEEB',
+          backgroundColor: '#000',
         }}
       />
 
