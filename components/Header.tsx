@@ -20,10 +20,10 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children, isSecondary = false, 
     position: 'relative',
     fontWeight: 500,
     color: isScrolled ? 'var(--gray-dark)' : 'rgba(255,255,255,0.95)',
-    padding: '0.5rem 0',
+    padding: '0.35rem 0',
     transition: 'color 0.3s',
     whiteSpace: 'nowrap',
-    fontSize: isSecondary ? '0.875rem' : '0.9375rem',
+    fontSize: isSecondary ? '0.6125rem' : '0.66rem',
     textDecoration: 'none',
   };
 
@@ -78,10 +78,13 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentRoute, setCurrentRoute] = useState<string>('');
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const [_isPending, startTransition] = useTransition();
   const menuRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   // Update current route when location changes
   useEffect(() => {
@@ -121,6 +124,22 @@ const Header: React.FC = () => {
     e.preventDefault();
     navigate('/');
   }, [navigate]);
+
+  const toggleSearch = useCallback(() => {
+    setIsSearchOpen(prev => !prev);
+    if (!isSearchOpen) {
+      setTimeout(() => searchInputRef.current?.focus(), 100);
+    }
+  }, [isSearchOpen]);
+
+  const handleSearchSubmit = useCallback((e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/news?search=${encodeURIComponent(searchQuery)}`);
+      setIsSearchOpen(false);
+      setSearchQuery('');
+    }
+  }, [searchQuery, navigate]);
 
   // Close menu on Escape key
   useEffect(() => {
@@ -179,33 +198,65 @@ const Header: React.FC = () => {
 
   // Memoized style objects to prevent recreation on every render
   const desktopNavStyle = useMemo(() => ({
-    marginLeft: '1.5rem'
+    marginLeft: '1.05rem'
   }), []);
 
   const searchLinkStyle = useMemo(() => ({
-    padding: '0.5rem',
+    padding: '0.35rem',
     color: isScrolled ? 'var(--gray-dark)' : 'rgba(255,255,255,0.9)',
     transition: 'color 0.3s',
     cursor: 'pointer',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    background: 'transparent',
+    border: 'none'
   }), [isScrolled]);
 
   const searchIconStyle = useMemo(() => ({
-    height: '1.5rem',
-    width: '1.5rem'
+    height: '1.05rem',
+    width: '1.05rem'
+  }), []);
+
+  const searchBoxStyle = useMemo(() => ({
+    position: 'absolute' as const,
+    top: '100%',
+    right: 0,
+    marginTop: '0.5rem',
+    width: isSearchOpen ? '250px' : '0',
+    opacity: isSearchOpen ? 1 : 0,
+    overflow: 'hidden',
+    transition: 'width 0.3s ease, opacity 0.3s ease',
+    backgroundColor: isScrolled ? 'var(--white)' : 'rgba(255,255,255,0.95)',
+    borderRadius: '0.375rem',
+    boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+    zIndex: 200
+  }), [isSearchOpen, isScrolled]);
+
+  const searchInputStyle = useMemo(() => ({
+    width: '100%',
+    padding: '0.5rem 0.75rem',
+    border: '1px solid var(--border-subtle)',
+    borderRadius: '0.375rem',
+    fontSize: '0.875rem',
+    outline: 'none'
+  }), []);
+
+  const searchContainerStyle = useMemo(() => ({
+    position: 'relative' as const,
+    display: 'flex',
+    alignItems: 'center'
   }), []);
 
   const desktopPhoneStyle = useMemo(() => ({
     display: 'flex',
     alignItems: 'center',
-    gap: '0.375rem',
-    padding: '0.375rem 0.75rem',
+    gap: '0.26rem',
+    padding: '0.26rem 0.53rem',
     backgroundColor: isScrolled ? 'var(--navy-primary)' : 'rgba(255,255,255,0.15)',
     color: 'white',
     textDecoration: 'none',
-    fontSize: '0.8125rem',
+    fontSize: '0.57rem',
     fontWeight: 500,
     borderRadius: '2rem',
     transition: 'background-color 0.3s',
@@ -214,8 +265,8 @@ const Header: React.FC = () => {
   }), [isScrolled]);
 
   const desktopPhoneSvgStyle = useMemo(() => ({
-    width: '1rem',
-    height: '1rem'
+    width: '0.7rem',
+    height: '0.7rem'
   }), []);
 
   const desktopPhoneInnerDivStyle = useMemo(() => ({
@@ -225,14 +276,14 @@ const Header: React.FC = () => {
   }), []);
 
   const desktopPhoneLabelStyle = useMemo(() => ({
-    fontSize: '0.75rem',
+    fontSize: '0.53rem',
     textTransform: 'uppercase' as const,
     letterSpacing: '0.03em'
   }), []);
 
   const desktopPhoneNumberStyle = useMemo(() => ({
     fontWeight: 600,
-    fontSize: '0.8125rem'
+    fontSize: '0.57rem'
   }), []);
 
   const mobileMenuBtnStyle = useMemo(() => ({
@@ -420,13 +471,29 @@ const Header: React.FC = () => {
 
             {/* Right: Search Icon & Phone Number */}
             <div className="desktop-search">
-              <Link
-                to="/news"
-                aria-label="Search articles and news"
-                style={searchLinkStyle}
-              >
-                <SearchIcon style={searchIconStyle} aria-hidden="true" />
-              </Link>
+              <div style={searchContainerStyle}>
+                <button
+                  onClick={toggleSearch}
+                  aria-label={isSearchOpen ? "Close search" : "Open search"}
+                  style={searchLinkStyle}
+                  type="button"
+                >
+                  <SearchIcon style={searchIconStyle} aria-hidden="true" />
+                </button>
+                <div style={searchBoxStyle}>
+                  <form onSubmit={handleSearchSubmit} style={{ padding: '0.5rem' }}>
+                    <input
+                      ref={searchInputRef}
+                      type="text"
+                      placeholder="Search..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      style={searchInputStyle}
+                      aria-label="Search input"
+                    />
+                  </form>
+                </div>
+              </div>
               <a
                 href="tel:+13107441328"
                 aria-label="Call us at (310) 744-1328 for free consultation"
