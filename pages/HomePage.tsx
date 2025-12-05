@@ -215,6 +215,7 @@ const HomePage: React.FC = () => {
                           strokeWidth={3}
                           stroke="white"
                           className="triangle-slide__icon"
+                          aria-hidden="true"
                         >
                           <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
@@ -267,7 +268,7 @@ const HomePage: React.FC = () => {
                     <span className="service-link__title">Calabasas Office (HQ)</span>
                     <p className="service-link__description">Tariff lawyer & customs attorney</p>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -278,7 +279,7 @@ const HomePage: React.FC = () => {
                     <span className="service-link__title">Los Angeles & Long Beach Port</span>
                     <p className="service-link__description">Nation's busiest port complex</p>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -289,7 +290,7 @@ const HomePage: React.FC = () => {
                     <span className="service-link__title">San Francisco & Bay Area</span>
                     <p className="service-link__description">Port of Oakland, Silicon Valley</p>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -310,7 +311,7 @@ const HomePage: React.FC = () => {
                     <span className="service-link__title">Technology & Electronics</span>
                     <p className="service-link__description">Export controls, Section 301</p>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -321,7 +322,7 @@ const HomePage: React.FC = () => {
                     <span className="service-link__title">Apparel & Textiles</span>
                     <p className="service-link__description">UFLPA, origin compliance</p>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -332,7 +333,7 @@ const HomePage: React.FC = () => {
                     <span className="service-link__title">Food & Agriculture</span>
                     <p className="service-link__description">FDA/USDA import compliance</p>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -349,7 +350,7 @@ const HomePage: React.FC = () => {
                   <Link to="/resources/section-301-tariffs-guide" className="service-link">
                     <span className="service-link__title">Section 301 Tariffs Guide</span>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -359,7 +360,7 @@ const HomePage: React.FC = () => {
                   <Link to="/resources/uflpa-compliance-guide" className="service-link">
                     <span className="service-link__title">UFLPA Compliance Guide</span>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -369,7 +370,7 @@ const HomePage: React.FC = () => {
                   <Link to="/resources/tariff-classification-guide" className="service-link">
                     <span className="service-link__title">Tariff Classification Guide</span>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -379,7 +380,7 @@ const HomePage: React.FC = () => {
                   <Link to="/resources/faq" className="service-link">
                     <span className="service-link__title">FAQ Center</span>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>
@@ -389,7 +390,7 @@ const HomePage: React.FC = () => {
                   <Link to="/resources/glossary" className="service-link">
                     <span className="service-link__title">Trade Law Glossary</span>
                     <div className="triangle-slide">
-                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </div>

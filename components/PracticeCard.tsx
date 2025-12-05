@@ -34,7 +34,7 @@ return (
         right: '-96px',
         width: '96px',
         height: '96px',
-        background: '#3FBB94',
+        background: 'var(--teal-primary)',
         clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
         transition: 'right 300ms ease-in-out',
         zIndex: 10,

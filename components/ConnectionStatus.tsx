@@ -159,7 +159,7 @@ const ConnectionStatus: React.FC = () => {
         width: '400px',
         padding: '16px 20px',
         backgroundColor: styles.backgroundColor,
-        color: '#FFFFFF',
+        color: 'var(--white)',
         borderRadius: '8px',
         border: `2px solid ${styles.borderColor}`,
         boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.2)',
@@ -212,7 +212,7 @@ const ConnectionStatus: React.FC = () => {
           style={{
             background: 'transparent',
             border: 'none',
-            color: '#FFFFFF',
+            color: 'var(--white)',
             fontSize: '20px',
             cursor: 'pointer',
             padding: '4px 8px',

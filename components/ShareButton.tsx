@@ -102,19 +102,19 @@ const ShareButton: React.FC<ShareButtonProps> = ({
         onClick={handleShare}
         className="inline-flex items-center gap-2 px-4 py-2.5 rounded-sm font-roboto font-bold text-sm uppercase tracking-wider transition-all duration-200 ease-in-out hover:scale-105 active:scale-95"
         style={{
-          backgroundColor: '#E6F7F2',
-          color: '#3FBB94',
+          backgroundColor: '#E6F7F2', // TODO: Add light teal background to design system
+          color: 'var(--teal-primary)',
           border: '2px solid transparent',
           cursor: 'pointer',
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.backgroundColor = '#3FBB94';
-          e.currentTarget.style.color = '#FFFFFF';
-          e.currentTarget.style.borderColor = '#3FBB94';
+          e.currentTarget.style.backgroundColor = 'var(--teal-primary)';
+          e.currentTarget.style.color = 'var(--white)';
+          e.currentTarget.style.borderColor = 'var(--teal-primary)';
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.backgroundColor = '#E6F7F2';
-          e.currentTarget.style.color = '#3FBB94';
+          e.currentTarget.style.backgroundColor = '#E6F7F2'; // TODO: Add light teal background to design system
+          e.currentTarget.style.color = 'var(--teal-primary)';
           e.currentTarget.style.borderColor = 'transparent';
         }}
         aria-label={isShareSupported ? 'Share article' : 'Copy article link'}
@@ -167,8 +167,8 @@ const ShareButton: React.FC<ShareButtonProps> = ({
         <div
           className="absolute left-1/2 -translate-x-1/2 mt-2 px-4 py-2 rounded-sm whitespace-nowrap text-sm font-roboto font-medium shadow-lg animate-fade-in z-50"
           style={{
-            backgroundColor: '#012169',
-            color: '#FFFFFF',
+            backgroundColor: 'var(--navy-primary)',
+            color: 'var(--white)',
             top: '100%',
           }}
           role="status"

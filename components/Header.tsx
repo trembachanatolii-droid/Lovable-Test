@@ -353,7 +353,7 @@ const Header: React.FC = () => {
   }, []);
 
   const handleMobilePhoneLinkMouseEnter = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.style.backgroundColor = '#2D8469';
+    e.currentTarget.style.backgroundColor = 'var(--teal-forest)';
   }, []);
 
   const handleMobilePhoneLinkMouseLeave = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {

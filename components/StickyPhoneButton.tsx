@@ -48,6 +48,7 @@ const StickyPhoneButton: React.FC<StickyPhoneButtonProps> = ({ showOnMobileOnly 
             strokeWidth={2.5}
             stroke="currentColor"
             className="w-6 h-6 group-hover:animate-pulse"
+            aria-hidden="true"
           >
             <path
               strokeLinecap="round"

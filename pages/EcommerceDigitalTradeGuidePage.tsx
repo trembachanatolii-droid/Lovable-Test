@@ -86,7 +86,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
             Essential guide to ecommerce import rules, online seller customs compliance, digital trade law, and data transfer export controls for California businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button onClick={() => scrollToSection('ecommerce-import-rules')} className="hero-cta">Learn More</button>
+            <button onClick={() => scrollToSection('ecommerce-import-rules')} className="hero-cta">Explore E-Commerce Compliance</button>
             <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>

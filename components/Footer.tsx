@@ -100,36 +100,42 @@ const Footer: React.FC = () => {
                         </div>
                         <div>
                             <div className="text-lg font-semibold text-white mb-3">Stay Informed</div>
-                            <form onSubmit={handleNewsletterSubmit} className="flex flex-row gap-3 mb-4">
-                                <input
-                                    name="email"
-                                    type="email"
-                                    placeholder="Enter your email"
-                                    aria-label="Email address for newsletter subscription"
-                                    required
-                                    inputMode="email"
-                                    className="bg-primary-darkBlue text-white placeholder-neutral-gray px-4 py-3 flex-grow focus:outline-none focus:ring-2 focus:ring-secondary-teal text-base"
-                                />
-                                <button
-                                    type="submit"
-                                    disabled={isSubmitting}
-                                    aria-disabled={isSubmitting}
-                                    onMouseEnter={() => setIsHoveringSubscribe(true)}
-                                    onMouseLeave={() => setIsHoveringSubscribe(false)}
-                                    className={`font-roboto font-bold uppercase tracking-wider transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
-                                    style={{
-                                        backgroundColor: isHoveringSubscribe && !isSubmitting ? '#2DD4BF' : 'transparent',
-                                        color: 'white',
-                                        border: '2px solid white',
-                                        paddingLeft: '1.75rem',
-                                        paddingRight: '1.75rem',
-                                        paddingTop: '0.75rem',
-                                        paddingBottom: '0.75rem',
-                                        cursor: isSubmitting ? 'not-allowed' : 'pointer'
-                                    }}
-                                >
-                                    {isSubmitting ? 'SUBSCRIBING...' : 'SUBSCRIBE'}
-                                </button>
+                            <form onSubmit={handleNewsletterSubmit} className="flex flex-col gap-2 mb-4">
+                                <label htmlFor="newsletter-email" className="text-sm text-white">
+                                    Email Address
+                                </label>
+                                <div className="flex flex-row gap-3">
+                                    <input
+                                        id="newsletter-email"
+                                        name="email"
+                                        type="email"
+                                        placeholder="Enter your email"
+                                        aria-label="Email address for newsletter subscription"
+                                        required
+                                        inputMode="email"
+                                        className="bg-primary-darkBlue text-white placeholder-neutral-gray px-4 py-3 flex-grow focus:outline-none focus:ring-2 focus:ring-secondary-teal text-base"
+                                    />
+                                    <button
+                                        type="submit"
+                                        disabled={isSubmitting}
+                                        aria-disabled={isSubmitting}
+                                        onMouseEnter={() => setIsHoveringSubscribe(true)}
+                                        onMouseLeave={() => setIsHoveringSubscribe(false)}
+                                        className={`font-roboto font-bold uppercase tracking-wider transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-teal text-sm ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                        style={{
+                                            backgroundColor: isHoveringSubscribe && !isSubmitting ? '#2DD4BF' : 'transparent',
+                                            color: 'white',
+                                            border: '2px solid white',
+                                            paddingLeft: '1.75rem',
+                                            paddingRight: '1.75rem',
+                                            paddingTop: '0.75rem',
+                                            paddingBottom: '0.75rem',
+                                            cursor: isSubmitting ? 'not-allowed' : 'pointer'
+                                        }}
+                                    >
+                                        {isSubmitting ? 'SUBSCRIBING...' : 'SUBSCRIBE'}
+                                    </button>
+                                </div>
                             </form>
                             <div className="h-7" aria-live="polite">
                                 <p className={`text-secondary-teal text-sm transition-opacity duration-200 ${subscribed ? 'opacity-100' : 'opacity-0'}`}>
