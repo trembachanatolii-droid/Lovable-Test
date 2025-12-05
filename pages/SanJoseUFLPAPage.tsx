@@ -52,7 +52,7 @@ const SanJoseUFLPAPage: React.FC = () => {
     <div className="font-montserrat text-neutral-darkGray bg-white min-h-screen">
       <section className="hero" aria-label="UFLPA Attorney San Jose Hero">
         <picture className="hero-bg">
-          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1920&auto=format&fit=crop" alt="" role="presentation" width="1920" height="1080" loading="eager" decoding="async" className="hero-bg-image" />
+          <img src="/images/hero-port-background.jpg" alt="" role="presentation" width="1920" height="1080" loading="eager" decoding="async" className="hero-bg-image" />
         </picture>
         <div className="hero-overlay" aria-hidden="true"></div>
         <div className="container">

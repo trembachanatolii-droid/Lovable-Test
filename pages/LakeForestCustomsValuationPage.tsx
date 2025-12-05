@@ -65,7 +65,7 @@ const LakeForestCustomsValuationPage: React.FC = () => {
       <section className="hero" aria-label="Lake Forest Customs Valuation Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"
