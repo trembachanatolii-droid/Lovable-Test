@@ -601,7 +601,7 @@ const GlossaryPage: React.FC = () => {
       <section className="hero" aria-label="Trade Law Glossary Hero">
         <picture className="hero-bg">
           <img
-            src="/images/hero-port-background-2.jpg"
+            src="/images/hero-main.jpg"
             alt=""
             role="presentation"
             width="1920"

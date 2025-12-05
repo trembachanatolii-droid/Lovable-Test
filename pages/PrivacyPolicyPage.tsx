@@ -31,7 +31,7 @@ const PrivacyPolicyPage: React.FC = () => {
         {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
-            src="/images/hero-port-background-2.jpg"
+            src="/images/hero-main.jpg"
             alt="Security and privacy documentation representing website privacy policy and data protection"
             className="w-full h-full object-cover object-center"
             loading="eager"

@@ -383,7 +383,7 @@ const UsefulLinksPage: React.FC = () => {
         {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
-            src="/images/hero-port-background-2.jpg"
+            src="/images/hero-useful-links.jpg"
             alt="Digital library and government resources representing useful trade law links and regulatory references"
             className="w-full h-full object-cover object-center"
             loading="eager"

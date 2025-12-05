@@ -46,7 +46,7 @@ const Section301TariffsGuidePage: React.FC = () => {
       <section className="hero" aria-label="Section 301 Tariffs Guide Hero">
         <picture className="hero-bg">
           <img
-            src="/images/hero-port-background-2.jpg"
+            src="/images/hero-resources.jpg"
             alt=""
             role="presentation"
             width="1920"

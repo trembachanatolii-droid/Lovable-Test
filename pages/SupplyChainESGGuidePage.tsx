@@ -72,7 +72,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
       <section className="hero" aria-label="Supply Chain ESG Guide Hero">
         <picture className="hero-bg">
           <img
-            src="/images/hero-port-background-2.jpg"
+            src="/images/hero-resources.jpg"
             alt=""
             role="presentation"
             width="1920"
