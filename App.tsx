@@ -557,6 +557,14 @@ const App: React.FC = () => {
                 <Route path="/ofac-energy-sanctions" element={<Navigate to="/export-controls-sanctions" replace />} />
                 <Route path="/petroleum-drawback" element={<Navigate to="/duty-drawback" replace />} />
 
+                {/* Legacy Location & Industry Path Redirects */}
+                <Route path="/locations/calabasas" element={<Navigate to="/contact" replace />} />
+                <Route path="/locations/los-angeles" element={<Navigate to="/los-angeles-long-beach-port-customs-attorney" replace />} />
+                <Route path="/locations/bay-area" element={<Navigate to="/bay-area-trade-law-attorney" replace />} />
+                <Route path="/industries/technology-electronics" element={<Navigate to="/technology-electronics-trade-attorney" replace />} />
+                <Route path="/industries/apparel-textiles" element={<Navigate to="/apparel-textiles-trade-attorney" replace />} />
+                <Route path="/industries/food-agriculture" element={<Navigate to="/food-agriculture-trade-attorney" replace />} />
+
                 {/* Industry Pages */}
                 <Route path="/technology-electronics-trade-attorney" element={<TechnologyElectronicsIndustryPage />} />
                 <Route path="/apparel-textiles-trade-attorney" element={<ApparelTextilesIndustryPage />} />

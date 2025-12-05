@@ -1,10 +1,21 @@
 
 import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
 import { PracticeArea } from '../types';
 
 interface PracticeCardProps {
 practiceArea: PracticeArea;
 }
+
+// Map slugs to actual routes
+const slugToRoute: Record<string, string> = {
+  'customs-audits': '/customs-defense',
+  'retaliatory-tariffs': '/section-301-tariff-lawyer',
+  'export-controls-sanctions': '/export-controls-sanctions',
+  'duty-drawback': '/duty-drawback',
+  'usmca-free-trade-agreements': '/regulatory-compliance-advisory',
+  'entry-wro': '/uflpa-compliance-guide',
+};
 
 const PracticeCard: React.FC<PracticeCardProps> = memo(({ practiceArea }) => {
 const { title, subheading, description, tags, imageSlug, imageAlt, slug, imageUrl } = practiceArea;
@@ -13,14 +24,12 @@ const localImagePath = `/images/${imageSlug}.jpg`;
 const imageUrlBase = 'https://picsum.photos/seed/';
 const imageSrc = imageUrl || localImagePath;
 const placeholderSrc = `${imageUrlBase}${imageSlug}/800/600`;
+const routePath = slugToRoute[slug] || `/${slug}`;
 
 return (
 <article className="bg-white rounded-2xl overflow-hidden border border-border-subtle transition-all duration-300 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:border-transparent will-change-transform" style={{ cursor: 'pointer' }}>
-<a
-    href={`#practice-areas?slug=${slug}`}
-    onClick={(_e) => {
-        // Allow default hash behavior to propagate to App router
-    }}
+<Link
+    to={routePath}
     aria-label={`Learn more about ${title} legal services`}
     className="group relative block text-inherit no-underline focus:outline focus:outline-3 focus:outline-navy-medium focus:outline-offset-4 rounded-2xl"
     style={{ cursor: 'pointer' }}
@@ -107,7 +116,7 @@ return (
         Learn more about {title} →
       </span>
     </div>
-  </a>
+  </Link>
 </article>
 );
 });
