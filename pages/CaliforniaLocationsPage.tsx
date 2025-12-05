@@ -164,7 +164,7 @@ const CaliforniaLocationsPage: React.FC = () => {
       <section className="hero" aria-label="California Locations Hero">
         <picture className="hero-bg">
           <img
-            src="/images/hero-main.jpg"
+            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1920&auto=format&fit=crop"
             alt=""
             role="presentation"
             width="1920"
