@@ -16,7 +16,7 @@ const StaticHero: React.FC = () => {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'url(/images/hero-port-background.jpg?v=9)',
+          backgroundImage: 'url(/images/hero-port-background.jpg?v=10)',
           backgroundPosition: 'center center',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
