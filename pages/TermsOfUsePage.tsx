@@ -32,7 +32,7 @@ const TermsOfUsePage: React.FC = () => {
         {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
-            src="/images/hero-port-background-2.jpg"
+            src="/images/hero-main.jpg"
             alt="Legal documents representing website terms of use and legal agreements"
             className="w-full h-full object-cover object-center"
             loading="eager"
