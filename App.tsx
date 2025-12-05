@@ -24,6 +24,7 @@ const CareersPage = lazy(() => import('./pages/CareersPage'));
 const GeneralApplicationPage = lazy(() => import('./pages/GeneralApplicationPage'));
 const AttorneyAdvertisingPage = lazy(() => import('./pages/AttorneyAdvertisingPage'));
 const LosAngelesPortPage = lazy(() => import('./pages/LosAngelesPortPage'));
+const LosAngelesLongBeachPortCustomsAttorneyPage = lazy(() => import('./pages/LosAngelesLongBeachPortCustomsAttorneyPage'));
 const BayAreaTradeLawPage = lazy(() => import('./pages/BayAreaTradeLawPage'));
 const CalabasasCustomsAttorneyPage = lazy(() => import('./pages/CalabasasCustomsAttorneyPage'));
 const CustomsDefensePage = lazy(() => import('./pages/CustomsDefensePage'));
@@ -444,6 +445,7 @@ const App: React.FC = () => {
 
                 {/* Main Practice Area Pages */}
                 <Route path="/los-angeles-port-customs-attorney" element={<LosAngelesPortPage />} />
+                <Route path="/los-angeles-long-beach-port-customs-attorney" element={<LosAngelesLongBeachPortCustomsAttorneyPage />} />
                 <Route path="/bay-area-trade-law-attorney" element={<BayAreaTradeLawPage />} />
                 <Route path="/calabasas-customs-attorney" element={<CalabasasCustomsAttorneyPage />} />
                 <Route path="/customs-defense-litigation" element={<CustomsDefensePage />} />
