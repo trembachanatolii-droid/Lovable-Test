@@ -41,8 +41,8 @@ const AttorneyProfilePage: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
            <img
-             src="/images/hero-port-background-2.jpg"
-             alt="Anatolii Trembach - California international trade and customs attorney with expertise in CBP defense and import law"
+             src="/images/hero-attorney-advertising.jpg"
+             alt="Anatolii Trembach California State Bar certification - International trade and customs attorney credentials"
              className="w-full h-full object-cover"
              loading="eager"
              decoding="async"
