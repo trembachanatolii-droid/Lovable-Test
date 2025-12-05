@@ -212,6 +212,10 @@ const Header: React.FC = () => {
     return () => document.removeEventListener('keydown', handleTabKey);
   }, [isMenuOpen]);
 
+  // Determine if we should use light text (white) or dark text
+  // Light text: on home page when not scrolled, or on non-home pages (which have navy background)
+  const useLightText = !isHomePage || !isScrolled;
+
   // Memoized style objects to prevent recreation on every render
   const desktopNavStyle = useMemo(() => ({
     marginLeft: '1.05rem'
@@ -458,10 +462,6 @@ const Header: React.FC = () => {
     boxShadow: isScrolled || !isHomePage ? '0 2px 8px rgba(0,0,0,0.1)' : 'none',
     transition: 'background-color 0.3s, box-shadow 0.3s',
   }), [isScrolled, isHomePage]);
-
-  // Determine if we should use light text (white) or dark text
-  // Light text: on home page when not scrolled, or on non-home pages
-  const useLightText = !isHomePage || !isScrolled;
 
   // Search popup style
   const searchPopupOverlayStyle = useMemo((): React.CSSProperties => ({
