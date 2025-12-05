@@ -24,8 +24,8 @@ const StaticHero: React.FC = () => {
         aria-label="California port and shipping containers representing international trade"
       />
 
-      {/* Content - Positioned to match reference photo */}
-      <div className="relative z-10 h-full flex items-start pt-[20vh] md:pt-[22vh] lg:pt-[25vh]">
+      {/* Content - Positioned below fixed header (5rem = 80px) with additional spacing */}
+      <div className="relative z-10 h-full flex items-start pt-[140px] md:pt-[160px] lg:pt-[180px]">
         <div className="ml-6 md:ml-12 lg:ml-20 xl:ml-28 max-w-xl lg:max-w-2xl">
           <h1
             className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 md:mb-6"
