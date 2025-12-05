@@ -44,8 +44,8 @@ const AboutPage: React.FC = () => {
          {/* Background Image - LCP element, eager loaded */}
          <div className="absolute inset-0 z-0" aria-hidden="true">
            <img
-             src="/images/hero-main.jpg"
-             alt="California law office building representing Trembach Law Firm international trade and customs legal practice"
+             src="/images/hero-practice-areas.jpg"
+             alt="International trade law gavel on world map with scales of justice representing Trembach Law Firm legal practice"
              className="w-full h-full object-cover object-center"
              loading="eager"
              decoding="async"
