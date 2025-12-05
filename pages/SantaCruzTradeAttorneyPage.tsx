@@ -16,23 +16,23 @@ const SantaCruzTradeAttorneyPage: React.FC = () => {
     description: 'Santa Cruz trade attorney for agriculture exporters and seafood traders. Santa Cruz County produce, USDA compliance, maritime trade. Central Coast. (310) 744-1328.',
     canonical: 'santa-cruz-trade-attorney',
     ogType: 'website',
-    ogImage: \`\${siteConfig.siteUrl}/og-image-santa-cruz.jpg\`,
+    ogImage: `${siteConfig.siteUrl}/og-image-santa-cruz.jpg`,
     schema: [
       generateWebPageSchema({
         title: 'Santa Cruz Trade Attorney - Agriculture & Seafood Trade Compliance Lawyer',
         description: 'Serving Santa Cruz with expert agriculture export, seafood trade compliance, and maritime trade legal services for Central Coast businesses.',
-        url: \`\${siteConfig.siteUrl}/santa-cruz-trade-attorney\`,
+        url: `${siteConfig.siteUrl}/santa-cruz-trade-attorney`,
       }),
       generateBreadcrumbSchema([
-        { name: 'Home', url: \`\${siteConfig.siteUrl}/\` },
-        { name: 'Local Offices', url: \`\${siteConfig.siteUrl}/local-offices\` },
-        { name: 'Santa Cruz', url: \`\${siteConfig.siteUrl}/santa-cruz-trade-attorney\` }
+        { name: 'Home', url: `${siteConfig.siteUrl}/` },
+        { name: 'Local Offices', url: `${siteConfig.siteUrl}/local-offices` },
+        { name: 'Santa Cruz', url: `${siteConfig.siteUrl}/santa-cruz-trade-attorney` }
       ]),
       generateServiceSchema({
         name: 'Santa Cruz Trade Compliance Legal Services',
         description: 'Comprehensive agriculture export and seafood trade legal representation for Santa Cruz businesses. Expert services including Santa Cruz County produce exports, USDA phytosanitary certification, NOAA seafood compliance, FDA food safety, organic certification, and maritime trade law for California Central Coast.',
         serviceType: 'Agriculture & Maritime Trade Law',
-        url: \`\${siteConfig.siteUrl}/santa-cruz-trade-attorney\`,
+        url: `${siteConfig.siteUrl}/santa-cruz-trade-attorney`,
       }),
     ],
   });
