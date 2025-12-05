@@ -9,17 +9,30 @@ interface NavLinkProps {
   children: React.ReactNode;
   isSecondary?: boolean;
   currentRoute: string;
+  isScrolled: boolean;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href, children, isSecondary = false, currentRoute }) => {
+const NavLink: React.FC<NavLinkProps> = ({ href, children, isSecondary = false, currentRoute, isScrolled }) => {
   // Determine if this is the active page
   const isActive = href === currentRoute || (href === '/' && currentRoute === '/');
+
+  const linkStyle: React.CSSProperties = {
+    position: 'relative',
+    fontWeight: 500,
+    color: isScrolled ? 'var(--gray-dark)' : 'rgba(255,255,255,0.95)',
+    padding: '0.5rem 0',
+    transition: 'color 0.3s',
+    whiteSpace: 'nowrap',
+    fontSize: isSecondary ? '0.875rem' : '0.9375rem',
+    textDecoration: 'none',
+  };
 
   return (
     <Link
       to={href}
       aria-current={isActive ? 'page' : undefined}
-      className={`nav-link ${isSecondary ? 'text-sm text-neutral-darkGray hover:text-primary-navy' : 'text-base text-neutral-darkGray hover:text-primary-navy'}`}
+      className="nav-link"
+      style={linkStyle}
     >
       <span>{children}</span>
     </Link>
@@ -370,10 +383,16 @@ const Header: React.FC = () => {
           <div className="header-content">
             {/* Left: Logo */}
             <a href="#" onClick={handleLogoClick} className="logo" aria-label="Trembach Law Firm - Home">
-              <span className="logo-title">
+              <span
+                className="logo-title"
+                style={{ color: isScrolled ? 'var(--navy-primary)' : '#FFFFFF' }}
+              >
                 Trembach Law Firm
               </span>
-              <span className="logo-subtitle">
+              <span
+                className="logo-subtitle"
+                style={{ color: isScrolled ? 'var(--gray-dark)' : 'rgba(255,255,255,0.85)' }}
+              >
                 International Trade & Customs Law
               </span>
             </a>
@@ -381,7 +400,7 @@ const Header: React.FC = () => {
             {/* Center: Primary Navigation */}
             <nav aria-label="Main navigation" className="desktop-nav" style={desktopNavStyle}>
               {PRIMARY_NAV_LINKS.map(link => (
-                <NavLink key={link.label} href={link.href} currentRoute={currentRoute}>
+                <NavLink key={link.label} href={link.href} currentRoute={currentRoute} isScrolled={isScrolled}>
                   {link.label}
                 </NavLink>
               ))}
