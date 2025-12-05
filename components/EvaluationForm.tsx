@@ -5,60 +5,6 @@ import { triggerHaptic } from '../utils/haptics';
 // API endpoint for form submission
 const SUBMIT_API_ENDPOINT = '/.netlify/functions/submit-evaluation';
 
-const subjectOptions = {
-    'Customs & Import Compliance': [
-        'Customs Audits (Focused Assessments, Quick Response Audits, Surveys) & Audit Defense',
-        'CF-28 & CF-29 Notices (Requests for Information & Notices of Action)',
-        'Classification (Tariff Classification Disputes)',
-        'Customs Valuation (including assists, royalties & transfer pricing)',
-        'Country of Origin, Labeling, Marking & Origin Disputes',
-        'Liquidated Damages',
-        'Prior Disclosures',
-        'Seizures & Detentions',
-        'Forced Labor / Withhold Release Orders (WROs)',
-        'Duty Drawback Recovery',
-        'USMCA, Free Trade Agreements & Duty Preference Programs (including GSP)',
-        'M&A Customs & Trade Due Diligence',
-    ],
-    'Trade Remedies, Tariffs & Investigations': [
-        'AD/CVD (Antidumping & Countervailing Duty) Issues',
-        'Administrative Reviews',
-        'Scope Rulings & Scope Issues',
-        'EAPA Investigations Defense (Enforce and Protect Act)',
-        'Safeguard Tariff Issues',
-        'Section 301 Duties & Exclusion Requests',
-        'Section 232 Tariffs on Steel & Aluminum Products',
-        'S301 & 232 Exclusions',
-        'Tariffs & Penalties (advice, protests & litigation)',
-    ],
-    'Export Controls & Sanctions': [
-        'Export Controls Compliance (BIS / OFAC Administered Export Controls)',
-        'Export Process, Licensing & Export Agreements',
-        'Commodity Jurisdiction & Export Classification Issues',
-        'Deemed Export Issues',
-        'Sanctions, Embargoes & Denied Parties / Restricted Party Screening',
-        'Anti-boycott Compliance',
-        'Voluntary Self-Disclosures of Export Violations',
-        'Export Penalty Defense',
-    ],
-    'Trade & Maritime Litigation / Disputes': [
-        'Trade Litigation (tariffs, penalties, AD/CVD, customs & export matters)',
-        'Admiralty & Maritime Claims',
-        'Customs Brokerage Liability (claims & defenses)',
-        'Cargo Claims',
-        'Contract & International Trade Disputes',
-        'FMC Complaints & Disputes',
-        'Marine Insurance Coverage Claims',
-        'False Claims Act Defense (customs & trade related)',
-    ],
-    'Compliance Programs, Enforcement & Training': [
-        'Trade Compliance Programs (design, implementation & audits)',
-        'Trade Compliance Assessment and Maturity Framework',
-        'Enforcement Actions (customs, trade, export & sanctions)',
-        'Supply Chain Security',
-        'Seminars & Training (customs, trade, export controls & sanctions)',
-    ],
-};
 
 type InputModeType = 'none' | 'text' | 'decimal' | 'numeric' | 'tel' | 'search' | 'email' | 'url';
 
@@ -144,7 +90,6 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                 company: 'Company Name',
                 email: 'Email Address',
                 phone: 'Phone Number',
-                subject: 'Subject',
                 message: 'Tell us about your case'
             };
             error = `${fieldLabels[name] || name} is required`;
@@ -193,7 +138,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
         const formData = new FormData(form);
 
         // Validate all fields before submission
-        const requiredFields = ['fullName', 'lastName', 'company', 'email', 'phone', 'subject', 'message'];
+        const requiredFields = ['fullName', 'lastName', 'company', 'email', 'phone', 'message'];
         let hasErrors = false;
 
         requiredFields.forEach(field => {
@@ -223,7 +168,6 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                     company: formData.get('company'),
                     email: formData.get('email'),
                     phone: formData.get('phone'),
-                    subject: formData.get('subject'),
                     message: formData.get('message'),
                 }),
             });
@@ -261,8 +205,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                     subTextColor: 'text-text-secondary',
                     strongTextColor: 'text-primary-navy',
                     labelColor: 'text-primary-navy',
-                    inputBg: 'bg-white text-primary-navy placeholder-text-secondary border border-border-subtle focus:border-secondary-teal',
-                    selectArrowColor: 'text-primary-navy'
+                    inputBg: 'bg-white text-primary-navy placeholder-text-secondary border border-border-subtle focus:border-secondary-teal'
                 };
             case 'teal':
                 return {
@@ -272,8 +215,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                     subTextColor: 'text-primary-navy/80',
                     strongTextColor: 'text-primary-navy',
                     labelColor: 'text-primary-navy',
-                    inputBg: 'bg-white text-primary-navy placeholder-text-secondary border border-transparent focus:border-secondary-teal',
-                    selectArrowColor: 'text-primary-navy'
+                    inputBg: 'bg-white text-primary-navy placeholder-text-secondary border border-transparent focus:border-secondary-teal'
                 };
             case 'navy':
             default:
@@ -284,8 +226,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                     subTextColor: 'text-neutral-gray',
                     strongTextColor: 'text-white',
                     labelColor: 'text-white',
-                    inputBg: 'bg-primary-darkBlue text-white placeholder-neutral-gray',
-                    selectArrowColor: 'text-neutral-gray'
+                    inputBg: 'bg-primary-darkBlue text-white placeholder-neutral-gray'
                 };
         }
     };
@@ -382,57 +323,19 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                                 onBlur={(e) => validateField('email', e.target.value)}
                             />
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <FormField
-                                id="phone"
-                                label="Phone Number"
-                                type="tel"
-                                required
-                                placeholder=""
-                                autoComplete="tel"
-                                inputMode="tel"
-                                inputClassName={styles.inputBg}
-                                labelColor={styles.labelColor}
-                                error={fieldErrors.phone}
-                                onBlur={(e) => validateField('phone', e.target.value)}
-                            />
-                            <div>
-                                <label htmlFor="subject" className={`block text-base font-semibold mb-3 ${styles.labelColor}`}>
-                                    Subject <span className="text-secondary-teal" aria-label="required">*</span>
-                                </label>
-                                <div className="relative">
-                                    <select
-                                        id="subject"
-                                        name="subject"
-                                        required
-                                        aria-required="true"
-                                        aria-invalid={!!fieldErrors.subject}
-                                        aria-describedby={fieldErrors.subject ? 'subject-error' : undefined}
-                                        aria-label="Subject area of practice"
-                                        onBlur={(e) => validateField('subject', e.target.value)}
-                                        className={`w-full px-5 py-4 text-base rounded transition-all appearance-none pr-10 focus-visible:outline focus-visible:outline-3 focus-visible:outline-secondary-teal focus-visible:outline-offset-2 ${styles.inputBg}`}
-                                        defaultValue=""
-                                    >
-                                        <option value="" disabled>Select an area of interest</option>
-                                        {Object.entries(subjectOptions).map(([group, options]) => (
-                                            <optgroup label={group} key={group} className="font-bold text-base py-1 text-primary-navy">
-                                                {options.map(option => (
-                                                    <option key={option} value={option} className="text-sm font-normal text-text-primary">{option}</option>
-                                                ))}
-                                            </optgroup>
-                                        ))}
-                                    </select>
-                                    <div className={`pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 ${styles.selectArrowColor}`} aria-hidden="true">
-                                        <svg className="fill-current h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
-                                    </div>
-                                </div>
-                                {fieldErrors.subject && (
-                                    <span id="subject-error" className="text-red-400 text-base mt-1 block font-medium" role="alert">
-                                        {fieldErrors.subject}
-                                    </span>
-                                )}
-                            </div>
-                        </div>
+                        <FormField
+                            id="phone"
+                            label="Phone Number"
+                            type="tel"
+                            required
+                            placeholder=""
+                            autoComplete="tel"
+                            inputMode="tel"
+                            inputClassName={styles.inputBg}
+                            labelColor={styles.labelColor}
+                            error={fieldErrors.phone}
+                            onBlur={(e) => validateField('phone', e.target.value)}
+                        />
                         <div>
                             <FormField
                                 id="message"

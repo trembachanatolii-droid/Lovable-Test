@@ -26,7 +26,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children, isSecondary = false, 
     padding: '0.35rem 0',
     transition: 'color 0.3s',
     whiteSpace: 'nowrap',
-    fontSize: isSecondary ? '0.71rem' : '0.76rem',
+    fontSize: isSecondary ? '0.75rem' : '0.80rem',
     textDecoration: 'none',
   };
 
@@ -298,7 +298,7 @@ const Header: React.FC = () => {
     backgroundColor: useLightText ? 'rgba(255,255,255,0.15)' : 'var(--navy-primary)',
     color: 'white',
     textDecoration: 'none',
-    fontSize: '0.66rem',
+    fontSize: '0.69rem',
     fontWeight: 500,
     borderRadius: '2rem',
     transition: 'background-color 0.3s',
@@ -307,8 +307,8 @@ const Header: React.FC = () => {
   }), [useLightText]);
 
   const desktopPhoneSvgStyle = useMemo(() => ({
-    width: '0.81rem',
-    height: '0.81rem'
+    width: '0.85rem',
+    height: '0.85rem'
   }), []);
 
   const desktopPhoneInnerDivStyle = useMemo(() => ({
@@ -318,14 +318,14 @@ const Header: React.FC = () => {
   }), []);
 
   const desktopPhoneLabelStyle = useMemo(() => ({
-    fontSize: '0.61rem',
+    fontSize: '0.64rem',
     textTransform: 'uppercase' as const,
     letterSpacing: '0.03em'
   }), []);
 
   const desktopPhoneNumberStyle = useMemo(() => ({
     fontWeight: 600,
-    fontSize: '0.66rem'
+    fontSize: '0.69rem'
   }), []);
 
   const mobileMenuBtnStyle = useMemo(() => ({
