@@ -10,6 +10,11 @@ export interface ArticleMetadataItem {
 }
 
 export const articleMetadata: Record<string, ArticleMetadataItem> = {
+  // December 5, 2025 (3 articles)
+  'section-301-phase-one-hearing-december-2025-california': { date: 'DECEMBER 5, 2025', isoDate: '2025-12-05', readTime: '14 MIN READ' },
+  'usmca-withdrawal-uncertainty-california-december-2025': { date: 'DECEMBER 5, 2025', isoDate: '2025-12-05', readTime: '17 MIN READ' },
+  'de-minimis-impact-assessment-california-december-2025': { date: 'DECEMBER 5, 2025', isoDate: '2025-12-05', readTime: '29 MIN READ' },
+
   // December 4, 2025 (3 articles)
   'usmca-joint-review-2026-california-importers-december-2025': { date: 'DECEMBER 4, 2025', isoDate: '2025-12-04', readTime: '10 MIN READ' },
   'cbp-audit-enforcement-surge-california-december-2025': { date: 'DECEMBER 4, 2025', isoDate: '2025-12-04', readTime: '9 MIN READ' },
@@ -183,6 +188,11 @@ export const formatDateForDisplay = (date: string): string => {
 // Get category based on article ID (simplified mapping)
 export const getArticleCategory = (articleId: string): string => {
   const categoryMap: Record<string, string> = {
+    // December 5, 2025 Articles
+    'section-301-phase-one-hearing-december-2025-california': 'TRADE POLICY',
+    'usmca-withdrawal-uncertainty-california-december-2025': 'TRADE AGREEMENTS',
+    'de-minimis-impact-assessment-california-december-2025': 'CUSTOMS ENFORCEMENT',
+
     // December 4, 2025 Articles
     'usmca-joint-review-2026-california-importers-december-2025': 'TRADE AGREEMENTS',
     'cbp-audit-enforcement-surge-california-december-2025': 'COMPLIANCE AUDITS',

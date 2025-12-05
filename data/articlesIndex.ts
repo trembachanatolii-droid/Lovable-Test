@@ -13,6 +13,33 @@ export interface ArticlePreview {
 
 export const articlePreviews: ArticlePreview[] = [
   {
+    "id": "section-301-phase-one-hearing-december-2025-california",
+    "title": "Section 301 Phase One Agreement Investigation: December 16, 2025 USTR Hearing",
+    "subheading": "California Importers Face Critical Compliance Review as USTR Examines China's $200 Billion Purchase Commitments and IP Protection",
+    "intro": "On October 24, 2025, the United States Trade Representative initiated a comprehensive Section 301 investigation examining China's compliance with commitments made under the Economic and Trade Agreement Between the United States of America and the People's Republic of China, commonly known as the Phase One Agreement signed in January 2020 during the first Trump administration. The investigation scrutinizes whether China fulfilled its pledges regarding intellectual property protection, technology transfer restrictions, agricultural and manufactured goods purchases totaling $200 billion above 2017 baseline levels, financial services market access, and currency manipulation practices. The December 16, 2025 public hearing before the Section 301 Committee represents a pivotal moment for California importers, manufacturers, technology companies, and agricultural exporters whose business operations depend on US-China trade relations.",
+    "keywords": "Section 301 investigation attorney California, Phase One Agreement lawyer, USTR hearing representation, China trade compliance attorney California, Section 301 tariff lawyer, agricultural exports China attorney, technology transfer attorney California, IP protection trade lawyer, Section 301 exclusion attorney, USTR proceeding lawyer California, China tariff attorney, trade investigation representation California",
+    "publishedDate": "2025-12-05",
+    "lastModified": "2025-12-05"
+  },
+  {
+    "id": "usmca-withdrawal-uncertainty-california-december-2025",
+    "title": "USMCA Withdrawal Threat December 2025: California Importers Face North American Trade Agreement Uncertainty",
+    "subheading": "December 4, 2025 announcement by USTR Greer raises prospect of USMCA termination or bilateral restructuring ahead of July 2026 review, threatening $120 billion in California-Mexico-Canada trade relationships",
+    "intro": "On December 4, 2025, United States Trade Representative Jamieson Greer announced that the Trump administration is actively considering withdrawal from the United States-Mexico-Canada Agreement, sending shockwaves through California industries dependent on North American supply chains and cross-border trade. This announcement comes as USTR conducts three-day hearings in preparation for the mandatory July 2026 USMCA joint review required under Article 34.7 of the agreement and codified at 19 U.S.C. § 4621. USTR Greer must submit a comprehensive report to Congress by early January 2026 analyzing whether to extend USMCA or pursue alternative arrangements, including the administration's stated interest in splitting the trilateral agreement into separate bilateral deals with Canada and Mexico.",
+    "keywords": "USMCA withdrawal California, Trump USMCA termination 2025, Mexico trade agreement attorney California, Canada USMCA lawyer, bilateral trade deals attorney, California Mexico trade lawyer, USMCA compliance attorney, automotive rules of origin lawyer, agricultural tariff attorney California, customs attorney Los Angeles, international trade lawyer San Diego, USMCA joint review attorney, cross-border trade compliance, California importer attorney, USTR report legal counsel",
+    "publishedDate": "2025-12-05",
+    "lastModified": "2025-12-05"
+  },
+  {
+    "id": "de-minimis-impact-assessment-california-december-2025",
+    "title": "De Minimis Exemption Termination: Three-Month Impact Assessment for California Importers and E-Commerce Companies",
+    "subheading": "Executive Order 14324 eliminates $800 de minimis threshold on August 29, 2025, fundamentally transforming California e-commerce compliance requirements and CBP processing protocols",
+    "intro": "On August 29, 2025, Executive Order 14324 suspended the de minimis exemption for all countries except China, for which the exemption ended on May 2, 2025. This regulatory transformation eliminated the longstanding $800 threshold under 19 U.S.C. § 1321(a)(2)(C) that previously allowed low-value packages to enter the United States without formal customs entry procedures or tariff assessments. Prior to this change, de minimis shipments surged from 134 million packages in 2015 to 1.36 billion packages in 2024, with approximately 60 percent originating from China. The exemption termination requires every shipment, regardless of value, to undergo formal or informal customs entry procedures.",
+    "keywords": "de minimis exemption, Executive Order 14324, California e-commerce, customs entry requirements, postal tariffs, ACE system, low-value shipments, import compliance, CBP enforcement, international shipping, Section 321, merchandise processing fees, customs broker, California importers, cross-border returns",
+    "publishedDate": "2025-12-05",
+    "lastModified": "2025-12-05"
+  },
+  {
     "id": "usmca-joint-review-2026-california-importers-december-2025",
     "title": "USMCA Joint Review 2026: Critical Changes Ahead for California Importers and Cross-Border Trade Operations",
     "subheading": "As the July 2026 joint review approaches, California businesses face potential modifications to North America's largest trade agreement affecting billions in cross-border commerce",

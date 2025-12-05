@@ -11,8 +11,14 @@ import { tariffRevenueSurge2025Article } from './article-tariff-revenue-surge-20
 import { usmcaJointReview2026Article } from './article-usmca-joint-review-2026';
 import { cbpAuditEnforcementSurgeArticle } from './article-cbp-audit-enforcement-surge-2025';
 import { section232DerivativeProductsArticle } from './article-section-232-derivative-products-2025';
+import { section301PhaseOneHearingArticle } from './article-section-301-phase-one-hearing-december-2025';
+import { usmcaWithdrawalUncertaintyArticle } from './article-usmca-withdrawal-uncertainty-california-december-2025';
+import { deMinimisImpactAssessmentArticle } from './article-de-minimis-impact-assessment-california-2025';
 
 export const articles: ArticleData[] = [
+  section301PhaseOneHearingArticle,
+  usmcaWithdrawalUncertaintyArticle,
+  deMinimisImpactAssessmentArticle,
   usmcaJointReview2026Article,
   cbpAuditEnforcementSurgeArticle,
   section232DerivativeProductsArticle,
