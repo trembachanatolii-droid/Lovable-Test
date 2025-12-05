@@ -21,21 +21,21 @@ const StaticHero: React.FC = () => {
         }}
       />
 
-      {/* White gradient overlay from center to left - like Holland & Knight */}
+      {/* White gradient overlay - starts from center, fades to left with slight image visibility */}
       <div
-        className="absolute left-0 top-0 bottom-0 w-[65%] md:w-[60%] lg:w-[55%]"
+        className="absolute left-0 top-0 bottom-0 w-[70%] md:w-[65%] lg:w-[60%]"
         style={{
-          background: 'linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.98) 40%, rgba(255,255,255,0.85) 70%, rgba(255,255,255,0) 100%)',
+          background: 'linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.98) 50%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0.7) 100%)',
         }}
       />
 
-      {/* Content - Positioned like Holland & Knight */}
+      {/* Content - Positioned like Holland & Knight with proper margins */}
       <div className="relative z-10 h-full flex items-center">
-        <div className="ml-8 md:ml-12 lg:ml-16 xl:ml-24 max-w-xl">
+        <div className="ml-12 md:ml-16 lg:ml-24 xl:ml-32 max-w-xl">
           <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-garamond text-primary-navy leading-tight mb-6">
             California Trade and Customs Lawyer
             <br />
-            <span className="text-secondary-teal">Import | Export Attorney</span>
+            Import | Export Attorney
           </h1>
           <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
             Expert legal counsel for international trade compliance, CBP defense, and customs matters. We step in quickly to protect your shipments and your business.
