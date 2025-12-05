@@ -14,7 +14,7 @@ const StaticHero: React.FC = () => {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'url(/images/hero-port-background.jpg?v=12)',
+          backgroundImage: 'url(/images/hero-port-background.jpg?v=13)',
           backgroundPosition: 'center center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
@@ -40,8 +40,8 @@ const StaticHero: React.FC = () => {
               textShadow: '0 2px 4px rgba(0,0,0,0.3)',
             }}
           >
-            California Trade and Customs Lawyer
-            <br />
+            California Trade and<br />
+            Customs Lawyer<br />
             Import | Export Attorney
           </h1>
           <p

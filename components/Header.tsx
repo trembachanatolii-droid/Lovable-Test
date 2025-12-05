@@ -143,13 +143,12 @@ const Header: React.FC = () => {
   const handleSearchSubmit = useCallback((e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      // Split search query into words and show in popup
-      const words = searchQuery.trim().split(/\s+/).filter(word => word.length > 0);
-      setSearchResults(words);
-      setShowSearchPopup(true);
+      // Navigate to search results page with query parameter
+      navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+      setSearchQuery('');
       setIsSearchOpen(false);
     }
-  }, [searchQuery]);
+  }, [searchQuery, navigate]);
 
   const closeSearchPopup = useCallback(() => {
     setShowSearchPopup(false);
