@@ -376,9 +376,21 @@ const Header: React.FC = () => {
     e.currentTarget.style.backgroundColor = 'var(--teal-primary)';
   }, []);
 
+  // Header wrapper style with explicit background control
+  const headerWrapperStyle = useMemo((): React.CSSProperties => ({
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 100,
+    backgroundColor: isScrolled ? 'var(--white)' : 'transparent',
+    boxShadow: isScrolled ? '0 2px 8px rgba(0,0,0,0.1)' : 'none',
+    transition: 'background-color 0.3s, box-shadow 0.3s',
+  }), [isScrolled]);
+
   return (
     <>
-      <header role="banner" className={`header-wrapper ${isScrolled ? 'scrolled' : 'hero-mode'}`}>
+      <header role="banner" style={headerWrapperStyle}>
         <div className="container">
           <div className="header-content">
             {/* Left: Logo */}
