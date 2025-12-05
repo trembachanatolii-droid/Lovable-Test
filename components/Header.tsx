@@ -156,6 +156,29 @@ const Header: React.FC = () => {
     setSearchQuery('');
   }, []);
 
+  // Handle Escape key for search popup and inline search
+  useEffect(() => {
+    const handleSearchEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        if (showSearchPopup) {
+          closeSearchPopup();
+        }
+        if (isSearchOpen) {
+          setIsSearchOpen(false);
+          setSearchQuery('');
+        }
+      }
+    };
+
+    if (showSearchPopup || isSearchOpen) {
+      document.addEventListener('keydown', handleSearchEscape);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleSearchEscape);
+    };
+  }, [showSearchPopup, isSearchOpen, closeSearchPopup]);
+
   // Close menu on Escape key
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
