@@ -67,7 +67,7 @@ const SunnyvaleTechTradePage: React.FC = () => {
       <section className="hero" aria-label="Sunnyvale Tech Trade Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

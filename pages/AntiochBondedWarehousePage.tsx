@@ -66,7 +66,7 @@ const AntiochBondedWarehousePage: React.FC = () => {
       <section className="hero" aria-label="Antioch Bonded Warehouse Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

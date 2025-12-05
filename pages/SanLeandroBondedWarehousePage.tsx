@@ -66,7 +66,7 @@ const SanLeandroBondedWarehousePage: React.FC = () => {
       <section className="hero" aria-label="San Leandro Bonded Warehouse Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1586528116493-a029325540fa?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

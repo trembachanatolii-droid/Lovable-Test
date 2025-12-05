@@ -67,7 +67,7 @@ const LomaLindaCustomsBondPage: React.FC = () => {
       <section className="hero" aria-label="Loma Linda Customs Bond Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

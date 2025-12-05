@@ -67,7 +67,7 @@ const ModestoCustomsAttorneyPage: React.FC = () => {
       <section className="hero" aria-label="Modesto Customs Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

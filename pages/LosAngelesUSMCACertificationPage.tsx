@@ -67,7 +67,7 @@ const LosAngelesUSMCACertificationPage: React.FC = () => {
       <section className="hero" aria-label="Los Angeles USMCA Certification Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1521791055366-0d553872125f?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

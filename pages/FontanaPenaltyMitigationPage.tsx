@@ -66,7 +66,7 @@ const FontanaPenaltyMitigationPage: React.FC = () => {
       <section className="hero" aria-label="Fontana Customs Penalty Mitigation Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

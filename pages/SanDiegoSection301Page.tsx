@@ -66,7 +66,7 @@ const SanDiegoSection301Page: React.FC = () => {
       <section className="hero" aria-label="Section 301 Tariff Attorney San Diego Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1538964173425-93c8d4e2d6b5?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

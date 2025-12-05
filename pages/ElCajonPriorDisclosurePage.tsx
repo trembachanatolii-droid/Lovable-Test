@@ -67,7 +67,7 @@ const ElCajonPriorDisclosurePage: React.FC = () => {
       <section className="hero" aria-label="El Cajon Prior Disclosure Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

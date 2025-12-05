@@ -48,7 +48,7 @@ const LaPalmaTradeAttorneyPage: React.FC = () => {
       <section className="hero" aria-label="La Palma Trade Law Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

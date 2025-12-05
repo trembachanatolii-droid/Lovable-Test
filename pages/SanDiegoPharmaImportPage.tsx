@@ -67,7 +67,7 @@ const SanDiegoPharmaImportPage: React.FC = () => {
       <section className="hero" aria-label="San Diego Pharmaceutical Import Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

@@ -66,7 +66,7 @@ const OceansideImportCompliancePage: React.FC = () => {
       <section className="hero" aria-label="Oceanside Import Compliance Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1586374579378-f2c9fc5b8440?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

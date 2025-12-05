@@ -67,7 +67,7 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
       <section className="hero" aria-label="Bakersfield Oil & Energy Trade Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

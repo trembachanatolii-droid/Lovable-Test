@@ -67,7 +67,7 @@ const FresnoAgriculturalTradePage: React.FC = () => {
       <section className="hero" aria-label="Fresno Agricultural Trade Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

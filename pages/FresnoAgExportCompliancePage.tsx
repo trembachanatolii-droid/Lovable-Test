@@ -67,7 +67,7 @@ const FresnoAgExportCompliancePage: React.FC = () => {
       <section className="hero" aria-label="Fresno Agricultural Export Compliance Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

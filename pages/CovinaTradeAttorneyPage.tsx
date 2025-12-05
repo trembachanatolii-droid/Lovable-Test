@@ -47,7 +47,7 @@ const CovinaTradeAttorneyPage: React.FC = () => {
       <section className="hero" aria-label="Covina Trade Law Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1512879329677-8993e20d8aac?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

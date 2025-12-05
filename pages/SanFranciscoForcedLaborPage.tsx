@@ -67,7 +67,7 @@ const SanFranciscoForcedLaborPage: React.FC = () => {
       <section className="hero" aria-label="San Francisco Forced Labor Compliance Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

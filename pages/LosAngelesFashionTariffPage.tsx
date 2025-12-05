@@ -67,7 +67,7 @@ const LosAngelesFashionTariffPage: React.FC = () => {
       <section className="hero" aria-label="Los Angeles Fashion Tariff Lawyer Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

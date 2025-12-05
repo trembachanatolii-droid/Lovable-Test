@@ -66,7 +66,7 @@ const OntarioPenaltyMitigationPage: React.FC = () => {
       <section className="hero" aria-label="Ontario CA Customs Penalty Mitigation Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1565024722842-19e3331faebb?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

@@ -66,7 +66,7 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
       <section className="hero" aria-label="UFLPA Attorney Sacramento Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

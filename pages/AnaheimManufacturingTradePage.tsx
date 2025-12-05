@@ -67,7 +67,7 @@ const AnaheimManufacturingTradePage: React.FC = () => {
       <section className="hero" aria-label="Anaheim Manufacturing Trade Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"
