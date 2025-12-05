@@ -47,7 +47,7 @@ const WoodlandTradeAttorneyPage: React.FC = () => {
       <section className="hero" aria-label="Woodland Trade Law Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1464207687429-7505649dae38?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

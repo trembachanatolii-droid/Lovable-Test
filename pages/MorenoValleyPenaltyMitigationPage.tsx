@@ -66,7 +66,7 @@ const MorenoValleyPenaltyMitigationPage: React.FC = () => {
       <section className="hero" aria-label="Moreno Valley Customs Penalty Mitigation Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

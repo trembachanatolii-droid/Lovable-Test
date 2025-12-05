@@ -65,7 +65,7 @@ const SimiValleyExportControlPage: React.FC = () => {
       <section className="hero" aria-label="Simi Valley Export Control Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1457364887197-9150188c107b?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

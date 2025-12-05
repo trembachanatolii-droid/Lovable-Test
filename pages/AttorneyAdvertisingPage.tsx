@@ -31,7 +31,7 @@ const AttorneyAdvertisingPage: React.FC = () => {
         {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
-            src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt="Professional legal workplace representing attorney advertising disclosures and legal notices"
             className="w-full h-full object-cover object-center"
             loading="eager"

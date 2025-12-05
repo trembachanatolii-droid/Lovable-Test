@@ -67,7 +67,7 @@ const OntarioTradeCompliancePage: React.FC = () => {
       <section className="hero" aria-label="Ontario Trade Compliance Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

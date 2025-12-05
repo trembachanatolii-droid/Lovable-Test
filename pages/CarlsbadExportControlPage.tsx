@@ -65,7 +65,7 @@ const CarlsbadExportControlPage: React.FC = () => {
       <section className="hero" aria-label="Carlsbad Export Control Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

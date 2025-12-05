@@ -65,7 +65,7 @@ const SantaMariaExportControlPage: React.FC = () => {
       <section className="hero" aria-label="Santa Maria Export Control Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

@@ -78,7 +78,7 @@ const ElkGroveCountervailingPage: React.FC = () => {
       <section className="hero" aria-label="Elk Grove Countervailing Duty Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

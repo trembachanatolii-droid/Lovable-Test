@@ -48,7 +48,7 @@ const TurlockTradeAttorneyPage: React.FC = () => {
       <section className="hero" aria-label="Turlock Trade Law Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1594739798373-e79b8b5346a5?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

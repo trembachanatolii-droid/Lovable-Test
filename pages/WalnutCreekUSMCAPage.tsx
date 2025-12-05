@@ -66,7 +66,7 @@ const WalnutCreekUSMCAPage: React.FC = () => {
       <section className="hero" aria-label="Walnut Creek USMCA Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

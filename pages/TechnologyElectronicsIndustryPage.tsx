@@ -39,7 +39,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
       <section className="hero" aria-label="Technology Electronics Trade Law Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

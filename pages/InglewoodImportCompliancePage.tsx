@@ -66,7 +66,7 @@ const InglewoodImportCompliancePage: React.FC = () => {
       <section className="hero" aria-label="Inglewood Import Compliance Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

@@ -67,7 +67,7 @@ const LongBeachAntidumpingDefensePage: React.FC = () => {
       <section className="hero" aria-label="Long Beach Antidumping Defense Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

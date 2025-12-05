@@ -67,7 +67,7 @@ const SanDiegoCustomsLawyerPage: React.FC = () => {
       <section className="hero" aria-label="San Diego Customs Lawyer Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1580655653885-65763b2597d0?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

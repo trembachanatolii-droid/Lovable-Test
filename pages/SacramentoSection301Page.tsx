@@ -54,7 +54,7 @@ const SacramentoSection301Page: React.FC = () => {
       <section className="hero" aria-label="Section 301 Attorney Sacramento Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1500937386664-56d1dfef3c6c?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

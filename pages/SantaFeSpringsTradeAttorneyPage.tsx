@@ -48,7 +48,7 @@ const SantaFeSpringsTradeAttorneyPage: React.FC = () => {
       <section className="hero" aria-label="Santa Fe Springs Trade Law Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

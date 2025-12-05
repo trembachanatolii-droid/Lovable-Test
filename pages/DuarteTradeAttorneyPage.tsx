@@ -49,7 +49,7 @@ const DuarteTradeAttorneyPage: React.FC = () => {
       <section className="hero" aria-label="Duarte Trade Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"

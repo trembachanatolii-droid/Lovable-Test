@@ -66,7 +66,7 @@ const Trump2025TariffAttorneyPage: React.FC = () => {
       <section className="hero" aria-label="2025 Trump Tariff Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"
