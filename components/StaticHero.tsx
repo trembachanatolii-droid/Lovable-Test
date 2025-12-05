@@ -8,13 +8,13 @@ const StaticHero: React.FC = () => {
       aria-label="Hero"
       style={{ marginBottom: '-80px' }}
     >
-      {/* Background Image - Full coverage */}
+      {/* Background Image - Original sizing restored */}
       <div
         className="absolute inset-0"
         style={{
           backgroundImage: 'url(/images/hero-port-background.jpg?v=7)',
-          backgroundPosition: 'center center',
-          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundSize: '120% auto',
           backgroundRepeat: 'no-repeat',
           backgroundAttachment: 'scroll',
           backgroundColor: '#87CEEB',
@@ -38,7 +38,7 @@ const StaticHero: React.FC = () => {
       />
 
       {/* Content - Positioned in upper-middle third like Holland & Knight */}
-      <div className="relative z-10 h-full flex items-start pt-[15vh] md:pt-[18vh] lg:pt-[20vh]">
+      <div className="relative z-10 h-full flex items-start pt-[28vh] md:pt-[30vh] lg:pt-[32vh]">
         <div className="ml-8 md:ml-16 lg:ml-24 xl:ml-32 max-w-xl lg:max-w-2xl">
           <h1
             className="text-3xl md:text-4xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold leading-tight mb-6"
