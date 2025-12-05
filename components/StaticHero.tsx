@@ -7,51 +7,33 @@ const StaticHero: React.FC = () => {
       className="relative w-full overflow-hidden"
       aria-label="Hero"
       style={{
-        marginBottom: '-80px',
         minHeight: '100vh',
-        aspectRatio: '2 / 1'
       }}
     >
-      {/* Background Image - Full image, no zoom, no crop - with dimensions for CLS prevention */}
+      {/* Background Image - Full bleed cover mode */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'url(/images/hero-port-background.jpg?v=10)',
+          backgroundImage: 'url(/images/hero-port-background.jpg?v=11)',
           backgroundPosition: 'center center',
-          backgroundSize: 'contain',
+          backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          backgroundColor: '#000', // TODO: Add black to design system or use navy-dark
           minHeight: '100vh',
         }}
         role="img"
         aria-label="California port and shipping containers representing international trade"
       />
 
-      {/* White gradient overlay - Holland & Knight style: white on left, transparent on right */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background: `linear-gradient(
-            to right,
-            rgba(255,255,255,0.98) 0%,
-            rgba(255,255,255,0.95) 25%,
-            rgba(255,255,255,0.85) 40%,
-            rgba(255,255,255,0.6) 55%,
-            rgba(255,255,255,0.3) 70%,
-            rgba(255,255,255,0) 85%
-          )`,
-        }}
-      />
-
-      {/* Content - Positioned in upper-middle third like Holland & Knight */}
-      <div className="relative z-10 h-full flex items-start pt-[28vh] md:pt-[30vh] lg:pt-[32vh]">
-        <div className="ml-8 md:ml-16 lg:ml-24 xl:ml-32 max-w-xl lg:max-w-2xl">
+      {/* Content - Positioned to match reference photo */}
+      <div className="relative z-10 h-full flex items-start pt-[20vh] md:pt-[22vh] lg:pt-[25vh]">
+        <div className="ml-6 md:ml-12 lg:ml-20 xl:ml-28 max-w-xl lg:max-w-2xl">
           <h1
-            className="text-3xl md:text-4xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold leading-tight mb-6"
+            className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 md:mb-6"
             style={{
               fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-              color: 'var(--navy-primary)',
+              color: '#FFFFFF',
               letterSpacing: '-0.01em',
+              textShadow: '0 2px 4px rgba(0,0,0,0.3)',
             }}
           >
             California Trade and Customs Lawyer
@@ -59,23 +41,31 @@ const StaticHero: React.FC = () => {
             Import | Export Attorney
           </h1>
           <p
-            className="text-base md:text-lg mb-8 leading-relaxed max-w-lg"
+            className="text-sm md:text-base lg:text-lg mb-6 md:mb-8 leading-relaxed max-w-md lg:max-w-lg"
             style={{
               fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-              color: '#4a5568', // TODO: Add slate-gray color to design system
+              color: 'rgba(255,255,255,0.9)',
+              textShadow: '0 1px 2px rgba(0,0,0,0.2)',
             }}
           >
             Expert legal counsel for international trade compliance, CBP defense, and customs matters. We step in quickly to protect your shipments and your business.
           </p>
           <Link
             to="/contact"
-            className="inline-block px-8 py-4 text-base md:text-lg font-semibold text-white transition-colors duration-200"
+            className="inline-block px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold transition-all duration-200"
             style={{
-              backgroundColor: 'var(--teal-forest)',
+              backgroundColor: '#FFFFFF',
+              color: 'var(--navy-primary)',
               fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#236b55')} // TODO: Add darker teal hover state to design system
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--teal-forest)')}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.9)';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#FFFFFF';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
           >
             Get Free Consultation
           </Link>

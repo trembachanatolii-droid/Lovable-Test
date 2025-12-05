@@ -171,13 +171,13 @@ const Header: React.FC = () => {
 
   const searchLinkStyle = useMemo(() => ({
     padding: '0.5rem',
-    color: 'var(--gray-dark)',
+    color: isScrolled ? 'var(--gray-dark)' : 'rgba(255,255,255,0.9)',
     transition: 'color 0.3s',
     cursor: 'pointer',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center'
-  }), []);
+  }), [isScrolled]);
 
   const searchIconStyle = useMemo(() => ({
     height: '1.5rem',
@@ -189,15 +189,16 @@ const Header: React.FC = () => {
     alignItems: 'center',
     gap: '0.375rem',
     padding: '0.375rem 0.75rem',
-    backgroundColor: 'var(--navy-primary)',
+    backgroundColor: isScrolled ? 'var(--navy-primary)' : 'rgba(255,255,255,0.15)',
     color: 'white',
     textDecoration: 'none',
     fontSize: '0.8125rem',
     fontWeight: 500,
     borderRadius: '2rem',
     transition: 'background-color 0.3s',
-    whiteSpace: 'nowrap'
-  }), []);
+    whiteSpace: 'nowrap',
+    border: isScrolled ? 'none' : '1px solid rgba(255,255,255,0.3)'
+  }), [isScrolled]);
 
   const desktopPhoneSvgStyle = useMemo(() => ({
     width: '1rem',
@@ -231,15 +232,16 @@ const Header: React.FC = () => {
     alignItems: 'center',
     justifyContent: 'center',
     padding: '0.625rem',
-    backgroundColor: 'var(--teal-primary)',
+    backgroundColor: isScrolled ? 'var(--teal-primary)' : 'rgba(255,255,255,0.2)',
     color: 'white',
     borderRadius: '50%',
     width: '2.75rem',
     height: '2.75rem',
     minWidth: '44px',
     minHeight: '44px',
-    boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-  }), []);
+    boxShadow: isScrolled ? '0 2px 4px rgba(0,0,0,0.1)' : 'none',
+    border: isScrolled ? 'none' : '1px solid rgba(255,255,255,0.3)'
+  }), [isScrolled]);
 
   const mobilePhoneCtaSvgStyle = useMemo(() => ({
     width: '1.25rem',
@@ -251,13 +253,14 @@ const Header: React.FC = () => {
     alignItems: 'center',
     justifyContent: 'center',
     padding: '0.625rem',
-    backgroundColor: 'var(--navy-primary)',
+    backgroundColor: isScrolled ? 'var(--navy-primary)' : 'rgba(255,255,255,0.2)',
     color: 'white',
     borderRadius: '0.375rem',
     minWidth: '44px',
     minHeight: '44px',
-    boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-  }), []);
+    boxShadow: isScrolled ? '0 2px 4px rgba(0,0,0,0.1)' : 'none',
+    border: isScrolled ? 'none' : '1px solid rgba(255,255,255,0.3)'
+  }), [isScrolled]);
 
   const menuIconStyle = useMemo(() => ({
     height: '1.5rem',
@@ -345,12 +348,12 @@ const Header: React.FC = () => {
 
   // Stable event handlers for hover effects
   const handleDesktopPhoneMouseEnter = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.style.backgroundColor = 'var(--teal-primary)';
-  }, []);
+    e.currentTarget.style.backgroundColor = isScrolled ? 'var(--teal-primary)' : 'rgba(255,255,255,0.25)';
+  }, [isScrolled]);
 
   const handleDesktopPhoneMouseLeave = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.style.backgroundColor = 'var(--navy-primary)';
-  }, []);
+    e.currentTarget.style.backgroundColor = isScrolled ? 'var(--navy-primary)' : 'rgba(255,255,255,0.15)';
+  }, [isScrolled]);
 
   const handleMobilePhoneLinkMouseEnter = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
     e.currentTarget.style.backgroundColor = 'var(--teal-forest)';
@@ -362,7 +365,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header role="banner" className={`header-wrapper ${isScrolled ? 'scrolled' : ''}`}>
+      <header role="banner" className={`header-wrapper ${isScrolled ? 'scrolled' : 'hero-mode'}`}>
         <div className="container">
           <div className="header-content">
             {/* Left: Logo */}
