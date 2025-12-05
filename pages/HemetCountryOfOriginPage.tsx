@@ -66,7 +66,7 @@ const HemetCountryOfOriginPage: React.FC = () => {
       <section className="hero" aria-label="Hemet Country of Origin Attorney Hero">
         <picture className="hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1920&auto=format&fit=crop"
+            src="/images/hero-port-background.jpg"
             alt=""
             role="presentation"
             width="1920"
