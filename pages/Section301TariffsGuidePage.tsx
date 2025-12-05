@@ -65,7 +65,7 @@ const Section301TariffsGuidePage: React.FC = () => {
             Strategic compliance and mitigation for California importers navigating China trade tariffs
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button onClick={() => scrollToSection('overview')} className="hero-cta">Learn More</button>
+            <button onClick={() => scrollToSection('overview')} className="hero-cta">Explore Section 301 Guide</button>
             <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>

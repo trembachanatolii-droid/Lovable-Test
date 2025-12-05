@@ -4,20 +4,27 @@ import { Link } from 'react-router-dom';
 const StaticHero: React.FC = () => {
   return (
     <section
-      className="relative w-full h-screen overflow-hidden"
+      className="relative w-full overflow-hidden"
       aria-label="Hero"
-      style={{ marginBottom: '-80px' }}
+      style={{
+        marginBottom: '-80px',
+        minHeight: '100vh',
+        aspectRatio: '2 / 1'
+      }}
     >
-      {/* Background Image - Full image, no zoom, no crop */}
+      {/* Background Image - Full image, no zoom, no crop - with dimensions for CLS prevention */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'url(/images/hero-port-background.jpg?v=8)',
+          backgroundImage: 'url(/images/hero-port-background.jpg?v=9)',
           backgroundPosition: 'center center',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
-          backgroundColor: '#000',
+          backgroundColor: '#000', // TODO: Add black to design system or use navy-dark
+          minHeight: '100vh',
         }}
+        role="img"
+        aria-label="California port and shipping containers representing international trade"
       />
 
       {/* White gradient overlay - Holland & Knight style: white on left, transparent on right */}
@@ -43,7 +50,7 @@ const StaticHero: React.FC = () => {
             className="text-3xl md:text-4xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold leading-tight mb-6"
             style={{
               fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-              color: '#012169',
+              color: 'var(--navy-primary)',
               letterSpacing: '-0.01em',
             }}
           >
@@ -55,7 +62,7 @@ const StaticHero: React.FC = () => {
             className="text-base md:text-lg mb-8 leading-relaxed max-w-lg"
             style={{
               fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-              color: '#4a5568',
+              color: '#4a5568', // TODO: Add slate-gray color to design system
             }}
           >
             Expert legal counsel for international trade compliance, CBP defense, and customs matters. We step in quickly to protect your shipments and your business.
@@ -64,11 +71,11 @@ const StaticHero: React.FC = () => {
             to="/contact"
             className="inline-block px-8 py-4 text-base md:text-lg font-semibold text-white transition-colors duration-200"
             style={{
-              backgroundColor: '#2D8469',
+              backgroundColor: 'var(--teal-forest)',
               fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#236b55')}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#2D8469')}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#236b55')} // TODO: Add darker teal hover state to design system
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--teal-forest)')}
           >
             Get Free Consultation
           </Link>

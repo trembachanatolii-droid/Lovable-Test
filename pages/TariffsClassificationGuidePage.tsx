@@ -91,7 +91,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
             Expert insights on HTS classification, antidumping/countervailing duties, Section 301/232 tariffs, trade remedies, and customs valuation for California importers.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button onClick={() => scrollToSection('hts-classification')} className="hero-cta">Learn More</button>
+            <button onClick={() => scrollToSection('hts-classification')} className="hero-cta">Explore Classification Guide</button>
             <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>

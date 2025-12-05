@@ -66,7 +66,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
             Complete strategy for navigating the Uyghur Forced Labor Prevention Act — from supply chain due diligence to detention defense.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button onClick={() => scrollToSection('overview')} className="hero-cta">Learn More</button>
+            <button onClick={() => scrollToSection('overview')} className="hero-cta">Explore UFLPA Compliance</button>
             <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>

@@ -519,7 +519,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-                <h4 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Learn More</h4>
+                <h4 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Additional Resources</h4>
                 <div className="space-y-0">
                   <div className="service-link-item">
                     <Link to="/trade-law-faq" className="service-link">

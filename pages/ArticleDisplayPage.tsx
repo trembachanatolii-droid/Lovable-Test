@@ -125,7 +125,7 @@ const ArticleDisplayPage: React.FC = () => {
   if (!article) {
     return (
       <div className="pt-32 pb-20 text-center min-h-[60vh]">
-        <h1 className="text-2xl font-garamond text-primary-navy">Article not found</h1>
+        <h2 className="text-2xl font-garamond text-primary-navy">Article not found</h2>
         <Link to="/news" className="text-secondary-teal underline mt-4 block">Return to News</Link>
       </div>
     );
