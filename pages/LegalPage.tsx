@@ -161,7 +161,7 @@ const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
         {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
-            src="/images/hero-port-background.jpg"
+            src="/images/hero-port-background-2.jpg"
             alt="Professional businessperson representing legal terms and website policies"
             className="w-full h-full object-cover object-center"
             loading="eager"

@@ -52,7 +52,7 @@ const IrvineCustomsSeizurePage: React.FC = () => {
     <div className="font-montserrat text-neutral-darkGray bg-white min-h-screen">
       <section className="hero" aria-label="Customs Seizure Attorney Irvine Hero">
         <picture className="hero-bg">
-          <img src="/images/hero-port-background.jpg" alt="" role="presentation" width="1920" height="1080" loading="eager" decoding="async" className="hero-bg-image" />
+          <img src="/images/hero-port-background-2.jpg" alt="" role="presentation" width="1920" height="1080" loading="eager" decoding="async" className="hero-bg-image" />
         </picture>
         <div className="hero-overlay" aria-hidden="true"></div>
         <div className="container">
