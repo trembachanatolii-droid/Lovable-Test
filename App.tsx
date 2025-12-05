@@ -43,6 +43,7 @@ const Section301TariffsGuidePage = lazy(() => import('./pages/Section301TariffsG
 const UFLPAComplianceGuidePage = lazy(() => import('./pages/UFLPAComplianceGuidePage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const CaliforniaLocationsPage = lazy(() => import('./pages/CaliforniaLocationsPage'));
+const SearchResultsPage = lazy(() => import('./pages/SearchResultsPage'));
 
 // Location-specific pages - California cities and regions
 const AnaheimCustomsAttorneyPage = lazy(() => import('./pages/AnaheimCustomsAttorneyPage'));
@@ -130,8 +131,84 @@ const TorranceTradeAttorneyPage = lazy(() => import('./pages/TorranceTradeAttorn
 const VallejoTariffAttorneyPage = lazy(() => import('./pages/VallejoTariffAttorneyPage'));
 const VisaliaTariffLawyerPage = lazy(() => import('./pages/VisaliaTariffLawyerPage'));
 
+// Batch 2 - California City Trade Attorney Pages (17 new cities)
+const NovatoTradeAttorneyPage = lazy(() => import('./pages/NovatoTradeAttorneyPage'));
+const BrentwoodTradeAttorneyPage = lazy(() => import('./pages/BrentwoodTradeAttorneyPage'));
+const PittsburgTradeAttorneyPage = lazy(() => import('./pages/PittsburgTradeAttorneyPage'));
+const PacificaTradeAttorneyPage = lazy(() => import('./pages/PacificaTradeAttorneyPage'));
+const SouthSanFranciscoTradeAttorneyPage = lazy(() => import('./pages/SouthSanFranciscoTradeAttorneyPage'));
+const SanBrunoTradeAttorneyPage = lazy(() => import('./pages/SanBrunoTradeAttorneyPage'));
+const BurlingameTradeAttorneyPage = lazy(() => import('./pages/BurlingameTradeAttorneyPage'));
+const SanCarlosTradeAttorneyPage = lazy(() => import('./pages/SanCarlosTradeAttorneyPage'));
+const FosterCityTradeAttorneyPage = lazy(() => import('./pages/FosterCityTradeAttorneyPage'));
+const MenloParkTradeAttorneyPage = lazy(() => import('./pages/MenloParkTradeAttorneyPage'));
+const LosAltosTradeAttorneyPage = lazy(() => import('./pages/LosAltosTradeAttorneyPage'));
+const SaratogaTradeAttorneyPage = lazy(() => import('./pages/SaratogaTradeAttorneyPage'));
+const CampbellTradeAttorneyPage = lazy(() => import('./pages/CampbellTradeAttorneyPage'));
+const LosGatosTradeAttorneyPage = lazy(() => import('./pages/LosGatosTradeAttorneyPage'));
+const MorganHillTradeAttorneyPage = lazy(() => import('./pages/MorganHillTradeAttorneyPage'));
+const HollisterTradeAttorneyPage = lazy(() => import('./pages/HollisterTradeAttorneyPage'));
+const MaderaTradeAttorneyPage = lazy(() => import('./pages/MaderaTradeAttorneyPage'));
+
 // Trending 2025 Tariff Pages
 const Trump2025TariffAttorneyPage = lazy(() => import('./pages/Trump2025TariffAttorneyPage'));
+
+// NEW: Batch 8 - Additional CA City Trade Attorney Pages (17 cities)
+const SanMarcosTradeAttorneyPage = lazy(() => import('./pages/SanMarcosTradeAttorneyPage'));
+const TustinTradeAttorneyPage = lazy(() => import('./pages/TustinTradeAttorneyPage'));
+const WhittierTradeAttorneyPage = lazy(() => import('./pages/WhittierTradeAttorneyPage'));
+const NewportBeachTradeAttorneyPage = lazy(() => import('./pages/NewportBeachTradeAttorneyPage'));
+const AlamedaTradeAttorneyPage = lazy(() => import('./pages/AlamedaTradeAttorneyPage'));
+const MountainViewTradeAttorneyPage = lazy(() => import('./pages/MountainViewTradeAttorneyPage'));
+const PaloAltoTradeAttorneyPage = lazy(() => import('./pages/PaloAltoTradeAttorneyPage'));
+const CupertinoTradeAttorneyPage = lazy(() => import('./pages/CupertinoTradeAttorneyPage'));
+const MilpitasTradeAttorneyPage = lazy(() => import('./pages/MilpitasTradeAttorneyPage'));
+const UnionCityTradeAttorneyPage = lazy(() => import('./pages/UnionCityTradeAttorneyPage'));
+const NewarkTradeAttorneyPage = lazy(() => import('./pages/NewarkTradeAttorneyPage'));
+const DublinTradeAttorneyPage = lazy(() => import('./pages/DublinTradeAttorneyPage'));
+const GilroyTradeAttorneyPage = lazy(() => import('./pages/GilroyTradeAttorneyPage'));
+const MontereyTradeAttorneyPage = lazy(() => import('./pages/MontereyTradeAttorneyPage'));
+const SantaCruzTradeAttorneyPage = lazy(() => import('./pages/SantaCruzTradeAttorneyPage'));
+const PetalumaTradeAttorneyPage = lazy(() => import('./pages/PetalumaTradeAttorneyPage'));
+const SanRafaelTradeAttorneyPage = lazy(() => import('./pages/SanRafaelTradeAttorneyPage'));
+
+// Batch 3 - Central Valley & Sacramento Region Trade Attorney Pages (17 new cities)
+const MercedTradeAttorneyPage = lazy(() => import('./pages/MercedTradeAttorneyPage'));
+const TurlockTradeAttorneyPage = lazy(() => import('./pages/TurlockTradeAttorneyPage'));
+const LosBanosTradeAttorneyPage = lazy(() => import('./pages/LosBanosTradeAttorneyPage'));
+const CeresTradeAttorneyPage = lazy(() => import('./pages/CeresTradeAttorneyPage'));
+const LodiTradeAttorneyPage = lazy(() => import('./pages/LodiTradeAttorneyPage'));
+const GaltTradeAttorneyPage = lazy(() => import('./pages/GaltTradeAttorneyPage'));
+const FolsomTradeAttorneyPage = lazy(() => import('./pages/FolsomTradeAttorneyPage'));
+const CitrusHeightsTradeAttorneyPage = lazy(() => import('./pages/CitrusHeightsTradeAttorneyPage'));
+const RanchoCordovaTradeAttorneyPage = lazy(() => import('./pages/RanchoCordovaTradeAttorneyPage'));
+const RocklinTradeAttorneyPage = lazy(() => import('./pages/RocklinTradeAttorneyPage'));
+const LincolnTradeAttorneyPage = lazy(() => import('./pages/LincolnTradeAttorneyPage'));
+const WoodlandTradeAttorneyPage = lazy(() => import('./pages/WoodlandTradeAttorneyPage'));
+const DavisTradeAttorneyPage = lazy(() => import('./pages/DavisTradeAttorneyPage'));
+const SuisunCityTradeAttorneyPage = lazy(() => import('./pages/SuisunCityTradeAttorneyPage'));
+const BeniciaTradeAttorneyPage = lazy(() => import('./pages/BeniciaTradeAttorneyPage'));
+const MartinezTradeAttorneyPage = lazy(() => import('./pages/MartinezTradeAttorneyPage'));
+const CovinaTradeAttorneyPage = lazy(() => import('./pages/CovinaTradeAttorneyPage'));
+
+// Batch 5 - Gateway Cities & Orange County Trade Attorney Pages (17 cities)
+const LakewoodTradeAttorneyPage = lazy(() => import('./pages/LakewoodTradeAttorneyPage'));
+const CerritosTradeAttorneyPage = lazy(() => import('./pages/CerritosTradeAttorneyPage'));
+const ArtesiaTradeAttorneyPage = lazy(() => import('./pages/ArtesiaTradeAttorneyPage'));
+const LaMiradaTradeAttorneyPage = lazy(() => import('./pages/LaMiradaTradeAttorneyPage'));
+const NorwalkTradeAttorneyPage = lazy(() => import('./pages/NorwalkTradeAttorneyPage'));
+const SantaFeSpring sTradeAttorneyPage = lazy(() => import('./pages/SantaFeSpring sTradeAttorneyPage'));
+const LaHabraTradeAttorneyPage = lazy(() => import('./pages/LaHabraTradeAttorneyPage'));
+const BreaTradeAttorneyPage = lazy(() => import('./pages/BreaTradeAttorneyPage'));
+const YorbaLindaTradeAttorneyPage = lazy(() => import('./pages/YorbaLindaTradeAttorneyPage'));
+const PlacentiaTradeAttorneyPage = lazy(() => import('./pages/PlacentiaTradeAttorneyPage'));
+const BuenaParkTradeAttorneyPage = lazy(() => import('./pages/BuenaParkTradeAttorneyPage'));
+const CypressTradeAttorneyPage = lazy(() => import('./pages/CypressTradeAttorneyPage'));
+const LaPalmaTradeAttorneyPage = lazy(() => import('./pages/LaPalmaTradeAttorneyPage'));
+const StantonTradeAttorneyPage = lazy(() => import('./pages/StantonTradeAttorneyPage'));
+const WestminsterTradeAttorneyPage = lazy(() => import('./pages/WestminsterTradeAttorneyPage'));
+const FountainValleyTradeAttorneyPage = lazy(() => import('./pages/FountainValleyTradeAttorneyPage'));
+const SealBeachTradeAttorneyPage = lazy(() => import('./pages/SealBeachTradeAttorneyPage'));
 
 // NEW: Keyword-City Expansion Pages (1000+ keywords)
 const IrvineCBPAuditDefensePage = lazy(() => import('./pages/IrvineCBPAuditDefensePage'));
@@ -281,6 +358,25 @@ const YucaipaCustomsBondPage = lazy(() => import('./pages/YucaipaCustomsBondPage
 const LomaLindaCustomsBondPage = lazy(() => import('./pages/LomaLindaCustomsBondPage'));
 const UplandCustomsBondPage = lazy(() => import('./pages/UplandCustomsBondPage'));
 
+// Batch 4 - San Gabriel Valley Trade Attorney Pages (17 new cities)
+const AzusaTradeAttorneyPage = lazy(() => import('./pages/AzusaTradeAttorneyPage'));
+const GlendoraTradeAttorneyPage = lazy(() => import('./pages/GlendoraTradeAttorneyPage'));
+const LaVerneTradeAttorneyPage = lazy(() => import('./pages/LaVerneTradeAttorneyPage'));
+const ClaremontTradeAttorneyPage = lazy(() => import('./pages/ClaremontTradeAttorneyPage'));
+const SanDimasTradeAttorneyPage = lazy(() => import('./pages/SanDimasTradeAttorneyPage'));
+const ArcadiaTradeAttorneyPage = lazy(() => import('./pages/ArcadiaTradeAttorneyPage'));
+const MonroviaTradeAttorneyPage = lazy(() => import('./pages/MonroviaTradeAttorneyPage'));
+const DuarteTradeAttorneyPage = lazy(() => import('./pages/DuarteTradeAttorneyPage'));
+const AlhambraTradeAttorneyPage = lazy(() => import('./pages/AlhambraTradeAttorneyPage'));
+const TempleCityTradeAttorneyPage = lazy(() => import('./pages/TempleCityTradeAttorneyPage'));
+const RosemeadTradeAttorneyPage = lazy(() => import('./pages/RosemeadTradeAttorneyPage'));
+const SanGabrielTradeAttorneyPage = lazy(() => import('./pages/SanGabrielTradeAttorneyPage'));
+const MontebelloTradeAttorneyPage = lazy(() => import('./pages/MontebelloTradeAttorneyPage'));
+const PicoRiveraTradeAttorneyPage = lazy(() => import('./pages/PicoRiveraTradeAttorneyPage'));
+const BellGardensTradeAttorneyPage = lazy(() => import('./pages/BellGardensTradeAttorneyPage'));
+const ParamountTradeAttorneyPage = lazy(() => import('./pages/ParamountTradeAttorneyPage'));
+const BellflowerTradeAttorneyPage = lazy(() => import('./pages/BellflowerTradeAttorneyPage'));
+
 // Loading fallback component with explicit height to prevent CLS
 const PageLoader: React.FC = () => (
   <div
@@ -337,6 +433,9 @@ const App: React.FC = () => {
 
                 {/* Dynamic Article Route */}
                 <Route path="/article/:articleId" element={<ArticleDisplayPage />} />
+
+                {/* Search Route */}
+                <Route path="/search" element={<SearchResultsPage />} />
 
                 {/* California Locations - Multiple aliases */}
                 <Route path="/california-locations" element={<CaliforniaLocationsPage />} />
@@ -659,8 +758,84 @@ const App: React.FC = () => {
                 <Route path="/vallejo-tariff-attorney" element={<VallejoTariffAttorneyPage />} />
                 <Route path="/visalia-tariff-lawyer" element={<VisaliaTariffLawyerPage />} />
 
+                {/* Batch 2 - California City Trade Attorney Pages (17 new cities) */}
+                <Route path="/novato-trade-attorney" element={<NovatoTradeAttorneyPage />} />
+                <Route path="/brentwood-trade-attorney" element={<BrentwoodTradeAttorneyPage />} />
+                <Route path="/pittsburg-trade-attorney" element={<PittsburgTradeAttorneyPage />} />
+                <Route path="/pacifica-trade-attorney" element={<PacificaTradeAttorneyPage />} />
+                <Route path="/south-san-francisco-trade-attorney" element={<SouthSanFranciscoTradeAttorneyPage />} />
+                <Route path="/san-bruno-trade-attorney" element={<SanBrunoTradeAttorneyPage />} />
+                <Route path="/burlingame-trade-attorney" element={<BurlingameTradeAttorneyPage />} />
+                <Route path="/san-carlos-trade-attorney" element={<SanCarlosTradeAttorneyPage />} />
+                <Route path="/foster-city-trade-attorney" element={<FosterCityTradeAttorneyPage />} />
+                <Route path="/menlo-park-trade-attorney" element={<MenloParkTradeAttorneyPage />} />
+                <Route path="/los-altos-trade-attorney" element={<LosAltosTradeAttorneyPage />} />
+                <Route path="/saratoga-trade-attorney" element={<SaratogaTradeAttorneyPage />} />
+                <Route path="/campbell-trade-attorney" element={<CampbellTradeAttorneyPage />} />
+                <Route path="/los-gatos-trade-attorney" element={<LosGatosTradeAttorneyPage />} />
+                <Route path="/morgan-hill-trade-attorney" element={<MorganHillTradeAttorneyPage />} />
+                <Route path="/hollister-trade-attorney" element={<HollisterTradeAttorneyPage />} />
+                <Route path="/madera-trade-attorney" element={<MaderaTradeAttorneyPage />} />
+
                 {/* Trending 2025 Tariff Pages */}
                 <Route path="/trump-2025-tariff-attorney" element={<Trump2025TariffAttorneyPage />} />
+
+                {/* Batch 8 - Additional CA City Trade Attorney Pages (17 cities) */}
+                <Route path="/san-marcos-trade-attorney" element={<SanMarcosTradeAttorneyPage />} />
+                <Route path="/tustin-trade-attorney" element={<TustinTradeAttorneyPage />} />
+                <Route path="/whittier-trade-attorney" element={<WhittierTradeAttorneyPage />} />
+                <Route path="/newport-beach-trade-attorney" element={<NewportBeachTradeAttorneyPage />} />
+                <Route path="/alameda-trade-attorney" element={<AlamedaTradeAttorneyPage />} />
+                <Route path="/mountain-view-trade-attorney" element={<MountainViewTradeAttorneyPage />} />
+                <Route path="/palo-alto-trade-attorney" element={<PaloAltoTradeAttorneyPage />} />
+                <Route path="/cupertino-trade-attorney" element={<CupertinoTradeAttorneyPage />} />
+                <Route path="/milpitas-trade-attorney" element={<MilpitasTradeAttorneyPage />} />
+                <Route path="/union-city-trade-attorney" element={<UnionCityTradeAttorneyPage />} />
+                <Route path="/newark-trade-attorney" element={<NewarkTradeAttorneyPage />} />
+                <Route path="/dublin-trade-attorney" element={<DublinTradeAttorneyPage />} />
+                <Route path="/gilroy-trade-attorney" element={<GilroyTradeAttorneyPage />} />
+                <Route path="/monterey-trade-attorney" element={<MontereyTradeAttorneyPage />} />
+                <Route path="/santa-cruz-trade-attorney" element={<SantaCruzTradeAttorneyPage />} />
+                <Route path="/petaluma-trade-attorney" element={<PetalumaTradeAttorneyPage />} />
+                <Route path="/san-rafael-trade-attorney" element={<SanRafaelTradeAttorneyPage />} />
+
+                {/* Batch 3 - Central Valley & Sacramento Region Trade Attorney Pages (17 new cities) */}
+                <Route path="/merced-trade-attorney" element={<MercedTradeAttorneyPage />} />
+                <Route path="/turlock-trade-attorney" element={<TurlockTradeAttorneyPage />} />
+                <Route path="/los-banos-trade-attorney" element={<LosBanosTradeAttorneyPage />} />
+                <Route path="/ceres-trade-attorney" element={<CeresTradeAttorneyPage />} />
+                <Route path="/lodi-trade-attorney" element={<LodiTradeAttorneyPage />} />
+                <Route path="/galt-trade-attorney" element={<GaltTradeAttorneyPage />} />
+                <Route path="/folsom-trade-attorney" element={<FolsomTradeAttorneyPage />} />
+                <Route path="/citrus-heights-trade-attorney" element={<CitrusHeightsTradeAttorneyPage />} />
+                <Route path="/rancho-cordova-trade-attorney" element={<RanchoCordovaTradeAttorneyPage />} />
+                <Route path="/rocklin-trade-attorney" element={<RocklinTradeAttorneyPage />} />
+                <Route path="/lincoln-trade-attorney" element={<LincolnTradeAttorneyPage />} />
+                <Route path="/woodland-trade-attorney" element={<WoodlandTradeAttorneyPage />} />
+                <Route path="/davis-trade-attorney" element={<DavisTradeAttorneyPage />} />
+                <Route path="/suisun-city-trade-attorney" element={<SuisunCityTradeAttorneyPage />} />
+                <Route path="/benicia-trade-attorney" element={<BeniciaTradeAttorneyPage />} />
+                <Route path="/martinez-trade-attorney" element={<MartinezTradeAttorneyPage />} />
+                <Route path="/covina-trade-attorney" element={<CovinaTradeAttorneyPage />} />
+
+                {/* Batch 5 - Gateway Cities & Orange County Trade Attorney Pages (17 cities) */}
+                <Route path="/lakewood-trade-attorney" element={<LakewoodTradeAttorneyPage />} />
+                <Route path="/cerritos-trade-attorney" element={<CerritosTradeAttorneyPage />} />
+                <Route path="/artesia-trade-attorney" element={<ArtesiaTradeAttorneyPage />} />
+                <Route path="/la-mirada-trade-attorney" element={<LaMiradaTradeAttorneyPage />} />
+                <Route path="/norwalk-trade-attorney" element={<NorwalkTradeAttorneyPage />} />
+                <Route path="/santa-fe-springs-trade-attorney" element={<SantaFeSpring sTradeAttorneyPage />} />
+                <Route path="/la-habra-trade-attorney" element={<LaHabraTradeAttorneyPage />} />
+                <Route path="/brea-trade-attorney" element={<BreaTradeAttorneyPage />} />
+                <Route path="/yorba-linda-trade-attorney" element={<YorbaLindaTradeAttorneyPage />} />
+                <Route path="/placentia-trade-attorney" element={<PlacentiaTradeAttorneyPage />} />
+                <Route path="/buena-park-trade-attorney" element={<BuenaParkTradeAttorneyPage />} />
+                <Route path="/cypress-trade-attorney" element={<CypressTradeAttorneyPage />} />
+                <Route path="/la-palma-trade-attorney" element={<LaPalmaTradeAttorneyPage />} />
+                <Route path="/stanton-trade-attorney" element={<StantonTradeAttorneyPage />} />
+                <Route path="/westminster-trade-attorney" element={<WestminsterTradeAttorneyPage />} />
+                <Route path="/fountain-valley-trade-attorney" element={<FountainValleyTradeAttorneyPage />} />
+                <Route path="/seal-beach-trade-attorney" element={<SealBeachTradeAttorneyPage />} />
 
                 {/* Keyword-City Expansion Pages (Batch 1) */}
                 <Route path="/irvine-cbp-audit-defense" element={<IrvineCBPAuditDefensePage />} />
@@ -795,6 +970,25 @@ const App: React.FC = () => {
                 <Route path="/yucaipa-customs-bond" element={<YucaipaCustomsBondPage />} />
                 <Route path="/loma-linda-customs-bond" element={<LomaLindaCustomsBondPage />} />
                 <Route path="/upland-customs-bond" element={<UplandCustomsBondPage />} />
+
+                {/* Batch 4 - San Gabriel Valley Trade Attorney Pages (17 cities) */}
+                <Route path="/azusa-trade-attorney" element={<AzusaTradeAttorneyPage />} />
+                <Route path="/glendora-trade-attorney" element={<GlendoraTradeAttorneyPage />} />
+                <Route path="/la-verne-trade-attorney" element={<LaVerneTradeAttorneyPage />} />
+                <Route path="/claremont-trade-attorney" element={<ClaremontTradeAttorneyPage />} />
+                <Route path="/san-dimas-trade-attorney" element={<SanDimasTradeAttorneyPage />} />
+                <Route path="/arcadia-trade-attorney" element={<ArcadiaTradeAttorneyPage />} />
+                <Route path="/monrovia-trade-attorney" element={<MonroviaTradeAttorneyPage />} />
+                <Route path="/duarte-trade-attorney" element={<DuarteTradeAttorneyPage />} />
+                <Route path="/alhambra-trade-attorney" element={<AlhambraTradeAttorneyPage />} />
+                <Route path="/temple-city-trade-attorney" element={<TempleCityTradeAttorneyPage />} />
+                <Route path="/rosemead-trade-attorney" element={<RosemeadTradeAttorneyPage />} />
+                <Route path="/san-gabriel-trade-attorney" element={<SanGabrielTradeAttorneyPage />} />
+                <Route path="/montebello-trade-attorney" element={<MontebelloTradeAttorneyPage />} />
+                <Route path="/pico-rivera-trade-attorney" element={<PicoRiveraTradeAttorneyPage />} />
+                <Route path="/bell-gardens-trade-attorney" element={<BellGardensTradeAttorneyPage />} />
+                <Route path="/paramount-trade-attorney" element={<ParamountTradeAttorneyPage />} />
+                <Route path="/bellflower-trade-attorney" element={<BellflowerTradeAttorneyPage />} />
 
                 {/* 404 - Must be last */}
                 <Route path="*" element={<NotFoundPage />} />
