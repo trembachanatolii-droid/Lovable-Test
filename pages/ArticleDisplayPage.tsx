@@ -5,7 +5,6 @@ import { Link, useParams } from 'react-router-dom';
 import { loadArticle } from '../data/articlesLoader';
 import { articleMetadata, getArticleCategory, formatDateForDisplay } from '../data/articleMetadata';
 import RelatedArticles from '../components/RelatedArticles';
-import ArticleCTA from '../components/ArticleCTA';
 import ShareButton from '../components/ShareButton';
 import { useMeta } from '../hooks/useMeta';
 import { siteConfig } from '../config/siteConfig';
@@ -238,7 +237,7 @@ const ArticleDisplayPage: React.FC = () => {
               lineHeight: '1.75',
               color: '#374151'
             }}>
-              Tariff classification under the Harmonized Tariff Schedule (HTS) determines the duty rate applied to imported merchandise. With over 17,000 tariff classifications and duty rates ranging from zero to over 30%, correct classification significantly impacts import costs. Classification disputes between importers and U.S. Customs and Border Protection (CBP) commonly arise when CBP disagrees with an importer's declared HTS classification. This article provides strategic guidance for importers facing CBP classification determinations and explores the available administrative and judicial remedies.
+              {article.intro}
             </p>
 
             {/* Render Full HTML Content with Exact Template Styling */}
@@ -313,11 +312,6 @@ const ArticleDisplayPage: React.FC = () => {
               }
             `}</style>
           </div>
-        </div>
-
-        {/* Article CTA */}
-        <div className="max-w-[800px] mx-auto px-6">
-          <ArticleCTA topic={article.title} variant="default" />
         </div>
 
         {/* Footer / Disclaimer */}
