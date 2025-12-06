@@ -62,8 +62,9 @@ description: 'Defend against Withhold Release Orders and ensure UFLPA compliance
 tags: ['UFLPA', 'Withhold Release Orders', 'Supply Chain Due Diligence', 'Forced Labor Defense'],
 imageSlug: 'forced-labor-compliance',
 imageAlt: 'Forced labor compliance attorney defending importers against UFLPA Withhold Release Orders',
-slug: 'entry-wro',
+slug: 'forced-labor-compliance',
 imageUrl: '/images/forced-labor-compliance.jpg',
+customLink: '/resources/uflpa-compliance-guide',
 },
 ];
 

@@ -26,6 +26,7 @@ export interface PracticeArea {
   imageAlt: string;
   slug: string;
   imageUrl?: string;
+  customLink?: string;
 }
 
 export interface PromoCardData {

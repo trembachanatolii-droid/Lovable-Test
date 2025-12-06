@@ -9,14 +9,14 @@ practiceArea: PracticeArea;
 
 
 const PracticeCard: React.FC<PracticeCardProps> = memo(({ practiceArea }) => {
-const { title, subheading, description, tags, imageSlug, imageAlt, slug, imageUrl } = practiceArea;
+const { title, subheading, description, tags, imageSlug, imageAlt, slug, imageUrl, customLink } = practiceArea;
 // Use imageUrl if provided, otherwise use local images, then fall back to placeholder service
 const localImagePath = `/images/${imageSlug}.jpg`;
 const imageUrlBase = 'https://picsum.photos/seed/';
 const imageSrc = imageUrl || localImagePath;
 const placeholderSrc = `${imageUrlBase}${imageSlug}/800/600`;
-// Use same URL pattern as "High-Risk Customs Problems" section for consistency
-const routePath = `/practice-areas?slug=${slug}`;
+// Use customLink if provided, otherwise use practice-areas slug pattern
+const routePath = customLink || `/practice-areas?slug=${slug}`;
 
 return (
 <article className="bg-white rounded-2xl overflow-hidden border border-border-subtle transition-all duration-300 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:border-transparent will-change-transform" style={{ cursor: 'pointer' }}>
