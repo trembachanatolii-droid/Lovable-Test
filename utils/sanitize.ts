@@ -67,6 +67,7 @@ export function sanitizeHTML(html: string): string {
     Array.from(node.childNodes).forEach(sanitizeNode);
   }
 
-  sanitizeNode(temp);
+  // Process children of body directly (don't process body tag itself)
+  Array.from(temp.childNodes).forEach(sanitizeNode);
   return temp.innerHTML;
 }
