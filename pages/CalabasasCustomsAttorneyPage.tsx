@@ -53,6 +53,26 @@ const CalabasasCustomsAttorneyPage: React.FC = () => {
           question: 'What industries do you serve from your Calabasas office?',
           answer: 'From our Calabasas headquarters, we represent importers and exporters across all industries including technology/electronics, entertainment/media, apparel/textiles, food/agriculture, automotive parts, consumer goods, and e-commerce. Our San Fernando Valley location is ideal for serving the diverse business community in Los Angeles County and Ventura County.',
         },
+        {
+          question: 'How much does a tariff lawyer in Calabasas cost?',
+          answer: 'Trembach Law offers transparent pricing for tariff and customs legal services. We provide free initial consultations to assess your case, flat-fee pricing for many services (protests, ruling requests, prior disclosures), and competitive hourly rates for complex matters. Contact us at (310) 744-1328 for a personalized fee estimate with no obligation.',
+        },
+        {
+          question: 'Is there a customs attorney near me in the San Fernando Valley?',
+          answer: 'Yes! Trembach Law Firm is located at 27001 Agoura Road, Suite 350, Calabasas, CA 91301 - conveniently serving the entire San Fernando Valley. We are minutes from Woodland Hills, Tarzana, Encino, Sherman Oaks, and all Valley communities. Free parking available. Call (310) 744-1328 for your free consultation.',
+        },
+        {
+          question: 'What makes Trembach Law different from other California customs attorneys?',
+          answer: 'Trembach Law combines specialized expertise with boutique service. Unlike large downtown firms, you work directly with your attorney. We focus exclusively on international trade and customs law, have current knowledge of 2025 tariff regulations including Section 301 developments, and maintain a 5-star client satisfaction rating. Our Calabasas location offers convenience without sacrificing quality.',
+        },
+        {
+          question: 'Can you help with emergency customs seizures at Port of Los Angeles?',
+          answer: 'Absolutely. Our Calabasas office provides rapid response to CBP cargo seizures and detentions at Port of LA and Port of Long Beach. We can typically respond within 24 hours and have experience handling urgent matters including merchandise holds, IPR seizures, UFLPA detentions, and FDA/USDA holds. Call (310) 744-1328 for immediate assistance.',
+        },
+        {
+          question: 'Do you offer free consultations for tariff classification issues?',
+          answer: 'Yes, Trembach Law offers free initial consultations for all tariff and customs matters, including tariff classification questions. During your consultation, we will review your situation, explain your options, and provide a clear path forward with transparent pricing. Schedule your free consultation at (310) 744-1328 or through our website.',
+        },
       ]),
     ],
   });
