@@ -577,6 +577,8 @@ const GlossaryPage: React.FC = () => {
     title: 'CA Trade Law Glossary | Customs Terms & Definitions',
     description: 'Comprehensive international trade law glossary: 110+ customs terms, import/export regulations, tariff classifications, and trade compliance definitions. Essential reference for California importers, exporters, and trade professionals.',
     canonical: 'trade-law-glossary',
+    ogImage: 'https://trembach.law/og-image-resources.jpg',
+    ogImageAlt: 'Trembach Law Firm - Trade Law Glossary',
     schema: [
       generateWebPageSchema({
         title: 'International Trade Law Glossary',

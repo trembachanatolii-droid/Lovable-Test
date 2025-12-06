@@ -26,6 +26,8 @@ const Section301TariffsGuidePage: React.FC = () => {
     description: 'Complete Section 301 tariffs guide for California importers: Lists 1-4 coverage, exclusion strategies, HTS classification optimization, first sale valuation, supply chain restructuring, tariff engineering. Expert China trade compliance from international trade attorneys. $370B+ goods affected.',
     canonical: 'resources/section-301-tariffs-guide',
     ogType: 'article',
+    ogImage: 'https://trembach.law/og-image-resources.jpg',
+    ogImageAlt: 'Trembach Law Firm - Section 301 Tariffs Guide',
     schema: [
       generateWebPageSchema({
         title: 'Section 301 Tariffs Guide - Trembach Law Firm',

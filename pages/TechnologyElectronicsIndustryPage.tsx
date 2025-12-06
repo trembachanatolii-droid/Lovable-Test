@@ -14,6 +14,8 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
     title: 'Tech Industry Trade Attorney CA | Electronics Import Lawyer',
     description: 'California electronics import attorney & tech industry customs lawyer. HTS classification, Section 301 tariffs, encryption export controls, semiconductor trade compliance & technology supply chain law. Call (310) 744-1328.',
     canonical: 'technology-electronics-trade-attorney',
+    ogImage: 'https://trembach.law/og-image-industries.jpg',
+    ogImageAlt: 'Trembach Law Firm - Technology & Electronics Trade Law',
     schema: [
       generateWebPageSchema({
         title: 'Technology & Electronics Industry Trade Law Services',

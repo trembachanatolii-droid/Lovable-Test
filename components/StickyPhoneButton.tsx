@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 
 interface StickyPhoneButtonProps {
   showOnMobileOnly?: boolean;
@@ -69,4 +69,4 @@ const StickyPhoneButton: React.FC<StickyPhoneButtonProps> = ({ showOnMobileOnly 
   );
 };
 
-export default StickyPhoneButton;
+export default memo(StickyPhoneButton);

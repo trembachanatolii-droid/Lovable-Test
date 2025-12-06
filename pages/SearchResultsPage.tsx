@@ -21,6 +21,8 @@ const SearchResultsPage: React.FC = () => {
       : 'Search for customs law, trade compliance, and import/export information.',
     canonical: `search?q=${encodeURIComponent(query)}`,
     ogType: 'website',
+    ogImage: 'https://trembach.law/og-image-default.jpg',
+    ogImageAlt: 'Trembach Law Firm - Search Results',
     schema: [
       generateWebPageSchema({
         title: query ? `Search Results for "${query}"` : 'Search',

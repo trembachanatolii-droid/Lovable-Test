@@ -14,6 +14,8 @@ const ApparelTextilesIndustryPage: React.FC = () => {
     title: 'Apparel Import Attorney CA | Textile Trade Lawyer | UFLPA',
     description: 'California apparel import attorney & textile customs lawyer. Fashion industry trade law for UFLPA forced labor compliance, HTS classification, country of origin & textile supply chain. Expert for fashion brands. Call (310) 744-1328.',
     canonical: 'apparel-textiles-trade-attorney',
+    ogImage: 'https://trembach.law/og-image-industries.jpg',
+    ogImageAlt: 'Trembach Law Firm - Apparel & Textiles Trade Law',
     schema: [
       generateWebPageSchema({
         title: 'Apparel & Textiles Industry Trade Law Services',
