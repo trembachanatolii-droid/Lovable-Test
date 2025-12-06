@@ -110,6 +110,7 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
               <Link
                 to={featuredArticle.linkHref}
                 aria-label={`Read article: ${featuredArticle.title}`}
+                className="read-now-btn"
                 style={{
                   display: 'inline-block',
                   padding: '1rem 2rem',
