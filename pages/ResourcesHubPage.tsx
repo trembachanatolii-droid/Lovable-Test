@@ -161,37 +161,37 @@ const ResourcesHubPage: React.FC = () => {
                 <div className="grid md:grid-cols-2 gap-3">
                   <ul className="space-y-2 text-text-secondary">
                     <li className="flex items-start">
-                      <span className="text-secondary-teal mr-2">✓</span>
+                      <span className="text-secondary-teal mr-2" aria-hidden="true">&#10003;</span>
                       <span>HTS Classification California methodology</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-secondary-teal mr-2">✓</span>
+                      <span className="text-secondary-teal mr-2" aria-hidden="true">&#10003;</span>
                       <span>Antidumping & Countervailing Duties California</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-secondary-teal mr-2">✓</span>
+                      <span className="text-secondary-teal mr-2" aria-hidden="true">&#10003;</span>
                       <span>Section 301 Tariffs California (China trade war)</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-secondary-teal mr-2">✓</span>
+                      <span className="text-secondary-teal mr-2" aria-hidden="true">&#10003;</span>
                       <span>Section 232 Tariffs California (steel/aluminum)</span>
                     </li>
                   </ul>
                   <ul className="space-y-2 text-text-secondary">
                     <li className="flex items-start">
-                      <span className="text-secondary-teal mr-2">✓</span>
+                      <span className="text-secondary-teal mr-2" aria-hidden="true">&#10003;</span>
                       <span>Trade Remedies California defense strategies</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-secondary-teal mr-2">✓</span>
+                      <span className="text-secondary-teal mr-2" aria-hidden="true">&#10003;</span>
                       <span>Valuation of Imported Goods California (6 methods)</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-secondary-teal mr-2">✓</span>
+                      <span className="text-secondary-teal mr-2" aria-hidden="true">&#10003;</span>
                       <span>Customs Valuation Transfer Pricing California</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-secondary-teal mr-2">✓</span>
+                      <span className="text-secondary-teal mr-2" aria-hidden="true">&#10003;</span>
                       <span>Binding rulings and classification disputes</span>
                     </li>
                   </ul>
@@ -234,37 +234,37 @@ const ResourcesHubPage: React.FC = () => {
                 <div className="grid md:grid-cols-2 gap-3">
                   <ul className="space-y-2 text-text-secondary">
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-2">✓</span>
+                      <span className="text-green-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Supply Chain ESG Compliance California programs</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-2">✓</span>
+                      <span className="text-green-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Forced Labor Import Bans California (WROs)</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-2">✓</span>
+                      <span className="text-green-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Uyghur Forced Labor Prevention Act California</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-2">✓</span>
+                      <span className="text-green-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Green Trade Regulations California</span>
                     </li>
                   </ul>
                   <ul className="space-y-2 text-text-secondary">
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-2">✓</span>
+                      <span className="text-green-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Carbon Border Adjustment Issues California</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-2">✓</span>
+                      <span className="text-green-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Bribery and Corruption Trade Risks California</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-2">✓</span>
+                      <span className="text-green-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>FCPA Related Trade Issues California</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-2">✓</span>
+                      <span className="text-green-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>UFLPA rebuttable presumption strategies</span>
                     </li>
                   </ul>
@@ -307,37 +307,37 @@ const ResourcesHubPage: React.FC = () => {
                 <div className="grid md:grid-cols-2 gap-3">
                   <ul className="space-y-2 text-text-secondary">
                     <li className="flex items-start">
-                      <span className="text-purple-600 mr-2">✓</span>
+                      <span className="text-purple-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Ecommerce Import Rules California</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-purple-600 mr-2">✓</span>
+                      <span className="text-purple-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Online Sellers Customs Compliance California</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-purple-600 mr-2">✓</span>
+                      <span className="text-purple-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Section 321 de minimis rules and enforcement</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-purple-600 mr-2">✓</span>
+                      <span className="text-purple-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Amazon FBA compliance requirements</span>
                     </li>
                   </ul>
                   <ul className="space-y-2 text-text-secondary">
                     <li className="flex items-start">
-                      <span className="text-purple-600 mr-2">✓</span>
+                      <span className="text-purple-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Digital Trade Law California</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-purple-600 mr-2">✓</span>
+                      <span className="text-purple-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Data Transfer Export Controls California</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-purple-600 mr-2">✓</span>
+                      <span className="text-purple-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>GDPR, CCPA cross-border data transfers</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-purple-600 mr-2">✓</span>
+                      <span className="text-purple-600 mr-2" aria-hidden="true">&#10003;</span>
                       <span>Encryption export controls for SaaS companies</span>
                     </li>
                   </ul>

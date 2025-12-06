@@ -120,25 +120,25 @@ const CustomsDefensePage: React.FC = () => {
               <h3 className="text-3xl font-bold text-primary-navy mb-6 font-garamond">Our Defense Strategy</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                  <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                   <div>
                     <strong className="text-primary-navy">Immediate Response:</strong> We file Prior Disclosures to cap liability before CBP finds violations
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                  <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                   <div>
                     <strong className="text-primary-navy">Penalty Mitigation:</strong> We negotiate settlements reducing six-figure penalties to nominal amounts
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                  <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                   <div>
                     <strong className="text-primary-navy">Seizure Release:</strong> We file petitions and post bonds to recover detained cargo quickly
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                  <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                   <div>
                     <strong className="text-primary-navy">Trade Litigation:</strong> We sue CBP in the Court of International Trade when they violate the law
                   </div>

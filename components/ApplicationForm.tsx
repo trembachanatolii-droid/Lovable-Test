@@ -288,7 +288,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
     if (isSuccess) {
         return (
             <div className="text-center py-20">
-                <div className="w-20 h-20 bg-secondary-teal text-white rounded-full flex items-center justify-center mx-auto mb-6 text-4xl">✓</div>
+                <div className="w-20 h-20 bg-secondary-teal text-white rounded-full flex items-center justify-center mx-auto mb-6 text-4xl" aria-hidden="true">&#10003;</div>
                 <h2 className="text-3xl font-garamond font-bold text-primary-navy mb-4">Application Submitted Successfully</h2>
                 <p className="text-lg text-text-secondary max-w-lg mx-auto mb-4">
                     Thank you for applying to Trembach Law Firm. Your application has been received and is being reviewed by our partners.

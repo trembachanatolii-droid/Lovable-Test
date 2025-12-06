@@ -49,10 +49,10 @@ function getRating(
  */
 function logMetric(metric: WebVitalMetric): void {
   if (import.meta.env.DEV) {
-    const emoji = {
-      good: '✅',
-      'needs-improvement': '⚠️',
-      poor: '❌',
+    const indicator = {
+      good: '[OK]',
+      'needs-improvement': '[!]',
+      poor: '[X]',
     }[metric.rating];
 
     const color = {
@@ -62,7 +62,7 @@ function logMetric(metric: WebVitalMetric): void {
     }[metric.rating];
 
     console.log(
-      `%c${emoji} ${metric.name}: ${metric.value.toFixed(2)}ms (${metric.rating})`,
+      `%c${indicator} ${metric.name}: ${metric.value.toFixed(2)}ms (${metric.rating})`,
       color
     );
   }
@@ -367,7 +367,7 @@ export function initWebVitals(callback?: MetricCallback): void {
   reportOnVisibilityChange();
 
   if (import.meta.env.DEV) {
-    console.log('✅ Web Vitals monitoring initialized');
+    console.log('[OK] Web Vitals monitoring initialized');
   }
 }
 

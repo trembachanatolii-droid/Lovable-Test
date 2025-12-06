@@ -119,25 +119,25 @@ const ConnectionStatus: React.FC = () => {
         return {
           backgroundColor: '#DC2626',
           borderColor: '#991B1B',
-          icon: '⚠️'
+          icon: '!'
         };
       case 'online':
         return {
           backgroundColor: '#059669',
           borderColor: '#047857',
-          icon: '✓'
+          icon: 'OK'
         };
       case 'slow':
         return {
           backgroundColor: '#F59E0B',
           borderColor: '#D97706',
-          icon: '⏳'
+          icon: '...'
         };
       default:
         return {
           backgroundColor: '#3B82F6',
           borderColor: '#2563EB',
-          icon: 'ℹ️'
+          icon: 'i'
         };
     }
   };

@@ -113,20 +113,37 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
       </section>
 
       {/* Trump Tariffs 2025 Alert Section - Competitor Matching */}
-      <section className="py-12 px-6 bg-gradient-to-r from-red-700 to-red-800">
+      <section
+        className="py-12 px-6"
+        style={{ background: 'linear-gradient(to right, #b91c1c, #991b1b)' }}
+      >
         <div className="max-w-[1200px] mx-auto">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold font-garamond mb-4" style={{ color: '#ffffff' }}>
+            <h2
+              className="text-3xl md:text-4xl font-bold font-garamond mb-4"
+              style={{ color: '#ffffff' }}
+            >
               Trump Tariffs 2025: LA Importers Need Action Now
             </h2>
-            <p className="text-xl mb-6 leading-relaxed max-w-4xl mx-auto" style={{ color: 'rgba(255, 255, 255, 0.95)' }}>
-              The 2025 Trump administration tariffs are impacting Los Angeles importers with <strong>Section 301 rates up to 100% on Chinese goods</strong>, <strong>Section 232 steel/aluminum duties at 25-50%</strong>, and new reciprocal tariffs. As your <strong>Los Angeles tariff lawyer</strong>, we help you navigate exclusions, classification strategies, and compliance to minimize your duty burden.
+            <p
+              className="text-xl mb-6 leading-relaxed max-w-4xl mx-auto"
+              style={{ color: 'rgba(255, 255, 255, 0.95)' }}
+            >
+              The 2025 Trump administration tariffs are impacting Los Angeles importers with <strong style={{ color: '#ffffff' }}>Section 301 rates up to 100% on Chinese goods</strong>, <strong style={{ color: '#ffffff' }}>Section 232 steel/aluminum duties at 25-50%</strong>, and new reciprocal tariffs. As your <strong style={{ color: '#ffffff' }}>Los Angeles tariff lawyer</strong>, we help you navigate exclusions, classification strategies, and compliance to minimize your duty burden.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link to="/contact" className="bg-white text-red-700 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
+              <Link
+                to="/contact"
+                className="font-bold py-3 px-8 rounded-lg transition-colors"
+                style={{ backgroundColor: '#ffffff', color: '#b91c1c' }}
+              >
                 Free Tariff Analysis
               </Link>
-              <Link to="/resources/section-301-tariffs-guide" className="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-red-700 transition-colors">
+              <Link
+                to="/resources/section-301-tariffs-guide"
+                className="font-bold py-3 px-8 rounded-lg transition-colors"
+                style={{ border: '2px solid #ffffff', color: '#ffffff', backgroundColor: 'transparent' }}
+              >
                 2025 Tariff Guide
               </Link>
             </div>
@@ -392,50 +409,42 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
           </p>
 
           <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">🔌</div>
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow border-t-4 border-secondary-teal">
               <h3 className="font-bold text-primary-navy mb-2">Electronics & Technology</h3>
               <p className="text-sm text-text-secondary">Section 301 China tariffs, semiconductor imports, ITAR/EAR export controls</p>
             </div>
 
-            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">👗</div>
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow border-t-4 border-secondary-teal">
               <h3 className="font-bold text-primary-navy mb-2">Fashion & Apparel</h3>
               <p className="text-sm text-text-secondary">Textile tariffs, UFLPA forced labor compliance, country of origin</p>
             </div>
 
-            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">🚗</div>
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow border-t-4 border-secondary-teal">
               <h3 className="font-bold text-primary-navy mb-2">Automotive Parts</h3>
               <p className="text-sm text-text-secondary">Section 232 steel/aluminum, USMCA origin, antidumping duties</p>
             </div>
 
-            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">🥗</div>
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow border-t-4 border-secondary-teal">
               <h3 className="font-bold text-primary-navy mb-2">Food & Agriculture</h3>
               <p className="text-sm text-text-secondary">FDA holds, USDA inspections, agricultural tariffs, import permits</p>
             </div>
 
-            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">🏭</div>
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow border-t-4 border-secondary-teal">
               <h3 className="font-bold text-primary-navy mb-2">Manufacturing</h3>
               <p className="text-sm text-text-secondary">Industrial equipment, machinery tariffs, duty drawback programs</p>
             </div>
 
-            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">💊</div>
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow border-t-4 border-secondary-teal">
               <h3 className="font-bold text-primary-navy mb-2">Pharmaceuticals</h3>
               <p className="text-sm text-text-secondary">Drug import compliance, FDA registration, controlled substances</p>
             </div>
 
-            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">🛋️</div>
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow border-t-4 border-secondary-teal">
               <h3 className="font-bold text-primary-navy mb-2">Furniture & Home Goods</h3>
               <p className="text-sm text-text-secondary">Antidumping duties, Section 301 tariffs, wood product compliance</p>
             </div>
 
-            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">📦</div>
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow border-t-4 border-secondary-teal">
               <h3 className="font-bold text-primary-navy mb-2">E-Commerce</h3>
               <p className="text-sm text-text-secondary">De minimis changes, Section 321 entries, FBA imports, 3PL compliance</p>
             </div>
