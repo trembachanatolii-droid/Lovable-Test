@@ -275,9 +275,9 @@ const HomePage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/los-angeles-long-beach-port-customs-attorney" className="service-link">
-                    <span className="service-link__title">Los Angeles & Long Beach Port</span>
-                    <p className="service-link__description">Nation's busiest port complex</p>
+                  <Link to="/los-angeles-tariff-lawyer" className="service-link">
+                    <span className="service-link__title">Los Angeles Tariff Lawyer</span>
+                    <p className="service-link__description">Port of LA & Long Beach customs</p>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M5 12h14M12 5l7 7-7 7"/>

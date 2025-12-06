@@ -575,6 +575,21 @@ const App: React.FC = () => {
                 <Route path="/long-beach-maritime" element={<Navigate to="/long-beach-maritime-tariff" replace />} />
                 <Route path="/long-beach-port-operations-attorney" element={<Navigate to="/long-beach-port-attorney" replace />} />
                 <Route path="/los-angeles-tariff-attorney" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/los-angeles-customs-attorney" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/los-angeles-customs-lawyer" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/customs-attorney-los-angeles" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/customs-lawyer-los-angeles" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/tariff-attorney-los-angeles" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/tariff-lawyer-la" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/la-tariff-lawyer" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/la-customs-attorney" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/international-trade-lawyer-los-angeles" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/import-export-attorney-los-angeles" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/trade-lawyer-los-angeles" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/cbp-attorney-los-angeles" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/trump-tariffs-lawyer-los-angeles" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/section-301-attorney-los-angeles" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
+                <Route path="/los-angeles-long-beach-port-customs-attorney" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
                 <Route path="/los-angeles-fashion-tariff-lawyer" element={<Navigate to="/los-angeles-fashion-tariff" replace />} />
                 <Route path="/los-angeles-antidumping" element={<Navigate to="/practice-areas" replace />} />
                 <Route path="/los-angeles-compliance" element={<Navigate to="/los-angeles-tariff-lawyer" replace />} />
