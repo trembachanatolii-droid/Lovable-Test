@@ -223,7 +223,7 @@ const ArticleDisplayPage: React.FC = () => {
 
         {/* Article Body */}
         <div className="max-w-[800px] mx-auto px-6">
-          <div className="prose prose-lg max-w-none selection:bg-soft-teal" style={{ color: '#374151' }}>
+          <div className="max-w-none selection:bg-soft-teal" style={{ color: '#374151' }}>
             <h2 className="font-garamond font-bold mb-5" style={{
               fontSize: '28px',
               lineHeight: '1.3',
@@ -233,9 +233,12 @@ const ArticleDisplayPage: React.FC = () => {
             </h2>
 
             <p className="mb-5" style={{
+              fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
               fontSize: '17px',
+              fontWeight: '400',
               lineHeight: '1.75',
-              color: '#374151'
+              color: '#374151',
+              letterSpacing: 'normal'
             }}>
               {article.intro}
             </p>
@@ -272,10 +275,13 @@ const ArticleDisplayPage: React.FC = () => {
               }
 
               .article-content p {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
                 font-size: 17px;
+                font-weight: 400;
                 line-height: 1.75;
                 color: #374151;
                 margin-bottom: 20px;
+                letter-spacing: normal;
               }
 
               .article-content ul,
@@ -286,10 +292,13 @@ const ArticleDisplayPage: React.FC = () => {
               }
 
               .article-content li {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
                 font-size: 17px;
+                font-weight: 400;
                 line-height: 1.75;
                 color: #374151;
                 margin-bottom: 12px;
+                letter-spacing: normal;
               }
 
               .article-content strong {
