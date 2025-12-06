@@ -38,7 +38,19 @@ const ContactPage: React.FC = () => {
   });
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Check if there's a hash in the URL
+    const hash = window.location.hash;
+    if (hash) {
+      // Small delay to ensure lazy-loaded components are mounted
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, []);
 
   return (

@@ -15,6 +15,8 @@ export interface NewsArticle {
   description: string;
   linkHref: string;
   readTime: string;
+  category?: string;
+  source?: string;
 }
 
 export interface PracticeArea {

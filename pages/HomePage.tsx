@@ -5,7 +5,7 @@ import { useMeta } from '../hooks/useMeta';
 import { generateWebPageSchema, generateFAQSchema, generateLocalBusinessSchema } from '../utils/seo';
 import { siteConfig } from '../config/siteConfig';
 import { getArticlePreviews } from '../data/articlesLoader';
-import { articleMetadata } from '../data/articleMetadata';
+import { articleMetadata, getArticleCategory } from '../data/articleMetadata';
 import NewsArticleCard from '../components/NewsArticleCard';
 import PracticeAreasSection from '../components/PracticeAreasSection';
 import Button from '../components/Button';
@@ -40,13 +40,13 @@ const getLatestArticles = (): NewsArticle[] => {
   // Take top 5 and map to NewsArticle format
   return articlesWithMetadata.slice(0, 5).map((item, index) => ({
     id: index + 1,
-    date: item.metadata.date.split(' ').map((word, i) =>
-      i === 0 ? word.charAt(0) + word.slice(1).toLowerCase() : word
-    ).join(' '), // Convert "NOVEMBER 26, 2025" to "November 26, 2025"
+    date: item.metadata.date,
     title: item.preview.title,
     description: item.preview.intro,
     linkHref: `/article/${item.preview.id}`,
-    readTime: item.metadata.readTime.toLowerCase().replace(' min', ' min'),
+    readTime: item.metadata.readTime,
+    category: getArticleCategory(item.preview.id),
+    source: 'Trembach Law Firm',
   }));
 };
 

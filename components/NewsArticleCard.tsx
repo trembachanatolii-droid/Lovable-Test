@@ -9,10 +9,10 @@ interface NewsArticleCardProps {
 
 const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
   const isInternalLink = article.linkHref.startsWith('#') || article.linkHref.startsWith('/');
-  
+
   const cardContent = (
     <>
-      {/* Green Triangle with White Arrow */}
+      {/* Teal Triangle Slide Animation */}
       <div
         className="triangle-slide"
         style={{
@@ -47,26 +47,45 @@ const NewsArticleCard: React.FC<NewsArticleCardProps> = memo(({ article }) => {
         </svg>
       </div>
 
-      <div className="p-8 flex flex-col" style={{ position: 'relative', zIndex: 0 }}>
-        <div className="flex items-center gap-2 text-sm font-semibold text-text-secondary uppercase tracking-wider mb-2">
-            <span>{article.date}</span>
-            <span className="text-secondary-teal">•</span>
-            <span>{article.readTime}</span>
+      {/* Content */}
+      <div style={{ position: 'relative', zIndex: 0, padding: '40px' }}>
+        {/* Category and Metadata */}
+        <div className="flex items-center mb-4" style={{
+          fontSize: '11px',
+          fontWeight: 700,
+          textTransform: 'uppercase',
+          letterSpacing: '0.08em',
+          color: '#3FBB94'
+        }}>
+          <span>{article.category || 'Trade Law'}</span>
+          <span style={{ margin: '0 10px', color: '#AAAAAA' }}>•</span>
+          <span style={{ color: '#888888', fontWeight: 400 }}>{article.date}</span>
+          <span style={{ margin: '0 10px', color: '#AAAAAA' }}>•</span>
+          <span style={{ color: '#888888', fontWeight: 400 }}>{article.readTime}</span>
         </div>
-        <h3 className="font-garamond text-2xl font-bold leading-tight text-primary-navy mb-3 group-hover:text-primary-darkBlue group-focus-visible:text-primary-darkBlue transition-colors">
+
+        {/* Title */}
+        <h3 className="font-garamond font-bold mb-4 group-hover:text-primary-darkBlue transition-colors" style={{
+          fontSize: '28px',
+          lineHeight: '1.25',
+          color: '#012169'
+        }}>
           {article.title}
         </h3>
-        <p className="text-base leading-relaxed text-text-secondary mb-6">
-          {article.description}
-        </p>
-        <span aria-hidden="true" className="mt-auto inline-flex items-center gap-1.5 text-navy-medium text-[17px] font-semibold transition-all duration-200 group-hover:gap-2.5 group-hover:text-secondary-teal group-focus-visible:gap-2.5 group-focus-visible:text-secondary-teal">
-          Read Now &rarr;
-        </span>
+
+        {/* Source */}
+        <div style={{
+          fontSize: '14px',
+          color: '#666666',
+          fontWeight: 400
+        }}>
+          Source: {article.source || 'Trembach Law Firm'}
+        </div>
       </div>
     </>
   );
 
-  const cardClassName = "block group relative bg-white overflow-hidden transition-all duration-300 shadow-sm hover:-translate-y-1 hover:shadow-xl will-change-transform border border-border-subtle rounded-2xl";
+  const cardClassName = "block group relative bg-white overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-border-subtle rounded-2xl";
   const cardStyle = { cursor: 'pointer' as const };
 
   if (isInternalLink) {
