@@ -81,6 +81,14 @@ export const coreRoutes: RouteObject[] = [
   { path: '/industries/technology-electronics', element: <TechnologyElectronicsIndustryPage /> },
   { path: '/industries/apparel-textiles', element: <ApparelTextilesIndustryPage /> },
   { path: '/industries/food-agriculture', element: <FoodAgricultureIndustryPage /> },
+
+  // Industry Page Aliases (backward compatibility for old URLs)
+  { path: '/technology-electronics-trade-attorney', element: <TechnologyElectronicsIndustryPage /> },
+  { path: '/apparel-textiles-trade-attorney', element: <ApparelTextilesIndustryPage /> },
+  { path: '/food-agriculture-trade-attorney', element: <FoodAgricultureIndustryPage /> },
+  { path: '/technology-electronics-industry', element: <TechnologyElectronicsIndustryPage /> },
+  { path: '/apparel-textiles-industry', element: <ApparelTextilesIndustryPage /> },
+  { path: '/food-agriculture-industry', element: <FoodAgricultureIndustryPage /> },
 ];
 
 export const notFoundRoute: RouteObject = {
