@@ -42,12 +42,14 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
           padding: '5rem 2.5rem',
         }}
       >
+        {/* Two Column Grid - Side by Side */}
         <div
-          className="recent-news-grid"
           style={{
             display: 'grid',
-            gap: '3rem',
+            gridTemplateColumns: '1fr',
+            gap: '4rem',
           }}
+          className="lg:grid-cols-2"
         >
           {/* Left Side - Featured Article */}
           <div
@@ -110,7 +112,7 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
             </div>
           </div>
 
-          {/* Right Side - Article List */}
+          {/* Right Side - Article List with Triangle Animation */}
           <div
             style={{
               display: 'flex',
@@ -122,16 +124,52 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
                 key={article.id}
                 to={article.linkHref}
                 aria-label={`Read article: ${article.title}`}
+                className="group"
                 style={{
                   display: 'block',
+                  position: 'relative',
+                  overflow: 'hidden',
                   paddingTop: index === 0 ? '0' : '1.5rem',
                   paddingBottom: '1.5rem',
                   borderBottom: index < remainingArticles.length - 1 ? '1px solid rgba(255, 255, 255, 0.3)' : 'none',
                   textDecoration: 'none',
-                  transition: 'opacity 0.2s ease',
                 }}
-                className="hover:opacity-80"
               >
+                {/* Green Triangle Slide Animation */}
+                <div
+                  className="triangle-slide"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    right: '-85px',
+                    width: '85px',
+                    height: '85px',
+                    background: '#3FBB94',
+                    clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
+                    transition: 'right 300ms ease-in-out',
+                    zIndex: 10,
+                    pointerEvents: 'none',
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={3}
+                    stroke="white"
+                    aria-hidden="true"
+                    style={{
+                      width: '20px',
+                      height: '20px',
+                      position: 'absolute',
+                      top: '20px',
+                      right: '20px',
+                    }}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                </div>
+
                 {/* Article Title */}
                 <h3
                   style={{
@@ -141,6 +179,9 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
                     lineHeight: 1.4,
                     color: 'white',
                     marginBottom: '0.5rem',
+                    paddingRight: '2rem',
+                    position: 'relative',
+                    zIndex: 0,
                   }}
                 >
                   {article.title}
