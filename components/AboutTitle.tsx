@@ -9,8 +9,8 @@ interface TitleConfig {
   rotate: [string, string, string];
 }
 
-// Static config defined outside component
-const TITLE_CONFIG: Record<string, TitleConfig> = {
+// Desktop config
+const TITLE_CONFIG_DESKTOP: Record<string, TitleConfig> = {
   "Compliance": {
     offset: ["0.7 0", "1 1"],
     scale: [0.8, 1],
@@ -55,13 +55,75 @@ const TITLE_CONFIG: Record<string, TitleConfig> = {
   },
 };
 
+// Mobile config - smaller translate values to prevent overlap
+const TITLE_CONFIG_MOBILE: Record<string, TitleConfig> = {
+  "Compliance": {
+    offset: ["0.8 0", "1 1"],
+    scale: [0.9, 1],
+    opacity: [0, 1],
+    translate: ["0px 50px", "0px 0px"],
+    rotate: ["0deg", "0deg", "0deg"],
+  },
+  "Trade Strategy": {
+    offset: ["0.8 0", "1 1"],
+    scale: [0.9, 1],
+    opacity: [0.2, 1],
+    translate: ["0px 40px", "0px 0px"],
+    rotate: ["0deg", "0deg", "0deg"],
+  },
+  "+": {
+    offset: ["0.5 0", "1 1"],
+    scale: [0.9, 1],
+    opacity: [0.3, 1],
+    translate: ["0px 30px", "0px 0px"],
+    rotate: ["180deg", "180deg", "0deg"],
+  },
+  "Recovery": {
+    offset: ["0.8 0", "1 1"],
+    scale: [0.9, 1],
+    opacity: [0.2, 1],
+    translate: ["0px 40px", "0px 0px"],
+    rotate: ["0deg", "0deg", "0deg"],
+  },
+  "Customs Defense": {
+    offset: ["0.8 0", "1 1"],
+    scale: [0.9, 1],
+    opacity: [0.2, 1],
+    translate: ["0px 40px", "0px 0px"],
+    rotate: ["0deg", "0deg", "0deg"],
+  },
+  "Global Solutions": {
+    offset: ["0.8 0", "1 1"],
+    scale: [0.9, 1],
+    opacity: [0.2, 1],
+    translate: ["0px 40px", "0px 0px"],
+    rotate: ["0deg", "0deg", "0deg"],
+  },
+};
+
+// Helper to detect mobile
+const isMobileDevice = () => {
+  if (typeof window === 'undefined') return false;
+  return window.innerWidth < 768;
+};
+
 interface AboutTitleProps {
   name: string;
 }
 
 // Optimized component that uses shared motion context
 function AboutTitle({ name }: AboutTitleProps) {
-  const config = useMemo(() => TITLE_CONFIG[name] || TITLE_CONFIG["Compliance"], [name]);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(isMobileDevice());
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const TITLE_CONFIG = isMobile ? TITLE_CONFIG_MOBILE : TITLE_CONFIG_DESKTOP;
+  const config = useMemo(() => TITLE_CONFIG[name] || TITLE_CONFIG["Compliance"], [name, isMobile]);
   const ref = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
 
