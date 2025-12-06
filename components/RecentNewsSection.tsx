@@ -1,0 +1,172 @@
+import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
+import type { NewsArticle } from '../types';
+
+interface RecentNewsSectionProps {
+  articles: NewsArticle[];
+}
+
+const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) => {
+  if (articles.length === 0) {
+    return null;
+  }
+
+  // First article is featured (left side), rest are listed (right side)
+  const featuredArticle = articles[0];
+  const remainingArticles = articles.slice(1, 5); // Show up to 4 more articles
+
+  return (
+    <section
+      id="news-section"
+      className="relative"
+      aria-labelledby="news-heading"
+      style={{ overflow: 'hidden' }}
+    >
+      {/* Background Image - same as footer */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/images/footer-background.png)' }}
+      />
+      {/* Heavy Dark Blue Overlay - same as footer */}
+      <div
+        className="absolute inset-0 bg-primary-navy"
+        style={{ opacity: 0.92 }}
+      />
+
+      {/* Content Container */}
+      <div
+        className="relative z-10"
+        style={{
+          maxWidth: '1376px',
+          margin: '0 auto',
+          padding: '5rem 2.5rem',
+        }}
+      >
+        <div
+          className="recent-news-grid"
+          style={{
+            display: 'grid',
+            gap: '3rem',
+          }}
+        >
+          {/* Left Side - Featured Article */}
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+            }}
+          >
+            {/* Featured Article Title */}
+            <h2
+              id="news-heading"
+              style={{
+                fontFamily: 'Georgia, serif',
+                fontSize: 'clamp(2rem, 4vw, 2.75rem)',
+                fontWeight: 400,
+                lineHeight: 1.2,
+                color: 'white',
+                marginBottom: '1.5rem',
+              }}
+            >
+              {featuredArticle.title}
+            </h2>
+
+            {/* Featured Article Description */}
+            <p
+              style={{
+                fontSize: '1rem',
+                lineHeight: 1.7,
+                color: 'rgba(255, 255, 255, 0.9)',
+                marginBottom: '2.5rem',
+                maxWidth: '540px',
+              }}
+            >
+              {featuredArticle.description}
+            </p>
+
+            {/* Read Now Button */}
+            <div>
+              <Link
+                to={featuredArticle.linkHref}
+                aria-label={`Read article: ${featuredArticle.title}`}
+                style={{
+                  display: 'inline-block',
+                  padding: '1rem 2rem',
+                  border: '2px solid white',
+                  color: 'white',
+                  fontSize: '0.875rem',
+                  fontWeight: 600,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease',
+                  backgroundColor: 'transparent',
+                }}
+                className="hover:bg-white hover:text-primary-navy"
+              >
+                Read Now
+              </Link>
+            </div>
+          </div>
+
+          {/* Right Side - Article List */}
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            {remainingArticles.map((article, index) => (
+              <Link
+                key={article.id}
+                to={article.linkHref}
+                aria-label={`Read article: ${article.title}`}
+                style={{
+                  display: 'block',
+                  paddingTop: index === 0 ? '0' : '1.5rem',
+                  paddingBottom: '1.5rem',
+                  borderBottom: index < remainingArticles.length - 1 ? '1px solid rgba(255, 255, 255, 0.3)' : 'none',
+                  textDecoration: 'none',
+                  transition: 'opacity 0.2s ease',
+                }}
+                className="hover:opacity-80"
+              >
+                {/* Article Title */}
+                <h3
+                  style={{
+                    fontFamily: 'Georgia, serif',
+                    fontSize: '1.25rem',
+                    fontWeight: 400,
+                    lineHeight: 1.4,
+                    color: 'white',
+                    marginBottom: '0.5rem',
+                  }}
+                >
+                  {article.title}
+                </h3>
+
+                {/* Article Date */}
+                <span
+                  style={{
+                    fontSize: '0.75rem',
+                    fontWeight: 600,
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.08em',
+                    color: 'rgba(255, 255, 255, 0.7)',
+                  }}
+                >
+                  {article.date}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+});
+
+RecentNewsSection.displayName = 'RecentNewsSection';
+
+export default RecentNewsSection;

@@ -6,9 +6,8 @@ import { generateWebPageSchema, generateFAQSchema, generateLocalBusinessSchema }
 import { siteConfig } from '../config/siteConfig';
 import { getArticlePreviews } from '../data/articlesLoader';
 import { articleMetadata, getArticleCategory } from '../data/articleMetadata';
-import NewsArticleCard from '../components/NewsArticleCard';
+import RecentNewsSection from '../components/RecentNewsSection';
 import PracticeAreasSection from '../components/PracticeAreasSection';
-import Button from '../components/Button';
 import LoadingSpinner from '../components/LoadingSpinner';
 import StaticHero from '../components/StaticHero';
 
@@ -402,33 +401,8 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Recent News Section */}
-      <section id="news-section" className="bg-white" aria-labelledby="news-heading" style={{ overflow: 'hidden' }}>
-        <div className="container" style={{ maxWidth: '1376px', margin: '0 auto', padding: '4rem 1.25rem' }}>
-          <div className="w-20 h-1 bg-primary-navy mx-auto mb-6"></div>
-          <h2 id="news-heading" style={{
-            fontSize: '2.5rem',
-            fontFamily: 'Georgia, serif',
-            fontWeight: 700,
-            color: 'var(--navy-primary)',
-            textAlign: 'center',
-            marginBottom: '3rem'
-          }}>Recent News</h2>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr',
-            gap: '2rem',
-            marginBottom: '3rem'
-          }}>
-            {newsArticlesData.map((article) => (
-              <NewsArticleCard key={article.id} article={article} />
-            ))}
-          </div>
-          <div style={{ textAlign: 'center' }}>
-            <Button variant="outlined" href="/news">View All News</Button>
-          </div>
-        </div>
-      </section>
+      {/* Recent News Section - Holland & Knight Style */}
+      <RecentNewsSection articles={newsArticlesData} />
     </main>
   );
 };
