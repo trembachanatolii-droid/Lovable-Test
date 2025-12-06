@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import { initWebVitals } from './utils/webVitals';
+import { initErrorTracking } from './utils/errorTracking';
+
+// Initialize error tracking as early as possible
+initErrorTracking();
 
 // Defer framer-motion loading until after initial render to reduce critical path
 const FramerMotionWrapper = lazy(() =>
