@@ -170,4 +170,29 @@ export const practiceAreaRoutes: RouteObject[] = [
   { path: '/orange-county-customs-attorney', element: <OrangeCountyTariffLawyerPage /> },
   { path: '/inland-empire-trade-attorney', element: <InlandEmpireCustomsAttorneyPage /> },
   { path: '/central-valley-trade-attorney', element: <CentralValleyTariffLawyerPage /> },
+
+  // Practice Area Service Aliases
+  { path: '/regulatory-compliance-advisory', element: <RegulatoryCompliancePage /> },
+  { path: '/cbp-audit-defense', element: <CustomsDefensePage /> },
+  { path: '/customs-penalty-mitigation', element: <CustomsDefensePage /> },
+  { path: '/prior-disclosure-filing', element: <CustomsDefensePage /> },
+  { path: '/prior-disclosure', element: <CustomsDefensePage /> },
+  { path: '/customs-protests', element: <CustomsDefensePage /> },
+  { path: '/tariff-refund-protests', element: <CustomsDefensePage /> },
+  { path: '/duty-drawback', element: <LongBeachDutyDrawbackPage /> },
+  { path: '/ftz-operations', element: <LongBeachFTZCompliancePage /> },
+  { path: '/tariff-engineering', element: <CustomsDefensePage /> },
+  { path: '/tariff-classification', element: <CustomsDefensePage /> },
+  { path: '/country-of-origin', element: <CustomsDefensePage /> },
+  { path: '/scope-rulings', element: <CustomsDefensePage /> },
+  { path: '/export-licensing', element: <ExportControlsPage /> },
+  { path: '/itar-export-controls', element: <ExportControlsPage /> },
+  { path: '/export-controls-ear-itar', element: <ExportControlsPage /> },
+  { path: '/export-controls-sanctions', element: <ExportControlsPage /> },
+  { path: '/antidumping-cvd-defense', element: <LongBeachAntidumpingDefensePage /> },
+
+  // Port Aliases
+  { path: '/oakland-port-customs-attorney', element: <PortOfOaklandTariffPage /> },
+  { path: '/san-diego-port-customs-attorney', element: <PortOfSanDiegoCustomsPage /> },
+  { path: '/stockton-port-customs-attorney', element: <PortOfStocktonTradePage /> },
 ];
