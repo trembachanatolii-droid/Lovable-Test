@@ -33,12 +33,22 @@ const ArticleDisplayPage: React.FC = () => {
     let isMounted = true;
     setIsLoading(true);
 
-    loadArticle(articleId).then((loadedArticle) => {
-      if (isMounted) {
-        setArticle(loadedArticle);
-        setIsLoading(false);
-      }
-    });
+    loadArticle(articleId)
+      .then((loadedArticle) => {
+        if (isMounted) {
+          setArticle(loadedArticle);
+          setIsLoading(false);
+        }
+      })
+      .catch((error) => {
+        if (isMounted) {
+          if (import.meta.env.DEV) {
+            console.error('Failed to load article:', error);
+          }
+          setArticle(undefined);
+          setIsLoading(false);
+        }
+      });
 
     return () => {
       isMounted = false;

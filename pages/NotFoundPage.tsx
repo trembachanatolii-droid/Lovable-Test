@@ -12,7 +12,7 @@ const NotFoundPage: React.FC = () => {
   useMeta({
     title: '404 - Page Not Found',
     description: 'The page you are looking for could not be found. Return to Trembach Law Firm homepage or contact us for assistance with international trade and customs law matters.',
-    canonical: '',
+    canonical: '/',
     robots: 'noindex, nofollow',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-default.jpg`,

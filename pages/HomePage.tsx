@@ -157,7 +157,7 @@ const HomePage: React.FC = () => {
     title: 'California Tariff Lawyer | Customs Attorney Calabasas',
     description: 'California tariff lawyer & customs attorney. CBP defense, tariff classification, customs audits, trade compliance. Serving CA. (310) 744-1328.',
     keywords: 'tariff lawyer california, customs attorney calabasas, international trade attorney, tariff classification attorney, CBP defense lawyer, customs audit attorney, import export lawyer california, trade compliance attorney, calabasas trade lawyer',
-    canonical: '',
+    canonical: '/',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-home.jpg`,
     ogImageAlt: 'Trembach Law Firm - California Tariff Lawyer & Customs Attorney',

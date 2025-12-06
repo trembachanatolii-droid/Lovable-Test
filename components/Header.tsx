@@ -676,10 +676,29 @@ const Header: React.FC = () => {
       </div>
 
       {/* Search Results Popup */}
-      <div style={searchPopupOverlayStyle} onClick={closeSearchPopup}>
-        <div style={searchPopupStyle} onClick={(e) => e.stopPropagation()}>
+      <div
+        style={searchPopupOverlayStyle}
+        onClick={closeSearchPopup}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            closeSearchPopup();
+          }
+        }}
+        role="button"
+        tabIndex={showSearchPopup ? 0 : -1}
+        aria-label="Close search results popup"
+      >
+        <div
+          style={searchPopupStyle}
+          onClick={(e) => e.stopPropagation()}
+          onKeyDown={(e) => e.stopPropagation()}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="search-results-heading"
+        >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--navy-primary)', margin: 0 }}>
+            <h3 id="search-results-heading" style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--navy-primary)', margin: 0 }}>
               Search Results
             </h3>
             <button

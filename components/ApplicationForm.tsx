@@ -428,10 +428,10 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                     <h2 className="text-2xl font-garamond font-bold text-primary-navy border-b pb-2 mb-6">Personal Information</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                          <div>
-                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="firstName">First Name <span className="text-red-500" aria-hidden="true">*</span></label>
+                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="app_firstName">First Name <span className="text-red-500" aria-hidden="true">*</span></label>
                             <input
                                 type="text"
-                                id="firstName"
+                                id="app_firstName"
                                 name="firstName"
                                 value={formData.firstName}
                                 onChange={handleInputChange}
@@ -441,19 +441,19 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 autoComplete="given-name"
                                 aria-required="true"
                                 aria-invalid={!!fieldErrors.firstName}
-                                aria-describedby={fieldErrors.firstName ? 'firstName-error' : undefined}
+                                aria-describedby={fieldErrors.firstName ? 'app_firstName-error' : undefined}
                             />
                             {fieldErrors.firstName && (
-                                <span id="firstName-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                <span id="app_firstName-error" className="text-red-500 text-sm mt-1 block" role="alert">
                                     {fieldErrors.firstName}
                                 </span>
                             )}
                         </div>
                         <div>
-                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="lastName">Last Name <span className="text-red-500" aria-hidden="true">*</span></label>
+                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="app_lastName">Last Name <span className="text-red-500" aria-hidden="true">*</span></label>
                             <input
                                 type="text"
-                                id="lastName"
+                                id="app_lastName"
                                 name="lastName"
                                 value={formData.lastName}
                                 onChange={handleInputChange}
@@ -463,19 +463,19 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 autoComplete="family-name"
                                 aria-required="true"
                                 aria-invalid={!!fieldErrors.lastName}
-                                aria-describedby={fieldErrors.lastName ? 'lastName-error' : undefined}
+                                aria-describedby={fieldErrors.lastName ? 'app_lastName-error' : undefined}
                             />
                             {fieldErrors.lastName && (
-                                <span id="lastName-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                <span id="app_lastName-error" className="text-red-500 text-sm mt-1 block" role="alert">
                                     {fieldErrors.lastName}
                                 </span>
                             )}
                         </div>
                         <div>
-                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="email">Email Address <span className="text-red-500" aria-hidden="true">*</span></label>
+                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="app_email">Email Address <span className="text-red-500" aria-hidden="true">*</span></label>
                             <input
                                 type="email"
-                                id="email"
+                                id="app_email"
                                 name="email"
                                 value={formData.email}
                                 onChange={handleInputChange}
@@ -486,19 +486,19 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 inputMode="email"
                                 aria-required="true"
                                 aria-invalid={!!fieldErrors.email}
-                                aria-describedby={fieldErrors.email ? 'email-error' : undefined}
+                                aria-describedby={fieldErrors.email ? 'app_email-error' : undefined}
                             />
                             {fieldErrors.email && (
-                                <span id="email-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                <span id="app_email-error" className="text-red-500 text-sm mt-1 block" role="alert">
                                     {fieldErrors.email}
                                 </span>
                             )}
                         </div>
                         <div>
-                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="phone">Phone Number <span className="text-red-500" aria-hidden="true">*</span></label>
+                            <label className="block text-sm font-bold text-text-primary mb-2" htmlFor="app_phone">Phone Number <span className="text-red-500" aria-hidden="true">*</span></label>
                             <input
                                 type="tel"
-                                id="phone"
+                                id="app_phone"
                                 name="phone"
                                 value={formData.phone}
                                 onChange={handleInputChange}
@@ -509,10 +509,10 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ category }) => {
                                 inputMode="tel"
                                 aria-required="true"
                                 aria-invalid={!!fieldErrors.phone}
-                                aria-describedby={fieldErrors.phone ? 'phone-error' : undefined}
+                                aria-describedby={fieldErrors.phone ? 'app_phone-error' : undefined}
                             />
                             {fieldErrors.phone && (
-                                <span id="phone-error" className="text-red-500 text-sm mt-1 block" role="alert">
+                                <span id="app_phone-error" className="text-red-500 text-sm mt-1 block" role="alert">
                                     {fieldErrors.phone}
                                 </span>
                             )}
