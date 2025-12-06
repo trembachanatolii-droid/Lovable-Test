@@ -17,8 +17,6 @@ interface FormFieldProps {
     placeholder?: string;
     autoComplete?: string;
     inputMode?: InputModeType;
-    inputClassName?: string;
-    labelColor?: string;
     error?: string;
     onBlur?: (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }
@@ -32,8 +30,6 @@ const FormField: React.FC<FormFieldProps> = ({
     placeholder,
     autoComplete,
     inputMode,
-    inputClassName,
-    labelColor = 'text-white',
     error,
     onBlur
 }) => {
@@ -48,21 +44,33 @@ const FormField: React.FC<FormFieldProps> = ({
         'aria-required': required,
         'aria-invalid': !!error,
         'aria-describedby': error ? `${id}-error` : undefined,
-        className: `w-full px-5 py-4 text-base rounded transition-all focus-visible:outline focus-visible:outline-3 focus-visible:outline-secondary-teal focus-visible:outline-offset-2 ${inputClassName}`,
     };
 
     return (
-        <div>
-            <label htmlFor={id} className={`block text-base font-semibold mb-3 ${labelColor}`}>
-                {label} {required && <span className="text-secondary-teal" aria-label="required">*</span>}
+        <div className="group">
+            <label 
+                htmlFor={id} 
+                className="block text-[11px] font-medium tracking-[0.08em] uppercase text-white/70 mb-2 transition-colors duration-300 group-focus-within:text-white"
+            >
+                {label} {required && <span className="text-cyan-400" aria-label="required">*</span>}
             </label>
             {isTextArea ? (
-                <textarea {...commonProps} rows={7} className={`${commonProps.className} resize-none leading-relaxed`} aria-label={label}></textarea>
+                <textarea 
+                    {...commonProps} 
+                    rows={4} 
+                    className="w-full px-0 py-3 text-[15px] bg-transparent border-0 border-b border-white/20 text-white placeholder-white/30 resize-none leading-relaxed transition-all duration-300 focus:outline-none focus:border-white/60 focus:ring-0"
+                    aria-label={label}
+                />
             ) : (
-                <input type={type} {...commonProps} aria-label={label} />
+                <input 
+                    type={type} 
+                    {...commonProps} 
+                    className="w-full px-0 py-3 text-[15px] bg-transparent border-0 border-b border-white/20 text-white placeholder-white/30 transition-all duration-300 focus:outline-none focus:border-white/60 focus:ring-0"
+                    aria-label={label} 
+                />
             )}
             {error && (
-                <span id={`${id}-error`} className="text-red-400 text-base mt-1 block font-medium" role="alert">
+                <span id={`${id}-error`} className="text-red-400 text-xs mt-2 block font-medium" role="alert">
                     {error}
                 </span>
             )}
@@ -74,7 +82,7 @@ interface EvaluationFormProps {
     theme?: 'navy' | 'teal' | 'light';
 }
 
-const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
+const EvaluationForm: React.FC<EvaluationFormProps> = () => {
     const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [_submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -195,173 +203,162 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
         }
     };
 
-    const getThemeStyles = () => {
-        switch (theme) {
-            case 'light':
-                return {
-                    sectionBg: 'bg-neutral-lightGray',
-                    textColor: 'text-neutral-darkGray',
-                    headingColor: 'text-primary-navy',
-                    subTextColor: 'text-text-secondary',
-                    strongTextColor: 'text-primary-navy',
-                    labelColor: 'text-primary-navy',
-                    inputBg: 'bg-white text-primary-navy placeholder-text-secondary border border-border-subtle focus:border-secondary-teal'
-                };
-            case 'teal':
-                return {
-                    sectionBg: 'bg-soft-teal',
-                    textColor: 'text-primary-navy',
-                    headingColor: 'text-primary-navy',
-                    subTextColor: 'text-primary-navy/80',
-                    strongTextColor: 'text-primary-navy',
-                    labelColor: 'text-primary-navy',
-                    inputBg: 'bg-white text-primary-navy placeholder-text-secondary border border-transparent focus:border-secondary-teal'
-                };
-            case 'navy':
-            default:
-                return {
-                    sectionBg: 'bg-primary-navy',
-                    textColor: 'text-neutral-lightGray',
-                    headingColor: 'text-white',
-                    subTextColor: 'text-neutral-gray',
-                    strongTextColor: 'text-white',
-                    labelColor: 'text-white',
-                    inputBg: 'bg-primary-darkBlue text-white placeholder-neutral-gray'
-                };
-        }
-    };
-
-    const styles = getThemeStyles();
-
     return (
-        <section id="schedule-consultation" aria-labelledby="evaluation-heading" className={`${styles.sectionBg} py-20 px-6 ${styles.textColor}`}>
-            <div className="max-w-6xl mx-auto">
-                <header className="text-center mb-12">
-                    <h2 id="evaluation-heading" className={`font-garamond text-3xl md:text-4xl lg:text-5xl font-bold ${styles.headingColor} mb-4`}>
-                        Free Case Evaluation
-                    </h2>
-                    <p className={`text-lg ${styles.subTextColor} max-w-3xl mx-auto`}>
-                        Tell us about your case and our team of experts will get back to you promptly. All information submitted is confidential.
-                    </p>
-                </header>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <div className="lg:pr-8">
-                        <h3 className={`font-garamond text-[30px] font-bold ${styles.headingColor} mb-6 leading-tight`}>Your Strategic Partner in Trade Law</h3>
-                        <p className={`${styles.subTextColor} mb-6 text-base`} style={{ lineHeight: '1.7' }}>
-                            Submitting your case details allows our experienced attorneys to conduct a thorough preliminary review. We analyze the specifics of your situation against current trade laws and regulations to provide you with a clear, initial assessment of your options.
+        <section 
+            id="schedule-consultation" 
+            aria-labelledby="evaluation-heading" 
+            className="relative min-h-screen flex items-center justify-center overflow-hidden"
+            style={{
+                backgroundImage: 'url(/images/form-background-scales.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+            }}
+        >
+            {/* Subtle overlay for depth */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20" />
+            
+            <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-16 lg:py-20">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                    {/* Left Column - Text Content */}
+                    <div className="text-white">
+                        <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-white/60 mb-4">
+                            Complimentary Consultation
                         </p>
-                        <ul className={`space-y-4 ${styles.subTextColor} text-base`}>
-                            <li className="flex items-start">
-                                <span className="text-gold-primary text-lg mr-3 flex-shrink-0" aria-hidden="true">&#10003;</span>
-                                <p style={{ lineHeight: '1.6' }}>
-                                    <strong className={`${styles.strongTextColor} font-bold`}>Confidential Review:</strong> Your submission is confidential.
-                                </p>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-gold-primary text-lg mr-3 flex-shrink-0" aria-hidden="true">&#10003;</span>
-                                <p style={{ lineHeight: '1.6' }}>
-                                    <strong className={`${styles.strongTextColor} font-bold`}>Expert Analysis:</strong> Direct evaluation by a partner-level attorney with a unique background in both enforcement and defense.
-                                </p>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-gold-primary text-lg mr-3 flex-shrink-0" aria-hidden="true">&#10003;</span>
-                                <p style={{ lineHeight: '1.6' }}>
-                                    <strong className={`${styles.strongTextColor} font-bold`}>No Obligation:</strong> This initial consultation is completely free and does not commit you to our services.
-                                </p>
-                            </li>
-                        </ul>
+                        <h2 
+                            id="evaluation-heading" 
+                            className="font-garamond text-4xl md:text-5xl lg:text-[56px] font-light text-white mb-6 leading-[1.1] tracking-[-0.02em]"
+                        >
+                            Free Case<br />Evaluation
+                        </h2>
+                        <p className="text-[17px] text-white/70 leading-[1.6] mb-10 max-w-md font-light">
+                            Our experienced attorneys will conduct a thorough preliminary review of your case against current trade laws and regulations.
+                        </p>
+                        
+                        <div className="space-y-5">
+                            <div className="flex items-start gap-4">
+                                <div className="w-5 h-5 rounded-full border border-white/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p className="text-[15px] text-white font-medium mb-0.5">Confidential Review</p>
+                                    <p className="text-[13px] text-white/50 font-light">Your submission is completely private</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-4">
+                                <div className="w-5 h-5 rounded-full border border-white/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p className="text-[15px] text-white font-medium mb-0.5">Partner-Level Analysis</p>
+                                    <p className="text-[13px] text-white/50 font-light">Direct evaluation by senior attorneys</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-4">
+                                <div className="w-5 h-5 rounded-full border border-white/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p className="text-[15px] text-white font-medium mb-0.5">No Obligation</p>
+                                    <p className="text-[13px] text-white/50 font-light">Free with no commitment required</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="space-y-6" aria-label="Case evaluation request form" noValidate>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <FormField
-                                id="fullName"
-                                label="First Name"
-                                required
-                                placeholder=""
-                                autoComplete="given-name"
-                                inputClassName={styles.inputBg}
-                                labelColor={styles.labelColor}
-                                error={fieldErrors.fullName}
-                                onBlur={(e) => validateField('fullName', e.target.value)}
-                            />
-                            <FormField
-                                id="lastName"
-                                label="Last Name"
-                                required
-                                placeholder=""
-                                autoComplete="family-name"
-                                inputClassName={styles.inputBg}
-                                labelColor={styles.labelColor}
-                                error={fieldErrors.lastName}
-                                onBlur={(e) => validateField('lastName', e.target.value)}
-                            />
+                    {/* Right Column - Form */}
+                    <div className="relative">
+                        {/* Glass card effect */}
+                        <div className="backdrop-blur-xl bg-white/[0.08] rounded-3xl p-8 lg:p-10 border border-white/10 shadow-2xl">
+                            <form onSubmit={handleSubmit} className="space-y-6" aria-label="Case evaluation request form" noValidate>
+                                <div className="grid grid-cols-2 gap-6">
+                                    <FormField
+                                        id="fullName"
+                                        label="First Name"
+                                        required
+                                        placeholder=""
+                                        autoComplete="given-name"
+                                        error={fieldErrors.fullName}
+                                        onBlur={(e) => validateField('fullName', e.target.value)}
+                                    />
+                                    <FormField
+                                        id="lastName"
+                                        label="Last Name"
+                                        required
+                                        placeholder=""
+                                        autoComplete="family-name"
+                                        error={fieldErrors.lastName}
+                                        onBlur={(e) => validateField('lastName', e.target.value)}
+                                    />
+                                </div>
+                                <div className="grid grid-cols-2 gap-6">
+                                    <FormField
+                                        id="company"
+                                        label="Company"
+                                        required
+                                        placeholder=""
+                                        autoComplete="organization"
+                                        error={fieldErrors.company}
+                                        onBlur={(e) => validateField('company', e.target.value)}
+                                    />
+                                    <FormField
+                                        id="email"
+                                        label="Email"
+                                        type="email"
+                                        required
+                                        placeholder=""
+                                        autoComplete="email"
+                                        inputMode="email"
+                                        error={fieldErrors.email}
+                                        onBlur={(e) => validateField('email', e.target.value)}
+                                    />
+                                </div>
+                                <FormField
+                                    id="phone"
+                                    label="Phone Number"
+                                    type="tel"
+                                    required
+                                    placeholder=""
+                                    autoComplete="tel"
+                                    inputMode="tel"
+                                    error={fieldErrors.phone}
+                                    onBlur={(e) => validateField('phone', e.target.value)}
+                                />
+                                <FormField
+                                    id="message"
+                                    label="Brief Description of Your Case"
+                                    isTextArea
+                                    required
+                                    placeholder=""
+                                    error={fieldErrors.message}
+                                    onBlur={(e) => validateField('message', e.target.value)}
+                                />
+                                
+                                <div className="pt-4">
+                                    <Button
+                                        type="submit"
+                                        variant="solid"
+                                        className={`w-full bg-white text-slate-900 hover:bg-white/90 rounded-full py-4 text-[15px] font-medium tracking-wide transition-all duration-300 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:scale-[1.02] hover:shadow-lg hover:shadow-white/20'}`}
+                                        aria-label="Submit case evaluation request"
+                                        disabled={isSubmitting}
+                                        aria-disabled={isSubmitting}
+                                    >
+                                        {isSubmitting ? 'Submitting...' : 'Submit for Review'}
+                                    </Button>
+                                </div>
+                                
+                                <p className="text-[11px] text-white/40 text-center pt-2 font-light">
+                                    All information submitted is confidential and protected.
+                                </p>
+                            </form>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <FormField
-                                id="company"
-                                label="Company Name"
-                                required
-                                placeholder=""
-                                autoComplete="organization"
-                                inputClassName={styles.inputBg}
-                                labelColor={styles.labelColor}
-                                error={fieldErrors.company}
-                                onBlur={(e) => validateField('company', e.target.value)}
-                            />
-                            <FormField
-                                id="email"
-                                label="Email Address"
-                                type="email"
-                                required
-                                placeholder=""
-                                autoComplete="email"
-                                inputMode="email"
-                                inputClassName={styles.inputBg}
-                                labelColor={styles.labelColor}
-                                error={fieldErrors.email}
-                                onBlur={(e) => validateField('email', e.target.value)}
-                            />
-                        </div>
-                        <FormField
-                            id="phone"
-                            label="Phone Number"
-                            type="tel"
-                            required
-                            placeholder=""
-                            autoComplete="tel"
-                            inputMode="tel"
-                            inputClassName={styles.inputBg}
-                            labelColor={styles.labelColor}
-                            error={fieldErrors.phone}
-                            onBlur={(e) => validateField('phone', e.target.value)}
-                        />
-                        <div>
-                            <FormField
-                                id="message"
-                                label="Tell us about your case"
-                                isTextArea
-                                required
-                                placeholder=""
-                                inputClassName={styles.inputBg}
-                                labelColor={styles.labelColor}
-                                error={fieldErrors.message}
-                                onBlur={(e) => validateField('message', e.target.value)}
-                            />
-                        </div>
-                        <div className="text-center pt-4">
-                            <Button
-                                type="submit"
-                                variant="solid"
-                                className={`bg-secondary-forestGreen text-white hover:bg-secondary-teal transform transition-transform duration-200 hover:scale-[1.03] px-16 py-5 text-base font-bold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
-                                aria-label="Submit case evaluation request"
-                                disabled={isSubmitting}
-                                aria-disabled={isSubmitting}
-                            >
-                                {isSubmitting ? 'SUBMITTING...' : 'SUBMIT FOR REVIEW'}
-                            </Button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>

@@ -4,7 +4,7 @@ interface StickyPhoneButtonProps {
   showOnMobileOnly?: boolean;
 }
 
-const StickyPhoneButton: React.FC<StickyPhoneButtonProps> = ({ showOnMobileOnly = true }) => {
+const StickyPhoneButton: React.FC<StickyPhoneButtonProps> = ({ showOnMobileOnly: _showOnMobileOnly = true }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
