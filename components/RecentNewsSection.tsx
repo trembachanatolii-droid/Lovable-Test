@@ -20,16 +20,33 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
       id="news-section"
       className="recent-news"
       aria-labelledby="news-heading"
+      style={{ position: 'relative', overflow: 'hidden' }}
     >
       {/* Background Image - same as footer */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/footer-background.png)' }}
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: 'url(/images/footer-background.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
       />
       {/* Heavy Dark Blue Overlay - same as footer */}
       <div
-        className="absolute inset-0 bg-primary-navy"
-        style={{ opacity: 0.92 }}
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: '#012169',
+          opacity: 0.92,
+        }}
       />
 
       {/* Content Container */}
