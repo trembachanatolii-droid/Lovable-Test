@@ -30,6 +30,7 @@ const SupplyChainESGGuidePage = lazy(() => import('../pages/SupplyChainESGGuideP
 const EcommerceDigitalTradeGuidePage = lazy(() => import('../pages/EcommerceDigitalTradeGuidePage'));
 const Section301TariffsGuidePage = lazy(() => import('../pages/Section301TariffsGuidePage'));
 const UFLPAComplianceGuidePage = lazy(() => import('../pages/UFLPAComplianceGuidePage'));
+const TariffPracticeHubPage = lazy(() => import('../pages/TariffPracticeHubPage'));
 
 // Industry pages
 const TechnologyElectronicsIndustryPage = lazy(() => import('../pages/TechnologyElectronicsIndustryPage'));
@@ -65,6 +66,13 @@ export const coreRoutes: RouteObject[] = [
   { path: '/california-locations', element: <CaliforniaLocationsPage /> },
   { path: '/california-offices', element: <CaliforniaLocationsPage /> },
   { path: '/california-ports', element: <CaliforniaLocationsPage /> },
+
+  // Tariff Practice Hub (comprehensive tariff services page)
+  { path: '/tariff-lawyer', element: <TariffPracticeHubPage /> },
+  { path: '/tariff-attorney', element: <TariffPracticeHubPage /> },
+  { path: '/california-tariff-lawyer', element: <TariffPracticeHubPage /> },
+  { path: '/tariff-practice', element: <TariffPracticeHubPage /> },
+  { path: '/tariff-services', element: <TariffPracticeHubPage /> },
 
   // Resource Guides
   { path: '/resources/tariffs-duties-classification', element: <TariffsClassificationGuidePage /> },
