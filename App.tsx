@@ -2,7 +2,6 @@ import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import StickyPhoneButton from './components/StickyPhoneButton';
 import ErrorBoundary from './components/ErrorBoundary';
 import ScrollToTop from './components/ScrollToTop';
 import ConnectionStatus from './components/ConnectionStatus';
@@ -56,8 +55,6 @@ const App: React.FC = () => {
           </ErrorBoundary>
         </main>
         <Footer />
-        {/* Sticky Phone Button - Shows on all devices */}
-        <StickyPhoneButton showOnMobileOnly={true} />
         {/* Connection Status Monitor - PWA Offline Support */}
         <ConnectionStatus />
       </div>
