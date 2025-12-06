@@ -13,6 +13,33 @@ export interface ArticlePreview {
 
 export const articlePreviews: ArticlePreview[] = [
   {
+    "id": "tariff-revenue-205-billion-california-importers-december-2025",
+    "title": "$205 Billion in Tariff Revenue Through October 2025: California Importers Navigate Historic Customs Duty Environment",
+    "subheading": "Federal customs collections reach unprecedented levels as effective tariff rates climb to 14 percentage points above 2024 baseline, fundamentally reshaping California import economics",
+    "intro": "Through October 2025, the United States federal government collected $205 billion in customs duties, marking the highest annual tariff revenue collection in modern American history. This unprecedented revenue surge reflects effective tariff rates climbing approximately 14 percentage points above the 2.5% baseline from a year ago, fundamentally transforming the economic landscape for California importers who process more than 40% of the nation's containerized imports through the Ports of Los Angeles, Long Beach, and Oakland.",
+    "keywords": "tariff revenue 2025 California, customs duty attorney California, Section 301 tariff lawyer, China tariff attorney California, tariff mitigation strategies, customs compliance attorney California, CBP audit defense lawyer, tariff classification attorney, import duty reduction California, customs duty refund attorney California",
+    "publishedDate": "2025-12-06",
+    "lastModified": "2025-12-06"
+  },
+  {
+    "id": "china-rare-earth-export-controls-suspension-california-december-2025",
+    "title": "China Rare Earth Export Controls Suspended Until 2026: California Technology and Defense Industries Navigate Critical Materials Relief",
+    "subheading": "November 2025 US-China trade agreement suspends rare earth export restrictions through November 2026, providing temporary supply chain stability for California EV, semiconductor, and aerospace manufacturers",
+    "intro": "On November 10, 2025, following high-level negotiations between President Trump and President Xi Jinping, China announced a suspension of its rare earth element export controls until November 10, 2026, as part of a broader US-China trade agreement. This suspension provides critical temporary relief for California's technology, defense, and clean energy sectors, which depend heavily on rare earth elements for semiconductor manufacturing, electric vehicle production, aerospace systems, and renewable energy technologies.",
+    "keywords": "China rare earth export controls California, rare earth elements attorney, critical materials supply chain lawyer, semiconductor rare earth compliance, EV rare earth elements California, defense rare earth supply chain attorney, rare earth trade restrictions lawyer, magnet materials export controls California, technology sector rare earth attorney, aerospace critical materials lawyer",
+    "publishedDate": "2025-12-06",
+    "lastModified": "2025-12-06"
+  },
+  {
+    "id": "section-301-solar-equipment-exclusion-extension-california-december-2025",
+    "title": "Section 301 Solar Manufacturing Equipment Exclusions Extended: California Renewable Energy Sector Secures Critical Supply Chain Relief",
+    "subheading": "USTR extends tariff exclusions for silicon processing and wafer manufacturing equipment essential to California solar panel production and renewable energy infrastructure",
+    "intro": "The Office of the United States Trade Representative (USTR) has extended critical tariff exclusions for solar manufacturing equipment under Section 301 of the Trade Act of 1974, providing essential relief to California's renewable energy sector through November 2026. These exclusions exempt specialized silicon processing equipment—including monocrystalline ingot growth furnaces, diamond wire saws, chemical vapor deposition machines, and screen-printing line equipment—from the 25% Section 301 tariffs otherwise applicable to Chinese-origin machinery.",
+    "keywords": "Section 301 solar equipment exclusions California, USTR solar tariff relief, solar manufacturing tariffs, monocrystalline silicon equipment, UFLPA solar compliance, California renewable energy law, solar wafer manufacturing, Section 301 exclusion attorney, solar supply chain compliance, photovoltaic manufacturing tariffs",
+    "publishedDate": "2025-12-06",
+    "lastModified": "2025-12-06"
+  },
+  {
     "id": "section-301-phase-one-hearing-december-2025-california",
     "title": "Section 301 Phase One Agreement Investigation: December 16, 2025 USTR Hearing",
     "subheading": "California Importers Face Critical Compliance Review as USTR Examines China's $200 Billion Purchase Commitments and IP Protection",
