@@ -52,6 +52,26 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
           question: 'Can you help with emergency CBP seizures at LA/Long Beach ports?',
           answer: 'Yes. When CBP seizes or detains your cargo at Port of LA or Long Beach, we prioritize emergency response. We can typically respond to urgent seizure notices, detention orders, or UFLPA holds within hours. Call our direct line at (310) 744-1328 for immediate assistance with port emergencies.',
         },
+        {
+          question: 'How can a Los Angeles customs attorney help with Trump tariffs 2025?',
+          answer: 'Our Los Angeles customs attorneys help importers navigate the 2025 Trump administration tariffs including Section 301 China tariffs (up to 100%), Section 232 steel and aluminum duties (25-50%), and new reciprocal tariffs. We assist with tariff exclusion requests, product reclassification strategies, country of origin determinations, and supply chain restructuring to legally minimize your duty burden.',
+        },
+        {
+          question: 'What is the cost of hiring a tariff lawyer in Los Angeles?',
+          answer: 'Our Los Angeles tariff lawyer services include free initial consultations. We offer flat-fee pricing for common services like customs protests, binding ruling requests, and prior disclosures. Complex matters such as CBP audits, UFLPA detentions, and trade litigation are billed at transparent hourly rates. Contact us at (310) 744-1328 for a personalized fee estimate.',
+        },
+        {
+          question: 'Do you handle Section 301 China tariff cases in Los Angeles?',
+          answer: 'Yes, Section 301 tariff cases are a core practice area for our Los Angeles office. We help LA importers with tariff exclusion analysis, substantial transformation strategies for third-country manufacturing, HTS reclassification to avoid List 1-4 tariffs, and refund claims for overpaid duties. Many electronics, furniture, and consumer goods importers at Port of LA face these tariffs.',
+        },
+        {
+          question: 'Can you represent companies outside Los Angeles in federal customs matters?',
+          answer: 'Absolutely. While our office is in greater Los Angeles, we represent clients nationwide in federal customs matters including U.S. Court of International Trade litigation, CBP administrative proceedings, Commerce Department antidumping reviews, and USTR exclusion requests. Our LA location provides convenient access to the busiest U.S. ports.',
+        },
+        {
+          question: 'How do I find the best tariff lawyer in Los Angeles?',
+          answer: 'The best tariff lawyer in Los Angeles should have: exclusive focus on customs and international trade law (not general practice), experience with Port of LA/Long Beach matters, proven results in CBP audits and penalty cases, knowledge of current tariff issues (Section 301, Section 232, UFLPA), and transparent pricing. Trembach Law meets all these criteria with specialized expertise and port proximity.',
+        },
       ]),
     ],
   });
@@ -68,7 +88,7 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
         <picture className="hero-bg">
           <img
             src="/images/hero-port-background-2.jpg"
-            alt="Los Angeles Port - Tariff Lawyer and Customs Attorney serving LA and Long Beach"
+            alt=""
             role="presentation"
             width="1920"
             height="1080"
