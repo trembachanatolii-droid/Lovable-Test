@@ -13,9 +13,9 @@ const EvaluationForm = lazy(() => import('../components/EvaluationForm'));
 
 const LosAngelesTariffLawyerPage: React.FC = () => {
   useMeta({
-    title: 'Los Angeles Tariff Lawyer | Customs Attorney LA',
-    description: 'Los Angeles tariff lawyer & customs attorney. Downtown LA trade law firm. CBP defense, tariff classification, customs audits. Port of LA/Long Beach access. (310) 744-1328.',
-    keywords: 'tariff lawyer los angeles, customs attorney los angeles, trade attorney los angeles ca, international trade lawyer los angeles, customs lawyer downtown la, tariff attorney southern california, los angeles import export lawyer, cbp defense attorney los angeles',
+    title: 'Tariff Lawyer Los Angeles | #1 Customs Attorney LA | Trump Tariffs 2025',
+    description: 'Tariff lawyer Los Angeles - Top-rated customs attorney in LA. Expert Trump tariffs 2025, Section 301, Section 232 defense. CBP audits, UFLPA compliance, import/export. Port of LA & Long Beach. FREE consultation (310) 744-1328.',
+    keywords: 'tariff lawyer los angeles, los angeles tariff lawyer, customs attorney los angeles, los angeles customs attorney, international trade lawyer los angeles, tariff attorney los angeles, customs lawyer los angeles, trade law firm los angeles, import lawyer los angeles, export attorney los angeles, cbp defense attorney los angeles, trump tariffs lawyer los angeles, section 301 attorney los angeles, section 232 lawyer la, tariff classification attorney los angeles, customs audit lawyer los angeles, port of los angeles attorney, port of long beach lawyer, uflpa attorney los angeles, antidumping lawyer los angeles, trade compliance attorney la, customs broker attorney los angeles, duty drawback lawyer los angeles, customs seizure attorney los angeles, hts code attorney los angeles, tariff mitigation lawyer la, best tariff lawyer los angeles, top customs attorney los angeles, emergency customs lawyer los angeles, 24 hour customs attorney la, tariff litigation los angeles, customs penalty attorney los angeles, prior disclosure lawyer los angeles, binding ruling attorney los angeles, import export attorney la, international trade attorney los angeles california, southern california tariff lawyer, la customs law firm, downtown la trade attorney, los angeles trade lawyer',
     canonical: 'los-angeles-tariff-lawyer',
     ogType: 'website',
     ogImage: `${siteConfig.siteUrl}/og-image-los-angeles.jpg`,
@@ -68,7 +68,7 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
         <picture className="hero-bg">
           <img
             src="/images/hero-port-background-2.jpg"
-            alt=""
+            alt="Los Angeles Port - Tariff Lawyer and Customs Attorney serving LA and Long Beach"
             role="presentation"
             width="1920"
             height="1080"
@@ -81,13 +81,35 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
         <div className="hero-overlay" aria-hidden="true"></div>
 
         <div className="container">
-          <h1>Los Angeles Tariff Lawyer<br />Customs Attorney California</h1>
+          <h1>Tariff Lawyer Los Angeles<br />Customs Attorney LA</h1>
           <p className="hero-subtitle">
-            Los Angeles tariff lawyer and customs attorney serving California businesses. Expert CBP defense, tariff classification, and trade compliance with direct access to Port of LA and Long Beach.
+            <strong>Los Angeles tariff lawyer</strong> and <strong>customs attorney</strong> specializing in Trump tariffs 2025, Section 301, Section 232 steel & aluminum duties. Expert CBP defense, tariff classification, and UFLPA compliance. Immediate access to <strong>Port of Los Angeles</strong> and <strong>Port of Long Beach</strong>.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link to="/contact" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Trump Tariffs 2025 Alert Section - Competitor Matching */}
+      <section className="py-12 px-6 bg-gradient-to-r from-red-700 to-red-800 text-white">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold font-garamond mb-4 text-white">
+              ⚠️ Trump Tariffs 2025: LA Importers Need Action Now
+            </h2>
+            <p className="text-xl mb-6 opacity-95 leading-relaxed max-w-4xl mx-auto">
+              The 2025 Trump administration tariffs are impacting Los Angeles importers with <strong>Section 301 rates up to 100% on Chinese goods</strong>, <strong>Section 232 steel/aluminum duties at 25-50%</strong>, and new reciprocal tariffs. As your <strong>Los Angeles tariff lawyer</strong>, we help you navigate exclusions, classification strategies, and compliance to minimize your duty burden.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link to="/contact" className="bg-white text-red-700 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
+                Free Tariff Analysis
+              </Link>
+              <Link to="/resources/section-301-tariffs-guide" className="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-red-700 transition-colors">
+                2025 Tariff Guide
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -97,11 +119,11 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
         <div className="max-w-[1200px] mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-6">
-              Your Local Tariff & Customs Law Firm
+              Los Angeles Tariff Lawyer & Customs Attorney
             </h2>
             <div className="w-24 h-1 bg-secondary-teal mx-auto mb-6"></div>
             <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-              Serving Los Angeles and Southern California with expert tariff and customs legal services. Our LA location provides immediate access to <strong>Port of Los Angeles and Port of Long Beach</strong>, the nation's busiest port complex handling over 40% of U.S. containerized imports.
+              As your <strong>Los Angeles tariff lawyer</strong>, we serve Southern California businesses with expert customs and international trade legal services. Our LA location provides immediate access to <strong>Port of Los Angeles and Port of Long Beach</strong>, the nation's busiest port complex handling over 40% of U.S. containerized imports.
             </p>
           </div>
 
@@ -339,8 +361,70 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Related Services & Resources */}
+      {/* Industries Served - LA Specific */}
       <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
+            Industries We Serve in Los Angeles
+          </h2>
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed text-center mb-12">
+            As the leading <strong>Los Angeles tariff lawyer</strong>, we represent importers and exporters across all industries entering through the <strong>Port of Los Angeles</strong> and <strong>Port of Long Beach</strong>.
+          </p>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">🔌</div>
+              <h3 className="font-bold text-primary-navy mb-2">Electronics & Technology</h3>
+              <p className="text-sm text-text-secondary">Section 301 China tariffs, semiconductor imports, ITAR/EAR export controls</p>
+            </div>
+
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">👗</div>
+              <h3 className="font-bold text-primary-navy mb-2">Fashion & Apparel</h3>
+              <p className="text-sm text-text-secondary">Textile tariffs, UFLPA forced labor compliance, country of origin</p>
+            </div>
+
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">🚗</div>
+              <h3 className="font-bold text-primary-navy mb-2">Automotive Parts</h3>
+              <p className="text-sm text-text-secondary">Section 232 steel/aluminum, USMCA origin, antidumping duties</p>
+            </div>
+
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">🥗</div>
+              <h3 className="font-bold text-primary-navy mb-2">Food & Agriculture</h3>
+              <p className="text-sm text-text-secondary">FDA holds, USDA inspections, agricultural tariffs, import permits</p>
+            </div>
+
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">🏭</div>
+              <h3 className="font-bold text-primary-navy mb-2">Manufacturing</h3>
+              <p className="text-sm text-text-secondary">Industrial equipment, machinery tariffs, duty drawback programs</p>
+            </div>
+
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">💊</div>
+              <h3 className="font-bold text-primary-navy mb-2">Pharmaceuticals</h3>
+              <p className="text-sm text-text-secondary">Drug import compliance, FDA registration, controlled substances</p>
+            </div>
+
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">🛋️</div>
+              <h3 className="font-bold text-primary-navy mb-2">Furniture & Home Goods</h3>
+              <p className="text-sm text-text-secondary">Antidumping duties, Section 301 tariffs, wood product compliance</p>
+            </div>
+
+            <div className="bg-neutral-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">📦</div>
+              <h3 className="font-bold text-primary-navy mb-2">E-Commerce</h3>
+              <p className="text-sm text-text-secondary">De minimis changes, Section 321 entries, FBA imports, 3PL compliance</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services & Resources */}
+      <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold font-garamond text-primary-navy mb-12 text-center">
             Related Services & Resources
@@ -348,7 +432,7 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12 justify-center">
             {/* Legal Services */}
-            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
@@ -388,7 +472,7 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
             </div>
 
             {/* Other Locations */}
-            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Other California Locations</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
@@ -417,7 +501,7 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
             </div>
 
             {/* Helpful Guides */}
-            <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Helpful Guides</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
