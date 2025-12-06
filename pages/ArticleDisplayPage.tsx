@@ -272,10 +272,10 @@ const ArticleDisplayPage: React.FC = () => {
               }
 
               .article-content p {
-                font-size: 16px;
+                font-size: 17px;
                 line-height: 1.75;
-                color: #333333;
-                margin-bottom: 24px;
+                color: #374151;
+                margin-bottom: 20px;
               }
 
               .article-content ul,
@@ -286,9 +286,9 @@ const ArticleDisplayPage: React.FC = () => {
               }
 
               .article-content li {
-                font-size: 16px;
+                font-size: 17px;
                 line-height: 1.75;
-                color: #333333;
+                color: #374151;
                 margin-bottom: 12px;
               }
 
