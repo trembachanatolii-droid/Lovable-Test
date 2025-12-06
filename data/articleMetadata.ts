@@ -10,6 +10,11 @@ export interface ArticleMetadataItem {
 }
 
 export const articleMetadata: Record<string, ArticleMetadataItem> = {
+  // December 6, 2025 (3 articles)
+  'tariff-revenue-205-billion-california-importers-december-2025': { date: 'DECEMBER 6, 2025', isoDate: '2025-12-06', readTime: '8 MIN READ' },
+  'china-rare-earth-export-controls-suspension-california-december-2025': { date: 'DECEMBER 6, 2025', isoDate: '2025-12-06', readTime: '9 MIN READ' },
+  'section-301-solar-equipment-exclusion-extension-california-december-2025': { date: 'DECEMBER 6, 2025', isoDate: '2025-12-06', readTime: '15 MIN READ' },
+
   // December 5, 2025 (3 articles)
   'section-301-phase-one-hearing-december-2025-california': { date: 'DECEMBER 5, 2025', isoDate: '2025-12-05', readTime: '14 MIN READ' },
   'usmca-withdrawal-uncertainty-california-december-2025': { date: 'DECEMBER 5, 2025', isoDate: '2025-12-05', readTime: '17 MIN READ' },
