@@ -312,7 +312,7 @@ const SearchResultsPage: React.FC = () => {
               </p>
               <div className="flex justify-center gap-4 mt-6">
                 <Link
-                  to="/contact"
+                  to="/contact#schedule-consultation"
                   className="inline-flex items-center px-6 py-3 bg-primary-navy text-white rounded-lg hover:bg-primary-navy/90 transition-colors font-semibold"
                 >
                   Need Legal Help?
@@ -337,7 +337,7 @@ const SearchResultsPage: React.FC = () => {
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Link
-              to="/contact"
+              to="/contact#schedule-consultation"
               className="inline-block px-8 py-4 bg-secondary-teal text-white font-semibold rounded-lg hover:bg-secondary-teal/90 transition-colors"
             >
               Schedule Free Consultation

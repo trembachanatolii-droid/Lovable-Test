@@ -133,7 +133,7 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact#schedule-consultation"
                 className="font-bold py-3 px-8 rounded-lg transition-colors"
                 style={{ backgroundColor: '#ffffff', color: '#b91c1c' }}
               >

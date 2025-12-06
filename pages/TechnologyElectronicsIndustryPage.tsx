@@ -535,7 +535,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
                     </Link>
                   </div>
                   <div className="service-link-item">
-                    <Link to="/contact" className="service-link">
+                    <Link to="/contact#schedule-consultation" className="service-link">
                       <span className="service-link__title">Schedule Consultation</span>
                       <p className="service-link__description">Get personalized guidance</p>
                       <div className="triangle-slide">

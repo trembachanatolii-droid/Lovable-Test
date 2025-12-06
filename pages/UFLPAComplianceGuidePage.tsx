@@ -67,13 +67,13 @@ const UFLPAComplianceGuidePage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToSection('overview')} className="hero-cta">Explore UFLPA Compliance</button>
-            <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>
       </section>
 
       {/* Quick Navigation */}
-      <section className="py-10 px-4 bg-gray-50 border-b border-gray-200">
+      <section className="mt-5 py-10 px-4 bg-gray-50 border-b border-gray-200">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-primary-navy mb-6 text-center">Jump to Section</h2>
           <div className="flex flex-wrap justify-center gap-4 text-base">

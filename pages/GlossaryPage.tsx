@@ -623,7 +623,7 @@ const GlossaryPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToCategory(0)} className="hero-cta">Browse Terms</button>
-            <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>
       </section>
