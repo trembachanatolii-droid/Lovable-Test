@@ -237,7 +237,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
         <section id="schedule-consultation" aria-labelledby="evaluation-heading" className={`${styles.sectionBg} py-20 px-6 ${styles.textColor}`}>
             <div className="max-w-6xl mx-auto">
                 <header className="text-center mb-12">
-                    <h2 id="evaluation-heading" className={`font-garamond text-5xl font-bold ${styles.headingColor} mb-4`}>
+                    <h2 id="evaluation-heading" className={`font-garamond text-3xl md:text-4xl lg:text-5xl font-bold ${styles.headingColor} mb-4`}>
                         Free Case Evaluation
                     </h2>
                     <p className={`text-lg ${styles.subTextColor} max-w-3xl mx-auto`}>

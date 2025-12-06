@@ -176,7 +176,7 @@ const LegalPage: React.FC<LegalPageProps> = ({ title }) => {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-4xl mx-auto">
-          <h1 className="text-white text-5xl md:text-7xl font-bold font-garamond mb-6 tracking-tight leading-tight" style={{color: '#ffffff', textShadow: '0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6), 0 0 40px rgba(1, 33, 105, 0.5)'}}>
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold font-garamond mb-6 tracking-tight leading-tight" style={{color: '#ffffff', textShadow: '0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6), 0 0 40px rgba(1, 33, 105, 0.5)'}}>
             {title}
           </h1>
           <div className="w-24 h-1 bg-secondary-teal mx-auto mt-6"></div>
