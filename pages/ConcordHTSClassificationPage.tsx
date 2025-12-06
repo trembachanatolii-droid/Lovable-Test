@@ -241,7 +241,7 @@ const ConcordHTSClassificationPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">CBP Audit Defense</span>
                     <p className="service-link__description">Focused assessment defense</p>
                     <div className="triangle-slide">

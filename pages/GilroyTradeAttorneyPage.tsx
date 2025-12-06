@@ -419,7 +419,7 @@ const GilroyTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Food & Agriculture Trade</span>
                       <p className="service-link__description">Export/import compliance</p>
                       <div className="triangle-slide">
@@ -478,7 +478,7 @@ const GilroyTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Fresh Produce</span>
                       <p className="service-link__description">Garlic, tomatoes, vegetables</p>
                       <div className="triangle-slide">
@@ -491,7 +491,7 @@ const GilroyTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Processed Foods</span>
                       <p className="service-link__description">Canned goods, spices, sauces</p>
                       <div className="triangle-slide">
@@ -504,7 +504,7 @@ const GilroyTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Organic & Specialty</span>
                       <p className="service-link__description">USDA organic exports</p>
                       <div className="triangle-slide">

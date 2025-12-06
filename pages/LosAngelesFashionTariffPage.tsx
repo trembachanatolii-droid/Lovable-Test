@@ -443,7 +443,7 @@ const LosAngelesFashionTariffPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">CBP Audit Defense</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

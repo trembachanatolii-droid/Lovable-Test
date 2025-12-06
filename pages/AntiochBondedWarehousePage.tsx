@@ -307,7 +307,7 @@ const AntiochBondedWarehousePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Customs Compliance</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">Customs Defense & Litigation</span>
                     <p className="service-link__description">CBP audits, seizures, penalty defense</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: '50%', transform: 'translateY(-50%)', transition: 'right 0.3s ease', color: '#3FBB94' }}>

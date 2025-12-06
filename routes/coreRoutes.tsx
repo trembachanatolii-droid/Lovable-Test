@@ -74,6 +74,7 @@ export const coreRoutes: RouteObject[] = [
   { path: '/resources/uflpa-compliance-guide', element: <UFLPAComplianceGuidePage /> },
   { path: '/glossary', element: <GlossaryPage /> },
   { path: '/faq', element: <FAQCenterPage /> },
+  { path: '/trade-law-faq', element: <FAQCenterPage /> },
   { path: '/consultation-booking', element: <ConsultationBookingPage /> },
 
   // Industry Pages

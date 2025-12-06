@@ -232,7 +232,7 @@ const UplandCustomsBondPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">Customs Defense</span>
                     <p className="service-link__description">CBP audits & penalty defense</p>
                     <div className="triangle-slide" style={{ position: 'absolute', right: '-96px', top: 0, bottom: 0, width: '96px', background: 'linear-gradient(135deg, #3FBB94 0%, #2a8a6b 100%)', clipPath: 'polygon(100% 0, 0% 50%, 100% 100%)', transition: 'right 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

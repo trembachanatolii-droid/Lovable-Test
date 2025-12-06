@@ -552,7 +552,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Forced Labor Compliance Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">UFLPA Detention Defense</span>
                     <p className="service-link__description">Release detained Xinjiang-related goods</p>
                     <div className="triangle-slide">

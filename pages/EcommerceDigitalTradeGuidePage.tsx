@@ -498,7 +498,7 @@ const EcommerceDigitalTradeGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">E-Commerce Compliance Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">Amazon FBA Compliance</span>
                     <p className="service-link__description">Import compliance for online sellers</p>
                     <div className="triangle-slide">

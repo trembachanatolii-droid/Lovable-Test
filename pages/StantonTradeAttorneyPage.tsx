@@ -316,7 +316,7 @@ const StantonTradeAttorneyPage: React.FC = () => {
                   <Link to="/practice-areas" className="text-secondary-teal hover:underline">Trade Remedies</Link>
                 </li>
                 <li>
-                  <Link to="/customs-defense-litigation" className="text-secondary-teal hover:underline">CBP Enforcement Defense</Link>
+                  <Link to="/customs-defense" className="text-secondary-teal hover:underline">CBP Enforcement Defense</Link>
                 </li>
               </ul>
             </div>
@@ -328,7 +328,7 @@ const StantonTradeAttorneyPage: React.FC = () => {
                   <Link to="/automotive-trade-attorney" className="text-secondary-teal hover:underline">Automotive & Transportation</Link>
                 </li>
                 <li>
-                  <Link to="/technology-electronics-trade-attorney" className="text-secondary-teal hover:underline">Electronics & Technology</Link>
+                  <Link to="/industries/technology-electronics" className="text-secondary-teal hover:underline">Electronics & Technology</Link>
                 </li>
               </ul>
             </div>

@@ -426,7 +426,7 @@ const UnionCityTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/customs-defense-litigation" className="service-link">
+                    <Link to="/customs-defense" className="service-link">
                       <span className="service-link__title">Prior Disclosures</span>
                       <p className="service-link__description">Penalty reduction strategies</p>
                       <div className="triangle-slide">
@@ -458,7 +458,7 @@ const UnionCityTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/technology-electronics-trade-attorney" className="service-link">
+                    <Link to="/industries/technology-electronics" className="service-link">
                       <span className="service-link__title">Technology & Electronics</span>
                       <p className="service-link__description">Consumer electronics imports</p>
                       <div className="triangle-slide">
@@ -471,7 +471,7 @@ const UnionCityTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/technology-electronics-trade-attorney" className="service-link">
+                    <Link to="/industries/technology-electronics" className="service-link">
                       <span className="service-link__title">Semiconductors</span>
                       <p className="service-link__description">Chip import compliance</p>
                       <div className="triangle-slide">

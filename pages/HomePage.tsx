@@ -307,7 +307,7 @@ const HomePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Industry Expertise</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/technology-electronics-trade-attorney" className="service-link">
+                  <Link to="/industries/technology-electronics" className="service-link">
                     <span className="service-link__title">Technology & Electronics</span>
                     <p className="service-link__description">Export controls, Section 301</p>
                     <div className="triangle-slide">
@@ -318,7 +318,7 @@ const HomePage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/apparel-textiles-trade-attorney" className="service-link">
+                  <Link to="/industries/apparel-textiles" className="service-link">
                     <span className="service-link__title">Apparel & Textiles</span>
                     <p className="service-link__description">UFLPA, origin compliance</p>
                     <div className="triangle-slide">
@@ -329,7 +329,7 @@ const HomePage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/food-agriculture-trade-attorney" className="service-link">
+                  <Link to="/industries/food-agriculture" className="service-link">
                     <span className="service-link__title">Food & Agriculture</span>
                     <p className="service-link__description">FDA/USDA import compliance</p>
                     <div className="triangle-slide">

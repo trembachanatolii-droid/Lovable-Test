@@ -351,7 +351,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/customs-defense-litigation" className="service-link">
+                    <Link to="/customs-defense" className="service-link">
                       <span className="service-link__title">Customs Defense & Litigation</span>
                       <p className="service-link__description">Section 301 disputes defense</p>
                       <div className="triangle-slide">
@@ -429,7 +429,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/apparel-textiles-trade-attorney" className="service-link">
+                    <Link to="/industries/apparel-textiles" className="service-link">
                       <span className="service-link__title">Apparel & Textiles</span>
                       <p className="service-link__description">Wearable tech compliance</p>
                       <div className="triangle-slide">
@@ -442,7 +442,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Food & Agriculture</span>
                       <p className="service-link__description">AgTech trade compliance</p>
                       <div className="triangle-slide">

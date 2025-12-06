@@ -345,7 +345,7 @@ const PicoRiveraTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/customs-defense-litigation" className="service-link">
+                    <Link to="/customs-defense" className="service-link">
                       <span className="service-link__title">Customs Defense</span>
                       <p className="service-link__description">CBP audit and penalty defense</p>
                       <div className="triangle-slide">

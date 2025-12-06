@@ -270,7 +270,7 @@ const GardenGroveImportCompliancePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services</h3>
               <div className="space-y-0">
                 <div className="relative group">
-                  <Link to="/customs-defense-litigation" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
+                  <Link to="/customs-defense" className="block py-3 text-primary-navy hover:text-secondary-teal transition-colors">
                     <span className="font-medium">Customs Defense & Litigation</span>
                     <p className="text-sm text-text-secondary mt-1">CBP audits, seizures, penalty defense</p>
                     <div className="absolute top-0 right-[-96px] w-24 h-24 bg-secondary-teal transition-[right] duration-300 ease-in-out group-hover:right-0" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}>

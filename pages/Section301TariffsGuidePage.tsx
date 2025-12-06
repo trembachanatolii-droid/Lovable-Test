@@ -956,7 +956,7 @@ const Section301TariffsGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Section 301 Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">CBP Audit Defense</span>
                     <p className="service-link__description">Section 301 compliance audits</p>
                     <div className="triangle-slide">
@@ -978,7 +978,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">Trade Litigation</span>
                     <p className="service-link__description">Court of International Trade</p>
                     <div className="triangle-slide">

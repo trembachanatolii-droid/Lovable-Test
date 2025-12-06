@@ -445,7 +445,7 @@ const OaklandPortOperationsPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">CBP Defense</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">Customs Defense</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
