@@ -232,14 +232,7 @@ const ArticleDisplayPage: React.FC = () => {
               Introduction
             </h2>
 
-            <p className="mb-5" style={{
-              fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-              fontSize: '17px',
-              fontWeight: '400',
-              lineHeight: '1.75',
-              color: '#374151',
-              letterSpacing: 'normal'
-            }}>
+            <p className="article-intro">
               {article.intro}
             </p>
 
@@ -250,6 +243,16 @@ const ArticleDisplayPage: React.FC = () => {
             />
 
             <style>{`
+              .article-intro {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1.75;
+                color: #374151;
+                margin-bottom: 20px;
+                letter-spacing: normal;
+              }
+
               .article-content h2 {
                 font-family: 'EB Garamond', serif;
                 font-weight: 700;
