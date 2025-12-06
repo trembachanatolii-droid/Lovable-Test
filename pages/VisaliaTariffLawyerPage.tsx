@@ -86,7 +86,7 @@ const VisaliaTariffLawyerPage: React.FC = () => {
             Visalia tariff lawyer and agriculture attorney serving Central Valley food and ag exporters. Expert FDA/USDA compliance, tariff classification, export documentation, and CBP defense for agricultural businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -510,7 +510,7 @@ const VisaliaTariffLawyerPage: React.FC = () => {
             Contact our Visalia tariff lawyer and agriculture attorney team today. We'll assess your agricultural export compliance needs, explain your options, and provide a clear path forward.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

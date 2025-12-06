@@ -86,7 +86,7 @@ const SanJoseTechExportControlsPage: React.FC = () => {
             Expert export controls for Silicon Valley technology companies. Semiconductor, software, AI/ML export compliance. ITAR, EAR, deemed exports, and China restrictions.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Tech Export Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Tech Export Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -504,7 +504,7 @@ const SanJoseTechExportControlsPage: React.FC = () => {
             Silicon Valley technology companies face complex and rapidly evolving export controls. Our San Jose tech export controls attorneys provide specialized expertise for semiconductors, software, AI, and emerging technologies. Free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

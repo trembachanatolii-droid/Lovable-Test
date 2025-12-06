@@ -86,7 +86,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
             Expert CBP Focused Assessment defense and customs audit representation in Los Angeles. Protect your business from costly penalties with proven audit defense strategies.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Audit Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Audit Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -478,8 +478,8 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Audit Defense Resources</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/resources/cbp-audit-guide" className="service-link">
-                    <span className="service-link__title">CBP Audit Survival Guide</span>
+                  <Link to="/customs-defense" className="service-link">
+                    <span className="service-link__title">CBP Audit Defense Services</span>
                     <div className="triangle-slide">
                       <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -523,7 +523,7 @@ const LosAngelesCBPAuditDefensePage: React.FC = () => {
             Don't face CBP alone. Our Los Angeles CBP audit defense attorneys will protect your rights, minimize penalties, and guide you through the entire process. Free confidential consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

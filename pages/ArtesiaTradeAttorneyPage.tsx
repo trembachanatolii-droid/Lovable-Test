@@ -67,7 +67,7 @@ const ArtesiaTradeAttorneyPage: React.FC = () => {
             Strategic trade compliance counsel for Artesia businesses. Customs law, tariff optimization, and supply chain solutions in the heart of the Gateway Cities corridor.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -625,7 +625,7 @@ const ArtesiaTradeAttorneyPage: React.FC = () => {
             Don't let customs compliance issues disrupt your operations. Contact our Artesia trade attorney team for expert import/export counsel and FDA/CBP coordination.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

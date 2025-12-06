@@ -67,7 +67,7 @@ const BayAreaTradeLawPage: React.FC = () => {
             Expert trade law advice for startups California and tech companies. Export controls, customs compliance, and global trade strategy for Silicon Valley's innovation economy.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Tech Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Tech Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -638,7 +638,7 @@ const BayAreaTradeLawPage: React.FC = () => {
             Don't let export compliance slow down your go-to-market strategy. Contact our San Francisco trade compliance attorney and Oakland port customs lawyer team for expert trade law advice for startups California.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

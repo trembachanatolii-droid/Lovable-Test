@@ -62,7 +62,7 @@ const CampbellTradeAttorneyPage: React.FC = () => {
             Expert trade law for Campbell businesses. Import compliance, export controls, and global trade strategy for the region's growing economy.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -191,7 +191,7 @@ const CampbellTradeAttorneyPage: React.FC = () => {
             Contact our Campbell trade attorney team for expert import/export compliance services.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Schedule Free Consultation</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Schedule Free Consultation</Button>
             <Button href="tel:+13107441328" variant="outline">Call (310) 744-1328</Button>
           </div>
         </div>

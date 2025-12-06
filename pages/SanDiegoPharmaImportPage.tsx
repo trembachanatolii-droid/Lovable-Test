@@ -86,7 +86,7 @@ const SanDiegoPharmaImportPage: React.FC = () => {
             Expert pharmaceutical import attorney serving San Diego biotech and life sciences companies. Specialized FDA compliance, drug importation, medical device customs, and pharmaceutical trade law.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -462,7 +462,7 @@ const SanDiegoPharmaImportPage: React.FC = () => {
             Contact our San Diego pharmaceutical import attorneys today. We'll review your FDA compliance, assess import procedures, and provide expert guidance for drug and medical device imports.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

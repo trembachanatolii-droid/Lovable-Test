@@ -85,7 +85,7 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
             Expert UFLPA attorney serving Sacramento and the Central Valley. The Uyghur Forced Labor Prevention Act has detained over $2 billion in goods. Our forced labor compliance lawyers help Sacramento businesses navigate supply chain requirements, defend against detentions, and implement compliance programs.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free UFLPA Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free UFLPA Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -336,7 +336,7 @@ const SacramentoUFLPAAttorneyPage: React.FC = () => {
             Don't wait for a detention notice. Our Sacramento UFLPA attorneys can help you assess risk, implement compliance programs, and defend against detentions. Contact us for a free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Free UFLPA Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

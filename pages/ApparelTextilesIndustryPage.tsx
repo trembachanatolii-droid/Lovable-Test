@@ -60,7 +60,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             Specialized compliance for fashion brands, apparel importers, textile manufacturers, and e-commerce clothing sellers. Expert UFLPA forced labor defense, HTS classification, and supply chain compliance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Schedule UFLPA Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Schedule UFLPA Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -744,7 +744,7 @@ const ApparelTextilesIndustryPage: React.FC = () => {
             Schedule a consultation with California's leading trade law attorney for apparel and textile companies.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule UFLPA Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

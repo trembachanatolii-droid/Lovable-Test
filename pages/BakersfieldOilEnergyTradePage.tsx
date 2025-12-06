@@ -86,7 +86,7 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
             Expert oil and energy trade compliance for Kern County. Petroleum imports/exports, energy equipment tariffs, petroleum drawback, and customs law for the energy sector.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Energy Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Energy Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -489,7 +489,7 @@ const BakersfieldOilEnergyTradePage: React.FC = () => {
             Kern County energy companies need specialized oil and gas trade expertise. Our Bakersfield oil and energy trade lawyer provides petroleum import/export compliance, drawback claims, and sanctions guidance. Free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -68,7 +68,7 @@ const PittsburgTradeAttorneyPage: React.FC = () => {
             Expert trade law for manufacturing and distribution. Customs compliance, maritime logistics, and global trade strategy for Pittsburg's industrial economy.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Port Logistics Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Port Logistics Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -571,7 +571,7 @@ const PittsburgTradeAttorneyPage: React.FC = () => {
             Don't let customs delays slow down your operations. Contact our Pittsburg trade attorney team for expert port logistics and industrial import compliance services.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

@@ -86,7 +86,7 @@ const LongBeachMaritimeTariffPage: React.FC = () => {
             Expert maritime tariff attorney serving Port of Long Beach. Specialized ocean cargo compliance, vessel entries, ISF filing, CBP detention defense, and port customs for maritime importers and shipping lines.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -487,7 +487,7 @@ const LongBeachMaritimeTariffPage: React.FC = () => {
             Contact our Long Beach maritime tariff attorneys today. We'll assess your ocean cargo compliance, review ISF procedures, and provide emergency response for port detentions.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

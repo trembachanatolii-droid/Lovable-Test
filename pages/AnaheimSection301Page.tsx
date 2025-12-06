@@ -69,7 +69,7 @@ const AnaheimSection301Page: React.FC = () => {
           <h1>Section 301 Tariff Attorney<br />Anaheim CA</h1>
           <p className="hero-subtitle">Expert Section 301 tariff attorney serving Anaheim and Orange County manufacturers and importers. China tariffs add 7.5%-25% to import costs. Our China tariff lawyers help companies minimize duty exposure through legal strategies.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Tariff Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Tariff Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -173,7 +173,7 @@ const AnaheimSection301Page: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Reduce Your Section 301 Tariff Burden</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Don't overpay on China tariffs. Our Anaheim Section 301 attorneys help manufacturers minimize duty exposure legally.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Free Tariff Consultation</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Free Tariff Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

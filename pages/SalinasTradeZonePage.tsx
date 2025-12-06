@@ -59,7 +59,7 @@ const SalinasTradeZonePage: React.FC = () => {
           <h1>Salinas Foreign Trade Zone Attorney<br />FTZ Lawyer California</h1>
           <p className="hero-subtitle">Expert Foreign Trade Zone attorney serving Salinas and Monterey County agricultural exporters and food processors. Defer duties, reduce costs, and maximize FTZ benefits with specialized legal guidance.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free FTZ Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free FTZ Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -194,7 +194,7 @@ const SalinasTradeZonePage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Maximize Your FTZ Benefits</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Defer duties, eliminate export costs, and streamline compliance. Our Salinas Foreign Trade Zone attorneys help agricultural businesses maximize zone benefits.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Free FTZ Consultation</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Free FTZ Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

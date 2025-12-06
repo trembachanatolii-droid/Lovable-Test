@@ -86,7 +86,7 @@ const PasadenaTariffLawyerPage: React.FC = () => {
             Expert Pasadena tariff lawyer serving LA County businesses. Specialized in aerospace, biotech, technology, and manufacturing trade compliance with San Gabriel Valley expertise.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -510,7 +510,7 @@ const PasadenaTariffLawyerPage: React.FC = () => {
             Contact our Pasadena tariff lawyer today. We'll assess your business customs needs and provide clear guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

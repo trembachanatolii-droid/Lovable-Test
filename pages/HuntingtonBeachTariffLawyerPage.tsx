@@ -86,7 +86,7 @@ const HuntingtonBeachTariffLawyerPage: React.FC = () => {
             Expert Huntington Beach tariff lawyer serving Orange County coastal businesses. Specialized in surfwear, marine trade, and Port of Long Beach customs compliance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -510,7 +510,7 @@ const HuntingtonBeachTariffLawyerPage: React.FC = () => {
             Contact our Huntington Beach tariff lawyer today. We'll assess your coastal business customs needs and provide clear guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

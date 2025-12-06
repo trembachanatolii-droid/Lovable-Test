@@ -68,7 +68,7 @@ const BrentwoodTradeAttorneyPage: React.FC = () => {
             Expert trade law for farming and food processing. USDA phytosanitary certificates, FDA food import compliance, and global agricultural trade strategy for Brentwood's farming economy.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Agricultural Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Agricultural Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -571,7 +571,7 @@ const BrentwoodTradeAttorneyPage: React.FC = () => {
             Don't let export compliance slow down your harvest season. Contact our Brentwood trade attorney team for expert agricultural export controls and food import compliance services.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

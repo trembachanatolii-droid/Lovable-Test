@@ -60,7 +60,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             Specialized international trade compliance for semiconductor manufacturers, electronics importers, software companies, and technology supply chains.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Schedule Strategic Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Schedule Strategic Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -691,7 +691,7 @@ const TechnologyElectronicsIndustryPage: React.FC = () => {
             Schedule a consultation with California's leading trade law attorney for technology and electronics companies.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Strategic Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

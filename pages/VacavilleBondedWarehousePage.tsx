@@ -85,7 +85,7 @@ const VacavilleBondedWarehousePage: React.FC = () => {
             Expert legal representation for establishing and operating CBP bonded warehouses in Vacaville and Solano County. Duty deferral strategies, FTZ compliance, and customs facility licensing.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -421,7 +421,7 @@ const VacavilleBondedWarehousePage: React.FC = () => {
             Contact our Vacaville bonded warehouse attorney today for a free consultation. We'll assess your bonded warehouse needs, explain CBP requirements, and provide a clear path to establishing your Solano County customs facility.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

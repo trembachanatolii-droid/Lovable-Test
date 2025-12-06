@@ -63,7 +63,7 @@ const OaklandCBPAuditPage: React.FC = () => {
           <h1>CBP Audit Defense Attorney<br />Oakland CA</h1>
           <p className="hero-subtitle">Expert CBP audit defense attorney serving Oakland businesses. Port of Oakland is California's fourth-busiest port, making Oakland importers prime targets for audits. Our customs audit lawyers provide aggressive defense, penalty mitigation, and compliance solutions.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Audit Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Audit Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -167,7 +167,7 @@ const OaklandCBPAuditPage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Facing a CBP Audit in Oakland?</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Don't face a CBP audit alone. Our Oakland customs audit defense attorneys are ready to protect your business.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Free Audit Consultation</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Free Audit Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

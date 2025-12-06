@@ -67,7 +67,7 @@ const MercedTradeAttorneyPage: React.FC = () => {
             Expert trade law for Central Valley agriculture. USDA/FDA compliance, dairy exports, almond shipments, and customs regulations for Merced County farmers and food processors.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Agricultural Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Agricultural Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -621,7 +621,7 @@ const MercedTradeAttorneyPage: React.FC = () => {
             Don't let complex USDA/FDA regulations slow down your export operations. Contact our Merced trade attorney team for expert agricultural export compliance guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

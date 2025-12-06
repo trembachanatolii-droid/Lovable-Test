@@ -86,7 +86,7 @@ const SanDiegoUFLPACompliancePage: React.FC = () => {
             Expert Uyghur Forced Labor Prevention Act compliance and detention defense. Protect your San Diego imports with comprehensive supply chain due diligence programs.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free UFLPA Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free UFLPA Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -484,7 +484,7 @@ const SanDiegoUFLPACompliancePage: React.FC = () => {
             Don't let UFLPA detentions disrupt your business. Our San Diego UFLPA compliance attorneys provide proactive due diligence programs and aggressive detention defense. Free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -86,7 +86,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
             Expert trade litigation attorney serving San Diego importers and exporters. Court of International Trade representation, tariff classification disputes, AD/CVD litigation, and customs enforcement defense.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -528,7 +528,7 @@ const SanDiegoTradeLitigationPage: React.FC = () => {
             If CBP has denied your protest or significant duties are at stake, contact our San Diego trade litigation attorneys to evaluate whether Court of International Trade litigation is right for your case.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

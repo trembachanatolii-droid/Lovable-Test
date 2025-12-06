@@ -68,7 +68,7 @@ const LaVerneTradeAttorneyPage: React.FC = () => {
             Expert trade compliance counsel for La Verne importers and distributors. Tariff classification, customs audit defense, and Section 301 mitigation for Pomona Valley businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -538,7 +538,7 @@ const LaVerneTradeAttorneyPage: React.FC = () => {
             Don't let customs violations threaten your business. Contact our La Verne trade attorney team for expert guidance on import compliance and CBP defense.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

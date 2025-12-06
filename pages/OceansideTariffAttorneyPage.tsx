@@ -86,7 +86,7 @@ const OceansideTariffAttorneyPage: React.FC = () => {
             Expert Oceanside tariff attorney serving North County San Diego businesses. Specialized in defense contractors, manufacturing, and cross-border trade with convenient coastal access.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -510,7 +510,7 @@ const OceansideTariffAttorneyPage: React.FC = () => {
             Contact our Oceanside tariff attorney today. We'll assess your North County customs needs and provide clear guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

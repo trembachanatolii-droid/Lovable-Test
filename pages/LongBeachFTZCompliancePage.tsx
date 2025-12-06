@@ -86,7 +86,7 @@ const LongBeachFTZCompliancePage: React.FC = () => {
             Expert FTZ compliance attorney serving Long Beach and Southern California. Specialized foreign trade zone activation, manufacturing authority, zone operations, and FTZ compliance programs.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -457,7 +457,7 @@ const LongBeachFTZCompliancePage: React.FC = () => {
             Contact our Long Beach FTZ compliance attorneys today. We'll analyze your import volumes, calculate potential FTZ savings, and develop a comprehensive zone activation strategy.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

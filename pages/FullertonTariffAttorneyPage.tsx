@@ -86,7 +86,7 @@ const FullertonTariffAttorneyPage: React.FC = () => {
             Fullerton tariff attorney and customs lawyer serving Orange County manufacturers. Expert CBP defense, tariff classification, and trade compliance for Port of LA/Long Beach importers.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -510,7 +510,7 @@ const FullertonTariffAttorneyPage: React.FC = () => {
             Contact our Fullerton tariff attorney and customs lawyer team today. We'll assess your situation, explain your options, and provide a clear path forward for your Orange County manufacturing business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

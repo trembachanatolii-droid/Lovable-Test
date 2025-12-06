@@ -67,7 +67,7 @@ const SantaFeSpringsTradeAttorneyPage: React.FC = () => {
             Expert trade compliance counsel for Santa Fe Springs warehousing and distribution companies. Customs law, FTZ benefits, and logistics solutions in Southern California's premier distribution hub.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -379,7 +379,7 @@ const SantaFeSpringsTradeAttorneyPage: React.FC = () => {
             Don't let customs compliance issues slow your business. Contact our Santa Fe Springs trade attorney team for expert counsel.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

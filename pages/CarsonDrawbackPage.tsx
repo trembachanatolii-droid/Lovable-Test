@@ -86,7 +86,7 @@ const CarsonDrawbackPage: React.FC = () => {
             Recover 99% of paid customs duties through expert duty drawback claims. Port-adjacent tariff refund specialists helping California exporters maximize duty recovery.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Drawback Analysis</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Drawback Analysis</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -315,7 +315,7 @@ const CarsonDrawbackPage: React.FC = () => {
             Don't leave money on the table. Our Carson duty drawback lawyers will analyze your import/export activity and maximize your duty recovery. Free consultation and potential assessment.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

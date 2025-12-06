@@ -712,7 +712,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
             California importers face increasing ESG scrutiny from CBP, DOJ, and other enforcement agencies. Our trade law practice helps you implement forced labor compliance programs, navigate UFLPA requirements, and build anti-corruption controls. Contact us for expert guidance on supply chain ethics and ESG compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

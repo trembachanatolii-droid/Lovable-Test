@@ -73,7 +73,7 @@ const SacramentoSection301Page: React.FC = () => {
             Expert Section 301 tariff attorney serving Sacramento and Central Valley businesses. China tariffs add 7.5%-25% to import costs. Our China tariff lawyers help agricultural and industrial businesses minimize duty exposure through legal strategies.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Tariff Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Tariff Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -245,7 +245,7 @@ const SacramentoSection301Page: React.FC = () => {
             Don't overpay on China tariffs. Our Sacramento Section 301 attorneys help businesses minimize duty exposure legally.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Free Tariff Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

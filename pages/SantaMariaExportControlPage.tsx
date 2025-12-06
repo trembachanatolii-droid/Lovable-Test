@@ -84,7 +84,7 @@ const SantaMariaExportControlPage: React.FC = () => {
             Expert export control legal services for Central Coast aerospace, defense, and technology companies. ITAR registration, EAR compliance, deemed exports, and BIS licensing.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Compliance Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Compliance Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -435,7 +435,7 @@ const SantaMariaExportControlPage: React.FC = () => {
             Don't risk massive penalties and export privilege denial. Our Santa Maria export control attorneys help space and aerospace companies navigate ITAR and EAR compliance. Free confidential consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

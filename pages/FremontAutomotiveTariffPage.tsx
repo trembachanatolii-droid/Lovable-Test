@@ -59,7 +59,7 @@ const FremontAutomotiveTariffPage: React.FC = () => {
           <h1>Automotive Tariff Attorney<br />Fremont CA</h1>
           <p className="hero-subtitle">Expert automotive tariff attorney serving Fremont EV and automotive manufacturers. Auto parts tariffs significantly impact production costs. Our automotive import lawyers help manufacturers minimize duty exposure on parts and components.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Automotive Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Automotive Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -163,7 +163,7 @@ const FremontAutomotiveTariffPage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Reduce Your Automotive Tariff Burden</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Don't overpay on auto parts tariffs. Our Fremont automotive tariff attorneys help manufacturers minimize duty exposure legally.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Free Automotive Consultation</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Free Automotive Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

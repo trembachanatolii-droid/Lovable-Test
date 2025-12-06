@@ -85,7 +85,7 @@ const Trump2025TariffAttorneyPage: React.FC = () => {
             California businesses face unprecedented tariff challenges in 2025. As your expert Trump tariff attorney, we help navigate reciprocal tariffs, IEEPA emergency duties, and new tariffs on China, Mexico, and Canada. Protect your supply chain with strategic tariff mitigation.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Tariff Analysis</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Tariff Analysis</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -270,7 +270,7 @@ const Trump2025TariffAttorneyPage: React.FC = () => {
             Contact our 2025 Trump tariff attorneys today for a complimentary analysis of your tariff exposure. We'll identify savings opportunities and develop a strategic mitigation plan.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Free Tariff Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

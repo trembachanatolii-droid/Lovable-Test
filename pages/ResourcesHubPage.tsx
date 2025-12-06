@@ -422,7 +422,7 @@ const ResourcesHubPage: React.FC = () => {
             While our resources provide comprehensive information, every business faces unique compliance challenges. Contact our California international trade law team for tailored advice.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

@@ -106,7 +106,7 @@ const CoronaCountervailingPage: React.FC = () => {
             Commerce Department representation, and subsidy investigation defense.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">
+            <Link to="/contact#schedule-consultation" className="hero-cta">
               Free CVD Analysis
             </Link>
             <a href="tel:+13107441328" className="hero-cta-outline">
@@ -592,7 +592,7 @@ const CoronaCountervailingPage: React.FC = () => {
             analysis, and Commerce Department defense. Free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

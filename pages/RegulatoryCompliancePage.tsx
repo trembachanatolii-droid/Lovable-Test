@@ -66,7 +66,7 @@ const RegulatoryCompliancePage: React.FC = () => {
             Federal trade compliance attorney. Import compliance programs, export compliance programs, trade compliance audits, prior disclosure customs, voluntary self disclosure export, customs record keeping, customs ruling requests & trade compliance for manufacturers. Proactive protection for California & USA businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Compliance Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Compliance Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -511,7 +511,7 @@ const RegulatoryCompliancePage: React.FC = () => {
             Don't wait for a CBP audit to implement compliance controls. Contact our trade compliance California team for a free risk assessment and program design consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

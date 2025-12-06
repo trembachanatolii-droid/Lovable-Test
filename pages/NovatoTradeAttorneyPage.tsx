@@ -68,7 +68,7 @@ const NovatoTradeAttorneyPage: React.FC = () => {
             Expert trade law for life sciences companies. Export controls for biotech, pharmaceutical import compliance, and global trade strategy for Novato's innovation economy.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Biotech Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Biotech Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -574,7 +574,7 @@ const NovatoTradeAttorneyPage: React.FC = () => {
             Don't let export compliance slow down your go-to-market strategy. Contact our Novato trade attorney team for expert biotech export controls and pharmaceutical import compliance services.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

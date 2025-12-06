@@ -86,7 +86,7 @@ const SacramentoTradeCompliancePage: React.FC = () => {
             Expert trade compliance program development and implementation. Protect your Sacramento business with comprehensive import/export compliance, CBP regulations, and reasonable care programs.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Compliance Assessment</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Compliance Assessment</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -515,7 +515,7 @@ const SacramentoTradeCompliancePage: React.FC = () => {
             Protect your Sacramento business from CBP audits and penalties. Our trade compliance attorneys develop practical, effective compliance programs tailored to your operations. Free assessment.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -183,7 +183,7 @@ const CaliforniaLocationsPage: React.FC = () => {
             Expert customs, tariff, and international trade legal services throughout California. From the Ports of Los Angeles and Long Beach to the Bay Area and Central Valley.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -311,7 +311,7 @@ const CaliforniaLocationsPage: React.FC = () => {
             Contact us for a free consultation. Our attorneys serve all 83+ California locations with expert customs, tariff, and international trade legal services.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -86,7 +86,7 @@ const FresnoAgExportCompliancePage: React.FC = () => {
             Expert agricultural export compliance attorney serving Fresno and Central Valley. Specialized USDA/FDA compliance, phytosanitary certificates, export documentation, and trade compliance for California agriculture.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -472,7 +472,7 @@ const FresnoAgExportCompliancePage: React.FC = () => {
             Contact our Fresno agricultural export attorneys today. We'll review your export compliance, identify regulatory requirements for your target markets, and develop a comprehensive export strategy.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

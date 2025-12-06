@@ -85,7 +85,7 @@ const PleasantonUSMCAPage: React.FC = () => {
             Expert USMCA attorney serving Pleasanton and Tri-Valley businesses. Specialized in free trade agreement qualification, certificate of origin preparation, Regional Value Content compliance, and duty-free trade with Mexico and Canada.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -292,7 +292,7 @@ const PleasantonUSMCAPage: React.FC = () => {
             Contact our Pleasanton USMCA attorneys today. We'll analyze your Mexico and Canada trade, evaluate qualification for duty-free treatment, and develop comprehensive strategies to maximize USMCA benefits.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

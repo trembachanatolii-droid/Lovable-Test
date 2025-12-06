@@ -85,7 +85,7 @@ const TemeculaCountryOfOriginPage: React.FC = () => {
             Temecula country of origin attorney specializing in substantial transformation, marking compliance, and origin determination for Temecula Valley wineries, manufacturers, and importers.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -348,7 +348,7 @@ const TemeculaCountryOfOriginPage: React.FC = () => {
             Contact our Temecula country of origin attorney team today. We'll analyze your wine or manufacturing operations, determine product origin, and ensure marking and trade agreement compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

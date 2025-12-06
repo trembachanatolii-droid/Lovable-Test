@@ -67,7 +67,7 @@ const AlamedaTradeAttorneyPage: React.FC = () => {
             Expert customs and trade law services for Alameda's maritime businesses. Oakland port access, import/export compliance, and CBP defense for Bay Area importers.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Port Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Port Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -618,7 +618,7 @@ const AlamedaTradeAttorneyPage: React.FC = () => {
             Don't let customs holds or CBP penalties disrupt your supply chain. Contact our Alameda trade attorney team for expert port compliance and customs defense.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

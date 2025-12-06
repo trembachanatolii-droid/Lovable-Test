@@ -850,7 +850,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
             Don't let UFLPA detentions disrupt your supply chain. Our California trade law attorneys provide systematic detention defense, comprehensive evidence development, and proactive compliance programs for high-risk importers.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule UFLPA Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

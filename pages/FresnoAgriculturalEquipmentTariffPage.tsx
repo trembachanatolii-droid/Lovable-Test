@@ -59,7 +59,7 @@ const FresnoAgriculturalEquipmentTariffPage: React.FC = () => {
           <h1>Agricultural Equipment Tariff Attorney<br />Fresno CA</h1>
           <p className="hero-subtitle">Expert agricultural equipment tariff attorney serving Fresno Central Valley farms. Farm machinery tariffs significantly impact agricultural costs. Our agricultural import lawyers help farms and ag businesses minimize duty exposure on tractors, harvesters, and equipment.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Ag Equipment Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Ag Equipment Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -163,7 +163,7 @@ const FresnoAgriculturalEquipmentTariffPage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Reduce Your Farm Equipment Tariff Burden</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Don't overpay on agricultural equipment tariffs. Our Fresno agricultural equipment tariff attorneys help farms minimize duty exposure legally.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Free Ag Equipment Consultation</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Free Ag Equipment Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

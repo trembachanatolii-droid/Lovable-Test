@@ -86,7 +86,7 @@ const SanFranciscoExportControlsPage: React.FC = () => {
             Expert export controls legal services for Silicon Valley and Bay Area technology companies. ITAR, EAR, deemed exports, and OFAC sanctions compliance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Compliance Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Compliance Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -533,7 +533,7 @@ const SanFranciscoExportControlsPage: React.FC = () => {
             Don't risk massive penalties and criminal prosecution. Our San Francisco export controls attorneys help you navigate ITAR, EAR, and OFAC compliance. Free confidential consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

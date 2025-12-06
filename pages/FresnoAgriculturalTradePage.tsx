@@ -86,7 +86,7 @@ const FresnoAgriculturalTradePage: React.FC = () => {
             Expert agricultural trade compliance for Central Valley agribusiness. Farm exports, food imports, USDA/FDA compliance, and agricultural tariff optimization.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Ag Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Ag Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -520,7 +520,7 @@ const FresnoAgriculturalTradePage: React.FC = () => {
             Central Valley agribusinesses need specialized agricultural trade compliance expertise. Our Fresno agricultural trade attorney helps you navigate CBP, USDA, FDA, and international requirements. Free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

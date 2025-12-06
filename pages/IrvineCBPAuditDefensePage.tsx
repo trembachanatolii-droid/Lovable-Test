@@ -85,7 +85,7 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
             Expert CBP audit defense attorney serving Irvine and Orange County businesses. When CBP targets your imports for audit, you need experienced customs audit lawyers who understand focused assessments, penalty mitigation, and prior disclosure strategies. Protect your business with proven audit defense.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Audit Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Audit Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -336,7 +336,7 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
             Don't face a CBP audit alone. Our Irvine customs audit defense attorneys are ready to protect your business. Contact us for an immediate consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Free Audit Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">
