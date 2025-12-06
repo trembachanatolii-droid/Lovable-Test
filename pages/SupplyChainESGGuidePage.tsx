@@ -91,7 +91,7 @@ const SupplyChainESGGuidePage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToSection('forced-labor-import-bans')} className="hero-cta">Explore Compliance Requirements</button>
-            <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>
       </section>

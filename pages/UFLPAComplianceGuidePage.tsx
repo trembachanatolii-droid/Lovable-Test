@@ -67,7 +67,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToSection('overview')} className="hero-cta">Explore UFLPA Compliance</button>
-            <Link to="/contact" className="hero-cta-outline">Get Expert Help</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta-outline">Get Expert Help</Link>
           </div>
         </div>
       </section>

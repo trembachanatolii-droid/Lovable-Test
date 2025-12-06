@@ -344,7 +344,7 @@ const FAQCenterPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollToCategory(0)} className="hero-cta">Browse FAQs</button>
-            <Link to="/contact" className="hero-cta-outline">Ask a Question</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta-outline">Ask a Question</Link>
           </div>
         </div>
       </section>
@@ -519,7 +519,7 @@ const FAQCenterPage: React.FC = () => {
             Every international trade situation is unique. Our California trade law attorneys provide personalized guidance tailored to your specific compliance challenges.
           </p>
           <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-            <Link to="/contact" className="hero-cta text-base py-3 px-4">
+            <Link to="/contact#schedule-consultation" className="hero-cta text-base py-3 px-4">
               Get in Touch
             </Link>
             <Link to="/resources" className="hero-cta-outline text-base py-3 px-4">
@@ -597,7 +597,7 @@ const FAQCenterPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Get Started</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/contact" className="service-link">
+                  <Link to="/contact#schedule-consultation" className="service-link">
                     <span className="service-link__title">Schedule Consultation</span>
                     <p className="service-link__description">Free initial consultation</p>
                     <div className="triangle-slide">
