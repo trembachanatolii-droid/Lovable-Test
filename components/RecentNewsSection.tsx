@@ -46,10 +46,9 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: '1fr',
             gap: '4rem',
           }}
-          className="lg:grid-cols-2"
+          className="recent-news-grid"
         >
           {/* Left Side - Featured Article */}
           <div
