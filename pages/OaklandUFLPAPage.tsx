@@ -59,7 +59,7 @@ const OaklandUFLPAPage: React.FC = () => {
           <h1>UFLPA Attorney<br />Oakland CA</h1>
           <p className="hero-subtitle">Expert UFLPA attorney serving Oakland and the Bay Area. The Uyghur Forced Labor Prevention Act has detained billions in goods. Our forced labor compliance lawyers help Oakland businesses navigate supply chain requirements and defend against detentions.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free UFLPA Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free UFLPA Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -163,7 +163,7 @@ const OaklandUFLPAPage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Protect Your Supply Chain from UFLPA Risk</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Don't wait for a detention notice. Our Oakland UFLPA attorneys help you assess risk and implement compliance programs.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Free UFLPA Consultation</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Free UFLPA Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

@@ -86,7 +86,7 @@ const PortOfOaklandTariffPage: React.FC = () => {
             Expert Port of Oakland customs attorney providing rapid CBP detention defense, cargo release, and port compliance services. Specialized Bay Area port representation for Oakland importers and exporters.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -501,7 +501,7 @@ const PortOfOaklandTariffPage: React.FC = () => {
             Cargo detained at Port of Oakland? Contact our customs attorney team immediately. We provide same-day detention defense and cargo release services. Every hour counts when demurrage is accumulating.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Get Immediate Help
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

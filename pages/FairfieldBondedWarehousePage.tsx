@@ -85,7 +85,7 @@ const FairfieldBondedWarehousePage: React.FC = () => {
             Expert bonded warehouse and Foreign Trade Zone legal services for Fairfield and Solano County. CBP facility licensing, duty deferral strategies, and Travis AFB customs compliance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -422,7 +422,7 @@ const FairfieldBondedWarehousePage: React.FC = () => {
             Contact our Fairfield bonded warehouse attorney today for a free consultation. We'll evaluate your bonded warehouse or FTZ needs, explain CBP requirements, and provide a clear roadmap to establishing your Solano County customs facility.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

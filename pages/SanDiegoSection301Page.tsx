@@ -85,7 +85,7 @@ const SanDiegoSection301Page: React.FC = () => {
             Expert Section 301 tariff attorney serving San Diego businesses facing China tariffs. With rates of 7.5% to 25% adding millions to import costs, you need strategic legal guidance. Our China tariff lawyers help San Diego companies minimize duty exposure through legal strategies.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Tariff Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Tariff Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -336,7 +336,7 @@ const SanDiegoSection301Page: React.FC = () => {
             Don't overpay on China tariffs. Our San Diego Section 301 attorneys can help you identify legal strategies to minimize your duty exposure. Contact us for a free tariff consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Free Tariff Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

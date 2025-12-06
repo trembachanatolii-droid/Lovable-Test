@@ -84,7 +84,7 @@ const LakeForestCustomsValuationPage: React.FC = () => {
             Expert customs valuation attorney serving Lake Forest and South Orange County importers. Transaction value, assists, royalties, transfer pricing, and related-party compliance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Valuation Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Valuation Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -402,7 +402,7 @@ const LakeForestCustomsValuationPage: React.FC = () => {
             Don't overpay duties or risk CBP penalties. Our Lake Forest customs valuation attorney helps Orange County importers minimize costs while maintaining full compliance. Free confidential consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

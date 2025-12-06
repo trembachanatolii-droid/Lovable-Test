@@ -86,7 +86,7 @@ const OaklandPortOperationsPage: React.FC = () => {
             Expert port operations attorney serving Port of Oakland. Specialized maritime customs, cargo operations, CBP port procedures, ISF compliance, and shipping regulations for Bay Area importers.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -470,7 +470,7 @@ const OaklandPortOperationsPage: React.FC = () => {
             Contact our Oakland port operations attorneys today. We'll assess your port procedures, review customs compliance, and provide strategies for efficient Oakland cargo operations.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

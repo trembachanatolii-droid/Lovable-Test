@@ -85,7 +85,7 @@ const MurrietaCountryOfOriginPage: React.FC = () => {
             Murrieta country of origin attorney providing expert legal counsel on substantial transformation, marking requirements, USMCA origin, and trade agreement compliance for Temecula Valley businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -348,7 +348,7 @@ const MurrietaCountryOfOriginPage: React.FC = () => {
             Contact our Murrieta country of origin attorney team today. We'll analyze your manufacturing processes, determine substantial transformation, and ensure marking and trade agreement compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

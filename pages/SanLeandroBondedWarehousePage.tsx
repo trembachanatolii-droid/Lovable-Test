@@ -85,7 +85,7 @@ const SanLeandroBondedWarehousePage: React.FC = () => {
             Expert bonded warehouse legal services for San Leandro and Alameda County. Port of Oakland customs compliance, CBP facility licensing, and duty deferral strategies for East Bay importers.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -422,7 +422,7 @@ const SanLeandroBondedWarehousePage: React.FC = () => {
             Contact our San Leandro bonded warehouse attorney today for a free consultation. We'll evaluate your Port of Oakland bonded warehouse needs, explain CBP requirements, and provide a clear roadmap to establishing your Alameda County customs facility.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

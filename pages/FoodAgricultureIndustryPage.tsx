@@ -60,7 +60,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             Specialized compliance for food importers, agricultural producers, beverage companies, and specialty food businesses navigating FDA, USDA, and customs regulations.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Schedule FDA/USDA Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Schedule FDA/USDA Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -763,7 +763,7 @@ const FoodAgricultureIndustryPage: React.FC = () => {
             Schedule a consultation with California's leading trade law attorney for food and agricultural companies.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule FDA/USDA Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

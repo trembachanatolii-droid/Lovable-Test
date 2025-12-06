@@ -59,7 +59,7 @@ const OaklandPharmaceuticalImportPage: React.FC = () => {
           <h1>Pharmaceutical Import Attorney<br />Oakland CA</h1>
           <p className="hero-subtitle">Expert pharmaceutical import attorney serving Oakland Bay Area pharma companies. Pharmaceutical imports require FDA compliance and proper classification. Our pharma customs lawyers help companies navigate regulatory requirements and minimize duty exposure.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Pharma Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Pharma Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -163,7 +163,7 @@ const OaklandPharmaceuticalImportPage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Ensure Compliant Pharmaceutical Imports</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Navigate FDA and customs requirements confidently. Our Oakland pharmaceutical import attorneys help companies ensure compliant imports and minimize duty exposure.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Free Pharma Consultation</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Free Pharma Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

@@ -86,7 +86,7 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
             Expert customs penalty defense attorney serving Oakland and Port of Oakland importers. Reduce CBP penalties by 75%+. CF-29 response, prior disclosure, and penalty mitigation services.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -528,7 +528,7 @@ const OaklandCustomsPenaltyPage: React.FC = () => {
             If you've received a CBP penalty notice or discovered customs violations, contact our Oakland customs penalty defense attorneys immediately. We provide emergency response to protect your business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

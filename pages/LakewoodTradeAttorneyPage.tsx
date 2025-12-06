@@ -67,7 +67,7 @@ const LakewoodTradeAttorneyPage: React.FC = () => {
             Strategic trade compliance counsel for Lakewood manufacturers and distributors. Customs law, import/export compliance, and supply chain solutions near Long Beach Port.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -624,7 +624,7 @@ const LakewoodTradeAttorneyPage: React.FC = () => {
             Don't let customs issues disrupt your operations. Contact our Lakewood trade attorney team for expert import/export compliance counsel and Long Beach Port representation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

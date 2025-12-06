@@ -67,7 +67,7 @@ const LaMiradaTradeAttorneyPage: React.FC = () => {
             Strategic trade compliance counsel for La Mirada manufacturers and distributors. Customs law, tariff optimization, and supply chain solutions bridging Orange and LA Counties.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -627,7 +627,7 @@ const LaMiradaTradeAttorneyPage: React.FC = () => {
             Don't let customs compliance issues slow your business. Contact our La Mirada trade attorney team for expert import/export counsel and tariff optimization strategies.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

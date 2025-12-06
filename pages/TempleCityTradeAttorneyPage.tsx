@@ -68,7 +68,7 @@ const TempleCityTradeAttorneyPage: React.FC = () => {
             Expert trade compliance counsel for Temple City businesses. Residential community with small business. Tariff classification, customs defense, and import/export strategy.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -488,7 +488,7 @@ const TempleCityTradeAttorneyPage: React.FC = () => {
             Don't let customs violations threaten your business. Contact our Temple City trade attorney team for expert guidance on import compliance and CBP defense.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

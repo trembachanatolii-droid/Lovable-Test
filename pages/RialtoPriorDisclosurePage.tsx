@@ -86,7 +86,7 @@ const RialtoPriorDisclosurePage: React.FC = () => {
             Expert prior disclosure attorney serving Rialto and Inland Empire importers. Reduce CBP penalties by 75%+ through strategic voluntary disclosure filings. Immediate response to customs violations.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -359,7 +359,7 @@ const RialtoPriorDisclosurePage: React.FC = () => {
             If you've discovered import violations, time is critical. Contact our Rialto prior disclosure attorneys today for immediate guidance on protecting your business from CBP penalties.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

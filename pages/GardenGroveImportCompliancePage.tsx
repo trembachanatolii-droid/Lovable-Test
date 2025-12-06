@@ -85,7 +85,7 @@ const GardenGroveImportCompliancePage: React.FC = () => {
             Garden Grove import compliance attorney serving Orange County importers. Expert C-TPAT certification, ISA programs, CBP audit defense, and import compliance program development.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -387,7 +387,7 @@ const GardenGroveImportCompliancePage: React.FC = () => {
             Contact our Garden Grove import compliance attorney team today. We'll assess your compliance needs, explain your options, and provide a clear path forward.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -84,7 +84,7 @@ const ConcordHTSClassificationPage: React.FC = () => {
             Expert HTS classification attorney serving Concord and East Bay importers. Harmonized Tariff Schedule expertise for Port of Oakland operations, binding rulings, and duty optimization.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Classification Review</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Classification Review</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -347,7 +347,7 @@ const ConcordHTSClassificationPage: React.FC = () => {
             Contact our Concord HTS classification attorney team today. We'll review your products, analyze classification opportunities, and provide a clear strategy to optimize duty costs and ensure Port of Oakland compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -86,7 +86,7 @@ const ModestoFarmEquipmentPage: React.FC = () => {
             Expert farm equipment tariff attorney serving Modesto and Stanislaus County. Specialized agricultural machinery imports, tractor classification, farm equipment tariffs, and ag trade compliance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -470,7 +470,7 @@ const ModestoFarmEquipmentPage: React.FC = () => {
             Contact our Modesto farm equipment tariff attorneys today. We'll analyze your machinery imports, assess tariff exposure, and develop cost-saving classification strategies for your ag equipment business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

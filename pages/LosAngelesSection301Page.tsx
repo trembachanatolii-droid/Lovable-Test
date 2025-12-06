@@ -86,7 +86,7 @@ const LosAngelesSection301Page: React.FC = () => {
             Expert Section 301 China tariff strategies for Los Angeles importers. Exclusion requests, tariff engineering, protests, and duty minimization for Chinese imports.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Section 301 Analysis</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Section 301 Analysis</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -506,7 +506,7 @@ const LosAngelesSection301Page: React.FC = () => {
             Don't overpay Section 301 duties. Our Los Angeles Section 301 tariff attorney develops legal strategies to minimize China tariffs through exclusions, protests, and tariff engineering. Free consultation and Section 301 analysis.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

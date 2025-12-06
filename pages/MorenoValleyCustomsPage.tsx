@@ -86,7 +86,7 @@ const MorenoValleyCustomsPage: React.FC = () => {
             Expert Moreno Valley customs lawyer serving Inland Empire logistics, warehouses, and distribution centers. Specialized in e-commerce compliance, FTZ management, and high-volume customs operations.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -510,7 +510,7 @@ const MorenoValleyCustomsPage: React.FC = () => {
             Contact our Moreno Valley customs lawyer today. We'll assess your logistics and distribution customs needs and provide clear guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

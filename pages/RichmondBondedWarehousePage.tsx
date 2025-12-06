@@ -85,7 +85,7 @@ const RichmondBondedWarehousePage: React.FC = () => {
             Expert bonded warehouse legal services for Richmond and West Contra Costa County. Port of Richmond customs compliance, CBP facility licensing, and duty deferral strategies.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -422,7 +422,7 @@ const RichmondBondedWarehousePage: React.FC = () => {
             Contact our Richmond bonded warehouse attorney today for a free consultation. We'll evaluate your port-adjacent bonded warehouse needs, explain CBP requirements, and provide a clear roadmap to establishing your West Contra Costa customs facility.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

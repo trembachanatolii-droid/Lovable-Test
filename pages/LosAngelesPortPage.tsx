@@ -68,7 +68,7 @@ const LosAngelesPortPage: React.FC = () => {
             Expert California port customs lawyer serving the LA/Long Beach port complex — the nation's busiest gateway for international trade.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -565,7 +565,7 @@ const LosAngelesPortPage: React.FC = () => {
             Don't let CBP audits, detentions, or penalties disrupt your business. Contact our Los Angeles customs attorney and Long Beach port trade lawyer team for a free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

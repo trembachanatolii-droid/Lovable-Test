@@ -56,54 +56,104 @@ const tariffArticles = [
   },
 ];
 
+// SVG Icon components for tariff services
+const SearchIcon = () => (
+  <svg className="w-8 h-8 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+  </svg>
+);
+
+const GlobeIcon = () => (
+  <svg className="w-8 h-8 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+);
+
+const FactoryIcon = () => (
+  <svg className="w-8 h-8 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+  </svg>
+);
+
+const DocumentIcon = () => (
+  <svg className="w-8 h-8 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+  </svg>
+);
+
+const CogIcon = () => (
+  <svg className="w-8 h-8 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+  </svg>
+);
+
+const CurrencyIcon = () => (
+  <svg className="w-8 h-8 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+);
+
+const BuildingIcon = () => (
+  <svg className="w-8 h-8 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+  </svg>
+);
+
+const ShieldIcon = () => (
+  <svg className="w-8 h-8 text-secondary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+  </svg>
+);
+
 // Tariff services data
 const tariffServices = [
   {
     title: 'Tariff Classification & HTS Optimization',
     description: 'Strategic HTS code analysis to identify lower duty classifications. We obtain binding rulings from CBP to protect your classification positions.',
-    icon: '🔍',
+    IconComponent: SearchIcon,
     link: '/practice-areas',
   },
   {
     title: 'Section 301 China Tariff Mitigation',
     description: 'Navigate 25-100% China tariffs with exclusion requests, supply chain restructuring, first sale valuation, and substantial transformation strategies.',
-    icon: '🇨🇳',
+    IconComponent: GlobeIcon,
     link: '/resources/section-301-tariffs-guide',
   },
   {
     title: 'Section 232 Steel, Aluminum & Copper Defense',
     description: 'Challenge improper Section 232 assessments, obtain product exclusions, and develop compliant domestic sourcing alternatives.',
-    icon: '🏭',
+    IconComponent: FactoryIcon,
     link: '/practice-areas',
   },
   {
     title: 'USMCA Qualification & Certification',
     description: 'Avoid 25% tariffs on Mexican and Canadian goods by properly qualifying under USMCA rules of origin. We prepare certificates and audit documentation.',
-    icon: '📜',
+    IconComponent: DocumentIcon,
     link: '/usmca-certification',
   },
   {
     title: 'Tariff Engineering & Product Modification',
     description: 'Work with your manufacturing team to modify products for better tariff treatment without compromising functionality or marketability.',
-    icon: '⚙️',
+    IconComponent: CogIcon,
     link: '/practice-areas',
   },
   {
     title: 'Duty Drawback & Refund Claims',
     description: 'Recover 99% of duties paid on imported goods that are subsequently exported or destroyed. We file and manage drawback claims.',
-    icon: '💰',
+    IconComponent: CurrencyIcon,
     link: '/practice-areas',
   },
   {
     title: 'Foreign Trade Zones (FTZ)',
     description: 'Establish FTZ operations at California ports to defer duties, reduce Section 301 exposure, and optimize your supply chain.',
-    icon: '🏗️',
+    IconComponent: BuildingIcon,
     link: '/practice-areas',
   },
   {
     title: 'CBP Audit Defense & Prior Disclosure',
     description: 'Defend against CBP focused assessments and audits. File prior disclosures to minimize penalties when errors are discovered.',
-    icon: '🛡️',
+    IconComponent: ShieldIcon,
     link: '/customs-defense',
   },
 ];
@@ -249,7 +299,7 @@ const TariffPracticeHubPage: React.FC = () => {
             Navigate the complex 2025 tariff landscape with California's dedicated tariff law practice. From Section 301 China tariffs to USMCA qualification, we provide strategic legal solutions that reduce duty costs and protect your supply chain.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Tariff Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Tariff Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -345,7 +395,7 @@ const TariffPracticeHubPage: React.FC = () => {
                 to={service.link}
                 className="group relative overflow-hidden bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-neutral-200"
               >
-                <div className="text-4xl mb-4">{service.icon}</div>
+                <div className="mb-4"><service.IconComponent /></div>
                 <h3 className="text-lg font-bold text-primary-navy mb-2 font-garamond group-hover:text-secondary-teal transition-colors">
                   {service.title}
                 </h3>
@@ -499,7 +549,11 @@ const TariffPracticeHubPage: React.FC = () => {
               to="/resources/section-301-tariffs-guide"
               className="group relative overflow-hidden bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-xl border-2 border-red-200 hover:border-red-400 transition-all"
             >
-              <div className="text-red-600 text-4xl mb-4">📋</div>
+              <div className="text-red-600 mb-4">
+                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </div>
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">
                 Section 301 Tariffs Guide
               </h3>
@@ -519,7 +573,11 @@ const TariffPracticeHubPage: React.FC = () => {
               to="/resources/tariffs-duties-classification"
               className="group relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition-all"
             >
-              <div className="text-blue-600 text-4xl mb-4">📊</div>
+              <div className="text-blue-600 mb-4">
+                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">
                 HTS Classification Guide
               </h3>
@@ -539,7 +597,11 @@ const TariffPracticeHubPage: React.FC = () => {
               to="/trump-2025-tariff-attorney"
               className="group relative overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border-2 border-purple-200 hover:border-purple-400 transition-all"
             >
-              <div className="text-purple-600 text-4xl mb-4">🇺🇸</div>
+              <div className="text-purple-600 mb-4">
+                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+                </svg>
+              </div>
               <h3 className="text-2xl font-bold text-primary-navy mb-3 font-garamond">
                 2025 Trump Tariffs Guide
               </h3>
@@ -624,7 +686,7 @@ const TariffPracticeHubPage: React.FC = () => {
             Contact our California tariff attorneys today for a complimentary analysis of your tariff exposure. We'll identify savings opportunities and develop a strategic mitigation plan tailored to your business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -59,7 +59,7 @@ const SanDiegoSemiconductorTariffPage: React.FC = () => {
           <h1>Semiconductor Tariff Attorney<br />San Diego CA</h1>
           <p className="hero-subtitle">Expert semiconductor tariff attorney serving San Diego tech companies. Chip tariffs significantly impact production costs. Our semiconductor import lawyers help companies minimize duty exposure on chips, wafers, and IC components.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Semiconductor Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Semiconductor Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -163,7 +163,7 @@ const SanDiegoSemiconductorTariffPage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Reduce Your Semiconductor Tariff Burden</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Don't overpay on chip tariffs. Our San Diego semiconductor tariff attorneys help tech companies minimize duty exposure legally.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Free Semiconductor Consultation</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Free Semiconductor Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

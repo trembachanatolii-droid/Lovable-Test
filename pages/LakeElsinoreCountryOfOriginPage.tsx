@@ -85,7 +85,7 @@ const LakeElsinoreCountryOfOriginPage: React.FC = () => {
             Lake Elsinore country of origin attorney specializing in substantial transformation analysis, marking compliance, and origin determination for Southwest Riverside County businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -348,7 +348,7 @@ const LakeElsinoreCountryOfOriginPage: React.FC = () => {
             Contact our Lake Elsinore country of origin attorney team today. We'll analyze your manufacturing processes, evaluate substantial transformation, and ensure marking compliance for your business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

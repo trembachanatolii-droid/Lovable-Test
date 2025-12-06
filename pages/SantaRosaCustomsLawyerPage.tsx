@@ -86,7 +86,7 @@ const SantaRosaCustomsLawyerPage: React.FC = () => {
             Santa Rosa customs lawyer and export attorney serving Sonoma County wine industry. Expert wine export compliance, TTB/FDA regulations, tariff classification, and CBP defense for wine country businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -512,7 +512,7 @@ const SantaRosaCustomsLawyerPage: React.FC = () => {
             Contact our Santa Rosa customs lawyer and export attorney team today. We'll assess your wine export compliance needs, explain your options, and provide a clear path forward.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

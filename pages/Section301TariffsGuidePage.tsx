@@ -1084,7 +1084,7 @@ const Section301TariffsGuidePage: React.FC = () => {
             Trembach Law Firm provides comprehensive Section 301 services for California importers, from strategic mitigation planning to compliance implementation and CBP audit defense. Reduce duty costs by 30-70% with proven strategies.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Section 301 Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

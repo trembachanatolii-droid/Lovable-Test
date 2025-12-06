@@ -86,7 +86,7 @@ const PortOfSanDiegoCustomsPage: React.FC = () => {
             Expert Port of San Diego customs attorney providing cross-border trade compliance, CBP detention defense, and USMCA expertise for San Diego-Tijuana importers. Specialized border port representation.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -501,7 +501,7 @@ const PortOfSanDiegoCustomsPage: React.FC = () => {
             Cargo detained at Port of San Diego or Otay Mesa? Contact our customs attorney team immediately for same-day detention defense and USMCA compliance support.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Get Immediate Help
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

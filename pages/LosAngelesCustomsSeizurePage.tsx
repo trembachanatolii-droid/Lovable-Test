@@ -59,7 +59,7 @@ const LosAngelesCustomsSeizurePage: React.FC = () => {
           <h1>Customs Seizure Attorney<br />Los Angeles CA</h1>
           <p className="hero-subtitle">Expert customs seizure attorney serving Los Angeles and the LA/Long Beach port complex. When CBP seizes your cargo, every hour counts. Our seizure defense lawyers help businesses recover detained goods, challenge wrongful seizures, and minimize penalties.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Emergency Seizure Help</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Emergency Seizure Help</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -163,7 +163,7 @@ const LosAngelesCustomsSeizurePage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Goods Seized at LA Ports? Get Emergency Help Now</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Time is critical when CBP seizes your cargo. Our Los Angeles customs seizure attorneys are ready to fight for your goods.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Emergency Seizure Help</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Emergency Seizure Help</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

@@ -67,7 +67,7 @@ const UnionCityTradeAttorneyPage: React.FC = () => {
             Expert customs and technology import compliance for Union City distribution economy. I-880 corridor logistics support, semiconductor imports, and CBP defense for Bay Area tech operations.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Tech Import Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Tech Import Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -568,7 +568,7 @@ const UnionCityTradeAttorneyPage: React.FC = () => {
             Don't let customs penalties or tariff costs impact your bottom line. Contact our Union City trade attorney team for expert technology import compliance and duty optimization.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

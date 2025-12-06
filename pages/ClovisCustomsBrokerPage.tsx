@@ -87,7 +87,7 @@ const ClovisCustomsBrokerPage: React.FC = () => {
             Expert customs broker liability attorney serving Clovis and Central Valley brokers. Specialized broker negligence defense, CBP license violations, professional liability, and broker disciplinary proceedings.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -463,7 +463,7 @@ const ClovisCustomsBrokerPage: React.FC = () => {
             Contact our Clovis customs broker liability attorneys today. We'll assess your situation, explain your options, and develop an aggressive defense strategy to protect your broker license.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

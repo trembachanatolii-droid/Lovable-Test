@@ -66,7 +66,7 @@ const ExportControlsPage: React.FC = () => {
             ITAR compliance, EAR compliance, OFAC sanctions compliance, export licensing, technology export controls, encryption export regulations, dual use items compliance, deemed exports & restricted party screening. Expert guidance for California & USA tech companies, defense contractors & manufacturers.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Export Controls Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Export Controls Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -564,7 +564,7 @@ const ExportControlsPage: React.FC = () => {
             Don't let export controls slow your international growth. Contact our export controls California lawyer team for a free classification review and compliance strategy session.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

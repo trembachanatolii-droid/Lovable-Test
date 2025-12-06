@@ -86,7 +86,7 @@ const SanFranciscoForcedLaborPage: React.FC = () => {
             Expert forced labor compliance attorney serving San Francisco and Bay Area. Specialized UFLPA compliance, supply chain due diligence, forced labor detention defense, and ethical sourcing programs.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -467,7 +467,7 @@ const SanFranciscoForcedLaborPage: React.FC = () => {
             Contact our San Francisco forced labor compliance attorneys today. We'll assess your UFLPA risk, review supply chain due diligence, and develop comprehensive forced labor prevention programs.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

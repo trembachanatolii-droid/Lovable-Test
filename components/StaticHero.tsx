@@ -56,7 +56,7 @@ const StaticHero: React.FC = () => {
             Expert legal counsel for international trade compliance, CBP defense, and customs matters. We step in quickly to protect your shipments and your business.
           </p>
           <Link
-            to="/contact"
+            to="/contact#schedule-consultation"
             className="inline-block px-8 md:px-10 py-3 md:py-4 text-base md:text-lg font-semibold transition-all duration-200"
             style={{
               backgroundColor: '#FFFFFF',

@@ -86,7 +86,7 @@ const ModestoAntiDumpingPage: React.FC = () => {
             Expert anti-dumping and countervailing duty defense for Modesto agricultural and food processing importers. Scope rulings, EAPA investigations, and AD/CVD avoidance strategies.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free AD/CVD Analysis</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free AD/CVD Analysis</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -402,7 +402,7 @@ const ModestoAntiDumpingPage: React.FC = () => {
             AD/CVD rates can exceed 300% on agricultural products like garlic and honey, destroying your profit margins. Our Modesto anti-dumping duty attorney helps Central Valley agricultural businesses avoid or minimize these duties through scope rulings, country of origin planning, and EAPA defense. Free consultation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

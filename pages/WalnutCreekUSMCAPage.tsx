@@ -85,7 +85,7 @@ const WalnutCreekUSMCAPage: React.FC = () => {
             Expert USMCA attorney serving Walnut Creek and Contra Costa businesses. Specialized in free trade agreement qualification, certificate of origin preparation, Regional Value Content optimization, and duty-free North American trade.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -292,7 +292,7 @@ const WalnutCreekUSMCAPage: React.FC = () => {
             Contact our Walnut Creek USMCA attorneys today. We'll evaluate your North American trade, analyze duty-free qualification opportunities, and develop comprehensive strategies to maximize USMCA benefits while ensuring full compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

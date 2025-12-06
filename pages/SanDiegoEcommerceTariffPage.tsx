@@ -86,7 +86,7 @@ const SanDiegoEcommerceTariffPage: React.FC = () => {
             Expert ecommerce tariff attorney serving San Diego online sellers. Specialized Section 321 de minimis, Amazon FBA imports, dropshipping compliance, and ecommerce customs law.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -470,7 +470,7 @@ const SanDiegoEcommerceTariffPage: React.FC = () => {
             Contact our San Diego ecommerce tariff attorneys today. We'll review your online business model, assess customs compliance, and develop strategies to minimize tariff costs while maintaining CBP compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

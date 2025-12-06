@@ -86,7 +86,7 @@ const OrangeCountyTariffLawyerPage: React.FC = () => {
             Expert Orange County tariff lawyer and customs attorney serving Irvine, Anaheim, Santa Ana. Specialized medical device, aerospace, and apparel trade compliance for OC's diverse business community.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -573,7 +573,7 @@ const OrangeCountyTariffLawyerPage: React.FC = () => {
             Contact our Orange County tariff lawyer and customs attorney team today. We'll assess your industry-specific compliance needs and provide expert guidance for your OC business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

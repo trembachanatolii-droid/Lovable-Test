@@ -86,7 +86,7 @@ const UplandCustomsBondPage: React.FC = () => {
             Expert Upland customs bond attorney serving San Bernardino County importers. Specialized in continuous bonds, single entry bonds, bond sufficiency, and CBP compliance for Inland Empire businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -349,7 +349,7 @@ const UplandCustomsBondPage: React.FC = () => {
             Contact our Upland customs bond attorney team today. We'll assess your import bond needs and provide expert guidance for your Inland Empire business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

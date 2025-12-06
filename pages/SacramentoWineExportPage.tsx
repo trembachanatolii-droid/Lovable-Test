@@ -86,7 +86,7 @@ const SacramentoWineExportPage: React.FC = () => {
             Expert wine export attorney serving Sacramento and California wine country. Specialized TTB compliance, export documentation, international wine trade regulations, and alcohol beverage law.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -467,7 +467,7 @@ const SacramentoWineExportPage: React.FC = () => {
             Contact our Sacramento wine export attorneys today. We'll review your export markets, assess documentation requirements, and develop a comprehensive international wine trade strategy.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

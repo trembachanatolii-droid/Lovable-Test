@@ -67,7 +67,7 @@ const LosBanosTradeAttorneyPage: React.FC = () => {
             Expert trade law for Western Merced County agriculture. Almond exports, phytosanitary compliance, USDA regulations, and customs guidance for Los Banos farmers and processors.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Agricultural Trade Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Agricultural Trade Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -584,7 +584,7 @@ const LosBanosTradeAttorneyPage: React.FC = () => {
             Don't let complex USDA regulations slow down your export operations. Contact our Los Banos trade attorney team for expert agricultural export compliance guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

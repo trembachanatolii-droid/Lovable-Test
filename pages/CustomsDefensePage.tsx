@@ -66,7 +66,7 @@ const CustomsDefensePage: React.FC = () => {
             Expert customs audits defense, CBP penalty mitigation, customs seizures, import detention release & customs litigation. Aggressive defense against False Claims Act, whistleblower trade cases & export violations. Protecting California & USA businesses when stakes are highest.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Defense Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Defense Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -457,15 +457,15 @@ const CustomsDefensePage: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md overflow-hidden">
             <h3 className="text-2xl font-bold text-primary-navy mb-6 font-garamond text-center">Helpful Guides & Resources</h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <a href="#article/cbp-focused-assessment-survival-guide-california" className="card-link">
-                <h4 className="font-bold text-primary-navy mb-2">CBP Audit Survival Guide</h4>
-                <p className="text-sm text-text-secondary">How to prepare for and survive a Focused Assessment</p>
+              <Link to="/customs-defense" className="card-link">
+                <h4 className="font-bold text-primary-navy mb-2">CBP Audit Defense</h4>
+                <p className="text-sm text-text-secondary">Expert Focused Assessment defense strategies</p>
                 <div className="triangle-slide">
                   <svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-              </a>
+              </Link>
               <Link to="/resources/section-301-tariffs-guide" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">Section 301 Tariffs Guide</h4>
                 <p className="text-sm text-text-secondary">Navigate China tariffs and exclusion strategies</p>
@@ -508,7 +508,7 @@ const CustomsDefensePage: React.FC = () => {
             When CBP targets your business with investigations, audits, penalties, or seizures, you need a customs defense attorney California who knows how to fight back. Contact us for aggressive representation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Defense Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

@@ -59,7 +59,7 @@ const SunnyvaleTradeZonePage: React.FC = () => {
           <h1>Sunnyvale Foreign Trade Zone Attorney<br />FTZ Lawyer Silicon Valley</h1>
           <p className="hero-subtitle">Expert Foreign Trade Zone attorney serving Sunnyvale and Silicon Valley tech companies. Defer duties, reduce costs, and maximize FTZ benefits for electronics and innovation operations.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free FTZ Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free FTZ Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -194,7 +194,7 @@ const SunnyvaleTradeZonePage: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-garamond mb-6 text-white">Maximize Your FTZ Benefits</h2>
           <p className="text-xl mb-8 opacity-95 leading-relaxed text-white">Enable innovation, defer duties, and eliminate export costs. Our Sunnyvale Foreign Trade Zone attorneys help Silicon Valley tech companies maximize zone benefits.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">Free FTZ Consultation</Button>
+            <Button href="/contact#schedule-consultation" variant="solid">Free FTZ Consultation</Button>
             <Button href={siteConfig.phoneTel} variant="outline">Call {siteConfig.phoneDisplay}</Button>
           </div>
         </div>

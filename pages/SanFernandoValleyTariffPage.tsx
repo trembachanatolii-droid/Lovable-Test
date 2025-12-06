@@ -86,7 +86,7 @@ const SanFernandoValleyTariffPage: React.FC = () => {
             Expert San Fernando Valley tariff attorney and customs lawyer serving Calabasas, Burbank, Glendale, Van Nuys. Specialized entertainment industry, aerospace, and manufacturing trade compliance for Valley businesses.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -575,7 +575,7 @@ const SanFernandoValleyTariffPage: React.FC = () => {
             Contact our San Fernando Valley tariff attorney and customs lawyer team today. Visit our Calabasas office or schedule a consultation at your Valley location. Expert trade law services for all Valley businesses.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

@@ -85,7 +85,7 @@ const FremontSemiconductorTariffPage: React.FC = () => {
             Expert semiconductor tariff attorney serving Fremont and Silicon Valley's chip industry. From tariff classification to export controls, our tech trade lawyers help semiconductor companies navigate complex import/export regulations and minimize duty exposure.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -311,7 +311,7 @@ const FremontSemiconductorTariffPage: React.FC = () => {
             From tariff classification to export controls, our Fremont semiconductor attorneys help tech companies stay compliant while minimizing duty costs. Contact us for expert guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

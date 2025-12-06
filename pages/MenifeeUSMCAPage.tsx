@@ -85,7 +85,7 @@ const MenifeeUSMCAPage: React.FC = () => {
             Expert USMCA attorney serving Menifee and Inland Empire businesses. Specialized in free trade agreement qualification, certificate of origin compliance, Regional Value Content strategies, and duty-free trade with Mexico and Canada.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -292,7 +292,7 @@ const MenifeeUSMCAPage: React.FC = () => {
             Contact our Menifee USMCA attorneys today. We'll analyze your Mexico and Canada trade, evaluate duty-free qualification opportunities, and develop comprehensive strategies to maximize USMCA benefits and ensure full compliance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

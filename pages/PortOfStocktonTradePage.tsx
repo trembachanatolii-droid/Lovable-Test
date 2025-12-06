@@ -86,7 +86,7 @@ const PortOfStocktonTradePage: React.FC = () => {
             Expert Port of Stockton trade compliance attorney providing CBP detention defense, agricultural export services, and customs representation at California's inland deep-water port serving Central Valley.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -501,7 +501,7 @@ const PortOfStocktonTradePage: React.FC = () => {
             Need customs assistance at Port of Stockton? Contact our trade compliance attorneys for expert agricultural export services, CBP detention defense, and port representation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

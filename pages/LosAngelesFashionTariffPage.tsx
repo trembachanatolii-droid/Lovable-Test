@@ -86,7 +86,7 @@ const LosAngelesFashionTariffPage: React.FC = () => {
             Expert fashion and apparel tariff lawyer serving Los Angeles importers. Specialized HTS classification, Section 301 strategies, textile compliance, and CBP defense for the fashion industry.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -484,7 +484,7 @@ const LosAngelesFashionTariffPage: React.FC = () => {
             Contact our Los Angeles fashion tariff lawyers today. We'll analyze your product classifications, identify cost-saving opportunities, and develop a comprehensive tariff strategy for your fashion brand.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

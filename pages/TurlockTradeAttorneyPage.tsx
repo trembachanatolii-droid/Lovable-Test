@@ -67,7 +67,7 @@ const TurlockTradeAttorneyPage: React.FC = () => {
             Expert trade law for Stanislaus County food manufacturers. USDA/FDA compliance, dairy exports, meat processing regulations, and customs guidance for Turlock's food industry.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Food Export Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Food Export Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -621,7 +621,7 @@ const TurlockTradeAttorneyPage: React.FC = () => {
             Don't let USDA/FDA compliance slow down your export operations. Contact our Turlock trade attorney team for expert food processing export guidance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href="tel:+13107441328" variant="outline">

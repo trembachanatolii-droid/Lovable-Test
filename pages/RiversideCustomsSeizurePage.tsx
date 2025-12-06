@@ -85,7 +85,7 @@ const RiversideCustomsSeizurePage: React.FC = () => {
             Expert customs seizure attorney serving Riverside and the Inland Empire. When CBP seizes your cargo, every day counts. Our seizure defense lawyers help Riverside businesses recover detained goods, challenge wrongful seizures, and minimize penalties.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Emergency Seizure Help</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Emergency Seizure Help</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -311,7 +311,7 @@ const RiversideCustomsSeizurePage: React.FC = () => {
             Time is critical when CBP seizes your cargo. Our Riverside customs seizure attorneys are ready to fight for the release of your goods. Contact us immediately for emergency assistance.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Emergency Seizure Help
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

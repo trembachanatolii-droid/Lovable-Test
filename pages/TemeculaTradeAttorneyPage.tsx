@@ -86,7 +86,7 @@ const TemeculaTradeAttorneyPage: React.FC = () => {
             Temecula trade attorney and customs lawyer serving Temecula Valley wine industry and businesses. Expert wine export compliance, tariff classification, and CBP defense.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">Free Consultation</Link>
+            <Link to="/contact#schedule-consultation" className="hero-cta">Free Consultation</Link>
             <a href="tel:+13107441328" className="hero-cta-outline">Call (310) 744-1328</a>
           </div>
         </div>
@@ -509,7 +509,7 @@ const TemeculaTradeAttorneyPage: React.FC = () => {
             Contact our Temecula trade attorney and customs lawyer team today. We'll assess your wine export compliance needs or general customs matters, explain your options, and provide a clear path forward.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="solid">
+            <Button href="/contact#schedule-consultation" variant="solid">
               Schedule Free Consultation
             </Button>
             <Button href={siteConfig.phoneTel} variant="outline">

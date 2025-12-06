@@ -736,7 +736,7 @@ const GlossaryPage: React.FC = () => {
             Understanding the terminology is just the first step. Our California international trade attorneys provide practical guidance on applying these concepts to your specific situation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="hero-cta">
+            <Link to="/contact#schedule-consultation" className="hero-cta">
               Schedule a Consultation
             </Link>
             <Link to="/resources" className="hero-cta-outline">
