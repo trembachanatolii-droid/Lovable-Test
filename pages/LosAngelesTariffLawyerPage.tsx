@@ -113,13 +113,13 @@ const LosAngelesTariffLawyerPage: React.FC = () => {
       </section>
 
       {/* Trump Tariffs 2025 Alert Section - Competitor Matching */}
-      <section className="py-12 px-6 bg-gradient-to-r from-red-700 to-red-800 text-white">
+      <section className="py-12 px-6 bg-gradient-to-r from-red-700 to-red-800">
         <div className="max-w-[1200px] mx-auto">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold font-garamond mb-4 text-white">
-              ⚠️ Trump Tariffs 2025: LA Importers Need Action Now
+            <h2 className="text-3xl md:text-4xl font-bold font-garamond mb-4" style={{ color: '#ffffff' }}>
+              Trump Tariffs 2025: LA Importers Need Action Now
             </h2>
-            <p className="text-xl mb-6 opacity-95 leading-relaxed max-w-4xl mx-auto">
+            <p className="text-xl mb-6 leading-relaxed max-w-4xl mx-auto" style={{ color: 'rgba(255, 255, 255, 0.95)' }}>
               The 2025 Trump administration tariffs are impacting Los Angeles importers with <strong>Section 301 rates up to 100% on Chinese goods</strong>, <strong>Section 232 steel/aluminum duties at 25-50%</strong>, and new reciprocal tariffs. As your <strong>Los Angeles tariff lawyer</strong>, we help you navigate exclusions, classification strategies, and compliance to minimize your duty burden.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">

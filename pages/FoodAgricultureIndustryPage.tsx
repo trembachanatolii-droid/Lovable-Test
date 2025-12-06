@@ -14,6 +14,8 @@ const FoodAgricultureIndustryPage: React.FC = () => {
     title: 'Food Import Attorney CA | Agriculture Trade Lawyer | FDA',
     description: 'California food import attorney & agricultural trade lawyer. FDA compliance, USDA regulations, food safety, HTS classification & produce import compliance. Expert for food importers & agricultural producers. Call (310) 744-1328.',
     canonical: 'food-agriculture-trade-attorney',
+    ogImage: 'https://trembach.law/og-image-industries.jpg',
+    ogImageAlt: 'Trembach Law Firm - Food & Agriculture Trade Law',
     schema: [
       generateWebPageSchema({
         title: 'Food & Agriculture Industry Trade Law Services',

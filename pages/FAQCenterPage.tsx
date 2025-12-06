@@ -271,6 +271,8 @@ const FAQCenterPage: React.FC = () => {
     title: 'CA Trade Law FAQ | Customs & Import Questions',
     description: '40+ expert answers: customs compliance, HTS classification, UFLPA, USMCA, AD/CVD, Section 321, export controls, FDA/USDA, marking, CBP audits.',
     canonical: 'trade-law-faq',
+    ogImage: 'https://trembach.law/og-image-resources.jpg',
+    ogImageAlt: 'Trembach Law Firm - Trade Law FAQ Center',
     schema: [
       generateWebPageSchema({
         title: 'International Trade Law FAQ Center',

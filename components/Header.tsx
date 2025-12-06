@@ -724,7 +724,7 @@ const Header: React.FC = () => {
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
             {searchResults.map((word, index) => (
               <span
-                key={index}
+                key={`search-result-${word}-${index}`}
                 style={{
                   display: 'inline-block',
                   padding: '0.5rem 1rem',
