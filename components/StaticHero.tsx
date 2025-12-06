@@ -11,11 +11,12 @@ const StaticHero: React.FC = () => {
       }}
     >
       {/* Background Image - Full bleed cover mode */}
+      {/* Mobile: position toward right side to show cleaner ocean area behind text */}
+      {/* Desktop: center position */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 hero-bg-image"
         style={{
           backgroundImage: 'url(/images/hero-port-background.jpg?v=14)',
-          backgroundPosition: 'center center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           minHeight: '100vh',
