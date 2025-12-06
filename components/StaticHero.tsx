@@ -29,8 +29,8 @@ const StaticHero: React.FC = () => {
         className="relative z-10 h-full flex items-start"
         style={{ paddingTop: 'calc(80px + 15vh)' }}
       >
-        <div className="w-full max-w-7xl mx-auto px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
-          <div className="max-w-xl lg:max-w-2xl">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-12 md:px-16 lg:px-20 xl:px-28">
+          <div className="max-w-xl lg:max-w-2xl hero-mobile-text-bg">
           <h1
             className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 md:mb-6"
             style={{
