@@ -18,9 +18,8 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
   return (
     <section
       id="news-section"
-      className="relative"
+      className="recent-news"
       aria-labelledby="news-heading"
-      style={{ overflow: 'hidden' }}
     >
       {/* Background Image - same as footer */}
       <div
@@ -34,55 +33,21 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
       />
 
       {/* Content Container */}
-      <div
-        className="relative z-10"
-        style={{
-          maxWidth: '1376px',
-          margin: '0 auto',
-          padding: '5rem 2.5rem',
-        }}
-      >
-        {/* Two Column Grid - Side by Side */}
-        <div
-          style={{
-            display: 'grid',
-            gap: '4rem',
-          }}
-          className="recent-news-grid"
-        >
+      <div className="recent-news__container">
+        {/* Two Column Layout using Flexbox like practice-areas-preview */}
+        <div className="recent-news__content">
           {/* Left Side - Featured Article */}
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-            }}
-          >
+          <div className="recent-news__left">
             {/* Featured Article Title */}
             <h2
               id="news-heading"
-              style={{
-                fontFamily: 'Georgia, serif',
-                fontSize: 'clamp(2rem, 4vw, 2.75rem)',
-                fontWeight: 400,
-                lineHeight: 1.2,
-                color: 'white',
-                marginBottom: '1.5rem',
-              }}
+              className="recent-news__title"
             >
               {featuredArticle.title}
             </h2>
 
             {/* Featured Article Description */}
-            <p
-              style={{
-                fontSize: '1rem',
-                lineHeight: 1.7,
-                color: 'rgba(255, 255, 255, 0.9)',
-                marginBottom: '2.5rem',
-                maxWidth: '540px',
-              }}
-            >
+            <p className="recent-news__description">
               {featuredArticle.description}
             </p>
 
@@ -91,20 +56,7 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
               <Link
                 to={featuredArticle.linkHref}
                 aria-label={`Read article: ${featuredArticle.title}`}
-                style={{
-                  display: 'inline-block',
-                  padding: '1rem 2rem',
-                  border: '2px solid white',
-                  color: 'white',
-                  fontSize: '0.875rem',
-                  fontWeight: 600,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.05em',
-                  textDecoration: 'none',
-                  transition: 'all 0.2s ease',
-                  backgroundColor: 'transparent',
-                }}
-                className="hover:bg-white hover:text-primary-navy"
+                className="recent-news__button"
               >
                 Read Now
               </Link>
@@ -112,44 +64,19 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
           </div>
 
           {/* Right Side - Article List with Triangle Animation */}
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-            }}
-          >
+          <div className="recent-news__right">
             {remainingArticles.map((article, index) => (
               <Link
                 key={article.id}
                 to={article.linkHref}
                 aria-label={`Read article: ${article.title}`}
-                className="group"
+                className="recent-news__article group"
                 style={{
-                  display: 'block',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  paddingTop: index === 0 ? '0' : '1.5rem',
-                  paddingBottom: '1.5rem',
                   borderBottom: index < remainingArticles.length - 1 ? '1px solid rgba(255, 255, 255, 0.3)' : 'none',
-                  textDecoration: 'none',
                 }}
               >
                 {/* Green Triangle Slide Animation */}
-                <div
-                  className="triangle-slide"
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    right: '-85px',
-                    width: '85px',
-                    height: '85px',
-                    background: '#3FBB94',
-                    clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
-                    transition: 'right 300ms ease-in-out',
-                    zIndex: 10,
-                    pointerEvents: 'none',
-                  }}
-                >
+                <div className="triangle-slide">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -157,45 +84,19 @@ const RecentNewsSection: React.FC<RecentNewsSectionProps> = memo(({ articles }) 
                     strokeWidth={3}
                     stroke="white"
                     aria-hidden="true"
-                    style={{
-                      width: '20px',
-                      height: '20px',
-                      position: 'absolute',
-                      top: '20px',
-                      right: '20px',
-                    }}
+                    className="triangle-slide__icon"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>
                 </div>
 
                 {/* Article Title */}
-                <h3
-                  style={{
-                    fontFamily: 'Georgia, serif',
-                    fontSize: '1.25rem',
-                    fontWeight: 400,
-                    lineHeight: 1.4,
-                    color: 'white',
-                    marginBottom: '0.5rem',
-                    paddingRight: '2rem',
-                    position: 'relative',
-                    zIndex: 0,
-                  }}
-                >
+                <h3 className="recent-news__article-title">
                   {article.title}
                 </h3>
 
                 {/* Article Date */}
-                <span
-                  style={{
-                    fontSize: '0.75rem',
-                    fontWeight: 600,
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.08em',
-                    color: 'rgba(255, 255, 255, 0.7)',
-                  }}
-                >
+                <span className="recent-news__article-date">
                   {article.date}
                 </span>
               </Link>
