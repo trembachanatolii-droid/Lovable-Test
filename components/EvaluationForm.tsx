@@ -252,19 +252,19 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ theme = 'navy' }) => {
                         </p>
                         <ul className={`space-y-4 ${styles.subTextColor} text-base`}>
                             <li className="flex items-start">
-                                <span className="text-gold-primary text-lg mr-3 flex-shrink-0">✓</span>
+                                <span className="text-gold-primary text-lg mr-3 flex-shrink-0" aria-hidden="true">&#10003;</span>
                                 <p style={{ lineHeight: '1.6' }}>
                                     <strong className={`${styles.strongTextColor} font-bold`}>Confidential Review:</strong> Your submission is confidential.
                                 </p>
                             </li>
                             <li className="flex items-start">
-                                <span className="text-gold-primary text-lg mr-3 flex-shrink-0">✓</span>
+                                <span className="text-gold-primary text-lg mr-3 flex-shrink-0" aria-hidden="true">&#10003;</span>
                                 <p style={{ lineHeight: '1.6' }}>
                                     <strong className={`${styles.strongTextColor} font-bold`}>Expert Analysis:</strong> Direct evaluation by a partner-level attorney with a unique background in both enforcement and defense.
                                 </p>
                             </li>
                             <li className="flex items-start">
-                                <span className="text-gold-primary text-lg mr-3 flex-shrink-0">✓</span>
+                                <span className="text-gold-primary text-lg mr-3 flex-shrink-0" aria-hidden="true">&#10003;</span>
                                 <p style={{ lineHeight: '1.6' }}>
                                     <strong className={`${styles.strongTextColor} font-bold`}>No Obligation:</strong> This initial consultation is completely free and does not commit you to our services.
                                 </p>

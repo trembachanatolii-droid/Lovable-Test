@@ -826,7 +826,7 @@ const Section301TariffsGuidePage: React.FC = () => {
 
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                    <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Maintain Accurate HTS Classifications</h4>
                       <p className="text-sm text-gray-700">
@@ -836,7 +836,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                    <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Verify Country of Origin</h4>
                       <p className="text-sm text-gray-700">
@@ -846,7 +846,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                    <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Monitor Section 301 Updates</h4>
                       <p className="text-sm text-gray-700">
@@ -856,7 +856,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                    <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Maintain Complete Records</h4>
                       <p className="text-sm text-gray-700">
@@ -866,7 +866,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                    <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Reconcile Entry Data</h4>
                       <p className="text-sm text-gray-700">
@@ -876,7 +876,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                    <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Train Internal Teams</h4>
                       <p className="text-sm text-gray-700">
@@ -886,7 +886,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                    <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Engage Qualified Customs Broker</h4>
                       <p className="text-sm text-gray-700">
@@ -896,7 +896,7 @@ const Section301TariffsGuidePage: React.FC = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <span className="text-secondary-teal font-bold text-2xl mr-3">✓</span>
+                    <span className="text-secondary-teal font-bold text-2xl mr-3" aria-hidden="true">&#10003;</span>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Conduct Prior Disclosure if Errors Discovered</h4>
                       <p className="text-sm text-gray-700">

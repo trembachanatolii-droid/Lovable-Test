@@ -25,7 +25,7 @@ const StickyPhoneButton: React.FC<StickyPhoneButtonProps> = ({ showOnMobileOnly 
     <a
       href="tel:+13107441328"
       aria-label="Call us at (310) 744-1328"
-      className={`hidden lg:flex fixed bottom-6 right-6 z-50 transition-all duration-300 ${
+      className={`flex fixed bottom-6 right-6 z-50 transition-all duration-300 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16 pointer-events-none'
       }`}
       style={{
