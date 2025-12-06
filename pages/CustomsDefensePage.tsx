@@ -412,7 +412,7 @@ const CustomsDefensePage: React.FC = () => {
               <ul className="space-y-3">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/technology-electronics-trade-attorney" className="service-link">
+                    <Link to="/industries/technology-electronics" className="service-link">
                       <span className="service-link__title">Technology & Electronics</span>
                       <p className="service-link__description">Section 301 and classification disputes</p>
                       <div className="triangle-slide">
@@ -425,7 +425,7 @@ const CustomsDefensePage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/apparel-textiles-trade-attorney" className="service-link">
+                    <Link to="/industries/apparel-textiles" className="service-link">
                       <span className="service-link__title">Apparel & Textiles</span>
                       <p className="service-link__description">UFLPA and forced labor defense</p>
                       <div className="triangle-slide">
@@ -438,7 +438,7 @@ const CustomsDefensePage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Food & Agriculture</span>
                       <p className="service-link__description">FDA/USDA detention release</p>
                       <div className="triangle-slide">

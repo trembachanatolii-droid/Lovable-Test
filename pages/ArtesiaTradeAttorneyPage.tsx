@@ -454,7 +454,7 @@ const ArtesiaTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/customs-defense-litigation" className="service-link">
+                    <Link to="/customs-defense" className="service-link">
                       <span className="service-link__title">CBP Enforcement Defense</span>
                       <p className="service-link__description">Penalty mitigation, audits</p>
                       <div className="triangle-slide">
@@ -487,7 +487,7 @@ const ArtesiaTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Food & Agriculture</span>
                       <p className="service-link__description">Dairy, specialty foods, FDA</p>
                       <div className="triangle-slide">
@@ -513,7 +513,7 @@ const ArtesiaTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/apparel-textiles-trade-attorney" className="service-link">
+                    <Link to="/industries/apparel-textiles" className="service-link">
                       <span className="service-link__title">Apparel & Textiles</span>
                       <p className="service-link__description">UFLPA, country-of-origin</p>
                       <div className="triangle-slide">

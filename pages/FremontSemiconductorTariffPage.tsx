@@ -228,7 +228,7 @@ const FremontSemiconductorTariffPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/technology-electronics-trade-attorney" className="service-link">
+                  <Link to="/industries/technology-electronics" className="service-link">
                     <span className="service-link__title">Technology Trade Attorney</span>
                     <p className="service-link__description">Full tech industry services</p>
                     <div className="triangle-slide">

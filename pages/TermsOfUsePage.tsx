@@ -28,7 +28,7 @@ const TermsOfUsePage: React.FC = () => {
   return (
     <div className="pt-20 bg-white min-h-screen font-montserrat text-neutral-darkGray">
       {/* Hero Section */}
-      <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[50vh]">
+      <section className="relative w-full py-32 px-6 text-center overflow-hidden flex flex-col justify-center min-h-[60vh]">
         {/* Background Image - LCP element */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img

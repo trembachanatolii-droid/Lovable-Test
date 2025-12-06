@@ -578,7 +578,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Classification & Valuation Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">Tariff Classification Defense</span>
                     <p className="service-link__description">HTS protests and binding ruling requests</p>
                     <div className="triangle-slide">
@@ -618,7 +618,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Trade Remedies & Tariffs</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">AD/CVD Defense</span>
                     <p className="service-link__description">Antidumping & countervailing duty matters</p>
                     <div className="triangle-slide">
@@ -640,7 +640,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">Section 232 Exclusions</span>
                     <p className="service-link__description">Steel & aluminum tariff relief</p>
                     <div className="triangle-slide">
@@ -705,7 +705,7 @@ const TariffsClassificationGuidePage: React.FC = () => {
                   </svg>
                 </div>
               </Link>
-              <Link to="/customs-defense-litigation" className="card-link">
+              <Link to="/customs-defense" className="card-link">
                 <h4 className="font-bold text-primary-navy mb-2">CBP Audit Defense</h4>
                 <p className="text-sm text-text-secondary">Focused Assessment preparation</p>
                 <div className="triangle-slide">

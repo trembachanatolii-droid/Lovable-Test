@@ -362,7 +362,7 @@ const SantaCruzTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Food & Agriculture Trade</span>
                       <p className="service-link__description">Export/import compliance</p>
                       <div className="triangle-slide">
@@ -381,7 +381,7 @@ const SantaCruzTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Fresh Produce</span>
                       <p className="service-link__description">Santa Cruz County exports</p>
                       <div className="triangle-slide">

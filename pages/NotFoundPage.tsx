@@ -59,7 +59,7 @@ const NotFoundPage: React.FC = () => {
           </h3>
           <ul className="space-y-2 mb-6">
             <li>
-              <Link to="/customs-defense-litigation" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/customs-defense" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Customs Defense &amp; Litigation - CBP penalty defense and enforcement actions
               </Link>
             </li>
@@ -85,17 +85,17 @@ const NotFoundPage: React.FC = () => {
           </h3>
           <ul className="space-y-2 mb-6">
             <li>
-              <Link to="/technology-electronics-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/industries/technology-electronics" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Technology &amp; Electronics - Export controls and semiconductor compliance
               </Link>
             </li>
             <li>
-              <Link to="/apparel-textiles-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/industries/apparel-textiles" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Apparel &amp; Textiles - UFLPA and Section 301 strategies
               </Link>
             </li>
             <li>
-              <Link to="/food-agriculture-trade-attorney" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
+              <Link to="/industries/food-agriculture" className="text-secondary-teal hover:text-primary-navy font-medium transition-colors">
                 Food &amp; Agriculture - FDA and USDA import compliance
               </Link>
             </li>

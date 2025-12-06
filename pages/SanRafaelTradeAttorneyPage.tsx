@@ -434,7 +434,7 @@ const SanRafaelTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/customs-defense-litigation" className="service-link">
+                    <Link to="/customs-defense" className="service-link">
                       <span className="service-link__title">CBP Defense & Litigation</span>
                       <p className="service-link__description">Penalty defense, Prior Disclosures</p>
                       <div className="triangle-slide">
@@ -480,7 +480,7 @@ const SanRafaelTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/technology-electronics-trade-attorney" className="service-link">
+                    <Link to="/industries/technology-electronics" className="service-link">
                       <span className="service-link__title">Technology & Electronics</span>
                       <p className="service-link__description">Consumer electronics imports</p>
                       <div className="triangle-slide">
@@ -493,7 +493,7 @@ const SanRafaelTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/apparel-textiles-trade-attorney" className="service-link">
+                    <Link to="/industries/apparel-textiles" className="service-link">
                       <span className="service-link__title">Apparel & Textiles</span>
                       <p className="service-link__description">Section 301, country of origin</p>
                       <div className="triangle-slide">
@@ -506,7 +506,7 @@ const SanRafaelTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Food & Beverage</span>
                       <p className="service-link__description">FDA compliance, wine imports</p>
                       <div className="triangle-slide">

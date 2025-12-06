@@ -441,7 +441,7 @@ const TustinTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/customs-defense-litigation" className="service-link">
+                    <Link to="/customs-defense" className="service-link">
                       <span className="service-link__title">CBP Audit Defense</span>
                       <p className="service-link__description">Customs audit representation</p>
                       <div className="triangle-slide">
@@ -460,7 +460,7 @@ const TustinTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/technology-electronics-trade-attorney" className="service-link">
+                    <Link to="/industries/technology-electronics" className="service-link">
                       <span className="service-link__title">Technology & Electronics</span>
                       <p className="service-link__description">Tech export controls</p>
                       <div className="triangle-slide">
@@ -473,7 +473,7 @@ const TustinTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/apparel-textiles-trade-attorney" className="service-link">
+                    <Link to="/industries/apparel-textiles" className="service-link">
                       <span className="service-link__title">Apparel & Textiles</span>
                       <p className="service-link__description">Country of origin compliance</p>
                       <div className="triangle-slide">

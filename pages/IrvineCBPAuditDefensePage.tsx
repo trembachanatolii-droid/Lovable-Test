@@ -242,7 +242,7 @@ const IrvineCBPAuditDefensePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Audit Defense Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">Customs Defense & Litigation</span>
                     <p className="service-link__description">Full customs defense representation</p>
                     <div className="triangle-slide">

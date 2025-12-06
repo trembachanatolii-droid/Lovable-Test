@@ -448,7 +448,7 @@ const SanMarcosTradeAttorneyPage: React.FC = () => {
                 </li>
                 <li>
                   <div className="service-link-item">
-                    <Link to="/customs-defense-litigation" className="service-link">
+                    <Link to="/customs-defense" className="service-link">
                       <span className="service-link__title">Customs Defense & Litigation</span>
                       <p className="service-link__description">CBP audit defense</p>
                       <div className="triangle-slide">
@@ -468,7 +468,7 @@ const SanMarcosTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/technology-electronics-trade-attorney" className="service-link">
+                    <Link to="/industries/technology-electronics" className="service-link">
                       <span className="service-link__title">Technology & Electronics</span>
                       <p className="service-link__description">Tech export controls</p>
                       <div className="triangle-slide">

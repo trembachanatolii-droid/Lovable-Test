@@ -138,7 +138,7 @@ const TorranceCBPAuditPage: React.FC = () => {
             <div className="bg-neutral-50 p-6 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Defense Services</h3>
               <div className="space-y-0">
-                <div className="service-link-item"><Link to="/customs-defense-litigation" className="service-link"><span className="service-link__title">Customs Defense & Litigation</span><p className="service-link__description">Full defense representation</p><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
+                <div className="service-link-item"><Link to="/customs-defense" className="service-link"><span className="service-link__title">Customs Defense & Litigation</span><p className="service-link__description">Full defense representation</p><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
                 <div className="service-link-item"><Link to="/torrance-tariff-lawyer" className="service-link"><span className="service-link__title">Torrance Tariff Lawyer</span><p className="service-link__description">Tariff classification services</p><div className="triangle-slide"><svg className="triangle-slide__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></Link></div>
               </div>
             </div>

@@ -394,7 +394,7 @@ const LosAngelesPortPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">Legal Services for Port Importers</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">Customs Defense & Litigation</span>
                     <p className="service-link__description">CBP audits, seizures, penalty defense</p>
                     <div className="triangle-slide">
@@ -445,7 +445,7 @@ const LosAngelesPortPage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">LA/LB Port Industry Focus</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/technology-electronics-trade-attorney" className="service-link">
+                  <Link to="/industries/technology-electronics" className="service-link">
                     <span className="service-link__title">Technology & Electronics</span>
                     <p className="service-link__description">Major LA/LB import sector</p>
                     <div className="triangle-slide">
@@ -456,7 +456,7 @@ const LosAngelesPortPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/apparel-textiles-trade-attorney" className="service-link">
+                  <Link to="/industries/apparel-textiles" className="service-link">
                     <span className="service-link__title">Apparel & Textiles</span>
                     <p className="service-link__description">LA Fashion District importers</p>
                     <div className="triangle-slide">
@@ -467,7 +467,7 @@ const LosAngelesPortPage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/food-agriculture-trade-attorney" className="service-link">
+                  <Link to="/industries/food-agriculture" className="service-link">
                     <span className="service-link__title">Food & Agriculture</span>
                     <p className="service-link__description">Perishable cargo specialists</p>
                     <div className="triangle-slide">

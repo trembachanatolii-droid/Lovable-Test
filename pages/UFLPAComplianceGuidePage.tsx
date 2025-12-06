@@ -722,7 +722,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">UFLPA Legal Services</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/customs-defense-litigation" className="service-link">
+                  <Link to="/customs-defense" className="service-link">
                     <span className="service-link__title">UFLPA Detention Defense</span>
                     <p className="service-link__description">Emergency response and evidence packages</p>
                     <div className="triangle-slide">
@@ -762,7 +762,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
               <h3 className="text-xl font-bold text-primary-navy mb-4 font-garamond">High-Risk Industries</h3>
               <div className="space-y-0">
                 <div className="service-link-item">
-                  <Link to="/apparel-textiles-trade-attorney" className="service-link">
+                  <Link to="/industries/apparel-textiles" className="service-link">
                     <span className="service-link__title">Apparel & Textiles</span>
                     <p className="service-link__description">Cotton supply chain compliance</p>
                     <div className="triangle-slide">
@@ -773,7 +773,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/technology-electronics-trade-attorney" className="service-link">
+                  <Link to="/industries/technology-electronics" className="service-link">
                     <span className="service-link__title">Solar & Electronics</span>
                     <p className="service-link__description">Polysilicon and semiconductor issues</p>
                     <div className="triangle-slide">
@@ -784,7 +784,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
                   </Link>
                 </div>
                 <div className="service-link-item">
-                  <Link to="/food-agriculture-trade-attorney" className="service-link">
+                  <Link to="/industries/food-agriculture" className="service-link">
                     <span className="service-link__title">Food & Agriculture</span>
                     <p className="service-link__description">Tomato products and ingredients</p>
                     <div className="triangle-slide">

@@ -426,7 +426,7 @@ const BrentwoodTradeAttorneyPage: React.FC = () => {
               <ul className="space-y-3 overflow-hidden">
                 <li>
                   <div className="service-link-item">
-                    <Link to="/food-agriculture-trade-attorney" className="service-link">
+                    <Link to="/industries/food-agriculture" className="service-link">
                       <span className="service-link__title">Food & Agriculture Trade Law</span>
                       <p className="service-link__description">Comprehensive ag trade services</p>
                       <div className="triangle-slide">
