@@ -56,13 +56,23 @@ const Footer: React.FC = () => {
     return (
         <footer
             role="contentinfo"
-            className="bg-primary-navy border-t footer-stable"
+            className="border-t footer-stable relative"
             style={{
                 borderTopColor: 'rgba(255, 255, 255, 0.2)',
                 color: 'rgba(255, 255, 255, 0.95)'
             }}
         >
-            <div className="max-w-[1376px] mx-auto px-5 py-12">
+            {/* Background Image */}
+            <div 
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style={{ backgroundImage: 'url(/images/footer-background.png)' }}
+            />
+            {/* Heavy Dark Blue Overlay */}
+            <div 
+                className="absolute inset-0 bg-primary-navy"
+                style={{ opacity: 0.92 }}
+            />
+            <div className="max-w-[1376px] mx-auto px-5 py-12 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Firm Info & Newsletter */}
                     <div className="lg:col-span-2">
