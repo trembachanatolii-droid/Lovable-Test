@@ -235,8 +235,9 @@ const Header: React.FC = () => {
   }, [isMenuOpen]);
 
   // Determine if we should use light text (white) or dark text
-  // Light text: on home page when not scrolled, or on non-home pages (which have navy background)
-  const useLightText = !isHomePage || !isScrolled;
+  // Light text: only on home page when not scrolled (transparent header over hero)
+  // Dark text: on home page when scrolled, or on non-home pages (white background)
+  const useLightText = isHomePage && !isScrolled;
 
   // Memoized style objects to prevent recreation on every render
   const desktopNavStyle = useMemo(() => ({
@@ -471,16 +472,14 @@ const Header: React.FC = () => {
 
   // Header wrapper style with explicit background control
   // On home page: transparent when not scrolled, white when scrolled
-  // On other pages: always navy background
+  // On other pages: always white background (like scrolled state on home page)
   const headerWrapperStyle = useMemo((): React.CSSProperties => ({
     position: 'fixed',
     top: 0,
     left: 0,
     right: 0,
     zIndex: 100,
-    backgroundColor: isHomePage
-      ? (isScrolled ? 'var(--white)' : 'transparent')
-      : 'var(--navy-primary)',
+    backgroundColor: isHomePage && !isScrolled ? 'transparent' : 'var(--white)',
     boxShadow: isScrolled || !isHomePage ? '0 2px 8px rgba(0,0,0,0.1)' : 'none',
     transition: 'background-color 0.3s, box-shadow 0.3s',
   }), [isScrolled, isHomePage]);
