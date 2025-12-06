@@ -73,7 +73,7 @@ const UFLPAComplianceGuidePage: React.FC = () => {
       </section>
 
       {/* Quick Navigation */}
-      <section className="py-10 px-4 bg-gray-50 border-b border-gray-200">
+      <section className="mt-5 py-10 px-4 bg-gray-50 border-b border-gray-200">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-primary-navy mb-6 text-center">Jump to Section</h2>
           <div className="flex flex-wrap justify-center gap-4 text-base">
