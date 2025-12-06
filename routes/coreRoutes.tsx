@@ -81,6 +81,36 @@ export const coreRoutes: RouteObject[] = [
   { path: '/industries/technology-electronics', element: <TechnologyElectronicsIndustryPage /> },
   { path: '/industries/apparel-textiles', element: <ApparelTextilesIndustryPage /> },
   { path: '/industries/food-agriculture', element: <FoodAgricultureIndustryPage /> },
+
+  // Industry Page Aliases (backward compatibility for old URLs)
+  { path: '/technology-electronics-trade-attorney', element: <TechnologyElectronicsIndustryPage /> },
+  { path: '/apparel-textiles-trade-attorney', element: <ApparelTextilesIndustryPage /> },
+  { path: '/food-agriculture-trade-attorney', element: <FoodAgricultureIndustryPage /> },
+  { path: '/technology-electronics-industry', element: <TechnologyElectronicsIndustryPage /> },
+  { path: '/apparel-textiles-industry', element: <ApparelTextilesIndustryPage /> },
+  { path: '/food-agriculture-industry', element: <FoodAgricultureIndustryPage /> },
+
+  // Resource Page Aliases (redirect common patterns to resources hub or specific guides)
+  { path: '/tariffs-duties-classification-guide', element: <TariffsClassificationGuidePage /> },
+  { path: '/section-301-tariffs-guide', element: <Section301TariffsGuidePage /> },
+  { path: '/uflpa-compliance-guide', element: <UFLPAComplianceGuidePage /> },
+  { path: '/resources/cbp-audit-defense', element: <ResourcesHubPage /> },
+  { path: '/resources/cbp-audit-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/cbp-penalty-mitigation', element: <ResourcesHubPage /> },
+  { path: '/resources/prior-disclosure-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/customs-valuation-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/duty-drawback-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/ftz-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/export-controls-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/itar-compliance-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/ear-compliance-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/antidumping-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/cvd-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/usmca-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/customs-protest-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/compliance-program-guide', element: <ResourcesHubPage /> },
+  { path: '/resources/faq', element: <FAQCenterPage /> },
+  { path: '/resources/glossary', element: <GlossaryPage /> },
 ];
 
 export const notFoundRoute: RouteObject = {

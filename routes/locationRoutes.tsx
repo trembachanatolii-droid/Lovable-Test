@@ -281,4 +281,14 @@ export const locationRoutes: RouteObject[] = [
   { path: '/santa-cruz-trade-attorney', element: <SantaCruzTradeAttorneyPage /> },
   { path: '/petaluma-trade-attorney', element: <PetalumaTradeAttorneyPage /> },
   { path: '/san-rafael-trade-attorney', element: <SanRafaelTradeAttorneyPage /> },
+
+  // Route Aliases (backward compatibility for alternate URL patterns)
+  { path: '/anaheim-trade-attorney', element: <AnaheimCustomsAttorneyPage /> },
+  { path: '/fresno-trade-attorney', element: <FresnoAgriculturalTradePage /> },
+  { path: '/irvine-trade-attorney', element: <IrvineTradeCompliancePage /> },
+  { path: '/ventura-trade-attorney', element: <OxnardTariffAttorneyPage /> },
+  { path: '/torrance-tariff-lawyer', element: <TorranceTradeAttorneyPage /> },
+  { path: '/torrance-customs-lawyer', element: <TorranceTradeAttorneyPage /> },
+  { path: '/santa-ana-tariff-lawyer', element: <SantaAnaTradeAttorneyPage /> },
+  { path: '/stockton-agricultural-tariff-lawyer', element: <StocktonAgTariffLawyerPage /> },
 ];
